@@ -29,17 +29,17 @@ export default function Header() {
     mobile?: boolean; 
   }) => (
     <Link href={href}>
-      <a
+      <span
         className={`
           ${mobile ? 'block px-3 py-2 text-base' : 'text-sm'}
-          font-medium transition-colors
+          font-medium transition-colors cursor-pointer
           ${highlight ? 'text-brand-blue hover:text-blue-700' : 'text-neutral-medium hover:text-neutral-dark'}
           ${isActiveLink(href) ? (highlight ? 'text-brand-blue' : 'text-neutral-dark') : ''}
         `}
         onClick={() => mobile && setMobileMenuOpen(false)}
       >
         {label}
-      </a>
+      </span>
     </Link>
   );
 

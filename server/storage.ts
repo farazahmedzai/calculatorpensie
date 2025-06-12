@@ -166,7 +166,7 @@ Sistemul românesc de pensii include două piloni de pensii private. Înțeleger
 - Control complet asupra contribuțiilor
 - Flexibilitate în investiții`,
         category: "planificare",
-        publishDate: new Date("2024-12-10").toISOString(),
+        publishDate: "2024-12-10T10:00:00.000Z",
         readTime: 12,
         published: true,
       }
@@ -174,7 +174,7 @@ Sistemul românesc de pensii include două piloni de pensii private. Înțeleger
 
     sampleArticles.forEach(article => {
       const id = this.currentArticleId++;
-      this.articles.set(id, { ...article, id });
+      this.articles.set(id, { ...article, id, published: article.published ?? true });
     });
   }
 
@@ -226,7 +226,7 @@ Sistemul românesc de pensii include două piloni de pensii private. Înțeleger
 
   async createArticle(insertArticle: InsertArticle): Promise<Article> {
     const id = this.currentArticleId++;
-    const article: Article = { ...insertArticle, id };
+    const article: Article = { ...insertArticle, id, published: insertArticle.published ?? false };
     this.articles.set(id, article);
     return article;
   }
