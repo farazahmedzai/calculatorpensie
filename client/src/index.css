@@ -24,13 +24,20 @@
   --ring: hsl(215, 20%, 25%);
   --radius: 0.75rem;
   
-  /* Brand colors */
-  --brand-blue: hsl(221, 83%, 53%);
-  --brand-green: hsl(160, 84%, 39%);
+  /* Enhanced Brand colors */
+  --brand-blue: hsl(214, 84%, 48%);
+  --brand-blue-light: hsl(214, 100%, 95%);
+  --brand-blue-dark: hsl(214, 84%, 38%);
+  --brand-green: hsl(142, 71%, 45%);
+  --brand-green-light: hsl(142, 71%, 95%);
   --brand-red: hsl(0, 74%, 42%);
   --neutral-light: hsl(220, 13%, 97%);
   --neutral-medium: hsl(215, 16%, 47%);
   --neutral-dark: hsl(215, 25%, 27%);
+  --success: hsl(142, 71%, 45%);
+  --warning: hsl(48, 96%, 53%);
+  --gradient-primary: linear-gradient(135deg, hsl(214, 84%, 48%) 0%, hsl(214, 84%, 38%) 100%);
+  --gradient-secondary: linear-gradient(135deg, hsl(214, 100%, 95%) 0%, hsl(220, 13%, 97%) 100%);
 }
 
 .dark {
@@ -74,6 +81,53 @@
 @layer components {
   .brand-blue {
     color: var(--brand-blue);
+  }
+  
+  .gradient-bg {
+    background: var(--gradient-primary);
+  }
+
+  .gradient-text {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .glass-card {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .hero-section {
+    background: linear-gradient(135deg, hsl(214, 100%, 97%) 0%, hsl(214, 100%, 95%) 50%, hsl(220, 13%, 97%) 100%);
+  }
+
+  .feature-card {
+    transition: all 0.3s ease;
+    border: 1px solid hsl(var(--border));
+  }
+
+  .feature-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    border-color: hsl(var(--brand-blue));
+  }
+
+  .calculator-result {
+    background: var(--gradient-secondary);
+    border-left: 4px solid hsl(var(--brand-blue));
+  }
+
+  .section-padding {
+    padding: 4rem 0;
+  }
+
+  @media (max-width: 768px) {
+    .section-padding {
+      padding: 2rem 0;
+    }
   }
   
   .brand-green {

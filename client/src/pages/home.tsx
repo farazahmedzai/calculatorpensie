@@ -36,25 +36,33 @@ export default function Home() {
   return (
     <div className="bg-white">
       {/* Hero Section */}
-      <section className="gradient-hero text-white py-16">
+      <section className="hero-section py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
-              <h1 className="text-4xl lg:text-5xl font-bold mb-6 leading-tight">
-                Calculator Pensie Online: Află Pensia Ta în Câteva Secunde
+              <div className="inline-flex items-center px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-medium mb-6">
+                <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
+                #1 Calculator Pensie România
+              </div>
+              <h1 className="text-5xl lg:text-6xl font-bold mb-6 leading-tight text-gray-900">
+                Calculează-ți
+                <span className="gradient-text block">Pensia Viitoare</span>
               </h1>
-              <p className="text-xl mb-8 text-blue-100">
-                Calculează precis pensia ta viitoare cu cel mai avansat calculator de pensie din România. 
-                Planifică-ți viitorul financiar cu încredere.
+              <p className="text-xl mb-8 text-gray-600 leading-relaxed">
+                Cel mai precis calculator de pensie din România cu funcții avansate pentru 
+                planificarea pensiei standard, anticipate și Pilonul III.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button onClick={scrollToCalculator} size="lg" className="bg-white text-brand-blue hover:bg-gray-50">
+                <Button onClick={scrollToCalculator} size="lg" className="gradient-bg hover:opacity-90 text-white px-8 py-4 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all">
                   <Calculator className="mr-2 h-5 w-5" />
                   Calculează Acum
                 </Button>
-                <Button variant="outline" size="lg" className="border-2 border-white text-white hover:bg-white hover:text-brand-blue">
-                  Ghiduri Complete
-                </Button>
+                <Link href="/planificare">
+                  <Button variant="outline" size="lg" className="border-2 border-blue-300 text-gray-700 hover:bg-blue-50 px-8 py-4 text-lg rounded-xl">
+                    <MapPin className="mr-2 h-5 w-5" />
+                    Ghiduri Expert
+                  </Button>
+                </Link>
               </div>
             </div>
 
