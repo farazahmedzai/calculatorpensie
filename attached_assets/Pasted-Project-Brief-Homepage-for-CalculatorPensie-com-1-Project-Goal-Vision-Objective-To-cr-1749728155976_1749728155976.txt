@@ -1,0 +1,166 @@
+Project Brief: Homepage for CalculatorPensie.com
+
+1. Project Goal & Vision
+
+    Objective: To create the #1 ranking page on Google.ro for the keyword "Calculator Pensie".
+
+    Domain: https://calculatorpensie.com/
+
+    Vision: Our homepage will not just be a page about a pension calculator; it IS the calculator. It must be the fastest, most user-friendly, and most comprehensive pension calculation tool available to the Romanian public, outperforming both government sites (like CNPP) and private banks (like BT, ING).
+
+    Unique Selling Proposition (USP): We provide a free, instant, and accurate estimation for the state pension (Pilon I) and retirement age, presented in a clean, modern, and trustworthy interface.
+
+2. Target Audience
+
+    Who: Romanians, aged 30-65.
+
+    Their Problem: They are confused by the complex official pension system. They don't know their exact retirement date or what their estimated pension will be. They are anxious about their financial future.
+
+    Our Solution: We provide instant clarity and peace of mind with a simple tool. The tone of the entire page must be reassuring, professional, and easy to understand. Avoid complex jargon where possible, and explain it simply when it's necessary.
+
+3. Core Functional Requirement: The Pension Calculator Tool (For the Developer)
+
+This is the most critical element and must be placed "above the fold" (visible without scrolling) immediately under the H1.
+
+    Technology: Must be built with JavaScript to provide instant results without a page reload.
+
+    Input Fields (Required):
+
+        Data Nașterii (Date of Birth): Use a date picker input.
+
+        Sex (Gender): Radio buttons (Bărbat / Femeie). This is crucial as retirement ages differ.
+
+        Salariu Brut Lunar Actual (Current Gross Monthly Salary) (RON): A number input field. Include a small (?) tooltip explaining this is used for estimation.
+
+        Stagiu de Cotizare Actual (Current Contribution Period) (Ani): A number input field for years. Tooltip: "Câți ani ai lucrat cu contract de muncă până acum?" (How many years have you worked so far?).
+
+        Condiții de Muncă (Work Conditions): Dropdown/select menu: Normale, Deosebite, Speciale. Tooltip explaining this can reduce the retirement age.
+
+    Calculation Logic:
+
+        The calculator must use the current, official Vârsta standard de pensionare and Stagiu complet de cotizare tables from the CNPP.
+
+        The pension estimation should use the current official Valoarea Punctului de Pensie (VPP). You must state this value clearly below the calculator (e.g., "Calcul bazat pe valoarea punctului de pensie de 2.031 lei, valabil în 2024").
+
+        Disclaimer: The result is an estimation. A clear, non-intrusive text must be present: "Acest calcul este o estimare informativă și nu are valoare oficială. Pentru calculul exact, vă rugăm să consultați Casa Națională de Pensii Publice (CNPP)."
+
+    Output Fields (The Results):
+
+        Results must appear instantly after the user fills the final field.
+
+        Display results clearly in a highlighted box.
+
+        Vârsta Dvs. de Pensionare: XX ani și Y luni
+
+        Data Estimată a Pensionării: Luna, Anul
+
+        Estimare Pensie Lunară (Pilon I): ~XXXX RON
+
+4. On-Page SEO & Content Structure (For the Content Writer & SEO Specialist)
+
+This is the exact structure and content required for the homepage.
+
+    URL: https://calculatorpensie.com/
+
+    Meta Title (Title Tag):
+    Calculator Pensie 2024 - Calculează Pensia de Stat (Pilon I) și Privată | CalculatorPensie.com
+
+    Meta Description:
+    ✅ Folosește cel mai simplu calculator de pensie online. Află vârsta de pensionare și estimează-ți pensia lunară (Pilon I și II) în mai puțin de 60 de secunde. Gratuit și precis!
+
+Full Page Content Blueprint
+
+<h1>
+Calculator Pensie Online 2024: Află Vârsta și Valoarea Pensiei Tale
+</h1>
+
+(Here, insert the interactive calculator tool built by the developer)
+
+<h2>
+Cum Funcționează Calculatorul Nostru de Pensie?
+</h2>
+(Content instruction: Write 2-3 paragraphs explaining in simple terms what the tool does. State that it uses the official formula and up-to-date data according to Romanian law. Keywords to include: calcul pensie, legea pensiilor, punct de pensie 2024, stagiu de cotizare, CNPP.)
+
+<h2>
+Înțelegerea Sistemului de Pensii din România pe Scurt
+</h2>
+(Content instruction: Write a short introductory paragraph explaining that the system is based on 3 pillars and our tool focuses primarily on Pilon I, the state pension, which is the foundation for everyone.)
+
+<h3>
+Pilonul I: Pensia de Stat (Publică și Obligatorie)
+</h3>
+(Content instruction: Explain what this is—the pension everyone who works legally contributes to. Define key terms simply: stagiu de cotizare, punctaj mediu anual, and valoarea punctului de pensie. Keep it brief and clear.)
+
+<h3>
+Pilonul II: Pensia Administrată Privat (Obligatorie)
+</h3>
+(Content instruction: Explain that a portion of the state contribution (CAS) is automatically redirected to a private fund. Mention that the final pension will be a sum of Pilon I + Pilon II. Keywords: pensie pilonul 2, contributii sociale, fond de pensii.)
+
+<h3>
+Pilonul III: Pensia Facultativă (Opțională)
+</h3>
+(Content instruction: Briefly explain this as an extra, optional savings plan for retirement, similar to a personal savings account but with tax benefits. Keywords: pensie pilonul 3, pensie facultativă.)
+
+<h2>
+Factori Cheie în Calculul Pensiei Tale
+</h2>
+
+<h3>
+Vârsta Standard de Pensionare și Stagiul de Cotizare
+</h3>
+(Content instruction: Explain that the retirement age is not fixed and depends on gender and the total number of years worked. You must include an HTML table summarizing the standard retirement ages for men and women as per the current law.)
+
+<h3>
+Formula Oficială de Calcul a Pensiei de Stat
+</h3>
+(Content instruction: Display the official formula in a clear, styled box to make it stand out:
+Pensie = Punctaj Mediu Anual (PMA) x Valoarea Punctului de Pensie (VPP)
+Briefly explain what each component means in one sentence.)
+
+<h2>
+Întrebări Frecvente (FAQ) despre Calculul Pensiei
+</h2>
+(Content instruction: This section is critical for ranking. Answer each question clearly and concisely.)
+
+<h3> La ce vârstă mă pot pensiona? </h3>
+(Answer: Explain it depends on gender and contribution history, and direct them to use our calculator for an exact date.)
+
+<h3> Cum se calculează pensia anticipată? </h3>
+(Answer: Explain briefly that it's possible to retire a few years early but with a penalty on the monthly pension amount. Keywords: pensie anticipata, pensie anticipata partial.)
+
+<h3> Care este valoarea punctului de pensie în 2024? </h3>
+(Answer: State the exact value: "Începând cu 1 ianuarie 2024, valoarea punctului de pensie este de 2.031 lei." Cite the official source.)
+
+<h3> Pot să-mi măresc pensia? </h3>
+(Answer: Yes, by contributing to Pilonul III (pensia facultativă) or by continuing to work after reaching the standard retirement age.)
+
+<h3> Unde pot vedea stagiul meu de cotizare oficial? </h3>
+(Answer: Direct users to the official source: "Puteți verifica stagiul de cotizare exact creând un cont online pe portalul Casei Naționale de Pensii Publice (CNPP.ro).")
+
+5. Technical SEO & User Experience (UX) Checklist (For Developer & Designer)
+
+    Mobile-First Design: The entire page, especially the calculator, must be flawless and easy to use on a small mobile screen.
+
+    Page Speed: Target a Load Contentful Paint (LCP) of under 2.5 seconds. Optimize images, minify CSS/JS. The site must feel instant.
+
+    Schema Markup: Implement FAQPage schema for the FAQ section. This is mandatory for getting rich snippets in Google Search.
+
+    Visual Design: Clean, professional, and trustworthy. Use a simple color palette (e.g., blues, greys, whites). Use large, readable fonts. The design should inspire confidence, not look like a spammy site.
+
+    Calls-to-Action (CTAs): The primary CTA is for the user to use the calculator. All content should support this.
+
+6. Trust & Authority Elements (E-E-A-T) (For All Team Members)
+
+To compete with banks and government sites, we must build trust.
+
+    Create separate "utility" pages that are linked in the website's footer:
+
+        Despre Noi (About Us): Explain the mission of CalculatorPensie.com.
+
+        Metodologie Calcul (Calculation Methodology): A dedicated page explaining the formulas and data sources we use. Be transparent. Link to the official laws.
+
+        Contact: A simple contact form or email address.
+
+        Politică de Confidențialitate (Privacy Policy): State clearly that you do not store any personal data entered into the calculator.
+
+By executing this detailed plan, the team will produce a high-quality, SEO-optimized, and user-focused homepage that has the maximum potential to rank #1 for "Calculator Pensie".
