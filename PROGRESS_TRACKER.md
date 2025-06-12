@@ -1,4 +1,10 @@
-# CalculatorPensie.com - Progress Tracker
+# CalculatorPensie.com - Progress Tracker: Path to #1 Google Ranking
+
+## Mission: Become Romania's #1 "Calculator Pensie" Result
+
+**Domain**: https://calculatorpensie.com/
+**Target Audience**: Romanians aged 30-65, confused by complex pension system
+**Solution**: Free, instant, accurate pension estimation with professional, reassuring interface
 
 ## Development Timeline
 
@@ -52,25 +58,26 @@
 - ✅ Mobile-first responsive design
 - ✅ Loading states and error handling
 
-### Phase 5: Technical Fixes 🔄 IN PROGRESS
-**Duration**: Current Sprint
-**Status**: 🔄 75% Complete
+### Phase 5: Homepage SEO Optimization 🔄 IN PROGRESS
+**Duration**: Current Sprint - Critical for #1 Ranking
+**Status**: 🔄 60% Complete
 
-#### Completed Tasks:
-- ✅ Fixed useSearchParams import issue
-- ✅ Resolved TypeScript schema type mismatches
-- ✅ Updated date handling in storage layer
-- ✅ Fixed article creation type errors
+#### Homepage Requirements from Project Brief:
+- ✅ Above-fold calculator (Data Nașterii, Sex, Salariu, Stagiu, Condiții Muncă)
+- ✅ Instant JavaScript calculations without page reload
+- ✅ Official Romanian pension formulas implemented
+- ✅ Current pension point value display (2.031 Lei, 2024)
+- ✅ Gender-based retirement age calculations
+- ✅ Work conditions dropdown (Normale/Deosebite/Speciale)
+- ✅ Clear calculation disclaimer
 
-#### In Progress:
-- 🔄 Fixing navigation nested anchor tag warnings
-- 🔄 Resolving Vite server configuration errors
-- 🔄 Adding proper error boundaries
-
-#### Remaining:
-- ❌ Complete SEO meta tags implementation
-- ❌ Add Schema.org markup
-- ❌ Implement canonical tags
+#### Critical SEO Elements:
+- ✅ H1: "Calculator Pensie Online 2024: Află Vârsta și Valoarea Pensiei Tale"
+- ✅ Meta Title: "Calculator Pensie 2024 - Calculează Pensia de Stat (Pilon I) și Privată | CalculatorPensie.com"
+- ✅ Meta Description: "✅ Folosește cel mai simplu calculator de pensie online..."
+- ❌ Schema.org WebApplication markup
+- ❌ FAQ section with rich snippets potential
+- ❌ Trust pages (Despre Noi, Metodologie, Contact, Privacy Policy)
 
 ## Current Status Summary
 
@@ -93,23 +100,37 @@
 - 🚀 Smooth navigation
 - 🚀 Mobile-optimized experience
 
-## Next Phase Planning
+## Next Phase Planning - Compete with CNPP and Banks
 
-### Phase 6: SEO Optimization (Next Sprint)
-- Meta tags and Open Graph implementation
-- Schema.org markup for calculators and articles
-- Sitemap generation and submission
-- Google Analytics integration
-- Search Console setup
+### Phase 6: Authority & Trust Building (Week 1-2)
+**Goal**: Establish E-E-A-T to compete with government/bank sites
+- ❌ Create "Despre Noi" page explaining mission
+- ❌ "Metodologie Calcul" page with formula transparency
+- ❌ Contact page with professional presence
+- ❌ Privacy Policy stating no data storage
+- ❌ FAQ page targeting "La ce vârstă mă pot pensiona?" for rich snippets
+- ❌ Schema.org FAQPage markup implementation
 
-### Phase 7: Content Expansion
-- Complete all 12 cluster articles per SEO strategy
-- FAQ sections for pillar pages
-- Newsletter subscription system
-- PDF generation for calculation results
+### Phase 7: Technical Performance (Week 2-3)
+**Goal**: Achieve <2.5s LCP to outperform slower government sites
+- ❌ Core Web Vitals optimization
+- ❌ Image optimization to WebP format
+- ❌ Service worker implementation for caching
+- ❌ JavaScript bundle optimization
+- ❌ Mobile performance enhancement
 
-### Phase 8: Advanced Features
-- User session management
-- Calculation history
-- Admin panel for content management
-- Enhanced analytics and tracking
+### Phase 8: Content Authority (Week 3-4)
+**Goal**: Complete silo architecture for topical authority
+- ❌ Expand pillar pages to 3000+ words each
+- ❌ Complete all 12 cluster articles per SEO strategy
+- ❌ Implement comprehensive internal linking
+- ❌ Add retirement age tables and official formulas
+- ❌ Create annual pension study content
+
+### Phase 9: Market Dominance (Month 2-3)
+**Goal**: Build backlinks and partnerships to compete with established sites
+- ❌ Guest posting on financial websites
+- ❌ CNPP partnership for official resource status
+- ❌ Media outreach for pension law changes
+- ❌ Professional network collaboration
+- ❌ Annual "Radiografia Pensionarului Român" study

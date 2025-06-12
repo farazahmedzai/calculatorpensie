@@ -1,15 +1,46 @@
-# CalculatorPensie.com - SEO Implementation Guide
+# CalculatorPensie.com - SEO Implementation Guide: #1 Google Ranking Strategy
 
-## SEO Strategy Overview
+## Mission: Rank #1 on Google.ro for "Calculator Pensie"
 
-Based on the comprehensive SEO strategy document, this guide outlines the complete implementation plan for positioning CalculatorPensie.com as Romania's #1 pension calculation authority.
+**Domain**: https://calculatorpensie.com/  
+**Vision**: The homepage IS the calculator - fastest, most user-friendly, most comprehensive pension tool in Romania, outperforming CNPP and private banks (BT, ING).  
+**Target Audience**: Romanians aged 30-65, anxious about financial future, confused by complex pension system.
+
+## Homepage Content Blueprint - Exact Implementation
 
 ## Content Architecture (Silo Structure)
 
-### Homepage - Calculator Pensie
-**Primary Keyword**: calculator pensie  
-**Meta Title**: Calculator Pensie 2024 - Calculează Online Pensia Rapid și Corect | CalculatorPensie.com  
-**Meta Description**: Folosește cel mai precis calculator de pensie online pentru a-ți estima venitul la bătrânețe. Planifică-ți viitorul financiar cu instrumentele și ghidurile noastre complete.
+### Homepage SEO Requirements (Exact from Project Brief)
+
+**URL**: https://calculatorpensie.com/
+
+**Meta Title**:  
+`Calculator Pensie 2024 - Calculează Pensia de Stat (Pilon I) și Privată | CalculatorPensie.com`
+
+**Meta Description**:  
+`✅ Folosește cel mai simplu calculator de pensie online. Află vârsta de pensionare și estimează-ți pensia lunară (Pilon I și II) în mai puțin de 60 de secunde. Gratuit și precis!`
+
+**H1 Tag**:  
+`Calculator Pensie Online 2024: Află Vârsta și Valoarea Pensiei Tale`
+
+### Critical Above-Fold Calculator Requirements
+**Technology**: JavaScript (instant results, no page reload)
+
+**Required Input Fields**:
+1. **Data Nașterii**: Date picker input
+2. **Sex**: Radio buttons (Bărbat / Femeie) - affects retirement age
+3. **Salariu Brut Lunar Actual (RON)**: Number input with (?) tooltip
+4. **Stagiu de Cotizare Actual (Ani)**: Number input with tooltip "Câți ani ai lucrat cu contract de muncă până acum?"
+5. **Condiții de Muncă**: Dropdown (Normale/Deosebite/Speciale) with tooltip
+
+**Output Display**:
+- **Vârsta Dvs. de Pensionare**: XX ani și Y luni
+- **Data Estimată a Pensionării**: Luna, Anul  
+- **Estimare Pensie Lunară (Pilon I)**: ~XXXX RON
+
+**Required Disclaimers**:
+- Current pension point value: "Calcul bazat pe valoarea punctului de pensie de 2.031 lei, valabil în 2024"
+- Legal disclaimer: "Acest calcul este o estimare informativă și nu are valoare oficială. Pentru calculul exact, vă rugăm să consultați Casa Națională de Pensii Publice (CNPP)."
 
 ### Silo 1: Planificarea Pensiei
 **Pillar Page**: /planificare - "Ghid Complet pentru Planificarea Pensiei în România"
@@ -52,54 +83,102 @@ Based on the comprehensive SEO strategy document, this guide outlines the comple
 - **Calculator Links**: "calculatorul nostru de [type]"
 - **Authority Links**: "conform legislației oficiale CNPP"
 
-## Technical SEO Implementation
+## Homepage Content Structure (Exact Implementation Required)
 
-### Meta Tags Template
+### H1 Section
 ```html
-<!-- Homepage -->
-<title>Calculator Pensie 2024 - Calculează Online Pensia | CalculatorPensie.com</title>
-<meta name="description" content="Cel mai precis calculator de pensie online din România. Estimează pensia ta cu instrumente avansate și ghiduri complete de planificare.">
+<h1>Calculator Pensie Online 2024: Află Vârsta și Valoarea Pensiei Tale</h1>
+```
+**(Interactive calculator placed immediately after H1)**
 
-<!-- Pillar Pages -->
-<title>[Topic] - Ghid Complet 2024 | CalculatorPensie.com</title>
-<meta name="description" content="Ghidul exhaustiv despre [topic]. Învață tot ce trebuie să știi pentru o planificare optimă a pensiei tale.">
+### H2 Section 1
+```html
+<h2>Cum Funcționează Calculatorul Nostru de Pensie?</h2>
+```
+**Content**: 2-3 paragraphs explaining tool functionality using official formula and up-to-date Romanian law data. Keywords: calcul pensie, legea pensiilor, punct de pensie 2024, stagiu de cotizare, CNPP.
 
-<!-- Cluster Articles -->
-<title>[Specific Topic] - [Year] | CalculatorPensie.com</title>
-<meta name="description" content="[Compelling description of article content, 150-160 characters]">
+### H2 Section 2  
+```html
+<h2>Înțelegerea Sistemului de Pensii din România pe Scurt</h2>
+```
+**Content**: Introduction to 3-pillar system, focus on Pilon I (state pension foundation).
+
+### H3 Subsections
+```html
+<h3>Pilonul I: Pensia de Stat (Publică și Obligatorie)</h3>
+<h3>Pilonul II: Pensia Administrată Privat (Obligatorie)</h3>
+<h3>Pilonul III: Pensia Facultativă (Opțională)</h3>
 ```
 
-### Schema.org Markup Implementation
+### H2 Section 3
+```html
+<h2>Factori Cheie în Calculul Pensiei Tale</h2>
+```
 
-#### Calculator Pages
+#### Required Content Elements:
+1. **Retirement age table** (HTML table with current Romanian law)
+2. **Official formula display**: `Pensie = Punctaj Mediu Anual (PMA) x Valoarea Punctului de Pensie (VPP)`
+
+### H2 Section 4 - FAQ (Critical for Rich Snippets)
+```html
+<h2>Întrebări Frecvente (FAQ) despre Calculul Pensiei</h2>
+```
+
+**Required FAQ Questions**:
+- `<h3>La ce vârstă mă pot pensiona?</h3>`
+- `<h3>Cum se calculează pensia anticipată?</h3>`
+- `<h3>Care este valoarea punctului de pensie în 2024?</h3>`
+- `<h3>Pot să-mi măresc pensia?</h3>`
+- `<h3>Unde pot vedea stagiul meu de cotizare oficial?</h3>`
+
+### Critical Schema.org Markup (Required for Ranking)
+
+#### Homepage WebApplication Schema
 ```json
 {
   "@context": "https://schema.org",
   "@type": "WebApplication",
-  "name": "Calculator Pensie România",
-  "description": "Calculator online pentru estimarea pensiei în România",
+  "name": "Calculator Pensie Online România 2024",
+  "description": "Cel mai precis calculator de pensie online din România. Calculează pensia de stat și vârsta de pensionare instant.",
   "applicationCategory": "FinanceApplication",
-  "operatingSystem": "Web Browser"
+  "operatingSystem": "Web Browser",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "RON"
+  },
+  "featureList": [
+    "Calculul pensiei de stat (Pilon I)",
+    "Calculul pensiei anticipate",
+    "Calculul contribuțiilor Pilon III",
+    "Estimarea vârstei de pensionare"
+  ]
 }
 ```
 
-#### Article Pages
+#### FAQPage Schema (Critical for Rich Snippets)
 ```json
 {
   "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "[Article Title]",
-  "description": "[Article Description]",
-  "author": {
-    "@type": "Organization",
-    "name": "CalculatorPensie.com"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "CalculatorPensie.com"
-  },
-  "datePublished": "[Date]",
-  "dateModified": "[Date]"
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "La ce vârstă mă pot pensiona?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Vârsta de pensionare depinde de sex și istoricul de cotizare. Folosește calculatorul nostru pentru data exactă."
+      }
+    },
+    {
+      "@type": "Question", 
+      "name": "Care este valoarea punctului de pensie în 2024?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Începând cu 1 ianuarie 2024, valoarea punctului de pensie este de 2.031 lei."
+      }
+    }
+  ]
 }
 ```
 
@@ -150,19 +229,31 @@ Based on the comprehensive SEO strategy document, this guide outlines the comple
 - **CNPP Relations**: Official resource partnerships
 - **Media Outreach**: Press releases for major updates
 
-## Technical Performance Optimization
+## Trust & Authority Elements (E-E-A-T) - Required Pages
 
-### Core Web Vitals Targets
-- **LCP (Largest Contentful Paint)**: < 2.5s
-- **FID (First Input Delay)**: < 100ms  
-- **CLS (Cumulative Layout Shift)**: < 0.1
+### Critical Missing Pages for Authority:
+1. **Despre Noi** (`/despre-noi`): Mission of CalculatorPensie.com
+2. **Metodologie Calcul** (`/metodologie`): Formula transparency, data sources, links to official laws
+3. **Contact** (`/contact`): Simple contact form or email address
+4. **Politică de Confidențialitate** (`/privacy`): Clear statement that no personal data is stored in calculator
 
-### Implementation Checklist
-- [ ] Implement lazy loading for images
-- [ ] Add service worker for caching
-- [ ] Optimize JavaScript bundle size
-- [ ] Set up CDN for static assets
-- [ ] Compress images to WebP format
+### Technical Performance Optimization
+
+**Target**: Outperform slower government sites and banking platforms
+
+### Core Web Vitals Targets (Critical for Ranking)
+- **LCP (Largest Contentful Paint)**: < 2.5s (faster than CNPP.ro)
+- **FID (First Input Delay)**: < 100ms (instant calculator response)
+- **CLS (Cumulative Layout Shift)**: < 0.1 (stable layout)
+
+### Implementation Priority Checklist
+- [ ] **CRITICAL**: Schema.org WebApplication + FAQPage markup
+- [ ] **CRITICAL**: FAQ section with rich snippet targeting
+- [ ] **HIGH**: Core Web Vitals optimization
+- [ ] **HIGH**: Mobile-first calculator interface
+- [ ] **MEDIUM**: Image optimization to WebP format
+- [ ] **MEDIUM**: Service worker for caching
+- [ ] **LOW**: JavaScript bundle optimization
 
 ## Analytics and Tracking Setup
 
