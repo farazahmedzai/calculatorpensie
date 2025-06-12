@@ -10,6 +10,10 @@ import PlanificarePage from "@/pages/guides/planificare";
 import TipuriPensiiPage from "@/pages/guides/tipuri-pensii";
 import LegislatiePage from "@/pages/guides/legislatie";
 import BlogPage from "@/pages/blog";
+import DespreNoi from "@/pages/despre-noi";
+import Metodologie from "@/pages/metodologie";
+import Contact from "@/pages/contact";
+import Privacy from "@/pages/privacy";
 import Header from "@/components/layout/header";
 import Footer from "@/components/layout/footer";
 
@@ -25,6 +29,10 @@ function Router() {
           <Route path="/tipuri-pensii" component={TipuriPensiiPage} />
           <Route path="/legislatie" component={LegislatiePage} />
           <Route path="/blog" component={BlogPage} />
+          <Route path="/despre-noi" component={DespreNoi} />
+          <Route path="/metodologie" component={Metodologie} />
+          <Route path="/contact" component={Contact} />
+          <Route path="/privacy" component={Privacy} />
           <Route component={NotFound} />
         </Switch>
       </main>
