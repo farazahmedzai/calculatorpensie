@@ -1,4 +1,11 @@
-# CalculatorPensie.com - Development Notes
+# CalculatorPensie.com - Development Notes: #1 Google Ranking Implementation
+
+## Mission: Rank #1 on Google.ro for "Calculator Pensie"
+
+**Domain**: https://calculatorpensie.com/  
+**Vision**: Homepage IS the calculator - outperform CNPP and private banks (BT, ING)  
+**Target**: Romanians aged 30-65, confused by complex pension system  
+**USP**: Free, instant, accurate pension estimation with professional interface
 
 ## Project Structure
 
@@ -30,48 +37,101 @@
 └── Documentation Files (.md)
 ```
 
-## Romanian Pension Calculation Formulas
+## Homepage Implementation Requirements (Project Brief)
 
-### Standard Pension Formula
+### Above-Fold Calculator (Critical for #1 Ranking)
+**Technology**: JavaScript with instant results (no page reload)
+
+**Required Input Fields**:
+1. **Data Nașterii**: Date picker input
+2. **Sex**: Radio buttons (Bărbat / Femeie) - crucial for retirement age differences
+3. **Salariu Brut Lunar Actual (RON)**: Number input with (?) tooltip explaining estimation use
+4. **Stagiu de Cotizare Actual (Ani)**: Number input with tooltip "Câți ani ai lucrat cu contract de muncă până acum?"
+5. **Condiții de Muncă**: Dropdown (Normale/Deosebite/Speciale) with tooltip explaining retirement age reduction
+
+**Output Display Requirements**:
+- **Vârsta Dvs. de Pensionare**: XX ani și Y luni
+- **Data Estimată a Pensionării**: Luna, Anul
+- **Estimare Pensie Lunară (Pilon I)**: ~XXXX RON
+
+**Mandatory Disclaimers**:
+- Current pension point value: "Calcul bazat pe valoarea punctului de pensie de 2.031 lei, valabil în 2024"
+- Legal disclaimer: "Acest calcul este o estimare informativă și nu are valoare oficială. Pentru calculul exact, vă rugăm să consultați Casa Națională de Pensii Publice (CNPP)."
+
+## Romanian Pension Calculation Formulas (Official CNPP)
+
+### Official Formula Implementation
 ```typescript
-// Basic calculation: (Average Income × Contribution Years × Accrual Rate) / 100
-const pensionAmount = (averageIncome * contributionYears * 1.265) / 100;
-const maxPension = averageIncome * 0.75; // 75% cap
-return Math.min(pensionAmount, maxPension);
+// Official Romanian pension formula
+const officialFormula = (punctajMediuAnual: number, valoareaPunctuluiPensie: number) => {
+  return punctajMediuAnual * valoareaPunctuluiPensie;
+};
+
+// Current values for 2024
+const PENSION_POINT_VALUE_2024 = 2031; // Lei
+const pensionAmount = officialFormula(punctajMediuAnual, PENSION_POINT_VALUE_2024);
 ```
+
+### Standard Retirement Ages (2024)
+- **Men**: 65 years with 35 years contribution
+- **Women**: 63 years with 30 years contribution
+- **Special Conditions**: Can reduce retirement age
+- **Early Retirement**: 0.25% penalty per month
 
 ### Early Retirement Penalties
 - **Men**: Can retire at 62 (3 years early) with 0.25% monthly penalty
-- **Women**: Can retire at 60 (7 years early) with 0.25% monthly penalty
+- **Women**: Can retire at 60 (3+ years early) with 0.25% monthly penalty  
 - **Minimum**: 15 years contribution required for early retirement
 
-### Pillar III Tax Advantages
-- **Annual Deduction**: Up to €400 (approximately 2000 Lei)
-- **Tax Rate**: 10% on contributions
-- **Withdrawal**: Tax-free after 5 years and age 60
+### Work Conditions Impact
+- **Normale**: Standard retirement age
+- **Deosebite**: 2 years earlier retirement possible
+- **Speciale**: 5+ years earlier retirement possible
+
+## Homepage Content Structure (Exact Implementation)
+
+### Required H1
+```html
+<h1>Calculator Pensie Online 2024: Află Vârsta și Valoarea Pensiei Tale</h1>
+```
+
+### Required H2 Sections
+1. **Cum Funcționează Calculatorul Nostru de Pensie?** (2-3 paragraphs with keywords: calcul pensie, legea pensiilor, punct de pensie 2024, stagiu de cotizare, CNPP)
+2. **Înțelegerea Sistemului de Pensii din România pe Scurt** (3-pillar introduction)
+3. **Factori Cheie în Calculul Pensiei Tale** (retirement age table + official formula)
+4. **Întrebări Frecvente (FAQ) despre Calculul Pensiei** (rich snippets targeting)
+
+### Required H3 Subsections
+- Pilonul I: Pensia de Stat (Publică și Obligatorie)
+- Pilonul II: Pensia Administrată Privat (Obligatorie)  
+- Pilonul III: Pensia Facultativă (Opțională)
+- Vârsta Standard de Pensionare și Stagiul de Cotizare
+- Formula Oficială de Calcul a Pensiei de Stat
+
+### Critical FAQ Questions (Rich Snippets)
+- La ce vârstă mă pot pensiona?
+- Cum se calculează pensia anticipată?
+- Care este valoarea punctului de pensie în 2024?
+- Pot să-mi măresc pensia?
+- Unde pot vedea stagiul meu de cotizare oficial?
 
 ## Technical Implementation Details
 
-### Calculator Logic
-All calculations are performed client-side using validated Romanian pension formulas:
+### Calculator Logic (Client-Side JavaScript)
+- Instant results without page reload (outperform slow government sites)
 - Input validation with Zod schemas
 - Real-time calculation updates
-- Results formatted in Romanian Lei
-- Mobile-optimized input forms
+- Results formatted in Romanian Lei (e.g., "2.500 Lei")
+- Mobile-first responsive design
+- Gender-based retirement age calculations
+- Work conditions affecting retirement age
 
-### Content Management
-Articles stored in memory with full SEO structure:
-- Category-based organization (planificare, tipuri-pensii, legislatie)
-- Meta descriptions and SEO-friendly slugs
-- Reading time estimation
-- Publication status management
-
-### API Design
-RESTful endpoints for:
-- `/api/articles` - Article management
-- `/api/articles/recent` - Homepage content
-- `/api/calculations` - Pension calculation history
-- `/api/newsletter` - Email subscriptions
+### SEO Technical Requirements
+- Schema.org WebApplication markup for calculator
+- Schema.org FAQPage markup for rich snippets
+- Meta title: "Calculator Pensie 2024 - Calculează Pensia de Stat (Pilon I) și Privată | CalculatorPensie.com"
+- Meta description: "✅ Folosește cel mai simplu calculator de pensie online. Află vârsta de pensionare și estimează-ți pensia lunară (Pilon I și II) în mai puțin de 60 de secunde. Gratuit și precis!"
+- Core Web Vitals optimization (<2.5s LCP target)
 
 ## SEO Strategy Implementation
 
@@ -95,21 +155,33 @@ Each article follows SEO best practices:
 - Meta descriptions 150-160 characters
 - Internal links with descriptive anchor text
 
-## Known Technical Issues
+## Authority & Trust Building (E-E-A-T) Requirements
 
-### Minor Console Warnings
+### Critical Missing Pages for Ranking
+1. **Despre Noi** (`/despre-noi`): Explain CalculatorPensie.com mission  
+2. **Metodologie Calcul** (`/metodologie`): Formula transparency, data sources, links to official laws
+3. **Contact** (`/contact`): Simple contact form or email address
+4. **Politică de Confidențialitate** (`/privacy`): Clear statement that no personal data stored in calculator
+
+### Known Technical Issues
+
+### High Priority Fixes (Critical for #1 Ranking)
+1. **Schema.org Implementation**: WebApplication + FAQPage markup missing
+2. **FAQ Section**: Rich snippets opportunity not implemented
+3. **Trust Pages**: Missing authority pages hurting E-E-A-T
+4. **Core Web Vitals**: Need <2.5s LCP to outperform CNPP.ro
+
+### Minor Console Warnings (Low Priority)
 1. **Navigation Links**: Nested anchor tag warnings (non-critical)
-   - Using wouter Link component with span instead of anchor
-   - Does not affect functionality or SEO
+2. **Vite Configuration**: Type mismatch in server options (development-only)
 
-2. **Vite Configuration**: Type mismatch in server options (non-critical)
-   - Development-only warning
-   - Does not affect production build
-
-### Performance Considerations
-- All images should be optimized to WebP format
-- Consider implementing service worker for caching
-- Bundle size optimization for production deployment
+### Performance Optimization Targets
+- **Target LCP**: <2.5s (faster than government sites)
+- **Target FID**: <100ms (instant calculator response)
+- **Target CLS**: <0.1 (stable layout)
+- Image optimization to WebP format
+- Service worker implementation for caching
+- JavaScript bundle optimization
 
 ## Romanian Market Considerations
 
@@ -130,24 +202,38 @@ Each article follows SEO best practices:
 - Regular updates on legislative changes
 - Expert-level content to establish authority
 
-## Deployment Checklist
+## #1 Ranking Deployment Strategy
 
-### Pre-Launch Requirements
-- [ ] Complete Schema.org markup implementation
-- [ ] Add canonical tags to prevent duplicate content
-- [ ] Set up Google Analytics 4 with conversion tracking
-- [ ] Submit sitemap to Google Search Console
-- [ ] Test all calculators with edge cases
-- [ ] Verify mobile responsiveness on various devices
-- [ ] Check all internal links are working
-- [ ] Validate HTML and accessibility compliance
+### Critical Pre-Launch Requirements (Week 1)
+- [ ] **CRITICAL**: Schema.org WebApplication markup for calculator
+- [ ] **CRITICAL**: Schema.org FAQPage markup for rich snippets  
+- [ ] **CRITICAL**: FAQ section targeting "La ce vârstă mă pot pensiona?"
+- [ ] **CRITICAL**: Trust pages (Despre Noi, Metodologie, Contact, Privacy)
+- [ ] **HIGH**: Core Web Vitals optimization (<2.5s LCP)
+- [ ] **HIGH**: Mobile-first calculator interface verification
+- [ ] **MEDIUM**: Google Analytics 4 with conversion tracking
+- [ ] **MEDIUM**: Submit sitemap to Google Search Console
 
-### Post-Launch Monitoring
-- Monitor Core Web Vitals performance
-- Track keyword rankings for "calculator pensie"
-- Analyze user behavior with calculator tools
-- Monitor for crawl errors in Search Console
-- Track newsletter subscription conversion rates
+### Authority Building Requirements (Week 2-4)
+- [ ] Complete all 12 cluster articles per silo strategy
+- [ ] Expand pillar pages to 3000+ words each
+- [ ] Implement comprehensive internal linking
+- [ ] Add retirement age tables with current Romanian law
+- [ ] Create official formula display section
+- [ ] Add current pension point value prominence
+
+### Competition Analysis & Monitoring
+- **Primary Competitors**: CNPP.ro, BT.ro/pensii, ING.ro/pensii
+- **Target Keywords**: "calculator pensie", "pensie romania", "vârsta pensionare"
+- **Performance Targets**: Faster loading than government sites, more user-friendly than bank calculators
+- **Success Metrics**: #1 ranking for "calculator pensie", organic traffic growth, calculator usage rates
+
+### Post-Launch #1 Ranking Monitoring
+- Daily keyword ranking tracking for "calculator pensie"
+- Core Web Vitals performance vs competitors
+- User engagement metrics (time on site, calculator completion rate)
+- Rich snippet appearance for FAQ questions
+- Backlink acquisition from financial sites and government partnerships
 
 ## Future Enhancement Roadmap
 
