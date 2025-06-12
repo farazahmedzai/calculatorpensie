@@ -1,10 +1,15 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import MainCalculator from "@/components/calculators/main-calculator";
-import { Calculator, FastForward, PiggyBank, ChartLine, MapPin, ListCheck, Gavel, Clock } from "lucide-react";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
+import { Calculator, HelpCircle, Calendar, Users, TrendingUp, MapPin, ListCheck, Gavel, FastForward, PiggyBank, ChartLine, Clock } from "lucide-react";
 import { Link } from "wouter";
 import { useQuery } from "@tanstack/react-query";
+import { calculateStandardPension } from "@/lib/pension-calculations";
 
 interface Article {
   id: number;
@@ -17,72 +22,445 @@ interface Article {
 }
 
 export default function Home() {
-  const [showResults, setShowResults] = useState(false);
-  const [calculationResult, setCalculationResult] = useState<number | null>(null);
+  // Calculator state
+  const [birthDate, setBirthDate] = useState("");
+  const [gender, setGender] = useState("");
+  const [monthlySalary, setMonthlySalary] = useState("");
+  const [contributionYears, setContributionYears] = useState("");
+  const [workConditions, setWorkConditions] = useState("");
+  const [calculationResult, setCalculationResult] = useState<{
+    retirementAge: string;
+    retirementDate: string;
+    monthlyPension: number;
+  } | null>(null);
 
   const { data: articles = [] } = useQuery<Article[]>({
     queryKey: ['/api/articles/recent'],
   });
 
-  const handleCalculationComplete = (result: number) => {
-    setCalculationResult(result);
-    setShowResults(true);
-  };
+  const calculatePension = () => {
+    if (!birthDate || !gender || !monthlySalary || !contributionYears || !workConditions) return;
 
-  const scrollToCalculator = () => {
-    document.getElementById('calculator')?.scrollIntoView({ behavior: 'smooth' });
+    const currentAge = new Date().getFullYear() - new Date(birthDate).getFullYear();
+    const standardRetirementAge = gender === "male" ? 65 : 63;
+    const minimumContribution = gender === "male" ? 35 : 30;
+    
+    // Adjust for work conditions
+    let adjustedRetirementAge = standardRetirementAge;
+    if (workConditions === "deosebite") adjustedRetirementAge -= 2;
+    if (workConditions === "speciale") adjustedRetirementAge -= 5;
+
+    const result = calculateStandardPension({
+      currentAge,
+      monthlyIncome: parseFloat(monthlySalary),
+      contributionYears: parseInt(contributionYears),
+      retirementAge: adjustedRetirementAge
+    });
+
+    const retirementYear = new Date().getFullYear() + (adjustedRetirementAge - currentAge);
+    const retirementMonth = new Date(birthDate).getMonth();
+    const monthNames = ["Ianuarie", "Februarie", "Martie", "Aprilie", "Mai", "Iunie", 
+                       "Iulie", "August", "Septembrie", "Octombrie", "Noiembrie", "Decembrie"];
+
+    setCalculationResult({
+      retirementAge: `${adjustedRetirementAge} ani`,
+      retirementDate: `${monthNames[retirementMonth]} ${retirementYear}`,
+      monthlyPension: result
+    });
   };
 
   return (
     <div className="bg-white">
-      {/* Hero Section */}
-      <section className="hero-section py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <div>
-              <div className="inline-flex items-center px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-medium mb-6">
-                <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
-                #1 Calculator Pensie România
-              </div>
-              <h1 className="text-5xl lg:text-6xl font-bold mb-6 leading-tight text-gray-900">
-                Calculează-ți
-                <span className="gradient-text block">Pensia Viitoare</span>
-              </h1>
-              <p className="text-xl mb-8 text-gray-600 leading-relaxed">
-                Cel mai precis calculator de pensie din România cu funcții avansate pentru 
-                planificarea pensiei standard, anticipate și Pilonul III.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Button onClick={scrollToCalculator} size="lg" className="gradient-bg hover:opacity-90 text-white px-8 py-4 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all">
-                  <Calculator className="mr-2 h-5 w-5" />
-                  Calculează Acum
-                </Button>
-                <Link href="/planificare">
-                  <Button variant="outline" size="lg" className="border-2 border-blue-300 text-gray-700 hover:bg-blue-50 px-8 py-4 text-lg rounded-xl">
-                    <MapPin className="mr-2 h-5 w-5" />
-                    Ghiduri Expert
-                  </Button>
-                </Link>
-              </div>
-            </div>
+      {/* SEO Meta Tags - Implemented in head */}
+      
+      {/* Above-Fold Calculator Section */}
+      <section className="py-12 bg-gradient-to-br from-blue-50 to-indigo-100">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* H1 - Exact from Project Brief */}
+          <div className="text-center mb-8">
+            <h1 className="text-4xl lg:text-5xl font-bold mb-4 text-gray-900">
+              Calculator Pensie Online 2024: Află Vârsta și Valoarea Pensiei Tale
+            </h1>
+            <p className="text-xl text-gray-600 max-w-4xl mx-auto">
+              Folosește cel mai simplu calculator de pensie online. Află vârsta de pensionare și estimează-ți pensia lunară (Pilon I și II) în mai puțin de 60 de secunde. Gratuit și precis!
+            </p>
+          </div>
 
-            {/* Main Calculator Widget */}
-            <Card className="bg-white text-neutral-dark shadow-2xl">
-              <CardContent className="p-8">
-                <h3 className="text-2xl font-bold mb-6 text-center">Calculator Pensie Rapid</h3>
-                <MainCalculator onCalculationComplete={handleCalculationComplete} />
-                
-                {showResults && calculationResult && (
-                  <div className="mt-6 p-4 bg-brand-green bg-opacity-10 rounded-lg border border-brand-green border-opacity-20">
-                    <h4 className="font-semibold text-brand-green mb-2">Rezultatul calculului:</h4>
-                    <p className="text-2xl font-bold text-brand-green">
-                      {calculationResult.toLocaleString('ro-RO', { maximumFractionDigits: 0 })} RON/lună
-                    </p>
-                    <p className="text-sm text-neutral-medium mt-1">*Estimare bazată pe legislația actuală</p>
+          {/* Above-Fold Calculator - Required Input Fields */}
+          <Card className="max-w-4xl mx-auto bg-white shadow-xl">
+            <CardContent className="p-8">
+              <TooltipProvider>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  
+                  {/* Data Nașterii - Date Picker */}
+                  <div className="space-y-2">
+                    <Label htmlFor="birthDate" className="text-sm font-medium flex items-center gap-2">
+                      <Calendar className="h-4 w-4" />
+                      Data Nașterii
+                    </Label>
+                    <Input
+                      id="birthDate"
+                      type="date"
+                      value={birthDate}
+                      onChange={(e) => {
+                        setBirthDate(e.target.value);
+                        if (e.target.value && gender && monthlySalary && contributionYears && workConditions) {
+                          calculatePension();
+                        }
+                      }}
+                      className="w-full"
+                    />
+                  </div>
+
+                  {/* Sex - Radio Buttons (Bărbat/Femeie) */}
+                  <div className="space-y-2">
+                    <Label className="text-sm font-medium flex items-center gap-2">
+                      <Users className="h-4 w-4" />
+                      Sex
+                    </Label>
+                    <RadioGroup
+                      value={gender}
+                      onValueChange={(value) => {
+                        setGender(value);
+                        if (birthDate && value && monthlySalary && contributionYears && workConditions) {
+                          calculatePension();
+                        }
+                      }}
+                      className="flex gap-6"
+                    >
+                      <div className="flex items-center space-x-2">
+                        <RadioGroupItem value="male" id="male" />
+                        <Label htmlFor="male">Bărbat</Label>
+                      </div>
+                      <div className="flex items-center space-x-2">
+                        <RadioGroupItem value="female" id="female" />
+                        <Label htmlFor="female">Femeie</Label>
+                      </div>
+                    </RadioGroup>
+                  </div>
+
+                  {/* Salariu Brut Lunar Actual (RON) */}
+                  <div className="space-y-2">
+                    <Label htmlFor="salary" className="text-sm font-medium flex items-center gap-2">
+                      <TrendingUp className="h-4 w-4" />
+                      Salariu Brut Lunar Actual (RON)
+                      <Tooltip>
+                        <TooltipTrigger>
+                          <HelpCircle className="h-4 w-4 text-gray-400" />
+                        </TooltipTrigger>
+                        <TooltipContent>
+                          <p>Acest salariu este folosit pentru estimare</p>
+                        </TooltipContent>
+                      </Tooltip>
+                    </Label>
+                    <Input
+                      id="salary"
+                      type="number"
+                      placeholder="Ex: 3500"
+                      value={monthlySalary}
+                      onChange={(e) => {
+                        setMonthlySalary(e.target.value);
+                        if (birthDate && gender && e.target.value && contributionYears && workConditions) {
+                          calculatePension();
+                        }
+                      }}
+                      className="w-full"
+                    />
+                  </div>
+
+                  {/* Stagiu de Cotizare Actual (Ani) */}
+                  <div className="space-y-2">
+                    <Label htmlFor="contribution" className="text-sm font-medium flex items-center gap-2">
+                      <Calculator className="h-4 w-4" />
+                      Stagiu de Cotizare Actual (Ani)
+                      <Tooltip>
+                        <TooltipTrigger>
+                          <HelpCircle className="h-4 w-4 text-gray-400" />
+                        </TooltipTrigger>
+                        <TooltipContent>
+                          <p>Câți ani ai lucrat cu contract de muncă până acum?</p>
+                        </TooltipContent>
+                      </Tooltip>
+                    </Label>
+                    <Input
+                      id="contribution"
+                      type="number"
+                      placeholder="Ex: 15"
+                      value={contributionYears}
+                      onChange={(e) => {
+                        setContributionYears(e.target.value);
+                        if (birthDate && gender && monthlySalary && e.target.value && workConditions) {
+                          calculatePension();
+                        }
+                      }}
+                      className="w-full"
+                    />
+                  </div>
+
+                  {/* Condiții de Muncă - Dropdown */}
+                  <div className="space-y-2 md:col-span-2">
+                    <Label className="text-sm font-medium flex items-center gap-2">
+                      Condiții de Muncă
+                      <Tooltip>
+                        <TooltipTrigger>
+                          <HelpCircle className="h-4 w-4 text-gray-400" />
+                        </TooltipTrigger>
+                        <TooltipContent>
+                          <p>Poate reduce vârsta de pensionare</p>
+                        </TooltipContent>
+                      </Tooltip>
+                    </Label>
+                    <Select
+                      value={workConditions}
+                      onValueChange={(value) => {
+                        setWorkConditions(value);
+                        if (birthDate && gender && monthlySalary && contributionYears && value) {
+                          calculatePension();
+                        }
+                      }}
+                    >
+                      <SelectTrigger className="w-full">
+                        <SelectValue placeholder="Selectează condițiile de muncă" />
+                      </SelectTrigger>
+                      <SelectContent>
+                        <SelectItem value="normale">Normale</SelectItem>
+                        <SelectItem value="deosebite">Deosebite</SelectItem>
+                        <SelectItem value="speciale">Speciale</SelectItem>
+                      </SelectContent>
+                    </Select>
+                  </div>
+                </div>
+
+                {/* Results Display - Instant Results */}
+                {calculationResult && (
+                  <div className="mt-8 p-6 bg-blue-50 rounded-lg border border-blue-200">
+                    <h3 className="text-xl font-semibold mb-4 text-blue-900">Rezultatele Calculului</h3>
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                      <div className="text-center">
+                        <p className="text-sm text-gray-600">Vârsta Dvs. de Pensionare</p>
+                        <p className="text-2xl font-bold text-blue-900">{calculationResult.retirementAge}</p>
+                      </div>
+                      <div className="text-center">
+                        <p className="text-sm text-gray-600">Data Estimată a Pensionării</p>
+                        <p className="text-2xl font-bold text-blue-900">{calculationResult.retirementDate}</p>
+                      </div>
+                      <div className="text-center">
+                        <p className="text-sm text-gray-600">Estimare Pensie Lunară (Pilon I)</p>
+                        <p className="text-3xl font-bold text-green-600">
+                          ~{calculationResult.monthlyPension.toLocaleString('ro-RO')} RON
+                        </p>
+                      </div>
+                    </div>
                   </div>
                 )}
+
+                {/* Required Disclaimers */}
+                <div className="mt-6 space-y-2 text-sm text-gray-600">
+                  <p>
+                    <strong>Calcul bazat pe valoarea punctului de pensie de 2.031 lei, valabil în 2024</strong>
+                  </p>
+                  <p className="text-xs">
+                    Acest calcul este o estimare informativă și nu are valoare oficială. Pentru calculul exact, vă rugăm să consultați Casa Națională de Pensii Publice (CNPP).
+                  </p>
+                </div>
+              </TooltipProvider>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
+
+      {/* H2 Section 1: Cum Funcționează Calculatorul Nostru de Pensie? */}
+      <section className="py-16 bg-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold mb-6 text-gray-900">
+            Cum Funcționează Calculatorul Nostru de Pensie?
+          </h2>
+          <div className="prose prose-lg text-gray-600">
+            <p className="mb-4">
+              Calculatorul nostru de pensie folosește formulele oficiale ale Casei Naționale de Pensii Publice (CNPP) pentru a-ți oferi o estimare precisă a pensiei tale viitoare. Instrumentul nostru este actualizat conform cu <strong>legea pensiilor</strong> în vigoare și folosește <strong>valoarea punctului de pensie 2024</strong> de 2.031 lei.
+            </p>
+            <p className="mb-4">
+              Prin introducerea datelor despre <strong>stagiul de cotizare</strong> și salariul tău actual, calculatorul determină punctajul mediu anual și aplică formula oficială pentru <strong>calculul pensiei</strong>. Toate estimările sunt bazate pe legislația curentă și pe valorile oficiale publicate de CNPP.
+            </p>
+            <p>
+              Rezultatele oferă o imagine clară asupra viitorului tău financiar, ajutându-te să iei decizii informate despre planificarea pensiei tale.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* H2 Section 2: Înțelegerea Sistemului de Pensii din România pe Scurt */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold mb-6 text-gray-900">
+            Înțelegerea Sistemului de Pensii din România pe Scurt
+          </h2>
+          <p className="text-xl text-gray-600 mb-8">
+            Sistemul de pensii din România se bazează pe 3 piloni, iar calculatorul nostru se concentrează în principal pe Pilonul I, pensia de stat, care constituie fundamentul pentru toată lumea.
+          </p>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {/* Pilonul I */}
+            <Card className="h-full">
+              <CardContent className="p-6">
+                <div className="bg-blue-600 text-white rounded-lg w-12 h-12 flex items-center justify-center mb-4">
+                  <span className="text-xl font-bold">I</span>
+                </div>
+                <h3 className="text-xl font-semibold mb-3">Pilonul I: Pensia de Stat (Publică și Obligatorie)</h3>
+                <p className="text-gray-600">
+                  Aceasta este pensia la care contribuie toată lumea care lucrează legal. Se definește prin termeni cheie: <strong>stagiu de cotizare</strong>, <strong>punctaj mediu anual</strong> și <strong>valoarea punctului de pensie</strong>. Este baza sistemului de pensii românesc.
+                </p>
               </CardContent>
             </Card>
+
+            {/* Pilonul II */}
+            <Card className="h-full">
+              <CardContent className="p-6">
+                <div className="bg-green-600 text-white rounded-lg w-12 h-12 flex items-center justify-center mb-4">
+                  <span className="text-xl font-bold">II</span>
+                </div>
+                <h3 className="text-xl font-semibold mb-3">Pilonul II: Pensia Administrată Privat (Obligatorie)</h3>
+                <p className="text-gray-600">
+                  O parte din contribuția la stat (CAS) este redirecționată automat către un fond privat. Pensia finală va fi suma dintre Pilon I + Pilon II. Keywords: <strong>pensie pilonul 2</strong>, <strong>contributii sociale</strong>, <strong>fond de pensii</strong>.
+                </p>
+              </CardContent>
+            </Card>
+
+            {/* Pilonul III */}
+            <Card className="h-full">
+              <CardContent className="p-6">
+                <div className="bg-purple-600 text-white rounded-lg w-12 h-12 flex items-center justify-center mb-4">
+                  <span className="text-xl font-bold">III</span>
+                </div>
+                <h3 className="text-xl font-semibold mb-3">Pilonul III: Pensia Facultativă (Opțională)</h3>
+                <p className="text-gray-600">
+                  Un plan suplimentar, opțional de economisire pentru pensie, similar cu un cont personal de economii, dar cu avantaje fiscale. Keywords: <strong>pensie pilonul 3</strong>, <strong>pensie facultativă</strong>.
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* H2 Section 3: Factori Cheie în Calculul Pensiei Tale */}
+      <section className="py-16 bg-white">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold mb-8 text-gray-900">
+            Factori Cheie în Calculul Pensiei Tale
+          </h2>
+
+          {/* H3: Vârsta Standard de Pensionare și Stagiul de Cotizare */}
+          <div className="mb-12">
+            <h3 className="text-2xl font-semibold mb-6 text-gray-800">
+              Vârsta Standard de Pensionare și Stagiul de Cotizare
+            </h3>
+            <p className="text-lg text-gray-600 mb-6">
+              Vârsta de pensionare nu este fixă și depinde de sex și numărul total de ani lucrați. Iată tabelul cu vârstele standard de pensionare conform legii românești actuale:
+            </p>
+            
+            {/* Required HTML table */}
+            <div className="overflow-x-auto">
+              <table className="min-w-full bg-white border border-gray-300 rounded-lg">
+                <thead className="bg-gray-50">
+                  <tr>
+                    <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Sex</th>
+                    <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Vârsta Standard</th>
+                    <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Stagiu Minim</th>
+                    <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Pensie Anticipată</th>
+                  </tr>
+                </thead>
+                <tbody className="bg-white divide-y divide-gray-200">
+                  <tr>
+                    <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Bărbați</td>
+                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">65 ani</td>
+                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">35 ani</td>
+                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">62 ani (cu penalizare)</td>
+                  </tr>
+                  <tr>
+                    <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Femei</td>
+                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">63 ani</td>
+                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">30 ani</td>
+                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">60 ani (cu penalizare)</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          {/* H3: Formula Oficială de Calcul */}
+          <div className="mb-12">
+            <h3 className="text-2xl font-semibold mb-6 text-gray-800">
+              Formula Oficială de Calcul a Pensiei de Stat
+            </h3>
+            <div className="bg-blue-50 border border-blue-200 rounded-lg p-8 text-center">
+              <p className="text-2xl font-bold text-blue-900 mb-4">
+                Pensie = Punctaj Mediu Anual (PMA) × Valoarea Punctului de Pensie (VPP)
+              </p>
+              <p className="text-lg text-blue-700">
+                Punctaj Mediu Anual se calculează pe baza salariilor și perioadei de cotizare, iar Valoarea Punctului de Pensie pentru 2024 este <strong>2.031 lei</strong>.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* H2 Section 4: FAQ - Critical for Rich Snippets */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold mb-8 text-gray-900">
+            Întrebări Frecvente (FAQ) despre Calculul Pensiei
+          </h2>
+          
+          <div className="space-y-8">
+            {/* FAQ 1 */}
+            <div className="bg-white rounded-lg p-6 shadow-sm">
+              <h3 className="text-xl font-semibold mb-3 text-gray-900">
+                La ce vârstă mă pot pensiona?
+              </h3>
+              <p className="text-gray-600">
+                Vârsta de pensionare depinde de sex și istoricul de cotizare. Bărbații se pot pensiona la 65 ani cu 35 ani stagiu, femeile la 63 ani cu 30 ani stagiu (2024). Folosește calculatorul nostru pentru data exactă de pensionare bazată pe situația ta specifică.
+              </p>
+            </div>
+
+            {/* FAQ 2 */}
+            <div className="bg-white rounded-lg p-6 shadow-sm">
+              <h3 className="text-xl font-semibold mb-3 text-gray-900">
+                Cum se calculează pensia anticipată?
+              </h3>
+              <p className="text-gray-600">
+                Poți ieși la pensie cu câțiva ani mai devreme, dar cu o penalizare de 0.25% pe lună pentru fiecare lună de anticipare. Bărbații pot ieși la 62 ani, femeile la 60 ani, cu minimum 15 ani stagiu de cotizare. Keywords: <strong>pensie anticipata</strong>, <strong>pensie anticipata partial</strong>.
+              </p>
+            </div>
+
+            {/* FAQ 3 */}
+            <div className="bg-white rounded-lg p-6 shadow-sm">
+              <h3 className="text-xl font-semibold mb-3 text-gray-900">
+                Care este valoarea punctului de pensie în 2024?
+              </h3>
+              <p className="text-gray-600">
+                Începând cu 1 ianuarie 2024, valoarea punctului de pensie este de <strong>2.031 lei</strong>, conform legislației oficiale. Această valoare este folosită în calculatorul nostru pentru estimări precise.
+              </p>
+            </div>
+
+            {/* FAQ 4 */}
+            <div className="bg-white rounded-lg p-6 shadow-sm">
+              <h3 className="text-xl font-semibold mb-3 text-gray-900">
+                Pot să-mi măresc pensia?
+              </h3>
+              <p className="text-gray-600">
+                Da, prin contribuirea la Pilonul III (pensia facultativă), prin lucrul mai mulți ani sau prin continuarea muncii după vârsta standard de pensionare. Fiecare an suplimentar de muncă mărește punctajul mediu anual și implicit pensia.
+              </p>
+            </div>
+
+            {/* FAQ 5 */}
+            <div className="bg-white rounded-lg p-6 shadow-sm">
+              <h3 className="text-xl font-semibold mb-3 text-gray-900">
+                Unde pot vedea stagiul meu de cotizare oficial?
+              </h3>
+              <p className="text-gray-600">
+                Poți verifica stagiul de cotizare exact creând un cont online pe portalul Casei Naționale de Pensii Publice (CNPP.ro) sau vizitând o casă teritorială de pensii cu actul de identitate.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -135,8 +513,8 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <Card className="hover:shadow-xl transition-shadow">
               <CardContent className="p-6">
-                <div className="bg-brand-blue text-white rounded-lg w-12 h-12 flex items-center justify-center mb-4">
-                  <FastForward className="h-6 w-6" />
+                <div className="bg-blue-600 text-white rounded-lg w-12 h-12 flex items-center justify-center mb-4">
+                  <Calculator className="h-6 w-6" />
                 </div>
                 <h3 className="text-xl font-semibold mb-3">Calculator Pensie Anticipată</h3>
                 <p className="text-neutral-medium mb-4">
@@ -152,8 +530,8 @@ export default function Home() {
 
             <Card className="hover:shadow-xl transition-shadow">
               <CardContent className="p-6">
-                <div className="bg-brand-green text-white rounded-lg w-12 h-12 flex items-center justify-center mb-4">
-                  <PiggyBank className="h-6 w-6" />
+                <div className="bg-green-600 text-white rounded-lg w-12 h-12 flex items-center justify-center mb-4">
+                  <TrendingUp className="h-6 w-6" />
                 </div>
                 <h3 className="text-xl font-semibold mb-3">Calculator Contribuții Pilon III</h3>
                 <p className="text-neutral-medium mb-4">
@@ -169,8 +547,8 @@ export default function Home() {
 
             <Card className="hover:shadow-xl transition-shadow">
               <CardContent className="p-6">
-                <div className="bg-brand-red text-white rounded-lg w-12 h-12 flex items-center justify-center mb-4">
-                  <ChartLine className="h-6 w-6" />
+                <div className="bg-red-600 text-white rounded-lg w-12 h-12 flex items-center justify-center mb-4">
+                  <MapPin className="h-6 w-6" />
                 </div>
                 <h3 className="text-xl font-semibold mb-3">Simulator Planificare Pensie</h3>
                 <p className="text-neutral-medium mb-4">
