@@ -15,7 +15,7 @@ export const articles = pgTable("articles", {
   excerpt: text("excerpt").notNull(),
   content: text("content").notNull(),
   category: text("category").notNull(), // 'planificare', 'tipuri-pensii', 'legislatie'
-  publishDate: timestamp("publish_date").notNull(),
+  publishDate: text("publish_date").notNull(),
   readTime: integer("read_time").notNull(), // in minutes
   published: boolean("published").notNull().default(false),
 });
@@ -28,13 +28,13 @@ export const pensionCalculations = pgTable("pension_calculations", {
   retirementAge: integer("retirement_age").notNull(),
   calculatedPension: real("calculated_pension").notNull(),
   calculationType: text("calculation_type").notNull(), // 'standard', 'early', 'pillar3'
-  createdAt: timestamp("created_at").notNull(),
+  createdAt: text("created_at").notNull(),
 });
 
 export const newsletterSubscriptions = pgTable("newsletter_subscriptions", {
   id: serial("id").primaryKey(),
   email: text("email").notNull().unique(),
-  subscribedAt: timestamp("subscribed_at").notNull(),
+  subscribedAt: text("subscribed_at").notNull(),
   active: boolean("active").notNull().default(true),
 });
 

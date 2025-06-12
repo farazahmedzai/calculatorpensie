@@ -100,7 +100,7 @@ Fără obiective clare și o strategie bine definită, este imposibil să atingi
 
 Nu iei în considerare riscurile precum invaliditatea sau decesul prematur care pot afecta planurile.`,
         category: "planificare",
-        publishDate: new Date("2024-12-15").toISOString(),
+        publishDate: "2024-12-15T10:00:00.000Z",
         readTime: 5,
         published: true,
       },
@@ -128,7 +128,7 @@ Vârsta de pensionare în România a suferit modificări importante în ultimii 
 
 Legea 263/2010 a stabilit calendarul de creștere graduală a vârstei de pensionare pentru femei.`,
         category: "legislatie",
-        publishDate: new Date("2024-12-12").toISOString(),
+        publishDate: "2024-12-12T10:00:00.000Z",
         readTime: 8,
         published: true,
       },

@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { useSearchParams } from "wouter";
+import { useState, useEffect } from "react";
+import { useLocation } from "wouter";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import MainCalculator from "@/components/calculators/main-calculator";
@@ -8,9 +8,14 @@ import Pillar3Calculator from "@/components/calculators/pillar3-calculator";
 import { Calculator, FastForward, PiggyBank } from "lucide-react";
 
 export default function CalculatorPage() {
-  const [searchParams] = useSearchParams();
-  const defaultTab = searchParams.get('type') || 'main';
-  const [activeTab, setActiveTab] = useState(defaultTab);
+  const [location] = useLocation();
+  const [activeTab, setActiveTab] = useState('main');
+
+  useEffect(() => {
+    const urlParams = new URLSearchParams(window.location.search);
+    const type = urlParams.get('type') || 'main';
+    setActiveTab(type);
+  }, [location]);
 
   return (
     <div className="min-h-screen bg-neutral-light py-8">
