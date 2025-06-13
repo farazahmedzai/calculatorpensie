@@ -34,6 +34,58 @@ export default function Home() {
     monthlyPension: number;
   } | null>(null);
 
+  // Schema.org structured data for SEO
+  const webApplicationSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Calculator Pensie Online România 2024",
+    "description": "Cel mai precis calculator de pensie online din România. Calculează pensia de stat și vârsta de pensionare instant.",
+    "applicationCategory": "FinanceApplication",
+    "operatingSystem": "Web Browser",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "RON"
+    },
+    "featureList": [
+      "Calculul pensiei de stat (Pilon I)",
+      "Calculul pensiei anticipate",
+      "Calculul contribuțiilor Pilon III",
+      "Estimarea vârstei de pensionare"
+    ]
+  };
+
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "La ce vârstă mă pot pensiona?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Vârsta de pensionare depinde de sex și istoricul de cotizare. Bărbații se pot pensiona la 65 ani cu 35 ani stagiu, femeile la 63 ani cu 30 ani stagiu (2024). Folosește calculatorul nostru pentru data exactă de pensionare bazată pe situația ta specifică."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Care este valoarea punctului de pensie în 2024?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Începând cu 1 ianuarie 2024, valoarea punctului de pensie este de 2.031 lei, conform legislației oficiale."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Cum se calculează pensia anticipată?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Poți ieși la pensie cu câțiva ani mai devreme, dar cu o penalizare de 0.25% pe lună pentru fiecare lună de anticipare. Bărbații pot ieși la 62 ani, femeile la 60 ani, cu minimum 15 ani stagiu de cotizare."
+        }
+      }
+    ]
+  };
+
   const { data: articles = [] } = useQuery<Article[]>({
     queryKey: ['/api/articles/recent'],
   });
@@ -594,19 +646,19 @@ export default function Home() {
                 
                 <div className="space-y-2 mb-6">
                   <Link href="/blog/top-5-greseli-planificare-pensie">
-                    <a className="block text-brand-blue hover:underline text-sm">
+                    <span className="block text-brand-blue hover:underline text-sm cursor-pointer">
                       → Top 5 Greșeli de Evitat în Planificarea Pensiei
-                    </a>
+                    </span>
                   </Link>
                   <Link href="/blog/pilonul-ii-vs-pilonul-iii">
-                    <a className="block text-brand-blue hover:underline text-sm">
+                    <span className="block text-brand-blue hover:underline text-sm cursor-pointer">
                       → Pilonul II vs. Pilonul III: Ghid de Decizie
-                    </a>
+                    </span>
                   </Link>
                   <Link href="/blog/strategii-investitii-pensie">
-                    <a className="block text-brand-blue hover:underline text-sm">
+                    <span className="block text-brand-blue hover:underline text-sm cursor-pointer">
                       → Strategii de Investiții pentru o Pensie Liniștită
-                    </a>
+                    </span>
                   </Link>
                 </div>
                 
@@ -636,19 +688,19 @@ export default function Home() {
                 
                 <div className="space-y-2 mb-6">
                   <Link href="/blog/pensie-limita-varsta">
-                    <a className="block text-brand-green hover:underline text-sm">
+                    <span className="block text-brand-green hover:underline text-sm cursor-pointer">
                       → Totul despre Pensia pentru Limită de Vârstă
-                    </a>
+                    </span>
                   </Link>
                   <Link href="/blog/pensie-anticipata-partiala">
-                    <a className="block text-brand-green hover:underline text-sm">
+                    <span className="block text-brand-green hover:underline text-sm cursor-pointer">
                       → Ghid Detaliat: Pensia Anticipată Parțială
-                    </a>
+                    </span>
                   </Link>
                   <Link href="/blog/pensie-urmas">
-                    <a className="block text-brand-green hover:underline text-sm">
+                    <span className="block text-brand-green hover:underline text-sm cursor-pointer">
                       → Pensia de Urmaș: Condiții de Acordare și Calcul
-                    </a>
+                    </span>
                   </Link>
                 </div>
                 
@@ -678,19 +730,19 @@ export default function Home() {
                 
                 <div className="space-y-2 mb-6">
                   <Link href="/blog/varsta-pensionare-romania">
-                    <a className="block text-brand-red hover:underline text-sm">
+                    <span className="block text-brand-red hover:underline text-sm cursor-pointer">
                       → Vârsta Standard de Pensionare în România: Tabel Complet
-                    </a>
+                    </span>
                   </Link>
                   <Link href="/blog/stagiu-cotizare-calcul">
-                    <a className="block text-brand-red hover:underline text-sm">
+                    <span className="block text-brand-red hover:underline text-sm cursor-pointer">
                       → Cum se Calculează Corect Stagiul de Cotizare?
-                    </a>
+                    </span>
                   </Link>
                   <Link href="/blog/indexarea-pensiilor">
-                    <a className="block text-brand-red hover:underline text-sm">
+                    <span className="block text-brand-red hover:underline text-sm cursor-pointer">
                       → Indexarea Pensiilor: Mecanism și Impact
-                    </a>
+                    </span>
                   </Link>
                 </div>
                 

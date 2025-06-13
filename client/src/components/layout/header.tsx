@@ -49,10 +49,10 @@ export default function Header() {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link href="/">
-            <a className="flex items-center">
+            <div className="flex items-center cursor-pointer">
               <Calculator className="h-8 w-8 text-brand-blue mr-3" />
               <span className="text-xl font-bold text-neutral-dark">CalculatorPensie.ro</span>
-            </a>
+            </div>
           </Link>
           
           {/* Desktop Navigation */}
