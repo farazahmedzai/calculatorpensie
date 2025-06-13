@@ -810,10 +810,11 @@ export default function Home() {
                         {new Date(article.publishDate).toLocaleDateString('ro-RO')}
                       </span>
                     </div>
-                    <h3 className="text-xl font-semibold mb-3 hover:text-brand-blue transition-colors">
-                      <Link href={`/blog/${article.slug}`}>
-                        <a>{article.title}</a>
-                      </Link>
+                    <h3 
+                      className="text-xl font-semibold mb-3 hover:text-brand-blue transition-colors cursor-pointer"
+                      onClick={() => window.location.href = `/blog/${article.slug}`}
+                    >
+                      {article.title}
                     </h3>
                     <p className="text-neutral-medium mb-4">{article.excerpt}</p>
                     <div className="flex items-center justify-between">
@@ -821,11 +822,12 @@ export default function Home() {
                         <Clock className="inline h-4 w-4 mr-1" />
                         {article.readTime} min citire
                       </span>
-                      <Link href={`/blog/${article.slug}`}>
-                        <a className="text-brand-blue font-medium hover:underline">
-                          Citește mai mult →
-                        </a>
-                      </Link>
+                      <span 
+                        className="text-brand-blue font-medium hover:underline cursor-pointer"
+                        onClick={() => window.location.href = `/blog/${article.slug}`}
+                      >
+                        Citește mai mult →
+                      </span>
                     </div>
                   </CardContent>
                 </Card>
@@ -838,11 +840,14 @@ export default function Home() {
           </div>
 
           <div className="text-center mt-12">
-            <Link href="/blog">
-              <Button size="lg" variant="outline" className="bg-neutral-dark text-white hover:bg-neutral-700">
-                Vezi Toate Articolele →
-              </Button>
-            </Link>
+            <Button 
+              size="lg" 
+              variant="outline" 
+              className="bg-neutral-dark text-white hover:bg-neutral-700"
+              onClick={() => window.location.href = '/blog'}
+            >
+              Vezi Toate Articolele →
+            </Button>
           </div>
         </div>
       </section>

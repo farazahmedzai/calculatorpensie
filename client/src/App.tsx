@@ -14,6 +14,7 @@ import DespreNoi from "@/pages/despre-noi";
 import Metodologie from "@/pages/metodologie";
 import Contact from "@/pages/contact";
 import Privacy from "@/pages/privacy";
+import FAQ from "@/pages/faq";
 import Header from "@/components/layout/header";
 import Footer from "@/components/layout/footer";
 
@@ -33,6 +34,7 @@ function Router() {
           <Route path="/metodologie" component={Metodologie} />
           <Route path="/contact" component={Contact} />
           <Route path="/privacy" component={Privacy} />
+          <Route path="/faq" component={FAQ} />
           <Route component={NotFound} />
         </Switch>
       </main>

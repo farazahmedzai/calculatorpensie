@@ -19,6 +19,7 @@ export default function Header() {
     { href: "/planificare", label: "Planificare" },
     { href: "/tipuri-pensii", label: "Tipuri Pensii" },
     { href: "/legislatie", label: "Legislație" },
+    { href: "/faq", label: "FAQ" },
     { href: "/blog", label: "Blog" },
   ];
 
