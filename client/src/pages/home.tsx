@@ -580,11 +580,12 @@ export default function Home() {
                 <p className="text-neutral-medium mb-4">
                   Calculează penalizarea pentru pensionarea anticipată și află dacă îți convine această opțiune.
                 </p>
-                <Link href="/calculator?type=early">
-                  <Button className="w-full bg-brand-blue hover:bg-blue-700">
-                    Calculează Acum
-                  </Button>
-                </Link>
+                <Button 
+                  className="w-full bg-brand-blue hover:bg-blue-700"
+                  onClick={() => window.location.href = '/calculator?type=early'}
+                >
+                  Calculează Acum
+                </Button>
               </CardContent>
             </Card>
 
@@ -597,11 +598,12 @@ export default function Home() {
                 <p className="text-neutral-medium mb-4">
                   Optimizează contribuțiile la pilonul III pentru a-ți maximiza economia fiscală.
                 </p>
-                <Link href="/calculator?type=pillar3">
-                  <Button className="w-full bg-brand-green hover:bg-green-700">
-                    Calculează Acum
-                  </Button>
-                </Link>
+                <Button 
+                  className="w-full bg-brand-green hover:bg-green-700"
+                  onClick={() => window.location.href = '/calculator?type=pillar3'}
+                >
+                  Calculează Acum
+                </Button>
               </CardContent>
             </Card>
 
@@ -614,11 +616,12 @@ export default function Home() {
                 <p className="text-neutral-medium mb-4">
                   Vizualizează diferite scenarii și strategii pentru planificarea pensiei tale.
                 </p>
-                <Link href="/calculator?type=planning">
-                  <Button className="w-full bg-brand-red hover:bg-red-700">
-                    Simulează Acum
-                  </Button>
-                </Link>
+                <Button 
+                  className="w-full bg-brand-red hover:bg-red-700"
+                  onClick={() => window.location.href = '/calculator?type=planning'}
+                >
+                  Simulează Acum
+                </Button>
               </CardContent>
             </Card>
           </div>
@@ -653,28 +656,32 @@ export default function Home() {
                 </p>
                 
                 <div className="space-y-2 mb-6">
-                  <Link href="/blog/top-5-greseli-planificare-pensie">
-                    <span className="block text-brand-blue hover:underline text-sm cursor-pointer">
-                      → Top 5 Greșeli de Evitat în Planificarea Pensiei
-                    </span>
-                  </Link>
-                  <Link href="/blog/pilonul-ii-vs-pilonul-iii">
-                    <span className="block text-brand-blue hover:underline text-sm cursor-pointer">
-                      → Pilonul II vs. Pilonul III: Ghid de Decizie
-                    </span>
-                  </Link>
-                  <Link href="/blog/strategii-investitii-pensie">
-                    <span className="block text-brand-blue hover:underline text-sm cursor-pointer">
-                      → Strategii de Investiții pentru o Pensie Liniștită
-                    </span>
-                  </Link>
+                  <span 
+                    className="block text-brand-blue hover:underline text-sm cursor-pointer"
+                    onClick={() => window.location.href = '/blog/top-5-greseli-planificare-pensie'}
+                  >
+                    → Top 5 Greșeli de Evitat în Planificarea Pensiei
+                  </span>
+                  <span 
+                    className="block text-brand-blue hover:underline text-sm cursor-pointer"
+                    onClick={() => window.location.href = '/blog/pilonul-ii-vs-pilonul-iii'}
+                  >
+                    → Pilonul II vs. Pilonul III: Ghid de Decizie
+                  </span>
+                  <span 
+                    className="block text-brand-blue hover:underline text-sm cursor-pointer"
+                    onClick={() => window.location.href = '/blog/strategii-investitii-pensie'}
+                  >
+                    → Strategii de Investiții pentru o Pensie Liniștită
+                  </span>
                 </div>
                 
-                <Link href="/planificare">
-                  <Button className="w-full bg-brand-blue hover:bg-blue-700">
-                    Vezi Ghidul Complet
-                  </Button>
-                </Link>
+                <Button 
+                  className="w-full bg-brand-blue hover:bg-blue-700"
+                  onClick={() => window.location.href = '/planificare'}
+                >
+                  Vezi Ghidul Complet
+                </Button>
               </CardContent>
             </Card>
 
@@ -695,28 +702,32 @@ export default function Home() {
                 </p>
                 
                 <div className="space-y-2 mb-6">
-                  <Link href="/blog/pensie-limita-varsta">
-                    <span className="block text-brand-green hover:underline text-sm cursor-pointer">
-                      → Totul despre Pensia pentru Limită de Vârstă
-                    </span>
-                  </Link>
-                  <Link href="/blog/pensie-anticipata-partiala">
-                    <span className="block text-brand-green hover:underline text-sm cursor-pointer">
-                      → Ghid Detaliat: Pensia Anticipată Parțială
-                    </span>
-                  </Link>
-                  <Link href="/blog/pensie-urmas">
-                    <span className="block text-brand-green hover:underline text-sm cursor-pointer">
-                      → Pensia de Urmaș: Condiții de Acordare și Calcul
-                    </span>
-                  </Link>
+                  <span 
+                    className="block text-brand-green hover:underline text-sm cursor-pointer"
+                    onClick={() => window.location.href = '/blog/pensie-limita-varsta'}
+                  >
+                    → Totul despre Pensia pentru Limită de Vârstă
+                  </span>
+                  <span 
+                    className="block text-brand-green hover:underline text-sm cursor-pointer"
+                    onClick={() => window.location.href = '/blog/pensie-anticipata-partiala'}
+                  >
+                    → Ghid Detaliat: Pensia Anticipată Parțială
+                  </span>
+                  <span 
+                    className="block text-brand-green hover:underline text-sm cursor-pointer"
+                    onClick={() => window.location.href = '/blog/pensie-urmas'}
+                  >
+                    → Pensia de Urmaș: Condiții de Acordare și Calcul
+                  </span>
                 </div>
                 
-                <Link href="/tipuri-pensii">
-                  <Button className="w-full bg-brand-green hover:bg-green-700">
-                    Vezi Ghidul Complet
-                  </Button>
-                </Link>
+                <Button 
+                  className="w-full bg-brand-green hover:bg-green-700"
+                  onClick={() => window.location.href = '/tipuri-pensii'}
+                >
+                  Vezi Ghidul Complet
+                </Button>
               </CardContent>
             </Card>
 
@@ -737,28 +748,32 @@ export default function Home() {
                 </p>
                 
                 <div className="space-y-2 mb-6">
-                  <Link href="/blog/varsta-pensionare-romania">
-                    <span className="block text-brand-red hover:underline text-sm cursor-pointer">
-                      → Vârsta Standard de Pensionare în România: Tabel Complet
-                    </span>
-                  </Link>
-                  <Link href="/blog/stagiu-cotizare-calcul">
-                    <span className="block text-brand-red hover:underline text-sm cursor-pointer">
-                      → Cum se Calculează Corect Stagiul de Cotizare?
-                    </span>
-                  </Link>
-                  <Link href="/blog/indexarea-pensiilor">
-                    <span className="block text-brand-red hover:underline text-sm cursor-pointer">
-                      → Indexarea Pensiilor: Mecanism și Impact
-                    </span>
-                  </Link>
+                  <span 
+                    className="block text-brand-red hover:underline text-sm cursor-pointer"
+                    onClick={() => window.location.href = '/blog/varsta-pensionare-romania'}
+                  >
+                    → Vârsta Standard de Pensionare în România: Tabel Complet
+                  </span>
+                  <span 
+                    className="block text-brand-red hover:underline text-sm cursor-pointer"
+                    onClick={() => window.location.href = '/blog/stagiu-cotizare-calcul'}
+                  >
+                    → Cum se Calculează Corect Stagiul de Cotizare?
+                  </span>
+                  <span 
+                    className="block text-brand-red hover:underline text-sm cursor-pointer"
+                    onClick={() => window.location.href = '/blog/indexarea-pensiilor'}
+                  >
+                    → Indexarea Pensiilor: Mecanism și Impact
+                  </span>
                 </div>
                 
-                <Link href="/legislatie">
-                  <Button className="w-full bg-brand-red hover:bg-red-700">
-                    Vezi Ghidul Complet
-                  </Button>
-                </Link>
+                <Button 
+                  className="w-full bg-brand-red hover:bg-red-700"
+                  onClick={() => window.location.href = '/legislatie'}
+                >
+                  Vezi Ghidul Complet
+                </Button>
               </CardContent>
             </Card>
           </div>
