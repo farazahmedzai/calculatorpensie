@@ -10,6 +10,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Calculator, PiggyBank, TrendingUp, Euro } from "lucide-react";
 import { calculatePillar3Contributions } from "@/lib/pension-calculations";
+import { trackCalculatorUsage } from "@/lib/analytics";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { apiRequest } from "@/lib/queryClient";
 
@@ -61,6 +62,9 @@ export default function Pillar3Calculator() {
       });
 
       setResult(calculation);
+      
+      // Track calculator usage for analytics
+      trackCalculatorUsage('pillar3', calculation.monthlyPensionFromPillar3);
       
       // Save calculation to database
       await savePensionCalculation.mutateAsync({

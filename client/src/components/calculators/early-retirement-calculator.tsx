@@ -63,6 +63,9 @@ export default function EarlyRetirementCalculator() {
 
       setResult(calculation);
       
+      // Track calculator usage for analytics
+      trackCalculatorUsage('early', calculation.earlyPension);
+      
       // Save calculation to database
       await savePensionCalculation.mutateAsync({
         currentAge: data.currentAge,

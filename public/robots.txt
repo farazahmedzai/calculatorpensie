@@ -1,0 +1,50 @@
+User-agent: *
+Allow: /
+
+# Priority pages for crawling
+Allow: /calculator
+Allow: /faq
+Allow: /planificare
+Allow: /tipuri-pensii
+Allow: /legislatie
+Allow: /blog
+
+# Allow all static assets
+Allow: /assets/
+Allow: /*.css
+Allow: /*.js
+Allow: /*.png
+Allow: /*.jpg
+Allow: /*.jpeg
+Allow: /*.gif
+Allow: /*.svg
+Allow: /*.webp
+
+# Block admin/internal paths (if any exist in future)
+Disallow: /admin/
+Disallow: /api/
+Disallow: /_internal/
+
+# Block certain query parameters that might create duplicate content
+Disallow: /*?utm_*
+Disallow: /*?ref=*
+Disallow: /*?track=*
+
+# Sitemap location
+Sitemap: https://calculatorpensie.com/sitemap.xml
+
+# Crawl delay to be respectful (optional)
+Crawl-delay: 1
+
+# Specific instructions for major search engines
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: YandexBot
+Allow: /
+Crawl-delay: 2
