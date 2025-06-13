@@ -9,6 +9,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Card, CardContent } from "@/components/ui/card";
 import { Calculator, Info } from "lucide-react";
 import { calculateStandardPension } from "@/lib/pension-calculations";
+import { trackCalculatorUsage } from "@/lib/analytics";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { apiRequest } from "@/lib/queryClient";
 
@@ -62,6 +63,9 @@ export default function MainCalculator({ onCalculationComplete }: MainCalculator
       });
 
       setResult(calculatedPension);
+      
+      // Track calculator usage for analytics
+      trackCalculatorUsage('standard', calculatedPension);
       
       // Save calculation to database
       await savePensionCalculation.mutateAsync({

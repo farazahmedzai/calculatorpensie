@@ -10,6 +10,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Calculator, AlertTriangle, Info } from "lucide-react";
 import { calculateEarlyRetirement } from "@/lib/pension-calculations";
+import { trackCalculatorUsage } from "@/lib/analytics";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { apiRequest } from "@/lib/queryClient";
 
