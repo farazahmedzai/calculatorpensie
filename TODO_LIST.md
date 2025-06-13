@@ -1,14 +1,15 @@
 # CalculatorPensie.com - TODO List
 
 ## Current Sprint - Core Implementation
-### High Priority (In Progress)
+### High Priority (Completed)
 - [x] Fix TypeScript compilation errors
 - [x] Implement basic pension calculators
 - [x] Create silo architecture structure
 - [x] Build responsive homepage
-- [ ] Fix nested anchor tag warnings in navigation
-- [ ] Complete SEO meta tags implementation
-- [ ] Add Schema.org markup for calculators
+- [x] Fix nested anchor tag warnings in navigation
+- [x] Complete SEO meta tags implementation
+- [x] Add Schema.org markup for calculators
+- [x] Create all trust pages (Despre Noi, Metodologie, Contact, Privacy)
 
 ### Medium Priority (Next Sprint)
 - [ ] Implement newsletter subscription functionality

@@ -51,22 +51,22 @@ export default function Footer() {
             <ul className="space-y-2 text-gray-300">
               <li>
                 <Link href="/calculator">
-                  <a className="hover:text-white transition-colors">Calculator Pensie Principal</a>
+                  <span className="hover:text-white transition-colors cursor-pointer">Calculator Pensie Principal</span>
                 </Link>
               </li>
               <li>
                 <Link href="/calculator?type=early">
-                  <a className="hover:text-white transition-colors">Pensie Anticipată</a>
+                  <span className="hover:text-white transition-colors cursor-pointer">Pensie Anticipată</span>
                 </Link>
               </li>
               <li>
                 <Link href="/calculator?type=pillar3">
-                  <a className="hover:text-white transition-colors">Contribuții Pilon III</a>
+                  <span className="hover:text-white transition-colors cursor-pointer">Contribuții Pilon III</span>
                 </Link>
               </li>
               <li>
                 <Link href="/calculator?type=planning">
-                  <a className="hover:text-white transition-colors">Simulator Planificare</a>
+                  <span className="hover:text-white transition-colors cursor-pointer">Simulator Planificare</span>
                 </Link>
               </li>
             </ul>
@@ -77,22 +77,22 @@ export default function Footer() {
             <ul className="space-y-2 text-gray-300">
               <li>
                 <Link href="/planificare">
-                  <a className="hover:text-white transition-colors">Planificarea Pensiei</a>
+                  <span className="hover:text-white transition-colors cursor-pointer">Planificarea Pensiei</span>
                 </Link>
               </li>
               <li>
                 <Link href="/tipuri-pensii">
-                  <a className="hover:text-white transition-colors">Tipuri de Pensii</a>
+                  <span className="hover:text-white transition-colors cursor-pointer">Tipuri de Pensii</span>
                 </Link>
               </li>
               <li>
                 <Link href="/legislatie">
-                  <a className="hover:text-white transition-colors">Legislație</a>
+                  <span className="hover:text-white transition-colors cursor-pointer">Legislație</span>
                 </Link>
               </li>
               <li>
                 <Link href="/blog">
-                  <a className="hover:text-white transition-colors">Blog</a>
+                  <span className="hover:text-white transition-colors cursor-pointer">Blog</span>
                 </Link>
               </li>
             </ul>
@@ -103,22 +103,22 @@ export default function Footer() {
             <ul className="space-y-2 text-gray-300">
               <li>
                 <Link href="/despre-noi">
-                  <a className="hover:text-white transition-colors">Despre Noi</a>
+                  <span className="hover:text-white transition-colors cursor-pointer">Despre Noi</span>
                 </Link>
               </li>
               <li>
                 <Link href="/metodologie">
-                  <a className="hover:text-white transition-colors">Metodologie Calcul</a>
+                  <span className="hover:text-white transition-colors cursor-pointer">Metodologie Calcul</span>
                 </Link>
               </li>
               <li>
                 <Link href="/contact">
-                  <a className="hover:text-white transition-colors">Contact</a>
+                  <span className="hover:text-white transition-colors cursor-pointer">Contact</span>
                 </Link>
               </li>
               <li>
                 <Link href="/privacy">
-                  <a className="hover:text-white transition-colors">Politica de Confidențialitate</a>
+                  <span className="hover:text-white transition-colors cursor-pointer">Politica de Confidențialitate</span>
                 </Link>
               </li>
             </ul>
@@ -136,13 +136,13 @@ export default function Footer() {
             </div>
             <div className="flex space-x-6 text-sm text-gray-300">
               <Link href="/metodologie">
-                <a className="hover:text-white transition-colors">Metodologie</a>
+                <span className="hover:text-white transition-colors cursor-pointer">Metodologie</span>
               </Link>
               <Link href="/privacy">
-                <a className="hover:text-white transition-colors">Privacy</a>
+                <span className="hover:text-white transition-colors cursor-pointer">Privacy</span>
               </Link>
               <Link href="/contact">
-                <a className="hover:text-white transition-colors">Contact</a>
+                <span className="hover:text-white transition-colors cursor-pointer">Contact</span>
               </Link>
             </div>
           </div>

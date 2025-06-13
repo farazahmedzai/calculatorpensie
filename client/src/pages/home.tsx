@@ -123,8 +123,16 @@ export default function Home() {
 
   return (
     <div className="bg-white">
-      {/* SEO Meta Tags - Implemented in head */}
-      
+      {/* Schema.org JSON-LD for SEO */}
+      <script 
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webApplicationSchema) }}
+      />
+      <script 
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+
       {/* Above-Fold Calculator Section */}
       <section className="py-12 bg-gradient-to-br from-blue-50 to-indigo-100">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
