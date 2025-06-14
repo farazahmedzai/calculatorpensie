@@ -67,7 +67,7 @@ export default function BlogPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <BookOpen className="h-12 w-12 mx-auto mb-6" />
           <h1 className="text-4xl font-bold mb-4">Blog CalculatorPensie.ro</h1>
-          <p className="text-xl text-white mb-8 font-medium">
+          <p className="text-xl text-yellow-200 mb-8 font-bold bg-black/20 p-4 rounded-lg">
             Ghiduri complete, analize și noutăți despre sistemul de pensii din România. 
             Rămâi informat cu experții noștri.
           </p>
