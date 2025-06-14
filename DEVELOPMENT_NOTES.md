@@ -2,6 +2,8 @@
 
 ## Mission: Rank #1 on Google.ro for "Calculator Pensie"
 
+**Last Updated**: June 14, 2025 - All documentation updated to 2025
+
 **Domain**: https://calculatorpensie.com/  
 **Vision**: Homepage IS the calculator - outperform CNPP and private banks (BT, ING)  
 **Target**: Romanians aged 30-65, confused by complex pension system  

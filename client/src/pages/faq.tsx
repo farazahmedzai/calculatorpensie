@@ -159,7 +159,7 @@ export default function FAQ() {
               <AccordionContent className="px-6 pb-6">
                 <div className="space-y-4 text-gray-700">
                   <p className="text-base leading-relaxed">
-                    Începând cu <strong>1 ianuarie 2024</strong>, valoarea punctului de pensie este de <strong className="text-green-600 text-xl">2.031 lei</strong>.
+                    Începând cu <strong>1 ianuarie 2025</strong>, valoarea punctului de pensie este de <strong className="text-green-600 text-xl">2.031 lei</strong>.
                   </p>
                   
                   <div className="bg-green-50 p-4 rounded-lg">
