@@ -67,7 +67,7 @@ export default function BlogPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <BookOpen className="h-12 w-12 mx-auto mb-6" />
           <h1 className="text-4xl font-bold mb-4">Blog CalculatorPensie.ro</h1>
-          <p className="text-xl text-gray-300 mb-8">
+          <p className="text-xl text-gray-200 mb-8">
             Ghiduri complete, analize și noutăți despre sistemul de pensii din România. 
             Rămâi informat cu experții noștri.
           </p>
@@ -258,7 +258,7 @@ export default function BlogPage() {
       <section className="py-16 bg-gradient-to-r from-brand-blue to-blue-700 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold mb-4">Nu Rata Niciun Articol Important</h2>
-          <p className="text-xl text-blue-100 mb-8">
+          <p className="text-xl text-blue-50 mb-8">
             Abonează-te la newsletter pentru a primi în email cele mai importante 
             actualizări despre sistemul de pensii din România.
           </p>
@@ -276,7 +276,7 @@ export default function BlogPage() {
                 Abonează-te
               </Button>
             </div>
-            <p className="text-sm text-blue-100 mt-4">
+            <p className="text-sm text-blue-50 mt-4">
               🔒 Datele tale sunt protejate. Nu trimitem spam.
             </p>
           </form>
