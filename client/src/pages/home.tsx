@@ -107,7 +107,7 @@ export default function Home() {
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
               Calculator Pensie Online 2025: Află Vârsta și Valoarea Pensiei Tale
             </h1>
-            <p className="text-xl text-gray-800 max-w-3xl mx-auto font-medium">
+            <p className="text-xl text-gray-900 dark:text-gray-100 max-w-3xl mx-auto font-medium">
               Folosește cel mai precis calculator de pensie din România. Calculează instant pensia de stat și vârsta de pensionare bazate pe formulele oficiale CNPP.
             </p>
           </div>
@@ -293,7 +293,7 @@ export default function Home() {
           </h2>
           
           <div className="prose prose-lg max-w-none">
-            <p className="text-slate-600 dark:text-slate-400 mb-6">
+            <p className="text-slate-800 dark:text-slate-200 mb-6 font-medium">
               Calculatorul nostru folosește formulele oficiale ale Casei Naționale de Pensii Publice (CNPP) pentru a-ți oferi o estimare precisă a pensiei tale de stat. Sistemul ia în considerare vârsta ta actuală, stagiul de cotizare, salariul și condițiile specifice de muncă conform <strong>Legii pensiilor nr. 263/2010</strong>.
             </p>
 
@@ -306,19 +306,19 @@ export default function Home() {
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-              <div className="bg-blue-50 p-6 rounded-lg">
-                <h4 className="font-semibold text-lg mb-3 text-blue-900">Pilonul I: Pensia de Stat</h4>
-                <p className="text-blue-800 font-medium">Sistemul public obligatoriu administrat de CNPP. Reprezintă baza sistemului de pensii și este calculat folosind punctajul mediu anual și valoarea punctului de pensie.</p>
+              <div className="bg-blue-50 dark:bg-blue-950/20 p-6 rounded-lg border border-blue-200 dark:border-blue-800">
+                <h4 className="font-semibold text-lg mb-3 text-blue-900 dark:text-blue-100">Pilonul I: Pensia de Stat</h4>
+                <p className="text-blue-900 dark:text-blue-100 font-medium">Sistemul public obligatoriu administrat de CNPP. Reprezintă baza sistemului de pensii și este calculat folosind punctajul mediu anual și valoarea punctului de pensie.</p>
               </div>
               
-              <div className="bg-green-50 p-6 rounded-lg">
-                <h4 className="font-semibold text-lg mb-3 text-green-900">Pilonul II: Pensia Administrată Privat</h4>
-                <p className="text-green-800 font-medium">Sistemul obligatoriu de contribuții către fonduri private de pensii. Contribuția este de 3,75% din salariul brut pentru persoanele sub 35 de ani.</p>
+              <div className="bg-green-50 dark:bg-green-950/20 p-6 rounded-lg border border-green-200 dark:border-green-800">
+                <h4 className="font-semibold text-lg mb-3 text-green-900 dark:text-green-100">Pilonul II: Pensia Administrată Privat</h4>
+                <p className="text-green-900 dark:text-green-100 font-medium">Sistemul obligatoriu de contribuții către fonduri private de pensii. Contribuția este de 3,75% din salariul brut pentru persoanele sub 35 de ani.</p>
               </div>
               
-              <div className="bg-purple-50 p-6 rounded-lg">
-                <h4 className="font-semibold text-lg mb-3 text-purple-900">Pilonul III: Pensia Facultativă</h4>
-                <p className="text-purple-800 font-medium">Sistemul voluntar de economisire pentru pensie cu beneficii fiscale. Poți contribui până la 400 EUR anual cu deducere fiscală.</p>
+              <div className="bg-purple-50 dark:bg-purple-950/20 p-6 rounded-lg border border-purple-200 dark:border-purple-800">
+                <h4 className="font-semibold text-lg mb-3 text-purple-900 dark:text-purple-100">Pilonul III: Pensia Facultativă</h4>
+                <p className="text-purple-900 dark:text-purple-100 font-medium">Sistemul voluntar de economisire pentru pensie cu beneficii fiscale. Poți contribui până la 400 EUR anual cu deducere fiscală.</p>
               </div>
             </div>
 
@@ -348,7 +348,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-4 text-slate-900 dark:text-slate-50">Ultimele Articole despre Pensii</h2>
-            <p className="text-xl text-slate-800 dark:text-slate-200 max-w-3xl mx-auto font-medium">
+            <p className="text-xl text-gray-900 dark:text-gray-100 max-w-3xl mx-auto font-medium">
               Rămâi la curent cu cele mai recente schimbări în legislația pensiilor și sfaturi pentru planificarea financiară
             </p>
           </div>
