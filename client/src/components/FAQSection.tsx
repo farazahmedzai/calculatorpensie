@@ -56,7 +56,7 @@ export default function FAQSection() {
           <h2 className="text-3xl font-bold text-gray-900 mb-4">
             Întrebări Frecvente (FAQ) despre Calculul Pensiei
           </h2>
-          <p className="text-lg text-gray-600">
+          <p className="text-lg text-gray-800 font-medium">
             Răspunsuri la cele mai comune întrebări despre sistemul de pensii din România
           </p>
         </div>

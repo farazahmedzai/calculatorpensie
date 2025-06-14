@@ -117,7 +117,7 @@ export default function Home() {
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {/* Birth Date - Calendar Input */}
                 <div className="space-y-2">
-                  <Label className="text-sm font-medium flex items-center gap-2">
+                  <Label className="text-sm font-semibold flex items-center gap-2 text-gray-900">
                     <Calendar className="h-4 w-4" />
                     Data Nașterii
                   </Label>
@@ -136,7 +136,7 @@ export default function Home() {
 
                 {/* Sex - Radio Buttons (Bărbat/Femeie) */}
                 <div className="space-y-2">
-                  <Label className="text-sm font-medium flex items-center gap-2">
+                  <Label className="text-sm font-semibold flex items-center gap-2 text-gray-900">
                     <Users className="h-4 w-4" />
                     Sex
                   </Label>
@@ -152,27 +152,27 @@ export default function Home() {
                   >
                     <div className="flex items-center space-x-2">
                       <RadioGroupItem value="male" id="male" />
-                      <Label htmlFor="male">Bărbat</Label>
+                      <Label htmlFor="male" className="text-gray-900 font-medium">Bărbat</Label>
                     </div>
                     <div className="flex items-center space-x-2">
                       <RadioGroupItem value="female" id="female" />
-                      <Label htmlFor="female" >Femeie</Label>
+                      <Label htmlFor="female" className="text-gray-900 font-medium">Femeie</Label>
                     </div>
                   </RadioGroup>
                 </div>
 
                 {/* Monthly Salary - Number Input with Tooltip */}
                 <div className="space-y-2">
-                  <Label className="text-sm font-medium flex items-center gap-2">
+                  <Label className="text-sm font-semibold flex items-center gap-2 text-gray-900">
                     <TrendingUp className="h-4 w-4" />
                     Salariu Brut Lunar Actual (RON)
                     <TooltipProvider>
                       <Tooltip>
                         <TooltipTrigger>
-                          <HelpCircle className="h-4 w-4 text-gray-400" />
+                          <HelpCircle className="h-4 w-4 text-gray-600" />
                         </TooltipTrigger>
                         <TooltipContent>
-                          <p>Introdu salariul tău brut lunar în Lei RON</p>
+                          <p className="text-gray-900 font-medium">Introdu salariul tău brut lunar în Lei RON</p>
                         </TooltipContent>
                       </Tooltip>
                     </TooltipProvider>
@@ -193,16 +193,16 @@ export default function Home() {
 
                 {/* Contribution Years - Number Input with Tooltip */}
                 <div className="space-y-2">
-                  <Label className="text-sm font-medium flex items-center gap-2">
+                  <Label className="text-sm font-semibold flex items-center gap-2 text-gray-900">
                     <ListCheck className="h-4 w-4" />
                     Stagiu de Cotizare Actual (Ani)
                     <TooltipProvider>
                       <Tooltip>
                         <TooltipTrigger>
-                          <HelpCircle className="h-4 w-4 text-gray-400" />
+                          <HelpCircle className="h-4 w-4 text-gray-600" />
                         </TooltipTrigger>
                         <TooltipContent>
-                          <p>Câți ani ai lucrat cu contract de muncă până acum?</p>
+                          <p className="text-gray-900 font-medium">Câți ani ai lucrat cu contract de muncă până acum?</p>
                         </TooltipContent>
                       </Tooltip>
                     </TooltipProvider>
@@ -223,7 +223,7 @@ export default function Home() {
 
                 {/* Work Conditions - Dropdown */}
                 <div className="space-y-2">
-                  <Label className="text-sm font-medium flex items-center gap-2">
+                  <Label className="text-sm font-semibold flex items-center gap-2 text-gray-900">
                     <Gavel className="h-4 w-4" />
                     Condiții de Muncă
                   </Label>
@@ -347,8 +347,8 @@ export default function Home() {
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Ultimele Articole despre Pensii</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <h2 className="text-3xl font-bold mb-4 text-gray-900">Ultimele Articole despre Pensii</h2>
+            <p className="text-xl text-gray-800 max-w-3xl mx-auto font-medium">
               Rămâi la curent cu cele mai recente schimbări în legislația pensiilor și sfaturi pentru planificarea financiară
             </p>
           </div>
@@ -366,11 +366,11 @@ export default function Home() {
                   <h3 className="text-lg font-semibold mb-3 text-gray-900">
                     {article.title}
                   </h3>
-                  <p className="text-gray-600 mb-4 text-sm leading-relaxed">
+                  <p className="text-gray-800 mb-4 text-sm leading-relaxed font-medium">
                     {article.excerpt}
                   </p>
                   <div className="flex items-center justify-between">
-                    <span className="text-xs text-gray-500">
+                    <span className="text-xs text-gray-700 font-medium">
                       {new Date(article.publishDate).toLocaleDateString('ro-RO')}
                     </span>
                     <Link href={`/blog/${article.slug}`}>
