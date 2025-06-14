@@ -1,4 +1,5 @@
 import { QueryClient, QueryFunction } from "@tanstack/react-query";
+import { staticArticles } from "../data/static-articles";
 
 async function throwIfResNotOk(res: Response) {
   if (!res.ok) {
