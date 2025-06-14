@@ -14,6 +14,9 @@ import { WebApplicationSchema, OrganizationSchema, WebSiteSchema, WebPageSchema 
 import FAQSection from "@/components/FAQSection";
 import MetaTags from "@/components/seo/MetaTags";
 import BreadcrumbNavigation from "@/components/seo/BreadcrumbNavigation";
+import PensionComparison from "@/components/features/PensionComparison";
+import NewsletterSignup from "@/components/newsletter/NewsletterSignup";
+import PerformanceTracker from "@/components/analytics/PerformanceTracker";
 import { trackCalculatorUsage } from "@/lib/analytics";
 
 interface Article {
@@ -78,6 +81,7 @@ export default function Home() {
 
   return (
     <div className="bg-white">
+      <PerformanceTracker page="/" title="Calculator Pensie România 2025" />
       <MetaTags 
         title="Calculator Pensie 2025 - Calculează Pensia de Stat (Pilon I) și Privată | CalculatorPensie.com"
         description="✅ Folosește cel mai simplu calculator de pensie online. Află vârsta de pensionare și estimează-ți pensia lunară (Pilon I și II) în mai puțin de 60 de secunde. Gratuit și precis!"
@@ -356,6 +360,21 @@ export default function Home() {
 
       {/* FAQ Section with Rich Snippets */}
       <FAQSection />
+
+      {/* Pension Comparison Section */}
+      <PensionComparison />
+
+      {/* Newsletter Signup Section */}
+      <section className="py-16 bg-gradient-to-br from-blue-600 to-blue-800">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <NewsletterSignup 
+            compact={true}
+            title="Rămâi la Curent cu Schimbările în Pensii"
+            description="Primește lunar cele mai importante actualizări despre sistemul de pensii din România"
+            className="bg-white/10 backdrop-blur-sm border-white/20"
+          />
+        </div>
+      </section>
 
       {/* Latest Articles Section */}
       <section className="py-16 bg-gray-50">

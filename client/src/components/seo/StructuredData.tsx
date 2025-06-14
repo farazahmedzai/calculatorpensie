@@ -304,6 +304,7 @@ export function WebSiteSchema({ name, url }: { name: string; url: string }) {
     <script
       type="application/ld+json"
       dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      suppressHydrationWarning
     />
   );
 }
