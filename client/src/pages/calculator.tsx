@@ -22,6 +22,47 @@ export default function CalculatorPage() {
 
   return (
     <div className="min-h-screen bg-neutral-light py-8">
+      <MetaTags 
+        title="Calculator Pensie România 2025 - Calculează Pensia de Stat și Privată Online"
+        description="Utilizează calculatoarele noastre avansate pentru a afla pensia de stat, pensia anticipată și contribuțiile Pilonul III. Calcule precise bazate pe legislația română actualizată."
+        canonical="https://calculatorpensie.com/calculator"
+        keywords="calculator pensie romania, calcul pensie de stat, pensie anticipata, pilon III, calculator pilon 3"
+      />
+      
+      <WebApplicationSchema 
+        name="Calculatoare Pensie România"
+        description="Suite completă de calculatoare pentru toate tipurile de pensii din România"
+        url="https://calculatorpensie.com/calculator"
+      />
+      
+      <WebPageSchema 
+        name="Calculatoare Pensie România - Calcul Rapid și Precis"
+        description="Calculatoare online pentru pensia de stat, pensia anticipată și Pilonul III"
+        url="https://calculatorpensie.com/calculator"
+        breadcrumbs={[
+          { name: "Acasă", url: "https://calculatorpensie.com" },
+          { name: "Calculator Pensie" }
+        ]}
+      />
+      
+      <HowToSchema 
+        name="Cum să calculezi pensia ta în România"
+        description="Ghid pas cu pas pentru calcularea pensiei folosind calculatoarele online"
+        steps={[
+          { name: "Selectează tipul de calculator", text: "Alege între calculatorul principal, pensia anticipată sau Pilonul III" },
+          { name: "Introdu datele personale", text: "Completează vârsta, sexul, salariul și stagiul de cotizare" },
+          { name: "Selectează condițiile de muncă", text: "Specifică dacă ai lucrat în condiții normale, deosebite sau speciale" },
+          { name: "Calculează rezultatul", text: "Apasă butonul de calcul pentru a vedea pensia estimată și data pensionării" }
+        ]}
+        totalTime="PT5M"
+        estimatedCost={{ currency: "RON", value: "0" }}
+      />
+
+      {/* Breadcrumb Navigation */}
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <BreadcrumbNavigation />
+      </div>
+
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-8">
           <h1 className="text-3xl font-bold mb-4">Calculatoare Pensie România</h1>

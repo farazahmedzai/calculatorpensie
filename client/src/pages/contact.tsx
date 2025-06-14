@@ -45,6 +45,25 @@ export default function Contact() {
         canonical="https://calculatorpensie.com/contact"
         keywords="contact calculatorpensie, suport pensii romania, intrebari calculator pensie"
       />
+      
+      <BreadcrumbNavigation />
+      
+      <WebPageSchema 
+        name="Contact - CalculatorPensie.com"
+        description="Contactează echipa noastră pentru suport și întrebări despre calculatoarele de pensie"
+        url="https://calculatorpensie.com/contact"
+        breadcrumbs={[
+          { name: "Acasă", url: "https://calculatorpensie.com" },
+          { name: "Contact" }
+        ]}
+      />
+      
+      <LocalBusinessSchema 
+        name="CalculatorPensie.com"
+        description="Servicii de calcul pensie și consultanță financiară pentru pensionare"
+        url="https://calculatorpensie.com"
+        telephone="+40-XXX-XXX-XXX"
+      />
 
       {/* Hero Section */}
       <section className="py-16 bg-gradient-to-br from-blue-50 to-indigo-100">

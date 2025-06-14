@@ -1,5 +1,6 @@
 import MetaTags from "@/components/seo/MetaTags";
-import { OrganizationSchema } from "@/components/seo/StructuredData";
+import { OrganizationSchema, WebPageSchema } from "@/components/seo/StructuredData";
+import BreadcrumbNavigation from "@/components/seo/BreadcrumbNavigation";
 import { Card, CardContent } from "@/components/ui/card";
 import { Shield, Target, Users, Award } from "lucide-react";
 
@@ -18,6 +19,21 @@ export default function DespreNoi() {
         url="https://calculatorpensie.com"
         description="Platforma #1 din România pentru calculul pensiilor și planificarea financiară pentru pensionare"
       />
+      
+      <WebPageSchema 
+        name="Despre Noi - CalculatorPensie.com"
+        description="Misiunea și valorile echipei CalculatorPensie.com în oferirea celor mai precise instrumente de calcul al pensiei"
+        url="https://calculatorpensie.com/despre-noi"
+        breadcrumbs={[
+          { name: "Acasă", url: "https://calculatorpensie.com" },
+          { name: "Despre Noi" }
+        ]}
+      />
+
+      {/* Breadcrumb Navigation */}
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-4">
+        <BreadcrumbNavigation />
+      </div>
 
       {/* Hero Section */}
       <section className="py-16 bg-gradient-to-br from-blue-50 to-indigo-100">

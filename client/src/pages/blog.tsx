@@ -7,6 +7,9 @@ import { Badge } from "@/components/ui/badge";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Link } from "wouter";
 import { Search, Clock, Filter, BookOpen } from "lucide-react";
+import MetaTags from "@/components/seo/MetaTags";
+import BreadcrumbNavigation from "@/components/seo/BreadcrumbNavigation";
+import { WebPageSchema } from "@/components/seo/StructuredData";
 
 interface Article {
   id: number;
@@ -62,11 +65,33 @@ export default function BlogPage() {
 
   return (
     <div className="min-h-screen bg-white">
+      <MetaTags 
+        title="Blog Pensii România 2025 - Ghiduri Complete și Noutăți | CalculatorPensie.com"
+        description="Citește cele mai recente articole despre pensii în România. Ghiduri de planificare, analize legislative și sfaturi de la experți pentru a-ți optimiza pensia."
+        canonical="https://calculatorpensie.com/blog"
+        keywords="blog pensii romania, ghid pensie, noutati pensii, planificare pensie, legislatie pensii"
+      />
+      
+      <WebPageSchema 
+        name="Blog Pensii România - Ghiduri și Analize Experte"
+        description="Articole complete despre sistemul de pensii din România, planificare financiară și legislație actualizată"
+        url="https://calculatorpensie.com/blog"
+        breadcrumbs={[
+          { name: "Acasă", url: "https://calculatorpensie.com" },
+          { name: "Blog Pensii" }
+        ]}
+      />
+
+      {/* Breadcrumb Navigation */}
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-4">
+        <BreadcrumbNavigation />
+      </div>
+
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-neutral-dark to-gray-800 text-white py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <BookOpen className="h-12 w-12 mx-auto mb-6" />
-          <h1 className="text-4xl font-bold mb-4">Blog CalculatorPensie.ro</h1>
+          <h1 className="text-4xl font-bold mb-4">Blog Pensii România</h1>
           <p className="text-xl text-yellow-200 mb-8 font-bold bg-black/20 p-4 rounded-lg">
             Ghiduri complete, analize și noutăți despre sistemul de pensii din România. 
             Rămâi informat cu experții noștri.
