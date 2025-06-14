@@ -36,10 +36,10 @@ export default function Header() {
           font-medium transition-all duration-300 cursor-pointer relative group
           ${highlight 
             ? 'bg-blue-600 text-white hover:bg-blue-700 shadow-md' 
-            : 'text-gray-700 hover:text-blue-600 hover:bg-blue-50'
+            : 'text-slate-700 hover:text-blue-600 hover:bg-blue-50 dark:text-slate-300 dark:hover:text-blue-400 dark:hover:bg-slate-800'
           }
-          ${isActiveLink(href) && !highlight ? 'text-blue-600 bg-blue-50' : ''}
-          ${mobile ? 'hover:bg-blue-50 border border-transparent hover:border-blue-200' : ''}
+          ${isActiveLink(href) && !highlight ? 'text-blue-600 bg-blue-50 dark:text-blue-400 dark:bg-slate-800' : ''}
+          ${mobile ? 'hover:bg-blue-50 border border-transparent hover:border-blue-200 dark:hover:bg-slate-800' : ''}
         `}
         onClick={() => mobile && setMobileMenuOpen(false)}
       >
@@ -52,7 +52,7 @@ export default function Header() {
   );
 
   return (
-    <header className="bg-white shadow-lg sticky top-0 z-50 border-b border-gray-200 backdrop-blur-sm bg-white/95">
+    <header className="bg-white dark:bg-slate-950 shadow-lg sticky top-0 z-50 border-b border-gray-200 dark:border-slate-800 backdrop-blur-sm bg-white/95 dark:bg-slate-950/95">
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
@@ -62,10 +62,10 @@ export default function Header() {
                 <Calculator className="h-8 w-8 text-white" />
               </div>
               <div>
-                <span className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent">
+                <span className="text-2xl font-bold text-slate-900 dark:text-slate-50">
                   CalculatorPensie.com
                 </span>
-                <p className="text-xs text-blue-600 font-medium">#1 Calculator de Pensie</p>
+                <p className="text-xs text-blue-600 font-medium dark:text-blue-400">#1 Calculator de Pensie</p>
               </div>
             </div>
           </Link>
@@ -99,8 +99,8 @@ export default function Header() {
                       <Calculator className="h-6 w-6 text-white" />
                     </div>
                     <div>
-                      <span className="font-bold text-gray-900">CalculatorPensie.com</span>
-                      <p className="text-xs text-blue-600 font-medium">#1 Calculator România</p>
+                      <span className="font-bold text-slate-900 dark:text-slate-50">CalculatorPensie.com</span>
+                      <p className="text-xs text-blue-600 font-medium dark:text-blue-400">#1 Calculator România</p>
                     </div>
                   </div>
                   <Button 
@@ -129,12 +129,12 @@ export default function Header() {
                 <div className="mt-8 pt-6 border-t border-blue-200">
                   <div className="space-y-3">
                     <Link href="/despre-noi">
-                      <span className="block px-4 py-3 text-sm text-gray-600 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-all cursor-pointer">
+                      <span className="block px-4 py-3 text-sm text-slate-600 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-all cursor-pointer dark:text-slate-400 dark:hover:text-blue-400 dark:hover:bg-slate-800">
                         Despre Noi
                       </span>
                     </Link>
                     <Link href="/contact">
-                      <span className="block px-4 py-3 text-sm text-gray-600 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-all cursor-pointer">
+                      <span className="block px-4 py-3 text-sm text-slate-600 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-all cursor-pointer dark:text-slate-400 dark:hover:text-blue-400 dark:hover:bg-slate-800">
                         Contact
                       </span>
                     </Link>

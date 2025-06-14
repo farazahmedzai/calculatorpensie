@@ -270,7 +270,7 @@ export default function Home() {
               </div>
 
               {/* Disclaimers */}
-              <div className="mt-8 space-y-3 text-sm text-gray-600">
+              <div className="mt-8 space-y-3 text-sm text-slate-600 dark:text-slate-400">
                 <p className="flex items-start gap-2">
                   <span className="text-blue-600">ℹ️</span>
                   <span>Calcul bazat pe valoarea punctului de pensie de <strong>2.031 lei</strong>, valabil în 2025</span>
@@ -288,20 +288,20 @@ export default function Home() {
       {/* How Calculator Works Section */}
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold mb-8 text-gray-900">
+          <h2 className="text-3xl font-bold mb-8 text-slate-900 dark:text-slate-50">
             Cum Funcționează Calculatorul Nostru de Pensie?
           </h2>
           
           <div className="prose prose-lg max-w-none">
-            <p className="text-gray-600 mb-6">
+            <p className="text-slate-600 dark:text-slate-400 mb-6">
               Calculatorul nostru folosește formulele oficiale ale Casei Naționale de Pensii Publice (CNPP) pentru a-ți oferi o estimare precisă a pensiei tale de stat. Sistemul ia în considerare vârsta ta actuală, stagiul de cotizare, salariul și condițiile specifice de muncă conform <strong>Legii pensiilor nr. 263/2010</strong>.
             </p>
 
-            <h3 className="text-2xl font-semibold mb-4 text-gray-800">
+            <h3 className="text-2xl font-semibold mb-4 text-slate-800 dark:text-slate-200">
               Înțelegerea Sistemului de Pensii din România pe Scurt
             </h3>
 
-            <p className="text-gray-800 mb-6 font-medium">
+            <p className="text-slate-800 dark:text-slate-200 mb-6 font-medium">
               România are un sistem de pensii bazat pe trei piloni, fiecare cu un rol specific în asigurarea veniturilor la pensie:
             </p>
 
@@ -324,14 +324,14 @@ export default function Home() {
 
             {/* Official Formula Display */}
             <div className="mb-12">
-              <h3 className="text-2xl font-semibold mb-6 text-gray-800">
+              <h3 className="text-2xl font-semibold mb-6 text-slate-800 dark:text-slate-200">
                 Formula Oficială de Calcul a Pensiei de Stat
               </h3>
-              <div className="bg-blue-50 border border-blue-200 rounded-lg p-8 text-center">
-                <p className="text-2xl font-bold text-blue-900 mb-4">
+              <div className="bg-blue-50 dark:bg-blue-950/20 border border-blue-200 dark:border-blue-800 rounded-lg p-8 text-center">
+                <p className="text-2xl font-bold text-blue-900 dark:text-blue-100 mb-4">
                   Pensie = Punctaj Mediu Anual (PMA) × Valoarea Punctului de Pensie (VPP)
                 </p>
-                <p className="text-lg text-blue-800 font-medium">
+                <p className="text-lg text-blue-800 dark:text-blue-200 font-medium">
                   Punctaj Mediu Anual se calculează pe baza salariilor și perioadei de cotizare, iar Valoarea Punctului de Pensie pentru 2025 este <strong>2.031 lei</strong>.
                 </p>
               </div>
