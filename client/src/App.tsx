@@ -37,7 +37,7 @@ function Router() {
           <Route path="/tipuri-pensii" component={TipuriPensiiPage} />
           <Route path="/legislatie" component={LegislatiePage} />
           <Route path="/blog" component={BlogPage} />
-          <Route path="/blog/:slug" component={BlogPage} />
+          <Route path="/blog/:slug" component={BlogArticle} />
           <Route path="/despre-noi" component={DespreNoi} />
           <Route path="/metodologie" component={Metodologie} />
           <Route path="/contact" component={Contact} />

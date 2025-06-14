@@ -1,4 +1,4 @@
-import { useParams } from "wouter";
+import { useParams, useRoute } from "wouter";
 import { useQuery } from "@tanstack/react-query";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -22,7 +22,8 @@ interface Article {
 }
 
 export default function BlogArticle() {
-  const { slug } = useParams();
+  const [match, params] = useRoute("/blog/:slug");
+  const slug = params?.slug;
 
   const { data: article, isLoading, error } = useQuery<Article>({
     queryKey: [`/api/articles/${slug}`],
@@ -97,13 +98,14 @@ export default function BlogArticle() {
         dateModified={article.publishDate}
         author="CalculatorPensie.com"
         url={`https://calculatorpensie.com/blog/${article.slug}`}
+        category={article.category}
       />
 
       <BreadcrumbNavigation 
         items={[
-          { name: "Acasă", href: "/" },
-          { name: "Blog", href: "/blog" },
-          { name: article.title }
+          { label: "Acasă", href: "/" },
+          { label: "Blog", href: "/blog" },
+          { label: article.title }
         ]}
       />
 
