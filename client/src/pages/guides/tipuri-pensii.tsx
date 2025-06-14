@@ -14,7 +14,7 @@ export default function TipuriPensiiPage() {
             <ListCheck className="h-8 w-8 mr-3" />
             <h1 className="text-4xl font-bold">Ghid Exhaustiv: Tipuri de Pensii din Sistemul Public din România</h1>
           </div>
-          <p className="text-xl text-green-50 mb-8">
+          <p className="text-xl text-white mb-8 font-medium">
             Descoperă toate tipurile de pensii disponibile în România, condițiile de acordare 
             și cum să îți calculezi corect drepturile de pensie pentru fiecare categorie.
           </p>

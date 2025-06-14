@@ -14,7 +14,7 @@ export default function LegislatiePage() {
             <Gavel className="h-8 w-8 mr-3" />
             <h1 className="text-4xl font-bold">Legea Pensiilor 2024 pe Înțelesul Tuturor</h1>
           </div>
-          <p className="text-xl text-red-50 mb-8">
+          <p className="text-xl text-white mb-8 font-medium">
             Ghid complet despre legislația pensiilor din România, cu explicații clare, 
             actualizări legislative și resurse oficiale pentru înțelegerea drepturilor tale de pensionare.
           </p>

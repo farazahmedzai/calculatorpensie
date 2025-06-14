@@ -13,7 +13,7 @@ export default function PlanificarePage() {
             <MapPin className="h-8 w-8 mr-3" />
             <h1 className="text-4xl font-bold">Ghid Complet pentru Planificarea Pensiei în România</h1>
           </div>
-          <p className="text-xl text-blue-50 mb-8">
+          <p className="text-xl text-white mb-8 font-medium">
             Descoperă strategiile esențiale pentru o pensie liniștită și învață să eviți greșelile 
             costisitoare în planificarea viitorului tău financiar.
           </p>
