@@ -290,7 +290,7 @@ export default function TipuriPensiiPage() {
           {/* CTA Section */}
           <div className="bg-brand-green bg-opacity-10 rounded-xl p-8 text-center border border-brand-green border-opacity-20">
             <h3 className="text-2xl font-bold text-brand-green mb-4">Calculează-ți Pensia pentru Orice Tip</h3>
-            <p className="text-neutral-medium mb-6">
+            <p className="text-gray-700 mb-6">
               Folosește calculatoarele noastre specializate pentru a afla exact ce pensie ai avea 
               în funcție de tipul ales și situația ta specifică.
             </p>

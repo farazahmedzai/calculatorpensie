@@ -79,7 +79,7 @@ export default function PlanificarePage() {
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <p className="text-sm text-neutral-medium mb-4">
+                <p className="text-sm text-gray-700 mb-4">
                   Multe persoane fac aceleași greșeli costisitoare când vine vorba de planificarea pensiei. 
                   Află care sunt acestea și cum să le eviți pentru un viitor financiar sigur.
                 </p>
@@ -102,7 +102,7 @@ export default function PlanificarePage() {
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <p className="text-sm text-neutral-medium mb-4">
+                <p className="text-sm text-gray-700 mb-4">
                   Înțelege diferențele între cei doi piloni de pensii private și cum să îți optimizezi 
                   strategia pentru randamente maxime pe termen lung.
                 </p>
@@ -125,7 +125,7 @@ export default function PlanificarePage() {
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <p className="text-sm text-neutral-medium mb-4">
+                <p className="text-sm text-gray-700 mb-4">
                   Strategiile de investiții pe termen lung specifice pentru constituirea unui fond de pensie 
                   suplimentar prin instrumente financiare diversificate.
                 </p>
@@ -148,7 +148,7 @@ export default function PlanificarePage() {
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <p className="text-sm text-neutral-medium mb-4">
+                <p className="text-sm text-gray-700 mb-4">
                   Folosește calculatorul nostru specializat pentru a determina contribuția optimă 
                   la Pilonul III și economia fiscală rezultată.
                 </p>
@@ -201,7 +201,7 @@ export default function PlanificarePage() {
           {/* CTA Section */}
           <div className="bg-neutral-light rounded-xl p-8 mt-12 text-center">
             <h3 className="text-2xl font-bold mb-4">Începe să îți Planifici Pensia Astăzi</h3>
-            <p className="text-neutral-medium mb-6">
+            <p className="text-gray-700 mb-6">
               Folosește instrumentele noastre gratuite pentru a îți calcula pensia și 
               a dezvolta o strategie personalizată de planificare.
             </p>
