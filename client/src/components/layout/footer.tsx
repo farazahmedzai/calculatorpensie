@@ -192,8 +192,8 @@ export default function Footer() {
                 <p className="text-gray-300 text-sm leading-relaxed mb-3">
                   <strong className="text-white">Valoarea punctului de pensie 2025:</strong> 2.031 Lei conform legislației în vigoare
                 </p>
-                <p className="text-gray-400 text-xs leading-relaxed">
-                  <strong>Disclaimer:</strong> Acest calculator oferă estimări informative bazate pe Legea 263/2010 și nu are valoare oficială. 
+                <p className="text-gray-200 text-xs leading-relaxed">
+                  <strong className="text-white">Disclaimer:</strong> Acest calculator oferă estimări informative bazate pe Legea 263/2010 și nu are valoare oficială. 
                   Pentru calculul exact al pensiei, consultați Casa Națională de Pensii Publice (CNPP) sau un consilier autorizat.
                 </p>
               </div>
@@ -206,12 +206,12 @@ export default function Footer() {
                 Contact Rapid
               </h4>
               <div className="space-y-3">
-                <a href="mailto:contact@calculatorpensie.com" className="flex items-center text-gray-300 hover:text-blue-400 transition-colors">
-                  <Mail className="h-4 w-4 mr-3 text-blue-500" />
+                <a href="mailto:contact@calculatorpensie.com" className="flex items-center text-gray-200 hover:text-blue-400 transition-colors">
+                  <Mail className="h-4 w-4 mr-3 text-blue-400" />
                   <span className="text-sm">contact@calculatorpensie.com</span>
                 </a>
-                <div className="flex items-center text-gray-300">
-                  <MapPin className="h-4 w-4 mr-3 text-green-500" />
+                <div className="flex items-center text-gray-200">
+                  <MapPin className="h-4 w-4 mr-3 text-green-400" />
                   <span className="text-sm">București, România</span>
                 </div>
               </div>
@@ -220,21 +220,21 @@ export default function Footer() {
 
           {/* Copyright */}
           <div className="flex flex-col md:flex-row justify-between items-center pt-6 border-t border-slate-700">
-            <div className="text-gray-400 text-sm mb-4 md:mb-0">
+            <div className="text-gray-200 text-sm mb-4 md:mb-0">
               <p>&copy; 2025 CalculatorPensie.com. Toate drepturile rezervate.</p>
             </div>
             <div className="flex flex-wrap gap-6 text-sm">
               <Link href="/metodologie">
-                <span className="text-gray-400 hover:text-blue-400 transition-colors cursor-pointer">Metodologie</span>
+                <span className="text-gray-200 hover:text-blue-400 transition-colors cursor-pointer">Metodologie</span>
               </Link>
               <Link href="/privacy">
-                <span className="text-gray-400 hover:text-blue-400 transition-colors cursor-pointer">Privacy</span>
+                <span className="text-gray-200 hover:text-blue-400 transition-colors cursor-pointer">Privacy</span>
               </Link>
               <Link href="/contact">
-                <span className="text-gray-400 hover:text-blue-400 transition-colors cursor-pointer">Contact</span>
+                <span className="text-gray-200 hover:text-blue-400 transition-colors cursor-pointer">Contact</span>
               </Link>
               <Link href="/faq">
-                <span className="text-gray-400 hover:text-blue-400 transition-colors cursor-pointer">FAQ</span>
+                <span className="text-gray-200 hover:text-blue-400 transition-colors cursor-pointer">FAQ</span>
               </Link>
             </div>
           </div>
