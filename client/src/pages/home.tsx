@@ -10,6 +10,9 @@ import { Calculator, HelpCircle, Calendar, Users, TrendingUp, MapPin, ListCheck,
 import { Link } from "wouter";
 import { useQuery } from "@tanstack/react-query";
 import { calculateStandardPension } from "@/lib/pension-calculations";
+import { WebApplicationSchema, OrganizationSchema, WebSiteSchema } from "@/components/seo/StructuredData";
+import FAQSection from "@/components/FAQSection";
+import MetaTags from "@/components/seo/MetaTags";
 
 interface Article {
   id: number;
@@ -34,57 +37,7 @@ export default function Home() {
     monthlyPension: number;
   } | null>(null);
 
-  // Schema.org structured data for SEO
-  const webApplicationSchema = {
-    "@context": "https://schema.org",
-    "@type": "WebApplication",
-    "name": "Calculator Pensie Online România 2024",
-    "description": "Cel mai precis calculator de pensie online din România. Calculează pensia de stat și vârsta de pensionare instant.",
-    "applicationCategory": "FinanceApplication",
-    "operatingSystem": "Web Browser",
-    "offers": {
-      "@type": "Offer",
-      "price": "0",
-      "priceCurrency": "RON"
-    },
-    "featureList": [
-      "Calculul pensiei de stat (Pilon I)",
-      "Calculul pensiei anticipate",
-      "Calculul contribuțiilor Pilon III",
-      "Estimarea vârstei de pensionare"
-    ]
-  };
 
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "La ce vârstă mă pot pensiona?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Vârsta de pensionare depinde de sex și istoricul de cotizare. Bărbații se pot pensiona la 65 ani cu 35 ani stagiu, femeile la 63 ani cu 30 ani stagiu (2024). Folosește calculatorul nostru pentru data exactă de pensionare bazată pe situația ta specifică."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Care este valoarea punctului de pensie în 2024?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Începând cu 1 ianuarie 2024, valoarea punctului de pensie este de 2.031 lei, conform legislației oficiale."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Cum se calculează pensia anticipată?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Poți ieși la pensie cu câțiva ani mai devreme, dar cu o penalizare de 0.25% pe lună pentru fiecare lună de anticipare. Bărbații pot ieși la 62 ani, femeile la 60 ani, cu minimum 15 ani stagiu de cotizare."
-        }
-      }
-    ]
-  };
 
   const { data: articles = [] } = useQuery<Article[]>({
     queryKey: ['/api/articles/recent'],
@@ -124,13 +77,19 @@ export default function Home() {
   return (
     <div className="bg-white">
       {/* Schema.org JSON-LD for SEO */}
-      <script 
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(webApplicationSchema) }}
+      <WebApplicationSchema 
+        name="Calculator Pensie Online România 2025"
+        description="Cel mai precis calculator de pensie online din România. Calculează pensia de stat și vârsta de pensionare instant."
+        url="https://calculatorpensie.com"
       />
-      <script 
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      <OrganizationSchema 
+        name="CalculatorPensie.com"
+        url="https://calculatorpensie.com"
+        description="Platforma #1 din România pentru calculul pensiilor și planificarea financiară pentru pensionare"
+      />
+      <WebSiteSchema 
+        name="CalculatorPensie.com"
+        url="https://calculatorpensie.com"
       />
 
       {/* Above-Fold Calculator Section */}
