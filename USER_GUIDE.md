@@ -43,7 +43,7 @@ Oferim claritate instantanee și liniște sufletească cu un instrument simplu. 
 - **Data Estimată a Pensionării**: Luna, Anul  
 - **Estimare Pensie Lunară (Pilon I)**: ~XXXX RON
 - Bazat pe formulele oficiale românești de pensii
-- Folosește Valoarea Punctului de Pensie actuală (2.031 Lei în 2024)
+- Folosește Valoarea Punctului de Pensie actuală (2.031 Lei în 2025)
 
 ### Early Retirement Calculator
 **Location**: /calculator (second tab)
@@ -124,7 +124,7 @@ Each section contains detailed articles covering:
 
 ### Acuratețea Calculelor
 - **Formula Oficială**: Folosim formula oficială CNPP: Pensie = Punctaj Mediu Anual (PMA) x Valoarea Punctului de Pensie (VPP)
-- **Valoarea Actuală**: Calcul bazat pe valoarea punctului de pensie de 2.031 lei, valabil în 2024
+- **Valoarea Actuală**: Calcul bazat pe valoarea punctului de pensie de 2.031 lei, valabil în 2025
 - **Actualizări Legislative**: Actualizat cu ultimele schimbări legislative
 - **Experți în Pensii**: Revizuit regulat de experți în pensii
 - **Disclaimer**: Acest calcul este o estimare informativă și nu are valoare oficială. Pentru calculul exact, consultați Casa Națională de Pensii Publice (CNPP)
@@ -140,7 +140,7 @@ Each section contains detailed articles covering:
 
 ### Despre Calcule
 **Î: Cât de precise sunt estimările de pensie?**
-R: Calculatoarele noastre folosesc formulele oficiale din legea pensiilor românești. Rezultatele sunt estimări bazate pe legislația actuală și datele introduse de tine. Folosim Valoarea Punctului de Pensie de 2.031 lei din 2024.
+R: Calculatoarele noastre folosesc formulele oficiale din legea pensiilor românești. Rezultatele sunt estimări bazate pe legislația actuală și datele introduse de tine. Folosim Valoarea Punctului de Pensie de 2.031 lei din 2025.
 
 **Î: Trebuie să-mi creez un cont?**
 R: Nu, toate calculatoarele funcționează fără înregistrare. Le poți folosi imediat, gratuit.
@@ -150,13 +150,13 @@ R: Momentan, calculele nu sunt salvate. Recomandăm să faci capturi de ecran sa
 
 ### Despre Sistemul de Pensii
 **Î: La ce vârstă mă pot pensiona?**
-R: Depinde de sex și istoricul de cotizare. Folosește calculatorul nostru pentru data exactă de pensionare. Bărbații se pot pensiona la 65 ani cu 35 ani stagiu, femeile la 63 ani cu 30 ani stagiu (2024).
+R: Depinde de sex și istoricul de cotizare. Folosește calculatorul nostru pentru data exactă de pensionare. Bărbații se pot pensiona la 65 ani cu 35 ani stagiu, femeile la 63 ani cu 30 ani stagiu (2025).
 
 **Î: Cum se calculează pensia anticipată?**
 R: Poți ieși la pensie cu câțiva ani mai devreme, dar cu o penalizare de 0.25% pe lună. Bărbații pot ieși la 62 ani, femeile la 60 ani, cu minimum 15 ani stagiu.
 
-**Î: Care este valoarea punctului de pensie în 2024?**
-R: Începând cu 1 ianuarie 2024, valoarea punctului de pensie este de 2.031 lei, conform legislației oficiale.
+**Î: Care este valoarea punctului de pensie în 2025?**
+R: Începând cu 1 ianuarie 2025, valoarea punctului de pensie este de 2.031 lei, conform legislației oficiale.
 
 **Î: Pot să-mi măresc pensia?**
 R: Da, prin contribuirea la Pilonul III (pensia facultativă), prin lucrul mai mulți ani sau prin continuarea muncii după vârsta standard de pensionare.

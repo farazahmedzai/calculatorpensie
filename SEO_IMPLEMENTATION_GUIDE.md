@@ -138,7 +138,7 @@
 {
   "@context": "https://schema.org",
   "@type": "WebApplication",
-  "name": "Calculator Pensie Online România 2024",
+  "name": "Calculator Pensie Online România 2025",
   "description": "Cel mai precis calculator de pensie online din România. Calculează pensia de stat și vârsta de pensionare instant.",
   "applicationCategory": "FinanceApplication",
   "operatingSystem": "Web Browser",
@@ -172,10 +172,10 @@
     },
     {
       "@type": "Question", 
-      "name": "Care este valoarea punctului de pensie în 2024?",
+      "name": "Care este valoarea punctului de pensie în 2025?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Începând cu 1 ianuarie 2024, valoarea punctului de pensie este de 2.031 lei."
+        "text": "Începând cu 1 ianuarie 2025, valoarea punctului de pensie este de 2.031 lei."
       }
     }
   ]
@@ -218,7 +218,7 @@
 - **Professional Networks**: HR and accounting publications
 
 ### Digital PR Initiatives
-1. **Annual Study**: "Radiografia Viitorului Pensionar din România 2025"
+1. **Annual Study**: "Radiografia Viitorului Pensionar din România 2026"
 2. **Legislative Updates**: Immediate coverage of pension law changes  
 3. **Expert Commentary**: Media quotes on pension reforms
 4. **Partnership Content**: Collaboration with financial advisors

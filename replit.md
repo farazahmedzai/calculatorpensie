@@ -99,8 +99,10 @@ CalculatorPensie.com is Romania's premier online pension calculator platform, de
 - CSS purging for minimal stylesheet size
 - Server-side rendering ready architecture
 
-## Changelog
-- June 14, 2025. Initial setup
+## Recent Changes
+- June 14, 2025: Comprehensive status update and documentation review
+- June 14, 2025: Updated all year references from 2024 to 2025
+- June 14, 2025: Initial setup completed
 
 ## User Preferences
 
