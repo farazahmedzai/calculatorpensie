@@ -206,13 +206,13 @@ export default function Footer() {
                 Contact Rapid
               </h4>
               <div className="space-y-3">
-                <a href="mailto:contact@calculatorpensie.com" className="flex items-center text-gray-200 hover:text-blue-400 transition-colors">
+                <a href="mailto:contact@calculatorpensie.com" className="flex items-center text-white hover:text-blue-400 transition-colors">
                   <Mail className="h-4 w-4 mr-3 text-blue-400" />
-                  <span className="text-sm">contact@calculatorpensie.com</span>
+                  <span className="text-sm font-medium">contact@calculatorpensie.com</span>
                 </a>
-                <div className="flex items-center text-gray-200">
+                <div className="flex items-center text-white">
                   <MapPin className="h-4 w-4 mr-3 text-green-400" />
-                  <span className="text-sm">București, România</span>
+                  <span className="text-sm font-medium">București, România</span>
                 </div>
               </div>
             </div>
@@ -220,21 +220,21 @@ export default function Footer() {
 
           {/* Copyright */}
           <div className="flex flex-col md:flex-row justify-between items-center pt-6 border-t border-slate-700">
-            <div className="text-gray-200 text-sm mb-4 md:mb-0">
-              <p>&copy; 2025 CalculatorPensie.com. Toate drepturile rezervate.</p>
+            <div className="text-white text-sm mb-4 md:mb-0">
+              <p className="font-medium">&copy; 2025 CalculatorPensie.com. Toate drepturile rezervate.</p>
             </div>
             <div className="flex flex-wrap gap-6 text-sm">
               <Link href="/metodologie">
-                <span className="text-gray-200 hover:text-blue-400 transition-colors cursor-pointer">Metodologie</span>
+                <span className="text-white hover:text-blue-400 transition-colors cursor-pointer font-medium">Metodologie</span>
               </Link>
               <Link href="/privacy">
-                <span className="text-gray-200 hover:text-blue-400 transition-colors cursor-pointer">Privacy</span>
+                <span className="text-white hover:text-blue-400 transition-colors cursor-pointer font-medium">Privacy</span>
               </Link>
               <Link href="/contact">
-                <span className="text-gray-200 hover:text-blue-400 transition-colors cursor-pointer">Contact</span>
+                <span className="text-white hover:text-blue-400 transition-colors cursor-pointer font-medium">Contact</span>
               </Link>
               <Link href="/faq">
-                <span className="text-gray-200 hover:text-blue-400 transition-colors cursor-pointer">FAQ</span>
+                <span className="text-white hover:text-blue-400 transition-colors cursor-pointer font-medium">FAQ</span>
               </Link>
             </div>
           </div>
