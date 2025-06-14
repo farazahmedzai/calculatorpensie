@@ -93,7 +93,7 @@ export default function FAQSection() {
                     id={`faq-answer-${item.id}`}
                     className="px-6 pb-4 border-t border-gray-100"
                   >
-                    <p className="text-gray-700 leading-relaxed pt-4">
+                    <p className="text-gray-900 leading-relaxed pt-4 font-medium">
                       {item.answer}
                     </p>
                   </div>
