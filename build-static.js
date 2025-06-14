@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 import { execSync } from 'child_process';
-import { copyFileSync, mkdirSync, existsSync } from 'fs';
+import { copyFileSync, mkdirSync, existsSync, writeFileSync } from 'fs';
 
 console.log('Building static site for Netlify...');
 
@@ -26,7 +26,7 @@ try {
     
     // Create _redirects for SPA routing
     const redirectsContent = `/*    /index.html   200`;
-    require('fs').writeFileSync(`${distPath}/_redirects`, redirectsContent);
+    writeFileSync(`${distPath}/_redirects`, redirectsContent);
     
     console.log('Static build completed successfully!');
   } else {
