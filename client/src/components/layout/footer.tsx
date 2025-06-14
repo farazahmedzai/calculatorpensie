@@ -206,35 +206,35 @@ export default function Footer() {
                 Contact Rapid
               </h4>
               <div className="space-y-3">
-                <a href="mailto:contact@calculatorpensie.com" className="flex items-center text-gray-100 hover:text-blue-300 transition-colors">
+                <a href="mailto:contact@calculatorpensie.com" className="flex items-center hover:text-blue-300 transition-colors">
                   <Mail className="h-4 w-4 mr-3 text-blue-300" />
-                  <span className="text-sm font-semibold">contact@calculatorpensie.com</span>
+                  <span className="footer-text-visible text-sm">contact@calculatorpensie.com</span>
                 </a>
-                <div className="flex items-center text-gray-100">
+                <div className="flex items-center">
                   <MapPin className="h-4 w-4 mr-3 text-green-300" />
-                  <span className="text-sm font-semibold">București, România</span>
+                  <span className="footer-text-visible text-sm">București, România</span>
                 </div>
               </div>
             </div>
           </div>
 
           {/* Copyright */}
-          <div className="flex flex-col md:flex-row justify-between items-center pt-6 border-t border-slate-600">
-            <div className="text-gray-100 text-sm mb-4 md:mb-0">
-              <p className="font-bold">&copy; 2025 CalculatorPensie.com. Toate drepturile rezervate.</p>
+          <div className="flex flex-col md:flex-row justify-between items-center pt-6 border-t border-slate-500">
+            <div className="text-sm mb-4 md:mb-0">
+              <p className="footer-text-visible">&copy; 2025 CalculatorPensie.com. Toate drepturile rezervate.</p>
             </div>
             <div className="flex flex-wrap gap-6 text-sm">
               <Link href="/metodologie">
-                <span className="text-gray-100 hover:text-blue-300 transition-colors cursor-pointer font-bold">Metodologie</span>
+                <span className="footer-text-visible hover:text-blue-300 transition-colors cursor-pointer">Metodologie</span>
               </Link>
               <Link href="/privacy">
-                <span className="text-gray-100 hover:text-blue-300 transition-colors cursor-pointer font-bold">Privacy</span>
+                <span className="footer-text-visible hover:text-blue-300 transition-colors cursor-pointer">Privacy</span>
               </Link>
               <Link href="/contact">
-                <span className="text-gray-100 hover:text-blue-300 transition-colors cursor-pointer font-bold">Contact</span>
+                <span className="footer-text-visible hover:text-blue-300 transition-colors cursor-pointer">Contact</span>
               </Link>
               <Link href="/faq">
-                <span className="text-gray-100 hover:text-blue-300 transition-colors cursor-pointer font-bold">FAQ</span>
+                <span className="footer-text-visible hover:text-blue-300 transition-colors cursor-pointer">FAQ</span>
               </Link>
             </div>
           </div>
