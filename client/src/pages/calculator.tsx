@@ -22,7 +22,7 @@ export default function CalculatorPage() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-8">
           <h1 className="text-3xl font-bold mb-4">Calculatoare Pensie România</h1>
-          <p className="text-xl text-neutral-medium">
+          <p className="text-xl text-gray-700">
             Instrumentele complete pentru planificarea pensiei tale
           </p>
         </div>

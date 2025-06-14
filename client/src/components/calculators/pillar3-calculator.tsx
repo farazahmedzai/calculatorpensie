@@ -184,7 +184,7 @@ export default function Pillar3Calculator() {
                     className="mt-2"
                   />
                 </FormControl>
-                <div className="flex justify-between text-sm text-neutral-medium mt-1">
+                <div className="flex justify-between text-sm text-gray-700 mt-1">
                   <span>50 RON</span>
                   <span>500 RON</span>
                 </div>
@@ -209,7 +209,7 @@ export default function Pillar3Calculator() {
                     className="mt-2"
                   />
                 </FormControl>
-                <div className="flex justify-between text-sm text-neutral-medium mt-1">
+                <div className="flex justify-between text-sm text-gray-700 mt-1">
                   <span>2% (conservator)</span>
                   <span>12% (agresiv)</span>
                 </div>

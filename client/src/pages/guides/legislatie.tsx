@@ -98,7 +98,7 @@ export default function LegislatiePage() {
                     </div>
                   </div>
                 </div>
-                <p className="text-sm text-neutral-medium mb-4">
+                <p className="text-sm text-gray-700 mb-4">
                   Vârsta de pensionare pentru femei a crescut gradual din 2015, ajungând la 63 de ani în 2024. 
                   Pentru informații complete despre evoluția vârstei de pensionare, consultă 
                   <strong> tabelul nostru complet cu vârsta standard de pensionare în România</strong>.
@@ -137,7 +137,7 @@ export default function LegislatiePage() {
                     <p className="text-xs text-pink-600">Pentru pensie completă</p>
                   </div>
                 </div>
-                <p className="text-sm text-neutral-medium mb-4">
+                <p className="text-sm text-gray-700 mb-4">
                   Stagiul de cotizare include toate perioadele în care s-au plătit contribuții la sistemul public de pensii. 
                   Pentru detalii despre <strong>cum se calculează corect stagiul de cotizare</strong> și ce perioade se iau în considerare, 
                   citește ghidul nostru specializat.
@@ -170,7 +170,7 @@ export default function LegislatiePage() {
                     </p>
                   </div>
                 </div>
-                <p className="text-sm text-neutral-medium mb-4">
+                <p className="text-sm text-gray-700 mb-4">
                   Indexarea pensiilor este mecanismul prin care se ajustează valoarea pensiilor pentru a compensa 
                   inflația și creșterea economică. Pentru înțelegerea completă a 
                   <strong> mecanismului și impactului indexării pensiilor</strong>, consultă analiza noastră detaliată.
@@ -195,7 +195,7 @@ export default function LegislatiePage() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                   <div>
                     <h4 className="font-semibold mb-2">Perioade Eligibile:</h4>
-                    <ul className="text-sm text-neutral-medium space-y-1">
+                    <ul className="text-sm text-gray-700 space-y-1">
                       <li>• Studii universitare (maximum 5 ani)</li>
                       <li>• Studii liceale (maximum 4 ani)</li>
                       <li>• Serviciul militar obligatoriu</li>
@@ -204,14 +204,14 @@ export default function LegislatiePage() {
                   </div>
                   <div>
                     <h4 className="font-semibold mb-2">Cost și Condiții:</h4>
-                    <ul className="text-sm text-neutral-medium space-y-1">
+                    <ul className="text-sm text-gray-700 space-y-1">
                       <li>• 25% din salariul mediu brut pe economie</li>
                       <li>• Plată în rate pe maximum 5 ani</li>
                       <li>• Cerere depusă cu minimum 5 ani înainte de pensionare</li>
                     </ul>
                   </div>
                 </div>
-                <p className="text-sm text-neutral-medium mb-4">
+                <p className="text-sm text-gray-700 mb-4">
                   Cumpărarea vechimii în muncă poate fi o strategie utilă pentru completarea stagiului de cotizare. 
                   Pentru detalii complete despre <strong>procedura și costurile cumpărării vechimii în muncă</strong>, 
                   consultă ghidul nostru pas cu pas.
@@ -238,9 +238,9 @@ export default function LegislatiePage() {
               >
                 <div className="flex-1">
                   <h4 className="font-semibold">Casa Națională de Pensii Publice</h4>
-                  <p className="text-sm text-neutral-medium">Site oficial CNPP cu legislație actualizată</p>
+                  <p className="text-sm text-gray-700">Site oficial CNPP cu legislație actualizată</p>
                 </div>
-                <ExternalLink className="h-5 w-5 text-neutral-medium" />
+                <ExternalLink className="h-5 w-5 text-gray-700" />
               </a>
               
               <a 
@@ -251,12 +251,12 @@ export default function LegislatiePage() {
               >
                 <div className="flex-1">
                   <h4 className="font-semibold">Legea 263/2010</h4>
-                  <p className="text-sm text-neutral-medium">Textul integral al legii pensiilor</p>
+                  <p className="text-sm text-gray-700">Textul integral al legii pensiilor</p>
                 </div>
-                <ExternalLink className="h-5 w-5 text-neutral-medium" />
+                <ExternalLink className="h-5 w-5 text-gray-700" />
               </a>
             </div>
-            <p className="text-xs text-neutral-medium mt-4">
+            <p className="text-xs text-gray-700 mt-4">
               Conform <a href="https://www.cnpp.ro" target="_blank" rel="noopener noreferrer" className="text-brand-red hover:underline">
                 legislației oficiale publicate de CNPP
               </a>, toate informațiile sunt actualizate conform normelor în vigoare.
@@ -299,7 +299,7 @@ export default function LegislatiePage() {
           {/* CTA Section */}
           <div className="bg-brand-red bg-opacity-10 rounded-xl p-8 text-center border border-brand-red border-opacity-20">
             <h3 className="text-2xl font-bold text-brand-red mb-4">Calculează-ți Pensia Conform Legii</h3>
-            <p className="text-neutral-medium mb-6">
+            <p className="text-gray-700 mb-6">
               Folosește calculatorul nostru actualizat conform legislației în vigoare pentru 
               a afla exact ce pensie vei avea în funcție de situația ta specifică.
             </p>

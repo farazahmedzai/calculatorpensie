@@ -79,7 +79,7 @@ export default function BlogPage() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row gap-4 items-center">
             <div className="relative flex-1">
-              <Search className="absolute left-3 top-3 h-4 w-4 text-neutral-medium" />
+              <Search className="absolute left-3 top-3 h-4 w-4 text-gray-700" />
               <Input
                 placeholder="Caută articole..."
                 value={searchTerm}
@@ -88,7 +88,7 @@ export default function BlogPage() {
               />
             </div>
             <div className="flex items-center gap-2">
-              <Filter className="h-4 w-4 text-neutral-medium" />
+              <Filter className="h-4 w-4 text-gray-700" />
               <Tabs value={selectedCategory} onValueChange={setSelectedCategory}>
                 <TabsList>
                   <TabsTrigger value="all">Toate</TabsTrigger>
@@ -130,7 +130,7 @@ export default function BlogPage() {
                   <CardContent className="p-6">
                     <div className="flex items-center justify-between mb-3">
                       {getCategoryBadge(article.category)}
-                      <span className="text-neutral-medium text-sm">
+                      <span className="text-gray-700 text-sm">
                         {new Date(article.publishDate).toLocaleDateString('ro-RO')}
                       </span>
                     </div>
@@ -143,7 +143,7 @@ export default function BlogPage() {
                       {article.excerpt}
                     </CardDescription>
                     <div className="flex items-center justify-between">
-                      <span className="text-sm text-neutral-medium flex items-center">
+                      <span className="text-sm text-gray-700 flex items-center">
                         <Clock className="h-4 w-4 mr-1" />
                         {article.readTime} min citire
                       </span>
@@ -159,9 +159,9 @@ export default function BlogPage() {
             </div>
           ) : (
             <div className="text-center py-12">
-              <BookOpen className="h-16 w-16 text-neutral-medium mx-auto mb-4" />
+              <BookOpen className="h-16 w-16 text-gray-700 mx-auto mb-4" />
               <h3 className="text-xl font-semibold mb-2">Nu s-au găsit articole</h3>
-              <p className="text-neutral-medium mb-6">
+              <p className="text-gray-700 mb-6">
                 {searchTerm ? 
                   `Nu există articole care să conțină "${searchTerm}"` : 
                   'Nu există articole în această categorie momentan.'
@@ -182,7 +182,7 @@ export default function BlogPage() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-4">Ghidurile Noastre Complete</h2>
-            <p className="text-xl text-neutral-medium">
+            <p className="text-xl text-gray-700">
               Resurse detaliate pentru fiecare aspect al sistemului de pensii
             </p>
           </div>

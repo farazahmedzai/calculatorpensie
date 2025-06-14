@@ -208,16 +208,16 @@ export default function MainCalculator({ onCalculationComplete }: MainCalculator
             <p className="text-3xl font-bold text-brand-green mb-2">
               {result.toLocaleString('ro-RO', { maximumFractionDigits: 0 })} RON/lună
             </p>
-            <p className="text-sm text-neutral-medium">
+            <p className="text-sm text-gray-700">
               *Estimare bazată pe legislația actuală (Legea 263/2010)
             </p>
             <div className="mt-4 grid grid-cols-2 gap-4 text-sm">
               <div>
-                <span className="text-neutral-medium">Punctaj estimat:</span>
+                <span className="text-gray-700">Punctaj estimat:</span>
                 <p className="font-semibold">{((form.getValues('contributionYears') + yearsToRetirement) * 2).toFixed(1)} puncte</p>
               </div>
               <div>
-                <span className="text-neutral-medium">Valoare punct 2024:</span>
+                <span className="text-gray-700">Valoare punct 2024:</span>
                 <p className="font-semibold">81,8 RON</p>
               </div>
             </div>

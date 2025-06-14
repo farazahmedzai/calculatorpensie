@@ -62,7 +62,7 @@ export default function TipuriPensiiPage() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                   <div>
                     <h4 className="font-semibold mb-2">Condiții de Acordare:</h4>
-                    <ul className="text-sm text-neutral-medium space-y-1">
+                    <ul className="text-sm text-gray-700 space-y-1">
                       <li>• Vârsta: 65 ani (bărbați), 63 ani (femei, cu creștere graduală)</li>
                       <li>• Stagiu minim: 15 ani de cotizare</li>
                       <li>• Pentru pensie completă: 35 ani (bărbați), 30 ani (femei)</li>
@@ -70,14 +70,14 @@ export default function TipuriPensiiPage() {
                   </div>
                   <div>
                     <h4 className="font-semibold mb-2">Calcul Pensie:</h4>
-                    <ul className="text-sm text-neutral-medium space-y-1">
+                    <ul className="text-sm text-gray-700 space-y-1">
                       <li>• Punctaj anual × Valoarea punctului</li>
                       <li>• Valoarea punctului (2024): 81,8 RON</li>
                       <li>• Punctaj maxim/an: 5 puncte</li>
                     </ul>
                   </div>
                 </div>
-                <p className="text-sm text-neutral-medium mb-4">
+                <p className="text-sm text-gray-700 mb-4">
                   Pensia pentru limită de vârstă este forma principală de pensie din sistemul public românesc. 
                   Pentru detalii complete despre condițiile de acordare și modalitatea de calcul, 
                   consultă <strong>articolul nostru dedicat despre pensia pentru limită de vârstă</strong>.
@@ -108,7 +108,7 @@ export default function TipuriPensiiPage() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                   <div>
                     <h4 className="font-semibold mb-2">Pensie Anticipată:</h4>
-                    <ul className="text-sm text-neutral-medium space-y-1">
+                    <ul className="text-sm text-gray-700 space-y-1">
                       <li>• Cu 5 ani mai devreme decât vârsta standard</li>
                       <li>• Stagiu: 35 ani (bărbați), 30 ani (femei)</li>
                       <li>• Reducere: 0,75% pentru fiecare lună anticipată</li>
@@ -116,14 +116,14 @@ export default function TipuriPensiiPage() {
                   </div>
                   <div>
                     <h4 className="font-semibold mb-2">Pensie Anticipată Parțială:</h4>
-                    <ul className="text-sm text-neutral-medium space-y-1">
+                    <ul className="text-sm text-gray-700 space-y-1">
                       <li>• Cu 2 ani mai devreme</li>
                       <li>• Stagiu: 37 ani (bărbați), 32 ani (femei)</li>
                       <li>• Reducere: 0,75% pentru fiecare lună anticipată</li>
                     </ul>
                   </div>
                 </div>
-                <p className="text-sm text-neutral-medium mb-4">
+                <p className="text-sm text-gray-700 mb-4">
                   Dacă vrei să te retragi mai devreme, este important să înțelegi impactul penalizării. 
                   Consultă <strong>ghidul nostru despre calculul și condițiile pensiei anticipate parțiale</strong> 
                   pentru a lua o decizie informată.
@@ -162,7 +162,7 @@ export default function TipuriPensiiPage() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                   <div>
                     <h4 className="font-semibold mb-2">Beneficiari:</h4>
-                    <ul className="text-sm text-neutral-medium space-y-1">
+                    <ul className="text-sm text-gray-700 space-y-1">
                       <li>• Soțul/Soția supraviețuitor</li>
                       <li>• Copiii minori sau în întreținere</li>
                       <li>• Părinții în întreținere</li>
@@ -171,14 +171,14 @@ export default function TipuriPensiiPage() {
                   </div>
                   <div>
                     <h4 className="font-semibold mb-2">Condiții:</h4>
-                    <ul className="text-sm text-neutral-medium space-y-1">
+                    <ul className="text-sm text-gray-700 space-y-1">
                       <li>• Decedatul avea drept la pensie sau era pensionar</li>
                       <li>• Minimum 1 an de căsătorie (soț/soție)</li>
                       <li>• Copiii: până la 16 ani (26 ani dacă studiază)</li>
                     </ul>
                   </div>
                 </div>
-                <p className="text-sm text-neutral-medium mb-4">
+                <p className="text-sm text-gray-700 mb-4">
                   Pensia de urmaș asigură protecție financiară familiei în caz de deces. 
                   Înțelege <strong>cine beneficiază și cum se calculează</strong> citind articolul nostru 
                   dedicat despre pensia de urmaș.
@@ -223,7 +223,7 @@ export default function TipuriPensiiPage() {
                     <p className="text-xs text-red-600 mt-1">70% din pensia de referință</p>
                   </div>
                 </div>
-                <p className="text-sm text-neutral-medium mb-4">
+                <p className="text-sm text-gray-700 mb-4">
                   Pensia de invaliditate se acordă în funcție de gradul de invaliditate stabilit 
                   de comisia de expertiză medicală. Detalii complete despre 
                   <strong> gradele de invaliditate</strong> găsești în ghidul nostru despre pensia de invaliditate.
