@@ -1,4 +1,6 @@
 import MetaTags from "@/components/seo/MetaTags";
+import BreadcrumbNavigation from "@/components/seo/BreadcrumbNavigation";
+import { WebPageSchema, LocalBusinessSchema } from "@/components/seo/StructuredData";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -46,7 +48,9 @@ export default function Contact() {
         keywords="contact calculatorpensie, suport pensii romania, intrebari calculator pensie"
       />
       
-      <BreadcrumbNavigation />
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-4">
+        <BreadcrumbNavigation />
+      </div>
       
       <WebPageSchema 
         name="Contact - CalculatorPensie.com"

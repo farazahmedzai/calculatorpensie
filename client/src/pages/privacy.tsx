@@ -1,4 +1,6 @@
 import MetaTags from "@/components/seo/MetaTags";
+import BreadcrumbNavigation from "@/components/seo/BreadcrumbNavigation";
+import { WebPageSchema } from "@/components/seo/StructuredData";
 import { Card, CardContent } from "@/components/ui/card";
 import { Shield, Eye, Database, Lock, UserCheck, RefreshCw } from "lucide-react";
 
@@ -10,6 +12,20 @@ export default function Privacy() {
         description="Politica de confidențialitate a CalculatorPensie.com. Află cum protejăm datele tale personale și ce informații colectăm când folosești calculatoarele de pensie."
         canonical="https://calculatorpensie.com/privacy"
         keywords="politica confidentialitate, protectia datelor, gdpr, calculatorpensie"
+      />
+      
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-4">
+        <BreadcrumbNavigation />
+      </div>
+      
+      <WebPageSchema 
+        name="Politică de Confidențialitate - CalculatorPensie.com"
+        description="Politica detaliată de protecție a datelor și confidențialitate pentru utilizatorii platformei"
+        url="https://calculatorpensie.com/privacy"
+        breadcrumbs={[
+          { name: "Acasă", url: "https://calculatorpensie.com" },
+          { name: "Politică Confidențialitate" }
+        ]}
       />
 
       {/* Hero Section */}

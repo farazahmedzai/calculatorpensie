@@ -1,4 +1,6 @@
 import MetaTags from "@/components/seo/MetaTags";
+import BreadcrumbNavigation from "@/components/seo/BreadcrumbNavigation";
+import { WebPageSchema, HowToSchema } from "@/components/seo/StructuredData";
 import { Card, CardContent } from "@/components/ui/card";
 import { Calculator, FileText, RefreshCw, Shield } from "lucide-react";
 
@@ -10,6 +12,32 @@ export default function Metodologie() {
         description="Descoperă metodologia completă de calcul a pensiei folosită de CalculatorPensie.com. Formulele oficiale CNPP, sursele legislative și transparența calculelor."
         canonical="https://calculatorpensie.com/metodologie"
         keywords="metodologie calcul pensie, formula pensie romania, cnpp, legea pensiilor, punctaj mediu anual"
+      />
+      
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-4">
+        <BreadcrumbNavigation />
+      </div>
+      
+      <WebPageSchema 
+        name="Metodologie Calcul Pensie - Formulele Oficiale"
+        description="Metodologia completă și formulele oficiale folosite pentru calculul pensiei de stat în România"
+        url="https://calculatorpensie.com/metodologie"
+        breadcrumbs={[
+          { name: "Acasă", url: "https://calculatorpensie.com" },
+          { name: "Metodologie" }
+        ]}
+      />
+      
+      <HowToSchema 
+        name="Cum se calculează pensia de stat în România"
+        description="Ghid complet pentru înțelegerea formulelor de calcul ale pensiei conform legislației CNPP"
+        steps={[
+          { name: "Calculează punctajul mediu anual", text: "Folosește formula PMA = suma punctajelor anuale / numărul de ani de cotizare" },
+          { name: "Aplică valoarea punctului de pensie", text: "Înmulțește PMA cu valoarea actuală a punctului de pensie (2.031 lei în 2025)" },
+          { name: "Ajustează pentru condiții speciale", text: "Aplică coeficienții pentru condiții deosebite sau speciale de muncă" },
+          { name: "Calculează data pensionării", text: "Determină vârsta de pensionare pe baza sexului și stagiului de cotizare" }
+        ]}
+        totalTime="PT10M"
       />
 
       {/* Hero Section */}
