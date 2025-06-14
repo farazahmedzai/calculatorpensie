@@ -2,6 +2,10 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
 import { HelpCircle, Calculator, Users, Gavel, TrendingUp, Shield, FileText } from "lucide-react";
+import MetaTags from "@/components/seo/MetaTags";
+import BreadcrumbNavigation from "@/components/seo/BreadcrumbNavigation";
+import { FAQPageSchema, WebPageSchema } from "@/components/seo/StructuredData";
+import { Link } from "wouter";
 
 export default function FAQ() {
   // Schema.org structured data for rich snippets
@@ -62,18 +66,32 @@ export default function FAQ() {
 
   return (
     <div className="min-h-screen bg-white">
-      {/* Schema.org structured data */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      <MetaTags 
+        title="Întrebări Frecvente - Calculator Pensie România | FAQ Pensii 2025"
+        description="Răspunsuri la întrebările frecvente despre pensii în România. Află la ce vârstă te poți pensiona, cum se calculează pensia și care sunt avantajele Pilonului III."
+        canonical="https://calculatorpensie.com/faq"
+        keywords="intrebari frecvente pensii, FAQ pensii romania, varsta pensionare, calculator pensie, pilonul III"
+      />
+      
+      <FAQPageSchema questions={faqSchema.mainEntity.map(q => ({
+        question: q.name,
+        answer: q.acceptedAnswer.text
+      }))} />
+      
+      <WebPageSchema 
+        name="Întrebări Frecvente despre Pensii în România"
+        description="Ghid complet cu răspunsuri la cele mai frecvente întrebări despre sistemul de pensii din România"
+        url="https://calculatorpensie.com/faq"
+        breadcrumbs={[
+          { name: "Acasă", url: "https://calculatorpensie.com" },
+          { name: "Întrebări Frecvente" }
+        ]}
       />
 
-      {/* SEO Meta Tags */}
-      <title>Întrebări Frecvente - Calculator Pensie România | FAQ Pensii</title>
-      <meta 
-        name="description" 
-        content="Răspunsuri la întrebările frecvente despre pensii în România. Află la ce vârstă te poți pensiona, cum se calculează pensia și care sunt avantajele Pilonului III." 
-      />
+      {/* Breadcrumb Navigation */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-4">
+        <BreadcrumbNavigation />
+      </div>
 
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-blue-600 to-blue-800 text-white py-16">

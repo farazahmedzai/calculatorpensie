@@ -6,6 +6,9 @@ import MainCalculator from "@/components/calculators/main-calculator";
 import EarlyRetirementCalculator from "@/components/calculators/early-retirement-calculator";
 import Pillar3Calculator from "@/components/calculators/pillar3-calculator";
 import { Calculator, FastForward, PiggyBank } from "lucide-react";
+import MetaTags from "@/components/seo/MetaTags";
+import BreadcrumbNavigation from "@/components/seo/BreadcrumbNavigation";
+import { WebApplicationSchema, WebPageSchema, HowToSchema } from "@/components/seo/StructuredData";
 
 export default function CalculatorPage() {
   const [location] = useLocation();

@@ -44,7 +44,7 @@ export default function MetaTags({
     const existingStructured = document.querySelectorAll('script[type="application/ld+json"]');
     existingStructured.forEach(script => script.remove());
 
-    const metas = [
+    const metas: Array<{ name?: string; property?: string; content: string }> = [
       { name: 'description', content: description },
       { name: 'robots', content: noindex ? 'noindex,nofollow' : 'index,follow' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -100,9 +100,9 @@ export default function MetaTags({
 
     metas.forEach(meta => {
       const metaElement = document.createElement('meta');
-      if ('name' in meta) {
+      if ('name' in meta && meta.name) {
         metaElement.setAttribute('name', meta.name);
-      } else if ('property' in meta) {
+      } else if ('property' in meta && meta.property) {
         metaElement.setAttribute('property', meta.property);
       }
       metaElement.setAttribute('content', meta.content);

@@ -10,9 +10,10 @@ import { Calculator, HelpCircle, Calendar, Users, TrendingUp, MapPin, ListCheck,
 import { Link } from "wouter";
 import { useQuery } from "@tanstack/react-query";
 import { calculateStandardPension } from "@/lib/pension-calculations";
-import { WebApplicationSchema, OrganizationSchema, WebSiteSchema } from "@/components/seo/StructuredData";
+import { WebApplicationSchema, OrganizationSchema, WebSiteSchema, WebPageSchema } from "@/components/seo/StructuredData";
 import FAQSection from "@/components/FAQSection";
 import MetaTags from "@/components/seo/MetaTags";
+import BreadcrumbNavigation from "@/components/seo/BreadcrumbNavigation";
 import { trackCalculatorUsage } from "@/lib/analytics";
 
 interface Article {
@@ -99,6 +100,19 @@ export default function Home() {
         name="CalculatorPensie.com"
         url="https://calculatorpensie.com"
       />
+      <WebPageSchema 
+        name="Calculator Pensie Online - Calculează Pensia Rapidă și Gratuită"
+        description="Calculează pensia de stat română cu cel mai avansat calculator online. Află vârsta de pensionare și suma lunară estimată."
+        url="https://calculatorpensie.com"
+        breadcrumbs={[
+          { name: "Acasă", url: "https://calculatorpensie.com" }
+        ]}
+      />
+
+      {/* Breadcrumb Navigation */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-4">
+        <BreadcrumbNavigation />
+      </div>
 
       {/* Above-Fold Calculator Section */}
       <section className="py-12 bg-gradient-to-br from-blue-50 to-indigo-100">
