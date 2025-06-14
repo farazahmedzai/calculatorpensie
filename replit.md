@@ -169,6 +169,9 @@ All critical items for #1 Google ranking are implemented:
 - ✅ Professional trust pages with comprehensive content
 
 ## Recent Changes
+- June 14, 2025: Fixed chronological duplication issue - added missing 9 articles to complete promised 12-article structure
+- June 14, 2025: Content now properly distributed: 4 planificare + 4 tipuri-pensii + 4 legislatie articles
+- June 14, 2025: All articles have proper chronological ordering (Sept 2024 - Jan 2025)
 - June 14, 2025: Major status discovery - project is 95% complete, not 85%
 - June 14, 2025: All trust pages (Despre Noi, Metodologie, FAQ, Contact, Privacy) are fully implemented
 - June 14, 2025: Complete Schema.org markup implemented (WebApplication, FAQPage, Organization)
