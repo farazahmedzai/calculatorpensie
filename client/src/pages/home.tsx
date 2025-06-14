@@ -13,6 +13,7 @@ import { calculateStandardPension } from "@/lib/pension-calculations";
 import { WebApplicationSchema, OrganizationSchema, WebSiteSchema } from "@/components/seo/StructuredData";
 import FAQSection from "@/components/FAQSection";
 import MetaTags from "@/components/seo/MetaTags";
+import { trackCalculatorUsage } from "@/lib/analytics";
 
 interface Article {
   id: number;
@@ -69,6 +70,9 @@ export default function Home() {
       retirementDate: `${monthNames[retirementMonth]} ${retirementYear}`,
       monthlyPension: result
     });
+
+    // Track calculator usage for analytics
+    trackCalculatorUsage('standard', result);
   };
 
   return (
