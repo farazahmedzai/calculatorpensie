@@ -8,7 +8,7 @@ declare global {
   }
 }
 
-export const GA_TRACKING_ID = 'G-XXXXXXXXXX'; // To be replaced with actual GA4 ID
+export const GA_TRACKING_ID = import.meta.env.VITE_GA_TRACKING_ID;
 
 // Initialize Google Analytics
 export const initGA = () => {

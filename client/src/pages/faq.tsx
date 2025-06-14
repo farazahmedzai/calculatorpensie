@@ -19,10 +19,10 @@ export default function FAQ() {
       },
       {
         "@type": "Question", 
-        "name": "Care este valoarea punctului de pensie în 2024?",
+        "name": "Care este valoarea punctului de pensie în 2025?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Începând cu 1 ianuarie 2024, valoarea punctului de pensie este de 2.031 lei, conform Legii nr. 263/2010 privind sistemul unitar de pensii publice, cu modificările și completările ulterioare."
+          "text": "Începând cu 1 ianuarie 2025, valoarea punctului de pensie este de 2.031 lei, conform Legii nr. 263/2010 privind sistemul unitar de pensii publice, cu modificările și completările ulterioare."
         }
       },
       {
@@ -112,7 +112,7 @@ export default function FAQ() {
                   </p>
                   
                   <div className="bg-blue-50 p-4 rounded-lg">
-                    <h4 className="font-semibold mb-2 text-blue-900">Vârsta Standard de Pensionare (2024)</h4>
+                    <h4 className="font-semibold mb-2 text-blue-900">Vârsta Standard de Pensionare (2025)</h4>
                     <ul className="space-y-2">
                       <li><strong>Bărbați:</strong> 65 ani cu minimum 35 ani stagiu de cotizare</li>
                       <li><strong>Femei:</strong> 63 ani cu minimum 30 ani stagiu de cotizare</li>
@@ -175,10 +175,10 @@ export default function FAQ() {
                   <div className="bg-blue-50 p-4 rounded-lg">
                     <h4 className="font-semibold mb-2 text-blue-900">Evoluția Valorii Punctului</h4>
                     <div className="grid grid-cols-2 gap-4 text-sm">
-                      <div>2023: 1.785 lei</div>
                       <div>2024: 2.031 lei</div>
+                      <div>2025: 2.031 lei</div>
                     </div>
-                    <p className="text-sm text-gray-600 mt-2">Creștere de 13,8% față de anul anterior</p>
+                    <p className="text-sm text-gray-600 mt-2">Mențiunea valorii pentru continuitate</p>
                   </div>
                 </div>
               </AccordionContent>
