@@ -1,97 +1,150 @@
+import MetaTags from "@/components/seo/MetaTags";
 import { Card, CardContent } from "@/components/ui/card";
-import { Calculator, FileText, ExternalLink, CheckCircle } from "lucide-react";
+import { Calculator, FileText, RefreshCw, Shield } from "lucide-react";
 
 export default function Metodologie() {
   return (
     <div className="bg-white">
+      <MetaTags 
+        title="Metodologie Calcul Pensie - Formulele Oficiale CNPP | CalculatorPensie.com"
+        description="Descoperă metodologia completă de calcul a pensiei folosită de CalculatorPensie.com. Formulele oficiale CNPP, sursele legislative și transparența calculelor."
+        canonical="https://calculatorpensie.com/metodologie"
+        keywords="metodologie calcul pensie, formula pensie romania, cnpp, legea pensiilor, punctaj mediu anual"
+      />
+
       {/* Hero Section */}
       <section className="py-16 bg-gradient-to-br from-blue-50 to-indigo-100">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-4xl font-bold mb-6 text-gray-900">
-            Metodologie de Calcul a Pensiei
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+            Metodologia de Calcul a Pensiei
           </h1>
-          <p className="text-xl text-gray-600">
-            Transparență completă asupra formulelor, datelor și surselor oficiale folosite în calculatorul nostru de pensie.
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            Transparența completă a formulelor și metodelor folosite în calculatoarele noastre de pensie, bazate pe legislația oficială românească.
           </p>
         </div>
       </section>
 
-      {/* Official Formula Section */}
-      <section className="py-16 bg-white">
+      {/* Main Formula Section */}
+      <section className="py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold mb-8 text-gray-900">
-            Formula Oficială CNPP
+          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
+            Formula Oficială de Calcul a Pensiei de Stat
           </h2>
           
           <div className="bg-blue-50 border border-blue-200 rounded-lg p-8 mb-8">
             <div className="text-center">
-              <h3 className="text-2xl font-bold text-blue-900 mb-4">
-                Pensie = Punctaj Mediu Anual (PMA) × Valoarea Punctului de Pensie (VPP)
-              </h3>
-              <p className="text-lg text-blue-700">
-                Această este formula oficială folosită de Casa Națională de Pensii Publice pentru calculul tuturor pensiilor de stat din România.
+              <p className="text-3xl font-bold text-blue-900 mb-4">
+                Pensie = PMA × VPP
               </p>
+              <p className="text-lg text-blue-700 mb-6">
+                Punctaj Mediu Anual × Valoarea Punctului de Pensie
+              </p>
+              
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
+                <div className="bg-white p-4 rounded">
+                  <h4 className="font-semibold text-blue-800 mb-2">PMA (Punctaj Mediu Anual)</h4>
+                  <p className="text-blue-700 text-sm">
+                    Se calculează pe baza salariilor și perioadei de cotizare conform art. 46 din Legea 263/2010
+                  </p>
+                </div>
+                <div className="bg-white p-4 rounded">
+                  <h4 className="font-semibold text-blue-800 mb-2">VPP (Valoarea Punctului de Pensie)</h4>
+                  <p className="text-blue-700 text-sm">
+                    2.031 lei în 2025, stabilită prin Hotărârea Guvernului conform art. 44 din Legea 263/2010
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
+        </div>
+      </section>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      {/* Calculation Steps */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">
+            Pașii de Calcul Detaliat
+          </h2>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             <Card>
               <CardContent className="p-6">
-                <h3 className="text-xl font-semibold mb-4">Punctaj Mediu Anual (PMA)</h3>
-                <p className="text-gray-600 mb-4">
-                  PMA se calculează pe baza:
+                <div className="bg-blue-100 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+                  <span className="text-blue-600 font-bold text-lg">1</span>
+                </div>
+                <h3 className="text-lg font-semibold mb-3">Determinarea Vârstei de Pensionare</h3>
+                <p className="text-gray-600 text-sm">
+                  Bărbați: 65 ani (35 ani stagiu)<br/>
+                  Femei: 63 ani (30 ani stagiu)<br/>
+                  Ajustare pentru condiții speciale
                 </p>
-                <ul className="list-disc list-inside space-y-2 text-gray-600">
-                  <li>Salariilor realizate pe perioada de cotizare</li>
-                  <li>Stagiului de cotizare complet</li>
-                  <li>Coeficientului de recalculare (1.265 pentru 2024)</li>
-                </ul>
               </CardContent>
             </Card>
 
             <Card>
               <CardContent className="p-6">
-                <h3 className="text-xl font-semibold mb-4">Valoarea Punctului de Pensie (VPP)</h3>
-                <p className="text-gray-600 mb-4">
-                  Pentru anul 2024:
-                </p>
-                <div className="bg-green-50 border border-green-200 rounded p-4">
-                  <p className="text-2xl font-bold text-green-800">2.031 Lei</p>
-                  <p className="text-sm text-green-600">Valabilă din 1 ianuarie 2024</p>
+                <div className="bg-green-100 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+                  <span className="text-green-600 font-bold text-lg">2</span>
                 </div>
+                <h3 className="text-lg font-semibold mb-3">Calculul Punctajului Mediu Anual</h3>
+                <p className="text-gray-600 text-sm">
+                  PMA = (Suma punctajelor anuale) / (Stagiul total de cotizare în ani)
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardContent className="p-6">
+                <div className="bg-purple-100 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+                  <span className="text-purple-600 font-bold text-lg">3</span>
+                </div>
+                <h3 className="text-lg font-semibold mb-3">Aplicarea Valorii Punctului</h3>
+                <p className="text-gray-600 text-sm">
+                  Înmulțirea PMA cu VPP actual (2.031 lei în 2025)
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardContent className="p-6">
+                <div className="bg-orange-100 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+                  <span className="text-orange-600 font-bold text-lg">4</span>
+                </div>
+                <h3 className="text-lg font-semibold mb-3">Aplicarea Limitelor</h3>
+                <p className="text-gray-600 text-sm">
+                  Verificarea limitelor minime și maxime conform art. 47-48 din Legea 263/2010
+                </p>
               </CardContent>
             </Card>
           </div>
         </div>
       </section>
 
-      {/* Data Sources Section */}
-      <section className="py-16 bg-gray-50">
+      {/* Legislative Sources */}
+      <section className="py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold mb-8 text-gray-900">
-            Surse de Date Oficiale
+          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
+            Surse Legislative Oficiale
           </h2>
-          
+
           <div className="space-y-6">
             <Card>
               <CardContent className="p-6">
                 <div className="flex items-start gap-4">
-                  <div className="bg-blue-600 text-white rounded-lg w-12 h-12 flex items-center justify-center">
-                    <FileText className="h-6 w-6" />
-                  </div>
+                  <FileText className="h-6 w-6 text-blue-600 mt-1" />
                   <div>
-                    <h3 className="text-xl font-semibold mb-2">Legea nr. 263/2010</h3>
+                    <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                      Legea nr. 263/2010 privind sistemul unitar de pensii publice
+                    </h3>
                     <p className="text-gray-600 mb-3">
-                      Legea sistemului unitar de pensii publice - documentul principal care reglementează calculul pensiilor în România.
+                      Legea fundamentală care reglementează sistemul de pensii din România, inclusiv formulele de calcul și condițiile de acordare.
                     </p>
-                    <a 
-                      href="https://legislatie.just.ro/Public/DetaliiDocument/125013" 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center text-blue-600 hover:text-blue-800"
-                    >
-                      Vezi documentul oficial <ExternalLink className="h-4 w-4 ml-1" />
-                    </a>
+                    <ul className="text-sm text-gray-600 space-y-1">
+                      <li>• Art. 44 - Valoarea punctului de pensie</li>
+                      <li>• Art. 46 - Calculul punctajului mediu anual</li>
+                      <li>• Art. 47-48 - Limitele pensiei</li>
+                      <li>• Art. 65 - Vârsta standard de pensionare</li>
+                    </ul>
                   </div>
                 </div>
               </CardContent>
@@ -100,22 +153,19 @@ export default function Metodologie() {
             <Card>
               <CardContent className="p-6">
                 <div className="flex items-start gap-4">
-                  <div className="bg-green-600 text-white rounded-lg w-12 h-12 flex items-center justify-center">
-                    <Calculator className="h-6 w-6" />
-                  </div>
+                  <RefreshCw className="h-6 w-6 text-green-600 mt-1" />
                   <div>
-                    <h3 className="text-xl font-semibold mb-2">Casa Națională de Pensii Publice (CNPP)</h3>
+                    <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                      Hotărâri de Guvern pentru Actualizări Anuale
+                    </h3>
                     <p className="text-gray-600 mb-3">
-                      Valorile punctului de pensie și parametrii de calcul sunt preluați direct de pe site-ul oficial CNPP.
+                      Documentele care stabilesc anual valoarea punctului de pensie și alte parametri relevanți.
                     </p>
-                    <a 
-                      href="https://cnpp.ro" 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center text-blue-600 hover:text-blue-800"
-                    >
-                      Vizitează CNPP.ro <ExternalLink className="h-4 w-4 ml-1" />
-                    </a>
+                    <ul className="text-sm text-gray-600 space-y-1">
+                      <li>• HG pentru stabilirea VPP în 2025: 2.031 lei</li>
+                      <li>• Indicatori economici pentru indexare</li>
+                      <li>• Actualizări privind condițiile speciale de muncă</li>
+                    </ul>
                   </div>
                 </div>
               </CardContent>
@@ -124,22 +174,19 @@ export default function Metodologie() {
             <Card>
               <CardContent className="p-6">
                 <div className="flex items-start gap-4">
-                  <div className="bg-purple-600 text-white rounded-lg w-12 h-12 flex items-center justify-center">
-                    <FileText className="h-6 w-6" />
-                  </div>
+                  <Shield className="h-6 w-6 text-purple-600 mt-1" />
                   <div>
-                    <h3 className="text-xl font-semibold mb-2">Hotărâri de Guvern</h3>
+                    <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                      Normele de Aplicare CNPP
+                    </h3>
                     <p className="text-gray-600 mb-3">
-                      Actualizările anuale ale valorii punctului de pensie sunt preluate din hotărârile oficiale de guvern publicate în Monitorul Oficial.
+                      Instrucțiunile tehnice emise de Casa Națională de Pensii Publice pentru aplicarea uniformă a legislației.
                     </p>
-                    <a 
-                      href="https://gov.ro" 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center text-blue-600 hover:text-blue-800"
-                    >
-                      Guvernul României <ExternalLink className="h-4 w-4 ml-1" />
-                    </a>
+                    <ul className="text-sm text-gray-600 space-y-1">
+                      <li>• Normele pentru calculul stagiului de cotizare</li>
+                      <li>• Instrucțiuni pentru condiții speciale de muncă</li>
+                      <li>• Proceduri pentru pensia anticipată</li>
+                    </ul>
                   </div>
                 </div>
               </CardContent>
@@ -148,125 +195,100 @@ export default function Metodologie() {
         </div>
       </section>
 
-      {/* Calculation Process */}
-      <section className="py-16 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold mb-8 text-gray-900">
-            Procesul de Calcul
-          </h2>
-          
-          <div className="space-y-6">
-            <div className="flex items-start gap-4">
-              <div className="bg-blue-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mt-1">
-                1
-              </div>
-              <div>
-                <h3 className="text-lg font-semibold mb-2">Validarea Datelor de Intrare</h3>
-                <p className="text-gray-600">
-                  Verificăm că toate câmpurile sunt completate corect și că valorile introduse sunt în parametrii rezonabili.
-                </p>
-              </div>
-            </div>
-
-            <div className="flex items-start gap-4">
-              <div className="bg-blue-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mt-1">
-                2
-              </div>
-              <div>
-                <h3 className="text-lg font-semibold mb-2">Determinarea Vârstei de Pensionare</h3>
-                <p className="text-gray-600">
-                  Calculăm vârsta de pensionare pe baza sexului, condițiilor de muncă și parametrilor legali actuali.
-                </p>
-              </div>
-            </div>
-
-            <div className="flex items-start gap-4">
-              <div className="bg-blue-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mt-1">
-                3
-              </div>
-              <div>
-                <h3 className="text-lg font-semibold mb-2">Calculul Punctajului Mediu Anual</h3>
-                <p className="text-gray-600">
-                  Aplicăm formula oficială: (Salariu Mediu × Stagiu Cotizare × 1.265) / 100, cu limitarea la 75% din salariul mediu.
-                </p>
-              </div>
-            </div>
-
-            <div className="flex items-start gap-4">
-              <div className="bg-blue-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mt-1">
-                4
-              </div>
-              <div>
-                <h3 className="text-lg font-semibold mb-2">Aplicarea VPP Actual</h3>
-                <p className="text-gray-600">
-                  Înmulțim punctajul calculat cu valoarea punctului de pensie pentru 2024 (2.031 lei).
-                </p>
-              </div>
-            </div>
-
-            <div className="flex items-start gap-4">
-              <div className="bg-green-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mt-1">
-                <CheckCircle className="h-4 w-4" />
-              </div>
-              <div>
-                <h3 className="text-lg font-semibold mb-2">Afișarea Rezultatelor</h3>
-                <p className="text-gray-600">
-                  Prezentăm rezultatul final cu toate disclaimerele legale necesare.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Accuracy & Limitations */}
+      {/* Special Conditions */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold mb-8 text-gray-900">
-            Acuratețe și Limitări
+          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
+            Condiții Speciale de Muncă
           </h2>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <Card className="border-green-200">
-              <CardContent className="p-6">
-                <h3 className="text-xl font-semibold mb-4 text-green-800">Ce Garantăm</h3>
-                <ul className="space-y-2 text-gray-600">
-                  <li className="flex items-start gap-2">
-                    <CheckCircle className="h-5 w-5 text-green-600 mt-0.5" />
-                    Folosim exclusiv formulele oficiale CNPP
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle className="h-5 w-5 text-green-600 mt-0.5" />
-                    Valorile sunt actualizate la schimbările legislative
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle className="h-5 w-5 text-green-600 mt-0.5" />
-                    Calculele sunt transparente și verificabile
-                  </li>
-                </ul>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <Card>
+              <CardContent className="p-6 text-center">
+                <h3 className="text-lg font-semibold text-gray-900 mb-3">Condiții Normale</h3>
+                <p className="text-gray-600 mb-4">
+                  Activități desfășurate în condiții standard de muncă
+                </p>
+                <div className="bg-green-100 text-green-800 px-3 py-1 rounded text-sm">
+                  Fără reducere de vârstă
+                </div>
               </CardContent>
             </Card>
 
-            <Card className="border-orange-200">
-              <CardContent className="p-6">
-                <h3 className="text-xl font-semibold mb-4 text-orange-800">Limitări</h3>
-                <ul className="space-y-2 text-gray-600">
-                  <li>• Rezultatele sunt estimări pentru planificare</li>
-                  <li>• Nu au valoare oficială sau legală</li>
-                  <li>• Nu includ toate variabilele personale specifice</li>
-                  <li>• Pot fi afectate de viitoarele schimbări legislative</li>
-                </ul>
+            <Card>
+              <CardContent className="p-6 text-center">
+                <h3 className="text-lg font-semibold text-gray-900 mb-3">Condiții Deosebite</h3>
+                <p className="text-gray-600 mb-4">
+                  Activități cu risc moderat sau solicitare fizică crescută
+                </p>
+                <div className="bg-yellow-100 text-yellow-800 px-3 py-1 rounded text-sm">
+                  Reducere cu 2 ani
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardContent className="p-6 text-center">
+                <h3 className="text-lg font-semibold text-gray-900 mb-3">Condiții Speciale</h3>
+                <p className="text-gray-600 mb-4">
+                  Activități cu risc ridicat pentru sănătate și siguranță
+                </p>
+                <div className="bg-red-100 text-red-800 px-3 py-1 rounded text-sm">
+                  Reducere cu 5 ani
+                </div>
               </CardContent>
             </Card>
           </div>
+        </div>
+      </section>
 
-          <div className="mt-8 p-6 bg-yellow-50 border border-yellow-200 rounded-lg">
-            <h3 className="text-lg font-semibold mb-2 text-yellow-800">Disclaimer Important</h3>
-            <p className="text-yellow-700">
-              Acest calcul este o estimare informativă și nu are valoare oficială. Pentru calculul exact al pensiei tale, 
-              vă rugăm să consultați Casa Națională de Pensii Publice (CNPP) sau să vizitați o casă teritorială de pensii.
-            </p>
+      {/* Update Process */}
+      <section className="py-16">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
+            Procesul de Actualizare
+          </h2>
+
+          <div className="bg-blue-50 p-6 rounded-lg">
+            <h3 className="text-xl font-semibold text-blue-900 mb-4">
+              Cum Ne Asigurăm că Calculatoarele Sunt Actualizate
+            </h3>
+            
+            <div className="space-y-4 text-blue-800">
+              <div className="flex items-start gap-3">
+                <div className="bg-blue-200 rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold mt-1">1</div>
+                <p>Monitorizăm zilnic Monitorul Oficial pentru publicarea de noi acte normative</p>
+              </div>
+              
+              <div className="flex items-start gap-3">
+                <div className="bg-blue-200 rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold mt-1">2</div>
+                <p>Analizăm impactul modificărilor legislative asupra formulelor de calcul</p>
+              </div>
+              
+              <div className="flex items-start gap-3">
+                <div className="bg-blue-200 rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold mt-1">3</div>
+                <p>Actualizăm calculatoarele în maxim 24 ore de la publicarea modificărilor</p>
+              </div>
+              
+              <div className="flex items-start gap-3">
+                <div className="bg-blue-200 rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold mt-1">4</div>
+                <p>Testăm și validăm calculele pentru a asigura acuratețea rezultatelor</p>
+              </div>
+            </div>
           </div>
+        </div>
+      </section>
+
+      {/* Disclaimer */}
+      <section className="py-12 bg-yellow-50 border-t border-yellow-200">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h3 className="text-lg font-semibold text-yellow-800 mb-4">Disclaimer Metodologic</h3>
+          <p className="text-yellow-700 text-sm mb-4">
+            Toate calculele efectuate de CalculatorPensie.com se bazează pe legislația în vigoare și pe interpretarea oficială a CNPP. Rezultatele sunt estimări informatice și nu constituie confirmări oficiale ale pensiei viitoare.
+          </p>
+          <p className="text-yellow-700 text-sm">
+            Pentru calcule exacte și oficiale, vă recomandăm să consultați direct Casa Națională de Pensii Publice (CNPP) sau să utilizați serviciile lor online oficiale.
+          </p>
         </div>
       </section>
     </div>
