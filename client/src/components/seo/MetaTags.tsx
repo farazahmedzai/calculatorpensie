@@ -1,0 +1,98 @@
+import { useEffect } from 'react';
+
+interface MetaTagsProps {
+  title: string;
+  description: string;
+  canonical?: string;
+  ogTitle?: string;
+  ogDescription?: string;
+  ogImage?: string;
+  keywords?: string;
+  structuredData?: object;
+}
+
+export default function MetaTags({
+  title,
+  description,
+  canonical,
+  ogTitle,
+  ogDescription,
+  ogImage = '/assets/og-image.png',
+  keywords,
+  structuredData
+}: MetaTagsProps) {
+  useEffect(() => {
+    document.title = title;
+
+    const existingMetas = document.querySelectorAll('meta[data-pension-meta]');
+    existingMetas.forEach(meta => meta.remove());
+
+    const existingStructured = document.querySelectorAll('script[type="application/ld+json"]');
+    existingStructured.forEach(script => script.remove());
+
+    const metas = [
+      { name: 'description', content: description },
+      { name: 'robots', content: 'index,follow' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { name: 'author', content: 'CalculatorPensie.com' },
+      { name: 'language', content: 'Romanian' },
+      { name: 'geo.region', content: 'RO' },
+      { name: 'geo.country', content: 'Romania' },
+      
+      { property: 'og:type', content: 'website' },
+      { property: 'og:title', content: ogTitle || title },
+      { property: 'og:description', content: ogDescription || description },
+      { property: 'og:image', content: ogImage },
+      { property: 'og:url', content: window.location.href },
+      { property: 'og:site_name', content: 'CalculatorPensie.com' },
+      { property: 'og:locale', content: 'ro_RO' },
+      
+      { name: 'twitter:card', content: 'summary_large_image' },
+      { name: 'twitter:title', content: ogTitle || title },
+      { name: 'twitter:description', content: ogDescription || description },
+      { name: 'twitter:image', content: ogImage },
+      
+      { name: 'theme-color', content: '#2563eb' },
+    ];
+
+    if (keywords) {
+      metas.push({ name: 'keywords', content: keywords });
+    }
+
+    metas.forEach(meta => {
+      const metaElement = document.createElement('meta');
+      if ('name' in meta) {
+        metaElement.setAttribute('name', meta.name);
+      } else if ('property' in meta) {
+        metaElement.setAttribute('property', meta.property);
+      }
+      metaElement.setAttribute('content', meta.content);
+      metaElement.setAttribute('data-pension-meta', 'true');
+      document.head.appendChild(metaElement);
+    });
+
+    if (canonical) {
+      const existingCanonical = document.querySelector('link[rel="canonical"]');
+      if (existingCanonical) existingCanonical.remove();
+      
+      const canonicalLink = document.createElement('link');
+      canonicalLink.setAttribute('rel', 'canonical');
+      canonicalLink.setAttribute('href', canonical);
+      document.head.appendChild(canonicalLink);
+    }
+
+    if (structuredData) {
+      const script = document.createElement('script');
+      script.type = 'application/ld+json';
+      script.textContent = JSON.stringify(structuredData);
+      document.head.appendChild(script);
+    }
+
+    return () => {
+      const metasToRemove = document.querySelectorAll('meta[data-pension-meta]');
+      metasToRemove.forEach(meta => meta.remove());
+    };
+  }, [title, description, canonical, ogTitle, ogDescription, ogImage, keywords, structuredData]);
+
+  return null;
+}
