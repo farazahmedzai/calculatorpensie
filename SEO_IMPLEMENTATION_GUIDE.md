@@ -15,13 +15,13 @@
 **URL**: https://calculatorpensie.com/
 
 **Meta Title**:  
-`Calculator Pensie 2024 - Calculează Pensia de Stat (Pilon I) și Privată | CalculatorPensie.com`
+`Calculator Pensie 2025 - Calculează Pensia de Stat (Pilon I) și Privată | CalculatorPensie.com`
 
 **Meta Description**:  
 `✅ Folosește cel mai simplu calculator de pensie online. Află vârsta de pensionare și estimează-ți pensia lunară (Pilon I și II) în mai puțin de 60 de secunde. Gratuit și precis!`
 
 **H1 Tag**:  
-`Calculator Pensie Online 2024: Află Vârsta și Valoarea Pensiei Tale`
+`Calculator Pensie Online 2025: Află Vârsta și Valoarea Pensiei Tale`
 
 ### Critical Above-Fold Calculator Requirements
 **Technology**: JavaScript (instant results, no page reload)
@@ -39,7 +39,7 @@
 - **Estimare Pensie Lunară (Pilon I)**: ~XXXX RON
 
 **Required Disclaimers**:
-- Current pension point value: "Calcul bazat pe valoarea punctului de pensie de 2.031 lei, valabil în 2024"
+- Current pension point value: "Calcul bazat pe valoarea punctului de pensie de 2.031 lei, valabil în 2025"
 - Legal disclaimer: "Acest calcul este o estimare informativă și nu are valoare oficială. Pentru calculul exact, vă rugăm să consultați Casa Națională de Pensii Publice (CNPP)."
 
 ### Silo 1: Planificarea Pensiei
@@ -62,7 +62,7 @@
   - Calculator Pensie Anticipată ✅
 
 ### Silo 3: Legislație și Resurse  
-**Pillar Page**: /legislatie - "Legea Pensiilor 2024 pe Înțelesul Tuturor"
+**Pillar Page**: /legislatie - "Legea Pensiilor 2025 pe Înțelesul Tuturor"
 - **Primary Keywords**: legea pensiilor, legislație pensii România
 - **Cluster Articles**:
   - Vârsta Standard de Pensionare în România: Tabel Complet
@@ -87,7 +87,7 @@
 
 ### H1 Section
 ```html
-<h1>Calculator Pensie Online 2024: Află Vârsta și Valoarea Pensiei Tale</h1>
+<h1>Calculator Pensie Online 2025: Află Vârsta și Valoarea Pensiei Tale</h1>
 ```
 **(Interactive calculator placed immediately after H1)**
 
@@ -95,7 +95,7 @@
 ```html
 <h2>Cum Funcționează Calculatorul Nostru de Pensie?</h2>
 ```
-**Content**: 2-3 paragraphs explaining tool functionality using official formula and up-to-date Romanian law data. Keywords: calcul pensie, legea pensiilor, punct de pensie 2024, stagiu de cotizare, CNPP.
+**Content**: 2-3 paragraphs explaining tool functionality using official formula and up-to-date Romanian law data. Keywords: calcul pensie, legea pensiilor, punct de pensie 2025, stagiu de cotizare, CNPP.
 
 ### H2 Section 2  
 ```html
@@ -127,7 +127,7 @@
 **Required FAQ Questions**:
 - `<h3>La ce vârstă mă pot pensiona?</h3>`
 - `<h3>Cum se calculează pensia anticipată?</h3>`
-- `<h3>Care este valoarea punctului de pensie în 2024?</h3>`
+- `<h3>Care este valoarea punctului de pensie în 2025?</h3>`
 - `<h3>Pot să-mi măresc pensia?</h3>`
 - `<h3>Unde pot vedea stagiul meu de cotizare oficial?</h3>`
 

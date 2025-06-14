@@ -66,14 +66,14 @@
 - ✅ Above-fold calculator (Data Nașterii, Sex, Salariu, Stagiu, Condiții Muncă)
 - ✅ Instant JavaScript calculations without page reload
 - ✅ Official Romanian pension formulas implemented
-- ✅ Current pension point value display (2.031 Lei, 2024)
+- ✅ Current pension point value display (2.031 Lei, 2025)
 - ✅ Gender-based retirement age calculations
 - ✅ Work conditions dropdown (Normale/Deosebite/Speciale)
 - ✅ Clear calculation disclaimer
 
 #### Critical SEO Elements:
-- ✅ H1: "Calculator Pensie Online 2024: Află Vârsta și Valoarea Pensiei Tale"
-- ✅ Meta Title: "Calculator Pensie 2024 - Calculează Pensia de Stat (Pilon I) și Privată | CalculatorPensie.com"
+- ✅ H1: "Calculator Pensie Online 2025: Află Vârsta și Valoarea Pensiei Tale"
+- ✅ Meta Title: "Calculator Pensie 2025 - Calculează Pensia de Stat (Pilon I) și Privată | CalculatorPensie.com"
 - ✅ Meta Description: "✅ Folosește cel mai simplu calculator de pensie online..."
 - ❌ Schema.org WebApplication markup
 - ❌ FAQ section with rich snippets potential
