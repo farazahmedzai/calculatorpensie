@@ -17,8 +17,14 @@ import Privacy from "@/pages/privacy";
 import FAQ from "@/pages/faq";
 import Header from "@/components/layout/header";
 import Footer from "@/components/layout/footer";
+import { useEffect } from "react";
+import { initGA } from "./lib/analytics";
+import { useAnalytics } from "./hooks/use-analytics";
 
 function Router() {
+  // Track page views when routes change
+  useAnalytics();
+  
   return (
     <div className="min-h-screen flex flex-col">
       <Header />
@@ -44,6 +50,11 @@ function Router() {
 }
 
 function App() {
+  // Initialize Google Analytics when app loads
+  useEffect(() => {
+    initGA();
+  }, []);
+
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>

@@ -8,12 +8,13 @@ declare global {
   }
 }
 
-export const GA_TRACKING_ID = import.meta.env.VITE_GA_TRACKING_ID;
+export const GA_TRACKING_ID = import.meta.env.VITE_GA_MEASUREMENT_ID;
 
 // Initialize Google Analytics
 export const initGA = () => {
-  // Only initialize in production
-  if (typeof window === 'undefined' || process.env.NODE_ENV !== 'production') {
+  // Skip if no tracking ID or in server environment
+  if (typeof window === 'undefined' || !GA_TRACKING_ID) {
+    console.warn('Google Analytics not initialized: missing tracking ID');
     return;
   }
 
