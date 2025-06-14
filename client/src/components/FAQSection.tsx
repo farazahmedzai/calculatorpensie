@@ -33,6 +33,26 @@ const faqData: FAQItem[] = [
     id: "check-contribution-stage",
     question: "Unde pot vedea stagiul meu de cotizare oficial?",
     answer: "Poți verifica stagiul de cotizare exact creând un cont online pe portalul Casei Naționale de Pensii Publice (CNPP.ro) sau vizitând o casă teritorială de pensii cu actul de identitate. Acolo vei găsi istoricul complet al contribuțiilor tale."
+  },
+  {
+    id: "minimum-pension",
+    question: "Care este pensia minimă în România în 2025?",
+    answer: "Pensia minimă garantată în România pentru 2025 este de 1.281 lei pentru persoanele cu stagiu complet de cotizare. Această sumă se actualizează periodic conform legii și reprezintă minimul garantat de stat pentru pensionarii cu drept deplin."
+  },
+  {
+    id: "pension-calculation-formula",
+    question: "Cum se calculează exact pensia de stat?",
+    answer: "Pensia se calculează folosind formula: Punctaj Mediu Anual (PMA) × Valoarea Punctului de Pensie (2.031 lei în 2025). PMA se determină pe baza salariilor din toată cariera și a perioadei de cotizare, conform metodologiei CNPP."
+  },
+  {
+    id: "work-conditions-pension",
+    question: "Cum influențează condițiile de muncă pensia?",
+    answer: "Condițiile de muncă influențează atât vârsta de pensionare, cât și calculul pensiei. Munca în condiții deosebite permite pensionarea cu 2 ani mai devreme, iar condiții speciale cu 5-7 ani mai devreme, cu bonificații în calculul stagiului."
+  },
+  {
+    id: "pillar3-benefits",
+    question: "Ce beneficii are Pilonul III (pensia facultativă)?",
+    answer: "Pilonul III oferă deducere fiscală până la 400 EUR anual, randament potențial mai mare decât inflația și flexibilitate în contribuții. Este administrat privat și complementează pensia de stat, fiind ideal pentru cei care vor o pensie mai mare."
   }
 ];
 
