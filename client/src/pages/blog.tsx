@@ -24,7 +24,7 @@ export default function BlogPage() {
   const [selectedCategory, setSelectedCategory] = useState("all");
 
   const { data: articles = [], isLoading } = useQuery<Article[]>({
-    queryKey: ['/api/articles'],
+    queryKey: ['/api/articles?published=true'],
   });
 
   const filteredArticles = articles.filter(article => {
