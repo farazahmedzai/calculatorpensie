@@ -72,7 +72,7 @@ export default function Header() {
           
           {/* Desktop Navigation */}
           <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline space-x-8">
+            <div className="ml-10 flex items-center space-x-2">
               {navLinks.map((link) => (
                 <NavLink 
                   key={link.href} 
@@ -88,26 +88,32 @@ export default function Header() {
           <div className="md:hidden">
             <Sheet open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>
               <SheetTrigger asChild>
-                <Button variant="ghost" size="sm">
-                  <Menu className="h-5 w-5" />
+                <Button variant="outline" size="sm" className="border-blue-200 hover:bg-blue-50">
+                  <Menu className="h-5 w-5 text-blue-600" />
                 </Button>
               </SheetTrigger>
-              <SheetContent side="right" className="w-[300px] sm:w-[400px]">
-                <div className="flex items-center justify-between mb-6">
+              <SheetContent side="right" className="w-[320px] sm:w-[400px] bg-gradient-to-br from-blue-50 to-white">
+                <div className="flex items-center justify-between mb-8">
                   <div className="flex items-center">
-                    <Calculator className="h-6 w-6 text-brand-blue mr-2" />
-                    <span className="font-bold text-neutral-dark">CalculatorPensie.ro</span>
+                    <div className="bg-blue-600 p-2 rounded-lg mr-3">
+                      <Calculator className="h-6 w-6 text-white" />
+                    </div>
+                    <div>
+                      <span className="font-bold text-gray-900">CalculatorPensie.com</span>
+                      <p className="text-xs text-blue-600 font-medium">#1 Calculator România</p>
+                    </div>
                   </div>
                   <Button 
                     variant="ghost" 
                     size="sm" 
                     onClick={() => setMobileMenuOpen(false)}
+                    className="hover:bg-red-50"
                   >
-                    <X className="h-5 w-5" />
+                    <X className="h-5 w-5 text-gray-600" />
                   </Button>
                 </div>
                 
-                <nav className="flex flex-col space-y-2">
+                <nav className="flex flex-col space-y-3">
                   {navLinks.map((link) => (
                     <NavLink 
                       key={link.href} 
@@ -119,15 +125,31 @@ export default function Header() {
                   ))}
                 </nav>
 
+                {/* Mobile Extra Links */}
+                <div className="mt-8 pt-6 border-t border-blue-200">
+                  <div className="space-y-3">
+                    <Link href="/despre-noi">
+                      <span className="block px-4 py-3 text-sm text-gray-600 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-all cursor-pointer">
+                        Despre Noi
+                      </span>
+                    </Link>
+                    <Link href="/contact">
+                      <span className="block px-4 py-3 text-sm text-gray-600 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-all cursor-pointer">
+                        Contact
+                      </span>
+                    </Link>
+                  </div>
+                </div>
+
                 {/* Mobile CTA */}
-                <div className="mt-8 pt-6 border-t">
+                <div className="mt-8 pt-6 border-t border-blue-200">
                   <Link href="/calculator">
                     <Button 
-                      className="w-full bg-brand-blue hover:bg-blue-700" 
+                      className="w-full bg-blue-600 hover:bg-blue-700 text-white shadow-lg" 
                       onClick={() => setMobileMenuOpen(false)}
                     >
                       <Calculator className="mr-2 h-4 w-4" />
-                      Calculează Pensia
+                      Calculează Pensia Acum
                     </Button>
                   </Link>
                 </div>
