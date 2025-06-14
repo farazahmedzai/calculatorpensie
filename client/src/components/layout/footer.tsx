@@ -200,41 +200,41 @@ export default function Footer() {
             </div>
 
             {/* Contact Info */}
-            <div className="bg-slate-800 rounded-lg p-6 border border-slate-700">
-              <h4 className="text-blue-400 font-semibold mb-4 flex items-center">
-                <div className="w-3 h-3 bg-green-600 rounded-full mr-2"></div>
+            <div className="bg-slate-700 rounded-lg p-6 border border-slate-600">
+              <h4 className="text-blue-300 font-semibold mb-4 flex items-center">
+                <div className="w-3 h-3 bg-green-500 rounded-full mr-2"></div>
                 Contact Rapid
               </h4>
               <div className="space-y-3">
-                <a href="mailto:contact@calculatorpensie.com" className="flex items-center text-white hover:text-blue-400 transition-colors">
-                  <Mail className="h-4 w-4 mr-3 text-blue-400" />
-                  <span className="text-sm font-medium">contact@calculatorpensie.com</span>
+                <a href="mailto:contact@calculatorpensie.com" className="flex items-center text-gray-100 hover:text-blue-300 transition-colors">
+                  <Mail className="h-4 w-4 mr-3 text-blue-300" />
+                  <span className="text-sm font-semibold">contact@calculatorpensie.com</span>
                 </a>
-                <div className="flex items-center text-white">
-                  <MapPin className="h-4 w-4 mr-3 text-green-400" />
-                  <span className="text-sm font-medium">București, România</span>
+                <div className="flex items-center text-gray-100">
+                  <MapPin className="h-4 w-4 mr-3 text-green-300" />
+                  <span className="text-sm font-semibold">București, România</span>
                 </div>
               </div>
             </div>
           </div>
 
           {/* Copyright */}
-          <div className="flex flex-col md:flex-row justify-between items-center pt-6 border-t border-slate-700">
-            <div className="text-white text-sm mb-4 md:mb-0">
-              <p className="font-medium">&copy; 2025 CalculatorPensie.com. Toate drepturile rezervate.</p>
+          <div className="flex flex-col md:flex-row justify-between items-center pt-6 border-t border-slate-600">
+            <div className="text-gray-100 text-sm mb-4 md:mb-0">
+              <p className="font-bold">&copy; 2025 CalculatorPensie.com. Toate drepturile rezervate.</p>
             </div>
             <div className="flex flex-wrap gap-6 text-sm">
               <Link href="/metodologie">
-                <span className="text-white hover:text-blue-400 transition-colors cursor-pointer font-medium">Metodologie</span>
+                <span className="text-gray-100 hover:text-blue-300 transition-colors cursor-pointer font-bold">Metodologie</span>
               </Link>
               <Link href="/privacy">
-                <span className="text-white hover:text-blue-400 transition-colors cursor-pointer font-medium">Privacy</span>
+                <span className="text-gray-100 hover:text-blue-300 transition-colors cursor-pointer font-bold">Privacy</span>
               </Link>
               <Link href="/contact">
-                <span className="text-white hover:text-blue-400 transition-colors cursor-pointer font-medium">Contact</span>
+                <span className="text-gray-100 hover:text-blue-300 transition-colors cursor-pointer font-bold">Contact</span>
               </Link>
               <Link href="/faq">
-                <span className="text-white hover:text-blue-400 transition-colors cursor-pointer font-medium">FAQ</span>
+                <span className="text-gray-100 hover:text-blue-300 transition-colors cursor-pointer font-bold">FAQ</span>
               </Link>
             </div>
           </div>
