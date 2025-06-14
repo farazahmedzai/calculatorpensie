@@ -1,6 +1,6 @@
 [build]
   publish = "dist/public"
-  command = "npx vite build"
+  command = "node build-static.js"
 
 [build.environment]
   NODE_VERSION = "20"
