@@ -358,6 +358,152 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Critical SEO Content - Missing from Competitors */}
+      <section className="py-16 bg-white">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold mb-8 text-slate-900 dark:text-slate-50">
+            Cum Se Calculează Pensia în România - Ghid Complet 2025
+          </h2>
+          
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <div>
+              <h3 className="text-2xl font-semibold mb-4 text-slate-800 dark:text-slate-200">
+                Vârsta de Pensionare 2025 - Bărbați și Femei
+              </h3>
+              <div className="bg-blue-50 dark:bg-blue-950/20 p-6 rounded-lg border border-blue-200 dark:border-blue-800 mb-6">
+                <div className="grid grid-cols-2 gap-4">
+                  <div>
+                    <h4 className="font-semibold text-blue-900 dark:text-blue-100 mb-2">Bărbați</h4>
+                    <p className="text-blue-800 dark:text-blue-200 font-medium">Vârsta: 65 ani</p>
+                    <p className="text-blue-800 dark:text-blue-200 font-medium">Stagiu: 35 ani</p>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-blue-900 dark:text-blue-100 mb-2">Femei</h4>
+                    <p className="text-blue-800 dark:text-blue-200 font-medium">Vârsta: 63 ani</p>
+                    <p className="text-blue-800 dark:text-blue-200 font-medium">Stagiu: 30 ani</p>
+                  </div>
+                </div>
+              </div>
+
+              <h3 className="text-2xl font-semibold mb-4 text-slate-800 dark:text-slate-200">
+                Punctul de Pensie - Valoarea Actualizată 2025
+              </h3>
+              <div className="bg-green-50 dark:bg-green-950/20 p-6 rounded-lg border border-green-200 dark:border-green-800 mb-6">
+                <p className="text-2xl font-bold text-green-900 dark:text-green-100 mb-2">2.031 Lei</p>
+                <p className="text-green-800 dark:text-green-200 font-medium">
+                  Valoarea punctului de pensie stabilită prin HG pentru anul 2025. Aceasta se actualizează anual conform legii.
+                </p>
+              </div>
+            </div>
+
+            <div>
+              <h3 className="text-2xl font-semibold mb-4 text-slate-800 dark:text-slate-200">
+                Pensie Anticipată - Condiții și Penalizări
+              </h3>
+              <div className="bg-orange-50 dark:bg-orange-950/20 p-6 rounded-lg border border-orange-200 dark:border-orange-800 mb-6">
+                <h4 className="font-semibold text-orange-900 dark:text-orange-100 mb-3">Condiții Pensie Anticipată:</h4>
+                <ul className="space-y-2 text-orange-800 dark:text-orange-200">
+                  <li className="flex items-start gap-2">
+                    <span className="font-medium">•</span>
+                    <span>Bărbați: minimum 60 ani cu 35 ani stagiu</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="font-medium">•</span>
+                    <span>Femei: minimum 58 ani cu 30 ani stagiu</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="font-medium">•</span>
+                    <span>Penalizare: 0,75% pe lună de anticipare</span>
+                  </li>
+                </ul>
+              </div>
+
+              <h3 className="text-2xl font-semibold mb-4 text-slate-800 dark:text-slate-200">
+                Stagiu de Cotizare - Cum Îl Verifici
+              </h3>
+              <div className="bg-purple-50 dark:bg-purple-950/20 p-6 rounded-lg border border-purple-200 dark:border-purple-800">
+                <p className="text-purple-800 dark:text-purple-200 font-medium mb-3">
+                  Pentru a verifica stagiul tău exact de cotizare:
+                </p>
+                <ol className="space-y-2 text-purple-800 dark:text-purple-200">
+                  <li className="flex items-start gap-2">
+                    <span className="font-medium">1.</span>
+                    <span>Creează cont pe <strong>cnpp.ro</strong></span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="font-medium">2.</span>
+                    <span>Accesează secțiunea "Stagiu de cotizare"</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="font-medium">3.</span>
+                    <span>Descarcă extrasul oficial CNPP</span>
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Advanced Calculator Features Section */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold mb-8 text-slate-900 dark:text-slate-50 text-center">
+            Pensie Minimă și Maximă în România - Limite 2025
+          </h2>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-xl font-semibold mb-4 text-slate-800 dark:text-slate-200">
+                Pensie Minimă Garantată
+              </h3>
+              <p className="text-3xl font-bold text-blue-600 mb-2">1.281 Lei</p>
+              <p className="text-gray-600 font-medium">Pentru persoanele cu stagiu complet de cotizare</p>
+            </div>
+            
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-xl font-semibold mb-4 text-slate-800 dark:text-slate-200">
+                Pensie Medie Națională
+              </h3>
+              <p className="text-3xl font-bold text-green-600 mb-2">~2.400 Lei</p>
+              <p className="text-gray-600 font-medium">Media pensiilor de stat în România</p>
+            </div>
+            
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-xl font-semibold mb-4 text-slate-800 dark:text-slate-200">
+                Pensie Maximă Teoretică
+              </h3>
+              <p className="text-3xl font-bold text-purple-600 mb-2">~9.500 Lei</p>
+              <p className="text-gray-600 font-medium">Pentru contribuții maxime pe întreaga carieră</p>
+            </div>
+          </div>
+
+          <div className="bg-white rounded-lg shadow-md p-8">
+            <h3 className="text-2xl font-semibold mb-6 text-slate-800 dark:text-slate-200">
+              Contribuții Pensie - CAS și CASS Detaliat
+            </h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div>
+                <h4 className="text-lg font-semibold mb-3 text-blue-900">Contribuție Asigurări Sociale (CAS)</h4>
+                <ul className="space-y-2 text-gray-700">
+                  <li><strong>Angajat:</strong> 25% din salariul brut</li>
+                  <li><strong>Angajator:</strong> 2,25% din salariul brut</li>
+                  <li><strong>Plafon:</strong> 5 salarii medii brute (≈60.000 lei/lună)</li>
+                </ul>
+              </div>
+              <div>
+                <h4 className="text-lg font-semibold mb-3 text-green-900">Contribuție Asigurări Sănătate (CASS)</h4>
+                <ul className="space-y-2 text-gray-700">
+                  <li><strong>Angajat:</strong> 10% din salariul brut</li>
+                  <li><strong>Angajator:</strong> 0% (eliminată din 2018)</li>
+                  <li><strong>Fără plafon</strong> de contribuție</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* FAQ Section with Rich Snippets */}
       <FAQSection />
 
