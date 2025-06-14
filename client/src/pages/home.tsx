@@ -8,7 +8,6 @@ import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
 import { Calculator, HelpCircle, Calendar, Users, TrendingUp, MapPin, ListCheck, Gavel } from "lucide-react";
 import { Link } from "wouter";
-import { useQuery } from "@tanstack/react-query";
 import { calculateStandardPension } from "@/lib/pension-calculations";
 import { WebApplicationSchema, OrganizationSchema, WebSiteSchema, WebPageSchema } from "@/components/seo/StructuredData";
 import FAQSection from "@/components/FAQSection";
@@ -18,16 +17,7 @@ import PensionComparison from "@/components/features/PensionComparison";
 import NewsletterSignup from "@/components/newsletter/NewsletterSignup";
 import PerformanceTracker from "@/components/analytics/PerformanceTracker";
 import { trackCalculatorUsage } from "@/lib/analytics";
-
-interface Article {
-  id: number;
-  title: string;
-  excerpt: string;
-  category: string;
-  publishDate: string;
-  readTime: number;
-  slug: string;
-}
+import { getRecentArticles, type Article } from "@/data/static-articles";
 
 export default function Home() {
   // Calculator state
@@ -42,9 +32,7 @@ export default function Home() {
     monthlyPension: number;
   } | null>(null);
 
-  const { data: articles = [] } = useQuery<Article[]>({
-    queryKey: ['/api/articles/recent'],
-  });
+  const articles = getRecentArticles(3);
 
   const calculatePension = () => {
     if (!birthDate || !gender || !monthlySalary || !contributionYears || !workConditions) return;
@@ -533,7 +521,7 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {articles.slice(0, 6).map((article) => (
+            {articles.slice(0, 6).map((article: Article) => (
               <Card key={article.id} className="hover:shadow-lg transition-shadow">
                 <CardContent className="p-6">
                   <div className="flex items-center gap-2 mb-3">

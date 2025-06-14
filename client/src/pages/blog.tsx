@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { useQuery } from "@tanstack/react-query";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -10,25 +9,15 @@ import { Search, Clock, Filter, BookOpen } from "lucide-react";
 import MetaTags from "@/components/seo/MetaTags";
 import BreadcrumbNavigation from "@/components/seo/BreadcrumbNavigation";
 import { WebPageSchema } from "@/components/seo/StructuredData";
-
-interface Article {
-  id: number;
-  title: string;
-  excerpt: string;
-  category: string;
-  publishDate: string;
-  readTime: number;
-  slug: string;
-  published: boolean;
-}
+import { getArticlesByCategory, searchArticles, type Article } from "@/data/static-articles";
 
 export default function BlogPage() {
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("all");
 
-  const { data: articles = [], isLoading } = useQuery<Article[]>({
-    queryKey: ['/api/articles?published=true'],
-  });
+  const allArticles = getArticlesByCategory(selectedCategory);
+  const articles = searchTerm ? searchArticles(searchTerm) : allArticles;
+  const isLoading = false;
 
   const filteredArticles = articles.filter(article => {
     const matchesSearch = article.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
