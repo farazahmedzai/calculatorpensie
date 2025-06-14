@@ -1,6 +1,6 @@
 # CalculatorPensie.com - TODO List
 
-## Current Sprint - Core Implementation
+## Current Sprint - SEO Optimization (Updated June 14, 2025)
 ### High Priority (Completed)
 - [x] Fix TypeScript compilation errors
 - [x] Implement basic pension calculators
@@ -44,7 +44,7 @@
 
 ### Content Calendar (Phase 3)
 - [ ] Week 1: "Vârsta Standard de Pensionare în România: Tabel Complet"
-- [ ] Week 2: "Top 5 Greșeli de Evitat în Planificarea Pensiei" 
+- [x] Week 2: "Top 5 Greșeli de Evitat în Planificarea Pensiei" ✅ COMPLETED 
 - [ ] Week 3: "Pilonul II vs. Pilonul III: Ghid de Decizie"
 - [ ] Week 4: "Cum se Calculează Corect Stagiul de Cotizare?"
 

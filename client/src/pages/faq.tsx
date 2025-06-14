@@ -153,7 +153,7 @@ export default function FAQ() {
                   <div className="bg-green-100 text-green-600 rounded-lg w-8 h-8 flex items-center justify-center flex-shrink-0">
                     <TrendingUp className="h-4 w-4" />
                   </div>
-                  <span className="text-lg font-semibold">Care este valoarea punctului de pensie în 2024?</span>
+                  <span className="text-lg font-semibold">Care este valoarea punctului de pensie în 2025?</span>
                 </div>
               </AccordionTrigger>
               <AccordionContent className="px-6 pb-6">

@@ -100,15 +100,15 @@ Fără obiective clare și o strategie bine definită, este imposibil să atingi
 
 Nu iei în considerare riscurile precum invaliditatea sau decesul prematur care pot afecta planurile.`,
         category: "planificare",
-        publishDate: "2024-12-15T10:00:00.000Z",
+        publishDate: "2025-01-15T10:00:00.000Z",
         readTime: 5,
         published: true,
       },
       {
-        title: "Vârsta Standard de Pensionare în România: Tabelul Complet 2024",
+        title: "Vârsta Standard de Pensionare în România: Tabelul Complet 2025",
         slug: "varsta-pensionare-romania",
         excerpt: "Ghid actualizat cu toate modificările legislative privind vârsta de pensionare pentru bărbați și femei în România.",
-        content: `# Vârsta Standard de Pensionare în România: Tabelul Complet 2024
+        content: `# Vârsta Standard de Pensionare în România: Tabelul Complet 2025
 
 Vârsta de pensionare în România a suferit modificări importante în ultimii ani. Iată situația actualizată:
 
@@ -119,7 +119,7 @@ Vârsta de pensionare în România a suferit modificări importante în ultimii 
 - **Stagiul complet**: 35 de ani
 
 ## Femei
-- **Vârsta actuală**: 63 de ani (în 2024)
+- **Vârsta actuală**: 63 de ani (în 2025)
 - **Evoluție**: Creștere graduală din 2015
 - **Stagiul minim**: 15 ani de cotizare  
 - **Stagiul complet**: 30 de ani
