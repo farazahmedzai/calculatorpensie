@@ -17,7 +17,7 @@ const faqData: FAQItem[] = [
   {
     id: "early-retirement",
     question: "Cum se calculează pensia anticipată?",
-    answer: "Poți ieși la pensie cu câțiva ani mai devreme, dar cu o penalizare de 0,25% pe lună pentru fiecare lună de anticipare. Bărbații pot ieși la pensie anticipată de la 62 de ani, iar femeile de la 60 de ani, cu minimum 15 ani stagiu de cotizare."
+    answer: "Poți ieși la pensie cu câțiva ani mai devreme, dar cu o penalizare de 0,75% pe lună pentru fiecare lună de anticipare. Bărbații pot ieși la pensie anticipată de la 60 de ani, iar femeile de la 58 de ani, cu minimum 35 ani stagiu pentru bărbați și 30 ani pentru femei."
   },
   {
     id: "pension-point-value", 

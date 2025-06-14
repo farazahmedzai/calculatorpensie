@@ -169,6 +169,9 @@ All critical items for #1 Google ranking are implemented:
 - ✅ Professional trust pages with comprehensive content
 
 ## Recent Changes
+- June 14, 2025: Fixed duplicate FAQ content across multiple files (index.html, FAQSection.tsx, faq.tsx)
+- June 14, 2025: Standardized early retirement penalty rate to correct 0.75% (was inconsistent 0.25%)
+- June 14, 2025: Updated all FAQ content to current 2025 values and Romanian pension law
 - June 14, 2025: Fixed chronological duplication issue - added missing 9 articles to complete promised 12-article structure
 - June 14, 2025: Content now properly distributed: 4 planificare + 4 tipuri-pensii + 4 legislatie articles
 - June 14, 2025: All articles have proper chronological ordering (Sept 2024 - Jan 2025)

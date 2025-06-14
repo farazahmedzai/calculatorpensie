@@ -14,7 +14,7 @@ export default function FAQ() {
         "name": "La ce vârstă mă pot pensiona?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Vârsta de pensionare depinde de sex și stagiul de cotizare. Bărbații se pot pensiona la 65 de ani cu minimum 35 de ani stagiu de cotizare, iar femeile la 63 de ani cu minimum 30 de ani stagiu. Pentru pensionarea anticipată, bărbații pot ieși la pensie de la 62 de ani, iar femeile de la 60 de ani, dar cu penalizări de 0,25% pe lună pentru fiecare lună de anticipare."
+          "text": "Vârsta de pensionare depinde de sex și istoricul de cotizare. În 2025, bărbații se pot pensiona la 65 de ani cu 35 de ani stagiu de cotizare, iar femeile la 63 de ani cu 30 de ani stagiu. Pentru pensionarea anticipată, bărbații pot ieși la pensie de la 60 de ani, iar femeile de la 58 de ani, dar cu penalizări de 0,75% pe lună pentru fiecare lună de anticipare."
         }
       },
       {
@@ -30,7 +30,7 @@ export default function FAQ() {
         "name": "Cum se calculează pensia de stat?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Pensia de stat se calculează folosind formula: Punctajul mediu anual × Stagiul de cotizare (ani) × Valoarea punctului de pensie (2.031 lei în 2024). Punctajul mediu anual rezultă din raportul dintre salariul brut lunar și salariul mediu brut pe economie din perioada de contribuție."
+          "text": "Pensia de stat se calculează folosind formula: Punctajul mediu anual × Stagiul de cotizare (ani) × Valoarea punctului de pensie (2.031 lei în 2025). Punctajul mediu anual rezultă din raportul dintre salariul brut lunar și salariul mediu brut pe economie din perioada de contribuție."
         }
       },
       {
@@ -38,7 +38,7 @@ export default function FAQ() {
         "name": "Ce este pensia anticipată și cum funcționează?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Pensia anticipată permite ieșirea la pensie cu până la 3 ani mai devreme față de vârsta standard, dar cu o penalizare de 0,25% pe lună pentru fiecare lună de anticipare. Bărbații pot ieși la pensie anticipată de la 62 de ani, iar femeile de la 60 de ani, cu condiția să aibă minimum 15 ani stagiu de cotizare."
+          "text": "Pensia anticipată permite ieșirea la pensie cu până la 5 ani mai devreme față de vârsta standard, dar cu o penalizare de 0,75% pe lună pentru fiecare lună de anticipare. Bărbații pot ieși la pensie anticipată de la 60 de ani, iar femeile de la 58 de ani, cu condiția să aibă minimum 35 ani stagiu pentru bărbați și 30 ani pentru femei."
         }
       },
       {
