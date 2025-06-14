@@ -107,7 +107,7 @@ export default function Home() {
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
               Calculator Pensie Online 2025: Află Vârsta și Valoarea Pensiei Tale
             </h1>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-800 max-w-3xl mx-auto font-medium">
               Folosește cel mai precis calculator de pensie din România. Calculează instant pensia de stat și vârsta de pensionare bazate pe formulele oficiale CNPP.
             </p>
           </div>
@@ -301,24 +301,24 @@ export default function Home() {
               Înțelegerea Sistemului de Pensii din România pe Scurt
             </h3>
 
-            <p className="text-gray-600 mb-6">
+            <p className="text-gray-800 mb-6 font-medium">
               România are un sistem de pensii bazat pe trei piloni, fiecare cu un rol specific în asigurarea veniturilor la pensie:
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
               <div className="bg-blue-50 p-6 rounded-lg">
-                <h4 className="font-semibold text-lg mb-3 text-blue-800">Pilonul I: Pensia de Stat</h4>
-                <p className="text-blue-700">Sistemul public obligatoriu administrat de CNPP. Reprezintă baza sistemului de pensii și este calculat folosind punctajul mediu anual și valoarea punctului de pensie.</p>
+                <h4 className="font-semibold text-lg mb-3 text-blue-900">Pilonul I: Pensia de Stat</h4>
+                <p className="text-blue-800 font-medium">Sistemul public obligatoriu administrat de CNPP. Reprezintă baza sistemului de pensii și este calculat folosind punctajul mediu anual și valoarea punctului de pensie.</p>
               </div>
               
               <div className="bg-green-50 p-6 rounded-lg">
-                <h4 className="font-semibold text-lg mb-3 text-green-800">Pilonul II: Pensia Administrată Privat</h4>
-                <p className="text-green-700">Sistemul obligatoriu de contribuții către fonduri private de pensii. Contribuția este de 3,75% din salariul brut pentru persoanele sub 35 de ani.</p>
+                <h4 className="font-semibold text-lg mb-3 text-green-900">Pilonul II: Pensia Administrată Privat</h4>
+                <p className="text-green-800 font-medium">Sistemul obligatoriu de contribuții către fonduri private de pensii. Contribuția este de 3,75% din salariul brut pentru persoanele sub 35 de ani.</p>
               </div>
               
               <div className="bg-purple-50 p-6 rounded-lg">
-                <h4 className="font-semibold text-lg mb-3 text-purple-800">Pilonul III: Pensia Facultativă</h4>
-                <p className="text-purple-700">Sistemul voluntar de economisire pentru pensie cu beneficii fiscale. Poți contribui până la 400 EUR anual cu deducere fiscală.</p>
+                <h4 className="font-semibold text-lg mb-3 text-purple-900">Pilonul III: Pensia Facultativă</h4>
+                <p className="text-purple-800 font-medium">Sistemul voluntar de economisire pentru pensie cu beneficii fiscale. Poți contribui până la 400 EUR anual cu deducere fiscală.</p>
               </div>
             </div>
 
@@ -331,7 +331,7 @@ export default function Home() {
                 <p className="text-2xl font-bold text-blue-900 mb-4">
                   Pensie = Punctaj Mediu Anual (PMA) × Valoarea Punctului de Pensie (VPP)
                 </p>
-                <p className="text-lg text-blue-700">
+                <p className="text-lg text-blue-800 font-medium">
                   Punctaj Mediu Anual se calculează pe baza salariilor și perioadei de cotizare, iar Valoarea Punctului de Pensie pentru 2025 este <strong>2.031 lei</strong>.
                 </p>
               </div>
