@@ -9,6 +9,13 @@ interface MetaTagsProps {
   ogImage?: string;
   keywords?: string;
   structuredData?: object;
+  articleAuthor?: string;
+  articlePublishedTime?: string;
+  articleModifiedTime?: string;
+  articleSection?: string;
+  articleTag?: string[];
+  noindex?: boolean;
+  alternateLanguages?: Array<{ hreflang: string; href: string }>;
 }
 
 export default function MetaTags({
@@ -19,7 +26,14 @@ export default function MetaTags({
   ogDescription,
   ogImage = '/assets/og-image.png',
   keywords,
-  structuredData
+  structuredData,
+  articleAuthor,
+  articlePublishedTime,
+  articleModifiedTime,
+  articleSection,
+  articleTag,
+  noindex = false,
+  alternateLanguages
 }: MetaTagsProps) {
   useEffect(() => {
     document.title = title;
@@ -32,14 +46,17 @@ export default function MetaTags({
 
     const metas = [
       { name: 'description', content: description },
-      { name: 'robots', content: 'index,follow' },
+      { name: 'robots', content: noindex ? 'noindex,nofollow' : 'index,follow' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { name: 'author', content: 'CalculatorPensie.com' },
+      { name: 'author', content: articleAuthor || 'CalculatorPensie.com' },
       { name: 'language', content: 'Romanian' },
       { name: 'geo.region', content: 'RO' },
       { name: 'geo.country', content: 'Romania' },
+      { name: 'rating', content: 'general' },
+      { name: 'distribution', content: 'global' },
+      { name: 'revisit-after', content: '7 days' },
       
-      { property: 'og:type', content: 'website' },
+      { property: 'og:type', content: articlePublishedTime ? 'article' : 'website' },
       { property: 'og:title', content: ogTitle || title },
       { property: 'og:description', content: ogDescription || description },
       { property: 'og:image', content: ogImage },
@@ -53,7 +70,29 @@ export default function MetaTags({
       { name: 'twitter:image', content: ogImage },
       
       { name: 'theme-color', content: '#2563eb' },
+      { name: 'msapplication-TileColor', content: '#2563eb' },
+      { name: 'apple-mobile-web-app-capable', content: 'yes' },
+      { name: 'apple-mobile-web-app-status-bar-style', content: 'default' },
     ];
+
+    // Add article-specific meta tags
+    if (articlePublishedTime) {
+      metas.push({ property: 'article:published_time', content: articlePublishedTime });
+    }
+    if (articleModifiedTime) {
+      metas.push({ property: 'article:modified_time', content: articleModifiedTime });
+    }
+    if (articleAuthor) {
+      metas.push({ property: 'article:author', content: articleAuthor });
+    }
+    if (articleSection) {
+      metas.push({ property: 'article:section', content: articleSection });
+    }
+    if (articleTag) {
+      articleTag.forEach(tag => {
+        metas.push({ property: 'article:tag', content: tag });
+      });
+    }
 
     if (keywords) {
       metas.push({ name: 'keywords', content: keywords });
@@ -70,6 +109,18 @@ export default function MetaTags({
       metaElement.setAttribute('data-pension-meta', 'true');
       document.head.appendChild(metaElement);
     });
+
+    // Add alternate language links
+    if (alternateLanguages) {
+      alternateLanguages.forEach(lang => {
+        const linkElement = document.createElement('link');
+        linkElement.setAttribute('rel', 'alternate');
+        linkElement.setAttribute('hreflang', lang.hreflang);
+        linkElement.setAttribute('href', lang.href);
+        linkElement.setAttribute('data-pension-meta', 'true');
+        document.head.appendChild(linkElement);
+      });
+    }
 
     if (canonical) {
       const existingCanonical = document.querySelector('link[rel="canonical"]');
