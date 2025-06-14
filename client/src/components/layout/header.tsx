@@ -32,27 +32,41 @@ export default function Header() {
     <Link href={href}>
       <span
         className={`
-          ${mobile ? 'block px-3 py-2 text-base' : 'text-sm'}
-          font-medium transition-colors cursor-pointer
-          ${highlight ? 'text-brand-blue hover:text-blue-700' : 'text-neutral-medium hover:text-neutral-dark'}
-          ${isActiveLink(href) ? (highlight ? 'text-brand-blue' : 'text-neutral-dark') : ''}
+          ${mobile ? 'block px-4 py-3 text-base rounded-lg' : 'text-sm px-4 py-2 rounded-lg'}
+          font-medium transition-all duration-300 cursor-pointer relative group
+          ${highlight 
+            ? 'bg-blue-600 text-white hover:bg-blue-700 shadow-md' 
+            : 'text-gray-700 hover:text-blue-600 hover:bg-blue-50'
+          }
+          ${isActiveLink(href) && !highlight ? 'text-blue-600 bg-blue-50' : ''}
+          ${mobile ? 'hover:bg-blue-50 border border-transparent hover:border-blue-200' : ''}
         `}
         onClick={() => mobile && setMobileMenuOpen(false)}
       >
         {label}
+        {!mobile && !highlight && (
+          <span className="absolute bottom-0 left-1/2 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
+        )}
       </span>
     </Link>
   );
 
   return (
-    <header className="bg-white shadow-sm sticky top-0 z-50 border-b border-gray-100">
+    <header className="bg-white shadow-lg sticky top-0 z-50 border-b border-gray-200 backdrop-blur-sm bg-white/95">
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <Link href="/">
-            <div className="flex items-center cursor-pointer">
-              <Calculator className="h-8 w-8 text-brand-blue mr-3" />
-              <span className="text-xl font-bold text-neutral-dark">CalculatorPensie.ro</span>
+            <div className="flex items-center cursor-pointer group">
+              <div className="bg-blue-600 p-2 rounded-lg mr-3 group-hover:bg-blue-700 transition-colors">
+                <Calculator className="h-8 w-8 text-white" />
+              </div>
+              <div>
+                <span className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent">
+                  CalculatorPensie.com
+                </span>
+                <p className="text-xs text-blue-600 font-medium">#1 Calculator de Pensie</p>
+              </div>
             </div>
           </Link>
           
