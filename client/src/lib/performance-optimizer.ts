@@ -24,19 +24,13 @@ export class PerformanceOptimizer {
   };
 
   private criticalResources: CriticalResource[] = [
-    // Critical CSS and fonts for above-the-fold content
-    { url: '/fonts/inter-var.woff2', type: 'font', priority: 'high', preload: true },
-    { url: '/css/critical.css', type: 'css', priority: 'high', preload: true },
+    // Critical resources only - eliminates render-blocking
+    { url: '/src/critical.css', type: 'css', priority: 'high', preload: true },
+    { url: '/src/main.tsx', type: 'js', priority: 'high', preload: true },
     
-    // Important JavaScript for interactivity
-    { url: '/js/pension-calculator.js', type: 'js', priority: 'high', preload: true },
-    
-    // Hero images
-    { url: '/images/hero-calculator.webp', type: 'image', priority: 'high', preload: true },
-    
-    // Secondary resources
-    { url: '/js/analytics.js', type: 'js', priority: 'medium', prefetch: true },
-    { url: '/images/testimonials.webp', type: 'image', priority: 'low', prefetch: true }
+    // Preload essential components
+    { url: '/src/components/calculators/main-calculator.tsx', type: 'js', priority: 'medium', prefetch: true },
+    { url: '/src/components/FAQSection.tsx', type: 'js', priority: 'medium', prefetch: true }
   ];
 
   // Initialize performance monitoring
@@ -168,8 +162,8 @@ export class PerformanceOptimizer {
   // Report metrics to analytics
   private reportMetric(name: string, value: number) {
     // Report to Google Analytics if available
-    if (typeof gtag !== 'undefined') {
-      gtag('event', 'core_web_vitals', {
+    if (typeof window !== 'undefined' && 'gtag' in window) {
+      (window as any).gtag('event', 'core_web_vitals', {
         metric_name: name,
         metric_value: Math.round(value),
         metric_rating: this.getMetricRating(name, value)
