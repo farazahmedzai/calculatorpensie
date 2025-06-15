@@ -3,24 +3,33 @@ import { queryClient } from "./lib/queryClient";
 import { QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
-import NotFound from "@/pages/not-found";
-import Home from "@/pages/home";
-import Calculator from "@/pages/calculator";
-import PlanificarePage from "@/pages/guides/planificare";
-import TipuriPensiiPage from "@/pages/guides/tipuri-pensii";
-import LegislatiePage from "@/pages/guides/legislatie";
-import BlogPage from "@/pages/blog";
-import BlogArticle from "@/pages/blog-article";
-import DespreNoi from "@/pages/despre-noi";
-import Metodologie from "@/pages/metodologie";
-import Contact from "@/pages/contact";
-import Privacy from "@/pages/privacy";
-import FAQ from "@/pages/faq";
-import Header from "@/components/layout/header";
-import Footer from "@/components/layout/footer";
-import { useEffect } from "react";
+import { Suspense, useEffect, lazy } from "react";
 import { initGA } from "./lib/analytics";
 import { useAnalytics } from "./hooks/use-analytics";
+import { ComponentLoader, preloadCriticalComponents } from "./components/LazyComponents";
+
+// Import only critical components directly (Header, Footer, Home, NotFound)
+import NotFound from "@/pages/not-found";
+import Home from "@/pages/home";
+import Header from "@/components/layout/header";
+import Footer from "@/components/layout/footer";
+
+// Lazy load all non-critical pages to reduce initial bundle by ~100KB
+import { 
+  LazyCalculatorPage,
+  LazyBlogPage,
+  LazyBlogArticle,
+  LazyContactPage,
+  LazyPlanificare,
+  LazyTipuriPensii,
+  LazyLegislatie
+} from "./components/LazyComponents";
+
+// Lazy load remaining pages
+const LazyDespreNoi = lazy(() => import("@/pages/despre-noi"));
+const LazyMetodologie = lazy(() => import("@/pages/metodologie"));
+const LazyPrivacy = lazy(() => import("@/pages/privacy"));
+const LazyFAQ = lazy(() => import("@/pages/faq"));
 
 function Router() {
   // Track page views when routes change
@@ -32,17 +41,63 @@ function Router() {
       <main className="flex-1">
         <Switch>
           <Route path="/" component={Home} />
-          <Route path="/calculator" component={Calculator} />
-          <Route path="/planificare" component={PlanificarePage} />
-          <Route path="/tipuri-pensii" component={TipuriPensiiPage} />
-          <Route path="/legislatie" component={LegislatiePage} />
-          <Route path="/blog" component={BlogPage} />
-          <Route path="/blog/:slug" component={BlogArticle} />
-          <Route path="/despre-noi" component={DespreNoi} />
-          <Route path="/metodologie" component={Metodologie} />
-          <Route path="/contact" component={Contact} />
-          <Route path="/privacy" component={Privacy} />
-          <Route path="/faq" component={FAQ} />
+          <Route path="/calculator">
+            <Suspense fallback={<ComponentLoader />}>
+              <LazyCalculatorPage />
+            </Suspense>
+          </Route>
+          <Route path="/planificare">
+            <Suspense fallback={<ComponentLoader />}>
+              <LazyPlanificare />
+            </Suspense>
+          </Route>
+          <Route path="/tipuri-pensii">
+            <Suspense fallback={<ComponentLoader />}>
+              <LazyTipuriPensii />
+            </Suspense>
+          </Route>
+          <Route path="/legislatie">
+            <Suspense fallback={<ComponentLoader />}>
+              <LazyLegislatie />
+            </Suspense>
+          </Route>
+          <Route path="/blog" nest>
+            <Route path="/">
+              <Suspense fallback={<ComponentLoader />}>
+                <LazyBlogPage />
+              </Suspense>
+            </Route>
+            <Route path="/:slug">
+              <Suspense fallback={<ComponentLoader />}>
+                <LazyBlogArticle />
+              </Suspense>
+            </Route>
+          </Route>
+          <Route path="/despre-noi">
+            <Suspense fallback={<ComponentLoader />}>
+              <LazyDespreNoi />
+            </Suspense>
+          </Route>
+          <Route path="/metodologie">
+            <Suspense fallback={<ComponentLoader />}>
+              <LazyMetodologie />
+            </Suspense>
+          </Route>
+          <Route path="/contact">
+            <Suspense fallback={<ComponentLoader />}>
+              <LazyContactPage />
+            </Suspense>
+          </Route>
+          <Route path="/privacy">
+            <Suspense fallback={<ComponentLoader />}>
+              <LazyPrivacy />
+            </Suspense>
+          </Route>
+          <Route path="/faq">
+            <Suspense fallback={<ComponentLoader />}>
+              <LazyFAQ />
+            </Suspense>
+          </Route>
           <Route component={NotFound} />
         </Switch>
       </main>
@@ -52,9 +107,11 @@ function Router() {
 }
 
 function App() {
-  // Initialize Google Analytics when app loads
+  // Initialize Google Analytics and preload critical components
   useEffect(() => {
     initGA();
+    // Preload critical components to improve perceived performance
+    preloadCriticalComponents();
   }, []);
 
   return (

@@ -1,18 +1,21 @@
 import { lazy } from 'react';
 
 // Lazy load heavy components to reduce initial bundle size by ~100KB
-export const LazyCalculator = lazy(() => import('./calculators/Calculator'));
-export const LazyBlogList = lazy(() => import('../pages/blog'));
+export const LazyCalculatorPage = lazy(() => import('../pages/calculator'));
+export const LazyBlogPage = lazy(() => import('../pages/blog'));
 export const LazyBlogArticle = lazy(() => import('../pages/blog-article'));
-export const LazyContact = lazy(() => import('../pages/contact'));
-export const LazyGuides = lazy(() => import('../pages/guides/PensionGuides'));
-export const LazyFAQ = lazy(() => import('./FAQSection'));
+export const LazyContactPage = lazy(() => import('../pages/contact'));
+export const LazyFAQSection = lazy(() => import('./FAQSection'));
 
-// Lazy load chart components (heavy recharts library)
-export const LazyCharts = lazy(() => import('./charts/PensionCharts'));
+// Lazy load calculator components (heavy with recharts)
+export const LazyMainCalculator = lazy(() => import('./calculators/main-calculator'));
+export const LazyEarlyRetirementCalculator = lazy(() => import('./calculators/early-retirement-calculator'));
+export const LazyPillar3Calculator = lazy(() => import('./calculators/pillar3-calculator'));
 
-// Lazy load analytics components
-export const LazyAnalytics = lazy(() => import('./analytics/AnalyticsTracker'));
+// Lazy load guide pages
+export const LazyPlanificare = lazy(() => import('../pages/guides/planificare'));
+export const LazyTipuriPensii = lazy(() => import('../pages/guides/tipuri-pensii'));
+export const LazyLegislatie = lazy(() => import('../pages/guides/legislatie'));
 
 // Loading component for suspense fallbacks
 export const ComponentLoader = () => (
@@ -22,18 +25,19 @@ export const ComponentLoader = () => (
   </div>
 );
 
-// Preload critical components when idle
+// Preload critical components when browser is idle
 export const preloadCriticalComponents = () => {
   if ('requestIdleCallback' in window) {
     requestIdleCallback(() => {
-      LazyCalculator();
-      LazyFAQ();
+      // Preload most used components
+      import('./calculators/main-calculator');
+      import('./FAQSection');
     });
   } else {
     // Fallback for browsers without requestIdleCallback
     setTimeout(() => {
-      LazyCalculator();
-      LazyFAQ();
+      import('./calculators/main-calculator');
+      import('./FAQSection');
     }, 1000);
   }
 };
