@@ -14,40 +14,17 @@
     <meta property="og:image" content="https://calculatorpensie.com/og-image.jpg" />
     <meta property="og:locale" content="ro_RO" />
     
-    <!-- Critical CSS inlined to eliminate render-blocking -->
-    <style>
-      /* Critical Inter font subset for immediate text rendering */
-      @font-face {
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 400;
-        font-display: swap;
-        src: url('data:font/woff2;base64,') format('woff2');
-      }
-      @font-face {
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 600;
-        font-display: swap;
-        src: url('data:font/woff2;base64,') format('woff2');
-      }
-      /* Critical above-the-fold CSS */
-      body { font-family: Inter, system-ui, sans-serif; margin: 0; padding: 0; }
-      .hero-section { min-height: 50vh; }
-      .calculator-container { background: #fff; border-radius: 12px; }
-    </style>
-    
-    <!-- Preload critical resources -->
-    <link rel="preload" href="/src/main.tsx" as="script" crossorigin>
-    <link rel="preload" href="/src/index.css" as="style">
-    
-    <!-- Preconnect to external domains -->
+    <!-- Preconnect to external domains for faster loading -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     
-    <!-- Load Google Fonts asynchronously to prevent render-blocking -->
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"></noscript>
+    <!-- Load Google Fonts with display=swap to prevent FOIT -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Preload critical resources -->
+    <link rel="modulepreload" href="/src/main.tsx">
+    <link rel="prefetch" href="/src/components/calculators/main-calculator.tsx">
+    <link rel="prefetch" href="/src/components/FAQSection.tsx">
     
     <!-- Schema.org WebApplication markup (Critical for #1 Ranking) -->
     <script type="application/ld+json">
