@@ -39,6 +39,7 @@ CalculatorPensie.com is Romania's premier online pension calculator platform, de
 - Meta tags and Open Graph optimization
 - Sitemap and robots.txt configuration
 - Internal linking strategy with silo architecture
+- Ads.txt file for programmatic advertising partner verification
 
 ## Data Flow
 
@@ -169,6 +170,9 @@ All critical items for #1 Google ranking are implemented:
 - ✅ Professional trust pages with comprehensive content
 
 ## Recent Changes
+- July 18, 2025: ADS.TXT IMPLEMENTATION - Added comprehensive ads.txt file (1,344 entries) for programmatic advertising revenue optimization
+- July 18, 2025: DEPLOYMENT CONFIGURATION FIXED - Updated build-static.js to properly copy ads.txt to production deployment
+- July 18, 2025: NETLIFY CONFIGURATION ENHANCED - Added specific redirects and headers for ads.txt file accessibility
 - June 14, 2025: SITEMAP.XML & ROBOTS.TXT FIXED - Added missing /sitemap.xml and /robots.txt routes to server
 - June 14, 2025: SEO technical infrastructure now 100% complete with proper search engine crawling instructions
 - June 14, 2025: NETLIFY DEPLOYMENT CONFIGURED - Fixed domain 404 error for calculatorpensie.com

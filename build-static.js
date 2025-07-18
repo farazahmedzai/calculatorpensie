@@ -15,13 +15,17 @@ try {
   if (existsSync(distPath)) {
     console.log('Copying static files...');
     
-    // Copy robots.txt and sitemap.xml if they exist
+    // Copy robots.txt, sitemap.xml, and ads.txt if they exist
     if (existsSync('public/robots.txt')) {
       copyFileSync('public/robots.txt', `${distPath}/robots.txt`);
     }
     
     if (existsSync('public/sitemap.xml')) {
       copyFileSync('public/sitemap.xml', `${distPath}/sitemap.xml`);
+    }
+    
+    if (existsSync('public/ads.txt')) {
+      copyFileSync('public/ads.txt', `${distPath}/ads.txt`);
     }
     
     // Create _redirects for SPA routing
