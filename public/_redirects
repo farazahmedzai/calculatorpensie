@@ -7,6 +7,7 @@
 # Static files
 /sitemap.xml /sitemap.xml 200
 /robots.txt /robots.txt 200
+/ads.txt https://srv.adstxtmanager.com/19390/calculatorpensie.com 301
 
 # Handle blog article routes
 /blog/* /index.html 200
