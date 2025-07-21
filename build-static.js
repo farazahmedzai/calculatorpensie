@@ -15,7 +15,7 @@ try {
   if (existsSync(distPath)) {
     console.log('Copying static files...');
     
-    // Copy robots.txt, sitemap.xml, and ads.txt if they exist
+    // Copy robots.txt, sitemap.xml, ads.txt, and _redirects if they exist
     if (existsSync('public/robots.txt')) {
       copyFileSync('public/robots.txt', `${distPath}/robots.txt`);
     }
@@ -28,9 +28,14 @@ try {
       copyFileSync('public/ads.txt', `${distPath}/ads.txt`);
     }
     
-    // Create _redirects for SPA routing
-    const redirectsContent = `/*    /index.html   200`;
-    writeFileSync(`${distPath}/_redirects`, redirectsContent);
+    // Copy _redirects file if it exists in public directory
+    if (existsSync('public/_redirects')) {
+      copyFileSync('public/_redirects', `${distPath}/_redirects`);
+    } else {
+      // Fallback: Create basic _redirects for SPA routing if no custom one exists
+      const redirectsContent = `/*    /index.html   200`;
+      writeFileSync(`${distPath}/_redirects`, redirectsContent);
+    }
     
     console.log('Static build completed successfully!');
   } else {
