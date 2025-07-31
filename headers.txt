@@ -1,0 +1,16 @@
+HTTP/2 301 
+age: 0
+cache-control: public,max-age=86400
+cache-status: "Netlify Edge"; fwd=stale
+content-type: text/plain; charset=utf-8
+date: Thu, 31 Jul 2025 06:40:08 GMT
+location: https://srv.adstxtmanager.com/19390/calculatorpensie.com
+referrer-policy: strict-origin-when-cross-origin
+server: Netlify
+strict-transport-security: max-age=31536000
+x-content-type-options: nosniff
+x-frame-options: DENY
+x-nf-request-id: 01K1FKB99DVC4ZR2RHADP5BK7C
+x-xss-protection: 1; mode=block
+content-length: 71
+
