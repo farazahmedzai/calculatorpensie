@@ -1,4 +1,5 @@
 # CalculatorPensie.com
+<!-- Deployment trigger: July 31, 2025 - Fixed ads.txt redirect -->
 
 ## Overview
 CalculatorPensie.com is Romania's comprehensive pension calculation and planning platform, designed to help Romanian citizens estimate their retirement income and plan their financial future.

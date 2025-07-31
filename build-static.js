@@ -25,11 +25,13 @@ try {
       copyFileSync('public/sitemap.xml', `${distPath}/sitemap.xml`);
     }
     
-    // Create _redirects for SPA routing
-    const redirectsContent = `/*    /index.html   200`;
+    // Create _redirects file with ads.txt redirect and SPA routing
+    const redirectsContent = `/ads.txt   https://srv.adstxtmanager.com/19390/calculatorpensie.com   301!
+/*          /index.html   200`;
     writeFileSync(`${distPath}/_redirects`, redirectsContent);
     
     console.log('Static build completed successfully!');
+    console.log('_redirects file created with ads.txt redirect to Ezoic');
   } else {
     console.error('Build output directory not found');
     process.exit(1);

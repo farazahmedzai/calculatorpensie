@@ -170,6 +170,9 @@ All critical items for #1 Google ranking are implemented:
 - ✅ Professional trust pages with comprehensive content
 
 ## Recent Changes
+- July 31, 2025: EZOIC ADS.TXT REDIRECT FIX - Fixed production ads.txt redirect by updating build-static.js to create proper _redirects file with Ezoic URL
+- July 31, 2025: NETLIFY _REDIRECTS FILE - Modified build script to generate _redirects file with /ads.txt → https://srv.adstxtmanager.com/19390/calculatorpensie.com (301)
+- July 31, 2025: DEPLOYMENT TRIGGER - Added deployment trigger to force Netlify rebuild with corrected ads.txt redirect configuration
 - July 31, 2025: EZOIC ADS.TXT REDIRECT IMPLEMENTATION - Configured /ads.txt to redirect (301) to https://srv.adstxtmanager.com/19390/calculatorpensie.com for Ezoic ad management
 - July 31, 2025: STATIC ADS.TXT REMOVAL - Removed static ads.txt files and updated build scripts to use Ezoic redirect instead
 - July 31, 2025: NETLIFY REDIRECT CONFIGURATION - Updated netlify.toml to force redirect /ads.txt to Ezoic ads.txt manager
