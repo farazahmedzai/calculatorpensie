@@ -259,10 +259,7 @@ Crawl-delay: 1`;
     res.send(robotsTxt);
   });
 
-  // Ads.txt redirect for Ezoic ads management
-  app.get("/ads.txt", (req, res) => {
-    res.redirect(301, "https://srv.adstxtmanager.com/19390/calculatorpensie.com");
-  });
+
 
   const httpServer = createServer(app);
   return httpServer;

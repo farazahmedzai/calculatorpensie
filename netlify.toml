@@ -6,13 +6,6 @@
   NODE_VERSION = "20"
 
 # Specific redirects must come BEFORE catch-all redirect
-# Updated July 31, 2025: Moved ads.txt redirect to top priority
-[[redirects]]
-  from = "/ads.txt"
-  to = "https://srv.adstxtmanager.com/19390/calculatorpensie.com"
-  status = 301
-  force = true
-
 [[redirects]]
   from = "/robots.txt"
   to = "/robots.txt"

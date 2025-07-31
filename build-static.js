@@ -15,8 +15,7 @@ try {
   if (existsSync(distPath)) {
     console.log('Copying static files...');
     
-    // Copy robots.txt and sitemap.xml if they exist
-    // Note: ads.txt is now handled via redirect to Ezoic ads.txt manager
+    // Copy static files (robots.txt, sitemap.xml, ads.txt) if they exist
     if (existsSync('public/robots.txt')) {
       copyFileSync('public/robots.txt', `${distPath}/robots.txt`);
     }
@@ -25,13 +24,16 @@ try {
       copyFileSync('public/sitemap.xml', `${distPath}/sitemap.xml`);
     }
     
-    // Create _redirects file with ads.txt redirect and SPA routing
-    const redirectsContent = `/ads.txt   https://srv.adstxtmanager.com/19390/calculatorpensie.com   301!
-/*          /index.html   200`;
+    if (existsSync('public/ads.txt')) {
+      copyFileSync('public/ads.txt', `${distPath}/ads.txt`);
+    }
+    
+    // Create _redirects file for SPA routing only (ads.txt now served as static file)
+    const redirectsContent = `/*          /index.html   200`;
     writeFileSync(`${distPath}/_redirects`, redirectsContent);
     
     console.log('Static build completed successfully!');
-    console.log('_redirects file created with ads.txt redirect to Ezoic');
+    console.log('Static ads.txt file copied to deployment');
   } else {
     console.error('Build output directory not found');
     process.exit(1);
