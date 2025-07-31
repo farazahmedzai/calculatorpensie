@@ -182,6 +182,11 @@ export default function CalculatorPage() {
             <li>Compari diferite strategii de contribuție</li>
           </ul>
         </div>
+
+        {/* RevBid Advertisement */}
+        <div className="mt-12 flex justify-center">
+          <div data-placement-id="revbid-square" id='revbid-square-4741' style={{minWidth: '300px', minHeight: '250px', textAlign: 'center'}}></div>
+        </div>
       </div>
     </div>
   );

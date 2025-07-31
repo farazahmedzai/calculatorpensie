@@ -191,6 +191,15 @@ export default function BlogPage() {
         </div>
       </section>
 
+      {/* RevBid Advertisement */}
+      <section className="py-8 bg-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex justify-center">
+            <div data-placement-id="revbid-square" id='revbid-square-4741' style={{minWidth: '300px', minHeight: '250px', textAlign: 'center'}}></div>
+          </div>
+        </div>
+      </section>
+
       {/* Featured Guides */}
       <section className="py-16 bg-neutral-light">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">

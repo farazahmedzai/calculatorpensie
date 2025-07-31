@@ -495,6 +495,15 @@ export default function Home() {
       {/* FAQ Section with Rich Snippets */}
       <FAQSection />
 
+      {/* RevBid Advertisement */}
+      <section className="py-8 bg-gray-50">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex justify-center">
+            <div data-placement-id="revbid-square" id='revbid-square-4741' style={{minWidth: '300px', minHeight: '250px', textAlign: 'center'}}></div>
+          </div>
+        </div>
+      </section>
+
       {/* Pension Comparison Section */}
       <PensionComparison />
 
