@@ -25,6 +25,7 @@ const LazyLegislatie = lazy(() => import("@/pages/guides/legislatie"));
 const LazyDespreNoi = lazy(() => import("@/pages/despre-noi"));
 const LazyMetodologie = lazy(() => import("@/pages/metodologie"));
 const LazyPrivacy = lazy(() => import("@/pages/privacy"));
+const LazyTerms = lazy(() => import("@/pages/terms"));
 const LazyFAQ = lazy(() => import("@/pages/faq"));
 
 // Loading component
@@ -95,6 +96,11 @@ function Router() {
           <Route path="/privacy">
             <Suspense fallback={<LoadingSpinner />}>
               <LazyPrivacy />
+            </Suspense>
+          </Route>
+          <Route path="/terms">
+            <Suspense fallback={<LoadingSpinner />}>
+              <LazyTerms />
             </Suspense>
           </Route>
           <Route path="/faq">

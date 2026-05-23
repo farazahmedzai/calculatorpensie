@@ -1,34 +1,21 @@
 import { useParams, useRoute } from "wouter";
-import { useQuery } from "@tanstack/react-query";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
-import { ArrowLeft, Clock, Calendar, Tag } from "lucide-react";
+import { ArrowLeft, Clock, Calendar } from "lucide-react";
 import MetaTags from "@/components/seo/MetaTags";
 import BreadcrumbNavigation from "@/components/seo/BreadcrumbNavigation";
 import { ArticleSchema } from "@/components/seo/StructuredData";
-
-interface Article {
-  id: number;
-  title: string;
-  content: string;
-  excerpt: string;
-  category: string;
-  publishDate: string;
-  readTime: number;
-  slug: string;
-  published: boolean;
-}
+import { getArticleBySlug } from "@/data/static-articles";
 
 export default function BlogArticle() {
   const [match, params] = useRoute("/blog/:slug");
   const slug = params?.slug;
 
-  const { data: article, isLoading, error } = useQuery<Article>({
-    queryKey: [`/api/articles/${slug}`],
-    enabled: !!slug,
-  });
+  const article = slug ? getArticleBySlug(slug) : undefined;
+  const isLoading = false;
+  const error = null;
 
   if (isLoading) {
     return (
@@ -147,7 +134,7 @@ export default function BlogArticle() {
             <CardContent className="pt-6">
               <div 
                 className="prose prose-lg max-w-none prose-headings:text-gray-900 prose-p:text-gray-700 prose-a:text-brand-blue prose-strong:text-gray-900"
-                dangerouslySetInnerHTML={{ __html: article.content }}
+                dangerouslySetInnerHTML={{ __html: article.content || "" }}
               />
             </CardContent>
           </Card>

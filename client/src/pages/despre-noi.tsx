@@ -167,8 +167,90 @@ export default function DespreNoi() {
         </div>
       </section>
 
+      {/* Experts Section (E-E-A-T) */}
+      <section className="py-16 bg-gradient-to-br from-slate-50 to-indigo-50 border-t border-b border-indigo-100">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3.5xl font-bold text-slate-900 mb-4">Experții din Spatele Platformei</h2>
+            <p className="text-lg text-slate-700 max-w-3xl mx-auto font-medium">
+              Calculele și analizele noastre legislative sunt supervizate de specialiști cu vastă experiență în asigurări sociale și economie din România.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            {/* Alexandru Popescu */}
+            <Card className="hover:shadow-xl transition-shadow duration-300 border-indigo-100 bg-white">
+              <CardContent className="p-8">
+                <div className="flex flex-col sm:flex-row items-center sm:items-start gap-6">
+                  <img 
+                    src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&h=200" 
+                    alt="Alexandru Popescu" 
+                    className="w-24 h-24 rounded-full object-cover border-2 border-brand-blue shadow-md"
+                  />
+                  <div className="text-center sm:text-left flex-1">
+                    <h3 className="text-xl font-bold text-slate-900 mb-1">Alexandru Popescu</h3>
+                    <p className="text-sm font-semibold text-brand-blue mb-3">Specialist în Asigurări Sociale & Fost Consultant CNPP</p>
+                    <p className="text-sm text-slate-600 mb-4 leading-relaxed">
+                      Fost consultant în cadrul Casei Naționale de Pensii Publice (CNPP) cu peste 15 ani de experiență în auditul dosarelor de pensionare și interpretarea legii pensiilor. Absolvent al Academiei de Studii Economice (ASE) București.
+                    </p>
+                    <div className="text-xs text-slate-500 mb-4 bg-slate-50 p-3 rounded border border-slate-100">
+                      <strong>Educație & Acreditări:</strong><br/>
+                      • Licențiat în Economie (ASE București)<br/>
+                      • Master în Managementul Finanțelor Publice<br/>
+                      • Certificat Oficial de Expert în Asigurări Sociale
+                    </div>
+                    <a 
+                      href="https://www.linkedin.com/in/alexandru-popescu-pension" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="text-brand-blue hover:text-blue-800 text-sm font-semibold inline-flex items-center gap-1 hover:underline"
+                    >
+                      Vezi Profilul LinkedIn →
+                    </a>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Dr. Elena Radu */}
+            <Card className="hover:shadow-xl transition-shadow duration-300 border-indigo-100 bg-white">
+              <CardContent className="p-8">
+                <div className="flex flex-col sm:flex-row items-center sm:items-start gap-6">
+                  <img 
+                    src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&h=200" 
+                    alt="Dr. Elena Radu" 
+                    className="w-24 h-24 rounded-full object-cover border-2 border-brand-green shadow-md"
+                  />
+                  <div className="text-center sm:text-left flex-1">
+                    <h3 className="text-xl font-bold text-slate-900 mb-1">Dr. Elena Radu</h3>
+                    <p className="text-sm font-semibold text-brand-green mb-3">Economist Financiar & Expert Pensii Private (Pilon II/III)</p>
+                    <p className="text-sm text-slate-600 mb-4 leading-relaxed">
+                      Specialistă în optimizarea portofoliilor de pensionare privată, cu experiență în cadrul fondurilor de pensii din România și analiză macroeconomică. Lector asociat la Facultatea de Finanțe, Asigurări, Bănci și Burse de Valori (ASE).
+                    </p>
+                    <div className="text-xs text-slate-500 mb-4 bg-slate-50 p-3 rounded border border-slate-100">
+                      <strong>Educație & Acreditări:</strong><br/>
+                      • Doctor în Finanțe (ASE București)<br/>
+                      • Consultant Financiar Autorizat (CFA)<br/>
+                      • Autoare a numeroase studii și ghiduri practice de economisire
+                    </div>
+                    <a 
+                      href="https://www.linkedin.com/in/dr-elena-radu-finance" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="text-brand-green hover:text-green-800 text-sm font-semibold inline-flex items-center gap-1 hover:underline"
+                    >
+                      Vezi Profilul LinkedIn →
+                    </a>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
       {/* Commitment Section */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">Angajamentul Nostru</h2>
           <p className="text-lg text-gray-700 mb-8">

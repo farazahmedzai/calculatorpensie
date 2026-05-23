@@ -165,6 +165,21 @@ export async function registerRoutes(app: Express): Promise<Server> {
     const baseUrl = "https://calculatorpensie.com";
     const currentDate = new Date().toISOString().split('T')[0];
     
+    const blogSlugs = [
+      "top-5-greseli-planificare-pensie",
+      "ghid-calcul-pensie-stat-2025",
+      "pilonul-3-avantaje-fiscale-strategii",
+      "pensie-anticipata-conditii-penalizari",
+      "conditii-speciale-munca-impact-pensie",
+      "stagiul-cotizare-cumparare-ani-munca",
+      "pensia-urmas-drepturi-proceduri",
+      "reforma-sistem-pensii-2025",
+      "calculul-pensiei-freelanceri-pfa",
+      "transfer-drepturi-pensie-ue",
+      "optimizare-fiscala-contributii-pensie",
+      "simulare-pensie-instrumente-metode"
+    ];
+
     const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
@@ -172,6 +187,12 @@ export async function registerRoutes(app: Express): Promise<Server> {
     <lastmod>${currentDate}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>${baseUrl}/calculator</loc>
+    <lastmod>${currentDate}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>${baseUrl}/planificare</loc>
@@ -216,10 +237,16 @@ export async function registerRoutes(app: Express): Promise<Server> {
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>${baseUrl}/politica-confidentialitate</loc>
+    <loc>${baseUrl}/privacy</loc>
     <lastmod>${currentDate}</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>${baseUrl}/terms</loc>
+    <lastmod>${currentDate}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>${baseUrl}/faq</loc>
@@ -227,6 +254,13 @@ export async function registerRoutes(app: Express): Promise<Server> {
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  ${blogSlugs.map(slug => `
+  <url>
+    <loc>${baseUrl}/blog/${slug}</loc>
+    <lastmod>${currentDate}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>`).join('')}
 </urlset>`;
 
     res.set('Content-Type', 'text/xml');

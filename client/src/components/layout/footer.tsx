@@ -175,6 +175,14 @@ export default function Footer() {
                   </span>
                 </Link>
               </li>
+              <li>
+                <Link href="/terms">
+                  <span className="text-gray-300 hover:text-blue-400 transition-all duration-300 cursor-pointer flex items-center group">
+                    <div className="w-2 h-2 bg-purple-600 rounded-full mr-3 group-hover:bg-purple-400 transition-colors"></div>
+                    Termeni și Condiții
+                  </span>
+                </Link>
+              </li>
             </ul>
           </div>
         </div>
@@ -229,6 +237,9 @@ export default function Footer() {
               </Link>
               <Link href="/privacy">
                 <span className="footer-text-visible hover:text-blue-300 transition-colors cursor-pointer">Privacy</span>
+              </Link>
+              <Link href="/terms">
+                <span className="footer-text-visible hover:text-blue-300 transition-colors cursor-pointer">Terms</span>
               </Link>
               <Link href="/contact">
                 <span className="footer-text-visible hover:text-blue-300 transition-colors cursor-pointer">Contact</span>

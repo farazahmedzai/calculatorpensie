@@ -12,11 +12,11 @@ export default function LegislatiePage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center mb-6">
             <Gavel className="h-8 w-8 mr-3" />
-            <h1 className="text-4xl font-bold">Legea Pensiilor 2024 pe Înțelesul Tuturor</h1>
+            <h1 className="text-4xl font-bold">Legea Pensiilor 2025 pe Înțelesul Tuturor</h1>
           </div>
           <p className="text-xl text-yellow-200 mb-8 font-bold bg-black/20 p-4 rounded-lg">
             Ghid complet despre legislația pensiilor din România, cu explicații clare, 
-            actualizări legislative și resurse oficiale pentru înțelegerea drepturilor tale de pensionare.
+            actualizări legislative și resurse oficiale pentru înțelegerea drepturilor tale de pensionare în 2025.
           </p>
           <div className="flex flex-wrap gap-4">
             <Link href="/calculator">
@@ -41,13 +41,13 @@ export default function LegislatiePage() {
           <div className="bg-blue-50 border border-blue-200 rounded-xl p-6 mb-12">
             <div className="flex items-center mb-4">
               <Calendar className="h-5 w-5 text-blue-600 mr-2" />
-              <h3 className="text-lg font-semibold text-blue-800">Actualizări Legislative 2024</h3>
+              <h3 className="text-lg font-semibold text-blue-800">Actualizări Legislative 2025</h3>
               <Badge className="ml-2 bg-blue-600">Nou</Badge>
             </div>
             <ul className="text-blue-700 space-y-2">
-              <li>• <strong>Ianuarie 2024:</strong> Valoarea punctului de pensie a crescut la 81,8 RON</li>
-              <li>• <strong>Ianuarie 2024:</strong> Vârsta de pensionare pentru femei ajunge la 63 de ani</li>
-              <li>• <strong>2024:</strong> Modificări în calculul pensiilor de invaliditate</li>
+              <li>• <strong>Ianuarie 2025:</strong> Valoarea punctului de pensie este menținută la <strong>2.031 Lei</strong>.</li>
+              <li>• <strong>Ianuarie 2025:</strong> Valoarea Punctului de Referință (VPR) este de <strong>91 Lei</strong> (creștere de la 81 Lei).</li>
+              <li>• <strong>Vârsta de pensionare (Femei):</strong> Creștere graduală spre 63 de ani conform calendarului legii.</li>
             </ul>
           </div>
 
@@ -78,7 +78,7 @@ export default function LegislatiePage() {
                     <Calendar className="h-6 w-6 text-brand-red mr-3" />
                     <CardTitle className="text-xl">Vârsta Standard de Pensionare</CardTitle>
                   </div>
-                  <Badge variant="secondary">Actualizat 2024</Badge>
+                  <Badge variant="secondary">Actualizat 2025</Badge>
                 </div>
               </CardHeader>
               <CardContent>
@@ -94,12 +94,12 @@ export default function LegislatiePage() {
                     <h4 className="font-semibold mb-3">Femei</h4>
                     <div className="bg-pink-50 p-4 rounded-lg">
                       <p className="text-2xl font-bold text-pink-800">63 ani</p>
-                      <p className="text-sm text-pink-600">În 2024 (creștere graduală)</p>
+                      <p className="text-sm text-pink-600">În 2025 (creștere graduală)</p>
                     </div>
                   </div>
                 </div>
                 <p className="text-sm text-gray-700 mb-4">
-                  Vârsta de pensionare pentru femei a crescut gradual din 2015, ajungând la 63 de ani în 2024. 
+                  Vârsta de pensionare pentru femei a crescut gradual din 2015, ajungând la 63 de ani în 2025. 
                   Pentru informații complete despre evoluția vârstei de pensionare, consultă 
                   <strong> tabelul nostru complet cu vârsta standard de pensionare în România</strong>.
                 </p>
@@ -290,9 +290,9 @@ export default function LegislatiePage() {
 
             <h3>4. Ce înseamnă "pensie minimă garantată"?</h3>
             <p>
-              Pensia minimă garantată este suma minimă pe care o poate primi un pensionar, 
-              chiar dacă calculul matematic ar da o sumă mai mică. În 2024, aceasta este 
-              de aproximativ 1.000 RON.
+              Pensia minimă garantată (indemnizația socială pentru pensionari) este suma minimă pe care o poate primi un pensionar, 
+              chiar dacă calculul matematic ar da o sumă mai mică. În 2025, aceasta este 
+              de exact <strong>1.281 Lei</strong>.
             </p>
           </div>
 

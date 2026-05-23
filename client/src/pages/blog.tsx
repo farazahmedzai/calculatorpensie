@@ -137,7 +137,7 @@ export default function BlogPage() {
               {filteredArticles.map((article) => (
                 <Card key={article.id} className="overflow-hidden hover:shadow-xl transition-shadow">
                   <img 
-                    src="https://images.unsplash.com/photo-1554224154-26032ffc0d07?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=200" 
+                    src={article.image || "https://images.unsplash.com/photo-1554224154-26032ffc0d07?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=200"} 
                     alt={article.title} 
                     className="w-full h-48 object-cover" 
                   />
