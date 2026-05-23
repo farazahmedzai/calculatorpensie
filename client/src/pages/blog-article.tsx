@@ -10,8 +10,9 @@ import { ArticleSchema } from "@/components/seo/StructuredData";
 import { getArticleBySlug } from "@/data/static-articles";
 
 export default function BlogArticle() {
-  const [match, params] = useRoute("/blog/:slug");
-  const slug = params?.slug;
+  const params = useParams();
+  const [match, routeParams] = useRoute("/blog/:slug");
+  const slug = params?.slug || routeParams?.slug;
 
   const article = slug ? getArticleBySlug(slug) : undefined;
   const isLoading = false;
