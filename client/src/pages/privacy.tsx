@@ -166,6 +166,17 @@ export default function Privacy() {
                   </div>
 
                   <div>
+                    <h4 className="font-semibold text-gray-800 mb-2">Cookies de publicitate și Google AdSense:</h4>
+                    <p className="text-gray-600 text-sm">
+                      Acest site utilizează Google AdSense pentru afișarea de reclame. Google, în calitate de furnizor terț, utilizează module cookie pentru a difuza reclame pe acest site pe baza vizitelor anterioare ale utilizatorilor pe această platformă sau pe alte site-uri de pe Internet.
+                    </p>
+                    <p className="text-gray-600 text-sm mt-2">
+                      Utilizarea modulelor cookie de publicitate de către Google permite companiei și partenerilor săi să difuzeze reclame utilizatorilor pe baza accesării acestui site și/sau a altor site-uri de pe Internet. 
+                      Utilizatorii pot renunța la publicitatea personalizată accesând secțiunea dedicată de <a href="https://adssettings.google.com" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline font-semibold">Setări Reclame Google</a>. În mod alternativ, vă puteți opune utilizării modulelor cookie de către furnizori terți pentru publicitatea personalizată accesând site-ul independent <a href="https://www.aboutads.info" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline font-semibold">www.aboutads.info</a>.
+                    </p>
+                  </div>
+
+                  <div>
                     <h4 className="font-semibold text-gray-800 mb-2">Cookies de analiză (opționale):</h4>
                     <p className="text-gray-600 text-sm">
                       Cu acordul tău, folosim Google Analytics pentru statistici anonimizate de utilizare. 
