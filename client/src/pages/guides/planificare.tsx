@@ -83,7 +83,7 @@ export default function PlanificarePage() {
                   Multe persoane fac aceleași greșeli costisitoare când vine vorba de planificarea pensiei. 
                   Află care sunt acestea și cum să le eviți pentru un viitor financiar sigur.
                 </p>
-                <Link href="/blog/top-5-greseli-planificare-pensie">
+                <Link href="~/blog/top-5-greseli-planificare-pensie">
                   <Button variant="outline" className="w-full">
                     Citește Articolul <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
@@ -106,7 +106,7 @@ export default function PlanificarePage() {
                   Înțelege diferențele între cei doi piloni de pensii private și cum să îți optimizezi 
                   strategia pentru randamente maxime pe termen lung.
                 </p>
-                <Link href="/blog/pilonul-ii-vs-pilonul-iii">
+                <Link href="~/blog/pilonul-3-avantaje-fiscale-strategii">
                   <Button variant="outline" className="w-full">
                     Citește Articolul <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
@@ -129,7 +129,7 @@ export default function PlanificarePage() {
                   Strategiile de investiții pe termen lung specifice pentru constituirea unui fond de pensie 
                   suplimentar prin instrumente financiare diversificate.
                 </p>
-                <Link href="/blog/strategii-investitii-pensie">
+                <Link href="~/blog/optimizare-fiscala-contributii-pensie">
                   <Button variant="outline" className="w-full">
                     Citește Articolul <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>

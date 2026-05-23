@@ -82,7 +82,7 @@ export default function TipuriPensiiPage() {
                   Pentru detalii complete despre condițiile de acordare și modalitatea de calcul, 
                   consultă <strong>articolul nostru dedicat despre pensia pentru limită de vârstă</strong>.
                 </p>
-                <Link href="/blog/pensie-limita-varsta">
+                <Link href="~/blog/ghid-calcul-pensie-stat-2025">
                   <Button variant="outline" className="text-brand-blue border-brand-blue hover:bg-brand-blue hover:text-white">
                     Citește Ghidul Complet <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
@@ -129,7 +129,7 @@ export default function TipuriPensiiPage() {
                   pentru a lua o decizie informată.
                 </p>
                 <div className="flex gap-4">
-                  <Link href="/blog/pensie-anticipata-partiala">
+                  <Link href="~/blog/pensie-anticipata-conditii-penalizari">
                     <Button variant="outline" className="text-brand-red border-brand-red hover:bg-brand-red hover:text-white">
                       Ghid Pensie Anticipată <ArrowRight className="ml-2 h-4 w-4" />
                     </Button>
@@ -183,7 +183,7 @@ export default function TipuriPensiiPage() {
                   Înțelege <strong>cine beneficiază și cum se calculează</strong> citind articolul nostru 
                   dedicat despre pensia de urmaș.
                 </p>
-                <Link href="/blog/pensie-urmas">
+                <Link href="~/blog/pensia-urmas-drepturi-proceduri">
                   <Button variant="outline" className="text-brand-green border-brand-green hover:bg-brand-green hover:text-white">
                     Detalii Complete <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
@@ -228,7 +228,7 @@ export default function TipuriPensiiPage() {
                   de comisia de expertiză medicală. Detalii complete despre 
                   <strong> gradele de invaliditate</strong> găsești în ghidul nostru despre pensia de invaliditate.
                 </p>
-                <Link href="/blog/pensie-invaliditate">
+                <Link href="~/blog/conditii-speciale-munca-impact-pensie">
                   <Button variant="outline" className="text-yellow-600 border-yellow-500 hover:bg-yellow-500 hover:text-white">
                     Ghid Pensie Invaliditate <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>

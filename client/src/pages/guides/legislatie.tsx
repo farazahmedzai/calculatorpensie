@@ -103,7 +103,7 @@ export default function LegislatiePage() {
                   Pentru informații complete despre evoluția vârstei de pensionare, consultă 
                   <strong> tabelul nostru complet cu vârsta standard de pensionare în România</strong>.
                 </p>
-                <Link href="/blog/varsta-pensionare-romania">
+                <Link href="~/blog/ghid-calcul-pensie-stat-2025">
                   <Button variant="outline" className="text-brand-red border-brand-red hover:bg-brand-red hover:text-white">
                     Tabel Complet Vârste Pensionare <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
@@ -142,7 +142,7 @@ export default function LegislatiePage() {
                   Pentru detalii despre <strong>cum se calculează corect stagiul de cotizare</strong> și ce perioade se iau în considerare, 
                   citește ghidul nostru specializat.
                 </p>
-                <Link href="/blog/stagiu-cotizare-calcul">
+                <Link href="~/blog/stagiul-cotizare-cumparare-ani-munca">
                   <Button variant="outline" className="text-brand-blue border-brand-blue hover:bg-brand-blue hover:text-white">
                     Ghid Calcul Stagiu Cotizare <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
@@ -175,7 +175,7 @@ export default function LegislatiePage() {
                   inflația și creșterea economică. Pentru înțelegerea completă a 
                   <strong> mecanismului și impactului indexării pensiilor</strong>, consultă analiza noastră detaliată.
                 </p>
-                <Link href="/blog/indexarea-pensiilor">
+                <Link href="~/blog/reforma-sistem-pensii-2025">
                   <Button variant="outline" className="text-brand-green border-brand-green hover:bg-brand-green hover:text-white">
                     Mecanism Indexare <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
@@ -216,7 +216,7 @@ export default function LegislatiePage() {
                   Pentru detalii complete despre <strong>procedura și costurile cumpărării vechimii în muncă</strong>, 
                   consultă ghidul nostru pas cu pas.
                 </p>
-                <Link href="/blog/cumparare-vechime-munca">
+                <Link href="~/blog/stagiul-cotizare-cumparare-ani-munca">
                   <Button variant="outline" className="text-yellow-600 border-yellow-500 hover:bg-yellow-500 hover:text-white">
                     Procedură și Costuri <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
