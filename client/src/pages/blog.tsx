@@ -149,7 +149,7 @@ export default function BlogPage() {
                       </span>
                     </div>
                     <CardTitle className={`text-xl mb-3 transition-colors ${getCategoryColor(article.category)}`}>
-                      <Link href={`/blog/${article.slug}`}>
+                      <Link href={`~/blog/${article.slug}`}>
                         <a>{article.title}</a>
                       </Link>
                     </CardTitle>
@@ -161,7 +161,7 @@ export default function BlogPage() {
                         <Clock className="h-4 w-4 mr-1" />
                         {article.readTime} min citire
                       </span>
-                      <Link href={`/blog/${article.slug}`}>
+                      <Link href={`~/blog/${article.slug}`}>
                         <Button variant="ghost" size="sm" className={getCategoryColor(article.category)}>
                           Citește mai mult →
                         </Button>
@@ -224,7 +224,7 @@ export default function BlogPage() {
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <Link href="/planificare">
+                <Link href="~/planificare">
                   <Button className="w-full bg-brand-blue hover:bg-blue-700">
                     Vezi Ghidul
                   </Button>
@@ -245,7 +245,7 @@ export default function BlogPage() {
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <Link href="/tipuri-pensii">
+                <Link href="~/tipuri-pensii">
                   <Button className="w-full bg-brand-green hover:bg-green-700">
                     Vezi Ghidul
                   </Button>
@@ -266,7 +266,7 @@ export default function BlogPage() {
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <Link href="/legislatie">
+                <Link href="~/legislatie">
                   <Button className="w-full bg-brand-red hover:bg-red-700">
                     Vezi Ghidul
                   </Button>
