@@ -1,4 +1,4 @@
-import { Switch, Route } from "wouter";
+import { Switch, Route, Redirect } from "wouter";
 import { queryClient } from "./lib/queryClient";
 import { QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
@@ -107,6 +107,15 @@ function Router() {
             <Suspense fallback={<LoadingSpinner />}>
               <LazyFAQ />
             </Suspense>
+          </Route>
+          <Route path="/termeni">
+            <Redirect to="/terms" />
+          </Route>
+          <Route path="/termeni-si-conditii">
+            <Redirect to="/terms" />
+          </Route>
+          <Route path="/politica-confidentialitate">
+            <Redirect to="/privacy" />
           </Route>
           <Route component={NotFound} />
         </Switch>

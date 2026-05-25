@@ -25,7 +25,8 @@ export const INTERNAL_ROUTES: InternalRoute[] = [
   { path: '/despre-noi', title: 'Despre Noi', isActive: true },
   { path: '/contact', title: 'Contact', isActive: true },
   { path: '/metodologie', title: 'Metodologie', isActive: true },
-  { path: '/privacy', title: 'Politica de Confidențialitate', isActive: true }
+  { path: '/privacy', title: 'Politica de Confidențialitate', isActive: true },
+  { path: '/terms', title: 'Termeni și Condiții', isActive: true }
 ];
 
 // Validate internal links
