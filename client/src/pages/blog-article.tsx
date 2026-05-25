@@ -122,6 +122,10 @@ export default function BlogArticle() {
                   <Clock className="w-4 h-4 mr-1" />
                   {article.readTime} min citire
                 </div>
+                <div className="text-sm text-gray-500 flex items-center">
+                  <span className="w-1 h-1 bg-gray-300 rounded-full mx-2" />
+                  Scris de: <strong className="text-gray-700 ml-1 font-semibold">{article.author.name}</strong>
+                </div>
               </div>
               <CardTitle className="text-3xl font-bold text-gray-900 leading-tight">
                 {article.title}
@@ -137,6 +141,27 @@ export default function BlogArticle() {
                 className="prose prose-lg max-w-none prose-headings:text-gray-900 prose-p:text-gray-700 prose-a:text-brand-blue prose-strong:text-gray-900"
                 dangerouslySetInnerHTML={{ __html: article.content || "" }}
               />
+            </CardContent>
+          </Card>
+
+          {/* Author Box */}
+          <Card className="mt-8 border-l-4 border-l-brand-blue bg-neutral-light/30">
+            <CardContent className="p-6">
+              <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4">
+                <img 
+                  src={article.author.image} 
+                  alt={article.author.name} 
+                  className="w-16 h-16 rounded-full object-cover border-2 border-brand-blue shadow-sm"
+                />
+                <div className="flex-1 text-center sm:text-left">
+                  <span className="text-xs font-bold uppercase tracking-wider text-brand-blue block">Autor Articol & Expert Revizuitor</span>
+                  <h4 className="text-lg font-bold text-gray-900 mt-1">{article.author.name}</h4>
+                  <p className="text-xs text-gray-500 mb-2 font-medium">{article.author.role}</p>
+                  <p className="text-sm text-gray-700 leading-relaxed font-medium">
+                    {article.author.bio}
+                  </p>
+                </div>
+              </div>
             </CardContent>
           </Card>
 

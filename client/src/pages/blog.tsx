@@ -156,13 +156,16 @@ export default function BlogPage() {
                     <CardDescription className="mb-4 line-clamp-3">
                       {article.excerpt}
                     </CardDescription>
-                    <div className="flex items-center justify-between">
-                      <span className="text-sm text-gray-700 flex items-center">
-                        <Clock className="h-4 w-4 mr-1" />
+                    <div className="text-xs text-gray-600 mb-4 border-t pt-3 flex items-center justify-between">
+                      <span className="flex items-center font-medium">
+                        <Clock className="h-3.5 w-3.5 mr-1" />
                         {article.readTime} min citire
                       </span>
+                      <span className="font-semibold text-gray-800">Scris de: {article.author.name}</span>
+                    </div>
+                    <div className="flex items-center justify-end">
                       <Link href={`~/blog/${article.slug}`}>
-                        <Button variant="ghost" size="sm" className={getCategoryColor(article.category)}>
+                        <Button variant="ghost" size="sm" className={`${getCategoryColor(article.category)} font-bold`}>
                           Citește mai mult →
                         </Button>
                       </Link>

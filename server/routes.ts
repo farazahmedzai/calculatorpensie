@@ -177,7 +177,15 @@ export async function registerRoutes(app: Express): Promise<Server> {
       "calculul-pensiei-freelanceri-pfa",
       "transfer-drepturi-pensie-ue",
       "optimizare-fiscala-contributii-pensie",
-      "simulare-pensie-instrumente-metode"
+      "simulare-pensie-instrumente-metode",
+      "pensie-minima-garantata-2025",
+      "calcul-punct-referinta-vpr",
+      "ghid-pensie-invaliditate-2025",
+      "indexarea-pensii-2025-2026",
+      "acte-necesare-dosar-pensionare",
+      "pensie-anticipata-fara-penalizare",
+      "vizualizare-vechime-munca-cnpp",
+      "pilonul-2-modificari-legislative"
     ];
 
     const sitemap = `<?xml version="1.0" encoding="UTF-8"?>

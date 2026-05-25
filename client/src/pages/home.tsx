@@ -547,7 +547,7 @@ export default function Home() {
                   </p>
                   <div className="flex items-center justify-between">
                     <span className="text-xs text-gray-700 font-medium">
-                      {new Date(article.publishDate).toLocaleDateString('ro-RO')}
+                      {new Date(article.publishDate).toLocaleDateString('ro-RO')} • {article.author.name}
                     </span>
                     <Link href={`/blog/${article.slug}`}>
                       <Button variant="outline" size="sm">
