@@ -127,9 +127,9 @@ export default function BlogArticle() {
                   Scris de: <strong className="text-gray-700 ml-1 font-semibold">{article.author.name}</strong>
                 </div>
               </div>
-              <CardTitle className="text-3xl font-bold text-gray-900 leading-tight">
+              <h1 className="text-3xl font-bold text-gray-900 leading-tight tracking-tight">
                 {article.title}
-              </CardTitle>
+              </h1>
               <p className="text-lg text-gray-600 mt-4">{article.excerpt}</p>
             </CardHeader>
           </Card>

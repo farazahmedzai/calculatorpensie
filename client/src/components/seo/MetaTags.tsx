@@ -38,7 +38,7 @@ export default function MetaTags({
   useEffect(() => {
     document.title = title;
 
-    const existingMetas = document.querySelectorAll('meta[data-pension-meta]');
+    const existingMetas = document.querySelectorAll('[data-pension-meta="true"]');
     existingMetas.forEach(meta => meta.remove());
 
     const existingStructured = document.querySelectorAll('script[type="application/ld+json"]');
@@ -129,6 +129,7 @@ export default function MetaTags({
       const canonicalLink = document.createElement('link');
       canonicalLink.setAttribute('rel', 'canonical');
       canonicalLink.setAttribute('href', canonical);
+      canonicalLink.setAttribute('data-pension-meta', 'true');
       document.head.appendChild(canonicalLink);
     }
 
@@ -136,12 +137,13 @@ export default function MetaTags({
       const script = document.createElement('script');
       script.type = 'application/ld+json';
       script.textContent = JSON.stringify(structuredData);
+      script.setAttribute('data-pension-meta', 'true');
       document.head.appendChild(script);
     }
 
     return () => {
-      const metasToRemove = document.querySelectorAll('meta[data-pension-meta]');
-      metasToRemove.forEach(meta => meta.remove());
+      const elementsToRemove = document.querySelectorAll('[data-pension-meta="true"]');
+      elementsToRemove.forEach(el => el.remove());
     };
   }, [title, description, canonical, ogTitle, ogDescription, ogImage, keywords, structuredData]);
 
