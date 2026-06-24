@@ -126,7 +126,7 @@ Vârsta de pensionare în România a suferit modificări importante în ultimii 
 
 ## Modificări Legislative Recente
 
-Legea 263/2010 a stabilit calendarul de creștere graduală a vârstei de pensionare pentru femei.`,
+Legea 360/2023 a stabilit calendarul de creștere graduală a vârstei de pensionare pentru femei.`,
         category: "legislatie",
         publishDate: "2024-12-12T10:00:00.000Z",
         readTime: 8,
@@ -144,7 +144,7 @@ Sistemul românesc de pensii include două piloni de pensii private. Înțeleger
 
 ### Caracteristici:
 - **Obligatoriu** pentru cei născuți după 1 ianuarie 1977
-- **Contribuția**: 3,75% din salariul brut
+- **Contribuția**: 4,75% din salariul brut
 - **Administrare**: Fonduri de pensii private
 - **Accesibilitate**: La vârsta de pensionare
 
@@ -219,13 +219,13 @@ Punctele de pensie se calculează anual pe baza:
 
 ## Valoarea Punctului de Pensie 2025
 
-Valoarea actuală: **2.031 Lei**
+Valoarea actuală (VPR): **91 Lei**
 
 ## Bonificații și Penalizări
 
 - Copii: +0,5 puncte pentru fiecare copil
 - Studii superioare: până la 2 ani
-- Pensionare anticipată: -0,75% pentru fiecare lună`,
+- Pensionare anticipată: -0,15% până la -0,40% pentru fiecare lună`,
         category: "planificare",
         publishDate: "2024-11-20T10:00:00.000Z",
         readTime: 6,
@@ -343,7 +343,7 @@ Pensia anticipată permite ieșirea la pensie cu până la 5 ani mai devreme, da
 
 ## Penalizări
 
-Pentru fiecare lună de anticipare se aplică o reducere de **0,75%** din cuantumul pensiei.
+Pentru fiecare lună de anticipare se aplică o reducere de **0,15% – 0,40%** din cuantumul pensiei.
 
 ### Exemplu de Calcul
 - Anticipare cu 2 ani (24 luni)
@@ -397,7 +397,7 @@ Anul 2025 aduce modificări importante în sistemul de pensii din România.
 
 ## Creșterea Punctului de Pensie
 
-Valoarea punctului de pensie a crescut la **2.031 Lei**, reprezentând o creștere de 13,8% față de 2024.
+Valoarea punctului de referință (VPR) a fost stabilită la **91 Lei**.
 
 ## Modificări la Vârsta de Pensionare
 
@@ -432,7 +432,7 @@ Sistemul de contribuții la pensii din România este reglementat prin multiple a
 - Plătită integral de angajator
 
 ### Pilonul II (Pensii Private Obligatorii)
-- **3,75%** din venitul brut
+- **4,75%** din venitul brut
 - Pentru cei născuți după 1 ianuarie 1977
 
 ## Baza de Calcul
@@ -495,7 +495,7 @@ Pensionarii din România beneficiază de multiple drepturi și facilități gara
 
 Sistemul de pensii din România este reglementat prin multiple acte normative. Iată ghidul prin principalele legi:
 
-## Legea nr. 263/2010
+## Legea nr. 360/2023
 
 Legea sistemului unitar de pensii publice - actul normativ principal care reglementează:
 - Condițiile de acordare a pensiilor

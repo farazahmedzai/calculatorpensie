@@ -28,6 +28,10 @@ try {
       copyFileSync('public/ads.txt', `${distPath}/ads.txt`);
     }
     
+    // Run metadata pre-rendering script
+    console.log('Generating pre-rendered static pages with custom metadata...');
+    execSync('npx tsx scripts/generate-meta-pages.ts', { stdio: 'inherit' });
+
     // Create _redirects file for SPA routing only (ads.txt now served as static file)
     const redirectsContent = `/blog/blog/*  /blog/:splat  301!
 /robots.txt  /robots.txt  200

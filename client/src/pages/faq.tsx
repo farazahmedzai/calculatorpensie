@@ -78,7 +78,7 @@ export default function FAQ() {
       }))} />
       
       <WebPageSchema 
-        name="Întrebări Frecvente tentang Pensii în România"
+        name="Întrebări Frecvente despre Pensii în România"
         description="Ghid complet cu răspunsuri la cele mai frecvente întrebări despre sistemul de pensii din România conform Legii 360/2023"
         url="https://calculatorpensie.com/faq"
         breadcrumbs={[

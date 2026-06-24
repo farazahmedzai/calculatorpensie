@@ -227,7 +227,7 @@ export default function BlogPage() {
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <Link href="~/planificare">
+                <Link href="/planificare">
                   <Button className="w-full bg-brand-blue hover:bg-blue-700">
                     Vezi Ghidul
                   </Button>
@@ -248,7 +248,7 @@ export default function BlogPage() {
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <Link href="~/tipuri-pensii">
+                <Link href="/tipuri-pensii">
                   <Button className="w-full bg-brand-green hover:bg-green-700">
                     Vezi Ghidul
                   </Button>
@@ -269,7 +269,7 @@ export default function BlogPage() {
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <Link href="~/legislatie">
+                <Link href="/legislatie">
                   <Button className="w-full bg-brand-red hover:bg-red-700">
                     Vezi Ghidul
                   </Button>

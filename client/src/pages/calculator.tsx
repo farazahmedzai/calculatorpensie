@@ -188,10 +188,10 @@ export default function CalculatorPage() {
 
           <h3>Ce documente sunt necesare pentru depunerea dosarului?</h3>
           <p>
-            Pentru a te pensiona oficial la limita de vârstă, dosarul tău de pensie trebuie depus la Casa Teritorială de Pensii corespunzătoare domiciliului tău și trebuie să conțină o serie de acte obligatorii (original și copie). Poți citi lista completă detaliată în articolul nostru de blog: <Link href="~/blog/acte-necesare-dosar-pensionare" className="text-blue-600 hover:underline font-semibold">Acte necesare pentru dosarul de pensionare în 2025</Link>.
+            Pentru a te pensiona oficial la limita de vârstă, dosarul tău de pensie trebuie depus la Casa Teritorială de Pensii corespunzătoare domiciliului tău și trebuie să conțină o serie de acte obligatorii (original și copie). Poți citi lista completă detaliată în articolul nostru de blog: <Link href="/blog/acte-necesare-dosar-pensionare" className="text-blue-600 hover:underline font-semibold">Acte necesare pentru dosarul de pensionare în 2025</Link>.
           </p>
           <p>
-            De asemenea, îți recomandăm să verifici din timp stagiul tău de cotizare înregistrat oficial în format digital pe portalul online al Casei Naționale de Pensii Publice. Consultă ghidul nostru pas cu pas: <Link href="~/blog/vizualizare-vechime-munca-cnpp" className="text-blue-600 hover:underline font-semibold">Cum îți verifici online vechimea în muncă în CNPP</Link>.
+            De asemenea, îți recomandăm să verifici din timp stagiul tău de cotizare înregistrat oficial în format digital pe portalul online al Casei Naționale de Pensii Publice. Consultă ghidul nostru pas cu pas: <Link href="/blog/vizualizare-vechime-munca-cnpp" className="text-blue-600 hover:underline font-semibold">Cum îți verifici online vechimea în muncă în CNPP</Link>.
           </p>
 
           <h3>De ce să folosești calculatoarele noastre de pensie?</h3>

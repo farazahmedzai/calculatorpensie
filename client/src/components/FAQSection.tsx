@@ -17,12 +17,12 @@ const faqData: FAQItem[] = [
   {
     id: "early-retirement",
     question: "Cum se calculează pensia anticipată?",
-    answer: "Poți ieși la pensie cu câțiva ani mai devreme, dar cu o penalizare de 0,75% pe lună pentru fiecare lună de anticipare. Bărbații pot ieși la pensie anticipată de la 60 de ani, iar femeile de la 58 de ani, cu minimum 35 ani stagiu pentru bărbați și 30 ani pentru femei."
+    answer: "Poți solicita pensie anticipată cu maximum 5 ani înainte de vârsta standard, dacă ai realizat stagiul complet de cotizare. Penalizarea lunară conform Legii 360/2023 variază între 0,15% și 0,40%, în funcție de câți ani ai peste stagiul complet."
   },
   {
     id: "pension-point-value", 
-    question: "Care este valoarea punctului de pensie în 2025?",
-    answer: "Începând cu 1 ianuarie 2025, valoarea punctului de pensie este de 2.031 lei, conform legislației oficiale. Această valoare este folosită în calculul pensiei și poate fi actualizată anual prin hotărâre guvernamentală."
+    question: "Care este valoarea punctului de referință (VPR) în 2025?",
+    answer: "Începând cu 1 ianuarie 2025, VPR este 91 lei, conform legislației oficiale. Această valoare este folosită în calculul pensiei și poate fi actualizată anual prin hotărâre guvernamentală."
   },
   {
     id: "increase-pension",
@@ -42,7 +42,7 @@ const faqData: FAQItem[] = [
   {
     id: "pension-calculation-formula",
     question: "Cum se calculează exact pensia de stat?",
-    answer: "Pensia se calculează folosind formula: Punctaj Mediu Anual (PMA) × Valoarea Punctului de Pensie (2.031 lei în 2025). PMA se determină pe baza salariilor din toată cariera și a perioadei de cotizare, conform metodologiei CNPP."
+    answer: "Pensia brută se calculează conform Legii 360/2023 cu formula: Număr Total de Puncte × Valoarea Punctului de Referință (VPR). Pentru 2025, VPR este 91 lei, iar punctele includ contributivitatea, stabilitatea și perioadele asimilate."
   },
   {
     id: "work-conditions-pension",

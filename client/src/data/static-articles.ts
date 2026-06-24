@@ -203,7 +203,7 @@ De exemplu, dacă în luna respectivă salariul tău brut este egal cu câștigu
 <p>Pentru a solicita pensia anticipată, solicitantul trebuie să fi realizat stagiul complet de cotizare prevăzut de lege (35 de ani pentru bărbați și 30-33 de ani pentru femei) sau să îl fi depășit cu până la 8 ani. Vârsta minimă este de 60 de ani pentru bărbați și 58 de ani pentru femei în 2025.</p>
 
 <h3>Mecanismul de penalizare</h3>
-<p>Penalizarea se calculează sub formă de procent scăzut din valoarea pensiei complete pentru fiecare lună de anticipare. Conform noilor reglementări, penalizarea este cuprinsă între <strong>0,25% și 0,75% pentru fiecare lună</strong>, în funcție de numărul de ani cu care a fost depășit stagiul complet de cotizare.</p>
+<p>Penalizarea se calculează sub formă de procent scăzut din valoarea pensiei complete pentru fiecare lună de anticipare. Conform noilor reglementări, penalizarea este cuprinsă între <strong>0,15% și 0,40% pentru fiecare lună</strong>, în funcție de numărul de ani cu care a fost depășit stagiul complet de cotizare.</p>
 
 <p>Pentru a depune dosarul și a verifica documentele necesare, vizitează <a href="https://www.cnpp.ro" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline font-semibold">site-ul CNPP</a>. Detaliile legislative se regăsesc în textul Legii 360/2023 publicat pe <a href="https://legislatie.just.ro" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline font-semibold">Just.ro</a>.</p>
 `
@@ -382,8 +382,12 @@ De exemplu, dacă în luna respectivă salariul tău brut este egal cu câștigu
     content: `
 <p>Indemnizația socială pentru pensionari, cunoscută public sub denumirea de <strong>pensie minimă garantată</strong>, este un sprijin social critic oferit de statul român. Scopul său este de a asigura un nivel de trai minim decent pentru toți pensionarii din sistemul public de pensii ale căror contribuții pe parcursul vieții active nu ating pragul social stabilit prin lege.</p>
 
-<h3>Valoarea Pensiei Minime în 2025 și 2026</h3>
-<p>Începând cu anul 2025, cuantumul pensiei minime garantate în România este stabilit la valoarea oficială de <strong>1.281 Lei</strong> pe lună. Guvernul a decis menținerea acestui plafon pentru a proteja categoriile vulnerabile de pensionari împotriva inflației și a creșterii prețurilor la bunurile de consum de bază.</p>
+<p>Odată cu intrarea în vigoare a noii legi a pensiilor, <strong>Legea nr. 360/2023</strong>, aplicabilă pe deplin în 2025 și 2026, sistemul public de pensii a suferit transformări majore. Totuși, mecanismul de protecție a pensiei minime a rămas un pilon de stabilitate pentru sute de mii de beneficiari. În acest ghid complet, vom analiza în detaliu valoarea pensiei minime în 2025, condițiile de eligibilitate, modul în care se calculează diferența plătită de la bugetul de stat și noutățile legislative aduse de reforma sistemului public.</p>
+
+<h3>Valoarea Pensiei Minime în 2025 și Istoricul Creșterilor</h3>
+<p>Începând cu 1 ianuarie 2025, cuantumul pensiei minime garantate în România este stabilit oficial la valoarea de <strong>1.281 Lei</strong> pe lună. Această valoare a fost menținută la nivelul stabilit prin reglementări guvernamentale anterioare pentru a asigura un echilibru între sustenabilitatea bugetară și protecția categoriilor vulnerabile de pensionari împotriva inflației crescute din ultimii ani.</p>
+
+<p>Pentru a înțelege evoluția acestui indicator social în ultimii ani, vă prezentăm tabelul de mai jos:</p>
 
 <div class="overflow-x-auto my-6">
   <table className="w-full text-sm text-left border border-slate-200">
@@ -392,6 +396,7 @@ De exemplu, dacă în luna respectivă salariul tău brut este egal cu câștigu
         <th className="border p-2">Anul</th>
         <th className="border p-2">Valoarea Pensiei Minime (Lei)</th>
         <th className="border p-2">Creștere Procentuală (%)</th>
+        <th className="border p-2">Baza Legală</th>
       </tr>
     </thead>
     <tbody>
@@ -399,58 +404,101 @@ De exemplu, dacă în luna respectivă salariul tău brut este egal cu câștigu
         <td className="border p-2">2020</td>
         <td className="border p-2">800 Lei</td>
         <td className="border p-2">+14.0%</td>
+        <td className="border p-2">OUG 135/2020</td>
       </tr>
       <tr>
         <td className="border p-2">2021</td>
         <td className="border p-2">800 Lei</td>
         <td className="border p-2">0.0% (Înghețat)</td>
+        <td className="border p-2">Menținut prin buget</td>
       </tr>
       <tr>
         <td className="border p-2">2022</td>
         <td className="border p-2">1.000 Lei</td>
         <td className="border p-2">+25.0%</td>
+        <td className="border p-2">OUG 125/2021</td>
       </tr>
       <tr>
         <td className="border p-2">2023</td>
         <td className="border p-2">1.125 Lei</td>
         <td className="border p-2">+12.5%</td>
+        <td className="border p-2">OUG 168/2022</td>
       </tr>
       <tr>
         <td className="border p-2">2024</td>
         <td className="border p-2">1.281 Lei</td>
         <td className="border p-2">+13.8%</td>
+        <td className="border p-2">OUG 115/2023</td>
       </tr>
       <tr class="bg-blue-50">
         <td className="border p-2 font-bold">2025</td>
         <td className="border p-2 font-bold">1.281 Lei</td>
-        <td className="border p-2">Menținut (HG Oficială)</td>
+        <td className="border p-2">0.0% (Menținut)</td>
+        <td className="border p-2">Legea Bugetului / OUG</td>
       </tr>
     </tbody>
   </table>
 </div>
 
-<h3>Cum se aplică mecanismul de compensare socială?</h3>
-<p>Este esențial de înțeles că pensia minimă nu este o categorie specială de pensie, ci un <strong>mecanism de ajustare și protecție socială</strong>. În momentul pensionării sau al recalculării, Casa de Pensii calculează pensia pe baza contributivității reale (salariile brute obținute și stagiul de cotizare). Dacă în urma calculului rezultă o sumă mai mică de 1.281 Lei (de exemplu, 900 Lei), statul român intervine și acoperă diferența sub forma unei <em>indemnizații sociale pentru pensionari</em> (în valoare de 381 Lei, în acest exemplu). Astfel, suma netă pe care pensionarul o primește pe card sau prin poștă va fi întotdeauna de exact 1.281 Lei lunar.</p>
+<h3>Cum funcționează mecanismul de compensare socială?</h3>
+<p>Este esențial de înțeles că pensia minimă nu este o categorie specială de pensie, ci un <strong>mecanism de ajustare și protecție socială</strong>. Statul nu plătește o pensie fixă tuturor celor cu stagii scurte de cotizare, ci completează veniturile celor ale căror calcul contributiv este sub pragul de 1.281 Lei.</p>
+
+<p>În momentul pensionării sau al recalculării, Casa de Pensii urmează următorul flux:</p>
+<ol class="list-decimal ml-6 space-y-2 text-sm text-gray-700">
+  <li>Se calculează pensia pe baza contributivității reale: se înmulțește numărul total de puncte acumulate (puncte de contributivitate, asimilate și stabilitate) cu Valoarea Punctului de Referință (VPR = 91 Lei în 2025).</li>
+  <li>Dacă rezultatul este mai mare sau egal cu 1.281 Lei, pensionarul va primi suma rezultată din calculul contributiv.</li>
+  <li>Dacă rezultatul este mai mic de 1.281 Lei (de exemplu, 950 Lei), statul intervine și plătește o diferență numită <strong>indemnizație socială</strong> (în valoare de 331 Lei în acest exemplu). Suma finală primită va fi de exact 1.281 Lei.</li>
+</ol>
 
 <div class="bg-slate-50 border border-slate-200 rounded-lg p-5 my-6">
   <h4 class="font-bold text-slate-800 mt-0">Exemplu Practic de Completare a Pensiei:</h4>
   <p class="text-sm text-gray-700 mb-0">
-    • Pensia calculată pe baza punctelor de contributivitate: <strong>850 Lei</strong><br />
+    • Pensia brută calculată contributiv: <strong>850 Lei</strong> (de exemplu, pentru un stagiu scurt sau salarii minime pe economie)<br />
     • Diferența plătită din bugetul de stat (indemnizația socială): <strong>431 Lei</strong><br />
     • <strong>Suma finală încasată lunar de beneficiar: 1.281 Lei</strong>
   </p>
 </div>
 
-<h3>Cine are dreptul la pensia minimă garantată?</h3>
-<p>Pentru a beneficia de acoperirea automată până la plafonul minim de 1.281 Lei, solicitantul trebuie să îndeplinească cumulativ următoarele criterii legale:</p>
+<h3>Cine are dreptul la pensia minimă garantată în 2025?</h3>
+<p>Pentru a beneficia de acoperirea automată până la plafonul minim de 1.281 Lei, solicitantul trebuie să îndeplinească cumulativ următoarele criterii legale stabilite de Legea 360/2023:</p>
 <ul class="list-disc ml-6 space-y-2 text-gray-700">
-  <li>Să aibă calitatea oficială de pensionar în sistemul unitar public de pensii (indiferent că este vorba despre pensie pentru limită de vârstă, pensie anticipată, pensie de invaliditate sau pensie de urmaș);</li>
-  <li>Să aibă domiciliul stabil sau rezidența legală pe teritoriul României (cetățenii stabiliți permanent în străinătate nu pot beneficia de indemnizația socială);</li>
-  <li>Suma totală a pensiilor cuvenite sau aflate în plată din sistemul public să fie mai mică de 1.281 Lei lunar.</li>
+  <li>Să aibă calitatea oficială de pensionar în sistemul unitar public de pensii (indiferent că este vorba despre pensie pentru limită de vârstă, pensie de invaliditate sau pensie de urmaș);</li>
+  <li>Să aibă domiciliul stabil sau rezidența legală pe teritoriul României. Cetățenii stabiliți permanent în străinătate nu pot beneficia de indemnizația socială de la bugetul de stat, aceștia primind exclusiv valoarea rezultată din contributivitatea reală înscrisă în decizie;</li>
+  <li>Suma totală a pensiilor cuvenite sau aflate în plată din sistemul public să fie mai mică de 1.281 Lei lunar. Dacă un pensionar cumulează două pensii (de exemplu, pensie proprie și pensie de urmaș) iar suma lor depășește 1.281 Lei, acesta nu va primi indemnizație socială.</li>
 </ul>
 
-<h3>Impactul noului sistem de punctaj (Legea 360/2023)</h3>
-<p>Marea recalculare a pensiilor finalizată în septembrie 2024 a modificat dosarele a peste 4,6 milioane de pensionari. Noua formulă bazată pe VPR (Valoarea Punctului de Referință = 91 Lei în 2025) a determinat noi punctaje contributive. Pentru unii pensionari aflați în plată cu pensia minimă, recalcularea a arătat o valoare contributivă reală și mai mică decât cea anterioară. Datorită garanțiilor legislative, **nicio pensie nu a scăzut**, aceștia rămânând în plată cu valoarea minimă garantată de 1.281 Lei. În schimb, pentru pensionarii cu stagii de cotizare lungi (peste 25-30 de ani) care aveau pensia minimă, adăugarea punctelor de stabilitate (fidelitate) le-a permis să depășească plafonul de 1.281 Lei și să încaseze pensii contributive reale semnificativ mai mari.</p>
+<div class="bg-blue-50 border-l-4 border-blue-500 p-4 my-6 rounded-r-lg">
+  <h4 class="font-bold text-blue-900 mt-0">Stagiul minim de cotizare este obligatoriu:</h4>
+  <p class="text-xs text-blue-950 mb-0">
+    Pentru a fi eligibil pentru o pensie de stat (inclusiv cea minimă), este obligatoriu să fi realizat stagiul minim de cotizare contributiv prevăzut de lege, care este de <strong>15 ani</strong>. Persoanele care nu au atins pragul de 15 ani de muncă contributivă nu pot accesa sistemul public de pensii și nu pot primi pensia minimă; acestea pot fi eligibile doar pentru ajutoare sociale din partea primăriilor (venitul minim garantat).
+  </p>
+</div>
+
+<h3>Diferența dintre indemnizația socială (pensia minimă) și ajutoarele sociale standard</h3>
+<p>Este foarte important să facem distincția clară între indemnizația socială pentru pensionari (pensia minimă garantată) și alte măsuri de asistență socială oferite de statul român, cum ar fi fostul Venit Minim Garantat (VMG), în prezent integrat în Venitul Minim de Incluziune (VMI).</p>
+<p>Indemnizația socială pentru pensionari este strâns legată de statutul de pensionar din sistemul public. Aceasta înseamnă că beneficiarul a realizat cel puțin stagiul minim de cotizare contributiv (de 15 ani) și s-a pensionat legal, dar punctajul său cumulat a generat o pensie extrem de mică. În acest caz, statul completază suma din oficiu, fără a impune o anchetă socială referitoare la averea familiei sau alte proprietăți (cum ar fi terenurile deținute, autoturismele etc.).</p>
+<p>Pe de altă parte, Venitul Minim de Incluziune (VMI) este o prestație de asistență socială destinată persoanelor sau familiilor aflate în stare de excluziune socială sau sărăcie extremă, care nu au statutul de pensionari sau nu îndeplinesc condițiile minime de pensionare. Acesta este acordat în baza unei anchete sociale extrem de riguroase efectuate de reprezentanții primăriilor locale, luând în considerare toate sursele de venit și bunurile deținute de membrii gospodăriei. Sumele acordate prin VMI sunt, de regulă, mult mai mici decât plafonul pensiei minime de 1.281 Lei.</p>
+
+<h3>Regimul special al pensionarilor provenind din agricultură (Fostul sistem CAP)</h3>
+<p>O categorie aparte în cadrul beneficiarilor de pensie minimă o reprezintă pensionarii agricultori, care au lucrat în cadrul fostelor Cooperative Agricole de Producție (CAP) în perioada regimului comunist. Contribuțiile plătite în sistemul CAP erau simbolic stabilite și substanțial mai mici decât cele din restul economiei, fapt care a condus, după recalculări succesive, la pensii contributive extrem de mici (uneori sub 200-300 de lei pe lună).</p>
+<p>Legea nr. 360/2023 protejează această categorie vulnerabilă prin aplicarea aceluiași prag de 1.281 Lei. Chiar dacă pensia lor calculată pe baza punctelor de agricultor este minusculă, aceștia încasează lunar valoarea integrală de 1.281 Lei, diferența fiind suportată integral de la bugetul de stat. Cu toate acestea, trebuie subliniat că stagiile de cotizare realizate ca membru CAP se supun unor reguli specifice de determinare a numărului de puncte, iar stabilitatea (punctele de stabilitate pentru ani lucrați peste 25 de ani) nu se aplică pentru perioadele în care nu s-au plătit contribuții directe raportate la salariul mediu brut pe economie.</p>
+
+<h3>Facilități auxiliare și drepturi suplimentare pentru beneficiarii pensiei minime</h3>
+<p>Statutul de beneficiar al pensiei minime garantate atrage după sine o serie de drepturi și gratuități menite să completeze veniturile reduse ale pensionarilor și să le asigure un trai mai bun:</p>
+<ul class="list-disc ml-6 space-y-2 text-gray-700">
+  <li><strong>Rețete de medicamente compensate cu 90%:</strong> Pensionarii cu venituri din pensii de până la 1.830 Lei pe lună (plafon valabil în 2025) beneficiază de o compensare de 90% pentru medicamentele din sublista B prevăzută de Contractul-Cadru al CNAS, indiferent dacă pensia lor este una de limită de vârstă sau invaliditate.</li>
+  <li><strong>Călătorii gratuite sau reduse pe calea ferată (CFR):</strong> Conform legii, pensionarii din sistemul public beneficiază anual de 6 călătorii simple cu reducere de 50% din tariful biletelor la trenurile Regio și InterRegio. În cazul pensionarilor de invaliditate Gradul I, aceștia (și însoțitorii lor) beneficiază de gratuitate totală conform reglementărilor privind protecția persoanelor cu dizabilități.</li>
+  <li><strong>Ajutoare de încălzire în sezonul rece:</strong> Beneficiarii pensiei minime pot solicita primăriilor de domiciliu subvenții pentru încălzirea locuinței în perioada noiembrie - martie, fiind încadrați în cele mai favorabile grile de sprijin financiar din cauza nivelului scăzut al veniturilor declarate.</li>
+</ul>
+
+<h3>Studiu de caz: Cum se aplică pensia minimă la trecerea de la invaliditate la limita de vârstă?</h3>
+<p>Să analizăm exemplul domnului Vasile, pensionat inițial pentru invaliditate Gradul II, având un stagiu de cotizare de 18 ani realizat înainte de apariția afecțiunii medicale. Pensia sa de invaliditate calculată contributiv era de 720 Lei. Datorită legislației, domnul Vasile primește în plată 1.281 Lei (720 Lei pensie contributivă + 561 Lei indemnizație socială).</p>
+<p>La împlinirea vârstei de 65 de ani, domnul Vasile trece din oficiu de la pensia de invaliditate la pensia pentru limită de vârstă. Deoarece stagiul său de cotizare este de 18 ani (peste minimul de 15 ani), el este eligibil pentru pensia de limită de vârstă. Casa Teritorială de Pensii efectuează recalcularea dosarului. Deoarece nu a mai lucrat după pensionarea de invaliditate, numărul său de puncte de pensie rămâne neschimbat. Astfel, pensia contributivă recalculată este tot de 720 Lei. Domnul Vasile va continua să primească în plată tot suma de 1.281 Lei, trecerea la limita de vârstă asigurându-i stabilitatea acestui venit minim pe viață, fără obligativitatea revizuirilor medicale periodice.</p>
+
+<h3>Impactul noii Legi 360/2023 asupra Pensiilor Minime</h3>
+<p>Recalcularea generală a pensiilor finalizată în septembrie 2024 a modificat dosarele a peste 4,6 milioane de pensionari. Noua formula bazată pe VPR (Valoarea Punctului de Referință = 91 Lei în 2025) a determinat noi punctaje contributive. Pentru unii pensionari aflați în plată cu pensia minimă, recalcularea a arătat o valoare contributivă reală și mai mică decât cea anterioară. Datorită garanțiilor legislative, **nicio pensie nu a scăzut**, aceștia rămânând în plată cu valoarea minimă garantată de 1.281 Lei.</p>
+
+<p>În schimb, pentru pensionarii cu stagii de cotizare lungi (peste 25-30 de ani) care aveau pensia minimă, adăugarea punctelor de stabilitate (fidelitate) le-a permis să depășească plafonul de 1.281 Lei și să încaseze pensii contributive reale semnificativ mai mari.</p>
 
 <h3>Impozitarea și Contribuțiile de Sănătate</h3>
 <p>Conform reglementărilor din Codul Fiscal român actualizate pentru anul 2025, veniturile lunare din pensii sunt scutite complet de impozitul pe venit de 10% pentru sumele ce nu depășesc pragul de <strong>3.000 Lei</strong> net. Deoarece pensia minimă garantată este de 1.281 Lei, aceasta se situează cu mult sub pragul de impozitare. Prin urmare, <strong>pensionarii care primesc pensia minimă nu plătesc niciun fel de impozit pe venit și nicio contribuție la asigurările sociale de sănătate (CASS)</strong>, suma primită fiind 100% netă.</p>
@@ -458,15 +506,33 @@ De exemplu, dacă în luna respectivă salariul tău brut este egal cu câștigu
 <h3>Întrebări Frecvente (FAQ)</h3>
 <div class="space-y-4 my-6">
   <div class="border-b pb-4">
-    <strong class="text-blue-700 block">Dacă am lucrat sub 15 ani (stagiul minim), am dreptul la pensie minimă?</strong>
+    <strong class="text-blue-700 block">Dacă am lucrat ca membru CAP, am dreptul la pensie minimă?</strong>
     <p class="text-sm text-gray-700 mt-1">
-      Pentru a obține o pensie de stat (chiar și cea minimă), este obligatoriu să fi realizat stagiul minim de cotizare prevăzut de lege, care este de <strong>15 ani</strong>. Persoanele care nu au atins pragul de 15 ani de muncă contributivă nu pot accesa sistemul public de pensii și nu pot primi pensia minimă; acestea pot fi eligibile doar pentru ajutoare sociale din partea primăriilor (venitul minim garantat).
+      Da. Foștii lucrători din Cooperativele Agricole de Producție (CAP) care au realizat stagiile de cotizare necesare au dreptul de a li se completa pensia până la pragul de 1.281 Lei. Acest mecanism se aplică automat la calculul pensiei de către Casa Teritorială de Pensii.
     </p>
   </div>
   <div class="border-b pb-4">
     <strong class="text-blue-700 block">Cum se acordă pensia minimă în cazul pensiilor de urmaș?</strong>
     <p class="text-sm text-gray-700 mt-1">
-      În cazul pensiilor de urmaș acordate copiilor sau soțului supraviețuitor, plafonul de 1.281 Lei se aplică pe dosar. Dacă există un singur urmaș, acesta va primi pensia completă de 1.281 Lei. Dacă există mai mulți copii urmași, cuantumul de 1.281 Lei se împarte conform cotelor legale stabilite de lege pentru fiecare în parte.
+      În cazul pensiilor de urmaș acordate copiilor sau soțului supraviețuitor, plafonul de 1.281 Lei se aplică pe dosar. Dacă există un singur urmaș, acesta va primi pensia completă de 1.281 Lei. Dacă există mai mulți copii urmași, cuantumul de 1.281 Lei se împarte conform cotelor legale stabilite de lege pentru fiecare în parte (de exemplu, 50% sau 75% din cuantum pe beneficiar).
+    </p>
+  </div>
+  <div class="border-b pb-4">
+    <strong class="text-blue-700 block">Diferența socială se acordă și pentru pensiile de invaliditate?</strong>
+    <p class="text-sm text-gray-700 mt-1">
+      Da. Persoanele încadrate într-un grad de invaliditate (Gradul I, II sau III) au dreptul la completarea pensiei până la cuantumul minim garantat de 1.281 Lei dacă pensia calculată pe baza punctelor de invaliditate este sub acest prag. Pentru Gradul I, se adaugă și indemnizația suplimentară de însoțitor.
+    </p>
+  </div>
+  <div class="border-b pb-4">
+    <strong class="text-blue-700 block">Ce se întâmplă dacă primesc și alte venituri pe lângă pensia minimă?</strong>
+    <p class="text-sm text-gray-700 mt-1">
+      Obținerea altor venituri (cum ar fi chirii, dividende sau dobânzi bancare) nu afectează plata indemnizației sociale. Singurele venituri care pot suspenda sau recalcula indemnizația socială sunt veniturile salariale (dacă depășesc limitele legale permise pentru cumulul pensiei) sau cumulul cu o altă pensie publică sau de serviciu.
+    </p>
+  </div>
+  <div class="border-b pb-4">
+    <strong class="text-blue-700 block">Cum pot verifica dacă pensia mea a fost calculată corect?</strong>
+    <p class="text-sm text-gray-700 mt-1">
+      Puteți folosi simulatorul nostru gratuit de calcul pensie de pe site-ul CalculatorPensie.com pentru a estima punctajul și pensia conform noii Legi 360/2023. Decizia oficială de pensie primită de la Casa Județeană de Pensii detaliază numărul de puncte și indemnizația socială primită în mod clar.
     </p>
   </div>
 </div>
@@ -574,6 +640,124 @@ De exemplu, dacă în luna respectivă salariul tău brut este egal cu câștigu
 </ul>
 <p>Această indexare a generat o creștere directă a pensiilor brute pentru pensionarii români, contribuind la atenuarea efectelor inflației crescute din anii anteriori.</p>
 
+<h3>Evoluția Istorică a Punctului de Pensie și VPR (2015 - 2025)</h3>
+<p>Pentru a înțelege dinamica majorărilor și modul în care puterea de cumpărare a pensionarilor a fost influențată de deciziile guvernamentale, este util să analizăm evoluția valorilor nominale ale Punctului de Pensie și ale VPR în ultimul deceniu:</p>
+
+<div class="overflow-x-auto my-6">
+  <table className="w-full text-sm text-left border border-slate-200">
+    <thead className="bg-slate-100">
+      <tr>
+        <th className="border p-2">Data Aplicării</th>
+        <th className="border p-2">Valoare Punct Pensie (Lei)</th>
+        <th className="border p-2">Valoare VPR (Lei)</th>
+        <th className="border p-2">Creștere Procentuală</th>
+        <th className="border p-2">Act Normativ de Reglementare</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td className="border p-2">1 Ianuarie 2015</td>
+        <td className="border p-2">830,2 Lei</td>
+        <td className="border p-2">-</td>
+        <td className="border p-2">+5,0%</td>
+        <td className="border p-2">Legea nr. 186/2014</td>
+      </tr>
+      <tr>
+        <td className="border p-2">1 Ianuarie 2016</td>
+        <td className="border p-2">871,7 Lei</td>
+        <td className="border p-2">-</td>
+        <td className="border p-2">+5,0%</td>
+        <td className="border p-2">OUG nr. 57/2015</td>
+      </tr>
+      <tr>
+        <td className="border p-2">1 Ianuarie 2017</td>
+        <td className="border p-2">917,5 Lei</td>
+        <td className="border p-2">-</td>
+        <td className="border p-2">+5,25%</td>
+        <td className="border p-2">OUG nr. 2/2017</td>
+      </tr>
+      <tr>
+        <td className="border p-2">1 Iulie 2017</td>
+        <td className="border p-2">1.000,0 Lei</td>
+        <td className="border p-2">-</td>
+        <td className="border p-2">+9,0%</td>
+        <td className="border p-2">OUG nr. 2/2017</td>
+      </tr>
+      <tr>
+        <td className="border p-2">1 Iulie 2018</td>
+        <td className="border p-2">1.100,0 Lei</td>
+        <td className="border p-2">-</td>
+        <td className="border p-2">+10,0%</td>
+        <td className="border p-2">OUG nr. 114/2018</td>
+      </tr>
+      <tr>
+        <td className="border p-2">1 Septembrie 2019</td>
+        <td className="border p-2">1.265,0 Lei</td>
+        <td className="border p-2">-</td>
+        <td className="border p-2">+15,0%</td>
+        <td className="border p-2">Legea nr. 196/2018</td>
+      </tr>
+      <tr>
+        <td className="border p-2">1 Septembrie 2020</td>
+        <td className="border p-2">1.442,0 Lei</td>
+        <td className="border p-2">-</td>
+        <td className="border p-2">+14,0%</td>
+        <td className="border p-2">OUG nr. 135/2020</td>
+      </tr>
+      <tr>
+        <td className="border p-2">1 Ianuarie 2022</td>
+        <td className="border p-2">1.586,0 Lei</td>
+        <td className="border p-2">-</td>
+        <td className="border p-2">+10,0%</td>
+        <td className="border p-2">OUG nr. 125/2021</td>
+      </tr>
+      <tr>
+        <td className="border p-2">1 Ianuarie 2023</td>
+        <td className="border p-2">1.785,0 Lei</td>
+        <td className="border p-2">-</td>
+        <td className="border p-2">+12,5%</td>
+        <td className="border p-2">OUG nr. 168/2022</td>
+      </tr>
+      <tr>
+        <td className="border p-2">1 Ianuarie 2024</td>
+        <td className="border p-2">2.032,0 Lei</td>
+        <td className="border p-2">-</td>
+        <td className="border p-2">+13,8%</td>
+        <td className="border p-2">OUG nr. 115/2023</td>
+      </tr>
+      <tr class="bg-slate-50">
+        <td className="border p-2 font-semibold">1 Septembrie 2024 (Reforma)</td>
+        <td className="border p-2">2.032,0 Lei</td>
+        <td className="border p-2">81,0 Lei</td>
+        <td className="border p-2">Recalculare Individuală</td>
+        <td className="border p-2">Legea nr. 360/2023</td>
+      </tr>
+      <tr class="bg-blue-50">
+        <td className="border p-2 font-bold">1 Ianuarie 2025</td>
+        <td className="border p-2 font-bold">2.031,0 Lei</td>
+        <td className="border p-2 font-bold">91,0 Lei</td>
+        <td className="border p-2 font-bold">+12,1% (la VPR)</td>
+        <td className="border p-2 font-bold">Bugetul de Stat 2025</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<h3>Explicarea componentelor formulei de indexare (Inflația și Salariul Brut)</h3>
+<p>Formula oficială de majorare a pensiilor folosește doi indicatori statistici cheie pentru a asigura echitatea și sustenabilitatea:</p>
+<ol class="list-decimal ml-6 space-y-2 text-slate-700">
+  <li><strong>Rata Medie Anuală a Inflației:</strong> Acest indicator reflectă creșterea medie a prețurilor mărfurilor de consum și a serviciilor pe parcursul unui an întreg comparativ cu anul precedent. Spre deosebire de inflația lunară sau cea de la sfârșit de an, rata medie anuală oferă o imagine stabilă și atenuată a evoluției prețurilor, protejând pensionarii de fluctuațiile sezoniere. INS calculează acest indicator pe baza Coșului Minim de Consum.</li>
+  <li><strong>Creșterea Reală a Câștigului Salarial Mediu Brut:</strong> Reprezintă procentul de majorare a salariilor din economie dincolo de rata inflației. Dacă salariile cresc mai repede decât prețurile, pensionarii primesc jumătate (50%) din această diferență pozitivă, permițându-le să participe direct la beneficiile dezvoltării economice generale. În cazul în care câștigul salarial mediu brut înregistrează o scădere reală sau o creștere negativă, această componentă este considerată zero (legea nu permite penalizarea pensiilor).</li>
+</ol>
+
+<h3>Calendarul oficial al procedurii de indexare</h3>
+<p>Procedura prin care majorarea anuală a pensiilor ajunge efectiv în buzunarele pensionarilor urmează un calendar legal strict stabilit în colaborare cu INS și Poșta Română:</p>
+<ul class="list-disc ml-6 space-y-2 text-gray-700">
+  <li><strong>Octombrie - Noiembrie:</strong> Institutul Național de Statistică publică datele finale consolidate referitoare la rata medie a inflației și creșterea reală a câștigului salarial mediu brut pentru anul anterior. Pe baza acestora, Ministerul Muncii și Solidarității Sociale redactează proiectul legislativ de aprobare a noilor valori pentru anul următor.</li>
+  <li><strong>Decembrie:</strong> Guvernul adoptă Hotărârea sau OUG de majorare a punctului de pensie și a VPR. Casa Națională de Pensii Publice (CNPP) configurează sistemul informatic central de calcul și începe tipărirea noilor taloane de pensie personalizate (taloanele roșii pentru plata prin poștă și taloanele verzi pentru plata pe card).</li>
+  <li><strong>1 - 15 Ianuarie:</strong> Poșta Română distribuie taloanele și pensiile indexate la domiciliul beneficiarilor. Pensiile plătite prin conturi bancare sunt virate de obicei în perioada 12-14 ianuarie a fiecărei luni.</li>
+</ul>
+
 <h3>Prognoza pentru indexarea din 2026</h3>
 <p>Pentru luna ianuarie 2026, primele estimări bazate pe datele macroeconomice curente indică un procent de indexare cuprins între **6% și 8.5%**, raportat la evoluția inflației medii anuale estimate pentru anul fiscal precedent și la dinamica de creștere a salariilor brute din economie. Valoarea exactă urmează să fie stabilită oficial prin Hotărâre de Guvern în ultimul trimestru, după finalizarea analizelor statistice naționale.</p>
 
@@ -583,6 +767,14 @@ De exemplu, dacă în luna respectivă salariul tău brut este egal cu câștigu
   <li><strong>Pensiile speciale care depășesc plafoanele:</strong> Pensiile de serviciu (ale magistraților, militarilor etc.) sunt supuse unor reguli de indexare specifice ce pot fi înghețate sau limitate dacă depășesc anumite plafoane relative la salariile în activitate.</li>
   <li><strong>Pensiile a căror valoare recalculată a fost mai mică:</strong> Pensionarii a căror pensie recalculată în septembrie 2024 a rezultat sub valoarea aflată deja în plată au rămas cu pensia veche. Pentru aceștia, indexările anuale viitoare se vor aplica la valoarea rezultată din recalculare, nu la suma în plată, existând cazuri în care pensia nu se va majora efectiv până când valoarea recalculată indexată nu depășește suma primită în prezent.</li>
 </ol>
+
+<h3>Impactul indexării asupra impozitării pensiilor (Pragul de 3.000 Lei)</h3>
+<p>Majorarea valorii pensiei prin indexarea anuală a VPR poate avea consecințe fiscale pentru pensionarii ale căror venituri brute se apropie de pragul de scutire de impozit. În România, conform legislației fiscale actuale, pensiile de până la <strong>3.000 Lei</strong> net sunt complet scutite de impozitul pe venit de 10%.</p>
+<p>În momentul în care indexarea automată determină o creștere a pensiei brute peste acest prag (de exemplu, o pensie brută care crește de la 2.900 Lei la 3.150 Lei), se va aplica impozitul de 10% exclusiv asupra sumei care depășește pragul de 3.000 Lei. În exemplul de mai sus, suma taxable este de 150 Lei, generând un impozit lunar de 15 Lei, ceea ce înseamnă că pensionarul va primi în mână o pensie netă de 3.135 Lei. Este important de reținut că CASS (contribuția de sănătate) nu se reține pentru pensiile sub 4.000 Lei.</p>
+
+<h3>Cum sunt influențate punctele de stabilitate de indexarea anuală?</h3>
+<p>O întrebare frecventă a pensionarilor este dacă punctele de stabilitate (acordate pentru stagiile de cotizare ce depășesc 25 de ani: 0.5 puncte/an între 26-30 ani, 0.75 puncte/an între 31-35 ani, și 1.0 punct/an peste 35 ani) beneficiază și ele de indexare.</p>
+<p>Răspunsul este da, în mod indirect și integral. Punctele de stabilitate sunt adăugate la numărul de puncte de contributivitate și la cele asimilate, formând un <strong>Număr Total de Puncte</strong> înscris pe decizia de pensionare. Formula de calcul înmulțește acest Număr Total de Puncte cu VPR. Prin urmare, deoarece indexarea mărește direct valoarea VPR (de la 81 Lei la 91 Lei în 2025 și continuând în anii următori), întreaga valoare a punctelor de stabilitate crește proporțional cu procentul de indexare stabilit.</p>
 
 <h3>Întrebări Frecvente (FAQ)</h3>
 <div class="space-y-4 my-6">
@@ -596,6 +788,18 @@ De exemplu, dacă în luna respectivă salariul tău brut este egal cu câștigu
     <strong class="text-blue-700 block">Se indexează și Pilonul II de pensii private obligatorii?</strong>
     <p class="text-sm text-gray-700 mt-1">
       Nu. Pensiile administrate privat din Pilonul II (și cele facultative din Pilonul III) nu sunt indexate prin hotărâri guvernamentale. Acumulările din aceste conturi se majorează în funcție de randamentul investițiilor realizate de administratorii de fonduri pe burse sau titluri de stat, performanța acestora depășind de obicei rata inflației pe termen lung.
+    </p>
+  </div>
+  <div class="border-b pb-4">
+    <strong class="text-blue-700 block">Există un plafon maxim pentru indexarea anuală a pensiilor?</strong>
+    <p class="text-sm text-gray-700 mt-1">
+      Nu există un plafon maxim în sumă absolută pentru pensiile din sistemul public general de pensii. Deoarece indexarea se aplică procentual direct la valoarea VPR (Valoarea Punctului de Referință), toate pensiile cresc cu același procent stabilit de lege. Pensia mai mare va primi o majorare nominală mai mare, menținându-se proporționalitatea contribuțiilor.
+    </p>
+  </div>
+  <div class="border-b pb-4">
+    <strong class="text-blue-700 block">Ce se întâmplă dacă rata inflației este negativă (deflație)?</strong>
+    <p class="text-sm text-gray-700 mt-1">
+      În cazul extrem și puțin probabil în care rata medie anuală a inflației ar fi negativă, iar salariul real ar scădea, valoarea VPR și a punctului de pensie nu pot fi reduse. Legea 360/2023 protejează drepturile câștigate ale pensionarilor, stabilind clar că valoarea nominală a pensiei în plată nu poate fi micșorată. Majorarea va fi pur și simplu zero pentru acel an.
     </p>
   </div>
 </div>

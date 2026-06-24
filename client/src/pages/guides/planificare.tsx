@@ -73,7 +73,7 @@ export default function PlanificarePage() {
             <h3>2. Pilonul II - Pensiile Private Obligatorii</h3>
             <p>
               Pentru cei născuți după 1 ianuarie 1977, participarea la Pilonul II este obligatorie. 
-              Contribuția este de 3,75% din salariul brut și este administrată de fonduri de pensii private.
+              Contribuția este de 4,75% din venitul brut asigurat și este administrată de fonduri de pensii private.
             </p>
 
             <h3>3. Pilonul III - Pensiile Private Facultative</h3>
@@ -100,7 +100,7 @@ export default function PlanificarePage() {
                   Multe persoane fac aceleași greșeli costisitoare când vine vorba de planificarea pensiei. 
                   Află care sunt acestea și cum să le eviți pentru un viitor financiar sigur.
                 </p>
-                <Link href="~/blog/top-5-greseli-planificare-pensie">
+                <Link href="/blog/top-5-greseli-planificare-pensie">
                   <Button variant="outline" className="w-full">
                     Citește Articolul <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
@@ -123,7 +123,7 @@ export default function PlanificarePage() {
                   Înțelege diferențele între cei doi piloni de pensii private și cum să îți optimizezi 
                   strategia pentru randamente maxime pe termen lung.
                 </p>
-                <Link href="~/blog/pilonul-3-avantaje-fiscale-strategii">
+                <Link href="/blog/pilonul-3-avantaje-fiscale-strategii">
                   <Button variant="outline" className="w-full">
                     Citește Articolul <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
@@ -146,7 +146,7 @@ export default function PlanificarePage() {
                   Strategiile de investiții pe termen lung specifice pentru constituirea unui fond de pensie 
                   suplimentar prin instrumente financiare diversificate.
                 </p>
-                <Link href="~/blog/optimizare-fiscala-contributii-pensie">
+                <Link href="/blog/optimizare-fiscala-contributii-pensie">
                   <Button variant="outline" className="w-full">
                     Citește Articolul <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>

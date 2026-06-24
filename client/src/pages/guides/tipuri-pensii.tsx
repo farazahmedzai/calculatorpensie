@@ -88,9 +88,9 @@ export default function TipuriPensiiPage() {
                   <div>
                     <h4 className="font-semibold mb-2">Calcul Pensie:</h4>
                     <ul className="text-sm text-gray-700 space-y-1">
-                      <li>• Punctaj anual × Valoarea punctului</li>
-                      <li>• Valoarea punctului (2024): 81,8 RON</li>
-                      <li>• Punctaj maxim/an: 5 puncte</li>
+                      <li>• Formula: Număr Total de Puncte × VPR</li>
+                                            <li>• VPR 2025: 91 RON</li>
+                                            <li>• Puncte de stabilitate pentru stagiul peste 25 ani</li>
                     </ul>
                   </div>
                 </div>
@@ -99,7 +99,7 @@ export default function TipuriPensiiPage() {
                   Pentru detalii complete despre condițiile de acordare și modalitatea de calcul, 
                   consultă <strong>articolul nostru dedicat despre pensia pentru limită de vârstă</strong>.
                 </p>
-                <Link href="~/blog/ghid-calcul-pensie-stat-2025">
+                <Link href="/blog/ghid-calcul-pensie-stat-2025">
                   <Button variant="outline" className="text-brand-blue border-brand-blue hover:bg-brand-blue hover:text-white">
                     Citește Ghidul Complet <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
@@ -128,7 +128,7 @@ export default function TipuriPensiiPage() {
                     <ul className="text-sm text-gray-700 space-y-1">
                       <li>• Cu 5 ani mai devreme decât vârsta standard</li>
                       <li>• Stagiu: 35 ani (bărbați), 30 ani (femei)</li>
-                      <li>• Reducere: 0,75% pentru fiecare lună anticipată</li>
+                      <li>• Penalizare: 0,15%–0,40% pentru fiecare lună anticipată</li>
                     </ul>
                   </div>
                   <div>
@@ -136,7 +136,7 @@ export default function TipuriPensiiPage() {
                     <ul className="text-sm text-gray-700 space-y-1">
                       <li>• Cu 2 ani mai devreme</li>
                       <li>• Stagiu: 37 ani (bărbați), 32 ani (femei)</li>
-                      <li>• Reducere: 0,75% pentru fiecare lună anticipată</li>
+                      <li>• Penalizare: 0,15%–0,40% pentru fiecare lună anticipată</li>
                     </ul>
                   </div>
                 </div>
@@ -146,7 +146,7 @@ export default function TipuriPensiiPage() {
                   pentru a lua o decizie informată.
                 </p>
                 <div className="flex gap-4">
-                  <Link href="~/blog/pensie-anticipata-conditii-penalizari">
+                  <Link href="/blog/pensie-anticipata-conditii-penalizari">
                     <Button variant="outline" className="text-brand-red border-brand-red hover:bg-brand-red hover:text-white">
                       Ghid Pensie Anticipată <ArrowRight className="ml-2 h-4 w-4" />
                     </Button>
@@ -200,7 +200,7 @@ export default function TipuriPensiiPage() {
                   Înțelege <strong>cine beneficiază și cum se calculează</strong> citind articolul nostru 
                   dedicat despre pensia de urmaș.
                 </p>
-                <Link href="~/blog/pensia-urmas-drepturi-proceduri">
+                <Link href="/blog/pensia-urmas-drepturi-proceduri">
                   <Button variant="outline" className="text-brand-green border-brand-green hover:bg-brand-green hover:text-white">
                     Detalii Complete <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
@@ -245,7 +245,7 @@ export default function TipuriPensiiPage() {
                   de comisia de expertiză medicală. Detalii complete despre 
                   <strong> gradele de invaliditate</strong> găsești în ghidul nostru despre pensia de invaliditate.
                 </p>
-                <Link href="~/blog/conditii-speciale-munca-impact-pensie">
+                <Link href="/blog/conditii-speciale-munca-impact-pensie">
                   <Button variant="outline" className="text-yellow-600 border-yellow-500 hover:bg-yellow-500 hover:text-white">
                     Ghid Pensie Invaliditate <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
@@ -279,13 +279,13 @@ export default function TipuriPensiiPage() {
                     <td className="py-2 font-medium">Anticipată</td>
                     <td className="py-2">60/58 ani</td>
                     <td className="py-2">35/30 ani</td>
-                    <td className="py-2">Cu penalizare 0,75%/lună</td>
+                    <td className="py-2">0,15%–0,40%/lună</td>
                   </tr>
                   <tr className="border-b border-gray-200">
                     <td className="py-2 font-medium">Anticipată Parțială</td>
                     <td className="py-2">63/61 ani</td>
                     <td className="py-2">37/32 ani</td>
-                    <td className="py-2">Cu penalizare 0,75%/lună</td>
+                    <td className="py-2">0,15%–0,40%/lună</td>
                   </tr>
                   <tr className="border-b border-gray-200">
                     <td className="py-2 font-medium">Urmaș</td>

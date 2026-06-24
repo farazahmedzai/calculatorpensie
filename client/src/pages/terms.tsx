@@ -108,7 +108,7 @@ export default function Terms() {
                     CalculatorPensie.com este un site independent, cu scop strict educațional și informativ. <strong>Nu avem nicio afiliere oficială cu Casa Națională de Pensii Publice (CNPP) sau cu orice altă instituție guvernamentală din România.</strong>
                   </p>
                   <p>
-                    Deși depunem eforturi constante pentru a menține formulele de calcul aliniate la normele oficiale (cum ar fi Legea nr. 263/2010 și reforma Legii nr. 360/2023), sistemul de pensii conține numeroase variabile individuale (perioade asimilate, grupe de muncă, sporuri cu caracter permanent/nepermanent etc.). 
+                    Deși depunem eforturi constante pentru a menține formulele de calcul aliniate la normele oficiale, inclusiv Legea nr. 360/2023 privind sistemul public de pensii, sistemul de pensii conține numeroase variabile individuale (perioade asimilate, grupe de muncă, sporuri cu caracter permanent/nepermanent etc.). 
                   </p>
                   <p>
                     Prin urmare, calculele generate de platforma noastră nu reprezintă o confirmare oficială a pensiei dumneavoastră. Pentru decizii oficiale și calculul exact al drepturilor de pensie, aveți obligația de a vă adresa direct Casei Județene de Pensii de care aparțineți sau de a vă crea un cont securizat pe portalul oficial al CNPP (www.cnpp.ro).

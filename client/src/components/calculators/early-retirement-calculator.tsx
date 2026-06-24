@@ -85,8 +85,14 @@ export default function EarlyRetirementCalculator() {
 
   const gender = form.watch('gender');
   const earlyRetirementAge = form.watch('earlyRetirementAge');
+  const currentAge = form.watch('currentAge');
+  const contributionYears = form.watch('contributionYears');
   const standardRetirementAge = gender === 'male' ? 65 : 63;
   const monthsEarly = (standardRetirementAge - earlyRetirementAge) * 12;
+  const requiredYears = gender === 'male' ? 35 : 30;
+  const totalYearsAtEarlyRetirement = contributionYears + Math.max(0, earlyRetirementAge - currentAge);
+  const exceedYears = totalYearsAtEarlyRetirement - requiredYears;
+  const penaltyRate = exceedYears >= 8 ? 0 : exceedYears >= 5 ? 0.15 : exceedYears >= 4 ? 0.20 : exceedYears >= 3 ? 0.25 : exceedYears >= 2 ? 0.30 : exceedYears >= 1 ? 0.35 : 0.40;
 
   return (
     <div className="space-y-6">
@@ -96,7 +102,7 @@ export default function EarlyRetirementCalculator() {
           <h3 className="font-semibold text-orange-800">Atenție: Pensie cu Penalizare</h3>
         </div>
         <p className="text-orange-700 text-sm">
-          Pensionarea anticipată implică o reducere de 0,75% pentru fiecare lună de anticipare. 
+          Pensionarea anticipată implică o reducere lunară între 0,15% și 0,40%, în funcție de stagiul realizat peste cel complet.
           Asigură-te că îndeplinești condițiile de stagiu înainte de a lua această decizie.
         </p>
       </div>
@@ -216,7 +222,7 @@ export default function EarlyRetirementCalculator() {
             <div className="bg-red-50 p-3 rounded-lg text-sm text-red-800">
               <AlertTriangle className="inline h-4 w-4 mr-1" />
               Pensionare cu <strong>{monthsEarly} luni</strong> mai devreme = 
-              <strong> {(monthsEarly * 0.75).toFixed(1)}%</strong> reducere permanentă
+              <strong> {(monthsEarly * penaltyRate).toFixed(1)}%</strong> reducere estimată
             </div>
           )}
 

@@ -45,7 +45,7 @@ export default function BlogArticle() {
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-2xl font-bold text-gray-900 mb-4">Articol nu a fost găsit</h1>
             <p className="text-gray-600 mb-8">Ne pare rău, articolul pe care îl căutați nu există sau a fost șters.</p>
-            <Link href="~/blog">
+            <Link href="/blog">
               <Button>
                 <ArrowLeft className="w-4 h-4 mr-2" />
                 Înapoi la Blog
@@ -101,7 +101,7 @@ export default function BlogArticle() {
         <div className="max-w-4xl mx-auto">
           {/* Back to blog button */}
           <div className="mb-6">
-            <Link href="~/blog">
+            <Link href="/blog">
               <Button variant="ghost" className="text-brand-blue hover:text-blue-700">
                 <ArrowLeft className="w-4 h-4 mr-2" />
                 Înapoi la Blog
@@ -167,7 +167,7 @@ export default function BlogArticle() {
 
           {/* Related articles navigation */}
           <div className="mt-12 text-center">
-            <Link href="~/blog">
+            <Link href="/blog">
               <Button size="lg" className="bg-brand-blue hover:bg-blue-700">
                 Citește mai multe articole
               </Button>

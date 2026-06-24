@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, lazy, Suspense } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -10,7 +10,7 @@ import { Calculator, HelpCircle, Calendar, Users, TrendingUp, MapPin, ListCheck,
 import { Link } from "wouter";
 import { calculateStandardPension } from "@/lib/pension-calculations";
 import { WebApplicationSchema, OrganizationSchema, WebSiteSchema, WebPageSchema } from "@/components/seo/StructuredData";
-import FAQSection from "@/components/FAQSection";
+const FAQSection = lazy(() => import("@/components/FAQSection"));
 import MetaTags from "@/components/seo/MetaTags";
 import BreadcrumbNavigation from "@/components/seo/BreadcrumbNavigation";
 import PensionComparison from "@/components/features/PensionComparison";
@@ -279,7 +279,7 @@ export default function Home() {
               <div className="mt-8 space-y-3 text-sm text-slate-600 dark:text-slate-400">
                 <p className="flex items-start gap-2">
                   <span className="text-blue-600">ℹ️</span>
-                  <span>Calcul bazat pe valoarea punctului de pensie de <strong>2.031 lei</strong>, valabil în 2025</span>
+                  <span>Calcul bazat pe VPR de <strong>91 lei</strong>, valabil în 2025</span>
                 </p>
                 <p className="flex items-start gap-2">
                   <span className="text-orange-600">⚠️</span>
@@ -300,7 +300,7 @@ export default function Home() {
           
           <div className="prose prose-lg max-w-none">
             <p className="text-slate-800 dark:text-slate-200 mb-6 font-medium">
-              Calculatorul nostru folosește formulele oficiale ale Casei Naționale de Pensii Publice (CNPP) pentru a-ți oferi o estimare precisă a pensiei tale de stat. Sistemul ia în considerare vârsta ta actuală, stagiul de cotizare, salariul și condițiile specifice de muncă conform <strong>Legii pensiilor nr. 263/2010</strong>.
+              Calculatorul nostru folosește formulele oficiale ale Casei Naționale de Pensii Publice (CNPP) pentru a-ți oferi o estimare precisă a pensiei tale de stat. Sistemul ia în considerare vârsta ta actuală, stagiul de cotizare, salariul și condițiile specifice de muncă conform <strong>Legii pensiilor nr. 360/2023</strong>.
             </p>
 
             <h3 className="text-2xl font-semibold mb-4 text-slate-800 dark:text-slate-200">
@@ -319,7 +319,7 @@ export default function Home() {
               
               <div className="bg-green-50 dark:bg-green-950/20 p-6 rounded-lg border border-green-200 dark:border-green-800">
                 <h4 className="font-semibold text-lg mb-3 text-green-900 dark:text-green-100">Pilonul II: Pensia Administrată Privat</h4>
-                <p className="text-green-900 dark:text-green-100 font-medium">Sistemul obligatoriu de contribuții către fonduri private de pensii. Contribuția este de 3,75% din salariul brut pentru persoanele sub 35 de ani.</p>
+                <p className="text-green-900 dark:text-green-100 font-medium">Sistemul obligatoriu de contribuții către fonduri private de pensii. Contribuția este de 4,75% din venitul brut asigurat în sistemul public de pensii.</p>
               </div>
               
               <div className="bg-purple-50 dark:bg-purple-950/20 p-6 rounded-lg border border-purple-200 dark:border-purple-800">
@@ -335,10 +335,10 @@ export default function Home() {
               </h3>
               <div className="bg-blue-50 dark:bg-blue-950/20 border border-blue-200 dark:border-blue-800 rounded-lg p-8 text-center">
                 <p className="text-2xl font-bold text-blue-900 dark:text-blue-100 mb-4">
-                  Pensie = Punctaj Mediu Anual (PMA) × Valoarea Punctului de Pensie (VPP)
+                  Pensie Brută = Număr Total de Puncte × Valoarea Punctului de Referință (VPR)
                 </p>
                 <p className="text-lg text-blue-800 dark:text-blue-200 font-medium">
-                  Punctaj Mediu Anual se calculează pe baza salariilor și perioadei de cotizare, iar Valoarea Punctului de Pensie pentru 2025 este <strong>2.031 lei</strong>.
+                  Numărul total de puncte include punctele de contributivitate, stabilitate și perioade asimilate, iar Valoarea Punctului de Referință pentru 2025 este <strong>91 lei</strong>.
                 </p>
               </div>
             </div>
@@ -367,8 +367,8 @@ export default function Home() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-blue-900 dark:text-blue-100 mb-2">Femei</h4>
-                    <p className="text-blue-800 dark:text-blue-200 font-medium">Vârsta: 63 ani</p>
-                    <p className="text-blue-800 dark:text-blue-200 font-medium">Stagiu: 30 ani</p>
+                    <p className="text-blue-800 dark:text-blue-200 font-medium">Vârsta: crește gradual spre 65 ani</p>
+                    <p className="text-blue-800 dark:text-blue-200 font-medium">Stagiu complet: 35 ani</p>
                   </div>
                 </div>
               </div>
@@ -379,7 +379,7 @@ export default function Home() {
               <div className="bg-green-50 dark:bg-green-950/20 p-6 rounded-lg border border-green-200 dark:border-green-800 mb-6">
                 <p className="text-2xl font-bold text-green-900 dark:text-green-100 mb-2">2.031 Lei</p>
                 <p className="text-green-800 dark:text-green-200 font-medium">
-                  Valoarea punctului de pensie stabilită prin HG pentru anul 2025. Aceasta se actualizează anual conform legii.
+                  Valoarea punctului de pensie folosită în comunicările publice; pentru calculul conform Legii 360/2023 se folosește VPR 2025 de 91 lei.
                 </p>
               </div>
             </div>
@@ -393,15 +393,15 @@ export default function Home() {
                 <ul className="space-y-2 text-orange-800 dark:text-orange-200">
                   <li className="flex items-start gap-2">
                     <span className="font-medium">•</span>
-                    <span>Bărbați: minimum 60 ani cu 35 ani stagiu</span>
+                    <span>Maximum 5 ani înainte de vârsta standard, dacă este îndeplinit stagiul complet de cotizare</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="font-medium">•</span>
-                    <span>Femei: minimum 58 ani cu 30 ani stagiu</span>
+                    <span>Condițiile exacte depind de sex, data nașterii și stagiul contributiv realizat</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="font-medium">•</span>
-                    <span>Penalizare: 0,75% pe lună de anticipare</span>
+                    <span>Penalizare lunară: între 0,15% și 0,40%, în funcție de stagiul realizat peste cel complet</span>
                   </li>
                 </ul>
               </div>
@@ -493,7 +493,9 @@ export default function Home() {
       </section>
 
       {/* FAQ Section with Rich Snippets */}
-      <FAQSection />
+      <Suspense fallback={null}>
+        <FAQSection />
+      </Suspense>
 
       {/* RevBid Advertisement */}
       <section className="py-8 bg-gray-50">

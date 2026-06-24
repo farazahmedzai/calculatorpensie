@@ -70,12 +70,10 @@ export default function LegislatiePage() {
 
           {/* Overview */}
           <div className="prose prose-lg max-w-none mb-12">
-            <h2>Legea 263/2010 - Sistemul Unitar de Pensii Publice</h2>
-            <p>
-              Legea nr. 263/2010 privind sistemul unitar de pensii publice reprezintă cadrul legal 
-              fundamental pentru sistemul de pensii din România. Această lege stabilește condițiile 
-              de acordare, calculul și plata pensiilor din sistemul public.
-            </p>
+            <h2>Legea 360/2023 - Sistemul Public de Pensii Actualizat</h2>
+                        <p>
+                          Legea nr. 360/2023 privind sistemul public de pensii este cadrul principal aplicabil calculului pensiilor în 2025. Aceasta introduce formula bazată pe numărul total de puncte, punctele de stabilitate și Valoarea Punctului de Referință (VPR).
+                        </p>
 
             <h3>Principiile Fundamentale ale Sistemului</h3>
             <p>
@@ -120,7 +118,7 @@ export default function LegislatiePage() {
                   Pentru informații complete despre evoluția vârstei de pensionare, consultă 
                   <strong> tabelul nostru complet cu vârsta standard de pensionare în România</strong>.
                 </p>
-                <Link href="~/blog/ghid-calcul-pensie-stat-2025">
+                <Link href="/blog/ghid-calcul-pensie-stat-2025">
                   <Button variant="outline" className="text-brand-red border-brand-red hover:bg-brand-red hover:text-white">
                     Tabel Complet Vârste Pensionare <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
@@ -159,7 +157,7 @@ export default function LegislatiePage() {
                   Pentru detalii despre <strong>cum se calculează corect stagiul de cotizare</strong> și ce perioade se iau în considerare, 
                   citește ghidul nostru specializat.
                 </p>
-                <Link href="~/blog/stagiul-cotizare-cumparare-ani-munca">
+                <Link href="/blog/stagiul-cotizare-cumparare-ani-munca">
                   <Button variant="outline" className="text-brand-blue border-brand-blue hover:bg-brand-blue hover:text-white">
                     Ghid Calcul Stagiu Cotizare <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
@@ -192,7 +190,7 @@ export default function LegislatiePage() {
                   inflația și creșterea economică. Pentru înțelegerea completă a 
                   <strong> mecanismului și impactului indexării pensiilor</strong>, consultă analiza noastră detaliată.
                 </p>
-                <Link href="~/blog/reforma-sistem-pensii-2025">
+                <Link href="/blog/reforma-sistem-pensii-2025">
                   <Button variant="outline" className="text-brand-green border-brand-green hover:bg-brand-green hover:text-white">
                     Mecanism Indexare <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
@@ -233,7 +231,7 @@ export default function LegislatiePage() {
                   Pentru detalii complete despre <strong>procedura și costurile cumpărării vechimii în muncă</strong>, 
                   consultă ghidul nostru pas cu pas.
                 </p>
-                <Link href="~/blog/stagiul-cotizare-cumparare-ani-munca">
+                <Link href="/blog/stagiul-cotizare-cumparare-ani-munca">
                   <Button variant="outline" className="text-yellow-600 border-yellow-500 hover:bg-yellow-500 hover:text-white">
                     Procedură și Costuri <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
@@ -261,13 +259,13 @@ export default function LegislatiePage() {
               </a>
               
               <a 
-                href="https://www.legis.md/cautare/getResults?doc_id=121830&lang=ro" 
+                href="https://legislatie.just.ro/Public/DetaliiDocument/276548" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="flex items-center p-4 bg-white rounded-lg border hover:shadow-md transition-shadow"
               >
                 <div className="flex-1">
-                  <h4 className="font-semibold">Legea 263/2010</h4>
+                  <h4 className="font-semibold">Legea 360/2023</h4>
                   <p className="text-sm text-gray-700">Textul integral al legii pensiilor</p>
                 </div>
                 <ExternalLink className="h-5 w-5 text-gray-700" />
@@ -300,9 +298,7 @@ export default function LegislatiePage() {
 
             <h3>3. Cum se calculează pensia în puncte?</h3>
             <p>
-              Pensia = Punctajul anual mediu × Stagiul de cotizare × Valoarea punctului de pensie. 
-              Punctajul anual se calculează ca raportul între salariul anual și salariul mediu 
-              pe economie pentru acel an.
+              Pensia brută se calculează ca Număr Total de Puncte × Valoarea Punctului de Referință (VPR). Numărul total de puncte include punctele de contributivitate, stabilitate și perioade asimilate.
             </p>
 
             <h3>4. Ce înseamnă "pensie minimă garantată"?</h3>

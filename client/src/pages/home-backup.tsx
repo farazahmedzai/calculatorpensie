@@ -269,7 +269,7 @@ export default function Home() {
               <div className="mt-8 space-y-3 text-sm text-gray-600">
                 <p className="flex items-start gap-2">
                   <span className="text-blue-600">ℹ️</span>
-                  <span>Calcul bazat pe valoarea punctului de pensie de <strong>2.031 lei</strong>, valabil în 2025</span>
+                  <span>Calcul bazat pe VPR de <strong>91 lei</strong>, valabil în 2025</span>
                 </p>
                 <p className="flex items-start gap-2">
                   <span className="text-orange-600">⚠️</span>
@@ -290,7 +290,7 @@ export default function Home() {
           
           <div className="prose prose-lg max-w-none">
             <p className="text-gray-600 mb-6">
-              Calculatorul nostru folosește formulele oficiale ale Casei Naționale de Pensii Publice (CNPP) pentru a-ți oferi o estimare precisă a pensiei tale de stat. Sistemul ia în considerare vârsta ta actuală, stagiul de cotizare, salariul și condițiile specifice de muncă conform <strong>Legii pensiilor nr. 263/2010</strong>.
+              Calculatorul nostru folosește formulele oficiale ale Casei Naționale de Pensii Publice (CNPP) pentru a-ți oferi o estimare precisă a pensiei tale de stat. Sistemul ia în considerare vârsta ta actuală, stagiul de cotizare, salariul și condițiile specifice de muncă conform <strong>Legii pensiilor nr. 360/2023</strong>.
             </p>
 
             <h3 className="text-2xl font-semibold mb-4 text-gray-800">
@@ -309,7 +309,7 @@ export default function Home() {
               
               <div className="bg-green-50 p-6 rounded-lg">
                 <h4 className="font-semibold text-lg mb-3 text-green-800">Pilonul II: Pensia Administrată Privat</h4>
-                <p className="text-green-700">Sistemul obligatoriu de contribuții către fonduri private de pensii. Contribuția este de 3,75% din salariul brut pentru persoanele sub 35 de ani.</p>
+                <p className="text-green-700">Sistemul obligatoriu de contribuții către fonduri private de pensii. Contribuția este de 4,75% din venitul brut asigurat în sistemul public de pensii.</p>
               </div>
               
               <div className="bg-purple-50 p-6 rounded-lg">
@@ -325,10 +325,10 @@ export default function Home() {
               </h3>
               <div className="bg-blue-50 border border-blue-200 rounded-lg p-8 text-center">
                 <p className="text-2xl font-bold text-blue-900 mb-4">
-                  Pensie = Punctaj Mediu Anual (PMA) × Valoarea Punctului de Pensie (VPP)
+                  Pensie Brută = Număr Total de Puncte × Valoarea Punctului de Referință (VPR)
                 </p>
                 <p className="text-lg text-blue-700">
-                  Punctaj Mediu Anual se calculează pe baza salariilor și perioadei de cotizare, iar Valoarea Punctului de Pensie pentru 2025 este <strong>2.031 lei</strong>.
+                  Numărul total de puncte include punctele de contributivitate, stabilitate și perioade asimilate, iar VPR 2025 este <strong>91 lei</strong>.
                 </p>
               </div>
             </div>

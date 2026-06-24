@@ -41,7 +41,11 @@ export default function MetaTags({
     const existingMetas = document.querySelectorAll('[data-pension-meta="true"]');
     existingMetas.forEach(meta => meta.remove());
 
-    const existingStructured = document.querySelectorAll('script[type="application/ld+json"]');
+    // Only remove JSON-LD inserted by this component. Other schema components
+    // such as <WebPageSchema />, <ArticleSchema />, <FAQPageSchema /> render
+    // their own <script type="application/ld+json"> tags during React commit;
+    // removing every JSON-LD script here can delete valid page schema at runtime.
+    const existingStructured = document.querySelectorAll('script[type="application/ld+json"][data-pension-meta="true"]');
     existingStructured.forEach(script => script.remove());
 
     const metas: Array<{ name?: string; property?: string; content: string }> = [
@@ -145,7 +149,23 @@ export default function MetaTags({
       const elementsToRemove = document.querySelectorAll('[data-pension-meta="true"]');
       elementsToRemove.forEach(el => el.remove());
     };
-  }, [title, description, canonical, ogTitle, ogDescription, ogImage, keywords, structuredData]);
+  }, [
+    title,
+    description,
+    canonical,
+    ogTitle,
+    ogDescription,
+    ogImage,
+    keywords,
+    structuredData,
+    articleAuthor,
+    articlePublishedTime,
+    articleModifiedTime,
+    articleSection,
+    articleTag,
+    noindex,
+    alternateLanguages,
+  ]);
 
   return null;
 }
