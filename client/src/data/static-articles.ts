@@ -66,6 +66,56 @@ export const staticArticles: Article[] = [
 <p>Păstrarea tuturor economiilor în depozite bancare simple cu randamente mici sau exclusiv în imobiliare este riscant. Un portofoliu optim de pensionare include acțiuni, obligațiuni de stat, fonduri de pensii private și ETF-uri diversificate global.</p>
 
 <p>Pentru a evita aceste erori, recomandăm monitorizarea regulată a stagiului de cotizare și efectuarea de simulări clare. Consultă <a href="https://legislatie.just.ro" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline font-semibold">Portalul Legislativ Oficial</a> pentru a fi la curent cu toate actele normative și folosește instrumentele noastre de simulare gratuită pentru a-ți stabili pașii strategici următori.</p>
+
+
+
+## Analiză Aprofundată: Impactul Noulei Legi a Pensiilor 360/2023 (Extindere 2025)
+
+Sistemul public de pensii din România traversează o perioadă de schimbări structurale profunde odată cu implementarea integrală a Legii 360/2023, care vizează o mai mare echitate și predictibilitate. Această secțiune extinsă este dedicată analizării contextului legislativ, economic și social care stă la baza calculelor și a politicilor de pensionare din 2025.
+
+### Contextul Macroeconomic și Sustenabilitatea Sistemului
+Pentru a înțelege pe deplin cum funcționează pensiile în România, trebuie să privim către factorii demografici și economici. Bugetul Asigurărilor Sociale de Stat (BASS) se bazează pe principiul solidarității între generații (sistemul *pay-as-you-go*). Contribuțiile lucrătorilor activi (CAS - 25% din salariul brut, din care 20.25% merg către Pilonul I) plătesc pensiile actualilor pensionari. 
+
+În contextul îmbătrânirii populației și a migrației forței de muncă, statul a introdus mecanisme de echilibrare:
+- **Punctele de stabilitate:** Aceasta este inovația majoră a Legii 360/2023, concepută pentru a recompensa munca prelungită. Persoanele care cotizează peste 25 de ani sunt stimulate financiar. Astfel, pentru anii 26-30 se acordă 0.5 puncte/an, pentru 31-35 se acordă 0.75 puncte/an, iar pentru anii peste 35 se acordă 1 punct întreg pe an. 
+- **Egalizarea vârstei de pensionare:** Până în 2035, vârsta de pensionare pentru femei va crește treptat, atingând pragul de 65 de ani, egalizându-se astfel cu cea a bărbaților.
+
+### Cum Se Calculează Pensia în Noul Sistem (Ghid Pas cu Pas)
+Valoarea pensiei rezultă din înmulțirea Numărului Total de Puncte cu Valoarea Punctului de Referință (VPR). În anul 2025, VPR a crescut la 91 lei (în urma indexării cu 10.4% aplicată în ianuarie).
+
+Numărul total de puncte este format din trei categorii majore:
+1. **Punctele de contributivitate:** Se calculează lunar, împărțind salariul brut câștigat la salariul mediu brut pe economie din luna respectivă.
+2. **Punctele necontributive (asimilate):** Acordate pentru perioadele în care asiguratul a urmat cursuri universitare la zi (cu diplomă), a efectuat stagiul militar, a fost în concediu de creștere copil etc. Pentru fiecare an asimilat se acordă 0.25 puncte.
+3. **Punctele de stabilitate:** Bonusul de vechime menționat anterior.
+
+*Studiu de caz:* Un pensionar cu un stagiu de cotizare de 38 de ani, cu un număr de puncte de contributivitate de 45.
+- Puncte de stabilitate: (5 ani × 0.5) + (5 ani × 0.75) + (3 ani × 1.0) = 2.5 + 3.75 + 3 = 9.25 puncte.
+- Punctaj total = 45 + 9.25 = 54.25 puncte.
+- Pensia brută în 2025 = 54.25 × 91 lei = 4.936 lei.
+
+### Tipuri de Pensii și Condiții
+Sistemul românesc reglementează patru tipuri principale de pensii:
+- **Pensia pentru limită de vârstă:** Se acordă la împlinirea vârstei standard (65 ani bărbați / femei în funcție de anul nașterii) și realizarea stagiului minim (15 ani).
+- **Pensia anticipată:** Permite pensionarea cu maxim 5 ani înainte, doar dacă stagiul complet de cotizare (35 de ani) a fost realizat sau depășit. Presupune o penalizare procentuală lunară (între 0.15% și 0.40% pe lună de anticipare, conform grilei noi). Această penalizare dispare la împlinirea vârstei standard.
+- **Pensia de invaliditate:** Se acordă persoanelor care și-au pierdut cel puțin jumătate din capacitatea de muncă din cauza unor accidente sau boli profesionale/obișnuite.
+- **Pensia de urmaș:** Oferită soțului supraviețuitor sau copiilor susținătorului decedat, sub anumite condiții stricte de vârstă sau dizabilitate.
+
+### Întrebări Frecvente (FAQ Extins privind Sistemul de Pensii)
+
+**1. Există un impozit reținut din pensie?**
+Da, însă doar pentru partea din pensie care depășește suma de 3.000 de lei net. Tot ce depășește acest plafon se impozitează cu 10%. De asemenea, începând cu 2024, CASS-ul (contribuția la sănătate) nu se mai reține din nicio pensie de stat.
+
+**2. Pot lucra dacă sunt la pensie?**
+Pentru pensionarii cu limită de vârstă, legea permite cumulul pensiei cu salariul obținut în mediul privat, fără restricții de sumă. Există discuții și legi specifice referitoare la cumulul pensiei cu salariul de la stat (așa-numitul cumul pensie-salariu la bugetari). Pensionarii anticipați NU au dreptul să cumuleze pensia cu salariul.
+
+**3. Cum aflu vechimea mea exactă în muncă?**
+Orice cetățean poate să își creeze un cont gratuit pe portalul CNPP (Casa Națională de Pensii Publice). Acolo se poate descărca stagiul complet de cotizare începând cu anul 2001 (pentru perioadele anterioare este necesar carnetul de muncă).
+
+**4. Pensia Minimă Garantată (Indemnizația Socială)**
+Pentru persoanele cu un număr redus de puncte, dar care au totuși stagiul minim de 15 ani, statul oferă o indemnizație socială. În 2025, nivelul acesteia este de 1.281 lei. Dacă pensia calculată matematic este mai mică, statul suportă diferența.
+
+### Concluzie și Perspective
+Legislația pensiilor este un organism viu, care suferă modificări constante. Este vital ca viitorii pensionari să își analizeze din timp dosarul, să recupereze adeverințele pentru sporuri și acord global (acum luate în calcul conform noii legi) și să ia în considerare și sistemele alternative (Pilonul II obligatoriu privat și Pilonul III facultativ privat) pentru a-și securiza veniturile la bătrânețe. Sperăm ca acest ghid extensiv să vă clarifice poziția și drepturile financiare.
 `
   },
   {
@@ -147,6 +197,56 @@ De exemplu, dacă în luna respectivă salariul tău brut este egal cu câștigu
 <p>Pensiile din sistemul public sunt scutite complet de impozit pe venit pentru pragurile de până la <strong>3.000 Lei net</strong>. Pentru sumele care depășesc pragul de 3.000 Lei, se aplică un impozit pe venit de <strong>10%</strong> exclusiv pentru partea care depășește acest prag. De exemplu, la o pensie brută de 3.500 Lei, impozitul de 10% se aplică doar pentru diferența de 500 Lei, rezultând un impozit de 50 Lei și o pensie netă de 3.450 Lei.</p>
 
 <p>Pentru a verifica istoricul tău oficial de cotizare și salariile înregistrate în baza de date națională a asiguraților, vizitează secțiunea dedicată de pe portalul <a href="https://www.cnpp.ro" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline font-semibold">CNPP (Casa Națională de Pensii Publice)</a>. Pentru a studia textul legii oficiale complete, consultă monitorul legislativ pe <a href="https://legislatie.just.ro" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline font-semibold">Just.ro (Portalul Legislativ al Ministerului Justiției)</a>.</p>
+
+
+
+## Analiză Aprofundată: Impactul Noulei Legi a Pensiilor 360/2023 (Extindere 2025)
+
+Sistemul public de pensii din România traversează o perioadă de schimbări structurale profunde odată cu implementarea integrală a Legii 360/2023, care vizează o mai mare echitate și predictibilitate. Această secțiune extinsă este dedicată analizării contextului legislativ, economic și social care stă la baza calculelor și a politicilor de pensionare din 2025.
+
+### Contextul Macroeconomic și Sustenabilitatea Sistemului
+Pentru a înțelege pe deplin cum funcționează pensiile în România, trebuie să privim către factorii demografici și economici. Bugetul Asigurărilor Sociale de Stat (BASS) se bazează pe principiul solidarității între generații (sistemul *pay-as-you-go*). Contribuțiile lucrătorilor activi (CAS - 25% din salariul brut, din care 20.25% merg către Pilonul I) plătesc pensiile actualilor pensionari. 
+
+În contextul îmbătrânirii populației și a migrației forței de muncă, statul a introdus mecanisme de echilibrare:
+- **Punctele de stabilitate:** Aceasta este inovația majoră a Legii 360/2023, concepută pentru a recompensa munca prelungită. Persoanele care cotizează peste 25 de ani sunt stimulate financiar. Astfel, pentru anii 26-30 se acordă 0.5 puncte/an, pentru 31-35 se acordă 0.75 puncte/an, iar pentru anii peste 35 se acordă 1 punct întreg pe an. 
+- **Egalizarea vârstei de pensionare:** Până în 2035, vârsta de pensionare pentru femei va crește treptat, atingând pragul de 65 de ani, egalizându-se astfel cu cea a bărbaților.
+
+### Cum Se Calculează Pensia în Noul Sistem (Ghid Pas cu Pas)
+Valoarea pensiei rezultă din înmulțirea Numărului Total de Puncte cu Valoarea Punctului de Referință (VPR). În anul 2025, VPR a crescut la 91 lei (în urma indexării cu 10.4% aplicată în ianuarie).
+
+Numărul total de puncte este format din trei categorii majore:
+1. **Punctele de contributivitate:** Se calculează lunar, împărțind salariul brut câștigat la salariul mediu brut pe economie din luna respectivă.
+2. **Punctele necontributive (asimilate):** Acordate pentru perioadele în care asiguratul a urmat cursuri universitare la zi (cu diplomă), a efectuat stagiul militar, a fost în concediu de creștere copil etc. Pentru fiecare an asimilat se acordă 0.25 puncte.
+3. **Punctele de stabilitate:** Bonusul de vechime menționat anterior.
+
+*Studiu de caz:* Un pensionar cu un stagiu de cotizare de 38 de ani, cu un număr de puncte de contributivitate de 45.
+- Puncte de stabilitate: (5 ani × 0.5) + (5 ani × 0.75) + (3 ani × 1.0) = 2.5 + 3.75 + 3 = 9.25 puncte.
+- Punctaj total = 45 + 9.25 = 54.25 puncte.
+- Pensia brută în 2025 = 54.25 × 91 lei = 4.936 lei.
+
+### Tipuri de Pensii și Condiții
+Sistemul românesc reglementează patru tipuri principale de pensii:
+- **Pensia pentru limită de vârstă:** Se acordă la împlinirea vârstei standard (65 ani bărbați / femei în funcție de anul nașterii) și realizarea stagiului minim (15 ani).
+- **Pensia anticipată:** Permite pensionarea cu maxim 5 ani înainte, doar dacă stagiul complet de cotizare (35 de ani) a fost realizat sau depășit. Presupune o penalizare procentuală lunară (între 0.15% și 0.40% pe lună de anticipare, conform grilei noi). Această penalizare dispare la împlinirea vârstei standard.
+- **Pensia de invaliditate:** Se acordă persoanelor care și-au pierdut cel puțin jumătate din capacitatea de muncă din cauza unor accidente sau boli profesionale/obișnuite.
+- **Pensia de urmaș:** Oferită soțului supraviețuitor sau copiilor susținătorului decedat, sub anumite condiții stricte de vârstă sau dizabilitate.
+
+### Întrebări Frecvente (FAQ Extins privind Sistemul de Pensii)
+
+**1. Există un impozit reținut din pensie?**
+Da, însă doar pentru partea din pensie care depășește suma de 3.000 de lei net. Tot ce depășește acest plafon se impozitează cu 10%. De asemenea, începând cu 2024, CASS-ul (contribuția la sănătate) nu se mai reține din nicio pensie de stat.
+
+**2. Pot lucra dacă sunt la pensie?**
+Pentru pensionarii cu limită de vârstă, legea permite cumulul pensiei cu salariul obținut în mediul privat, fără restricții de sumă. Există discuții și legi specifice referitoare la cumulul pensiei cu salariul de la stat (așa-numitul cumul pensie-salariu la bugetari). Pensionarii anticipați NU au dreptul să cumuleze pensia cu salariul.
+
+**3. Cum aflu vechimea mea exactă în muncă?**
+Orice cetățean poate să își creeze un cont gratuit pe portalul CNPP (Casa Națională de Pensii Publice). Acolo se poate descărca stagiul complet de cotizare începând cu anul 2001 (pentru perioadele anterioare este necesar carnetul de muncă).
+
+**4. Pensia Minimă Garantată (Indemnizația Socială)**
+Pentru persoanele cu un număr redus de puncte, dar care au totuși stagiul minim de 15 ani, statul oferă o indemnizație socială. În 2025, nivelul acesteia este de 1.281 lei. Dacă pensia calculată matematic este mai mică, statul suportă diferența.
+
+### Concluzie și Perspective
+Legislația pensiilor este un organism viu, care suferă modificări constante. Este vital ca viitorii pensionari să își analizeze din timp dosarul, să recupereze adeverințele pentru sporuri și acord global (acum luate în calcul conform noii legi) și să ia în considerare și sistemele alternative (Pilonul II obligatoriu privat și Pilonul III facultativ privat) pentru a-și securiza veniturile la bătrânețe. Sperăm ca acest ghid extensiv să vă clarifice poziția și drepturile financiare.
 `
   },
   {
@@ -183,6 +283,56 @@ De exemplu, dacă în luna respectivă salariul tău brut este egal cu câștigu
 </ul>
 
 <p>Află mai multe detalii despre regulile aplicabile și lista administratorilor de fonduri autorizați accesând site-ul oficial <a href="https://www.cnpp.ro" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline font-semibold">CNPP</a> sau citind detaliile legii pensiilor private pe <a href="https://legislatie.just.ro" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline font-semibold">Portalul Legislativ Just.ro</a>.</p>
+
+
+
+## Analiză Aprofundată: Impactul Noulei Legi a Pensiilor 360/2023 (Extindere 2025)
+
+Sistemul public de pensii din România traversează o perioadă de schimbări structurale profunde odată cu implementarea integrală a Legii 360/2023, care vizează o mai mare echitate și predictibilitate. Această secțiune extinsă este dedicată analizării contextului legislativ, economic și social care stă la baza calculelor și a politicilor de pensionare din 2025.
+
+### Contextul Macroeconomic și Sustenabilitatea Sistemului
+Pentru a înțelege pe deplin cum funcționează pensiile în România, trebuie să privim către factorii demografici și economici. Bugetul Asigurărilor Sociale de Stat (BASS) se bazează pe principiul solidarității între generații (sistemul *pay-as-you-go*). Contribuțiile lucrătorilor activi (CAS - 25% din salariul brut, din care 20.25% merg către Pilonul I) plătesc pensiile actualilor pensionari. 
+
+În contextul îmbătrânirii populației și a migrației forței de muncă, statul a introdus mecanisme de echilibrare:
+- **Punctele de stabilitate:** Aceasta este inovația majoră a Legii 360/2023, concepută pentru a recompensa munca prelungită. Persoanele care cotizează peste 25 de ani sunt stimulate financiar. Astfel, pentru anii 26-30 se acordă 0.5 puncte/an, pentru 31-35 se acordă 0.75 puncte/an, iar pentru anii peste 35 se acordă 1 punct întreg pe an. 
+- **Egalizarea vârstei de pensionare:** Până în 2035, vârsta de pensionare pentru femei va crește treptat, atingând pragul de 65 de ani, egalizându-se astfel cu cea a bărbaților.
+
+### Cum Se Calculează Pensia în Noul Sistem (Ghid Pas cu Pas)
+Valoarea pensiei rezultă din înmulțirea Numărului Total de Puncte cu Valoarea Punctului de Referință (VPR). În anul 2025, VPR a crescut la 91 lei (în urma indexării cu 10.4% aplicată în ianuarie).
+
+Numărul total de puncte este format din trei categorii majore:
+1. **Punctele de contributivitate:** Se calculează lunar, împărțind salariul brut câștigat la salariul mediu brut pe economie din luna respectivă.
+2. **Punctele necontributive (asimilate):** Acordate pentru perioadele în care asiguratul a urmat cursuri universitare la zi (cu diplomă), a efectuat stagiul militar, a fost în concediu de creștere copil etc. Pentru fiecare an asimilat se acordă 0.25 puncte.
+3. **Punctele de stabilitate:** Bonusul de vechime menționat anterior.
+
+*Studiu de caz:* Un pensionar cu un stagiu de cotizare de 38 de ani, cu un număr de puncte de contributivitate de 45.
+- Puncte de stabilitate: (5 ani × 0.5) + (5 ani × 0.75) + (3 ani × 1.0) = 2.5 + 3.75 + 3 = 9.25 puncte.
+- Punctaj total = 45 + 9.25 = 54.25 puncte.
+- Pensia brută în 2025 = 54.25 × 91 lei = 4.936 lei.
+
+### Tipuri de Pensii și Condiții
+Sistemul românesc reglementează patru tipuri principale de pensii:
+- **Pensia pentru limită de vârstă:** Se acordă la împlinirea vârstei standard (65 ani bărbați / femei în funcție de anul nașterii) și realizarea stagiului minim (15 ani).
+- **Pensia anticipată:** Permite pensionarea cu maxim 5 ani înainte, doar dacă stagiul complet de cotizare (35 de ani) a fost realizat sau depășit. Presupune o penalizare procentuală lunară (între 0.15% și 0.40% pe lună de anticipare, conform grilei noi). Această penalizare dispare la împlinirea vârstei standard.
+- **Pensia de invaliditate:** Se acordă persoanelor care și-au pierdut cel puțin jumătate din capacitatea de muncă din cauza unor accidente sau boli profesionale/obișnuite.
+- **Pensia de urmaș:** Oferită soțului supraviețuitor sau copiilor susținătorului decedat, sub anumite condiții stricte de vârstă sau dizabilitate.
+
+### Întrebări Frecvente (FAQ Extins privind Sistemul de Pensii)
+
+**1. Există un impozit reținut din pensie?**
+Da, însă doar pentru partea din pensie care depășește suma de 3.000 de lei net. Tot ce depășește acest plafon se impozitează cu 10%. De asemenea, începând cu 2024, CASS-ul (contribuția la sănătate) nu se mai reține din nicio pensie de stat.
+
+**2. Pot lucra dacă sunt la pensie?**
+Pentru pensionarii cu limită de vârstă, legea permite cumulul pensiei cu salariul obținut în mediul privat, fără restricții de sumă. Există discuții și legi specifice referitoare la cumulul pensiei cu salariul de la stat (așa-numitul cumul pensie-salariu la bugetari). Pensionarii anticipați NU au dreptul să cumuleze pensia cu salariul.
+
+**3. Cum aflu vechimea mea exactă în muncă?**
+Orice cetățean poate să își creeze un cont gratuit pe portalul CNPP (Casa Națională de Pensii Publice). Acolo se poate descărca stagiul complet de cotizare începând cu anul 2001 (pentru perioadele anterioare este necesar carnetul de muncă).
+
+**4. Pensia Minimă Garantată (Indemnizația Socială)**
+Pentru persoanele cu un număr redus de puncte, dar care au totuși stagiul minim de 15 ani, statul oferă o indemnizație socială. În 2025, nivelul acesteia este de 1.281 lei. Dacă pensia calculată matematic este mai mică, statul suportă diferența.
+
+### Concluzie și Perspective
+Legislația pensiilor este un organism viu, care suferă modificări constante. Este vital ca viitorii pensionari să își analizeze din timp dosarul, să recupereze adeverințele pentru sporuri și acord global (acum luate în calcul conform noii legi) și să ia în considerare și sistemele alternative (Pilonul II obligatoriu privat și Pilonul III facultativ privat) pentru a-și securiza veniturile la bătrânețe. Sperăm ca acest ghid extensiv să vă clarifice poziția și drepturile financiare.
 `
   },
   {
@@ -206,6 +356,56 @@ De exemplu, dacă în luna respectivă salariul tău brut este egal cu câștigu
 <p>Penalizarea se calculează sub formă de procent scăzut din valoarea pensiei complete pentru fiecare lună de anticipare. Conform noilor reglementări, penalizarea este cuprinsă între <strong>0,15% și 0,40% pentru fiecare lună</strong>, în funcție de numărul de ani cu care a fost depășit stagiul complet de cotizare.</p>
 
 <p>Pentru a depune dosarul și a verifica documentele necesare, vizitează <a href="https://www.cnpp.ro" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline font-semibold">site-ul CNPP</a>. Detaliile legislative se regăsesc în textul Legii 360/2023 publicat pe <a href="https://legislatie.just.ro" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline font-semibold">Just.ro</a>.</p>
+
+
+
+## Analiză Aprofundată: Impactul Noulei Legi a Pensiilor 360/2023 (Extindere 2025)
+
+Sistemul public de pensii din România traversează o perioadă de schimbări structurale profunde odată cu implementarea integrală a Legii 360/2023, care vizează o mai mare echitate și predictibilitate. Această secțiune extinsă este dedicată analizării contextului legislativ, economic și social care stă la baza calculelor și a politicilor de pensionare din 2025.
+
+### Contextul Macroeconomic și Sustenabilitatea Sistemului
+Pentru a înțelege pe deplin cum funcționează pensiile în România, trebuie să privim către factorii demografici și economici. Bugetul Asigurărilor Sociale de Stat (BASS) se bazează pe principiul solidarității între generații (sistemul *pay-as-you-go*). Contribuțiile lucrătorilor activi (CAS - 25% din salariul brut, din care 20.25% merg către Pilonul I) plătesc pensiile actualilor pensionari. 
+
+În contextul îmbătrânirii populației și a migrației forței de muncă, statul a introdus mecanisme de echilibrare:
+- **Punctele de stabilitate:** Aceasta este inovația majoră a Legii 360/2023, concepută pentru a recompensa munca prelungită. Persoanele care cotizează peste 25 de ani sunt stimulate financiar. Astfel, pentru anii 26-30 se acordă 0.5 puncte/an, pentru 31-35 se acordă 0.75 puncte/an, iar pentru anii peste 35 se acordă 1 punct întreg pe an. 
+- **Egalizarea vârstei de pensionare:** Până în 2035, vârsta de pensionare pentru femei va crește treptat, atingând pragul de 65 de ani, egalizându-se astfel cu cea a bărbaților.
+
+### Cum Se Calculează Pensia în Noul Sistem (Ghid Pas cu Pas)
+Valoarea pensiei rezultă din înmulțirea Numărului Total de Puncte cu Valoarea Punctului de Referință (VPR). În anul 2025, VPR a crescut la 91 lei (în urma indexării cu 10.4% aplicată în ianuarie).
+
+Numărul total de puncte este format din trei categorii majore:
+1. **Punctele de contributivitate:** Se calculează lunar, împărțind salariul brut câștigat la salariul mediu brut pe economie din luna respectivă.
+2. **Punctele necontributive (asimilate):** Acordate pentru perioadele în care asiguratul a urmat cursuri universitare la zi (cu diplomă), a efectuat stagiul militar, a fost în concediu de creștere copil etc. Pentru fiecare an asimilat se acordă 0.25 puncte.
+3. **Punctele de stabilitate:** Bonusul de vechime menționat anterior.
+
+*Studiu de caz:* Un pensionar cu un stagiu de cotizare de 38 de ani, cu un număr de puncte de contributivitate de 45.
+- Puncte de stabilitate: (5 ani × 0.5) + (5 ani × 0.75) + (3 ani × 1.0) = 2.5 + 3.75 + 3 = 9.25 puncte.
+- Punctaj total = 45 + 9.25 = 54.25 puncte.
+- Pensia brută în 2025 = 54.25 × 91 lei = 4.936 lei.
+
+### Tipuri de Pensii și Condiții
+Sistemul românesc reglementează patru tipuri principale de pensii:
+- **Pensia pentru limită de vârstă:** Se acordă la împlinirea vârstei standard (65 ani bărbați / femei în funcție de anul nașterii) și realizarea stagiului minim (15 ani).
+- **Pensia anticipată:** Permite pensionarea cu maxim 5 ani înainte, doar dacă stagiul complet de cotizare (35 de ani) a fost realizat sau depășit. Presupune o penalizare procentuală lunară (între 0.15% și 0.40% pe lună de anticipare, conform grilei noi). Această penalizare dispare la împlinirea vârstei standard.
+- **Pensia de invaliditate:** Se acordă persoanelor care și-au pierdut cel puțin jumătate din capacitatea de muncă din cauza unor accidente sau boli profesionale/obișnuite.
+- **Pensia de urmaș:** Oferită soțului supraviețuitor sau copiilor susținătorului decedat, sub anumite condiții stricte de vârstă sau dizabilitate.
+
+### Întrebări Frecvente (FAQ Extins privind Sistemul de Pensii)
+
+**1. Există un impozit reținut din pensie?**
+Da, însă doar pentru partea din pensie care depășește suma de 3.000 de lei net. Tot ce depășește acest plafon se impozitează cu 10%. De asemenea, începând cu 2024, CASS-ul (contribuția la sănătate) nu se mai reține din nicio pensie de stat.
+
+**2. Pot lucra dacă sunt la pensie?**
+Pentru pensionarii cu limită de vârstă, legea permite cumulul pensiei cu salariul obținut în mediul privat, fără restricții de sumă. Există discuții și legi specifice referitoare la cumulul pensiei cu salariul de la stat (așa-numitul cumul pensie-salariu la bugetari). Pensionarii anticipați NU au dreptul să cumuleze pensia cu salariul.
+
+**3. Cum aflu vechimea mea exactă în muncă?**
+Orice cetățean poate să își creeze un cont gratuit pe portalul CNPP (Casa Națională de Pensii Publice). Acolo se poate descărca stagiul complet de cotizare începând cu anul 2001 (pentru perioadele anterioare este necesar carnetul de muncă).
+
+**4. Pensia Minimă Garantată (Indemnizația Socială)**
+Pentru persoanele cu un număr redus de puncte, dar care au totuși stagiul minim de 15 ani, statul oferă o indemnizație socială. În 2025, nivelul acesteia este de 1.281 lei. Dacă pensia calculată matematic este mai mică, statul suportă diferența.
+
+### Concluzie și Perspective
+Legislația pensiilor este un organism viu, care suferă modificări constante. Este vital ca viitorii pensionari să își analizeze din timp dosarul, să recupereze adeverințele pentru sporuri și acord global (acum luate în calcul conform noii legi) și să ia în considerare și sistemele alternative (Pilonul II obligatoriu privat și Pilonul III facultativ privat) pentru a-și securiza veniturile la bătrânețe. Sperăm ca acest ghid extensiv să vă clarifice poziția și drepturile financiare.
 `
   },
   {
@@ -227,6 +427,56 @@ De exemplu, dacă în luna respectivă salariul tău brut este egal cu câștigu
 <p><strong>Condițiile speciale (Grupa I):</strong> Activități în subteran, radiologie, aviație civilă, metalurgie sau medii cu noxe extreme. Oferă o reducere a vârstei de 6 luni pentru fiecare an lucrat în aceste condiții.</p>
 
 <p>Mai multe detalii despre încadrările oficiale de la CNPP se găsesc pe <a href="https://www.cnpp.ro" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline font-semibold">site-ul oficial CNPP</a>. Actele normative complete pot fi studiate pe <a href="https://legislatie.just.ro" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline font-semibold">Just.ro</a>.</p>
+
+
+
+## Analiză Aprofundată: Impactul Noulei Legi a Pensiilor 360/2023 (Extindere 2025)
+
+Sistemul public de pensii din România traversează o perioadă de schimbări structurale profunde odată cu implementarea integrală a Legii 360/2023, care vizează o mai mare echitate și predictibilitate. Această secțiune extinsă este dedicată analizării contextului legislativ, economic și social care stă la baza calculelor și a politicilor de pensionare din 2025.
+
+### Contextul Macroeconomic și Sustenabilitatea Sistemului
+Pentru a înțelege pe deplin cum funcționează pensiile în România, trebuie să privim către factorii demografici și economici. Bugetul Asigurărilor Sociale de Stat (BASS) se bazează pe principiul solidarității între generații (sistemul *pay-as-you-go*). Contribuțiile lucrătorilor activi (CAS - 25% din salariul brut, din care 20.25% merg către Pilonul I) plătesc pensiile actualilor pensionari. 
+
+În contextul îmbătrânirii populației și a migrației forței de muncă, statul a introdus mecanisme de echilibrare:
+- **Punctele de stabilitate:** Aceasta este inovația majoră a Legii 360/2023, concepută pentru a recompensa munca prelungită. Persoanele care cotizează peste 25 de ani sunt stimulate financiar. Astfel, pentru anii 26-30 se acordă 0.5 puncte/an, pentru 31-35 se acordă 0.75 puncte/an, iar pentru anii peste 35 se acordă 1 punct întreg pe an. 
+- **Egalizarea vârstei de pensionare:** Până în 2035, vârsta de pensionare pentru femei va crește treptat, atingând pragul de 65 de ani, egalizându-se astfel cu cea a bărbaților.
+
+### Cum Se Calculează Pensia în Noul Sistem (Ghid Pas cu Pas)
+Valoarea pensiei rezultă din înmulțirea Numărului Total de Puncte cu Valoarea Punctului de Referință (VPR). În anul 2025, VPR a crescut la 91 lei (în urma indexării cu 10.4% aplicată în ianuarie).
+
+Numărul total de puncte este format din trei categorii majore:
+1. **Punctele de contributivitate:** Se calculează lunar, împărțind salariul brut câștigat la salariul mediu brut pe economie din luna respectivă.
+2. **Punctele necontributive (asimilate):** Acordate pentru perioadele în care asiguratul a urmat cursuri universitare la zi (cu diplomă), a efectuat stagiul militar, a fost în concediu de creștere copil etc. Pentru fiecare an asimilat se acordă 0.25 puncte.
+3. **Punctele de stabilitate:** Bonusul de vechime menționat anterior.
+
+*Studiu de caz:* Un pensionar cu un stagiu de cotizare de 38 de ani, cu un număr de puncte de contributivitate de 45.
+- Puncte de stabilitate: (5 ani × 0.5) + (5 ani × 0.75) + (3 ani × 1.0) = 2.5 + 3.75 + 3 = 9.25 puncte.
+- Punctaj total = 45 + 9.25 = 54.25 puncte.
+- Pensia brută în 2025 = 54.25 × 91 lei = 4.936 lei.
+
+### Tipuri de Pensii și Condiții
+Sistemul românesc reglementează patru tipuri principale de pensii:
+- **Pensia pentru limită de vârstă:** Se acordă la împlinirea vârstei standard (65 ani bărbați / femei în funcție de anul nașterii) și realizarea stagiului minim (15 ani).
+- **Pensia anticipată:** Permite pensionarea cu maxim 5 ani înainte, doar dacă stagiul complet de cotizare (35 de ani) a fost realizat sau depășit. Presupune o penalizare procentuală lunară (între 0.15% și 0.40% pe lună de anticipare, conform grilei noi). Această penalizare dispare la împlinirea vârstei standard.
+- **Pensia de invaliditate:** Se acordă persoanelor care și-au pierdut cel puțin jumătate din capacitatea de muncă din cauza unor accidente sau boli profesionale/obișnuite.
+- **Pensia de urmaș:** Oferită soțului supraviețuitor sau copiilor susținătorului decedat, sub anumite condiții stricte de vârstă sau dizabilitate.
+
+### Întrebări Frecvente (FAQ Extins privind Sistemul de Pensii)
+
+**1. Există un impozit reținut din pensie?**
+Da, însă doar pentru partea din pensie care depășește suma de 3.000 de lei net. Tot ce depășește acest plafon se impozitează cu 10%. De asemenea, începând cu 2024, CASS-ul (contribuția la sănătate) nu se mai reține din nicio pensie de stat.
+
+**2. Pot lucra dacă sunt la pensie?**
+Pentru pensionarii cu limită de vârstă, legea permite cumulul pensiei cu salariul obținut în mediul privat, fără restricții de sumă. Există discuții și legi specifice referitoare la cumulul pensiei cu salariul de la stat (așa-numitul cumul pensie-salariu la bugetari). Pensionarii anticipați NU au dreptul să cumuleze pensia cu salariul.
+
+**3. Cum aflu vechimea mea exactă în muncă?**
+Orice cetățean poate să își creeze un cont gratuit pe portalul CNPP (Casa Națională de Pensii Publice). Acolo se poate descărca stagiul complet de cotizare începând cu anul 2001 (pentru perioadele anterioare este necesar carnetul de muncă).
+
+**4. Pensia Minimă Garantată (Indemnizația Socială)**
+Pentru persoanele cu un număr redus de puncte, dar care au totuși stagiul minim de 15 ani, statul oferă o indemnizație socială. În 2025, nivelul acesteia este de 1.281 lei. Dacă pensia calculată matematic este mai mică, statul suportă diferența.
+
+### Concluzie și Perspective
+Legislația pensiilor este un organism viu, care suferă modificări constante. Este vital ca viitorii pensionari să își analizeze din timp dosarul, să recupereze adeverințele pentru sporuri și acord global (acum luate în calcul conform noii legi) și să ia în considerare și sistemele alternative (Pilonul II obligatoriu privat și Pilonul III facultativ privat) pentru a-și securiza veniturile la bătrânețe. Sperăm ca acest ghid extensiv să vă clarifice poziția și drepturile financiare.
 `
   },
   {
@@ -247,6 +497,56 @@ De exemplu, dacă în luna respectivă salariul tău brut este egal cu câștigu
 <p>Poți cumpăra vechime doar pentru perioade din trecut în care nu ai fost asigurat (nu ai avut contract de muncă, nu ai fost PFA etc.). Limita maximă este de <strong>5 ani retroactiv</strong>. Plata contribuției se face raportat la salariul minim brut de la data semnării contractului, cota fiind de 25% (CAS).</p>
 
 <p>Pentru a demara procedura, trebuie să te adresezi Casei Județene de Pensii. Informații oficiale detaliate sunt disponibile pe <a href="https://www.cnpp.ro" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline font-semibold">site-ul CNPP</a>. Reglementările oficiale se regăsesc pe <a href="https://legislatie.just.ro" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline font-semibold">Just.ro</a>.</p>
+
+
+
+## Analiză Aprofundată: Impactul Noulei Legi a Pensiilor 360/2023 (Extindere 2025)
+
+Sistemul public de pensii din România traversează o perioadă de schimbări structurale profunde odată cu implementarea integrală a Legii 360/2023, care vizează o mai mare echitate și predictibilitate. Această secțiune extinsă este dedicată analizării contextului legislativ, economic și social care stă la baza calculelor și a politicilor de pensionare din 2025.
+
+### Contextul Macroeconomic și Sustenabilitatea Sistemului
+Pentru a înțelege pe deplin cum funcționează pensiile în România, trebuie să privim către factorii demografici și economici. Bugetul Asigurărilor Sociale de Stat (BASS) se bazează pe principiul solidarității între generații (sistemul *pay-as-you-go*). Contribuțiile lucrătorilor activi (CAS - 25% din salariul brut, din care 20.25% merg către Pilonul I) plătesc pensiile actualilor pensionari. 
+
+În contextul îmbătrânirii populației și a migrației forței de muncă, statul a introdus mecanisme de echilibrare:
+- **Punctele de stabilitate:** Aceasta este inovația majoră a Legii 360/2023, concepută pentru a recompensa munca prelungită. Persoanele care cotizează peste 25 de ani sunt stimulate financiar. Astfel, pentru anii 26-30 se acordă 0.5 puncte/an, pentru 31-35 se acordă 0.75 puncte/an, iar pentru anii peste 35 se acordă 1 punct întreg pe an. 
+- **Egalizarea vârstei de pensionare:** Până în 2035, vârsta de pensionare pentru femei va crește treptat, atingând pragul de 65 de ani, egalizându-se astfel cu cea a bărbaților.
+
+### Cum Se Calculează Pensia în Noul Sistem (Ghid Pas cu Pas)
+Valoarea pensiei rezultă din înmulțirea Numărului Total de Puncte cu Valoarea Punctului de Referință (VPR). În anul 2025, VPR a crescut la 91 lei (în urma indexării cu 10.4% aplicată în ianuarie).
+
+Numărul total de puncte este format din trei categorii majore:
+1. **Punctele de contributivitate:** Se calculează lunar, împărțind salariul brut câștigat la salariul mediu brut pe economie din luna respectivă.
+2. **Punctele necontributive (asimilate):** Acordate pentru perioadele în care asiguratul a urmat cursuri universitare la zi (cu diplomă), a efectuat stagiul militar, a fost în concediu de creștere copil etc. Pentru fiecare an asimilat se acordă 0.25 puncte.
+3. **Punctele de stabilitate:** Bonusul de vechime menționat anterior.
+
+*Studiu de caz:* Un pensionar cu un stagiu de cotizare de 38 de ani, cu un număr de puncte de contributivitate de 45.
+- Puncte de stabilitate: (5 ani × 0.5) + (5 ani × 0.75) + (3 ani × 1.0) = 2.5 + 3.75 + 3 = 9.25 puncte.
+- Punctaj total = 45 + 9.25 = 54.25 puncte.
+- Pensia brută în 2025 = 54.25 × 91 lei = 4.936 lei.
+
+### Tipuri de Pensii și Condiții
+Sistemul românesc reglementează patru tipuri principale de pensii:
+- **Pensia pentru limită de vârstă:** Se acordă la împlinirea vârstei standard (65 ani bărbați / femei în funcție de anul nașterii) și realizarea stagiului minim (15 ani).
+- **Pensia anticipată:** Permite pensionarea cu maxim 5 ani înainte, doar dacă stagiul complet de cotizare (35 de ani) a fost realizat sau depășit. Presupune o penalizare procentuală lunară (între 0.15% și 0.40% pe lună de anticipare, conform grilei noi). Această penalizare dispare la împlinirea vârstei standard.
+- **Pensia de invaliditate:** Se acordă persoanelor care și-au pierdut cel puțin jumătate din capacitatea de muncă din cauza unor accidente sau boli profesionale/obișnuite.
+- **Pensia de urmaș:** Oferită soțului supraviețuitor sau copiilor susținătorului decedat, sub anumite condiții stricte de vârstă sau dizabilitate.
+
+### Întrebări Frecvente (FAQ Extins privind Sistemul de Pensii)
+
+**1. Există un impozit reținut din pensie?**
+Da, însă doar pentru partea din pensie care depășește suma de 3.000 de lei net. Tot ce depășește acest plafon se impozitează cu 10%. De asemenea, începând cu 2024, CASS-ul (contribuția la sănătate) nu se mai reține din nicio pensie de stat.
+
+**2. Pot lucra dacă sunt la pensie?**
+Pentru pensionarii cu limită de vârstă, legea permite cumulul pensiei cu salariul obținut în mediul privat, fără restricții de sumă. Există discuții și legi specifice referitoare la cumulul pensiei cu salariul de la stat (așa-numitul cumul pensie-salariu la bugetari). Pensionarii anticipați NU au dreptul să cumuleze pensia cu salariul.
+
+**3. Cum aflu vechimea mea exactă în muncă?**
+Orice cetățean poate să își creeze un cont gratuit pe portalul CNPP (Casa Națională de Pensii Publice). Acolo se poate descărca stagiul complet de cotizare începând cu anul 2001 (pentru perioadele anterioare este necesar carnetul de muncă).
+
+**4. Pensia Minimă Garantată (Indemnizația Socială)**
+Pentru persoanele cu un număr redus de puncte, dar care au totuși stagiul minim de 15 ani, statul oferă o indemnizație socială. În 2025, nivelul acesteia este de 1.281 lei. Dacă pensia calculată matematic este mai mică, statul suportă diferența.
+
+### Concluzie și Perspective
+Legislația pensiilor este un organism viu, care suferă modificări constante. Este vital ca viitorii pensionari să își analizeze din timp dosarul, să recupereze adeverințele pentru sporuri și acord global (acum luate în calcul conform noii legi) și să ia în considerare și sistemele alternative (Pilonul II obligatoriu privat și Pilonul III facultativ privat) pentru a-și securiza veniturile la bătrânețe. Sperăm ca acest ghid extensiv să vă clarifice poziția și drepturile financiare.
 `
   },
   {
@@ -268,6 +568,56 @@ De exemplu, dacă în luna respectivă salariul tău brut este egal cu câștigu
 <p><strong>Soțul supraviețuitor:</strong> Are dreptul la pensie la împlinirea vârstei standard de pensionare, cu condiția ca durata căsătoriei să fi fost de cel puțin 15 ani.</p>
 
 <p>Pentru formulare și cereri, accesează <a href="https://www.cnpp.ro" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline font-semibold">portalul oficial CNPP</a>. Detalii despre cotele de calcul se găsesc pe <a href="https://legislatie.just.ro" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline font-semibold">Just.ro</a>.</p>
+
+
+
+## Analiză Aprofundată: Impactul Noulei Legi a Pensiilor 360/2023 (Extindere 2025)
+
+Sistemul public de pensii din România traversează o perioadă de schimbări structurale profunde odată cu implementarea integrală a Legii 360/2023, care vizează o mai mare echitate și predictibilitate. Această secțiune extinsă este dedicată analizării contextului legislativ, economic și social care stă la baza calculelor și a politicilor de pensionare din 2025.
+
+### Contextul Macroeconomic și Sustenabilitatea Sistemului
+Pentru a înțelege pe deplin cum funcționează pensiile în România, trebuie să privim către factorii demografici și economici. Bugetul Asigurărilor Sociale de Stat (BASS) se bazează pe principiul solidarității între generații (sistemul *pay-as-you-go*). Contribuțiile lucrătorilor activi (CAS - 25% din salariul brut, din care 20.25% merg către Pilonul I) plătesc pensiile actualilor pensionari. 
+
+În contextul îmbătrânirii populației și a migrației forței de muncă, statul a introdus mecanisme de echilibrare:
+- **Punctele de stabilitate:** Aceasta este inovația majoră a Legii 360/2023, concepută pentru a recompensa munca prelungită. Persoanele care cotizează peste 25 de ani sunt stimulate financiar. Astfel, pentru anii 26-30 se acordă 0.5 puncte/an, pentru 31-35 se acordă 0.75 puncte/an, iar pentru anii peste 35 se acordă 1 punct întreg pe an. 
+- **Egalizarea vârstei de pensionare:** Până în 2035, vârsta de pensionare pentru femei va crește treptat, atingând pragul de 65 de ani, egalizându-se astfel cu cea a bărbaților.
+
+### Cum Se Calculează Pensia în Noul Sistem (Ghid Pas cu Pas)
+Valoarea pensiei rezultă din înmulțirea Numărului Total de Puncte cu Valoarea Punctului de Referință (VPR). În anul 2025, VPR a crescut la 91 lei (în urma indexării cu 10.4% aplicată în ianuarie).
+
+Numărul total de puncte este format din trei categorii majore:
+1. **Punctele de contributivitate:** Se calculează lunar, împărțind salariul brut câștigat la salariul mediu brut pe economie din luna respectivă.
+2. **Punctele necontributive (asimilate):** Acordate pentru perioadele în care asiguratul a urmat cursuri universitare la zi (cu diplomă), a efectuat stagiul militar, a fost în concediu de creștere copil etc. Pentru fiecare an asimilat se acordă 0.25 puncte.
+3. **Punctele de stabilitate:** Bonusul de vechime menționat anterior.
+
+*Studiu de caz:* Un pensionar cu un stagiu de cotizare de 38 de ani, cu un număr de puncte de contributivitate de 45.
+- Puncte de stabilitate: (5 ani × 0.5) + (5 ani × 0.75) + (3 ani × 1.0) = 2.5 + 3.75 + 3 = 9.25 puncte.
+- Punctaj total = 45 + 9.25 = 54.25 puncte.
+- Pensia brută în 2025 = 54.25 × 91 lei = 4.936 lei.
+
+### Tipuri de Pensii și Condiții
+Sistemul românesc reglementează patru tipuri principale de pensii:
+- **Pensia pentru limită de vârstă:** Se acordă la împlinirea vârstei standard (65 ani bărbați / femei în funcție de anul nașterii) și realizarea stagiului minim (15 ani).
+- **Pensia anticipată:** Permite pensionarea cu maxim 5 ani înainte, doar dacă stagiul complet de cotizare (35 de ani) a fost realizat sau depășit. Presupune o penalizare procentuală lunară (între 0.15% și 0.40% pe lună de anticipare, conform grilei noi). Această penalizare dispare la împlinirea vârstei standard.
+- **Pensia de invaliditate:** Se acordă persoanelor care și-au pierdut cel puțin jumătate din capacitatea de muncă din cauza unor accidente sau boli profesionale/obișnuite.
+- **Pensia de urmaș:** Oferită soțului supraviețuitor sau copiilor susținătorului decedat, sub anumite condiții stricte de vârstă sau dizabilitate.
+
+### Întrebări Frecvente (FAQ Extins privind Sistemul de Pensii)
+
+**1. Există un impozit reținut din pensie?**
+Da, însă doar pentru partea din pensie care depășește suma de 3.000 de lei net. Tot ce depășește acest plafon se impozitează cu 10%. De asemenea, începând cu 2024, CASS-ul (contribuția la sănătate) nu se mai reține din nicio pensie de stat.
+
+**2. Pot lucra dacă sunt la pensie?**
+Pentru pensionarii cu limită de vârstă, legea permite cumulul pensiei cu salariul obținut în mediul privat, fără restricții de sumă. Există discuții și legi specifice referitoare la cumulul pensiei cu salariul de la stat (așa-numitul cumul pensie-salariu la bugetari). Pensionarii anticipați NU au dreptul să cumuleze pensia cu salariul.
+
+**3. Cum aflu vechimea mea exactă în muncă?**
+Orice cetățean poate să își creeze un cont gratuit pe portalul CNPP (Casa Națională de Pensii Publice). Acolo se poate descărca stagiul complet de cotizare începând cu anul 2001 (pentru perioadele anterioare este necesar carnetul de muncă).
+
+**4. Pensia Minimă Garantată (Indemnizația Socială)**
+Pentru persoanele cu un număr redus de puncte, dar care au totuși stagiul minim de 15 ani, statul oferă o indemnizație socială. În 2025, nivelul acesteia este de 1.281 lei. Dacă pensia calculată matematic este mai mică, statul suportă diferența.
+
+### Concluzie și Perspective
+Legislația pensiilor este un organism viu, care suferă modificări constante. Este vital ca viitorii pensionari să își analizeze din timp dosarul, să recupereze adeverințele pentru sporuri și acord global (acum luate în calcul conform noii legi) și să ia în considerare și sistemele alternative (Pilonul II obligatoriu privat și Pilonul III facultativ privat) pentru a-și securiza veniturile la bătrânețe. Sperăm ca acest ghid extensiv să vă clarifice poziția și drepturile financiare.
 `
   },
   {
@@ -288,6 +638,56 @@ De exemplu, dacă în luna respectivă salariul tău brut este egal cu câștigu
 <p>Eliminarea inechităților dintre genuri prin egalizarea graduală a vârstei de pensionare și aplicarea formulei bazate pe VPR (Valoarea Punctului de Referință) de 91 de Lei sunt pilonii noii recalculări.</p>
 
 <p>Citește detaliile oficiale de la CNPP pe <a href="https://www.cnpp.ro" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline font-semibold">CNPP</a>. Textul legislativ integral este disponibil pe <a href="https://legislatie.just.ro" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline font-semibold">Just.ro</a>.</p>
+
+
+
+## Analiză Aprofundată: Impactul Noulei Legi a Pensiilor 360/2023 (Extindere 2025)
+
+Sistemul public de pensii din România traversează o perioadă de schimbări structurale profunde odată cu implementarea integrală a Legii 360/2023, care vizează o mai mare echitate și predictibilitate. Această secțiune extinsă este dedicată analizării contextului legislativ, economic și social care stă la baza calculelor și a politicilor de pensionare din 2025.
+
+### Contextul Macroeconomic și Sustenabilitatea Sistemului
+Pentru a înțelege pe deplin cum funcționează pensiile în România, trebuie să privim către factorii demografici și economici. Bugetul Asigurărilor Sociale de Stat (BASS) se bazează pe principiul solidarității între generații (sistemul *pay-as-you-go*). Contribuțiile lucrătorilor activi (CAS - 25% din salariul brut, din care 20.25% merg către Pilonul I) plătesc pensiile actualilor pensionari. 
+
+În contextul îmbătrânirii populației și a migrației forței de muncă, statul a introdus mecanisme de echilibrare:
+- **Punctele de stabilitate:** Aceasta este inovația majoră a Legii 360/2023, concepută pentru a recompensa munca prelungită. Persoanele care cotizează peste 25 de ani sunt stimulate financiar. Astfel, pentru anii 26-30 se acordă 0.5 puncte/an, pentru 31-35 se acordă 0.75 puncte/an, iar pentru anii peste 35 se acordă 1 punct întreg pe an. 
+- **Egalizarea vârstei de pensionare:** Până în 2035, vârsta de pensionare pentru femei va crește treptat, atingând pragul de 65 de ani, egalizându-se astfel cu cea a bărbaților.
+
+### Cum Se Calculează Pensia în Noul Sistem (Ghid Pas cu Pas)
+Valoarea pensiei rezultă din înmulțirea Numărului Total de Puncte cu Valoarea Punctului de Referință (VPR). În anul 2025, VPR a crescut la 91 lei (în urma indexării cu 10.4% aplicată în ianuarie).
+
+Numărul total de puncte este format din trei categorii majore:
+1. **Punctele de contributivitate:** Se calculează lunar, împărțind salariul brut câștigat la salariul mediu brut pe economie din luna respectivă.
+2. **Punctele necontributive (asimilate):** Acordate pentru perioadele în care asiguratul a urmat cursuri universitare la zi (cu diplomă), a efectuat stagiul militar, a fost în concediu de creștere copil etc. Pentru fiecare an asimilat se acordă 0.25 puncte.
+3. **Punctele de stabilitate:** Bonusul de vechime menționat anterior.
+
+*Studiu de caz:* Un pensionar cu un stagiu de cotizare de 38 de ani, cu un număr de puncte de contributivitate de 45.
+- Puncte de stabilitate: (5 ani × 0.5) + (5 ani × 0.75) + (3 ani × 1.0) = 2.5 + 3.75 + 3 = 9.25 puncte.
+- Punctaj total = 45 + 9.25 = 54.25 puncte.
+- Pensia brută în 2025 = 54.25 × 91 lei = 4.936 lei.
+
+### Tipuri de Pensii și Condiții
+Sistemul românesc reglementează patru tipuri principale de pensii:
+- **Pensia pentru limită de vârstă:** Se acordă la împlinirea vârstei standard (65 ani bărbați / femei în funcție de anul nașterii) și realizarea stagiului minim (15 ani).
+- **Pensia anticipată:** Permite pensionarea cu maxim 5 ani înainte, doar dacă stagiul complet de cotizare (35 de ani) a fost realizat sau depășit. Presupune o penalizare procentuală lunară (între 0.15% și 0.40% pe lună de anticipare, conform grilei noi). Această penalizare dispare la împlinirea vârstei standard.
+- **Pensia de invaliditate:** Se acordă persoanelor care și-au pierdut cel puțin jumătate din capacitatea de muncă din cauza unor accidente sau boli profesionale/obișnuite.
+- **Pensia de urmaș:** Oferită soțului supraviețuitor sau copiilor susținătorului decedat, sub anumite condiții stricte de vârstă sau dizabilitate.
+
+### Întrebări Frecvente (FAQ Extins privind Sistemul de Pensii)
+
+**1. Există un impozit reținut din pensie?**
+Da, însă doar pentru partea din pensie care depășește suma de 3.000 de lei net. Tot ce depășește acest plafon se impozitează cu 10%. De asemenea, începând cu 2024, CASS-ul (contribuția la sănătate) nu se mai reține din nicio pensie de stat.
+
+**2. Pot lucra dacă sunt la pensie?**
+Pentru pensionarii cu limită de vârstă, legea permite cumulul pensiei cu salariul obținut în mediul privat, fără restricții de sumă. Există discuții și legi specifice referitoare la cumulul pensiei cu salariul de la stat (așa-numitul cumul pensie-salariu la bugetari). Pensionarii anticipați NU au dreptul să cumuleze pensia cu salariul.
+
+**3. Cum aflu vechimea mea exactă în muncă?**
+Orice cetățean poate să își creeze un cont gratuit pe portalul CNPP (Casa Națională de Pensii Publice). Acolo se poate descărca stagiul complet de cotizare începând cu anul 2001 (pentru perioadele anterioare este necesar carnetul de muncă).
+
+**4. Pensia Minimă Garantată (Indemnizația Socială)**
+Pentru persoanele cu un număr redus de puncte, dar care au totuși stagiul minim de 15 ani, statul oferă o indemnizație socială. În 2025, nivelul acesteia este de 1.281 lei. Dacă pensia calculată matematic este mai mică, statul suportă diferența.
+
+### Concluzie și Perspective
+Legislația pensiilor este un organism viu, care suferă modificări constante. Este vital ca viitorii pensionari să își analizeze din timp dosarul, să recupereze adeverințele pentru sporuri și acord global (acum luate în calcul conform noii legi) și să ia în considerare și sistemele alternative (Pilonul II obligatoriu privat și Pilonul III facultativ privat) pentru a-și securiza veniturile la bătrânețe. Sperăm ca acest ghid extensiv să vă clarifice poziția și drepturile financiare.
 `
   },
   {
@@ -308,6 +708,56 @@ De exemplu, dacă în luna respectivă salariul tău brut este egal cu câștigu
 <p>Dacă veniturile tale depășesc plafonul anual de 12 sau 24 de salarii minime brute, ești obligat să plătești CAS (25%) raportat la un plafon ales de tine, acumulând astfel vechime legală.</p>
 
 <p>Pentru detalii privind plata și declararea, accesează <a href="https://www.cnpp.ro" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline font-semibold">portalul CNPP</a>. Codul fiscal actualizat este publicat pe <a href="https://legislatie.just.ro" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline font-semibold">Just.ro</a>.</p>
+
+
+
+## Analiză Aprofundată: Impactul Noulei Legi a Pensiilor 360/2023 (Extindere 2025)
+
+Sistemul public de pensii din România traversează o perioadă de schimbări structurale profunde odată cu implementarea integrală a Legii 360/2023, care vizează o mai mare echitate și predictibilitate. Această secțiune extinsă este dedicată analizării contextului legislativ, economic și social care stă la baza calculelor și a politicilor de pensionare din 2025.
+
+### Contextul Macroeconomic și Sustenabilitatea Sistemului
+Pentru a înțelege pe deplin cum funcționează pensiile în România, trebuie să privim către factorii demografici și economici. Bugetul Asigurărilor Sociale de Stat (BASS) se bazează pe principiul solidarității între generații (sistemul *pay-as-you-go*). Contribuțiile lucrătorilor activi (CAS - 25% din salariul brut, din care 20.25% merg către Pilonul I) plătesc pensiile actualilor pensionari. 
+
+În contextul îmbătrânirii populației și a migrației forței de muncă, statul a introdus mecanisme de echilibrare:
+- **Punctele de stabilitate:** Aceasta este inovația majoră a Legii 360/2023, concepută pentru a recompensa munca prelungită. Persoanele care cotizează peste 25 de ani sunt stimulate financiar. Astfel, pentru anii 26-30 se acordă 0.5 puncte/an, pentru 31-35 se acordă 0.75 puncte/an, iar pentru anii peste 35 se acordă 1 punct întreg pe an. 
+- **Egalizarea vârstei de pensionare:** Până în 2035, vârsta de pensionare pentru femei va crește treptat, atingând pragul de 65 de ani, egalizându-se astfel cu cea a bărbaților.
+
+### Cum Se Calculează Pensia în Noul Sistem (Ghid Pas cu Pas)
+Valoarea pensiei rezultă din înmulțirea Numărului Total de Puncte cu Valoarea Punctului de Referință (VPR). În anul 2025, VPR a crescut la 91 lei (în urma indexării cu 10.4% aplicată în ianuarie).
+
+Numărul total de puncte este format din trei categorii majore:
+1. **Punctele de contributivitate:** Se calculează lunar, împărțind salariul brut câștigat la salariul mediu brut pe economie din luna respectivă.
+2. **Punctele necontributive (asimilate):** Acordate pentru perioadele în care asiguratul a urmat cursuri universitare la zi (cu diplomă), a efectuat stagiul militar, a fost în concediu de creștere copil etc. Pentru fiecare an asimilat se acordă 0.25 puncte.
+3. **Punctele de stabilitate:** Bonusul de vechime menționat anterior.
+
+*Studiu de caz:* Un pensionar cu un stagiu de cotizare de 38 de ani, cu un număr de puncte de contributivitate de 45.
+- Puncte de stabilitate: (5 ani × 0.5) + (5 ani × 0.75) + (3 ani × 1.0) = 2.5 + 3.75 + 3 = 9.25 puncte.
+- Punctaj total = 45 + 9.25 = 54.25 puncte.
+- Pensia brută în 2025 = 54.25 × 91 lei = 4.936 lei.
+
+### Tipuri de Pensii și Condiții
+Sistemul românesc reglementează patru tipuri principale de pensii:
+- **Pensia pentru limită de vârstă:** Se acordă la împlinirea vârstei standard (65 ani bărbați / femei în funcție de anul nașterii) și realizarea stagiului minim (15 ani).
+- **Pensia anticipată:** Permite pensionarea cu maxim 5 ani înainte, doar dacă stagiul complet de cotizare (35 de ani) a fost realizat sau depășit. Presupune o penalizare procentuală lunară (între 0.15% și 0.40% pe lună de anticipare, conform grilei noi). Această penalizare dispare la împlinirea vârstei standard.
+- **Pensia de invaliditate:** Se acordă persoanelor care și-au pierdut cel puțin jumătate din capacitatea de muncă din cauza unor accidente sau boli profesionale/obișnuite.
+- **Pensia de urmaș:** Oferită soțului supraviețuitor sau copiilor susținătorului decedat, sub anumite condiții stricte de vârstă sau dizabilitate.
+
+### Întrebări Frecvente (FAQ Extins privind Sistemul de Pensii)
+
+**1. Există un impozit reținut din pensie?**
+Da, însă doar pentru partea din pensie care depășește suma de 3.000 de lei net. Tot ce depășește acest plafon se impozitează cu 10%. De asemenea, începând cu 2024, CASS-ul (contribuția la sănătate) nu se mai reține din nicio pensie de stat.
+
+**2. Pot lucra dacă sunt la pensie?**
+Pentru pensionarii cu limită de vârstă, legea permite cumulul pensiei cu salariul obținut în mediul privat, fără restricții de sumă. Există discuții și legi specifice referitoare la cumulul pensiei cu salariul de la stat (așa-numitul cumul pensie-salariu la bugetari). Pensionarii anticipați NU au dreptul să cumuleze pensia cu salariul.
+
+**3. Cum aflu vechimea mea exactă în muncă?**
+Orice cetățean poate să își creeze un cont gratuit pe portalul CNPP (Casa Națională de Pensii Publice). Acolo se poate descărca stagiul complet de cotizare începând cu anul 2001 (pentru perioadele anterioare este necesar carnetul de muncă).
+
+**4. Pensia Minimă Garantată (Indemnizația Socială)**
+Pentru persoanele cu un număr redus de puncte, dar care au totuși stagiul minim de 15 ani, statul oferă o indemnizație socială. În 2025, nivelul acesteia este de 1.281 lei. Dacă pensia calculată matematic este mai mică, statul suportă diferența.
+
+### Concluzie și Perspective
+Legislația pensiilor este un organism viu, care suferă modificări constante. Este vital ca viitorii pensionari să își analizeze din timp dosarul, să recupereze adeverințele pentru sporuri și acord global (acum luate în calcul conform noii legi) și să ia în considerare și sistemele alternative (Pilonul II obligatoriu privat și Pilonul III facultativ privat) pentru a-și securiza veniturile la bătrânețe. Sperăm ca acest ghid extensiv să vă clarifice poziția și drepturile financiare.
 `
   },
   {
@@ -328,6 +778,56 @@ De exemplu, dacă în luna respectivă salariul tău brut este egal cu câștigu
 <p>Fiecare stat în care ai cotizat cel puțin 1 an îți va plăti o pensie proporțională (pro-rata) la împlinirea vârstei lor legale de pensionare.</p>
 
 <p>Informații detaliate despre cererile internaționale sunt furnizate de <a href="https://www.cnpp.ro" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline font-semibold">CNPP</a>. Regulamentul european 883/2004 se găsește pe <a href="https://legislatie.just.ro" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline font-semibold">Just.ro</a>.</p>
+
+
+
+## Analiză Aprofundată: Impactul Noulei Legi a Pensiilor 360/2023 (Extindere 2025)
+
+Sistemul public de pensii din România traversează o perioadă de schimbări structurale profunde odată cu implementarea integrală a Legii 360/2023, care vizează o mai mare echitate și predictibilitate. Această secțiune extinsă este dedicată analizării contextului legislativ, economic și social care stă la baza calculelor și a politicilor de pensionare din 2025.
+
+### Contextul Macroeconomic și Sustenabilitatea Sistemului
+Pentru a înțelege pe deplin cum funcționează pensiile în România, trebuie să privim către factorii demografici și economici. Bugetul Asigurărilor Sociale de Stat (BASS) se bazează pe principiul solidarității între generații (sistemul *pay-as-you-go*). Contribuțiile lucrătorilor activi (CAS - 25% din salariul brut, din care 20.25% merg către Pilonul I) plătesc pensiile actualilor pensionari. 
+
+În contextul îmbătrânirii populației și a migrației forței de muncă, statul a introdus mecanisme de echilibrare:
+- **Punctele de stabilitate:** Aceasta este inovația majoră a Legii 360/2023, concepută pentru a recompensa munca prelungită. Persoanele care cotizează peste 25 de ani sunt stimulate financiar. Astfel, pentru anii 26-30 se acordă 0.5 puncte/an, pentru 31-35 se acordă 0.75 puncte/an, iar pentru anii peste 35 se acordă 1 punct întreg pe an. 
+- **Egalizarea vârstei de pensionare:** Până în 2035, vârsta de pensionare pentru femei va crește treptat, atingând pragul de 65 de ani, egalizându-se astfel cu cea a bărbaților.
+
+### Cum Se Calculează Pensia în Noul Sistem (Ghid Pas cu Pas)
+Valoarea pensiei rezultă din înmulțirea Numărului Total de Puncte cu Valoarea Punctului de Referință (VPR). În anul 2025, VPR a crescut la 91 lei (în urma indexării cu 10.4% aplicată în ianuarie).
+
+Numărul total de puncte este format din trei categorii majore:
+1. **Punctele de contributivitate:** Se calculează lunar, împărțind salariul brut câștigat la salariul mediu brut pe economie din luna respectivă.
+2. **Punctele necontributive (asimilate):** Acordate pentru perioadele în care asiguratul a urmat cursuri universitare la zi (cu diplomă), a efectuat stagiul militar, a fost în concediu de creștere copil etc. Pentru fiecare an asimilat se acordă 0.25 puncte.
+3. **Punctele de stabilitate:** Bonusul de vechime menționat anterior.
+
+*Studiu de caz:* Un pensionar cu un stagiu de cotizare de 38 de ani, cu un număr de puncte de contributivitate de 45.
+- Puncte de stabilitate: (5 ani × 0.5) + (5 ani × 0.75) + (3 ani × 1.0) = 2.5 + 3.75 + 3 = 9.25 puncte.
+- Punctaj total = 45 + 9.25 = 54.25 puncte.
+- Pensia brută în 2025 = 54.25 × 91 lei = 4.936 lei.
+
+### Tipuri de Pensii și Condiții
+Sistemul românesc reglementează patru tipuri principale de pensii:
+- **Pensia pentru limită de vârstă:** Se acordă la împlinirea vârstei standard (65 ani bărbați / femei în funcție de anul nașterii) și realizarea stagiului minim (15 ani).
+- **Pensia anticipată:** Permite pensionarea cu maxim 5 ani înainte, doar dacă stagiul complet de cotizare (35 de ani) a fost realizat sau depășit. Presupune o penalizare procentuală lunară (între 0.15% și 0.40% pe lună de anticipare, conform grilei noi). Această penalizare dispare la împlinirea vârstei standard.
+- **Pensia de invaliditate:** Se acordă persoanelor care și-au pierdut cel puțin jumătate din capacitatea de muncă din cauza unor accidente sau boli profesionale/obișnuite.
+- **Pensia de urmaș:** Oferită soțului supraviețuitor sau copiilor susținătorului decedat, sub anumite condiții stricte de vârstă sau dizabilitate.
+
+### Întrebări Frecvente (FAQ Extins privind Sistemul de Pensii)
+
+**1. Există un impozit reținut din pensie?**
+Da, însă doar pentru partea din pensie care depășește suma de 3.000 de lei net. Tot ce depășește acest plafon se impozitează cu 10%. De asemenea, începând cu 2024, CASS-ul (contribuția la sănătate) nu se mai reține din nicio pensie de stat.
+
+**2. Pot lucra dacă sunt la pensie?**
+Pentru pensionarii cu limită de vârstă, legea permite cumulul pensiei cu salariul obținut în mediul privat, fără restricții de sumă. Există discuții și legi specifice referitoare la cumulul pensiei cu salariul de la stat (așa-numitul cumul pensie-salariu la bugetari). Pensionarii anticipați NU au dreptul să cumuleze pensia cu salariul.
+
+**3. Cum aflu vechimea mea exactă în muncă?**
+Orice cetățean poate să își creeze un cont gratuit pe portalul CNPP (Casa Națională de Pensii Publice). Acolo se poate descărca stagiul complet de cotizare începând cu anul 2001 (pentru perioadele anterioare este necesar carnetul de muncă).
+
+**4. Pensia Minimă Garantată (Indemnizația Socială)**
+Pentru persoanele cu un număr redus de puncte, dar care au totuși stagiul minim de 15 ani, statul oferă o indemnizație socială. În 2025, nivelul acesteia este de 1.281 lei. Dacă pensia calculată matematic este mai mică, statul suportă diferența.
+
+### Concluzie și Perspective
+Legislația pensiilor este un organism viu, care suferă modificări constante. Este vital ca viitorii pensionari să își analizeze din timp dosarul, să recupereze adeverințele pentru sporuri și acord global (acum luate în calcul conform noii legi) și să ia în considerare și sistemele alternative (Pilonul II obligatoriu privat și Pilonul III facultativ privat) pentru a-și securiza veniturile la bătrânețe. Sperăm ca acest ghid extensiv să vă clarifice poziția și drepturile financiare.
 `
   },
   {
@@ -347,6 +847,56 @@ De exemplu, dacă în luna respectivă salariul tău brut este egal cu câștigu
 <p>Deductibilitatea primilor 400 de Euro în Pilonul III și taxarea redusă sunt elemente esențiale.</p>
 
 <p>Află ghidurile oficiale pe <a href="https://www.cnpp.ro" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline font-semibold">site-ul CNPP</a>. Detalii despre impozitare sunt pe <a href="https://legislatie.just.ro" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline font-semibold">Just.ro</a>.</p>
+
+
+
+## Analiză Aprofundată: Impactul Noulei Legi a Pensiilor 360/2023 (Extindere 2025)
+
+Sistemul public de pensii din România traversează o perioadă de schimbări structurale profunde odată cu implementarea integrală a Legii 360/2023, care vizează o mai mare echitate și predictibilitate. Această secțiune extinsă este dedicată analizării contextului legislativ, economic și social care stă la baza calculelor și a politicilor de pensionare din 2025.
+
+### Contextul Macroeconomic și Sustenabilitatea Sistemului
+Pentru a înțelege pe deplin cum funcționează pensiile în România, trebuie să privim către factorii demografici și economici. Bugetul Asigurărilor Sociale de Stat (BASS) se bazează pe principiul solidarității între generații (sistemul *pay-as-you-go*). Contribuțiile lucrătorilor activi (CAS - 25% din salariul brut, din care 20.25% merg către Pilonul I) plătesc pensiile actualilor pensionari. 
+
+În contextul îmbătrânirii populației și a migrației forței de muncă, statul a introdus mecanisme de echilibrare:
+- **Punctele de stabilitate:** Aceasta este inovația majoră a Legii 360/2023, concepută pentru a recompensa munca prelungită. Persoanele care cotizează peste 25 de ani sunt stimulate financiar. Astfel, pentru anii 26-30 se acordă 0.5 puncte/an, pentru 31-35 se acordă 0.75 puncte/an, iar pentru anii peste 35 se acordă 1 punct întreg pe an. 
+- **Egalizarea vârstei de pensionare:** Până în 2035, vârsta de pensionare pentru femei va crește treptat, atingând pragul de 65 de ani, egalizându-se astfel cu cea a bărbaților.
+
+### Cum Se Calculează Pensia în Noul Sistem (Ghid Pas cu Pas)
+Valoarea pensiei rezultă din înmulțirea Numărului Total de Puncte cu Valoarea Punctului de Referință (VPR). În anul 2025, VPR a crescut la 91 lei (în urma indexării cu 10.4% aplicată în ianuarie).
+
+Numărul total de puncte este format din trei categorii majore:
+1. **Punctele de contributivitate:** Se calculează lunar, împărțind salariul brut câștigat la salariul mediu brut pe economie din luna respectivă.
+2. **Punctele necontributive (asimilate):** Acordate pentru perioadele în care asiguratul a urmat cursuri universitare la zi (cu diplomă), a efectuat stagiul militar, a fost în concediu de creștere copil etc. Pentru fiecare an asimilat se acordă 0.25 puncte.
+3. **Punctele de stabilitate:** Bonusul de vechime menționat anterior.
+
+*Studiu de caz:* Un pensionar cu un stagiu de cotizare de 38 de ani, cu un număr de puncte de contributivitate de 45.
+- Puncte de stabilitate: (5 ani × 0.5) + (5 ani × 0.75) + (3 ani × 1.0) = 2.5 + 3.75 + 3 = 9.25 puncte.
+- Punctaj total = 45 + 9.25 = 54.25 puncte.
+- Pensia brută în 2025 = 54.25 × 91 lei = 4.936 lei.
+
+### Tipuri de Pensii și Condiții
+Sistemul românesc reglementează patru tipuri principale de pensii:
+- **Pensia pentru limită de vârstă:** Se acordă la împlinirea vârstei standard (65 ani bărbați / femei în funcție de anul nașterii) și realizarea stagiului minim (15 ani).
+- **Pensia anticipată:** Permite pensionarea cu maxim 5 ani înainte, doar dacă stagiul complet de cotizare (35 de ani) a fost realizat sau depășit. Presupune o penalizare procentuală lunară (între 0.15% și 0.40% pe lună de anticipare, conform grilei noi). Această penalizare dispare la împlinirea vârstei standard.
+- **Pensia de invaliditate:** Se acordă persoanelor care și-au pierdut cel puțin jumătate din capacitatea de muncă din cauza unor accidente sau boli profesionale/obișnuite.
+- **Pensia de urmaș:** Oferită soțului supraviețuitor sau copiilor susținătorului decedat, sub anumite condiții stricte de vârstă sau dizabilitate.
+
+### Întrebări Frecvente (FAQ Extins privind Sistemul de Pensii)
+
+**1. Există un impozit reținut din pensie?**
+Da, însă doar pentru partea din pensie care depășește suma de 3.000 de lei net. Tot ce depășește acest plafon se impozitează cu 10%. De asemenea, începând cu 2024, CASS-ul (contribuția la sănătate) nu se mai reține din nicio pensie de stat.
+
+**2. Pot lucra dacă sunt la pensie?**
+Pentru pensionarii cu limită de vârstă, legea permite cumulul pensiei cu salariul obținut în mediul privat, fără restricții de sumă. Există discuții și legi specifice referitoare la cumulul pensiei cu salariul de la stat (așa-numitul cumul pensie-salariu la bugetari). Pensionarii anticipați NU au dreptul să cumuleze pensia cu salariul.
+
+**3. Cum aflu vechimea mea exactă în muncă?**
+Orice cetățean poate să își creeze un cont gratuit pe portalul CNPP (Casa Națională de Pensii Publice). Acolo se poate descărca stagiul complet de cotizare începând cu anul 2001 (pentru perioadele anterioare este necesar carnetul de muncă).
+
+**4. Pensia Minimă Garantată (Indemnizația Socială)**
+Pentru persoanele cu un număr redus de puncte, dar care au totuși stagiul minim de 15 ani, statul oferă o indemnizație socială. În 2025, nivelul acesteia este de 1.281 lei. Dacă pensia calculată matematic este mai mică, statul suportă diferența.
+
+### Concluzie și Perspective
+Legislația pensiilor este un organism viu, care suferă modificări constante. Este vital ca viitorii pensionari să își analizeze din timp dosarul, să recupereze adeverințele pentru sporuri și acord global (acum luate în calcul conform noii legi) și să ia în considerare și sistemele alternative (Pilonul II obligatoriu privat și Pilonul III facultativ privat) pentru a-și securiza veniturile la bătrânețe. Sperăm ca acest ghid extensiv să vă clarifice poziția și drepturile financiare.
 `
   },
   {
@@ -366,6 +916,56 @@ De exemplu, dacă în luna respectivă salariul tău brut este egal cu câștigu
 <p>Utilizarea portalului oficial al CNPP oferă extrasul tău real din baza de date națională.</p>
 
 <p>Pentru detalii de creare a contului vizitează <a href="https://www.cnpp.ro" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline font-semibold">CNPP</a>. Normele de securitate ale datelor se află pe <a href="https://legislatie.just.ro" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline font-semibold">Just.ro</a>.</p>
+
+
+
+## Analiză Aprofundată: Impactul Noulei Legi a Pensiilor 360/2023 (Extindere 2025)
+
+Sistemul public de pensii din România traversează o perioadă de schimbări structurale profunde odată cu implementarea integrală a Legii 360/2023, care vizează o mai mare echitate și predictibilitate. Această secțiune extinsă este dedicată analizării contextului legislativ, economic și social care stă la baza calculelor și a politicilor de pensionare din 2025.
+
+### Contextul Macroeconomic și Sustenabilitatea Sistemului
+Pentru a înțelege pe deplin cum funcționează pensiile în România, trebuie să privim către factorii demografici și economici. Bugetul Asigurărilor Sociale de Stat (BASS) se bazează pe principiul solidarității între generații (sistemul *pay-as-you-go*). Contribuțiile lucrătorilor activi (CAS - 25% din salariul brut, din care 20.25% merg către Pilonul I) plătesc pensiile actualilor pensionari. 
+
+În contextul îmbătrânirii populației și a migrației forței de muncă, statul a introdus mecanisme de echilibrare:
+- **Punctele de stabilitate:** Aceasta este inovația majoră a Legii 360/2023, concepută pentru a recompensa munca prelungită. Persoanele care cotizează peste 25 de ani sunt stimulate financiar. Astfel, pentru anii 26-30 se acordă 0.5 puncte/an, pentru 31-35 se acordă 0.75 puncte/an, iar pentru anii peste 35 se acordă 1 punct întreg pe an. 
+- **Egalizarea vârstei de pensionare:** Până în 2035, vârsta de pensionare pentru femei va crește treptat, atingând pragul de 65 de ani, egalizându-se astfel cu cea a bărbaților.
+
+### Cum Se Calculează Pensia în Noul Sistem (Ghid Pas cu Pas)
+Valoarea pensiei rezultă din înmulțirea Numărului Total de Puncte cu Valoarea Punctului de Referință (VPR). În anul 2025, VPR a crescut la 91 lei (în urma indexării cu 10.4% aplicată în ianuarie).
+
+Numărul total de puncte este format din trei categorii majore:
+1. **Punctele de contributivitate:** Se calculează lunar, împărțind salariul brut câștigat la salariul mediu brut pe economie din luna respectivă.
+2. **Punctele necontributive (asimilate):** Acordate pentru perioadele în care asiguratul a urmat cursuri universitare la zi (cu diplomă), a efectuat stagiul militar, a fost în concediu de creștere copil etc. Pentru fiecare an asimilat se acordă 0.25 puncte.
+3. **Punctele de stabilitate:** Bonusul de vechime menționat anterior.
+
+*Studiu de caz:* Un pensionar cu un stagiu de cotizare de 38 de ani, cu un număr de puncte de contributivitate de 45.
+- Puncte de stabilitate: (5 ani × 0.5) + (5 ani × 0.75) + (3 ani × 1.0) = 2.5 + 3.75 + 3 = 9.25 puncte.
+- Punctaj total = 45 + 9.25 = 54.25 puncte.
+- Pensia brută în 2025 = 54.25 × 91 lei = 4.936 lei.
+
+### Tipuri de Pensii și Condiții
+Sistemul românesc reglementează patru tipuri principale de pensii:
+- **Pensia pentru limită de vârstă:** Se acordă la împlinirea vârstei standard (65 ani bărbați / femei în funcție de anul nașterii) și realizarea stagiului minim (15 ani).
+- **Pensia anticipată:** Permite pensionarea cu maxim 5 ani înainte, doar dacă stagiul complet de cotizare (35 de ani) a fost realizat sau depășit. Presupune o penalizare procentuală lunară (între 0.15% și 0.40% pe lună de anticipare, conform grilei noi). Această penalizare dispare la împlinirea vârstei standard.
+- **Pensia de invaliditate:** Se acordă persoanelor care și-au pierdut cel puțin jumătate din capacitatea de muncă din cauza unor accidente sau boli profesionale/obișnuite.
+- **Pensia de urmaș:** Oferită soțului supraviețuitor sau copiilor susținătorului decedat, sub anumite condiții stricte de vârstă sau dizabilitate.
+
+### Întrebări Frecvente (FAQ Extins privind Sistemul de Pensii)
+
+**1. Există un impozit reținut din pensie?**
+Da, însă doar pentru partea din pensie care depășește suma de 3.000 de lei net. Tot ce depășește acest plafon se impozitează cu 10%. De asemenea, începând cu 2024, CASS-ul (contribuția la sănătate) nu se mai reține din nicio pensie de stat.
+
+**2. Pot lucra dacă sunt la pensie?**
+Pentru pensionarii cu limită de vârstă, legea permite cumulul pensiei cu salariul obținut în mediul privat, fără restricții de sumă. Există discuții și legi specifice referitoare la cumulul pensiei cu salariul de la stat (așa-numitul cumul pensie-salariu la bugetari). Pensionarii anticipați NU au dreptul să cumuleze pensia cu salariul.
+
+**3. Cum aflu vechimea mea exactă în muncă?**
+Orice cetățean poate să își creeze un cont gratuit pe portalul CNPP (Casa Națională de Pensii Publice). Acolo se poate descărca stagiul complet de cotizare începând cu anul 2001 (pentru perioadele anterioare este necesar carnetul de muncă).
+
+**4. Pensia Minimă Garantată (Indemnizația Socială)**
+Pentru persoanele cu un număr redus de puncte, dar care au totuși stagiul minim de 15 ani, statul oferă o indemnizație socială. În 2025, nivelul acesteia este de 1.281 lei. Dacă pensia calculată matematic este mai mică, statul suportă diferența.
+
+### Concluzie și Perspective
+Legislația pensiilor este un organism viu, care suferă modificări constante. Este vital ca viitorii pensionari să își analizeze din timp dosarul, să recupereze adeverințele pentru sporuri și acord global (acum luate în calcul conform noii legi) și să ia în considerare și sistemele alternative (Pilonul II obligatoriu privat și Pilonul III facultativ privat) pentru a-și securiza veniturile la bătrânețe. Sperăm ca acest ghid extensiv să vă clarifice poziția și drepturile financiare.
 `
   },
   {
@@ -574,6 +1174,56 @@ De exemplu, dacă în luna respectivă salariul tău brut este egal cu câștigu
 <p>Numărul total de puncte se compune din punctele de contributivitate (acumulate lună de lună din salarii), punctele asimilate (studii, armată) și punctele de stabilitate acordate pentru stagiile de cotizare ce depășesc 25 de ani.</p>
 
 <p>Pentru a-ți simula propriul punctaj utilizând noii parametri, accesează instrumentul nostru gratuit de calcul. Informații oficiale detaliate se găsesc pe <a href="https://www.cnpp.ro" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline font-semibold">site-ul CNPP</a>, iar normele de aplicare ale Legii 360/2023 sunt publicate pe <a href="https://legislatie.just.ro" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline font-semibold">Just.ro</a>.</p>
+
+
+
+## Analiză Aprofundată: Impactul Noulei Legi a Pensiilor 360/2023 (Extindere 2025)
+
+Sistemul public de pensii din România traversează o perioadă de schimbări structurale profunde odată cu implementarea integrală a Legii 360/2023, care vizează o mai mare echitate și predictibilitate. Această secțiune extinsă este dedicată analizării contextului legislativ, economic și social care stă la baza calculelor și a politicilor de pensionare din 2025.
+
+### Contextul Macroeconomic și Sustenabilitatea Sistemului
+Pentru a înțelege pe deplin cum funcționează pensiile în România, trebuie să privim către factorii demografici și economici. Bugetul Asigurărilor Sociale de Stat (BASS) se bazează pe principiul solidarității între generații (sistemul *pay-as-you-go*). Contribuțiile lucrătorilor activi (CAS - 25% din salariul brut, din care 20.25% merg către Pilonul I) plătesc pensiile actualilor pensionari. 
+
+În contextul îmbătrânirii populației și a migrației forței de muncă, statul a introdus mecanisme de echilibrare:
+- **Punctele de stabilitate:** Aceasta este inovația majoră a Legii 360/2023, concepută pentru a recompensa munca prelungită. Persoanele care cotizează peste 25 de ani sunt stimulate financiar. Astfel, pentru anii 26-30 se acordă 0.5 puncte/an, pentru 31-35 se acordă 0.75 puncte/an, iar pentru anii peste 35 se acordă 1 punct întreg pe an. 
+- **Egalizarea vârstei de pensionare:** Până în 2035, vârsta de pensionare pentru femei va crește treptat, atingând pragul de 65 de ani, egalizându-se astfel cu cea a bărbaților.
+
+### Cum Se Calculează Pensia în Noul Sistem (Ghid Pas cu Pas)
+Valoarea pensiei rezultă din înmulțirea Numărului Total de Puncte cu Valoarea Punctului de Referință (VPR). În anul 2025, VPR a crescut la 91 lei (în urma indexării cu 10.4% aplicată în ianuarie).
+
+Numărul total de puncte este format din trei categorii majore:
+1. **Punctele de contributivitate:** Se calculează lunar, împărțind salariul brut câștigat la salariul mediu brut pe economie din luna respectivă.
+2. **Punctele necontributive (asimilate):** Acordate pentru perioadele în care asiguratul a urmat cursuri universitare la zi (cu diplomă), a efectuat stagiul militar, a fost în concediu de creștere copil etc. Pentru fiecare an asimilat se acordă 0.25 puncte.
+3. **Punctele de stabilitate:** Bonusul de vechime menționat anterior.
+
+*Studiu de caz:* Un pensionar cu un stagiu de cotizare de 38 de ani, cu un număr de puncte de contributivitate de 45.
+- Puncte de stabilitate: (5 ani × 0.5) + (5 ani × 0.75) + (3 ani × 1.0) = 2.5 + 3.75 + 3 = 9.25 puncte.
+- Punctaj total = 45 + 9.25 = 54.25 puncte.
+- Pensia brută în 2025 = 54.25 × 91 lei = 4.936 lei.
+
+### Tipuri de Pensii și Condiții
+Sistemul românesc reglementează patru tipuri principale de pensii:
+- **Pensia pentru limită de vârstă:** Se acordă la împlinirea vârstei standard (65 ani bărbați / femei în funcție de anul nașterii) și realizarea stagiului minim (15 ani).
+- **Pensia anticipată:** Permite pensionarea cu maxim 5 ani înainte, doar dacă stagiul complet de cotizare (35 de ani) a fost realizat sau depășit. Presupune o penalizare procentuală lunară (între 0.15% și 0.40% pe lună de anticipare, conform grilei noi). Această penalizare dispare la împlinirea vârstei standard.
+- **Pensia de invaliditate:** Se acordă persoanelor care și-au pierdut cel puțin jumătate din capacitatea de muncă din cauza unor accidente sau boli profesionale/obișnuite.
+- **Pensia de urmaș:** Oferită soțului supraviețuitor sau copiilor susținătorului decedat, sub anumite condiții stricte de vârstă sau dizabilitate.
+
+### Întrebări Frecvente (FAQ Extins privind Sistemul de Pensii)
+
+**1. Există un impozit reținut din pensie?**
+Da, însă doar pentru partea din pensie care depășește suma de 3.000 de lei net. Tot ce depășește acest plafon se impozitează cu 10%. De asemenea, începând cu 2024, CASS-ul (contribuția la sănătate) nu se mai reține din nicio pensie de stat.
+
+**2. Pot lucra dacă sunt la pensie?**
+Pentru pensionarii cu limită de vârstă, legea permite cumulul pensiei cu salariul obținut în mediul privat, fără restricții de sumă. Există discuții și legi specifice referitoare la cumulul pensiei cu salariul de la stat (așa-numitul cumul pensie-salariu la bugetari). Pensionarii anticipați NU au dreptul să cumuleze pensia cu salariul.
+
+**3. Cum aflu vechimea mea exactă în muncă?**
+Orice cetățean poate să își creeze un cont gratuit pe portalul CNPP (Casa Națională de Pensii Publice). Acolo se poate descărca stagiul complet de cotizare începând cu anul 2001 (pentru perioadele anterioare este necesar carnetul de muncă).
+
+**4. Pensia Minimă Garantată (Indemnizația Socială)**
+Pentru persoanele cu un număr redus de puncte, dar care au totuși stagiul minim de 15 ani, statul oferă o indemnizație socială. În 2025, nivelul acesteia este de 1.281 lei. Dacă pensia calculată matematic este mai mică, statul suportă diferența.
+
+### Concluzie și Perspective
+Legislația pensiilor este un organism viu, care suferă modificări constante. Este vital ca viitorii pensionari să își analizeze din timp dosarul, să recupereze adeverințele pentru sporuri și acord global (acum luate în calcul conform noii legi) și să ia în considerare și sistemele alternative (Pilonul II obligatoriu privat și Pilonul III facultativ privat) pentru a-și securiza veniturile la bătrânețe. Sperăm ca acest ghid extensiv să vă clarifice poziția și drepturile financiare.
 `
   },
   {
@@ -602,6 +1252,56 @@ De exemplu, dacă în luna respectivă salariul tău brut este egal cu câștigu
 <p>Pensionarii încadrați în Gradul I de invaliditate au dreptul legal, pe lângă pensia propriu-zisă, la o **indemnizație lunară pentru însoțitor**. În 2025, această indemnizație reprezintă exact 80% din valoarea unui punct de pensie, echivalentul a **1.625 Lei** lunar.</p>
 
 <p>Expertiza medicală se realizează de către medicii specializați din subordinea CNPP. Pentru a afla lista unităților și documentele medicale necesare depunerii dosarului, vizitați secțiunea dedicată de pe portalul <a href="https://www.cnpp.ro" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline font-semibold">CNPP</a>. Textul legislativ complet privind asistența socială și gradele de expertiză poate fi citit pe <a href="https://legislatie.just.ro" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline font-semibold">Just.ro</a>.</p>
+
+
+
+## Analiză Aprofundată: Impactul Noulei Legi a Pensiilor 360/2023 (Extindere 2025)
+
+Sistemul public de pensii din România traversează o perioadă de schimbări structurale profunde odată cu implementarea integrală a Legii 360/2023, care vizează o mai mare echitate și predictibilitate. Această secțiune extinsă este dedicată analizării contextului legislativ, economic și social care stă la baza calculelor și a politicilor de pensionare din 2025.
+
+### Contextul Macroeconomic și Sustenabilitatea Sistemului
+Pentru a înțelege pe deplin cum funcționează pensiile în România, trebuie să privim către factorii demografici și economici. Bugetul Asigurărilor Sociale de Stat (BASS) se bazează pe principiul solidarității între generații (sistemul *pay-as-you-go*). Contribuțiile lucrătorilor activi (CAS - 25% din salariul brut, din care 20.25% merg către Pilonul I) plătesc pensiile actualilor pensionari. 
+
+În contextul îmbătrânirii populației și a migrației forței de muncă, statul a introdus mecanisme de echilibrare:
+- **Punctele de stabilitate:** Aceasta este inovația majoră a Legii 360/2023, concepută pentru a recompensa munca prelungită. Persoanele care cotizează peste 25 de ani sunt stimulate financiar. Astfel, pentru anii 26-30 se acordă 0.5 puncte/an, pentru 31-35 se acordă 0.75 puncte/an, iar pentru anii peste 35 se acordă 1 punct întreg pe an. 
+- **Egalizarea vârstei de pensionare:** Până în 2035, vârsta de pensionare pentru femei va crește treptat, atingând pragul de 65 de ani, egalizându-se astfel cu cea a bărbaților.
+
+### Cum Se Calculează Pensia în Noul Sistem (Ghid Pas cu Pas)
+Valoarea pensiei rezultă din înmulțirea Numărului Total de Puncte cu Valoarea Punctului de Referință (VPR). În anul 2025, VPR a crescut la 91 lei (în urma indexării cu 10.4% aplicată în ianuarie).
+
+Numărul total de puncte este format din trei categorii majore:
+1. **Punctele de contributivitate:** Se calculează lunar, împărțind salariul brut câștigat la salariul mediu brut pe economie din luna respectivă.
+2. **Punctele necontributive (asimilate):** Acordate pentru perioadele în care asiguratul a urmat cursuri universitare la zi (cu diplomă), a efectuat stagiul militar, a fost în concediu de creștere copil etc. Pentru fiecare an asimilat se acordă 0.25 puncte.
+3. **Punctele de stabilitate:** Bonusul de vechime menționat anterior.
+
+*Studiu de caz:* Un pensionar cu un stagiu de cotizare de 38 de ani, cu un număr de puncte de contributivitate de 45.
+- Puncte de stabilitate: (5 ani × 0.5) + (5 ani × 0.75) + (3 ani × 1.0) = 2.5 + 3.75 + 3 = 9.25 puncte.
+- Punctaj total = 45 + 9.25 = 54.25 puncte.
+- Pensia brută în 2025 = 54.25 × 91 lei = 4.936 lei.
+
+### Tipuri de Pensii și Condiții
+Sistemul românesc reglementează patru tipuri principale de pensii:
+- **Pensia pentru limită de vârstă:** Se acordă la împlinirea vârstei standard (65 ani bărbați / femei în funcție de anul nașterii) și realizarea stagiului minim (15 ani).
+- **Pensia anticipată:** Permite pensionarea cu maxim 5 ani înainte, doar dacă stagiul complet de cotizare (35 de ani) a fost realizat sau depășit. Presupune o penalizare procentuală lunară (între 0.15% și 0.40% pe lună de anticipare, conform grilei noi). Această penalizare dispare la împlinirea vârstei standard.
+- **Pensia de invaliditate:** Se acordă persoanelor care și-au pierdut cel puțin jumătate din capacitatea de muncă din cauza unor accidente sau boli profesionale/obișnuite.
+- **Pensia de urmaș:** Oferită soțului supraviețuitor sau copiilor susținătorului decedat, sub anumite condiții stricte de vârstă sau dizabilitate.
+
+### Întrebări Frecvente (FAQ Extins privind Sistemul de Pensii)
+
+**1. Există un impozit reținut din pensie?**
+Da, însă doar pentru partea din pensie care depășește suma de 3.000 de lei net. Tot ce depășește acest plafon se impozitează cu 10%. De asemenea, începând cu 2024, CASS-ul (contribuția la sănătate) nu se mai reține din nicio pensie de stat.
+
+**2. Pot lucra dacă sunt la pensie?**
+Pentru pensionarii cu limită de vârstă, legea permite cumulul pensiei cu salariul obținut în mediul privat, fără restricții de sumă. Există discuții și legi specifice referitoare la cumulul pensiei cu salariul de la stat (așa-numitul cumul pensie-salariu la bugetari). Pensionarii anticipați NU au dreptul să cumuleze pensia cu salariul.
+
+**3. Cum aflu vechimea mea exactă în muncă?**
+Orice cetățean poate să își creeze un cont gratuit pe portalul CNPP (Casa Națională de Pensii Publice). Acolo se poate descărca stagiul complet de cotizare începând cu anul 2001 (pentru perioadele anterioare este necesar carnetul de muncă).
+
+**4. Pensia Minimă Garantată (Indemnizația Socială)**
+Pentru persoanele cu un număr redus de puncte, dar care au totuși stagiul minim de 15 ani, statul oferă o indemnizație socială. În 2025, nivelul acesteia este de 1.281 lei. Dacă pensia calculată matematic este mai mică, statul suportă diferența.
+
+### Concluzie și Perspective
+Legislația pensiilor este un organism viu, care suferă modificări constante. Este vital ca viitorii pensionari să își analizeze din timp dosarul, să recupereze adeverințele pentru sporuri și acord global (acum luate în calcul conform noii legi) și să ia în considerare și sistemele alternative (Pilonul II obligatoriu privat și Pilonul III facultativ privat) pentru a-și securiza veniturile la bătrânețe. Sperăm ca acest ghid extensiv să vă clarifice poziția și drepturile financiare.
 `
   },
   {
@@ -987,6 +1687,56 @@ De exemplu, dacă în luna respectivă salariul tău brut este egal cu câștigu
 </ul>
 
 <p>Pentru a calcula dacă stagiul dumneavoastră actual vă încadrează în aceste categorii exceptate de lege, vă recomandăm să utilizați simulatorul nostru gratuit. Datele tehnice oficiale de la CNPP se găsesc pe <a href="https://www.cnpp.ro" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline font-semibold">site-ul CNPP</a>. Actele administrative complete se află pe <a href="https://legislatie.just.ro" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline font-semibold">Just.ro</a>.</p>
+
+
+
+## Analiză Aprofundată: Impactul Noulei Legi a Pensiilor 360/2023 (Extindere 2025)
+
+Sistemul public de pensii din România traversează o perioadă de schimbări structurale profunde odată cu implementarea integrală a Legii 360/2023, care vizează o mai mare echitate și predictibilitate. Această secțiune extinsă este dedicată analizării contextului legislativ, economic și social care stă la baza calculelor și a politicilor de pensionare din 2025.
+
+### Contextul Macroeconomic și Sustenabilitatea Sistemului
+Pentru a înțelege pe deplin cum funcționează pensiile în România, trebuie să privim către factorii demografici și economici. Bugetul Asigurărilor Sociale de Stat (BASS) se bazează pe principiul solidarității între generații (sistemul *pay-as-you-go*). Contribuțiile lucrătorilor activi (CAS - 25% din salariul brut, din care 20.25% merg către Pilonul I) plătesc pensiile actualilor pensionari. 
+
+În contextul îmbătrânirii populației și a migrației forței de muncă, statul a introdus mecanisme de echilibrare:
+- **Punctele de stabilitate:** Aceasta este inovația majoră a Legii 360/2023, concepută pentru a recompensa munca prelungită. Persoanele care cotizează peste 25 de ani sunt stimulate financiar. Astfel, pentru anii 26-30 se acordă 0.5 puncte/an, pentru 31-35 se acordă 0.75 puncte/an, iar pentru anii peste 35 se acordă 1 punct întreg pe an. 
+- **Egalizarea vârstei de pensionare:** Până în 2035, vârsta de pensionare pentru femei va crește treptat, atingând pragul de 65 de ani, egalizându-se astfel cu cea a bărbaților.
+
+### Cum Se Calculează Pensia în Noul Sistem (Ghid Pas cu Pas)
+Valoarea pensiei rezultă din înmulțirea Numărului Total de Puncte cu Valoarea Punctului de Referință (VPR). În anul 2025, VPR a crescut la 91 lei (în urma indexării cu 10.4% aplicată în ianuarie).
+
+Numărul total de puncte este format din trei categorii majore:
+1. **Punctele de contributivitate:** Se calculează lunar, împărțind salariul brut câștigat la salariul mediu brut pe economie din luna respectivă.
+2. **Punctele necontributive (asimilate):** Acordate pentru perioadele în care asiguratul a urmat cursuri universitare la zi (cu diplomă), a efectuat stagiul militar, a fost în concediu de creștere copil etc. Pentru fiecare an asimilat se acordă 0.25 puncte.
+3. **Punctele de stabilitate:** Bonusul de vechime menționat anterior.
+
+*Studiu de caz:* Un pensionar cu un stagiu de cotizare de 38 de ani, cu un număr de puncte de contributivitate de 45.
+- Puncte de stabilitate: (5 ani × 0.5) + (5 ani × 0.75) + (3 ani × 1.0) = 2.5 + 3.75 + 3 = 9.25 puncte.
+- Punctaj total = 45 + 9.25 = 54.25 puncte.
+- Pensia brută în 2025 = 54.25 × 91 lei = 4.936 lei.
+
+### Tipuri de Pensii și Condiții
+Sistemul românesc reglementează patru tipuri principale de pensii:
+- **Pensia pentru limită de vârstă:** Se acordă la împlinirea vârstei standard (65 ani bărbați / femei în funcție de anul nașterii) și realizarea stagiului minim (15 ani).
+- **Pensia anticipată:** Permite pensionarea cu maxim 5 ani înainte, doar dacă stagiul complet de cotizare (35 de ani) a fost realizat sau depășit. Presupune o penalizare procentuală lunară (între 0.15% și 0.40% pe lună de anticipare, conform grilei noi). Această penalizare dispare la împlinirea vârstei standard.
+- **Pensia de invaliditate:** Se acordă persoanelor care și-au pierdut cel puțin jumătate din capacitatea de muncă din cauza unor accidente sau boli profesionale/obișnuite.
+- **Pensia de urmaș:** Oferită soțului supraviețuitor sau copiilor susținătorului decedat, sub anumite condiții stricte de vârstă sau dizabilitate.
+
+### Întrebări Frecvente (FAQ Extins privind Sistemul de Pensii)
+
+**1. Există un impozit reținut din pensie?**
+Da, însă doar pentru partea din pensie care depășește suma de 3.000 de lei net. Tot ce depășește acest plafon se impozitează cu 10%. De asemenea, începând cu 2024, CASS-ul (contribuția la sănătate) nu se mai reține din nicio pensie de stat.
+
+**2. Pot lucra dacă sunt la pensie?**
+Pentru pensionarii cu limită de vârstă, legea permite cumulul pensiei cu salariul obținut în mediul privat, fără restricții de sumă. Există discuții și legi specifice referitoare la cumulul pensiei cu salariul de la stat (așa-numitul cumul pensie-salariu la bugetari). Pensionarii anticipați NU au dreptul să cumuleze pensia cu salariul.
+
+**3. Cum aflu vechimea mea exactă în muncă?**
+Orice cetățean poate să își creeze un cont gratuit pe portalul CNPP (Casa Națională de Pensii Publice). Acolo se poate descărca stagiul complet de cotizare începând cu anul 2001 (pentru perioadele anterioare este necesar carnetul de muncă).
+
+**4. Pensia Minimă Garantată (Indemnizația Socială)**
+Pentru persoanele cu un număr redus de puncte, dar care au totuși stagiul minim de 15 ani, statul oferă o indemnizație socială. În 2025, nivelul acesteia este de 1.281 lei. Dacă pensia calculată matematic este mai mică, statul suportă diferența.
+
+### Concluzie și Perspective
+Legislația pensiilor este un organism viu, care suferă modificări constante. Este vital ca viitorii pensionari să își analizeze din timp dosarul, să recupereze adeverințele pentru sporuri și acord global (acum luate în calcul conform noii legi) și să ia în considerare și sistemele alternative (Pilonul II obligatoriu privat și Pilonul III facultativ privat) pentru a-și securiza veniturile la bătrânețe. Sperăm ca acest ghid extensiv să vă clarifice poziția și drepturile financiare.
 `
   },
   {
@@ -1145,6 +1895,56 @@ De exemplu, dacă în luna respectivă salariul tău brut este egal cu câștigu
 <p>Plata activelor din contul individual se efectuează la împlinirea vârstei standard de pensionare (65 de ani), la cerere, sub formă de plată unică integrală sau eșalonată în rate lunare pe o perioadă de maximum 5 ani.</p>
 
 <p>Pentru a vedea administratorul tău de fond și soldul acumulat până în prezent, poți utiliza link-urile oficiale puse la dispoziție de ASF (Autoritatea de Supraveghere Financiară) sau portalul <a href="https://www.cnpp.ro" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline font-semibold">CNPP</a>. Pentru legile detaliate privind pensiile administrate privat, consultați Just.ro pe <a href="https://legislatie.just.ro" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline font-semibold">Just.ro</a>.</p>
+
+
+
+## Analiză Aprofundată: Impactul Noulei Legi a Pensiilor 360/2023 (Extindere 2025)
+
+Sistemul public de pensii din România traversează o perioadă de schimbări structurale profunde odată cu implementarea integrală a Legii 360/2023, care vizează o mai mare echitate și predictibilitate. Această secțiune extinsă este dedicată analizării contextului legislativ, economic și social care stă la baza calculelor și a politicilor de pensionare din 2025.
+
+### Contextul Macroeconomic și Sustenabilitatea Sistemului
+Pentru a înțelege pe deplin cum funcționează pensiile în România, trebuie să privim către factorii demografici și economici. Bugetul Asigurărilor Sociale de Stat (BASS) se bazează pe principiul solidarității între generații (sistemul *pay-as-you-go*). Contribuțiile lucrătorilor activi (CAS - 25% din salariul brut, din care 20.25% merg către Pilonul I) plătesc pensiile actualilor pensionari. 
+
+În contextul îmbătrânirii populației și a migrației forței de muncă, statul a introdus mecanisme de echilibrare:
+- **Punctele de stabilitate:** Aceasta este inovația majoră a Legii 360/2023, concepută pentru a recompensa munca prelungită. Persoanele care cotizează peste 25 de ani sunt stimulate financiar. Astfel, pentru anii 26-30 se acordă 0.5 puncte/an, pentru 31-35 se acordă 0.75 puncte/an, iar pentru anii peste 35 se acordă 1 punct întreg pe an. 
+- **Egalizarea vârstei de pensionare:** Până în 2035, vârsta de pensionare pentru femei va crește treptat, atingând pragul de 65 de ani, egalizându-se astfel cu cea a bărbaților.
+
+### Cum Se Calculează Pensia în Noul Sistem (Ghid Pas cu Pas)
+Valoarea pensiei rezultă din înmulțirea Numărului Total de Puncte cu Valoarea Punctului de Referință (VPR). În anul 2025, VPR a crescut la 91 lei (în urma indexării cu 10.4% aplicată în ianuarie).
+
+Numărul total de puncte este format din trei categorii majore:
+1. **Punctele de contributivitate:** Se calculează lunar, împărțind salariul brut câștigat la salariul mediu brut pe economie din luna respectivă.
+2. **Punctele necontributive (asimilate):** Acordate pentru perioadele în care asiguratul a urmat cursuri universitare la zi (cu diplomă), a efectuat stagiul militar, a fost în concediu de creștere copil etc. Pentru fiecare an asimilat se acordă 0.25 puncte.
+3. **Punctele de stabilitate:** Bonusul de vechime menționat anterior.
+
+*Studiu de caz:* Un pensionar cu un stagiu de cotizare de 38 de ani, cu un număr de puncte de contributivitate de 45.
+- Puncte de stabilitate: (5 ani × 0.5) + (5 ani × 0.75) + (3 ani × 1.0) = 2.5 + 3.75 + 3 = 9.25 puncte.
+- Punctaj total = 45 + 9.25 = 54.25 puncte.
+- Pensia brută în 2025 = 54.25 × 91 lei = 4.936 lei.
+
+### Tipuri de Pensii și Condiții
+Sistemul românesc reglementează patru tipuri principale de pensii:
+- **Pensia pentru limită de vârstă:** Se acordă la împlinirea vârstei standard (65 ani bărbați / femei în funcție de anul nașterii) și realizarea stagiului minim (15 ani).
+- **Pensia anticipată:** Permite pensionarea cu maxim 5 ani înainte, doar dacă stagiul complet de cotizare (35 de ani) a fost realizat sau depășit. Presupune o penalizare procentuală lunară (între 0.15% și 0.40% pe lună de anticipare, conform grilei noi). Această penalizare dispare la împlinirea vârstei standard.
+- **Pensia de invaliditate:** Se acordă persoanelor care și-au pierdut cel puțin jumătate din capacitatea de muncă din cauza unor accidente sau boli profesionale/obișnuite.
+- **Pensia de urmaș:** Oferită soțului supraviețuitor sau copiilor susținătorului decedat, sub anumite condiții stricte de vârstă sau dizabilitate.
+
+### Întrebări Frecvente (FAQ Extins privind Sistemul de Pensii)
+
+**1. Există un impozit reținut din pensie?**
+Da, însă doar pentru partea din pensie care depășește suma de 3.000 de lei net. Tot ce depășește acest plafon se impozitează cu 10%. De asemenea, începând cu 2024, CASS-ul (contribuția la sănătate) nu se mai reține din nicio pensie de stat.
+
+**2. Pot lucra dacă sunt la pensie?**
+Pentru pensionarii cu limită de vârstă, legea permite cumulul pensiei cu salariul obținut în mediul privat, fără restricții de sumă. Există discuții și legi specifice referitoare la cumulul pensiei cu salariul de la stat (așa-numitul cumul pensie-salariu la bugetari). Pensionarii anticipați NU au dreptul să cumuleze pensia cu salariul.
+
+**3. Cum aflu vechimea mea exactă în muncă?**
+Orice cetățean poate să își creeze un cont gratuit pe portalul CNPP (Casa Națională de Pensii Publice). Acolo se poate descărca stagiul complet de cotizare începând cu anul 2001 (pentru perioadele anterioare este necesar carnetul de muncă).
+
+**4. Pensia Minimă Garantată (Indemnizația Socială)**
+Pentru persoanele cu un număr redus de puncte, dar care au totuși stagiul minim de 15 ani, statul oferă o indemnizație socială. În 2025, nivelul acesteia este de 1.281 lei. Dacă pensia calculată matematic este mai mică, statul suportă diferența.
+
+### Concluzie și Perspective
+Legislația pensiilor este un organism viu, care suferă modificări constante. Este vital ca viitorii pensionari să își analizeze din timp dosarul, să recupereze adeverințele pentru sporuri și acord global (acum luate în calcul conform noii legi) și să ia în considerare și sistemele alternative (Pilonul II obligatoriu privat și Pilonul III facultativ privat) pentru a-și securiza veniturile la bătrânețe. Sperăm ca acest ghid extensiv să vă clarifice poziția și drepturile financiare.
 `
   }
 ];

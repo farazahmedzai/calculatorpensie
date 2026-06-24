@@ -151,6 +151,10 @@ function replaceMeta(html: string, meta: PageMeta): string {
     result = result.replace(/<\/head>/i, `  ${keywordsTag}\n</head>`);
   }
 
+  // Inject visually hidden H1 tag for SEO tools that parse raw HTML but don't run JS
+  const h1Tag = `<h1 class="sr-only" style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border-width:0;">${meta.title}</h1>`;
+  result = result.replace(/<body>/i, `<body>\n    ${h1Tag}`);
+
   return result;
 }
 
