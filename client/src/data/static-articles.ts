@@ -116,6 +116,20 @@ Pentru persoanele cu un număr redus de puncte, dar care au totuși stagiul mini
 
 ### Concluzie și Perspective
 Legislația pensiilor este un organism viu, care suferă modificări constante. Este vital ca viitorii pensionari să își analizeze din timp dosarul, să recupereze adeverințele pentru sporuri și acord global (acum luate în calcul conform noii legi) și să ia în considerare și sistemele alternative (Pilonul II obligatoriu privat și Pilonul III facultativ privat) pentru a-și securiza veniturile la bătrânețe. Sperăm ca acest ghid extensiv să vă clarifice poziția și drepturile financiare.
+
+
+
+<div class="mt-8 p-6 bg-blue-50 rounded-xl border border-blue-100">
+  <h3 class="text-xl font-bold text-blue-900 mb-4">Instrumente și Resurse Utile</h3>
+  <p class="text-gray-700 mb-4">Pentru a vă planifica mai bine viitorul financiar, vă recomandăm să utilizați instrumentele noastre gratuite, actualizate la zi conform Legii 360/2023:</p>
+  <ul class="space-y-2 list-none pl-0">
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/" class="text-blue-700 font-bold hover:underline">Calculator Pensie de Stat 2025</a> - Estimează-ți instant pensia lunară.</li>
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-varsta-pensionare" class="text-blue-700 font-bold hover:underline">Calculator Vârstă de Pensionare</a> - Află exact anul și luna în care poți ieși la pensie.</li>
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-pensie-anticipata" class="text-blue-700 font-bold hover:underline">Calculator Pensie Anticipată</a> - Calculează penalizarea aplicată dacă ieși la pensie mai devreme.</li>
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-puncte-pensie" class="text-blue-700 font-bold hover:underline">Calculator Puncte de Stabilitate</a> - Vezi câte puncte bonus primești pentru vechimea în muncă.</li>
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/legislatie" class="text-blue-700 font-bold hover:underline">Ghidul Legislației (Legea 360/2023)</a> - Descoperă toate noutățile noului sistem public de pensii.</li>
+  </ul>
+</div>
 `
   },
   {
@@ -247,6 +261,20 @@ Pentru persoanele cu un număr redus de puncte, dar care au totuși stagiul mini
 
 ### Concluzie și Perspective
 Legislația pensiilor este un organism viu, care suferă modificări constante. Este vital ca viitorii pensionari să își analizeze din timp dosarul, să recupereze adeverințele pentru sporuri și acord global (acum luate în calcul conform noii legi) și să ia în considerare și sistemele alternative (Pilonul II obligatoriu privat și Pilonul III facultativ privat) pentru a-și securiza veniturile la bătrânețe. Sperăm ca acest ghid extensiv să vă clarifice poziția și drepturile financiare.
+
+
+
+<div class="mt-8 p-6 bg-blue-50 rounded-xl border border-blue-100">
+  <h3 class="text-xl font-bold text-blue-900 mb-4">Instrumente și Resurse Utile</h3>
+  <p class="text-gray-700 mb-4">Pentru a vă planifica mai bine viitorul financiar, vă recomandăm să utilizați instrumentele noastre gratuite, actualizate la zi conform Legii 360/2023:</p>
+  <ul class="space-y-2 list-none pl-0">
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/" class="text-blue-700 font-bold hover:underline">Calculator Pensie de Stat 2025</a> - Estimează-ți instant pensia lunară.</li>
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-varsta-pensionare" class="text-blue-700 font-bold hover:underline">Calculator Vârstă de Pensionare</a> - Află exact anul și luna în care poți ieși la pensie.</li>
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-pensie-anticipata" class="text-blue-700 font-bold hover:underline">Calculator Pensie Anticipată</a> - Calculează penalizarea aplicată dacă ieși la pensie mai devreme.</li>
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-puncte-pensie" class="text-blue-700 font-bold hover:underline">Calculator Puncte de Stabilitate</a> - Vezi câte puncte bonus primești pentru vechimea în muncă.</li>
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/legislatie" class="text-blue-700 font-bold hover:underline">Ghidul Legislației (Legea 360/2023)</a> - Descoperă toate noutățile noului sistem public de pensii.</li>
+  </ul>
+</div>
 `
   },
   {
@@ -333,6 +361,20 @@ Pentru persoanele cu un număr redus de puncte, dar care au totuși stagiul mini
 
 ### Concluzie și Perspective
 Legislația pensiilor este un organism viu, care suferă modificări constante. Este vital ca viitorii pensionari să își analizeze din timp dosarul, să recupereze adeverințele pentru sporuri și acord global (acum luate în calcul conform noii legi) și să ia în considerare și sistemele alternative (Pilonul II obligatoriu privat și Pilonul III facultativ privat) pentru a-și securiza veniturile la bătrânețe. Sperăm ca acest ghid extensiv să vă clarifice poziția și drepturile financiare.
+
+
+
+<div class="mt-8 p-6 bg-blue-50 rounded-xl border border-blue-100">
+  <h3 class="text-xl font-bold text-blue-900 mb-4">Instrumente și Resurse Utile</h3>
+  <p class="text-gray-700 mb-4">Pentru a vă planifica mai bine viitorul financiar, vă recomandăm să utilizați instrumentele noastre gratuite, actualizate la zi conform Legii 360/2023:</p>
+  <ul class="space-y-2 list-none pl-0">
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/" class="text-blue-700 font-bold hover:underline">Calculator Pensie de Stat 2025</a> - Estimează-ți instant pensia lunară.</li>
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-varsta-pensionare" class="text-blue-700 font-bold hover:underline">Calculator Vârstă de Pensionare</a> - Află exact anul și luna în care poți ieși la pensie.</li>
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-pensie-anticipata" class="text-blue-700 font-bold hover:underline">Calculator Pensie Anticipată</a> - Calculează penalizarea aplicată dacă ieși la pensie mai devreme.</li>
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-puncte-pensie" class="text-blue-700 font-bold hover:underline">Calculator Puncte de Stabilitate</a> - Vezi câte puncte bonus primești pentru vechimea în muncă.</li>
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/legislatie" class="text-blue-700 font-bold hover:underline">Ghidul Legislației (Legea 360/2023)</a> - Descoperă toate noutățile noului sistem public de pensii.</li>
+  </ul>
+</div>
 `
   },
   {
@@ -406,6 +448,20 @@ Pentru persoanele cu un număr redus de puncte, dar care au totuși stagiul mini
 
 ### Concluzie și Perspective
 Legislația pensiilor este un organism viu, care suferă modificări constante. Este vital ca viitorii pensionari să își analizeze din timp dosarul, să recupereze adeverințele pentru sporuri și acord global (acum luate în calcul conform noii legi) și să ia în considerare și sistemele alternative (Pilonul II obligatoriu privat și Pilonul III facultativ privat) pentru a-și securiza veniturile la bătrânețe. Sperăm ca acest ghid extensiv să vă clarifice poziția și drepturile financiare.
+
+
+
+<div class="mt-8 p-6 bg-blue-50 rounded-xl border border-blue-100">
+  <h3 class="text-xl font-bold text-blue-900 mb-4">Instrumente și Resurse Utile</h3>
+  <p class="text-gray-700 mb-4">Pentru a vă planifica mai bine viitorul financiar, vă recomandăm să utilizați instrumentele noastre gratuite, actualizate la zi conform Legii 360/2023:</p>
+  <ul class="space-y-2 list-none pl-0">
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/" class="text-blue-700 font-bold hover:underline">Calculator Pensie de Stat 2025</a> - Estimează-ți instant pensia lunară.</li>
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-varsta-pensionare" class="text-blue-700 font-bold hover:underline">Calculator Vârstă de Pensionare</a> - Află exact anul și luna în care poți ieși la pensie.</li>
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-pensie-anticipata" class="text-blue-700 font-bold hover:underline">Calculator Pensie Anticipată</a> - Calculează penalizarea aplicată dacă ieși la pensie mai devreme.</li>
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-puncte-pensie" class="text-blue-700 font-bold hover:underline">Calculator Puncte de Stabilitate</a> - Vezi câte puncte bonus primești pentru vechimea în muncă.</li>
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/legislatie" class="text-blue-700 font-bold hover:underline">Ghidul Legislației (Legea 360/2023)</a> - Descoperă toate noutățile noului sistem public de pensii.</li>
+  </ul>
+</div>
 `
   },
   {
@@ -477,6 +533,20 @@ Pentru persoanele cu un număr redus de puncte, dar care au totuși stagiul mini
 
 ### Concluzie și Perspective
 Legislația pensiilor este un organism viu, care suferă modificări constante. Este vital ca viitorii pensionari să își analizeze din timp dosarul, să recupereze adeverințele pentru sporuri și acord global (acum luate în calcul conform noii legi) și să ia în considerare și sistemele alternative (Pilonul II obligatoriu privat și Pilonul III facultativ privat) pentru a-și securiza veniturile la bătrânețe. Sperăm ca acest ghid extensiv să vă clarifice poziția și drepturile financiare.
+
+
+
+<div class="mt-8 p-6 bg-blue-50 rounded-xl border border-blue-100">
+  <h3 class="text-xl font-bold text-blue-900 mb-4">Instrumente și Resurse Utile</h3>
+  <p class="text-gray-700 mb-4">Pentru a vă planifica mai bine viitorul financiar, vă recomandăm să utilizați instrumentele noastre gratuite, actualizate la zi conform Legii 360/2023:</p>
+  <ul class="space-y-2 list-none pl-0">
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/" class="text-blue-700 font-bold hover:underline">Calculator Pensie de Stat 2025</a> - Estimează-ți instant pensia lunară.</li>
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-varsta-pensionare" class="text-blue-700 font-bold hover:underline">Calculator Vârstă de Pensionare</a> - Află exact anul și luna în care poți ieși la pensie.</li>
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-pensie-anticipata" class="text-blue-700 font-bold hover:underline">Calculator Pensie Anticipată</a> - Calculează penalizarea aplicată dacă ieși la pensie mai devreme.</li>
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-puncte-pensie" class="text-blue-700 font-bold hover:underline">Calculator Puncte de Stabilitate</a> - Vezi câte puncte bonus primești pentru vechimea în muncă.</li>
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/legislatie" class="text-blue-700 font-bold hover:underline">Ghidul Legislației (Legea 360/2023)</a> - Descoperă toate noutățile noului sistem public de pensii.</li>
+  </ul>
+</div>
 `
   },
   {
@@ -547,6 +617,20 @@ Pentru persoanele cu un număr redus de puncte, dar care au totuși stagiul mini
 
 ### Concluzie și Perspective
 Legislația pensiilor este un organism viu, care suferă modificări constante. Este vital ca viitorii pensionari să își analizeze din timp dosarul, să recupereze adeverințele pentru sporuri și acord global (acum luate în calcul conform noii legi) și să ia în considerare și sistemele alternative (Pilonul II obligatoriu privat și Pilonul III facultativ privat) pentru a-și securiza veniturile la bătrânețe. Sperăm ca acest ghid extensiv să vă clarifice poziția și drepturile financiare.
+
+
+
+<div class="mt-8 p-6 bg-blue-50 rounded-xl border border-blue-100">
+  <h3 class="text-xl font-bold text-blue-900 mb-4">Instrumente și Resurse Utile</h3>
+  <p class="text-gray-700 mb-4">Pentru a vă planifica mai bine viitorul financiar, vă recomandăm să utilizați instrumentele noastre gratuite, actualizate la zi conform Legii 360/2023:</p>
+  <ul class="space-y-2 list-none pl-0">
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/" class="text-blue-700 font-bold hover:underline">Calculator Pensie de Stat 2025</a> - Estimează-ți instant pensia lunară.</li>
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-varsta-pensionare" class="text-blue-700 font-bold hover:underline">Calculator Vârstă de Pensionare</a> - Află exact anul și luna în care poți ieși la pensie.</li>
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-pensie-anticipata" class="text-blue-700 font-bold hover:underline">Calculator Pensie Anticipată</a> - Calculează penalizarea aplicată dacă ieși la pensie mai devreme.</li>
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-puncte-pensie" class="text-blue-700 font-bold hover:underline">Calculator Puncte de Stabilitate</a> - Vezi câte puncte bonus primești pentru vechimea în muncă.</li>
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/legislatie" class="text-blue-700 font-bold hover:underline">Ghidul Legislației (Legea 360/2023)</a> - Descoperă toate noutățile noului sistem public de pensii.</li>
+  </ul>
+</div>
 `
   },
   {
@@ -618,6 +702,20 @@ Pentru persoanele cu un număr redus de puncte, dar care au totuși stagiul mini
 
 ### Concluzie și Perspective
 Legislația pensiilor este un organism viu, care suferă modificări constante. Este vital ca viitorii pensionari să își analizeze din timp dosarul, să recupereze adeverințele pentru sporuri și acord global (acum luate în calcul conform noii legi) și să ia în considerare și sistemele alternative (Pilonul II obligatoriu privat și Pilonul III facultativ privat) pentru a-și securiza veniturile la bătrânețe. Sperăm ca acest ghid extensiv să vă clarifice poziția și drepturile financiare.
+
+
+
+<div class="mt-8 p-6 bg-blue-50 rounded-xl border border-blue-100">
+  <h3 class="text-xl font-bold text-blue-900 mb-4">Instrumente și Resurse Utile</h3>
+  <p class="text-gray-700 mb-4">Pentru a vă planifica mai bine viitorul financiar, vă recomandăm să utilizați instrumentele noastre gratuite, actualizate la zi conform Legii 360/2023:</p>
+  <ul class="space-y-2 list-none pl-0">
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/" class="text-blue-700 font-bold hover:underline">Calculator Pensie de Stat 2025</a> - Estimează-ți instant pensia lunară.</li>
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-varsta-pensionare" class="text-blue-700 font-bold hover:underline">Calculator Vârstă de Pensionare</a> - Află exact anul și luna în care poți ieși la pensie.</li>
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-pensie-anticipata" class="text-blue-700 font-bold hover:underline">Calculator Pensie Anticipată</a> - Calculează penalizarea aplicată dacă ieși la pensie mai devreme.</li>
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-puncte-pensie" class="text-blue-700 font-bold hover:underline">Calculator Puncte de Stabilitate</a> - Vezi câte puncte bonus primești pentru vechimea în muncă.</li>
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/legislatie" class="text-blue-700 font-bold hover:underline">Ghidul Legislației (Legea 360/2023)</a> - Descoperă toate noutățile noului sistem public de pensii.</li>
+  </ul>
+</div>
 `
   },
   {
@@ -688,6 +786,20 @@ Pentru persoanele cu un număr redus de puncte, dar care au totuși stagiul mini
 
 ### Concluzie și Perspective
 Legislația pensiilor este un organism viu, care suferă modificări constante. Este vital ca viitorii pensionari să își analizeze din timp dosarul, să recupereze adeverințele pentru sporuri și acord global (acum luate în calcul conform noii legi) și să ia în considerare și sistemele alternative (Pilonul II obligatoriu privat și Pilonul III facultativ privat) pentru a-și securiza veniturile la bătrânețe. Sperăm ca acest ghid extensiv să vă clarifice poziția și drepturile financiare.
+
+
+
+<div class="mt-8 p-6 bg-blue-50 rounded-xl border border-blue-100">
+  <h3 class="text-xl font-bold text-blue-900 mb-4">Instrumente și Resurse Utile</h3>
+  <p class="text-gray-700 mb-4">Pentru a vă planifica mai bine viitorul financiar, vă recomandăm să utilizați instrumentele noastre gratuite, actualizate la zi conform Legii 360/2023:</p>
+  <ul class="space-y-2 list-none pl-0">
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/" class="text-blue-700 font-bold hover:underline">Calculator Pensie de Stat 2025</a> - Estimează-ți instant pensia lunară.</li>
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-varsta-pensionare" class="text-blue-700 font-bold hover:underline">Calculator Vârstă de Pensionare</a> - Află exact anul și luna în care poți ieși la pensie.</li>
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-pensie-anticipata" class="text-blue-700 font-bold hover:underline">Calculator Pensie Anticipată</a> - Calculează penalizarea aplicată dacă ieși la pensie mai devreme.</li>
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-puncte-pensie" class="text-blue-700 font-bold hover:underline">Calculator Puncte de Stabilitate</a> - Vezi câte puncte bonus primești pentru vechimea în muncă.</li>
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/legislatie" class="text-blue-700 font-bold hover:underline">Ghidul Legislației (Legea 360/2023)</a> - Descoperă toate noutățile noului sistem public de pensii.</li>
+  </ul>
+</div>
 `
   },
   {
@@ -758,6 +870,20 @@ Pentru persoanele cu un număr redus de puncte, dar care au totuși stagiul mini
 
 ### Concluzie și Perspective
 Legislația pensiilor este un organism viu, care suferă modificări constante. Este vital ca viitorii pensionari să își analizeze din timp dosarul, să recupereze adeverințele pentru sporuri și acord global (acum luate în calcul conform noii legi) și să ia în considerare și sistemele alternative (Pilonul II obligatoriu privat și Pilonul III facultativ privat) pentru a-și securiza veniturile la bătrânețe. Sperăm ca acest ghid extensiv să vă clarifice poziția și drepturile financiare.
+
+
+
+<div class="mt-8 p-6 bg-blue-50 rounded-xl border border-blue-100">
+  <h3 class="text-xl font-bold text-blue-900 mb-4">Instrumente și Resurse Utile</h3>
+  <p class="text-gray-700 mb-4">Pentru a vă planifica mai bine viitorul financiar, vă recomandăm să utilizați instrumentele noastre gratuite, actualizate la zi conform Legii 360/2023:</p>
+  <ul class="space-y-2 list-none pl-0">
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/" class="text-blue-700 font-bold hover:underline">Calculator Pensie de Stat 2025</a> - Estimează-ți instant pensia lunară.</li>
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-varsta-pensionare" class="text-blue-700 font-bold hover:underline">Calculator Vârstă de Pensionare</a> - Află exact anul și luna în care poți ieși la pensie.</li>
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-pensie-anticipata" class="text-blue-700 font-bold hover:underline">Calculator Pensie Anticipată</a> - Calculează penalizarea aplicată dacă ieși la pensie mai devreme.</li>
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-puncte-pensie" class="text-blue-700 font-bold hover:underline">Calculator Puncte de Stabilitate</a> - Vezi câte puncte bonus primești pentru vechimea în muncă.</li>
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/legislatie" class="text-blue-700 font-bold hover:underline">Ghidul Legislației (Legea 360/2023)</a> - Descoperă toate noutățile noului sistem public de pensii.</li>
+  </ul>
+</div>
 `
   },
   {
@@ -828,6 +954,20 @@ Pentru persoanele cu un număr redus de puncte, dar care au totuși stagiul mini
 
 ### Concluzie și Perspective
 Legislația pensiilor este un organism viu, care suferă modificări constante. Este vital ca viitorii pensionari să își analizeze din timp dosarul, să recupereze adeverințele pentru sporuri și acord global (acum luate în calcul conform noii legi) și să ia în considerare și sistemele alternative (Pilonul II obligatoriu privat și Pilonul III facultativ privat) pentru a-și securiza veniturile la bătrânețe. Sperăm ca acest ghid extensiv să vă clarifice poziția și drepturile financiare.
+
+
+
+<div class="mt-8 p-6 bg-blue-50 rounded-xl border border-blue-100">
+  <h3 class="text-xl font-bold text-blue-900 mb-4">Instrumente și Resurse Utile</h3>
+  <p class="text-gray-700 mb-4">Pentru a vă planifica mai bine viitorul financiar, vă recomandăm să utilizați instrumentele noastre gratuite, actualizate la zi conform Legii 360/2023:</p>
+  <ul class="space-y-2 list-none pl-0">
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/" class="text-blue-700 font-bold hover:underline">Calculator Pensie de Stat 2025</a> - Estimează-ți instant pensia lunară.</li>
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-varsta-pensionare" class="text-blue-700 font-bold hover:underline">Calculator Vârstă de Pensionare</a> - Află exact anul și luna în care poți ieși la pensie.</li>
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-pensie-anticipata" class="text-blue-700 font-bold hover:underline">Calculator Pensie Anticipată</a> - Calculează penalizarea aplicată dacă ieși la pensie mai devreme.</li>
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-puncte-pensie" class="text-blue-700 font-bold hover:underline">Calculator Puncte de Stabilitate</a> - Vezi câte puncte bonus primești pentru vechimea în muncă.</li>
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/legislatie" class="text-blue-700 font-bold hover:underline">Ghidul Legislației (Legea 360/2023)</a> - Descoperă toate noutățile noului sistem public de pensii.</li>
+  </ul>
+</div>
 `
   },
   {
@@ -897,6 +1037,20 @@ Pentru persoanele cu un număr redus de puncte, dar care au totuși stagiul mini
 
 ### Concluzie și Perspective
 Legislația pensiilor este un organism viu, care suferă modificări constante. Este vital ca viitorii pensionari să își analizeze din timp dosarul, să recupereze adeverințele pentru sporuri și acord global (acum luate în calcul conform noii legi) și să ia în considerare și sistemele alternative (Pilonul II obligatoriu privat și Pilonul III facultativ privat) pentru a-și securiza veniturile la bătrânețe. Sperăm ca acest ghid extensiv să vă clarifice poziția și drepturile financiare.
+
+
+
+<div class="mt-8 p-6 bg-blue-50 rounded-xl border border-blue-100">
+  <h3 class="text-xl font-bold text-blue-900 mb-4">Instrumente și Resurse Utile</h3>
+  <p class="text-gray-700 mb-4">Pentru a vă planifica mai bine viitorul financiar, vă recomandăm să utilizați instrumentele noastre gratuite, actualizate la zi conform Legii 360/2023:</p>
+  <ul class="space-y-2 list-none pl-0">
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/" class="text-blue-700 font-bold hover:underline">Calculator Pensie de Stat 2025</a> - Estimează-ți instant pensia lunară.</li>
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-varsta-pensionare" class="text-blue-700 font-bold hover:underline">Calculator Vârstă de Pensionare</a> - Află exact anul și luna în care poți ieși la pensie.</li>
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-pensie-anticipata" class="text-blue-700 font-bold hover:underline">Calculator Pensie Anticipată</a> - Calculează penalizarea aplicată dacă ieși la pensie mai devreme.</li>
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-puncte-pensie" class="text-blue-700 font-bold hover:underline">Calculator Puncte de Stabilitate</a> - Vezi câte puncte bonus primești pentru vechimea în muncă.</li>
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/legislatie" class="text-blue-700 font-bold hover:underline">Ghidul Legislației (Legea 360/2023)</a> - Descoperă toate noutățile noului sistem public de pensii.</li>
+  </ul>
+</div>
 `
   },
   {
@@ -966,6 +1120,20 @@ Pentru persoanele cu un număr redus de puncte, dar care au totuși stagiul mini
 
 ### Concluzie și Perspective
 Legislația pensiilor este un organism viu, care suferă modificări constante. Este vital ca viitorii pensionari să își analizeze din timp dosarul, să recupereze adeverințele pentru sporuri și acord global (acum luate în calcul conform noii legi) și să ia în considerare și sistemele alternative (Pilonul II obligatoriu privat și Pilonul III facultativ privat) pentru a-și securiza veniturile la bătrânețe. Sperăm ca acest ghid extensiv să vă clarifice poziția și drepturile financiare.
+
+
+
+<div class="mt-8 p-6 bg-blue-50 rounded-xl border border-blue-100">
+  <h3 class="text-xl font-bold text-blue-900 mb-4">Instrumente și Resurse Utile</h3>
+  <p class="text-gray-700 mb-4">Pentru a vă planifica mai bine viitorul financiar, vă recomandăm să utilizați instrumentele noastre gratuite, actualizate la zi conform Legii 360/2023:</p>
+  <ul class="space-y-2 list-none pl-0">
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/" class="text-blue-700 font-bold hover:underline">Calculator Pensie de Stat 2025</a> - Estimează-ți instant pensia lunară.</li>
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-varsta-pensionare" class="text-blue-700 font-bold hover:underline">Calculator Vârstă de Pensionare</a> - Află exact anul și luna în care poți ieși la pensie.</li>
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-pensie-anticipata" class="text-blue-700 font-bold hover:underline">Calculator Pensie Anticipată</a> - Calculează penalizarea aplicată dacă ieși la pensie mai devreme.</li>
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-puncte-pensie" class="text-blue-700 font-bold hover:underline">Calculator Puncte de Stabilitate</a> - Vezi câte puncte bonus primești pentru vechimea în muncă.</li>
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/legislatie" class="text-blue-700 font-bold hover:underline">Ghidul Legislației (Legea 360/2023)</a> - Descoperă toate noutățile noului sistem public de pensii.</li>
+  </ul>
+</div>
 `
   },
   {
@@ -1138,6 +1306,20 @@ Legislația pensiilor este un organism viu, care suferă modificări constante. 
 </div>
 
 <p>Pentru a verifica exact stagiul dumneavoastră de cotizare înregistrat în sistem sau pentru asistență privind dosarul de recalculare, vă recomandăm să vă adresați Casei Teritoriale de Pensii din județul dumneavoastră sau să vizitați portalul online oficial al <a href="https://www.cnpp.ro" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline font-semibold">CNPP (Casa Națională de Pensii Publice)</a>. Pentru consultarea textului integral al Legii 360/2023, accesați monitorul pe <a href="https://legislatie.just.ro" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline font-semibold">Just.ro (Portalul Legislativ Oficial)</a>.</p>
+
+
+
+<div class="mt-8 p-6 bg-blue-50 rounded-xl border border-blue-100">
+  <h3 class="text-xl font-bold text-blue-900 mb-4">Instrumente și Resurse Utile</h3>
+  <p class="text-gray-700 mb-4">Pentru a vă planifica mai bine viitorul financiar, vă recomandăm să utilizați instrumentele noastre gratuite, actualizate la zi conform Legii 360/2023:</p>
+  <ul class="space-y-2 list-none pl-0">
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/" class="text-blue-700 font-bold hover:underline">Calculator Pensie de Stat 2025</a> - Estimează-ți instant pensia lunară.</li>
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-varsta-pensionare" class="text-blue-700 font-bold hover:underline">Calculator Vârstă de Pensionare</a> - Află exact anul și luna în care poți ieși la pensie.</li>
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-pensie-anticipata" class="text-blue-700 font-bold hover:underline">Calculator Pensie Anticipată</a> - Calculează penalizarea aplicată dacă ieși la pensie mai devreme.</li>
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-puncte-pensie" class="text-blue-700 font-bold hover:underline">Calculator Puncte de Stabilitate</a> - Vezi câte puncte bonus primești pentru vechimea în muncă.</li>
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/legislatie" class="text-blue-700 font-bold hover:underline">Ghidul Legislației (Legea 360/2023)</a> - Descoperă toate noutățile noului sistem public de pensii.</li>
+  </ul>
+</div>
 `
 
   },
@@ -1224,6 +1406,20 @@ Pentru persoanele cu un număr redus de puncte, dar care au totuși stagiul mini
 
 ### Concluzie și Perspective
 Legislația pensiilor este un organism viu, care suferă modificări constante. Este vital ca viitorii pensionari să își analizeze din timp dosarul, să recupereze adeverințele pentru sporuri și acord global (acum luate în calcul conform noii legi) și să ia în considerare și sistemele alternative (Pilonul II obligatoriu privat și Pilonul III facultativ privat) pentru a-și securiza veniturile la bătrânețe. Sperăm ca acest ghid extensiv să vă clarifice poziția și drepturile financiare.
+
+
+
+<div class="mt-8 p-6 bg-blue-50 rounded-xl border border-blue-100">
+  <h3 class="text-xl font-bold text-blue-900 mb-4">Instrumente și Resurse Utile</h3>
+  <p class="text-gray-700 mb-4">Pentru a vă planifica mai bine viitorul financiar, vă recomandăm să utilizați instrumentele noastre gratuite, actualizate la zi conform Legii 360/2023:</p>
+  <ul class="space-y-2 list-none pl-0">
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/" class="text-blue-700 font-bold hover:underline">Calculator Pensie de Stat 2025</a> - Estimează-ți instant pensia lunară.</li>
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-varsta-pensionare" class="text-blue-700 font-bold hover:underline">Calculator Vârstă de Pensionare</a> - Află exact anul și luna în care poți ieși la pensie.</li>
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-pensie-anticipata" class="text-blue-700 font-bold hover:underline">Calculator Pensie Anticipată</a> - Calculează penalizarea aplicată dacă ieși la pensie mai devreme.</li>
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-puncte-pensie" class="text-blue-700 font-bold hover:underline">Calculator Puncte de Stabilitate</a> - Vezi câte puncte bonus primești pentru vechimea în muncă.</li>
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/legislatie" class="text-blue-700 font-bold hover:underline">Ghidul Legislației (Legea 360/2023)</a> - Descoperă toate noutățile noului sistem public de pensii.</li>
+  </ul>
+</div>
 `
   },
   {
@@ -1302,6 +1498,20 @@ Pentru persoanele cu un număr redus de puncte, dar care au totuși stagiul mini
 
 ### Concluzie și Perspective
 Legislația pensiilor este un organism viu, care suferă modificări constante. Este vital ca viitorii pensionari să își analizeze din timp dosarul, să recupereze adeverințele pentru sporuri și acord global (acum luate în calcul conform noii legi) și să ia în considerare și sistemele alternative (Pilonul II obligatoriu privat și Pilonul III facultativ privat) pentru a-și securiza veniturile la bătrânețe. Sperăm ca acest ghid extensiv să vă clarifice poziția și drepturile financiare.
+
+
+
+<div class="mt-8 p-6 bg-blue-50 rounded-xl border border-blue-100">
+  <h3 class="text-xl font-bold text-blue-900 mb-4">Instrumente și Resurse Utile</h3>
+  <p class="text-gray-700 mb-4">Pentru a vă planifica mai bine viitorul financiar, vă recomandăm să utilizați instrumentele noastre gratuite, actualizate la zi conform Legii 360/2023:</p>
+  <ul class="space-y-2 list-none pl-0">
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/" class="text-blue-700 font-bold hover:underline">Calculator Pensie de Stat 2025</a> - Estimează-ți instant pensia lunară.</li>
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-varsta-pensionare" class="text-blue-700 font-bold hover:underline">Calculator Vârstă de Pensionare</a> - Află exact anul și luna în care poți ieși la pensie.</li>
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-pensie-anticipata" class="text-blue-700 font-bold hover:underline">Calculator Pensie Anticipată</a> - Calculează penalizarea aplicată dacă ieși la pensie mai devreme.</li>
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-puncte-pensie" class="text-blue-700 font-bold hover:underline">Calculator Puncte de Stabilitate</a> - Vezi câte puncte bonus primești pentru vechimea în muncă.</li>
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/legislatie" class="text-blue-700 font-bold hover:underline">Ghidul Legislației (Legea 360/2023)</a> - Descoperă toate noutățile noului sistem public de pensii.</li>
+  </ul>
+</div>
 `
   },
   {
@@ -1505,6 +1715,20 @@ Legislația pensiilor este un organism viu, care suferă modificări constante. 
 </div>
 
 <p>Pentru a urmări comunicatele oficiale INS și deciziile Casei de Pensii, vizitați periodic portalul oficial <a href="https://www.cnpp.ro" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline font-semibold">CNPP.ro</a>. Pentru a citi textele oficiale complete ale noutăților legislative, accesați monitorul pe <a href="https://legislatie.just.ro" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline font-semibold">Just.ro (Portalul Legislativ Oficial)</a>.</p>
+
+
+
+<div class="mt-8 p-6 bg-blue-50 rounded-xl border border-blue-100">
+  <h3 class="text-xl font-bold text-blue-900 mb-4">Instrumente și Resurse Utile</h3>
+  <p class="text-gray-700 mb-4">Pentru a vă planifica mai bine viitorul financiar, vă recomandăm să utilizați instrumentele noastre gratuite, actualizate la zi conform Legii 360/2023:</p>
+  <ul class="space-y-2 list-none pl-0">
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/" class="text-blue-700 font-bold hover:underline">Calculator Pensie de Stat 2025</a> - Estimează-ți instant pensia lunară.</li>
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-varsta-pensionare" class="text-blue-700 font-bold hover:underline">Calculator Vârstă de Pensionare</a> - Află exact anul și luna în care poți ieși la pensie.</li>
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-pensie-anticipata" class="text-blue-700 font-bold hover:underline">Calculator Pensie Anticipată</a> - Calculează penalizarea aplicată dacă ieși la pensie mai devreme.</li>
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-puncte-pensie" class="text-blue-700 font-bold hover:underline">Calculator Puncte de Stabilitate</a> - Vezi câte puncte bonus primești pentru vechimea în muncă.</li>
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/legislatie" class="text-blue-700 font-bold hover:underline">Ghidul Legislației (Legea 360/2023)</a> - Descoperă toate noutățile noului sistem public de pensii.</li>
+  </ul>
+</div>
 `
   },
   {
@@ -1659,6 +1883,20 @@ Legislația pensiilor este un organism viu, care suferă modificări constante. 
 </div>
 
 <p>Pentru a descărca modelele oficiale de cereri-tip de pensionare sau pentru a localiza sediul Casei Teritoriale de Pensii din județul dumneavoastră, accesați portalul oficial al <a href="https://www.cnpp.ro" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline font-semibold">Casei Naționale de Pensii Publice (CNPP)</a>. Pentru interpretarea normelor juridice ale Legii 360/2023, accesați portalul legislativ pe <a href="https://legislatie.just.ro" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline font-semibold">Just.ro</a>.</p>
+
+
+
+<div class="mt-8 p-6 bg-blue-50 rounded-xl border border-blue-100">
+  <h3 class="text-xl font-bold text-blue-900 mb-4">Instrumente și Resurse Utile</h3>
+  <p class="text-gray-700 mb-4">Pentru a vă planifica mai bine viitorul financiar, vă recomandăm să utilizați instrumentele noastre gratuite, actualizate la zi conform Legii 360/2023:</p>
+  <ul class="space-y-2 list-none pl-0">
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/" class="text-blue-700 font-bold hover:underline">Calculator Pensie de Stat 2025</a> - Estimează-ți instant pensia lunară.</li>
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-varsta-pensionare" class="text-blue-700 font-bold hover:underline">Calculator Vârstă de Pensionare</a> - Află exact anul și luna în care poți ieși la pensie.</li>
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-pensie-anticipata" class="text-blue-700 font-bold hover:underline">Calculator Pensie Anticipată</a> - Calculează penalizarea aplicată dacă ieși la pensie mai devreme.</li>
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-puncte-pensie" class="text-blue-700 font-bold hover:underline">Calculator Puncte de Stabilitate</a> - Vezi câte puncte bonus primești pentru vechimea în muncă.</li>
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/legislatie" class="text-blue-700 font-bold hover:underline">Ghidul Legislației (Legea 360/2023)</a> - Descoperă toate noutățile noului sistem public de pensii.</li>
+  </ul>
+</div>
 `
   },
   {
@@ -1737,6 +1975,20 @@ Pentru persoanele cu un număr redus de puncte, dar care au totuși stagiul mini
 
 ### Concluzie și Perspective
 Legislația pensiilor este un organism viu, care suferă modificări constante. Este vital ca viitorii pensionari să își analizeze din timp dosarul, să recupereze adeverințele pentru sporuri și acord global (acum luate în calcul conform noii legi) și să ia în considerare și sistemele alternative (Pilonul II obligatoriu privat și Pilonul III facultativ privat) pentru a-și securiza veniturile la bătrânețe. Sperăm ca acest ghid extensiv să vă clarifice poziția și drepturile financiare.
+
+
+
+<div class="mt-8 p-6 bg-blue-50 rounded-xl border border-blue-100">
+  <h3 class="text-xl font-bold text-blue-900 mb-4">Instrumente și Resurse Utile</h3>
+  <p class="text-gray-700 mb-4">Pentru a vă planifica mai bine viitorul financiar, vă recomandăm să utilizați instrumentele noastre gratuite, actualizate la zi conform Legii 360/2023:</p>
+  <ul class="space-y-2 list-none pl-0">
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/" class="text-blue-700 font-bold hover:underline">Calculator Pensie de Stat 2025</a> - Estimează-ți instant pensia lunară.</li>
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-varsta-pensionare" class="text-blue-700 font-bold hover:underline">Calculator Vârstă de Pensionare</a> - Află exact anul și luna în care poți ieși la pensie.</li>
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-pensie-anticipata" class="text-blue-700 font-bold hover:underline">Calculator Pensie Anticipată</a> - Calculează penalizarea aplicată dacă ieși la pensie mai devreme.</li>
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-puncte-pensie" class="text-blue-700 font-bold hover:underline">Calculator Puncte de Stabilitate</a> - Vezi câte puncte bonus primești pentru vechimea în muncă.</li>
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/legislatie" class="text-blue-700 font-bold hover:underline">Ghidul Legislației (Legea 360/2023)</a> - Descoperă toate noutățile noului sistem public de pensii.</li>
+  </ul>
+</div>
 `
   },
   {
@@ -1869,6 +2121,20 @@ Legislația pensiilor este un organism viu, care suferă modificări constante. 
 </div>
 
 <p>Pentru a începe înregistrarea contului dumneavoastră sau pentru a vă autentifica în profil, vizitați platforma electronică a <a href="https://www.cnpp.ro" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline font-semibold">Casei Naționale de Pensii Publice (CNPP)</a>. Pentru a consulta detaliile legislative din Monitorul Oficial cu privire la dreptul de acces la datele personale și obligațiile angajatorilor, accesați <a href="https://legislatie.just.ro" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline font-semibold">Just.ro (Portalul Legislativ Oficial)</a>.</p>
+
+
+
+<div class="mt-8 p-6 bg-blue-50 rounded-xl border border-blue-100">
+  <h3 class="text-xl font-bold text-blue-900 mb-4">Instrumente și Resurse Utile</h3>
+  <p class="text-gray-700 mb-4">Pentru a vă planifica mai bine viitorul financiar, vă recomandăm să utilizați instrumentele noastre gratuite, actualizate la zi conform Legii 360/2023:</p>
+  <ul class="space-y-2 list-none pl-0">
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/" class="text-blue-700 font-bold hover:underline">Calculator Pensie de Stat 2025</a> - Estimează-ți instant pensia lunară.</li>
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-varsta-pensionare" class="text-blue-700 font-bold hover:underline">Calculator Vârstă de Pensionare</a> - Află exact anul și luna în care poți ieși la pensie.</li>
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-pensie-anticipata" class="text-blue-700 font-bold hover:underline">Calculator Pensie Anticipată</a> - Calculează penalizarea aplicată dacă ieși la pensie mai devreme.</li>
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-puncte-pensie" class="text-blue-700 font-bold hover:underline">Calculator Puncte de Stabilitate</a> - Vezi câte puncte bonus primești pentru vechimea în muncă.</li>
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/legislatie" class="text-blue-700 font-bold hover:underline">Ghidul Legislației (Legea 360/2023)</a> - Descoperă toate noutățile noului sistem public de pensii.</li>
+  </ul>
+</div>
 `
   },
   {
@@ -1945,6 +2211,20 @@ Pentru persoanele cu un număr redus de puncte, dar care au totuși stagiul mini
 
 ### Concluzie și Perspective
 Legislația pensiilor este un organism viu, care suferă modificări constante. Este vital ca viitorii pensionari să își analizeze din timp dosarul, să recupereze adeverințele pentru sporuri și acord global (acum luate în calcul conform noii legi) și să ia în considerare și sistemele alternative (Pilonul II obligatoriu privat și Pilonul III facultativ privat) pentru a-și securiza veniturile la bătrânețe. Sperăm ca acest ghid extensiv să vă clarifice poziția și drepturile financiare.
+
+
+
+<div class="mt-8 p-6 bg-blue-50 rounded-xl border border-blue-100">
+  <h3 class="text-xl font-bold text-blue-900 mb-4">Instrumente și Resurse Utile</h3>
+  <p class="text-gray-700 mb-4">Pentru a vă planifica mai bine viitorul financiar, vă recomandăm să utilizați instrumentele noastre gratuite, actualizate la zi conform Legii 360/2023:</p>
+  <ul class="space-y-2 list-none pl-0">
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/" class="text-blue-700 font-bold hover:underline">Calculator Pensie de Stat 2025</a> - Estimează-ți instant pensia lunară.</li>
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-varsta-pensionare" class="text-blue-700 font-bold hover:underline">Calculator Vârstă de Pensionare</a> - Află exact anul și luna în care poți ieși la pensie.</li>
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-pensie-anticipata" class="text-blue-700 font-bold hover:underline">Calculator Pensie Anticipată</a> - Calculează penalizarea aplicată dacă ieși la pensie mai devreme.</li>
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-puncte-pensie" class="text-blue-700 font-bold hover:underline">Calculator Puncte de Stabilitate</a> - Vezi câte puncte bonus primești pentru vechimea în muncă.</li>
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/legislatie" class="text-blue-700 font-bold hover:underline">Ghidul Legislației (Legea 360/2023)</a> - Descoperă toate noutățile noului sistem public de pensii.</li>
+  </ul>
+</div>
 `
   }
 ];
