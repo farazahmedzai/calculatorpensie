@@ -33,18 +33,12 @@ Disallow: /*?track=*
 # Sitemap location
 Sitemap: https://calculatorpensie.com/sitemap.xml
 
-# Crawl delay to be respectful (optional)
-Crawl-delay: 1
-
 # Specific instructions for major search engines
 User-agent: Googlebot
 Allow: /
-Crawl-delay: 1
 
 User-agent: Bingbot
 Allow: /
-Crawl-delay: 1
 
 User-agent: YandexBot
 Allow: /
-Crawl-delay: 2

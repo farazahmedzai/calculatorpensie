@@ -67,7 +67,7 @@ export default function Home() {
     setCalculationResult({
       retirementAge: `${adjustedRetirementAge} ani`,
       retirementDate: `${monthNames[retirementMonth]} ${retirementYear}`,
-      monthlyPension: result
+      monthlyPension: result.monthlyPension
     });
   };
 

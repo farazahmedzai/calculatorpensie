@@ -1,10 +1,11 @@
-// Romanian pension calculation formulas based on Law 263/2010
+// Romanian pension calculation formulas based on Law 360/2023 (Active for 2025/2026)
 
 export interface StandardPensionInput {
   currentAge: number;
   monthlyIncome: number;
   contributionYears: number;
   retirementAge: number;
+  assimilatedYears?: number;
 }
 
 export interface EarlyRetirementInput {
@@ -23,17 +24,24 @@ export interface Pillar3Input {
   expectedReturn: number;
 }
 
-// Constants for Romanian pension system (2024 values)
-const PENSION_POINT_VALUE = 81.8; // RON (2024)
-const AVERAGE_GROSS_SALARY_2024 = 7400; // RON approximate
+export interface PensionResult {
+  monthlyPension: number;
+  totalPoints: number;
+  contributoryPoints: number;
+  stabilityPoints: number;
+  assimilatedPoints: number;
+}
+
+// Constants for Romanian pension system (2025/2026 values under Law 360/2023)
+const VPR_2025 = 91; // RON (Valoarea Punctului de Referinta)
+const AVERAGE_GROSS_SALARY_2025 = 8417; // RON
+const MINIMUM_PENSION_2025 = 1281; // RON
 const MINIMUM_CONTRIBUTION_YEARS = 15;
 const STANDARD_RETIREMENT_AGE_MALE = 65;
-const STANDARD_RETIREMENT_AGE_FEMALE = 63;
-const EARLY_RETIREMENT_PENALTY_RATE = 0.75; // 0.75% per month
-const MAX_POINTS_PER_YEAR = 5;
+const STANDARD_RETIREMENT_AGE_FEMALE = 63; // gradually equalizing to 65 by 2035
 
-export function calculateStandardPension(input: StandardPensionInput): number {
-  const { currentAge, monthlyIncome, contributionYears, retirementAge } = input;
+export function calculateStandardPension(input: StandardPensionInput): PensionResult {
+  const { currentAge, monthlyIncome, contributionYears, retirementAge, assimilatedYears = 0 } = input;
   
   // Calculate future contribution years
   const futureYears = Math.max(0, retirementAge - currentAge);
@@ -44,27 +52,43 @@ export function calculateStandardPension(input: StandardPensionInput): number {
     throw new Error(`Stagiul minim de cotizare este ${MINIMUM_CONTRIBUTION_YEARS} ani`);
   }
   
-  // Calculate annual gross salary from net monthly income (approximate)
-  const grossMonthlySalary = monthlyIncome * 1.4; // Approximate conversion net to gross
-  const grossAnnualSalary = grossMonthlySalary * 12;
+  // Net to gross conversion (approximate: net is roughly 58% of gross in Romania after CAS, CASS, IV)
+  const grossMonthlySalary = monthlyIncome / 0.58;
   
-  // Calculate average annual points
-  // Points = (individual annual salary / average gross salary for that year)
-  const averageAnnualPoints = Math.min(
-    grossAnnualSalary / (AVERAGE_GROSS_SALARY_2024 * 12),
-    MAX_POINTS_PER_YEAR
-  );
+  // 1. Contributory points (Puncte de contributivitate)
+  const pointsPerYear = grossMonthlySalary / AVERAGE_GROSS_SALARY_2025;
+  const contributoryPoints = pointsPerYear * totalContributionYears;
   
-  // Total pension points
-  const totalPoints = averageAnnualPoints * totalContributionYears;
+  // 2. Stability points (Puncte de stabilitate) for years worked > 25
+  let stabilityPoints = 0;
+  if (totalContributionYears > 25) {
+    const extraYears = totalContributionYears - 25;
+    
+    if (extraYears <= 5) {
+      stabilityPoints = extraYears * 0.5;
+    } else if (extraYears <= 10) {
+      stabilityPoints = (5 * 0.5) + ((extraYears - 5) * 0.75);
+    } else {
+      stabilityPoints = (5 * 0.5) + (5 * 0.75) + ((extraYears - 10) * 1.0);
+    }
+  }
   
-  // Calculate pension
-  const monthlyPension = totalPoints * PENSION_POINT_VALUE;
+  // 3. Assimilated points (Puncte asimilate) = 0.25 per year (studii la zi, armata, etc.)
+  const assimilatedPoints = assimilatedYears * 0.25;
   
-  // Apply minimum pension guarantee (approximately 1000 RON in 2024)
-  const minimumPension = 1000;
+  // 4. Total points
+  const totalPoints = contributoryPoints + stabilityPoints + assimilatedPoints;
   
-  return Math.max(monthlyPension, minimumPension);
+  // 5. Calculate monthly pension = Total points * VPR (91 RON in 2025)
+  const monthlyPension = totalPoints * VPR_2025;
+  
+  return {
+    monthlyPension: Math.round(Math.max(monthlyPension, MINIMUM_PENSION_2025)),
+    totalPoints: parseFloat(totalPoints.toFixed(4)),
+    contributoryPoints: parseFloat(contributoryPoints.toFixed(4)),
+    stabilityPoints: parseFloat(stabilityPoints.toFixed(4)),
+    assimilatedPoints: parseFloat(assimilatedPoints.toFixed(4))
+  };
 }
 
 export function calculateEarlyRetirement(input: EarlyRetirementInput) {
@@ -86,31 +110,49 @@ export function calculateEarlyRetirement(input: EarlyRetirementInput) {
     throw new Error('Vârsta selectată nu reprezintă pensie anticipată');
   }
   
-  // Calculate standard pension first
-  const standardPension = calculateStandardPension({
+  // Calculate standard pension at the early age (using actual contribution years at retirement)
+  const standardResult = calculateStandardPension({
     currentAge,
     monthlyIncome,
     contributionYears,
-    retirementAge: standardAge,
+    retirementAge: earlyRetirementAge,
   });
   
-  // Apply early retirement penalty
-  const penaltyPercentage = monthsEarly * EARLY_RETIREMENT_PENALTY_RATE;
-  const earlyPension = standardPension * (1 - penaltyPercentage / 100);
+  // Apply early retirement penalty under Law 360/2023
+  // Penalty rate depends on how much the stage exceeds the standard required stage (requiredYears)
+  const exceedYears = totalYears - requiredYears;
   
-  // Recommendations based on penalty
+  let penaltyRate = 0.40; // Default max penalty rate per month of anticipation
+  
+  if (exceedYears >= 8) {
+    penaltyRate = 0.0;
+  } else if (exceedYears >= 5) {
+    penaltyRate = 0.15;
+  } else if (exceedYears >= 4) {
+    penaltyRate = 0.20;
+  } else if (exceedYears >= 3) {
+    penaltyRate = 0.25;
+  } else if (exceedYears >= 2) {
+    penaltyRate = 0.30;
+  } else if (exceedYears >= 1) {
+    penaltyRate = 0.35;
+  }
+  
+  const penaltyPercentage = monthsEarly * penaltyRate;
+  const earlyPension = standardResult.monthlyPension * (1 - penaltyPercentage / 100);
+  
   let recommendedStage = '';
-  if (penaltyPercentage > 30) {
-    recommendedStage = 'Penalizarea este foarte mare. Consideră amânarea pensionării sau pilonul III suplimentar.';
-  } else if (penaltyPercentage > 15) {
+  if (penaltyPercentage > 20) {
+    recommendedStage = 'Penalizarea este foarte mare. Consideră amânarea pensionării sau Pilonul III.';
+  } else if (penaltyPercentage > 10) {
     recommendedStage = 'Penalizarea este moderată. Evaluează cu atenție impactul pe termen lung.';
   } else {
-    recommendedStage = 'Penalizarea este acceptabilă dacă ai alte surse de venit pentru pensie.';
+    recommendedStage = 'Penalizarea este redusă datorită depășirii stagiului complet de cotizare.';
   }
   
   return {
-    earlyPension,
-    standardPension,
+    earlyPension: Math.round(Math.max(earlyPension, MINIMUM_PENSION_2025)),
+    standardPension: standardResult.monthlyPension,
     penaltyPercentage,
     monthsEarly,
     recommendedStage,
@@ -212,7 +254,7 @@ export function calculatePurchasableYears(studyYears: number, militaryService: n
   const totalPurchasable = maxStudyYears + maxMilitaryYears + maxChildCareYears;
   
   // Cost calculation: 25% of average gross salary per year
-  const yearlyLegalCost = AVERAGE_GROSS_SALARY_2024 * 12 * 0.25;
+  const yearlyLegalCost = AVERAGE_GROSS_SALARY_2025 * 12 * 0.25;
   const estimatedCost = totalPurchasable * yearlyLegalCost;
   
   const description = [];

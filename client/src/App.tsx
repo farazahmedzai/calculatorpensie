@@ -27,6 +27,11 @@ const LazyMetodologie = lazy(() => import("@/pages/metodologie"));
 const LazyPrivacy = lazy(() => import("@/pages/privacy"));
 const LazyTerms = lazy(() => import("@/pages/terms"));
 const LazyFAQ = lazy(() => import("@/pages/faq"));
+const LazyCalculatorAnticipata = lazy(() => import("@/pages/calculator-anticipata"));
+const LazyCalculatorVarsta = lazy(() => import("@/pages/calculator-varsta-pensionare"));
+const LazyCalculatorPuncte = lazy(() => import("@/pages/calculator-puncte-pensie"));
+const LazyCalculatorPilon2 = lazy(() => import("@/pages/calculator-pilon-2"));
+const LazyProgramExcel = lazy(() => import("@/pages/program-excel-calcul-pensie"));
 
 // Loading component
 const LoadingSpinner = () => (
@@ -49,6 +54,31 @@ function Router() {
           <Route path="/calculator">
             <Suspense fallback={<LoadingSpinner />}>
               <LazyCalculator />
+            </Suspense>
+          </Route>
+          <Route path="/calculator-pensie-anticipata">
+            <Suspense fallback={<LoadingSpinner />}>
+              <LazyCalculatorAnticipata />
+            </Suspense>
+          </Route>
+          <Route path="/calculator-varsta-pensionare">
+            <Suspense fallback={<LoadingSpinner />}>
+              <LazyCalculatorVarsta />
+            </Suspense>
+          </Route>
+          <Route path="/calculator-puncte-pensie">
+            <Suspense fallback={<LoadingSpinner />}>
+              <LazyCalculatorPuncte />
+            </Suspense>
+          </Route>
+          <Route path="/calculator-pensie-pilon-2">
+            <Suspense fallback={<LoadingSpinner />}>
+              <LazyCalculatorPilon2 />
+            </Suspense>
+          </Route>
+          <Route path="/program-excel-calcul-pensie">
+            <Suspense fallback={<LoadingSpinner />}>
+              <LazyProgramExcel />
             </Suspense>
           </Route>
           <Route path="/planificare">

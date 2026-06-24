@@ -3,10 +3,27 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Link } from "wouter";
 import { Gavel, ArrowRight, ExternalLink, Calendar, Calculator, FileText, TrendingUp } from "lucide-react";
+import MetaTags from "@/components/seo/MetaTags";
+import { WebPageSchema } from "@/components/seo/StructuredData";
 
 export default function LegislatiePage() {
   return (
     <div className="min-h-screen bg-white">
+      <MetaTags 
+        title="Legea Pensiilor 2025 | Ghid Legislativ Oficial CNPP"
+        description="Ghid complet despre legislația pensiilor din România în 2025. Condiții de pensionare, recalculare, stagiul de cotizare și valoarea punctului de referință (VPR)."
+        canonical="https://calculatorpensie.com/legislatie"
+        keywords="legea pensiilor 2025, legislatie pensii romania, vpr 2025, cnpp legea"
+      />
+      <WebPageSchema 
+        name="Legislație Pensii România - Ghid Complet 2025"
+        description="Explicații clare despre legislația pensiilor unitare publice din România și recalcularea din 2025"
+        url="https://calculatorpensie.com/legislatie"
+        breadcrumbs={[
+          { name: "Acasă", url: "https://calculatorpensie.com" },
+          { name: "Legislație" }
+        ]}
+      />
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-brand-red to-red-700 text-white py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">

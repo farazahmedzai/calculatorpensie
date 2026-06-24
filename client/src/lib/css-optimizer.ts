@@ -115,9 +115,9 @@ export class CSSOptimizer {
       // Convert to preload and load asynchronously
       stylesheet.rel = 'preload';
       stylesheet.setAttribute('as', 'style');
-      stylesheet.onload = function(this: HTMLLinkElement) {
-        this.rel = 'stylesheet';
-        this.onload = null;
+      stylesheet.onload = () => {
+        stylesheet.rel = 'stylesheet';
+        stylesheet.onload = null;
       };
     });
   }

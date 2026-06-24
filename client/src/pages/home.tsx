@@ -60,18 +60,18 @@ export default function Home() {
     setCalculationResult({
       retirementAge: `${adjustedRetirementAge} ani`,
       retirementDate: `${monthNames[retirementMonth]} ${retirementYear}`,
-      monthlyPension: result
+      monthlyPension: result.monthlyPension
     });
 
     // Track calculator usage for analytics
-    trackCalculatorUsage('standard', result);
+    trackCalculatorUsage('standard', result.monthlyPension);
   };
 
   return (
     <div className="bg-white">
       <PerformanceTracker page="/" title="Calculator Pensie România 2025" />
       <MetaTags 
-        title="Calculator Pensie 2025 - Calculează Pensia de Stat (Pilon I) și Privată | CalculatorPensie.com"
+        title="Calculator Pensie Online 2025 | Estimare Pensie de Stat"
         description="✅ Folosește cel mai simplu calculator de pensie online. Află vârsta de pensionare și estimează-ți pensia lunară (Pilon I și II) în mai puțin de 60 de secunde. Gratuit și precis!"
         canonical="https://calculatorpensie.com"
         keywords="calculator pensie, pensie romania, calculul pensiei, varsta pensionare, pilon 1, pilon 2, pilon 3, cnpp"

@@ -3,10 +3,27 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Link } from "wouter";
 import { ListCheck, ArrowRight, Calculator, Clock, Users, Heart, AlertCircle } from "lucide-react";
+import MetaTags from "@/components/seo/MetaTags";
+import { WebPageSchema } from "@/components/seo/StructuredData";
 
 export default function TipuriPensiiPage() {
   return (
     <div className="min-h-screen bg-white">
+      <MetaTags 
+        title="Tipuri de Pensii în România | Ghid Complet 2025"
+        description="Descoperă toate tipurile de pensii din sistemul public din România: limită de vârstă, anticipată, de invaliditate și de urmaș. Condiții oficiale și documente."
+        canonical="https://calculatorpensie.com/tipuri-pensii"
+        keywords="tipuri pensii, pensie limita de varsta, pensie anticipata, pensie invaliditate, pensie urmas"
+      />
+      <WebPageSchema 
+        name="Tipuri de Pensii în România - Ghid Complet"
+        description="Ghid exhaustiv despre tipurile de pensii din sistemul unitar public de pensii în România"
+        url="https://calculatorpensie.com/tipuri-pensii"
+        breadcrumbs={[
+          { name: "Acasă", url: "https://calculatorpensie.com" },
+          { name: "Tipuri de Pensii" }
+        ]}
+      />
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-brand-green to-green-700 text-white py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">

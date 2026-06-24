@@ -8,7 +8,7 @@ import { Input } from "@/components/ui/input";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Card, CardContent } from "@/components/ui/card";
 import { Calculator, Info } from "lucide-react";
-import { calculateStandardPension } from "@/lib/pension-calculations";
+import { calculateStandardPension, type PensionResult } from "@/lib/pension-calculations";
 import { trackCalculatorUsage } from "@/lib/analytics";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { apiRequest } from "@/lib/queryClient";
@@ -27,7 +27,7 @@ interface MainCalculatorProps {
 }
 
 export default function MainCalculator({ onCalculationComplete }: MainCalculatorProps) {
-  const [result, setResult] = useState<number | null>(null);
+  const [result, setResult] = useState<PensionResult | null>(null);
   const [isCalculating, setIsCalculating] = useState(false);
   const queryClient = useQueryClient();
 
@@ -70,7 +70,7 @@ export default function MainCalculator({ onCalculationComplete }: MainCalculator
       setResult(calculatedPension);
       
       // Track calculator usage for analytics
-      trackCalculatorUsage('standard', calculatedPension);
+      trackCalculatorUsage('standard', calculatedPension.monthlyPension);
       
       // Save calculation to database (graceful fallback for static deployment)
       await savePensionCalculation.mutateAsync({
@@ -78,14 +78,14 @@ export default function MainCalculator({ onCalculationComplete }: MainCalculator
         monthlyIncome: data.monthlyIncome,
         contributionYears: data.contributionYears,
         retirementAge: data.retirementAge,
-        calculatedPension: calculatedPension,
+        calculatedPension: calculatedPension.monthlyPension,
         calculationType: 'standard',
         createdAt: new Date().toISOString(),
       });
 
       // Call parent callback if provided
       if (onCalculationComplete) {
-        onCalculationComplete(calculatedPension);
+        onCalculationComplete(calculatedPension.monthlyPension);
       }
     } catch (error) {
       console.error('Calculation error:', error);
@@ -211,19 +211,19 @@ export default function MainCalculator({ onCalculationComplete }: MainCalculator
           <CardContent className="p-6">
             <h4 className="font-semibold text-brand-green mb-2">Rezultatul calculului:</h4>
             <p className="text-3xl font-bold text-brand-green mb-2">
-              {result.toLocaleString('ro-RO', { maximumFractionDigits: 0 })} RON/lună
+              {result.monthlyPension.toLocaleString('ro-RO', { maximumFractionDigits: 0 })} RON/lună
             </p>
             <p className="text-sm text-gray-700">
-              *Estimare bazată pe legislația actuală (Legea 263/2010)
+              *Estimare bazată pe legislația actuală (Legea 360/2023)
             </p>
             <div className="mt-4 grid grid-cols-2 gap-4 text-sm">
               <div>
                 <span className="text-gray-700">Punctaj estimat:</span>
-                <p className="font-semibold">{((form.getValues('contributionYears') + yearsToRetirement) * 2).toFixed(1)} puncte</p>
+                <p className="font-semibold">{result.totalPoints.toFixed(2)} puncte</p>
               </div>
               <div>
-                <span className="text-gray-700">Valoare punct 2024:</span>
-                <p className="font-semibold">81,8 RON</p>
+                <span className="text-gray-700">Valoare VPR 2025:</span>
+                <p className="font-semibold">91 RON</p>
               </div>
             </div>
           </CardContent>

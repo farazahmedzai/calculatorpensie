@@ -7,6 +7,12 @@
 
 # Specific redirects must come BEFORE catch-all redirect
 [[redirects]]
+  from = "/blog/blog/*"
+  to = "/blog/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/robots.txt"
   to = "/robots.txt"
   status = 200

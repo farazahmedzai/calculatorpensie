@@ -149,7 +149,7 @@ export default function BlogPage() {
                       </span>
                     </div>
                     <CardTitle className={`text-xl mb-3 transition-colors ${getCategoryColor(article.category)}`}>
-                      <Link href={`/blog/${article.slug}`}>
+                      <Link href={`~/blog/${article.slug}`}>
                         <a>{article.title}</a>
                       </Link>
                     </CardTitle>
@@ -164,7 +164,7 @@ export default function BlogPage() {
                       <span className="font-semibold text-gray-800">Scris de: {article.author.name}</span>
                     </div>
                     <div className="flex items-center justify-end">
-                      <Link href={`/blog/${article.slug}`}>
+                      <Link href={`~/blog/${article.slug}`}>
                         <Button variant="ghost" size="sm" className={`${getCategoryColor(article.category)} font-bold`}>
                           Citește mai mult →
                         </Button>
@@ -227,7 +227,7 @@ export default function BlogPage() {
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <Link href="/planificare">
+                <Link href="~/planificare">
                   <Button className="w-full bg-brand-blue hover:bg-blue-700">
                     Vezi Ghidul
                   </Button>
@@ -248,7 +248,7 @@ export default function BlogPage() {
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <Link href="/tipuri-pensii">
+                <Link href="~/tipuri-pensii">
                   <Button className="w-full bg-brand-green hover:bg-green-700">
                     Vezi Ghidul
                   </Button>
@@ -269,7 +269,7 @@ export default function BlogPage() {
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <Link href="/legislatie">
+                <Link href="~/legislatie">
                   <Button className="w-full bg-brand-red hover:bg-red-700">
                     Vezi Ghidul
                   </Button>

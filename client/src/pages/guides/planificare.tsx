@@ -2,10 +2,27 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import { MapPin, ArrowRight, Calculator, BookOpen, TrendingUp, AlertTriangle } from "lucide-react";
+import MetaTags from "@/components/seo/MetaTags";
+import { WebPageSchema } from "@/components/seo/StructuredData";
 
 export default function PlanificarePage() {
   return (
     <div className="min-h-screen bg-white">
+      <MetaTags 
+        title="Planificare Pensie România | Ghid Practic 2025"
+        description="Ghid complet pentru planificarea pensiei în România. Strategii pentru economisire voluntară, pensie privată facultativă și optimizare fiscală."
+        canonical="https://calculatorpensie.com/planificare"
+        keywords="planificare pensie, pensie privata, pilon 3, deducere fiscala, pensie voluntara"
+      />
+      <WebPageSchema 
+        name="Planificarea Pensiei - Ghid Practic"
+        description="Strategii complete pentru planificarea pensionării și economisire eficientă în România"
+        url="https://calculatorpensie.com/planificare"
+        breadcrumbs={[
+          { name: "Acasă", url: "https://calculatorpensie.com" },
+          { name: "Planificare" }
+        ]}
+      />
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-brand-blue to-blue-700 text-white py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">

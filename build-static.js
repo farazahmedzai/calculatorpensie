@@ -29,7 +29,10 @@ try {
     }
     
     // Create _redirects file for SPA routing only (ads.txt now served as static file)
-    const redirectsContent = `/*          /index.html   200`;
+    const redirectsContent = `/blog/blog/*  /blog/:splat  301!
+/robots.txt  /robots.txt  200
+/sitemap.xml  /sitemap.xml  200
+/*          /index.html   200`;
     writeFileSync(`${distPath}/_redirects`, redirectsContent);
     
     console.log('Static build completed successfully!');

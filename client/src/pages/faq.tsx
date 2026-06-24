@@ -5,60 +5,59 @@ import { HelpCircle, Calculator, Users, Gavel, TrendingUp, Shield, FileText } fr
 import MetaTags from "@/components/seo/MetaTags";
 import BreadcrumbNavigation from "@/components/seo/BreadcrumbNavigation";
 import { FAQPageSchema, WebPageSchema } from "@/components/seo/StructuredData";
-import { Link } from "wouter";
 
 export default function FAQ() {
-  // Schema.org structured data for rich snippets
+  // Schema.org structured data for rich snippets under Law 360/2023
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "La ce vârstă mă pot pensiona?",
+        "name": "La ce vârstă mă pot pensiona în România?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Vârsta de pensionare depinde de sex și istoricul de cotizare. În 2025, bărbații se pot pensiona la 65 de ani cu 35 de ani stagiu de cotizare, iar femeile la 63 de ani cu 30 de ani stagiu. Pentru pensionarea anticipată, bărbații pot ieși la pensie de la 60 de ani, iar femeile de la 58 de ani, dar cu penalizări de 0,75% pe lună pentru fiecare lună de anticipare."
+          "text": "Conform Legii nr. 360/2023, vârsta standard de pensionare este de 65 de ani pentru bărbați și femei. Pentru bărbați vârsta este deja activă, iar pentru femei crește gradual de la 63 de ani spre 65 de ani până în anul 2035. Stagiul complet de cotizare contributiv este de 35 de ani, iar cel minim de 15 ani."
         }
       },
       {
         "@type": "Question", 
-        "name": "Care este valoarea punctului de pensie în 2025?",
+        "name": "Care este valoarea punctului de referință (VPR) în 2025?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Începând cu 1 ianuarie 2025, valoarea punctului de pensie este de 2.031 lei, conform Legii nr. 263/2010 privind sistemul unitar de pensii publice, cu modificările și completările ulterioare."
+          "text": "În anul 2025, Valoarea Punctului de Referință (VPR) este stabilită oficial la 91 Lei, crescută de la 81 Lei în 2024. Punctul de pensie general este menținut la valoarea de 2.031 Lei."
         }
       },
       {
         "@type": "Question",
-        "name": "Cum se calculează pensia de stat?",
+        "name": "Cum se calculează pensia de stat conform noii legi?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Pensia de stat se calculează folosind formula: Punctajul mediu anual × Stagiul de cotizare (ani) × Valoarea punctului de pensie (2.031 lei în 2025). Punctajul mediu anual rezultă din raportul dintre salariul brut lunar și salariul mediu brut pe economie din perioada de contribuție."
+          "text": "Formula de calcul conform Legii nr. 360/2023 este: Pensia Brută = Număr Total de Puncte × VPR (91 Lei în 2025). Numărul total de puncte reprezintă suma dintre punctele de contributivitate, punctele de stabilitate (bonusul pentru stagiul peste 25 de ani) și punctele asimilate (studii, armată)."
         }
       },
       {
         "@type": "Question",
-        "name": "Ce este pensia anticipată și cum funcționează?",
+        "name": "Ce este pensia anticipată și ce penalizări se aplică?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Pensia anticipată permite ieșirea la pensie cu până la 5 ani mai devreme față de vârsta standard, dar cu o penalizare de 0,75% pe lună pentru fiecare lună de anticipare. Bărbații pot ieși la pensie anticipată de la 60 de ani, iar femeile de la 58 de ani, cu condiția să aibă minimum 35 ani stagiu pentru bărbați și 30 ani pentru femei."
+          "text": "Pensia anticipată se poate solicita cu maximum 5 ani înainte de împlinirea vârstei standard, cu condiția realizării stagiului complet de cotizare (35 de ani). Penalizarea aplicată sub Legea 360/2023 este diminuată și variază între 0,15% și 0,40% pe lună de anticipare (în funcție de stagiul suplimentar realizat), spre deosebire de cota veche de 0,75%."
         }
       },
       {
         "@type": "Question",
-        "name": "Ce avantaje oferă Pilonul III?",
+        "name": "Ce avantaje oferă Pilonul III de pensie privată facultativă?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Pilonul III oferă deducere fiscală anuală de până la 400 de euro, impozitare redusă de 10% asupra contribuțiilor, și posibilitatea retragerii fără impozitare după vârsta de 60 de ani și minimum 5 ani de la prima contribuție. Este o pensie facultativă care completează pensia de stat."
+          "text": "Pilonul III oferă posibilitatea acumulării de capital suplimentar pentru bătrânețe, având ca principal beneficiu deductibilitatea fiscală a contribuțiilor în limită de 400 de Euro pe an atât pentru angajat, cât și pentru angajator."
         }
       },
       {
         "@type": "Question",
-        "name": "Cum afectează condițiile speciale de muncă vârsta de pensionare?",
+        "name": "Cum se acordă punctele de stabilitate conform noii legi a pensiilor?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Condițiile speciale de muncă (I și II) și condițiile deosebite de muncă reduc vârsta de pensionare cu 1-7 ani, în funcție de categoria de muncă și perioada lucrată în aceste condiții. Pentru fiecare an lucrat în condiții speciale, vârsta de pensionare se reduce proporțional."
+          "text": "Punctele de stabilitate se acordă ca bonus pentru anii de muncă ce depășesc stagiul de 25 de ani: +0,50 puncte/an pentru anii 26-30; +0,75 puncte/an pentru anii 31-35; +1,00 punct/an pentru anii ce depășesc 35 de ani de activitate."
         }
       }
     ]
@@ -70,7 +69,7 @@ export default function FAQ() {
         title="Întrebări Frecvente - Calculator Pensie România | FAQ Pensii 2025"
         description="Răspunsuri la întrebările frecvente despre pensii în România. Află la ce vârstă te poți pensiona, cum se calculează pensia și care sunt avantajele Pilonului III."
         canonical="https://calculatorpensie.com/faq"
-        keywords="intrebari frecvente pensii, FAQ pensii romania, varsta pensionare, calculator pensie, pilonul III"
+        keywords="intrebari frecvente pensii, FAQ pensii romania, varsta pensionare, legea 360/2023, vpr 2025, puncte de stabilitate"
       />
       
       <FAQPageSchema questions={faqSchema.mainEntity.map(q => ({
@@ -79,8 +78,8 @@ export default function FAQ() {
       }))} />
       
       <WebPageSchema 
-        name="Întrebări Frecvente despre Pensii în România"
-        description="Ghid complet cu răspunsuri la cele mai frecvente întrebări despre sistemul de pensii din România"
+        name="Întrebări Frecvente tentang Pensii în România"
+        description="Ghid complet cu răspunsuri la cele mai frecvente întrebări despre sistemul de pensii din România conform Legii 360/2023"
         url="https://calculatorpensie.com/faq"
         breadcrumbs={[
           { name: "Acasă", url: "https://calculatorpensie.com" },
@@ -103,7 +102,7 @@ export default function FAQ() {
             Întrebări Frecvente despre Pensii
           </h1>
           <p className="text-xl opacity-90 max-w-2xl mx-auto">
-            Găsește răspunsuri clare la cele mai importante întrebări despre sistemul de pensii din România
+            Găsește răspunsuri clare la cele mai importante întrebări despre sistemul de pensii din România conform reformelor recente
           </p>
         </div>
       </section>
@@ -126,39 +125,22 @@ export default function FAQ() {
               <AccordionContent className="px-6 pb-6">
                 <div className="space-y-4 text-gray-700">
                   <p className="text-base leading-relaxed">
-                    Vârsta de pensionare depinde de <strong>sex</strong> și <strong>stagiul de cotizare</strong>:
+                    Vârsta de pensionare în România este stabilită unitar la <strong>65 de ani</strong>, însă aplicarea se face gradual pentru femei:
                   </p>
                   
                   <div className="bg-blue-50 p-4 rounded-lg">
-                    <h4 className="font-semibold mb-2 text-blue-900">Vârsta Standard de Pensionare (2025)</h4>
+                    <h4 className="font-semibold mb-2 text-blue-900">Vârsta Standard de Pensionare</h4>
                     <ul className="space-y-2">
-                      <li><strong>Bărbați:</strong> 65 ani cu minimum 35 ani stagiu de cotizare</li>
-                      <li><strong>Femei:</strong> 63 ani cu minimum 30 ani stagiu de cotizare</li>
+                      <li><strong>Bărbați:</strong> 65 de ani (deja în vigoare) cu minimum 15 ani stagiu minim de cotizare, respectiv 35 de ani stagiu complet.</li>
+                      <li><strong>Femei:</strong> Crește gradual de la 63 de ani spre 65 de ani până în 2035. Stagiul minim este de 15 ani, iar cel complet de 35 de ani.</li>
                     </ul>
                   </div>
 
                   <div className="bg-orange-50 p-4 rounded-lg">
                     <h4 className="font-semibold mb-2 text-orange-900">Pensionare Anticipată</h4>
-                    <ul className="space-y-2">
-                      <li><strong>Bărbați:</strong> de la 62 ani (cu penalizare 0,25%/lună)</li>
-                      <li><strong>Femei:</strong> de la 60 ani (cu penalizare 0,25%/lună)</li>
-                      <li><strong>Condiție:</strong> minimum 15 ani stagiu de cotizare</li>
-                    </ul>
-                  </div>
-
-                  <div className="bg-green-50 p-4 rounded-lg">
-                    <h4 className="font-semibold mb-2 text-green-900">Condiții Speciale de Muncă</h4>
-                    <p>Condițiile speciale și deosebite de muncă pot reduce vârsta de pensionare cu 1-7 ani, în funcție de categoria și perioada lucrată.</p>
-                  </div>
-
-                  <div className="mt-6">
-                    <Button 
-                      className="bg-blue-600 hover:bg-blue-700"
-                      onClick={() => window.location.href = '/calculator'}
-                    >
-                      <Calculator className="h-4 w-4 mr-2" />
-                      Calculează Data Ta de Pensionare
-                    </Button>
+                    <p className="text-sm">
+                      Se poate solicita cu maximum 5 ani înainte de împlinirea vârstei standard (de exemplu, de la 60 de ani), dar <strong>doar dacă s-a realizat stagiul complet de cotizare de 35 de ani</strong>. Reducerile se aplică permanent sub formă de penalizări lunare reduse.
+                    </p>
                   </div>
                 </div>
               </AccordionContent>
@@ -171,32 +153,22 @@ export default function FAQ() {
                   <div className="bg-green-100 text-green-600 rounded-lg w-8 h-8 flex items-center justify-center flex-shrink-0">
                     <TrendingUp className="h-4 w-4" />
                   </div>
-                  <span className="text-lg font-semibold">Care este valoarea punctului de pensie în 2025?</span>
+                  <span className="text-lg font-semibold">Care este valoarea punctului de referință (VPR) în 2025?</span>
                 </div>
               </AccordionTrigger>
               <AccordionContent className="px-6 pb-6">
                 <div className="space-y-4 text-gray-700">
                   <p className="text-base leading-relaxed">
-                    Începând cu <strong>1 ianuarie 2025</strong>, valoarea punctului de pensie este de <strong className="text-green-600 text-xl">2.031 lei</strong>.
+                    Începând cu <strong>1 ianuarie 2025</strong>, Valoarea Punctului de Referință (VPR) este de <strong className="text-green-600 text-xl">91 Lei</strong>.
                   </p>
                   
                   <div className="bg-green-50 p-4 rounded-lg">
-                    <h4 className="font-semibold mb-2 text-green-900">Detalii Importante</h4>
+                    <h4 className="font-semibold mb-2 text-green-900">Evoluție și Detalii</h4>
                     <ul className="space-y-2">
-                      <li>• Stabilită conform Legii nr. 263/2010</li>
-                      <li>• Se actualizează anual prin Hotărâre de Guvern</li>
-                      <li>• Folosită pentru calculul tuturor pensiilor de stat</li>
-                      <li>• Aplicabilă pentru toate categoriile de pensionari</li>
+                      <li>• Introdus prin Legea nr. 360/2023 pentru recalcularea pensiilor.</li>
+                      <li>• A crescut de la 81 Lei (în septembrie 2024) la 91 Lei în 2025 prin indexare automată legală.</li>
+                      <li>• Punctul de pensie clasic este menținut ca valoare de bază la 2.031 Lei.</li>
                     </ul>
-                  </div>
-
-                  <div className="bg-blue-50 p-4 rounded-lg">
-                    <h4 className="font-semibold mb-2 text-blue-900">Evoluția Valorii Punctului</h4>
-                    <div className="grid grid-cols-2 gap-4 text-sm">
-                      <div>2024: 2.031 lei</div>
-                      <div>2025: 2.031 lei</div>
-                    </div>
-                    <p className="text-sm text-gray-600 mt-2">Mențiunea valorii pentru continuitate</p>
                   </div>
                 </div>
               </AccordionContent>
@@ -215,31 +187,26 @@ export default function FAQ() {
               <AccordionContent className="px-6 pb-6">
                 <div className="space-y-4 text-gray-700">
                   <div className="bg-purple-50 p-4 rounded-lg">
-                    <h4 className="font-semibold mb-3 text-purple-900">Formula Oficială de Calcul</h4>
+                    <h4 className="font-semibold mb-3 text-purple-900">Noua Formulă de Calcul (Legea 360/2023)</h4>
                     <div className="bg-white p-3 rounded border text-center">
                       <div className="text-lg font-mono">
-                        <strong>Pensia = Punctajul Mediu Anual × Stagiul de Cotizare × 2.031 lei</strong>
+                        <strong>Pensia Brută = Număr Total Puncte × VPR (91 Lei)</strong>
                       </div>
                     </div>
                   </div>
 
-                  <div className="grid md:grid-cols-2 gap-4">
+                  <div className="grid md:grid-cols-3 gap-4">
                     <div className="bg-blue-50 p-4 rounded-lg">
-                      <h5 className="font-semibold mb-2 text-blue-900">Punctajul Mediu Anual</h5>
-                      <p className="text-sm">Se calculează ca raportul dintre salariul brut lunar și salariul mediu brut pe economie din fiecare an de contribuție.</p>
+                      <h5 className="font-semibold mb-2 text-blue-900">1. Puncte Contributivitate</h5>
+                      <p className="text-xs">Se calculează prin raportarea salariului tău brut lunar la cel mediu brut național din fiecare lună de muncă active.</p>
+                    </div>
+                    <div className="bg-green-50 p-4 rounded-lg">
+                      <h5 className="font-semibold mb-2 text-green-900">2. Puncte Stabilitate</h5>
+                      <p className="text-xs">Bonus oferit pentru anii de muncă ce depășesc 25 de ani (+0.5p/an între 26-30 ani; +0.75p/an între 31-35 ani; +1.0p/an peste 35 ani).</p>
                     </div>
                     <div className="bg-orange-50 p-4 rounded-lg">
-                      <h5 className="font-semibold mb-2 text-orange-900">Stagiul de Cotizare</h5>
-                      <p className="text-sm">Numărul total de ani în care ai plătit contribuții la sistemul public de pensii.</p>
-                    </div>
-                  </div>
-
-                  <div className="bg-gray-50 p-4 rounded-lg">
-                    <h5 className="font-semibold mb-2">Exemplu de Calcul</h5>
-                    <div className="text-sm space-y-1">
-                      <div>• Punctaj mediu anual: 1,2</div>
-                      <div>• Stagiul de cotizare: 35 de ani</div>
-                      <div>• Pensia = 1,2 × 35 × 2.031 = <strong className="text-green-600">8.530 lei/lună</strong></div>
+                      <h5 className="font-semibold mb-2 text-orange-900">3. Puncte Asimilate</h5>
+                      <p className="text-xs">Se adaugă câte 0.25 puncte pe an pentru perioadele de facultate la zi, stagiu militar sau concediu de creștere a copilului.</p>
                     </div>
                   </div>
                 </div>
@@ -259,45 +226,29 @@ export default function FAQ() {
               <AccordionContent className="px-6 pb-6">
                 <div className="space-y-4 text-gray-700">
                   <p className="text-base leading-relaxed">
-                    Pensia anticipată permite <strong>ieșirea la pensie cu până la 3 ani mai devreme</strong> față de vârsta standard, dar cu penalizări.
+                    Pensia anticipată permite retragerea din activitate cu până la 5 ani înainte de vârsta standard de pensionare (65 de ani), cu următoarele reguli conform noii legi:
                   </p>
 
                   <div className="bg-orange-50 p-4 rounded-lg">
-                    <h4 className="font-semibold mb-2 text-orange-900">Condiții de Acordare</h4>
-                    <ul className="space-y-2">
-                      <li>• <strong>Bărbați:</strong> de la 62 ani (în loc de 65)</li>
-                      <li>• <strong>Femei:</strong> de la 60 ani (în loc de 63)</li>
-                      <li>• <strong>Stagiu minim:</strong> 15 ani de cotizare</li>
-                    </ul>
+                    <h4 className="font-semibold mb-2 text-orange-900">Condiții Obligatorii de Cotizare</h4>
+                    <p className="text-sm">
+                      Trebuie să fi realizat integral <strong>stagiul complet de cotizare contributiv de 35 de ani</strong>. Perioadele necontributive (facultatea, armata) nu se iau în considerare pentru atingerea acestui prag minim de acces.
+                    </p>
                   </div>
 
                   <div className="bg-red-50 p-4 rounded-lg">
-                    <h4 className="font-semibold mb-2 text-red-900">Penalizarea</h4>
-                    <ul className="space-y-2">
-                      <li>• <strong>0,25% pe lună</strong> pentru fiecare lună de anticipare</li>
-                      <li>• <strong>3% pe an</strong> pentru fiecare an de anticipare</li>
-                      <li>• Penalizarea este <strong>permanentă</strong></li>
+                    <h4 className="font-semibold mb-2 text-red-900">Grila de Penalizare Progresivă</h4>
+                    <p className="text-sm">
+                      Penalizarea se aplică pentru fiecare lună de anticipare și este mult diminuată față de vechea lege (de maximum 0,75% pe lună), variind în funcție de stagiul realizat peste limita de 35 de ani:
+                    </p>
+                    <ul className="space-y-1 text-xs mt-2 pl-4 list-disc">
+                      <li>Depășire sub 1 an: penalizare de <strong>0.40%</strong>/lună.</li>
+                      <li>Depășire între 1 și 2 ani: penalizare de <strong>0.35%</strong>/lună.</li>
+                      <li>Depășire între 2 și 3 ani: penalizare de <strong>0.30%</strong>/lună.</li>
+                      <li>Depășire între 3 și 4 ani: penalizare de <strong>0.25%</strong>/lună.</li>
+                      <li>Depășire între 4 și 5 ani: penalizare de <strong>0.20%</strong>/lună.</li>
+                      <li>Depășire între 5 și 8 ani: penalizare de <strong>0.15%</strong>/lună.</li>
                     </ul>
-                  </div>
-
-                  <div className="bg-gray-50 p-4 rounded-lg">
-                    <h5 className="font-semibold mb-2">Exemplu de Penalizare</h5>
-                    <div className="text-sm space-y-1">
-                      <div>• Pensia calculată: 3.000 lei</div>
-                      <div>• Anticipare: 2 ani (24 luni)</div>
-                      <div>• Penalizare: 24 × 0,25% = 6%</div>
-                      <div>• Pensia finală: 3.000 - 6% = <strong className="text-red-600">2.820 lei/lună</strong></div>
-                    </div>
-                  </div>
-
-                  <div className="mt-6">
-                    <Button 
-                      className="bg-orange-600 hover:bg-orange-700"
-                      onClick={() => window.location.href = '/calculator?type=early'}
-                    >
-                      <Calculator className="h-4 w-4 mr-2" />
-                      Calculează Pensia Anticipată
-                    </Button>
                   </div>
                 </div>
               </AccordionContent>
@@ -316,54 +267,24 @@ export default function FAQ() {
               <AccordionContent className="px-6 pb-6">
                 <div className="space-y-4 text-gray-700">
                   <p className="text-base leading-relaxed">
-                    Pilonul III este o <strong>pensie facultativă</strong> cu multiple avantaje fiscale și de flexibilitate.
+                    Pilonul III este o <strong>pensie facultativă</strong> administrată privat, extrem de utilă pentru a suplimenta veniturile la bătrânețe.
                   </p>
 
                   <div className="grid md:grid-cols-2 gap-4">
                     <div className="bg-green-50 p-4 rounded-lg">
                       <h4 className="font-semibold mb-2 text-green-900">Avantaje Fiscale</h4>
-                      <ul className="space-y-2 text-sm">
-                        <li>• Deducere anuală până la <strong>400 €</strong></li>
-                        <li>• Impozitare redusă <strong>10%</strong> pe contribuții</li>
-                        <li>• Retragere fără impozitare după 60 ani + 5 ani</li>
+                      <ul className="space-y-1 text-xs">
+                        <li>• Deducere din impozitul pe venit în limita a <strong>400 Euro pe an</strong>.</li>
+                        <li>• Aceeași deductibilitate de 400 Euro se oferă și angajatorului pentru contribuția plătită în numele tău.</li>
                       </ul>
                     </div>
                     <div className="bg-blue-50 p-4 rounded-lg">
                       <h4 className="font-semibold mb-2 text-blue-900">Flexibilitate</h4>
-                      <ul className="space-y-2 text-sm">
-                        <li>• Contribuții variabile în timp</li>
-                        <li>• Posibilitate de suspendare</li>
-                        <li>• Alegerea administratorului</li>
+                      <ul className="space-y-1 text-xs">
+                        <li>• Contribuții flexibile ce pot fi mărite, reduse sau suspendate oricând.</li>
+                        <li>• Retragere garantată la împlinirea vârstei de 60 de ani și realizarea a minimum 90 de contribuții lunare.</li>
                       </ul>
                     </div>
-                  </div>
-
-                  <div className="bg-indigo-50 p-4 rounded-lg">
-                    <h4 className="font-semibold mb-2 text-indigo-900">Randament și Risc</h4>
-                    <ul className="space-y-2 text-sm">
-                      <li>• Randamente istorice: 4-8% anual</li>
-                      <li>• Diversificare prin fonduri de investiții</li>
-                      <li>• Risc controlat prin reglementări ASF</li>
-                    </ul>
-                  </div>
-
-                  <div className="bg-gray-50 p-4 rounded-lg">
-                    <h5 className="font-semibold mb-2">Exemplu de Economie</h5>
-                    <div className="text-sm space-y-1">
-                      <div>• Contribuție anuală: 2.000 lei (≈400€)</div>
-                      <div>• Deducere fiscală: 25% din 2.000 = 500 lei</div>
-                      <div>• Cost real: 2.000 - 500 = <strong className="text-green-600">1.500 lei</strong></div>
-                    </div>
-                  </div>
-
-                  <div className="mt-6">
-                    <Button 
-                      className="bg-indigo-600 hover:bg-indigo-700"
-                      onClick={() => window.location.href = '/calculator?type=pillar3'}
-                    >
-                      <Calculator className="h-4 w-4 mr-2" />
-                      Calculează Contribuții Pilon III
-                    </Button>
                   </div>
                 </div>
               </AccordionContent>
@@ -382,49 +303,17 @@ export default function FAQ() {
               <AccordionContent className="px-6 pb-6">
                 <div className="space-y-4 text-gray-700">
                   <p className="text-base leading-relaxed">
-                    Condițiile speciale și deosebite de muncă <strong>reduc vârsta de pensionare</strong> în funcție de categoria și perioada lucrată.
+                    Condițiile deosebite (Grupa II) sau speciale (Grupa I) de muncă <strong>reduc vârsta de pensionare standard</strong> și oferă majorări procentuale ale punctajelor lunare.
                   </p>
 
                   <div className="grid md:grid-cols-2 gap-4">
                     <div className="bg-orange-50 p-4 rounded-lg">
                       <h4 className="font-semibold mb-2 text-orange-900">Condiții Deosebite</h4>
-                      <ul className="space-y-2 text-sm">
-                        <li>• Reducere: <strong>1-3 ani</strong></li>
-                        <li>• Munca în subteran</li>
-                        <li>• Temperaturi extreme</li>
-                        <li>• Zgomot puternic</li>
-                      </ul>
+                      <p className="text-xs">Reducerea vârstei de pensionare cu 4 luni pentru fiecare an lucrat în aceste condiții, plus un spor de punctaj de 25%.</p>
                     </div>
                     <div className="bg-red-50 p-4 rounded-lg">
                       <h4 className="font-semibold mb-2 text-red-900">Condiții Speciale</h4>
-                      <ul className="space-y-2 text-sm">
-                        <li>• Reducere: <strong>4-7 ani</strong></li>
-                        <li>• Radiații ionizante</li>
-                        <li>• Substanțe toxice</li>
-                        <li>• Riscuri pentru sănătate</li>
-                      </ul>
-                    </div>
-                  </div>
-
-                  <div className="bg-blue-50 p-4 rounded-lg">
-                    <h4 className="font-semibold mb-2 text-blue-900">Categorii Profesionale</h4>
-                    <div className="grid grid-cols-2 gap-2 text-sm">
-                      <div>• Mineri</div>
-                      <div>• Metalurgiști</div>
-                      <div>• Radiologi</div>
-                      <div>• Piloți</div>
-                      <div>• Controlori trafic aerian</div>
-                      <div>• Personal medical din oncologie</div>
-                    </div>
-                  </div>
-
-                  <div className="bg-gray-50 p-4 rounded-lg">
-                    <h5 className="font-semibold mb-2">Exemplu de Calcul</h5>
-                    <div className="text-sm space-y-1">
-                      <div>• Bărbat, 65 ani vârsta standard</div>
-                      <div>• 10 ani în condiții speciale Categoria I</div>
-                      <div>• Reducere: 5 ani</div>
-                      <div>• Vârsta de pensionare: <strong className="text-green-600">60 ani</strong></div>
+                      <p className="text-xs">Reducerea vârstei de pensionare cu 6 luni pentru fiecare an lucrat în aceste condiții, plus un spor de punctaj de 50%.</p>
                     </div>
                   </div>
                 </div>
@@ -467,7 +356,7 @@ export default function FAQ() {
                 <p className="text-sm text-gray-600 mb-4">Verifică penalizările</p>
                 <Button 
                   className="w-full bg-orange-600 hover:bg-orange-700"
-                  onClick={() => window.location.href = '/calculator?type=early'}
+                  onClick={() => window.location.href = '/calculator-pensie-anticipata'}
                 >
                   Calculează
                 </Button>

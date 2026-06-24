@@ -80,31 +80,73 @@ export const staticArticles: Article[] = [
     author: authors.alexandruPopescu,
     image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=480",
     content: `
-<p>Formula de calcul a pensiei de stat în România se bazează pe sistemul de puncte reglementat prin lege. Începând cu anul 2025, valoarea punctului de pensie este fixată la <strong>2.031 Lei</strong>, fiind calculată conform noii legi a pensiilor nr. 360/2023.</p>
+<p>Formula de calcul a pensiei de stat în România se bazează pe sistemul de puncte reglementat prin lege. Începând cu anul 2025, valoarea punctului de pensie este fixată la <strong>2.031 Lei</strong>, fiind calculată conform noii legi a pensiilor nr. 360/2023. Totodată, Valoarea Punctului de Referință (VPR) este stabilită la <strong>91 Lei</strong>, asigurând o indexare procentuală substanțială a veniturilor pentru milioane de pensionari.</p>
 
 <h3>Care sunt pașii oficiali de calcul?</h3>
-<p>Pentru a determina valoarea brută a pensiei de stat pe care o vei primi lunar, algoritmul CNPP aplică următorul sistem format din trei pași principali:</p>
+<p>Pentru a determina valoarea brută a pensiei de stat pe care o vei primi lunar, algoritmul oficial al CNPP aplică un sistem format din trei piloni principali de calcul:</p>
 
 <div class="bg-slate-50 p-4 rounded-lg my-6 border border-slate-200">
-  <p class="font-bold text-slate-900">Formula Generală:</p>
-  <p class="font-mono text-lg text-blue-700 font-bold">Pensia Lunară = Punctaj Mediu Anual (PMA) × Valoarea Punctului de Pensie (2.031 Lei)</p>
+  <p class="font-bold text-slate-900">Formula Generală CNPP:</p>
+  <p class="font-mono text-lg text-blue-700 font-bold">Pensia Brută = Număr Total de Puncte × VPR (91 Lei)</p>
+  <p class="text-xs text-slate-500 mt-1">Unde <strong>Număr Total de Puncte</strong> este format din punctele de contributivitate + punctele de stabilitate (bonus) + punctele asimilate.</p>
 </div>
 
-<h3>1. Determinarea Punctajului Mediu Anual (PMA)</h3>
-<p>Punctajul mediu anual reprezintă numărul de puncte pe care l-ai acumulat în medie pe an pe parcursul carierei tale. Se obține prin împărțirea sumei punctajelor tale anuale la stagiul complet de cotizare prevăzut de lege (35 de ani pentru bărbați și între 30-33 de ani pentru femei).</p>
+<h3>1. Determinarea Punctajului de Contributivitate</h3>
+<p>Punctajul de contributivitate reprezintă numărul de puncte pe care l-ai acumulat prin contribuțiile tale directe plătite din salarii pe parcursul carierei active. În fiecare lună, salariul tău brut este raportat la salariul mediu brut pe economie aprobat pentru bugetul de asigurări sociale din acea lună. 
+<br />
+De exemplu, dacă în luna respectivă salariul tău brut este egal cu câștigul mediu brut național (aprox 8,417 RON în 2025), vei acumula exact <strong>1.0 punct</strong> pentru acea lună. Dacă salariul tău brut este jumătate din media pe economie, acumulezi <strong>0.5 puncte</strong>. Toate punctele lunare se însumează și se împart la 12 pentru a determina punctajul tău anual.</p>
 
-<h3>2. Calculul Punctajului Anual (PA)</h3>
-<p>Punctajul anual se determină prin împărțirea la 12 a sumei punctajelor lunare obținute în anul respectiv. Punctajul tău lunar se calculează raportând salariul tău brut la salariul mediu brut pe economie utilizat la fundamentarea bugetului asigurărilor sociale din acea lună. Dacă salariul tău este exact egal cu cel mediu brut, acumulezi exact 1 punct în acea lună.</p>
-
-<h3>3. Noua Bonificație: Punctele de Stabilitate</h3>
-<p>Dacă ai un stagiu de cotizare de peste 25 de ani, noua reformă adaugă puncte bonus direct la punctajul tău total:</p>
+<h3>2. Noua Bonificație: Punctele de Stabilitate (Fidelitate)</h3>
+<p>Reforma Legii 360/2023 a introdus punctele de stabilitate pentru a stimula salariații să rămână activi peste pragul de 25 de ani de muncă. Aceste puncte se acordă automat în funcție de stagiul de cotizare total realizat:</p>
 <ul class="list-disc ml-6 space-y-1">
-  <li>0,50 puncte pe an pentru anii de cotizare între 26 și 30;</li>
-  <li>0,75 puncte pe an pentru anii de cotizare între 31 și 35;</li>
-  <li>1,00 punct pe an pentru fiecare an care depășește stagiul de 35 de ani.</li>
+  <li><strong>0,50 puncte pe an</strong> pentru fiecare an lucrat în intervalul 26 - 30 de ani de cotizare;</li>
+  <li><strong>0,75 puncte pe an</strong> pentru fiecare an lucrat în intervalul 31 - 35 de ani de cotizare;</li>
+  <li><strong>1,00 punct pe an</strong> pentru fiecare an lucrat ce depășește stagiul de 35 de ani.</li>
 </ul>
+<p>Acest bonus direct este extrem de valoros. De exemplu, un stagiu de cotizare de 38 de ani adaugă automat <code>(5 × 0.5) + (5 × 0.75) + (3 × 1.0) = 2.5 + 3.75 + 3 = 9.25 puncte</code> direct în dosar, generând un plus de 841 Lei brut pe lună la pensie!</p>
 
-<p>Pentru a verifica istoricul tău oficial de cotizare și salariile înregistrate în baza de date, vizitează secțiunea dedicată de pe portalul <a href="https://www.cnpp.ro" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline font-semibold">CNPP (Casa Națională de Pensii Publice)</a>. Pentru a citi legea oficială completă, consultă textul legii pe <a href="https://legislatie.just.ro" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline font-semibold">Just.ro (Portalul Legislativ al Ministerului Justiției)</a>.</p>
+<h3>3. Punctele Asimilate (Perioade Necontributive)</h3>
+<p>Statul oferă de asemenea puncte pentru perioadele în care nu s-au plătit contribuții, dar care sunt recunoscute ca stagiu legal (facultatea absolvită la zi cu diplomă, stagiul militar obligatoriu, concediul de creștere a copilului). Fiecare an asimilat se bonifică cu <strong>0.25 puncte pe an</strong>.</p>
+
+<h3>Exemple Practice de Calcul (Raportat la VPR 2025 = 91 Lei)</h3>
+<p>Să analizăm trei scenarii posibile de pensionare pentru a înțelege exact cum se aplică formula:</p>
+
+<div class="space-y-4 my-6">
+  <div class="border p-4 rounded-lg bg-slate-50">
+    <strong class="text-blue-700 block">Scenariul A (Stagiu Minim - 15 ani de muncă):</strong>
+    <p class="text-sm text-gray-700 mt-1">
+      O persoană care a lucrat exact 15 ani cu un salariu constant egal cu salariul mediu brut pe economie. 
+      <br />
+      • Puncte contributive: 15 ani × 1.0 punct = 15 puncte.
+      <br />
+      • Puncte de stabilitate: 0 puncte (deoarece stagiul este sub 25 de ani).
+      <br />
+      • Total puncte: 15.
+      <br />
+      • <strong>Pensie Brută: 15 puncte × 91 Lei = 1.365 Lei/lună.</strong>
+    </p>
+  </div>
+
+  <div class="border p-4 rounded-lg bg-slate-50">
+    <strong class="text-blue-700 block">Scenariul B (Stagiu Complet - 35 ani de muncă):</strong>
+    <p class="text-sm text-gray-700 mt-1">
+      O persoană cu 35 de ani de muncă, cu un salariu egal cu salariul mediu brut pe economie.
+      <br />
+      • Puncte contributive: 35 ani × 1.0 punct = 35 puncte.
+      <br />
+      • Puncte de stabilitate: (5 × 0.5) + (5 × 0.75) = 2.5 + 3.75 = 6.25 puncte.
+      <br />
+      • Total puncte: 41.25.
+      <br />
+      • <strong>Pensie Brută: 41.25 puncte × 91 Lei = 3.753 Lei/lună.</strong>
+    </p>
+  </div>
+</div>
+
+<h3>Cum se impozitează pensiile în România?</h3>
+<p>Pensiile din sistemul public sunt scutite complet de impozit pe venit pentru pragurile de până la <strong>3.000 Lei net</strong>. Pentru sumele care depășesc pragul de 3.000 Lei, se aplică un impozit pe venit de <strong>10%</strong> exclusiv pentru partea care depășește acest prag. De exemplu, la o pensie brută de 3.500 Lei, impozitul de 10% se aplică doar pentru diferența de 500 Lei, rezultând un impozit de 50 Lei și o pensie netă de 3.450 Lei.</p>
+
+<p>Pentru a verifica istoricul tău oficial de cotizare și salariile înregistrate în baza de date națională a asiguraților, vizitează secțiunea dedicată de pe portalul <a href="https://www.cnpp.ro" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline font-semibold">CNPP (Casa Națională de Pensii Publice)</a>. Pentru a studia textul legii oficiale complete, consultă monitorul legislativ pe <a href="https://legislatie.just.ro" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline font-semibold">Just.ro (Portalul Legislativ al Ministerului Justiției)</a>.</p>
 `
   },
   {
@@ -338,24 +380,100 @@ export const staticArticles: Article[] = [
     author: authors.elenaRadu,
     image: "https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=480",
     content: `
-<p>Indemnizația socială pentru pensionari, cunoscută public sub denumirea de <strong>pensie minimă garantată</strong>, este un sprijin esențial oferit de statul român pentru a asigura un nivel minim de trai pentru toți pensionarii din sistemul public de pensii.</p>
+<p>Indemnizația socială pentru pensionari, cunoscută public sub denumirea de <strong>pensie minimă garantată</strong>, este un sprijin social critic oferit de statul român. Scopul său este de a asigura un nivel de trai minim decent pentru toți pensionarii din sistemul public de pensii ale căror contribuții pe parcursul vieții active nu ating pragul social stabilit prin lege.</p>
 
-<h3>Valoarea Pensiei Minime în 2025</h3>
-<p>Începând cu anul 2025, cuantumul pensiei minime garantate în România este stabilit la valoarea oficială de <strong>1.281 Lei</strong> pe lună. Acest nivel a fost menținut de guvern pentru a sprijini pensionarii cu venituri din punctaje anuale reduse.</p>
+<h3>Valoarea Pensiei Minime în 2025 și 2026</h3>
+<p>Începând cu anul 2025, cuantumul pensiei minime garantate în România este stabilit la valoarea oficială de <strong>1.281 Lei</strong> pe lună. Guvernul a decis menținerea acestui plafon pentru a proteja categoriile vulnerabile de pensionari împotriva inflației și a creșterii prețurilor la bunurile de consum de bază.</p>
 
-<h3>Cine beneficiază de această măsură?</h3>
-<p>Orice pensionar al sistemului public de pensii care are domiciliul în România și al cărui nivel total al veniturilor din pensii se situează sub pragul de 1.281 Lei. Statul acoperă automat diferența sub forma unei „indemnizații sociale”, astfel încât suma efectiv încasată de beneficiar să fie de exact 1.281 Lei lunar.</p>
+<div class="overflow-x-auto my-6">
+  <table className="w-full text-sm text-left border border-slate-200">
+    <thead className="bg-slate-100">
+      <tr>
+        <th className="border p-2">Anul</th>
+        <th className="border p-2">Valoarea Pensiei Minime (Lei)</th>
+        <th className="border p-2">Creștere Procentuală (%)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td className="border p-2">2020</td>
+        <td className="border p-2">800 Lei</td>
+        <td className="border p-2">+14.0%</td>
+      </tr>
+      <tr>
+        <td className="border p-2">2021</td>
+        <td className="border p-2">800 Lei</td>
+        <td className="border p-2">0.0% (Înghețat)</td>
+      </tr>
+      <tr>
+        <td className="border p-2">2022</td>
+        <td className="border p-2">1.000 Lei</td>
+        <td className="border p-2">+25.0%</td>
+      </tr>
+      <tr>
+        <td className="border p-2">2023</td>
+        <td className="border p-2">1.125 Lei</td>
+        <td className="border p-2">+12.5%</td>
+      </tr>
+      <tr>
+        <td className="border p-2">2024</td>
+        <td className="border p-2">1.281 Lei</td>
+        <td className="border p-2">+13.8%</td>
+      </tr>
+      <tr class="bg-blue-50">
+        <td className="border p-2 font-bold">2025</td>
+        <td className="border p-2 font-bold">1.281 Lei</td>
+        <td className="border p-2">Menținut (HG Oficială)</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
-<h3>Condiții de eligibilitate</h3>
-<p>Pentru a beneficia de pensia minimă, solicitantul trebuie să îndeplinească următoarele criterii cumulative:</p>
-<ul class="list-disc ml-6 space-y-1">
-  <li>Să aibă calitatea oficială de pensionar în sistemul public de pensii român;</li>
-  <li>Să aibă rezidența sau domiciliul stabil pe teritoriul României;</li>
-  <li>Suma totală a pensiilor cuvenite sau aflate în plată să fie mai mică de 1.281 Lei.</li>
+<h3>Cum se aplică mecanismul de compensare socială?</h3>
+<p>Este esențial de înțeles că pensia minimă nu este o categorie specială de pensie, ci un <strong>mecanism de ajustare și protecție socială</strong>. În momentul pensionării sau al recalculării, Casa de Pensii calculează pensia pe baza contributivității reale (salariile brute obținute și stagiul de cotizare). Dacă în urma calculului rezultă o sumă mai mică de 1.281 Lei (de exemplu, 900 Lei), statul român intervine și acoperă diferența sub forma unei <em>indemnizații sociale pentru pensionari</em> (în valoare de 381 Lei, în acest exemplu). Astfel, suma netă pe care pensionarul o primește pe card sau prin poștă va fi întotdeauna de exact 1.281 Lei lunar.</p>
+
+<div class="bg-slate-50 border border-slate-200 rounded-lg p-5 my-6">
+  <h4 class="font-bold text-slate-800 mt-0">Exemplu Practic de Completare a Pensiei:</h4>
+  <p class="text-sm text-gray-700 mb-0">
+    • Pensia calculată pe baza punctelor de contributivitate: <strong>850 Lei</strong><br />
+    • Diferența plătită din bugetul de stat (indemnizația socială): <strong>431 Lei</strong><br />
+    • <strong>Suma finală încasată lunar de beneficiar: 1.281 Lei</strong>
+  </p>
+</div>
+
+<h3>Cine are dreptul la pensia minimă garantată?</h3>
+<p>Pentru a beneficia de acoperirea automată până la plafonul minim de 1.281 Lei, solicitantul trebuie să îndeplinească cumulativ următoarele criterii legale:</p>
+<ul class="list-disc ml-6 space-y-2 text-gray-700">
+  <li>Să aibă calitatea oficială de pensionar în sistemul unitar public de pensii (indiferent că este vorba despre pensie pentru limită de vârstă, pensie anticipată, pensie de invaliditate sau pensie de urmaș);</li>
+  <li>Să aibă domiciliul stabil sau rezidența legală pe teritoriul României (cetățenii stabiliți permanent în străinătate nu pot beneficia de indemnizația socială);</li>
+  <li>Suma totală a pensiilor cuvenite sau aflate în plată din sistemul public să fie mai mică de 1.281 Lei lunar.</li>
 </ul>
 
-<p>Diferența dintre pensia cuvenită din punctajul realizat și cuantumul minim garantat este suportată în întregime de la bugetul de stat. Pentru asistență directă și formulare, vă puteți adresa Casei Teritoriale de Pensii din județul dumneavoastră sau vizita portalul oficial <a href="https://www.cnpp.ro" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline font-semibold">CNPP</a>. Pentru studiul legislativ, accesați textul legii pe <a href="https://legislatie.just.ro" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline font-semibold">Just.ro</a>.</p>
+<h3>Impactul noului sistem de punctaj (Legea 360/2023)</h3>
+<p>Marea recalculare a pensiilor finalizată în septembrie 2024 a modificat dosarele a peste 4,6 milioane de pensionari. Noua formulă bazată pe VPR (Valoarea Punctului de Referință = 91 Lei în 2025) a determinat noi punctaje contributive. Pentru unii pensionari aflați în plată cu pensia minimă, recalcularea a arătat o valoare contributivă reală și mai mică decât cea anterioară. Datorită garanțiilor legislative, **nicio pensie nu a scăzut**, aceștia rămânând în plată cu valoarea minimă garantată de 1.281 Lei. În schimb, pentru pensionarii cu stagii de cotizare lungi (peste 25-30 de ani) care aveau pensia minimă, adăugarea punctelor de stabilitate (fidelitate) le-a permis să depășească plafonul de 1.281 Lei și să încaseze pensii contributive reale semnificativ mai mari.</p>
+
+<h3>Impozitarea și Contribuțiile de Sănătate</h3>
+<p>Conform reglementărilor din Codul Fiscal român actualizate pentru anul 2025, veniturile lunare din pensii sunt scutite complet de impozitul pe venit de 10% pentru sumele ce nu depășesc pragul de <strong>3.000 Lei</strong> net. Deoarece pensia minimă garantată este de 1.281 Lei, aceasta se situează cu mult sub pragul de impozitare. Prin urmare, <strong>pensionarii care primesc pensia minimă nu plătesc niciun fel de impozit pe venit și nicio contribuție la asigurările sociale de sănătate (CASS)</strong>, suma primită fiind 100% netă.</p>
+
+<h3>Întrebări Frecvente (FAQ)</h3>
+<div class="space-y-4 my-6">
+  <div class="border-b pb-4">
+    <strong class="text-blue-700 block">Dacă am lucrat sub 15 ani (stagiul minim), am dreptul la pensie minimă?</strong>
+    <p class="text-sm text-gray-700 mt-1">
+      Pentru a obține o pensie de stat (chiar și cea minimă), este obligatoriu să fi realizat stagiul minim de cotizare prevăzut de lege, care este de <strong>15 ani</strong>. Persoanele care nu au atins pragul de 15 ani de muncă contributivă nu pot accesa sistemul public de pensii și nu pot primi pensia minimă; acestea pot fi eligibile doar pentru ajutoare sociale din partea primăriilor (venitul minim garantat).
+    </p>
+  </div>
+  <div class="border-b pb-4">
+    <strong class="text-blue-700 block">Cum se acordă pensia minimă în cazul pensiilor de urmaș?</strong>
+    <p class="text-sm text-gray-700 mt-1">
+      În cazul pensiilor de urmaș acordate copiilor sau soțului supraviețuitor, plafonul de 1.281 Lei se aplică pe dosar. Dacă există un singur urmaș, acesta va primi pensia completă de 1.281 Lei. Dacă există mai mulți copii urmași, cuantumul de 1.281 Lei se împarte conform cotelor legale stabilite de lege pentru fiecare în parte.
+    </p>
+  </div>
+</div>
+
+<p>Pentru a verifica exact stagiul dumneavoastră de cotizare înregistrat în sistem sau pentru asistență privind dosarul de recalculare, vă recomandăm să vă adresați Casei Teritoriale de Pensii din județul dumneavoastră sau să vizitați portalul online oficial al <a href="https://www.cnpp.ro" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline font-semibold">CNPP (Casa Națională de Pensii Publice)</a>. Pentru consultarea textului integral al Legii 360/2023, accesați monitorul pe <a href="https://legislatie.just.ro" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline font-semibold">Just.ro (Portalul Legislativ Oficial)</a>.</p>
 `
+
   },
   {
     id: 14,
@@ -432,20 +550,57 @@ export const staticArticles: Article[] = [
     author: authors.elenaRadu,
     image: "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=480",
     content: `
-<p>Pentru a proteja pensionarii de eroziunea puterii de cumpărare cauzată de inflație, legislația românească prevede o indexare anuală automată a valorii pensiilor.</p>
+<p>Pentru a proteja milioanele de pensionari din România de efectele negative ale creșterii prețurilor și de eroziunea puterii de cumpărare din cauza inflației, legislația națională prevede un mecanism stabil, predictibil și automat de **indexare anuală a pensiilor**. Acest mecanism elimină factorul de decizie politică arbitrară și oferă predictibilitate viitorilor beneficiari.</p>
 
-<h3>Formula legală de indexare</h3>
-<p>Conform regulilor stipulate în noul sistem public, valoarea punctului de referință (VPR) și valoarea punctului de pensie se indexează anual, în mod automat, în luna ianuarie a fiecărui an, cu următorul algoritm stabil:</p>
+<h3>Ce este Valoarea Punctului de Referință (VPR) și de ce este importantă?</h3>
+<p>Odată cu intrarea în vigoare a noii reforme a pensiilor (Legea nr. 360/2023), valoarea pensiei brute lunare se obține prin înmulțirea numărului total de puncte de pensie acumulate de un asigurat cu **Valoarea Punctului de Referință (VPR)**. Indexarea anuală se aplică în mod direct asupra VPR, crescând automat toate pensiile aflate în plată în mod uniform și corect.</p>
 
-<div class="bg-slate-50 p-4 rounded-lg my-6 border border-slate-200 text-sm">
-  <p class="font-bold">Formula oficială de ajustare anuală:</p>
-  <p class="font-mono text-blue-700 font-bold">Procent Indexare = 100% din Rata Medie a Inflației + 50% din Creșterea Reală a Salariului Mediu Brut pe Economie</p>
+<h3>Formula legală și oficială de indexare anuală</h3>
+<p>Conform reglementărilor în vigoare stipulate în Legea 360/2023, indexarea pensiilor din sistemul public se realizează din oficiu în fiecare an, în luna **ianuarie**, pe baza indicatorilor economici oficiali furnizați de Institutul Național de Statistică (INS). Formula matematică utilizată este următoarea:</p>
+
+<div class="bg-blue-50 border-l-4 border-blue-500 p-4 my-6 rounded-r-lg">
+  <p class="font-bold text-blue-900 mt-0">Formula oficială de majorare anuală:</p>
+  <p class="font-mono text-lg text-blue-800 font-bold mb-2">
+    Rată Majorare (%) = 100% (Rata Medie Anuală a Inflației) + 50% (Creșterea Reală a Câștigului Salarial Mediu Brut)
+  </p>
+  <p class="text-xs text-slate-600 mb-0">Unde indicatorii sunt stabiliți pe baza anului calendaristic anterior, finalizați și validați de INS și Comisia Națională de Prognoză.</p>
 </div>
 
-<h3>Indexări realizate și planificate</h3>
-<p>În 2025, această formulă a asigurat o majorare semnificativă a punctului de pensie la valoarea istorică de 2.031 Lei. Pentru anul 2026, calendarul de monitorizare a indicatorilor INS (Institutul Național de Statistică) indică o aplicare similară în prima lună a anului, menținând trendul ascendent pentru sprijinul seniorilor.</p>
+<h3>Indexarea aplicată în anul 2025</h3>
+<p>În luna ianuarie 2025, aplicarea acestei formule de indexare a adus o majorare semnificativă de **12,1%** a valorilor de referință. Astfel:</p>
+<ul class="list-disc ml-6 space-y-1 text-slate-800">
+  <li><strong>VPR (Valoarea Punctului de Referință):</strong> A crescut de la 81 Lei (valoarea inițială din septembrie 2024) la <strong>91 Lei</strong>.</li>
+  <li><strong>Valoarea Punctului de Pensie:</strong> A fost menținută la nivelul de 2.031 Lei pentru dosarele aflate în plată.</li>
+</ul>
+<p>Această indexare a generat o creștere directă a pensiilor brute pentru pensionarii români, contribuind la atenuarea efectelor inflației crescute din anii anteriori.</p>
 
-<p>Pentru a urmări comunicatele statistice oficiale și valorile finale validate de guvern, vizitați periodic portalul <a href="https://www.cnpp.ro" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline font-semibold">Casei Naționale de Pensii (CNPP)</a> sau Portalul Legislativ al Guvernului României pe <a href="https://legislatie.just.ro" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline font-semibold">Just.ro</a>.</p>
+<h3>Prognoza pentru indexarea din 2026</h3>
+<p>Pentru luna ianuarie 2026, primele estimări bazate pe datele macroeconomice curente indică un procent de indexare cuprins între **6% și 8.5%**, raportat la evoluția inflației medii anuale estimate pentru anul fiscal precedent și la dinamica de creștere a salariilor brute din economie. Valoarea exactă urmează să fie stabilită oficial prin Hotărâre de Guvern în ultimul trimestru, după finalizarea analizelor statistice naționale.</p>
+
+<h3>Excepții importante: Pensiile care nu se indexează</h3>
+<p>Deși regula generală prevede indexarea tuturor pensiilor publice, legea menționează două excepții critice:</p>
+<ol class="list-decimal ml-6 space-y-2 text-slate-700">
+  <li><strong>Pensiile speciale care depășesc plafoanele:</strong> Pensiile de serviciu (ale magistraților, militarilor etc.) sunt supuse unor reguli de indexare specifice ce pot fi înghețate sau limitate dacă depășesc anumite plafoane relative la salariile în activitate.</li>
+  <li><strong>Pensiile a căror valoare recalculată a fost mai mică:</strong> Pensionarii a căror pensie recalculată în septembrie 2024 a rezultat sub valoarea aflată deja în plată au rămas cu pensia veche. Pentru aceștia, indexările anuale viitoare se vor aplica la valoarea rezultată din recalculare, nu la suma în plată, existând cazuri în care pensia nu se va majora efectiv până când valoarea recalculată indexată nu depășește suma primită în prezent.</li>
+</ol>
+
+<h3>Întrebări Frecvente (FAQ)</h3>
+<div class="space-y-4 my-6">
+  <div class="border-b pb-4">
+    <strong class="text-blue-700 block">Dacă mă pensionez în cursul anului, beneficiez de indexare?</strong>
+    <p class="text-sm text-gray-700 mt-1">
+      Da. În momentul în care te pensionezi, calculul inițial al pensiei tale se realizează utilizând valoarea curentă a VPR (care include toate indexările anterioare). Ulterior, în fiecare lună ianuarie a anilor următori, pensia ta aflată în plată va beneficia automat de majorările procentuale legale.
+    </p>
+  </div>
+  <div class="border-b pb-4">
+    <strong class="text-blue-700 block">Se indexează și Pilonul II de pensii private obligatorii?</strong>
+    <p class="text-sm text-gray-700 mt-1">
+      Nu. Pensiile administrate privat din Pilonul II (și cele facultative din Pilonul III) nu sunt indexate prin hotărâri guvernamentale. Acumulările din aceste conturi se majorează în funcție de randamentul investițiilor realizate de administratorii de fonduri pe burse sau titluri de stat, performanța acestora depășind de obicei rata inflației pe termen lung.
+    </p>
+  </div>
+</div>
+
+<p>Pentru a urmări comunicatele oficiale INS și deciziile Casei de Pensii, vizitați periodic portalul oficial <a href="https://www.cnpp.ro" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline font-semibold">CNPP.ro</a>. Pentru a citi textele oficiale complete ale noutăților legislative, accesați monitorul pe <a href="https://legislatie.just.ro" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline font-semibold">Just.ro (Portalul Legislativ Oficial)</a>.</p>
 `
   },
   {
@@ -454,29 +609,152 @@ export const staticArticles: Article[] = [
     excerpt: "Lista completă și actualizată de documente pe care trebuie să le pregătești pentru depunerea dosarului de pensie de limită de vârstă sau anticipată.",
     category: "planificare",
     publishDate: "2025-11-10",
-    readTime: 10,
+    readTime: 12,
     slug: "acte-necesare-dosar-pensionare",
     published: true,
     author: authors.alexandruPopescu,
     image: "https://images.unsplash.com/photo-1450133064473-71024230f91b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=480",
     content: `
-<p>Pregătirea dosarului de pensionare este un pas procedural care necesită atenție maximă pentru a evita întârzieri în emiterea deciziei și plata drepturilor bănești cuvenite.</p>
+<p>Procesul de pensionare în România reprezintă trecerea oficială a asiguratului de la viața activă la statutul de pensionar și presupune întocmirea și depunerea unui dosar administrativ complex. O eroare aparent minoră, cum ar fi lipsa unei copii sau a unei adeverințe oficiale de sporuri, poate duce la respingerea dosarului, la calcularea eronată a drepturilor financiare sau la întârzieri de câteva luni în emiterea deciziei de pensionare și în plata primei pensii.</p>
 
-<h3>Lista documentelor obligatorii</h3>
-<p>Pentru pensia pentru limită de vârstă sau pensia anticipată, dosarul depus la Casa Teritorială de Pensii trebuie să includă obligatoriu următoarele acte:</p>
+<p>Intrarea în vigoare a noii legi a pensiilor, <strong>Legea nr. 360/2023</strong>, aplicabilă în totalitate în 2025 și 2026, a adus clarificări suplimentare referitoare la procedurile de depunere a dosarelor și la modul în care sunt recunoscute și evaluate diversele stagii de cotizare (contributive, asimilate sau necontributive). În acest ghid complet, vom analiza pas cu pas fiecare document pe care trebuie să îl conțină dosarul dumneavoastră, cum și de unde se obține fiecare act și cum puteți eficientiza întregul proces procedural.</p>
+
+<h3>1. Dosarul pentru Pensia pentru Limită de Vârstă</h3>
+<p>Pensia pentru limită de vârstă este tipul standard de pensie acordat persoanelor care îndeplinesc simultan două condiții esențiale la data solicitării: au atins vârsta standard de pensionare (65 de ani pentru bărbați; o creștere graduală spre 65 de ani până în 2035 pentru femei) și au realizat stagiul minim de cotizare contributiv prevăzut de lege (15 ani).</p>
+
+<p>Pentru acest tip de pensionare, dosarul pe care îl veți înregistra la Casa Teritorială de Pensii (CTP) competentă teritorial trebuie să cuprindă următoarele documente obligatorii:</p>
+
 <ul class="list-disc ml-6 space-y-2 text-sm text-gray-700">
-  <li><strong>Cerere tip</strong> pentru înscrierea la pensie (se obține de la sediu sau online);</li>
-  <li><strong>Carnetul de muncă</strong> în original și copie (pentru perioadele de activitate anterioare datei de 1 ianuarie 2011);</li>
-  <li><strong>Acte de stare civilă:</strong> buletin/carte de identitate, certificat de naștere și de căsătorie (original și copie);</li>
-  <li><strong>Diplomă de studii universitare</strong> (cursuri de zi) și adeverință care să ateste durata studiilor (dacă este cazul, pentru adăugarea stagiilor asimilate);</li>
-  <li><strong>Livretul militar</strong> (original și copie, pentru bărbați);</li>
-  <li><strong>Adeverințe speciale</strong> privind sporurile cu caracter permanent sau grupele de muncă obținute în carieră.</li>
+  <li><strong>Cererea-tip de înscriere la pensie:</strong> Acesta este documentul central prin care solicitați oficial acordarea drepturilor. Se completează la sediul Casei de Pensii sau se descarcă în format PDF de pe portalul CNPP pentru completare prealabilă. Trebuie semnată și datată în mod corespunzător.</li>
+  <li><strong>Carnetul de muncă original și copie:</strong> Acesta este cel mai important document pentru dovedirea vechimii acumulate înainte de data de 1 ianuarie 2011. Începând cu această dată, evidența muncii se ține exclusiv în format electronic prin sistemul REVISAL. Asigurați-vă că filele scanate sau copiate sunt perfect lizibile, în special ștampilele și semnăturile angajatorilor.</li>
+  <li><strong>Carnetul de muncă pentru membrii CAP (original și copie):</strong> Destinat persoanelor care au lucrat în fostele cooperative agricole de producție înainte de 1989.</li>
+  <li><strong>Acte de stare civilă în original și copie:</strong>
+    <ul class="list-circle ml-6 space-y-1">
+      <li>Buletinul sau cartea de identitate (trebuie să fie în termenul de valabilitate);</li>
+      <li>Certificatul de naștere;</li>
+      <li>Certificatul de căsătorie (pentru persoanele care și-au schimbat numele, în general femei).</li>
+    </ul>
+  </li>
+  <li><strong>Livretul militar în original și copie (dacă este cazul):</strong> Pentru bărbații care au efectuat stagiul militar obligatoriu sau activități asimilate în cadrul structurilor armate. Perioada militară este considerată stagiu asimilat necontributiv și adaugă puncte la pensie.</li>
+  <li><strong>Diplomă de studii universitare la zi și adeverință oficială:</strong> Dacă ați absolvit cursuri universitare la zi (învățământ superior), această perioadă constituie stagiu asimilat. Dosarul trebuie să conțină diploma de licență (sau echivalentă) în original și copie, precum și o adeverință eliberată de facultate care să ateste forma de învățământ (cursuri de zi / cu frecvență) și durata oficială a studiilor (de exemplu, 4 sau 5 ani).</li>
+  <li><strong>Adeverințe privind sporurile cu caracter permanent și grupele de muncă:</strong> Documente de importanță critică pentru calcularea punctajului. Acestea dovedesc că ați lucrat în condiții deosebite sau speciale de muncă (fostele grupe I și II) ori că ați încasat sporuri permanente supuse contribuțiilor de asigurări sociale (acord global, ore suplimentare, prime etc.).</li>
+  <li><strong>Procură specială autentificată (dacă este cazul):</strong> În situația în care solicitantul nu se poate prezenta personal și mandatează o altă persoană pentru depunerea dosarului și ridicarea deciziei.</li>
 </ul>
 
-<h3>Recomandare utilă</h3>
-<p>Începeți colectarea adeverințelor cu cel puțin 6 luni înainte de data eligibilității, în special dacă ați lucrat în companii care au fost privatizate sau lichidate, caz în care arhivele pot fi dificil de localizat.</p>
+<h3>2. Dosarul pentru Pensia Anticipată</h3>
+<p>Pensia anticipată se poate solicita cu maximum 5 ani înaintea împlinirii vârstei standard de pensionare, cu condiția realizării stagiului complet de cotizare contributiv prevăzut de lege (35 de ani) sau depășirii acestuia cu până la 8 ani. Sub noua Lege 360/2023, nu mai există diferență structurală între pensia anticipată parțială și cea anticipată; există un singur tip de pensie anticipată, care poate fi penalizată (dacă stagiul realizat este mai mic de 8 ani peste stagiul complet) sau nepenalizată (dacă stagiul depășește cu cel puțin 8 ani stagiul complet).</p>
 
-<p>Pentru a descărca listele oficiale de formulare de la CJP, accesați site-ul oficial <a href="https://www.cnpp.ro" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline font-semibold">CNPP</a>. Normele tehnice privind certificarea vechimii se regăsesc pe <a href="https://legislatie.just.ro" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline font-semibold">Just.ro</a>.</p>
+<p>Dosarul de pensionare anticipată conține toate documentele de la pensia pentru limită de vârstă, la care se adaugă în mod obligatoriu:</p>
+<ul class="list-disc ml-6 space-y-2 text-sm text-gray-700">
+  <li><strong>Adeverință privind stagiul de cotizare:</strong> Un extras actualizat eliberat de angajatorul curent sau de Casa de Pensii care atestă stagiul de cotizare efectiv realizat până în luna depunerii dosarului.</li>
+  <li><strong>Declarație pe propria răspundere:</strong> Prin care asiguratul declară că la data stabilirii pensiei anticipate nu mai desfășoară activități profesionale ca angajat supus asigurării obligatorii sau că va înceta activitatea în momentul primirii deciziei (pensia anticipată nu se poate cumula cu venituri salariale în anumite condiții stricte).</li>
+</ul>
+
+<h3>3. Dosarul pentru Pensia de Invaliditate</h3>
+<p>Acest tip de pensie se acordă persoanelor care și-au pierdut total sau cel puțin jumătate din capacitatea de muncă din cauza unor boli comune, accidente de muncă sau boli profesionale. Dosarul administrativ este împărțit în două secțiuni: dosarul medical și dosarul administrativ.</p>
+
+<p>Dosarul medical se depune inițial la Cabinetul de Expertiză Medicală a Capacității de Muncă din cadrul Casei de Pensii și conține:</p>
+<ul class="list-disc ml-6 space-y-2 text-sm text-gray-700">
+  <li>Biletul de trimitere eliberat de medicul de familie sau medicul specialist;</li>
+  <li>Documente medicale recente (bilete de externare, rezultate analize, RMN, CT, ecografii, referate de specialitate);</li>
+  <li>Formularul FIAM (pentru accidente de muncă) sau BP2 (pentru boli profesionale) – dacă este cazul.</li>
+</ul>
+
+<p>După ce comisia medicală emite <strong>Decizia de încadrare într-un grad de invaliditate</strong> (Gradul I, II sau III), asiguratul depune dosarul pentru plata pensiei, care trebuie să conțină:</p>
+<ul class="list-disc ml-6 space-y-2 text-sm text-gray-700">
+  <li>Decizia de încadrare în gradul de invaliditate (original);</li>
+  <li>Cererea de înscriere la pensie de invaliditate;</li>
+  <li>Carnetul de muncă (original și copie);</li>
+  <li>Acte de stare civilă;</li>
+  <li>Adeverințe privind stagiul de cotizare și salariile încasate.</li>
+</ul>
+
+<h3>4. Dosarul pentru Pensia de Urmaș</h3>
+<p>Pensia de urmaș se acordă copiilor și soțului supraviețuitor, în condițiile în care persoana decedată era pensionară sau îndeplinea condițiile pentru obținerea unei pensii publice. Dosarul depus de urmași trebuie să cuprindă:</p>
+<ul class="list-disc ml-6 space-y-2 text-sm text-gray-700">
+  <li><strong>Cerere tip</strong> de înscriere la pensia de urmaș;</li>
+  <li><strong>Certificatul de deces</strong> al susținătorului (original și copie);</li>
+  <li><strong>Acte de stare civilă ale urmașilor:</strong> BI/CI, certificat de naștere, certificat de căsătorie (pentru soțul supraviețuitor);</li>
+  <li><strong>Adeverință de elev sau student:</strong> Pentru copiii urmași cu vârsta între 16 și 26 de ani, care urmează cursuri într-o unitate de învățământ acreditată (se depune la începutul fiecărui an școlar/universitar);</li>
+  <li><strong>Decizia de invaliditate a urmașului:</strong> Dacă este cazul, pentru copiii sau soțul aflat în incapacitate de muncă;</li>
+  <li><strong>Decizia de pensionare a decedatului:</strong> Sau toate documentele de vechime ale acestuia, dacă decesul a survenit înaintea pensionării.</li>
+</ul>
+
+<div class="bg-blue-50 border-l-4 border-blue-500 p-4 my-6 rounded-r-lg">
+  <p class="font-bold text-blue-900 mt-0">Procedura de depunere a dosarului:</p>
+  <p class="text-sm text-blue-950 mb-0">
+    Dosarul se depune la Casa Județeană de Pensii (sau a Municipiului București) de care aparțineți cu domiciliul stabil. Depunerea se poate face în două moduri: <strong>fizic la ghișeu</strong> (necesită programare online sau fizică în prealabil pentru a evita cozile) sau <strong>online prin portalul oficial CNPP</strong> (dacă aveți un cont activat și semnătură electronică calificată). Drepturile de pensie se acordă de la data depunerii cererii, cu condiția ca actele să fie depuse în termen.
+  </p>
+</div>
+
+<h3>Obținerea Adeverințelor de la Angajatori și Arhive</h3>
+<p>Una dintre cele mai mari provocări în pregătirea dosarului o reprezintă obținerea adeverințelor pentru sporurile cu caracter permanent, acordul global sau încadrarea în grupe speciale de muncă. Pentru perioadele de după 1 aprilie 2001, aceste date sunt înregistrate în baza de date electronică a CNPP și nu necesită adeverințe fizice, decât în caz de neconcordanțe.</p>
+
+<p>Pentru perioadele anterioare anului 2001, trebuie să solicitați aceste adeverințe direct de la angajatorii la care ați lucrat. În cazul în care companiile s-au desființat, s-au privatizat sau au fost lichidate, procedura devine mai complexă:</p>
+<ol class="list-decimal ml-6 space-y-3 text-sm text-gray-700">
+  <li><strong>Identificarea succesorilor legali:</strong> Dacă firma a fost preluată de o altă entitate economică, succesorul deține arhivele și are obligația legală de a elibera adeverințele în termen de 30 de zile de la solicitare.</li>
+  <li><strong>Căutarea în arhivele județene:</strong> Dacă firma s-a desființat complet fără succesor direct, arhiva de documente a fost transferată către un operator privat autorizat de servicii arhivistice. Puteți consulta lista operatorilor de arhivă pe site-ul oficial al Arhivelor Naționale sau pe site-ul CNPP la secțiunea dedicată companiilor radiate.</li>
+  <li><strong>Acțiunea în instanță:</strong> Ca ultimă soluție, dacă documentele nu pot fi găsite în nicio arhivă oficială, vechimea și sporurile pot fi reconstituite în instanță prin chemarea în judecată a Casei de Pensii și audierea de martori (foști colegi de muncă), proces care poate dura între 6 și 18 luni.</li>
+</ol>
+
+<div class="overflow-x-auto my-6">
+  <table className="w-full text-xs text-left border border-slate-200">
+    <thead className="bg-slate-100">
+      <tr>
+        <th className="border p-2">Perioada Activității</th>
+        <th className="border p-2">Sursa Informațiilor de Vechime</th>
+        <th className="border p-2">Necesitate Adeverințe Suplimentare</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td className="border p-2">Înainte de 1 ianuarie 2011</td>
+        <td className="border p-2">Carnetul de muncă original</td>
+        <td className="border p-2">Da, pentru sporuri care nu sunt înscrise în carnet sau grupe de muncă</td>
+      </tr>
+      <tr>
+        <td className="border p-2">1 aprilie 2001 - 31 decembrie 2010</td>
+        <td className="border p-2">Baza de date CNPP (electronic) + Carnet</td>
+        <td className="border p-2">Doar dacă există diferențe între carnet și baza de date CNPP</td>
+      </tr>
+      <tr>
+        <td className="border p-2">După 1 ianuarie 2011</td>
+        <td className="border p-2">Sistemul electronic REVISAL / CNPP</td>
+        <td className="border p-2">Nu, evidența este 100% digitalizată și declarată lunar de angajator</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<h3>Întrebări Frecvente (FAQ)</h3>
+<div class="space-y-4 my-6">
+  <div class="border-b pb-4">
+    <strong class="text-blue-700 block">Cât timp durează emiterea deciziei de pensionare după depunerea dosarului?</strong>
+    <p class="text-sm text-gray-700 mt-1">
+      Conform legislației din România, Casa Teritorială de Pensii are la dispoziție un termen legal de <strong>45 de zile</strong> de la data înregistrării cererii pentru a emite sau respinge decizia de pensionare. În practică, în funcție de volumul de muncă al fiecărei sucursale județene sau de complexitatea verificărilor (de exemplu, adeverințe din alte județe sau din străinătate), acest termen se poate prelungi la 60-90 de zile. Plata efectivă a pensiei se face retroactiv, începând cu luna următoare depunerii dosarului.
+    </p>
+  </div>
+  <div class="border-b pb-4">
+    <strong class="text-blue-700 block">Ce se întâmplă dacă îmi lipsesc documente la depunerea dosarului?</strong>
+    <p class="text-sm text-gray-700 mt-1">
+      Puteți depune dosarul de pensie chiar dacă vă lipsesc anumite adeverințe suplimentare (cum ar fi cele de sporuri sau studii asimilate). Casa de Pensii va înregistra dosarul și va calcula pensia pe baza documentelor existente (în special carnetul de muncă). Ulterior, după ce obțineți adeverințele lipsă, le puteți depune ca o cerere de <strong>recalculare a pensiei</strong>, iar drepturile majorate se vor acorda începând cu luna următoare depunerii noilor acte.
+    </p>
+  </div>
+  <div class="border-b pb-4">
+    <strong class="text-blue-700 block">Pot depune dosarul dacă am lucrat în străinătate?</strong>
+    <p class="text-sm text-gray-700 mt-1">
+      Da. În cazul în care ați realizat stagii de cotizare în alte state membre ale Uniunii Europene sau în state cu care România are semnate acorduri bilaterale de securitate socială, veți depune un dosar de <strong>pensie comunitară</strong>. Cererea se depune în țara de domiciliu curent. Dacă locuiți în România, depuneți dosarul la Casa de Pensii județeană, adăugând formularele europene specifice (grupul E 200 sau documentele portabile P1) și documentele care atestă activitatea externă. Instituțiile din cele două state vor comunica direct pentru stabilirea drepturilor proporționale (pro-rata temporis).
+    </p>
+  </div>
+  <div class="border-b pb-4">
+    <strong class="text-blue-700 block">Este obligatoriu să depun originalul carnetului de muncă?</strong>
+    <p class="text-sm text-gray-700 mt-1">
+      Da. Casa de Pensii are nevoie de carnetul de muncă în original pentru a-i verifica autenticitatea și pentru a scana/înregistra oficial datele în sistemul centralizat. Carnetul vă va fi returnat personal, sub semnătură, după finalizarea procedurii de scanare și emiterea deciziei de pensionare (de obicei, după câteva săptămâni sau luni). Se recomandă să realizați copii legalizate sau scanări personale de înaltă rezoluție ale tuturor paginilor înainte de a-l preda la ghișeu.
+    </p>
+  </div>
+</div>
+
+<p>Pentru a descărca modelele oficiale de cereri-tip de pensionare sau pentru a localiza sediul Casei Teritoriale de Pensii din județul dumneavoastră, accesați portalul oficial al <a href="https://www.cnpp.ro" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline font-semibold">Casei Naționale de Pensii Publice (CNPP)</a>. Pentru interpretarea normelor juridice ale Legii 360/2023, accesați portalul legislativ pe <a href="https://legislatie.just.ro" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline font-semibold">Just.ro</a>.</p>
 `
   },
   {
@@ -513,26 +791,130 @@ export const staticArticles: Article[] = [
     excerpt: "Pas cu pas: cum îți creezi un cont pe portalul oficial al Casei Naționale de Pensii Publice și cum descarci raportul tău complet de cotizare.",
     category: "planificare",
     publishDate: "2026-05-15",
-    readTime: 7,
+    readTime: 12,
     slug: "vizualizare-vechime-munca-cnpp",
     published: true,
     author: authors.elenaRadu,
     image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=480",
     content: `
-<p>Unul dintre cele mai utile instrumente digitale puse la dispoziție de statul român este portalul online al CNPP, care permite fiecărui cetățean activ să își verifice istoricul de cotizare fără a se deplasa la ghișee.</p>
+<p>Verificarea periodică a vechimii în muncă înregistrate oficial reprezintă o măsură de siguranță financiară esențială pentru orice angajat din România. În contextul modificărilor frecvente aduse legislației și al trecerii la noul sistem bazat pe punctaj (Legea 360/2023), modul în care angajatorii raportează veniturile brute și virează contribuția la asigurările sociale (CAS) are un impact direct și ireversibil asupra valorii viitoarei dumneavoastră pensii de stat.</p>
 
-<h3>Pasul 1: Crearea contului de utilizator</h3>
-<p>Pentru a avea acces la datele tale personale de asigurări sociale, trebuie să parcurgi următorii pași de înregistrare pe portalul cnpp.ro:</p>
-<ul class="list-disc ml-6 space-y-1 text-sm text-gray-700">
-  <li>Accesează site-ul și completează formularul online cu datele tale de identificare (nume, prenume, CNP, email);</li>
-  <li>Printează cererea generată automat de sistem;</li>
-  <li>Mergi o singură dată la orice Casă Județeană de Pensii cu cererea printată și buletinul în original pentru activarea definitivă a contului (o măsură strictă de protecție a datelor personale).</li>
+<p>Erorile în raportarea REVISAL realizate de departamentele de resurse umane, neplata sau plata parțială a CAS de către angajatori sau neînregistrarea perioadelor lucrate în condiții deosebite ori speciale sunt probleme frecvente care sunt descoperite, din păcate, abia la depunerea dosarului de pensionare. Din fericire, platforma digitală oficială a Casei Naționale de Pensii Publice (CNPP) vă permite să monitorizați și să descărcați gratuit raportul dumneavoastră complet de cotizare direct de pe calculator sau telefon. În acest ghid complet, veți găsi pașii detaliați pentru crearea contului, descărcarea istoricului de muncă și corectarea eventualelor greșeli identificate în documente.</p>
+
+<h3>De ce este critic să îți monitorizezi vechimea online?</h3>
+<p>Accesul la portalul CNPP oferă un control deplin asupra carierei dumneavoastră profesionale din punct de vedere fiscal:</p>
+<ul class="list-disc ml-6 space-y-2 text-sm text-gray-700">
+  <li><strong>Depistarea angajatorilor rău-platnici:</strong> Puteți vedea lună de lună dacă firma la care lucrați a declarat și virat efectiv contribuțiile sociale reținute din salariul dumneavoastră.</li>
+  <li><strong>Verificarea salariului de baza declarat:</strong> Vă asigurați că salariul brut înregistrat în baza de date coincide cu cel din contractul de muncă și din actele adiționale semnate.</li>
+  <li><strong>Monitorizarea punctelor de pensie:</strong> Puteți vedea calculul exact al punctajului lunar și anual acumulat, facilitând estimarea viitoarei pensii.</li>
+  <li><strong>Verificarea încadrării în grupe de muncă:</strong> Vă asigurați că perioadele lucrate în condiții deosebite sau speciale au fost raportate corect de angajator (acestea scurtează vârsta de pensionare și oferă punctaj suplimentar).</li>
 </ul>
 
-<h3>Pasul 2: Descărcarea raportului de cotizare</h3>
-<p>După activare, te poți autentifica oricând în cont. În meniul principal, accesează secțiunea **„Datele mele”** ➡️ **„Stagii de cotizare”** și solicită generarea unui raport complet. În câteva minute, vei primi în format PDF un tabel detaliat pe luni și ani cu toate salariile declarate de angajatori și punctele de pensie acumulate.</p>
+<h3>Pasul 1: Cum îți creezi contul pe platforma oficială CNPP</h3>
+<p>Procedura de înregistrare este gratuită și este concepută pentru a proteja securitatea datelor personale (GDPR), având în vedere că veți avea acces la informații financiare confidențiale.</p>
 
-<p>Recomandăm verificarea acestui raport anual pentru a corecta din timp eventualele erori de raportare ale companiilor. Accesați portalul direct pe <a href="https://www.cnpp.ro" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline font-semibold">CNPP.ro</a>. Normele de securitate ale prelucrării datelor cu caracter personal se găsesc pe <a href="https://legislatie.just.ro" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline font-semibold">Just.ro</a>.</p>
+<ol class="list-decimal ml-6 space-y-3 text-sm text-gray-700">
+  <li><strong>Accesarea formularului web:</strong> Intrați pe site-ul oficial <em>cnpp.ro</em> și faceți clic pe secțiunea <strong>„Creare cont”</strong>.</li>
+  <li><strong>Completarea datelor de identificare:</strong> Introduceți cu atenție numele, prenumele, codul numeric personal (CNP), adresa de domiciliu, adresa de e-mail validă și numărul de telefon. Este esențial ca datele să fie identice cu cele din actul de identitate.</li>
+  <li><strong>Generarea cererii PDF:</strong> După completarea formularului online și trimiterea acestuia, sistemul va genera automat o cerere în format PDF. Salvați acest fișier pe calculator.</li>
+  <li><strong>Imprimarea și semnarea cererii:</strong> Printează cererea generată și semnează-o fizic cu pixul în zona dedicată semnăturii solicitantului.</li>
+  <li><strong>Activarea contului la ghișeu:</strong> Din motive de siguranță a datelor, trebuie să vă prezentați <strong>o singură dată în viață</strong> la sediul oricărei Case Județene de Pensii (nu neapărat cea de domiciliu) având asupra dumneavoastră cererea semnată și cartea de identitate în original. Un funcționar va verifica datele și va activa contul instant. Parola de acces va fi trimisă automat pe adresa de e-mail indicată în formular.</li>
+</ol>
+
+<div class="bg-blue-50 border-l-4 border-blue-500 p-4 my-6 rounded-r-lg">
+  <p class="font-bold text-blue-900 mt-0">Procedura alternativă pentru Diaspora:</p>
+  <p class="text-xs text-blue-950 mb-0">
+    Dacă locuiți în străinătate și nu vă puteți deplasa la o Casă de Pensii în România, aveți două opțiuni pentru activarea contului: <strong>folosirea unei semnături electronice calificate</strong> (cererea PDF poate fi semnată digital și trimisă direct prin e-mail la Casa de Pensii, nemaifiind necesară prezența fizică) sau <strong>împuternicirea unui reprezentant în țară</strong> printr-o procură notarială specială, care se va prezenta în numele dumneavoastră la ghișeu.
+  </p>
+</div>
+
+<h3>Pasul 2: Cum descarci raportul tău complet de cotizare</h3>
+<p>Odată ce aveți contul activat, descărcarea raportului de vechime se face în câteva minute, oricând aveți nevoie, urmând acești pași simpli:</p>
+<ul class="list-disc ml-6 space-y-2 text-sm text-gray-700">
+  <li>Accesați site-ul <em>cnpp.ro</em> și autentificați-vă introducând e-mailul și parola primită.</li>
+  <li>În panoul principal (meniul din stânga), accesați secțiunea <strong>„Datele mele”</strong>.</li>
+  <li>Faceți clic pe submeniul <strong>„Stagii de cotizare”</strong> și apoi pe <strong>„Generare document”</strong>.</li>
+  <li>Puteți alege să generați raportul pentru întreaga activitate sau puteți selecta un interval specific de timp (de exemplu, ultimii 5 ani).</li>
+  <li>Apăsați butonul de trimitere a solicitării. Sistemul va compila datele în fundal.</li>
+  <li>După 2-3 minute, reîmprospătați pagina sau accesați secțiunea <strong>„Rapoarte generate”</strong> din profilul dumneavoastră pentru a descărca fișierul PDF obținut.</li>
+</ul>
+
+<h3>Pasul 3: Cum se citește și se interpretează raportul de cotizare PDF?</h3>
+<p>Raportul generat conține o structură tabelară detaliată pe luni și ani. Pentru a-l înțelege corect, trebuie să urmăriți semnificația coloanelor sale principale:</p>
+<ul class="list-disc ml-6 space-y-2 text-sm text-gray-700">
+  <li><strong>Anul / Luna:</strong> Perioada fiscală în care au fost raportate datele de către angajatori.</li>
+  <li><strong>Denumire Angajator:</strong> Numele oficial al companiei sau instituției la care ați fost angajat.</li>
+  <li><strong>Baza de calcul (Salariul Brut):</strong> Suma brută pe care ați realizat-o și pentru care s-a calculat contribuția socială. Aceasta este cifra esențială care va influența numărul de puncte acumulate.</li>
+  <li><strong>Condiții de muncă (Normale / Deosebite / Speciale):</strong> Reprezintă încadrarea locului de muncă. Litera „N” indică condiții normale, „D” indică condiții deosebite (oferă reducere de vârstă și spor de punctaj), iar „S” indică condiții speciale de muncă.</li>
+  <li><strong>Punctaj lunar:</strong> Punctele acumulate în acea lună. Formula utilizată este: <code>Salariul tău Brut / Câștigul Salarial Mediu Brut pe Economie din acea lună</code>. Suma punctajelor lunare împărțită la 12 reprezintă punctajul anual de pensie.</li>
+</ul>
+
+<div class="overflow-x-auto my-6">
+  <table className="w-full text-xs text-left border border-slate-200">
+    <thead className="bg-slate-100">
+      <tr>
+        <th className="border p-2">Situație Identificată</th>
+        <th className="border p-2">Cauză Probabilă</th>
+        <th className="border p-2">Soluție Recomandată</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td className="border p-2">Lipsește o lună sau o perioadă întreagă</td>
+        <td className="border p-2">Angajatorul nu a depus declarația 112 sau firma s-a desființat fără declararea datelor</td>
+        <td className="border p-2">Solicitați o adeverință de vechime de la angajator sau sesizați ITM</td>
+      </tr>
+      <tr>
+        <td className="border p-2">Salariul brut înscris este mai mic decât cel real</td>
+        <td className="border p-2">Eroare de operare în contabilitate sau nedeclararea corectă a veniturilor</td>
+        <td className="border p-2">Solicitați corectarea REVISAL de către angajator prin depunerea unei declarații rectificative</td>
+      </tr>
+      <tr>
+        <td className="border p-2">Nu apare vechimea de dinainte de 2001</td>
+        <td className="border p-2">Sistemul electronic CNPP conține doar date începând cu aprilie 2001</td>
+        <td className="border p-2">Nicio problemă; vechimea anterioară se dovedește exclusiv cu carnetul de muncă original</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<h3>Ce faci dacă identifici erori în raportul de vechime?</h3>
+<p>Dacă descoperiți că anumite perioade lucrate lipsesc sau că salariile brute declarate sunt incorecte, este vital să acționați cât mai repede, deoarece trecerea timpului îngreunează obținerea dovezilor:</p>
+<ol class="list-decimal ml-6 space-y-3 text-sm text-gray-700">
+  <li><strong>Contactarea directă a angajatorului:</strong> Adresați-vă departamentului de resurse umane al fostului sau actualului angajator și solicitați verificarea declarației 112 depuse la ANAF. Angajatorul are obligația legală de a rectifica datele eronate și de a depune declarații rectificative la Fisc pentru lunile respective.</li>
+  <li><strong>Sesizarea Inspectoratului Teritorial de Muncă (ITM):</strong> Dacă angajatorul refuză corectarea datelor sau cooperarea, depuneți o sesizare oficială la ITM din județul în care este înregistrată firma. Atașați copii după contractul de muncă, fluturași de salariu sau extrase de cont care demonstrează încasarea sumelor reale. ITM poate efectua un control tematic și poate amenda firma, obligând-o să corecteze datele.</li>
+  <li><strong>Obținerea adeverințelor de la firme de arhivă:</strong> În cazul în care firma s-a desființat, trebuie să identificați operatorul privat de arhivă care deține documentele acesteia (statul de plată) și să solicitați o adeverință oficială cu salariile încasate și contribuțiile plătite, adeverință pe care o veți depune ulterior la Casa de Pensii.</li>
+</ol>
+
+<h3>Întrebări Frecvente (FAQ)</h3>
+<div class="space-y-4 my-6">
+  <div class="border-b pb-4">
+    <strong class="text-blue-700 block">De ce nu îmi apare deloc vechimea obținută înainte de aprilie 2001 în contul online?</strong>
+    <p class="text-sm text-gray-700 mt-1">
+      Este o situație complet normală. Sistemul informatic al CNPP a fost înființat în luna aprilie a anului 2001. Toate datele privind activitatea dumneavoastră anterioară acestei date se află stocate în format fizic pe suport de hârtie, în <strong>carnetul de muncă original</strong> pe care îl dețineți. Această vechime va fi introdusă în sistemul digital abia atunci când veți depune dosarul fizic de pensionare la ghișeul Casei de Pensii, funcționarii înregistrând manual fiecare perioadă din carnet.
+    </p>
+  </div>
+  <div class="border-b pb-4">
+    <strong class="text-blue-700 block">Cât de des se actualizează baza de date electronică a CNPP?</strong>
+    <p class="text-sm text-gray-700 mt-1">
+      Baza de date a CNPP se actualizează lunar. De regulă, angajatorii au obligația legală de a depune declarația 112 (privind contribuțiile și salariații) până la data de 25 a lunii următoare celei de activitate (de exemplu, datele pentru luna mai se declară până la 25 iunie). Prelucrarea informatică și afișarea datelor în contul dumneavoastră online poate dura încă 10-15 zile, astfel încât o luată lucrată apare în contul online la aproximativ 40-50 de zile după finalizarea ei.
+    </p>
+  </div>
+  <div class="border-b pb-4">
+    <strong class="text-blue-700 block">Ce sunt punctele de stabilitate și apar ele în acest raport?</strong>
+    <p class="text-sm text-gray-700 mt-1">
+      Conform Legii nr. 360/2023, punctele de stabilitate sunt bonusuri acordate persoanelor care lucrează peste 25 de ani în sistemul public de pensii (0,5 pct/an pentru anii 26-30; 0,75 pct/an pentru anii 31-35; 1 pct/an pentru anii peste 35). Aceste puncte se calculează și se aplică direct în momentul depunerii dosarului de pensie de către Casa de Pensii. Ele nu apar calculate lună de lună în raportul curent de cotizare electronic, însă istoricul de cotizare extras vă permite să calculați cu precizie stagiul total de cotizare realizat pentru a ști câte puncte de stabilitate veți obține.
+    </p>
+  </div>
+  <div class="border-b pb-4">
+    <strong class="text-blue-700 block">Este sigur să îmi salvez raportul CNPP pe calculator?</strong>
+    <p class="text-sm text-gray-700 mt-1">
+      Da, dar trebuie să aveți grijă unde îl stocați, deoarece raportul de cotizare conține date cu caracter personal extrem de sensibile: numele complet, CNP-ul dumneavoastră, codurile angajatorilor și toate veniturile istorice brute. Se recomandă să nu descărcați acest document pe computere publice sau comune și să folosiți parole puternice pentru securizarea accesului la fișier.
+    </p>
+  </div>
+</div>
+
+<p>Pentru a începe înregistrarea contului dumneavoastră sau pentru a vă autentifica în profil, vizitați platforma electronică a <a href="https://www.cnpp.ro" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline font-semibold">Casei Naționale de Pensii Publice (CNPP)</a>. Pentru a consulta detaliile legislative din Monitorul Oficial cu privire la dreptul de acces la datele personale și obligațiile angajatorilor, accesați <a href="https://legislatie.just.ro" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline font-semibold">Just.ro (Portalul Legislativ Oficial)</a>.</p>
 `
   },
   {

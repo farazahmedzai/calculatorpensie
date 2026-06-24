@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { useLocation } from "wouter";
+import { useLocation, Link } from "wouter";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import MainCalculator from "@/components/calculators/main-calculator";
@@ -23,7 +23,7 @@ export default function CalculatorPage() {
   return (
     <div className="min-h-screen bg-neutral-light py-8">
       <MetaTags 
-        title="Calculator Pensie România 2025 - Calculează Pensia de Stat și Privată Online"
+        title="Calculator Pensie de Stat 2025 | Estimare Online"
         description="Utilizează calculatoarele noastre avansate pentru a afla pensia de stat, pensia anticipată și contribuțiile Pilonul III. Calcule precise bazate pe legislația română actualizată."
         canonical="https://calculatorpensie.com/calculator"
         keywords="calculator pensie romania, calcul pensie de stat, pensie anticipata, pilon III, calculator pilon 3"
@@ -141,46 +141,63 @@ export default function CalculatorPage() {
 
         {/* SEO Content */}
         <div className="mt-12 prose prose-lg max-w-none">
-          <h2>De ce să folosești calculatoarele noastre de pensie?</h2>
+          <h2>Ghid Oficial: Cum funcționează formula de calcul a pensiei în România?</h2>
           <p>
-            Calculatoarele noastre de pensie sunt dezvoltate conform legislației românești în vigoare 
-            și îți oferă estimări precise pentru planificarea viitorului financiar.
+            Calculul pensiei publice în România (Pilonul I) este reglementat de <strong>Noua Lege a Pensiilor nr. 360/2023</strong> (intrată în vigoare la 1 septembrie 2024). Sistemul unitar se bazează pe principiul contributivității, unde cuantumul pensiei se determină prin înmulțirea numărului total de puncte realizat de asigurat cu valoarea punctului de referință.
           </p>
-          
-          <h3>Calculator Pensie Principal</h3>
+
+          <div className="bg-slate-50 border border-slate-200 rounded-lg p-5 my-6">
+            <h4 className="font-bold text-slate-800 mt-0">Formula Oficială de Calcul CNPP:</h4>
+            <p className="font-mono text-lg text-blue-700 font-bold mb-2">
+              Pensia Brută = Număr Total de Puncte × VPR
+            </p>
+            <p className="text-sm text-gray-600 mb-0">
+              Unde <strong>VPR</strong> (Valoarea Punctului de Referință) este stabilită la <strong>91 Lei</strong> pentru anul 2025 (crescută de la valoarea inițială de 81 Lei).
+            </p>
+          </div>
+
+          <h3>Cum se determină Numărul Total de Puncte?</h3>
           <p>
-            Folosind formula oficială de calcul a pensiei din România, calculatrul nostru principal 
-            îți oferă o estimare precisă a pensiei viitoare pe baza:
+            Numărul total de puncte obținut de un viitor pensionar este format din suma a trei categorii de puncte:
+          </p>
+          <ol>
+            <li>
+              <strong>Puncte de Contributivitate:</strong> Se calculează prin raportarea salariului tău brut lunar la salariul mediu brut utilizat la fundamentarea bugetului asigurărilor sociale din acea lună. De exemplu, dacă câștigi exact salariul mediu brut pe economie în acea lună, vei acumula exact 1.0 puncte de pensie. Toate punctele lunare se adună și se împart la 12 pentru a rezulta punctajul anual.
+            </li>
+            <li>
+              <strong>Puncte de Stabilitate (Bonificația pentru fidelitate):</strong> Noua lege recompensează persoanele care lucrează un număr mai mare de ani (stagii lungi de cotizare) prin acordarea unui bonus direct de puncte pentru fiecare an lucrat peste pragul de 25 de ani:
+              <ul>
+                <li><strong>+0.50 puncte/an</strong> pentru stagiul de cotizare între 26 și 30 de ani;</li>
+                <li><strong>+0.75 puncte/an</strong> pentru stagiul de cotizare între 31 și 35 de ani;</li>
+                <li><strong>+1.00 punct/an</strong> pentru fiecare an lucrat ce depășește 35 de ani.</li>
+              </ul>
+            </li>
+            <li>
+              <strong>Puncte Necontributive (Asimilate):</strong> Se acordă pentru perioadele în care nu s-au plătit contribuții directe, dar care sunt recunoscute de lege (stagiul militar, facultatea la zi absolvită cu diplomă, concediul de creștere a copilului, șomajul tehnic). Fiecare an asimilat se bonifică cu <strong>0.25 puncte pe an</strong>.
+            </li>
+          </ol>
+
+          <h3>Grupele de Muncă: Condiții Deosebite și Speciale</h3>
+          <p>
+            Dacă ai lucrat în medii cu noxe, risc fizic sau condiții grele de muncă (Grupa I și II, redenumite în condiții speciale și deosebite), beneficiezi de:
           </p>
           <ul>
-            <li>Vârsta actuală și cea de pensionare</li>
-            <li>Veniturile lunare nete actuale</li>
-            <li>Stagiul de cotizare acumulat</li>
-            <li>Contribuțiile la sistemul public de pensii</li>
+            <li><strong>Reducerea vârstei standard de pensionare</strong> cu până la 10-13 ani, în funcție de numărul total de ani petrecuți în aceste grupe.</li>
+            <li><strong>Creșterea punctajului lunar</strong> realizat cu un indice suplimentar: <strong>+25%</strong> pentru perioadele în care ai lucrat în condiții deosebite și <strong>+50%</strong> pentru cele în condiții speciale.</li>
           </ul>
 
-          <h3>Calculator Pensie Anticipată</h3>
+          <h3>Ce documente sunt necesare pentru depunerea dosarului?</h3>
           <p>
-            Dacă te gândești să te pensionezi mai devreme, calculatorul nostru de pensie anticipată 
-            îți arată:
+            Pentru a te pensiona oficial la limita de vârstă, dosarul tău de pensie trebuie depus la Casa Teritorială de Pensii corespunzătoare domiciliului tău și trebuie să conțină o serie de acte obligatorii (original și copie). Poți citi lista completă detaliată în articolul nostru de blog: <Link href="~/blog/acte-necesare-dosar-pensionare" className="text-blue-600 hover:underline font-semibold">Acte necesare pentru dosarul de pensionare în 2025</Link>.
           </p>
-          <ul>
-            <li>Penalizarea aplicată pentru pensionarea anticipată</li>
-            <li>Valoarea pensiei după aplicarea reducerii</li>
-            <li>Comparația cu pensia standard</li>
-            <li>Condițiile pentru pensionarea anticipată parțială</li>
-          </ul>
+          <p>
+            De asemenea, îți recomandăm să verifici din timp stagiul tău de cotizare înregistrat oficial în format digital pe portalul online al Casei Naționale de Pensii Publice. Consultă ghidul nostru pas cu pas: <Link href="~/blog/vizualizare-vechime-munca-cnpp" className="text-blue-600 hover:underline font-semibold">Cum îți verifici online vechimea în muncă în CNPP</Link>.
+          </p>
 
-          <h3>Calculator Pilon III</h3>
+          <h3>De ce să folosești calculatoarele noastre de pensie?</h3>
           <p>
-            Pilonul III de pensii oferă avantaje fiscale importante. Calculatorul nostru te ajută să:
+            Calculatoarele noastre de pensie sunt dezvoltate și optimizate cu atenție conform legislației românești în vigoare și îți oferă estimări rapide, precise și complet gratuite pentru planificarea viitorului tău financiar, fără a fi nevoie de cunoștințe matematice complicate sau conturi guvernamentale.
           </p>
-          <ul>
-            <li>Optimizezi contribuțiile pentru deducerea fiscală maximă</li>
-            <li>Calculezi economia de impozit anuală</li>
-            <li>Estimezi valoarea viitoare a contribuțiilor</li>
-            <li>Compari diferite strategii de contribuție</li>
-          </ul>
         </div>
 
         {/* RevBid Advertisement */}

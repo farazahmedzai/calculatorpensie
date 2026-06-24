@@ -66,20 +66,44 @@ export default function Footer() {
 
           <div>
             <h3 className="text-white font-semibold mb-6 text-lg">🧮 Calculatoare</h3>
-            <ul className="space-y-4">
+            <ul className="space-y-3">
               <li>
                 <Link href="/calculator">
                   <span className="text-gray-300 hover:text-blue-400 transition-all duration-300 cursor-pointer flex items-center group">
                     <div className="w-2 h-2 bg-blue-600 rounded-full mr-3 group-hover:bg-blue-400 transition-colors"></div>
-                    Calculator Pensie Principal
+                    Calculator Pensie
                   </span>
                 </Link>
               </li>
               <li>
-                <Link href="/calculator?type=early">
+                <Link href="/calculator-pensie-anticipata">
                   <span className="text-gray-300 hover:text-blue-400 transition-all duration-300 cursor-pointer flex items-center group">
                     <div className="w-2 h-2 bg-blue-600 rounded-full mr-3 group-hover:bg-blue-400 transition-colors"></div>
                     Pensie Anticipată
+                  </span>
+                </Link>
+              </li>
+              <li>
+                <Link href="/calculator-varsta-pensionare">
+                  <span className="text-gray-300 hover:text-blue-400 transition-all duration-300 cursor-pointer flex items-center group">
+                    <div className="w-2 h-2 bg-blue-600 rounded-full mr-3 group-hover:bg-blue-400 transition-colors"></div>
+                    Vârstă Pensionare
+                  </span>
+                </Link>
+              </li>
+              <li>
+                <Link href="/calculator-puncte-pensie">
+                  <span className="text-gray-300 hover:text-blue-400 transition-all duration-300 cursor-pointer flex items-center group">
+                    <div className="w-2 h-2 bg-blue-600 rounded-full mr-3 group-hover:bg-blue-400 transition-colors"></div>
+                    Calculator Puncte
+                  </span>
+                </Link>
+              </li>
+              <li>
+                <Link href="/calculator-pensie-pilon-2">
+                  <span className="text-gray-300 hover:text-blue-400 transition-all duration-300 cursor-pointer flex items-center group">
+                    <div className="w-2 h-2 bg-blue-600 rounded-full mr-3 group-hover:bg-blue-400 transition-colors"></div>
+                    Pensie Pilon II
                   </span>
                 </Link>
               </li>
@@ -92,10 +116,10 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/faq">
+                <Link href="/program-excel-calcul-pensie">
                   <span className="text-gray-300 hover:text-blue-400 transition-all duration-300 cursor-pointer flex items-center group">
                     <div className="w-2 h-2 bg-blue-600 rounded-full mr-3 group-hover:bg-blue-400 transition-colors"></div>
-                    Întrebări Frecvente
+                    Program Excel Calcul
                   </span>
                 </Link>
               </li>
@@ -198,10 +222,10 @@ export default function Footer() {
                   Informații Legale
                 </h4>
                 <p className="text-gray-300 text-sm leading-relaxed mb-3">
-                  <strong className="text-white">Valoarea punctului de pensie 2025:</strong> 2.031 Lei conform legislației în vigoare
+                  <strong className="text-white">Valoarea punctului de pensie 2025:</strong> 2.031 Lei | <strong className="text-white">Valoarea Punctului de Referință (VPR) 2025:</strong> 91 Lei
                 </p>
                 <p className="text-gray-200 text-xs leading-relaxed">
-                  <strong className="text-white">Disclaimer:</strong> Acest calculator oferă estimări informative bazate pe Legea 263/2010 și nu are valoare oficială. 
+                  <strong className="text-white">Disclaimer:</strong> Acest calculator oferă estimări informative bazate pe Legea 360/2023 și nu are valoare oficială. 
                   Pentru calculul exact al pensiei, consultați Casa Națională de Pensii Publice (CNPP) sau un consilier autorizat.
                 </p>
               </div>
