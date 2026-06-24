@@ -241,6 +241,18 @@ export default function CalculatorVarstaPage() {
               <p>
                 <strong>Reduceri de vârstă:</strong> Vârsta de pensionare poate fi redusă în cazul muncii în condiții deosebite/speciale de muncă, pentru mamele cu mai mulți copii (reducere de 6 luni pentru fiecare copil, până la maximum 3.5 ani) sau în cazul pensionării anticipate.
               </p>
+              
+              <figure className="mt-8 mb-4">
+                <img 
+                  src="/images/infografic-varsta-pensionare-2025.png" 
+                  alt="Infografic Vârsta de Pensionare Femei și Bărbați România 2025-2035" 
+                  className="w-full rounded-lg shadow-md border border-gray-100"
+                  loading="lazy"
+                />
+                <figcaption className="text-center text-xs text-gray-500 mt-2">
+                  Evoluția vârstei standard de pensionare conform Legii 360/2023.
+                </figcaption>
+              </figure>
             </div>
           </div>
         </div>

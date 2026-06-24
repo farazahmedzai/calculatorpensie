@@ -201,6 +201,19 @@ export default function CalculatorPunctePage() {
                 <li><strong>Pentru anii de muncă 31 - 35:</strong> primești <strong>0.75 puncte</strong> pentru fiecare an (total max 3.75 puncte).</li>
                 <li><strong>Pentru anii de muncă peste 35:</strong> primești <strong>1.0 punct</strong> pentru fiecare an.</li>
               </ul>
+              
+              <figure className="my-6">
+                <img 
+                  src="/images/puncte-stabilitate-legea-360.png" 
+                  alt="Infografic Puncte de Stabilitate Noua Lege a Pensiilor 2025" 
+                  className="w-full rounded-lg shadow-md border border-gray-100"
+                  loading="lazy"
+                />
+                <figcaption className="text-center text-xs text-gray-500 mt-2">
+                  Treptele de acordare a punctelor de stabilitate pentru vechimea în muncă (Legea 360/2023).
+                </figcaption>
+              </figure>
+              
               <p>
                 De exemplu, o persoană cu un stagiu de cotizare de 40 de ani va acumula automat un bonus de stabilitate de: 
                 <br />

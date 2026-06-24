@@ -76,6 +76,18 @@ export default function CalculatorAnticipataPage() {
             Recalcularea penalizării se realizează raportat la lunile de anticipare (până la 60 de luni) și la numărul de ani cu care ai depășit stagiul complet de cotizare (35 de ani). Procentul de penalizare lunară este determinat conform următoarei grile oficiale CNPP:
           </p>
           
+          <figure className="my-6">
+            <img 
+              src="/images/infografic-penalizare-anticipata.png" 
+              alt="Infografic Penalizare Pensie Anticipată România 2025" 
+              className="w-full rounded-lg shadow-md border border-gray-100"
+              loading="lazy"
+            />
+            <figcaption className="text-center text-xs text-gray-500 mt-2">
+              Grila reducerilor procentuale pentru pensionarea anticipată (Legea 360/2023).
+            </figcaption>
+          </figure>
+          
           <table className="w-full text-sm border-collapse my-6">
             <thead>
               <tr className="bg-slate-100">
