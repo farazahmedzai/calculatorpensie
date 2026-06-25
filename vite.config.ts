@@ -27,31 +27,7 @@ export default defineConfig({
   build: {
     outDir: path.resolve(import.meta.dirname, "dist/public"),
     emptyOutDir: true,
-    rollupOptions: {
-      output: {
-        manualChunks: (id) => {
-          const modulePath = id.replace(/\\/g, "/");
-          if (modulePath.includes("node_modules")) {
-            if (modulePath.includes("/react/") || modulePath.includes("/react-dom/") || modulePath.includes("/wouter/")) {
-              return "vendor-react";
-            }
-            if (modulePath.includes("/recharts/")) {
-              return "vendor-recharts";
-            }
-            if (modulePath.includes("/framer-motion/")) {
-              return "vendor-motion";
-            }
-            if (modulePath.includes("/lucide-react/")) {
-              return "vendor-lucide";
-            }
-            if (modulePath.includes("@radix-ui")) {
-              return "vendor-radix";
-            }
-            return "vendor";
-          }
-        },
-      },
-    },
+    rollupOptions: {},
   },
   server: {
     fs: {
