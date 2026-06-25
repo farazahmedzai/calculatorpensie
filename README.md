@@ -59,7 +59,7 @@ The application will be available at `http://localhost:5000`
 ## Romanian Pension Calculations
 
 ### Standard Pension Formula
-Based on Romanian pension law (Legea 263/2010):
+Based on Romanian pension law (Legea 360/2023):
 - Calculation: (Average Income × Contribution Years × 1.265%) 
 - Maximum: 75% of average income
 - Minimum contribution: 15 years required

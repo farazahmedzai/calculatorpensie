@@ -188,7 +188,7 @@ Each article follows SEO best practices:
 ## Romanian Market Considerations
 
 ### Legal Compliance
-- All calculations based on current Romanian pension law (Legea 263/2010)
+- All calculations based on current Romanian pension law (Legea 360/2023)
 - Regular updates required when legislation changes
 - Links to official CNPP resources for verification
 
