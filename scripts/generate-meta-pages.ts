@@ -15,10 +15,10 @@ interface PageMeta {
 }
 
 const staticRoutes: Record<string, PageMeta> = {
-  '/calculator': {
-    title: 'Calculator Pensie de Stat 2026 | Estimare Online',
-    description: 'Utilizează calculatoarele noastre avansate pentru a afla pensia de stat, pensia anticipată și contribuțiile Pilonul III. Calcule precise bazate pe legislația română actualizată.',
-    canonical: 'https://calculatorpensie.com/calculator/',
+  '/': {
+    title: 'Calculator Pensie 2026: Află Pensia de Stat (Legea 360)',
+    description: 'Calculează online pensia de stat în 2026. Află exact punctajul și valoarea pensiei pe baza noii Legi 360/2023.',
+    canonical: 'https://calculatorpensie.com/',
     keywords: 'calculator pensie romania, calcul pensie de stat, pensie anticipata, pilon III, calculator pilon 3'
   },
   '/calculator-pensie-anticipata': {
@@ -46,8 +46,8 @@ const staticRoutes: Record<string, PageMeta> = {
     keywords: 'calculator pensie pilon 2, pilonul ii pensii private, randament pilon 2, fond de pensii privat'
   },
   '/program-excel-calcul-pensie': {
-    title: 'Program Excel Calcul Pensie | Descărcare Simulator 2026',
-    description: 'Descarcă gratuit simulatorul Excel (.csv) pentru calculul pensiei din România în 2026. Introduceți salariul pentru a estima punctele lunare și pensia CNPP.',
+    title: 'Program Excel Calcul Pensie 2026 (Download Gratuit)',
+    description: 'Descarcă simulatorul Excel gratuit pentru pensia de stat 2026. Introdu salariul și calculează automat punctajul lunar.',
     canonical: 'https://calculatorpensie.com/program-excel-calcul-pensie/',
     keywords: 'program excel calcul pensie, tabel excel calcul pensie de stat, simulator pensie excel gratis, descarca calculator pensie xls'
   },

@@ -76,7 +76,7 @@ export default function LegislatiePage() {
 
             <h3>Top 5 Schimbări Majore în 2026</h3>
             <ul>
-              <li><strong>1. Introducerea Punctelor de Stabilitate:</strong> Primești puncte bonus pentru fiecare an de muncă peste stagiul de 25 de ani (0.5, 0.75, sau 1 punct per an).</li>
+              <li><strong>1. Introducerea <Link href="/calculator-puncte-pensie" className="text-blue-600 hover:underline">Punctelor de Stabilitate</Link>:</strong> Primești puncte bonus pentru fiecare an de muncă peste stagiul de 25 de ani (0.5, 0.75, sau 1 punct per an).</li>
               <li><strong>2. Noua Formulă de Calcul:</strong> Pensia se calculează înmulțind numărul total de puncte cu Valoarea Punctului de Referință (VPR = 91 Lei în 2026).</li>
               <li><strong>3. Egalizarea Vârstei de Pensionare:</strong> Vârsta standard pentru femei va continua să crească gradual până la 65 de ani (egalizare cu bărbații) până în anul 2035.</li>
               <li><strong>4. Modificări la Pensia Anticipată:</strong> Penalizarea maximă scade de la 30% la 24%, devenind mai accesibilă pentru cei cu stagiu lung de cotizare.</li>

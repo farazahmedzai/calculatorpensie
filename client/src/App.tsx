@@ -91,17 +91,15 @@ function Router() {
               <LazyLegislatie />
             </Suspense>
           </Route>
-          <Route path="/blog" nest>
-            <Route path="/">
-              <Suspense fallback={<LoadingSpinner />}>
-                <LazyBlog />
-              </Suspense>
-            </Route>
-            <Route path="/:slug">
-              <Suspense fallback={<LoadingSpinner />}>
-                <LazyBlogArticle />
-              </Suspense>
-            </Route>
+          <Route path="/blog">
+            <Suspense fallback={<LoadingSpinner />}>
+              <LazyBlog />
+            </Suspense>
+          </Route>
+          <Route path="/blog/:slug">
+            <Suspense fallback={<LoadingSpinner />}>
+              <LazyBlogArticle />
+            </Suspense>
           </Route>
           <Route path="/despre-noi">
             <Suspense fallback={<LoadingSpinner />}>

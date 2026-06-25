@@ -174,7 +174,7 @@ Indiferent de vârsta pe care o aveți în prezent, o planificare riguroasă est
     author: authors.alexandruPopescu,
     image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=480",
     content: `
-<p>Formula de calcul a pensiei de stat în România se bazează pe sistemul de puncte reglementat prin lege. Începând cu anul 2026, valoarea punctului de pensie este fixată la <strong>2.031 Lei</strong>, fiind calculată conform noii legi a pensiilor nr. 360/2023. Totodată, Valoarea Punctului de Referință (VPR) este stabilită la <strong>91 Lei</strong>, asigurând o indexare procentuală substanțială a veniturilor pentru milioane de pensionari. Pentru a simula rapid aceste calcule, accesează gratuit <a href="/" class="text-blue-600 hover:underline font-semibold">noul calculator de pensie online</a>.</p>
+<p>Formula de calcul a pensiei de stat în România se bazează pe sistemul de puncte reglementat prin lege. Începând cu anul 2026, valoarea punctului de pensie este fixată la <strong>2.031 Lei</strong>, fiind calculată conform noii legi a pensiilor nr. 360/2023. Totodată, Valoarea Punctului de Referință (VPR) este stabilită la <strong>91 Lei</strong>, asigurând o indexare procentuală substanțială a veniturilor pentru milioane de pensionari. Pentru a simula rapid aceste calcule, accesează gratuit <a href="/" class="text-blue-600 hover:underline font-semibold">calculator pensie de stat</a>.</p>
 
 <h3>Care sunt pașii oficiali de calcul?</h3>
 <p>Pentru a determina valoarea brută a pensiei de stat pe care o vei primi lunar, algoritmul oficial al CNPP aplică un sistem format din trei piloni principali de calcul:</p>
@@ -479,7 +479,7 @@ Indiferent de vârsta pe care o aveți în prezent, o planificare riguroasă est
     author: authors.alexandruPopescu,
     image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=480",
     content: `
-<p>Pensia anticipată reprezintă opțiunea legală prin care te poți pensiona cu maximum 5 ani înainte de împlinirea vârstei standard, dar cu anumite condiții stricte de cotizare și cu o penalizare aplicabilă cuantumului lunar.</p>
+<p>Pensia anticipată reprezintă opțiunea legală prin care te poți pensiona cu maximum 5 ani înainte de împlinirea vârstei standard, dar cu anumite condiții stricte de cotizare și cu o penalizare aplicabilă cuantumului lunar. Poți afla exact care este penalizarea folosind <a href="/calculator-pensie-anticipata" class="text-blue-600 hover:underline font-semibold">calculator pensie anticipată</a>.</p>
 
 <h3>Condiții de eligibilitate în 2026</h3>
 <p>Pentru a solicita pensia anticipată, solicitantul trebuie să fi realizat stagiul complet de cotizare prevăzut de lege (35 de ani pentru bărbați și 30-33 de ani pentru femei) sau să îl fi depășit cu până la 8 ani. Vârsta minimă este de 60 de ani pentru bărbați și 58 de ani pentru femei în 2026.</p>

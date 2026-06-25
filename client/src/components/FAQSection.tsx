@@ -21,8 +21,13 @@ const faqData: FAQItem[] = [
   },
   {
     id: "pension-point-value", 
-    question: "Care este valoarea punctului de referință (VPR) în 2025?",
-    answer: "Începând cu 1 ianuarie 2025, VPR este 91 lei, conform legislației oficiale. Această valoare este folosită în calculul pensiei și poate fi actualizată anual prin hotărâre guvernamentală."
+    question: "Care este valoarea punctului de referință (VPR) în 2026?",
+    answer: "Începând cu 1 ianuarie 2026, VPR este 91 lei, conform legislației oficiale. Această valoare este folosită în calculul pensiei și poate fi actualizată anual prin hotărâre guvernamentală."
+  },
+  {
+    id: "stability-points",
+    question: "Ce sunt punctele de stabilitate?",
+    answer: "Punctele de stabilitate sunt bonusuri acordate persoanelor cu un stagiu de cotizare mai mare de 25 de ani. Se acordă 0.5 puncte/an pentru anii 26-30, 0.75 puncte/an pentru anii 31-35 și 1 punct/an pentru stagiul de peste 35 de ani."
   },
   {
     id: "increase-pension",
@@ -36,13 +41,13 @@ const faqData: FAQItem[] = [
   },
   {
     id: "minimum-pension",
-    question: "Care este pensia minimă în România în 2025?",
-    answer: "Pensia minimă garantată în România pentru 2025 este de 1.281 lei pentru persoanele cu stagiu complet de cotizare. Această sumă se actualizează periodic conform legii și reprezintă minimul garantat de stat pentru pensionarii cu drept deplin."
+    question: "Care este pensia minimă în România în 2026?",
+    answer: "Pensia minimă garantată în România pentru 2026 este de 1.281 lei pentru persoanele cu stagiu complet de cotizare. Această sumă se actualizează periodic conform legii și reprezintă minimul garantat de stat pentru pensionarii cu drept deplin."
   },
   {
     id: "pension-calculation-formula",
     question: "Cum se calculează exact pensia de stat?",
-    answer: "Pensia brută se calculează conform Legii 360/2023 cu formula: Număr Total de Puncte × Valoarea Punctului de Referință (VPR). Pentru 2025, VPR este 91 lei, iar punctele includ contributivitatea, stabilitatea și perioadele asimilate."
+    answer: "Pensia brută se calculează conform Legii 360/2023 cu formula: Număr Total de Puncte × Valoarea Punctului de Referință (VPR). Pentru 2026, VPR este 91 lei, iar punctele includ contributivitatea, stabilitatea și perioadele asimilate."
   },
   {
     id: "work-conditions-pension",

@@ -32,7 +32,7 @@ export default function CalculatorAnticipataPage() {
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 mt-4">
         <div className="text-center mb-8">
-          <h1 className="text-3xl font-bold mb-4">Calculator Pensie Anticipată</h1>
+          <h1 className="text-3xl font-bold mb-4">Calculator Pensie Anticipată (Legea 360/2023)</h1>
           <p className="text-xl text-gray-700">
             Află dacă te poți pensiona mai devreme și calculează-ți penalizarea legală
           </p>
@@ -59,7 +59,7 @@ export default function CalculatorAnticipataPage() {
 
         {/* Rich SEO Content */}
         <div className="bg-white rounded-lg p-8 shadow-sm prose prose-lg max-w-none">
-          <h2>Ghid Complet: Condiții de Pensionare Anticipată în 2025</h2>
+          <h2>Cum funcționează pensia anticipată?</h2>
           <p>
             Pensionarea anticipată reprezintă dreptul asiguratului de a solicita pensionarea cu 
             <strong> maximum 5 ani înaintea vârstei standard de pensionare</strong>, conform prevederilor noii Legi nr. 360/2023. Această posibilitate vine la pachet cu o penalizare procentuală aplicată valorii finale a pensiei de stat.
@@ -75,7 +75,7 @@ export default function CalculatorAnticipataPage() {
             </p>
           </div>
 
-          <h2>Cum se calculează penalizarea (Conform Legii 360/2023)</h2>
+          <h2>Tabelul penalizărilor pentru pensia anticipată în 2026</h2>
           <p>
             Recalcularea penalizării se realizează raportat la lunile de anticipare (până la 60 de luni) și la numărul de ani cu care ai depășit stagiul complet de cotizare (35 de ani). Procentul de penalizare lunară este determinat conform următoarei grile oficiale CNPP:
           </p>
@@ -149,6 +149,24 @@ export default function CalculatorAnticipataPage() {
               </h4>
               <p className="text-gray-700">
                 Nu. La calculul stagiului de cotizare necesar pentru acordarea pensiei anticipate <strong>nu se iau în considerare perioadele asimilate</strong> în care asiguratul nu a cotizat efectiv (de exemplu: anii de studii universitare la zi sau stagiul militar).
+              </p>
+            </div>
+            <div className="border-b pb-4">
+              <h4 className="font-bold flex items-center gap-2">
+                <HelpCircle className="h-4.5 w-4.5 text-brand-blue" />
+                Mă pot pensiona anticipat dacă am lucrat în condiții deosebite?
+              </h4>
+              <p className="text-gray-700">
+                Beneficiile pentru condiții deosebite sau speciale de muncă se aplică, dar trebuie analizate conform Legii 360/2023. Reducerile de vârstă pentru condiții grele se pot cumula cu anumite reduceri de anticipare, însă stagiul complet trebuie îndeplinit.
+              </p>
+            </div>
+            <div className="border-b pb-4">
+              <h4 className="font-bold flex items-center gap-2">
+                <HelpCircle className="h-4.5 w-4.5 text-brand-blue" />
+                Se poate cumula pensia anticipată cu salariul?
+              </h4>
+              <p className="text-gray-700">
+                Nu, legea interzice cumulul pensiei anticipate cu veniturile salariale. Odată ce vă pensionați anticipat, nu mai puteți obține venituri în baza unui contract individual de muncă până la împlinirea vârstei standard.
               </p>
             </div>
           </div>
