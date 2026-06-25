@@ -18,7 +18,7 @@ export default function ProgramExcelPage() {
     // Generate CSV content representing the Romanian Pension Calculator template
     // Semicolon separator is standard for Romanian regional settings in Excel
     const csvRows = [
-      ["# CalculatorPensie.com - Simulator Calcul Pensie Romania 2025"],
+      ["# CalculatorPensie.com - Simulator Calcul Pensie Romania 2026"],
       ["# NOTA: Completati coloana 'Salariu Brut Estimativ (RON)' pentru anii corespunzatori. Restul campurilor se vor calcula automat."],
       [],
       ["An", "Salariu Brut Estimativ (RON)", "CAS Redirectionat Pilon II (4.75%)", "Punctaj Lunar Estimativ", "Punctaj Anual Estimativ"],
@@ -35,8 +35,8 @@ export default function ProgramExcelPage() {
       ["2035", "12500", "593.75", "1.4851", "1.4851"],
       [],
       ["# Valori de referinta utilizate in formule:"],
-      ["Salariu Mediu Brut pe Economie (2025)", "8417", "RON"],
-      ["Valoarea Punctului de Referinta VPR (2025)", "91", "RON"]
+      ["Salariu Mediu Brut pe Economie (2026)", "8417", "RON"],
+      ["Valoarea Punctului de Referinta VPR (2026)", "91", "RON"]
     ];
 
     // Join rows into a CSV string using semicolon as delimiter
@@ -47,7 +47,7 @@ export default function ProgramExcelPage() {
     const url = URL.createObjectURL(blob);
     const link = document.createElement("a");
     link.setAttribute("href", url);
-    link.setAttribute("download", "Simulator_Calcul_Pensie_Romania_2025.csv");
+    link.setAttribute("download", "Simulator_Calcul_Pensie_Romania_2026.csv");
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -59,8 +59,8 @@ export default function ProgramExcelPage() {
   return (
     <div className="min-h-screen bg-neutral-light py-8">
       <MetaTags 
-        title="Program Excel Calcul Pensie | Descărcare Simulator 2025"
-        description="Descarcă gratuit simulatorul Excel (.csv) pentru calculul pensiei din România în 2025. Introduceți salariul pentru a estima punctele lunare și pensia CNPP."
+        title="Program Excel Calcul Pensie | Descărcare Simulator 2026"
+        description="Descarcă gratuit simulatorul Excel (.csv) pentru calculul pensiei din România în 2026. Introduceți salariul pentru a estima punctele lunare și pensia CNPP."
         canonical="https://calculatorpensie.com/program-excel-calcul-pensie"
         keywords="program excel calcul pensie, tabel excel calcul pensie de stat, simulator pensie excel gratis, descarca calculator pensie xls"
       />
@@ -104,9 +104,9 @@ export default function ProgramExcelPage() {
                 
                 <h4 className="font-bold text-slate-800">Ce include tabelul:</h4>
                 <ul>
-                  <li><strong>Istoric pe ani:</strong> Rânduri dedicate pentru simularea veniturilor de la 2025 până în 2035+.</li>
+                  <li><strong>Istoric pe ani:</strong> Rânduri dedicate pentru simularea veniturilor de la 2026 până în 2035+.</li>
                   <li><strong>Contribuția CAS:</strong> Formula calculează automat redirecționarea de 4.75% a salariului brut către Pilonul II de pensie privată obligatorie.</li>
-                  <li><strong>Algoritmul de punctaj:</strong> Calculează punctele lunare raportat la câștigul salarial mediu brut pe economie utilizat în 2025 (8,417 RON).</li>
+                  <li><strong>Algoritmul de punctaj:</strong> Calculează punctele lunare raportat la câștigul salarial mediu brut pe economie utilizat în 2026 (8.417 RON).</li>
                 </ul>
 
                 <div className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded-r-lg my-4">
@@ -137,14 +137,14 @@ export default function ProgramExcelPage() {
                   </thead>
                   <tbody>
                     <tr>
-                      <td className="border p-2">2025</td>
+                      <td className="border p-2">2026</td>
                       <td className="border p-2">8.000 Lei</td>
                       <td className="border p-2">380 Lei</td>
                       <td className="border p-2">0.9505</td>
                       <td className="border p-2">0.9505</td>
                     </tr>
                     <tr className="bg-slate-50/50">
-                      <td className="border p-2">2026</td>
+                      <td className="border p-2">2027</td>
                       <td className="border p-2">8.400 Lei</td>
                       <td className="border p-2">399 Lei</td>
                       <td className="border p-2">0.9980</td>

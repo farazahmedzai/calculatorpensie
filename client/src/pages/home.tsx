@@ -30,6 +30,7 @@ export default function Home() {
     retirementAge: string;
     retirementDate: string;
     monthlyPension: number;
+    stabilityPoints: number;
   } | null>(null);
 
   const articles = getRecentArticles(3);
@@ -60,7 +61,8 @@ export default function Home() {
     setCalculationResult({
       retirementAge: `${adjustedRetirementAge} ani`,
       retirementDate: `${monthNames[retirementMonth]} ${retirementYear}`,
-      monthlyPension: result.monthlyPension
+      monthlyPension: result.monthlyPension,
+      stabilityPoints: result.stabilityPoints
     });
 
     // Track calculator usage for analytics
@@ -69,18 +71,18 @@ export default function Home() {
 
   return (
     <div className="bg-white">
-      <PerformanceTracker page="/" title="Calculator Pensie România 2025" />
+      <PerformanceTracker page="/" title="Calculator Pensie România 2026" />
       <MetaTags 
-        title="Calculator Pensie Online 2025 | Estimare Pensie de Stat"
-        description="✅ Folosește cel mai simplu calculator de pensie online. Află vârsta de pensionare și estimează-ți pensia lunară (Pilon I și II) în mai puțin de 60 de secunde. Gratuit și precis!"
+        title="Calculator Pensie România 2026 - Noua Lege a Pensiilor 360/2023"
+        description="Calculează-ți estimarea exactă conform noului sistem din Legea 360/2023. Include calculul punctelor de stabilitate și noul VPR. Gratuit și rapid!"
         canonical="https://calculatorpensie.com"
-        keywords="calculator pensie, pensie romania, calculul pensiei, varsta pensionare, pilon 1, pilon 2, pilon 3, cnpp"
+        keywords="calculator pensie, pensie romania, calculul pensiei, varsta pensionare, legea 360/2023, vpr 2026, puncte de stabilitate, cnpp"
       />
       
       {/* Schema.org JSON-LD for SEO */}
       <WebApplicationSchema 
-        name="Calculator Pensie Online România 2025"
-        description="Cel mai precis calculator de pensie online din România. Calculează pensia de stat și vârsta de pensionare instant."
+        name="Calculator Pensie Online România 2026 (Noul VPR)"
+        description="Calculează-ți estimarea exactă conform noului sistem din Legea 360/2023. Include calculul punctelor de stabilitate și noul VPR. Gratuit și rapid!"
         url="https://calculatorpensie.com"
       />
       <OrganizationSchema 
@@ -111,10 +113,10 @@ export default function Home() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8">
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-              Calculator Pensie Online 2025: Află Vârsta și Valoarea Pensiei Tale
+              Calculator Pensie România 2026 (Noul VPR)
             </h1>
             <p className="text-xl text-gray-900 dark:text-gray-100 max-w-3xl mx-auto font-medium">
-              Folosește cel mai precis calculator de pensie din România. Calculează instant pensia de stat și vârsta de pensionare bazate pe formulele oficiale CNPP.
+              Folosește cel mai precis calculator de pensie din România. Calculează instant pensia de stat și vârsta de pensionare bazate pe formulele oficiale CNPP (Legea 360/2023).
             </p>
           </div>
 
@@ -267,8 +269,18 @@ export default function Home() {
                         <p className="text-2xl font-bold text-green-800">{calculationResult.retirementDate}</p>
                       </div>
                       <div className="text-center">
+                        <p className="text-sm text-green-600">Puncte de Stabilitate Obținute</p>
+                        <p className="text-2xl font-bold text-green-800">
+                          {calculationResult.stabilityPoints > 0 
+                            ? `+${calculationResult.stabilityPoints.toFixed(2)}` 
+                            : '0'}
+                        </p>
+                        <p className="text-xs text-green-600 mt-1">Acordate pentru anii de muncă &gt;25</p>
+                      </div>
+                      <div className="text-center">
                         <p className="text-sm text-green-600">Estimare Pensie Lunară (Pilon I)</p>
                         <p className="text-2xl font-bold text-green-800">~{calculationResult.monthlyPension.toFixed(0)} RON</p>
+                        <p className="text-xs text-green-600 mt-1">Calculată cu VPR 91 Lei (2026)</p>
                       </div>
                     </div>
                   </div>
@@ -279,7 +291,7 @@ export default function Home() {
               <div className="mt-8 space-y-3 text-sm text-slate-600 dark:text-slate-400">
                 <p className="flex items-start gap-2">
                   <span className="text-blue-600">ℹ️</span>
-                  <span>Calcul bazat pe VPR de <strong>91 lei</strong>, valabil în 2025</span>
+                  <span>Calcul realizat conform <strong>Legii 360/2023</strong> (noul sistem de pensii), incluzând punctele de stabilitate. Valoarea Punctului de Referință (VPR) utilizată este de <strong>91 lei</strong> (valabilă pentru 2026).</span>
                 </p>
                 <p className="flex items-start gap-2">
                   <span className="text-orange-600">⚠️</span>
@@ -350,13 +362,13 @@ export default function Home() {
       <section className="py-16 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold mb-8 text-slate-900 dark:text-slate-50">
-            Cum Se Calculează Pensia în România - Ghid Complet 2025
+            Cum Se Calculează Pensia în România - Ghid Complet 2026
           </h2>
           
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             <div>
               <h3 className="text-2xl font-semibold mb-4 text-slate-800 dark:text-slate-200">
-                Vârsta de Pensionare 2025 - Bărbați și Femei
+                Vârsta de Pensionare 2026 - Bărbați și Femei
               </h3>
               <div className="bg-blue-50 dark:bg-blue-950/20 p-6 rounded-lg border border-blue-200 dark:border-blue-800 mb-6">
                 <div className="grid grid-cols-2 gap-4">
@@ -374,12 +386,12 @@ export default function Home() {
               </div>
 
               <h3 className="text-2xl font-semibold mb-4 text-slate-800 dark:text-slate-200">
-                Punctul de Pensie - Valoarea Actualizată 2025
+                Punctul de Pensie - Valoarea Actualizată 2026
               </h3>
               <div className="bg-green-50 dark:bg-green-950/20 p-6 rounded-lg border border-green-200 dark:border-green-800 mb-6">
-                <p className="text-2xl font-bold text-green-900 dark:text-green-100 mb-2">2.031 Lei</p>
+                <p className="text-2xl font-bold text-green-900 dark:text-green-100 mb-2">VPR 91 Lei</p>
                 <p className="text-green-800 dark:text-green-200 font-medium">
-                  Valoarea punctului de pensie folosită în comunicările publice; pentru calculul conform Legii 360/2023 se folosește VPR 2025 de 91 lei.
+                  Valoarea Punctului de Referință (VPR) folosită pentru calculul conform Legii 360/2023. Punctul de pensie clasic (2.031 Lei) a fost înlocuit de noua formulă.
                 </p>
               </div>
             </div>
@@ -437,7 +449,7 @@ export default function Home() {
       <section className="py-16 bg-gray-50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold mb-8 text-slate-900 dark:text-slate-50 text-center">
-            Pensie Minimă și Maximă în România - Limite 2025
+            Pensie Minimă și Maximă în România - Limite 2026
           </h2>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">

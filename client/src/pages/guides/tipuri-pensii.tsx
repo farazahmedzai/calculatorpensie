@@ -10,8 +10,8 @@ export default function TipuriPensiiPage() {
   return (
     <div className="min-h-screen bg-white">
       <MetaTags 
-        title="Tipuri de Pensii în România | Ghid Complet 2025"
-        description="Descoperă toate tipurile de pensii din sistemul public din România: limită de vârstă, anticipată, de invaliditate și de urmaș. Condiții oficiale și documente."
+        title="Tipuri de Pensii în România - Limită Vârstă, Anticipată, Invaliditate"
+        description="Descoperă toate tipurile de pensii din sistemul public din România în 2026: limită de vârstă, anticipată, de invaliditate și de urmaș. Condiții oficiale și documente."
         canonical="https://calculatorpensie.com/tipuri-pensii"
         keywords="tipuri pensii, pensie limita de varsta, pensie anticipata, pensie invaliditate, pensie urmas"
       />
@@ -35,7 +35,7 @@ export default function TipuriPensiiPage() {
             Descoperă toate tipurile de pensii disponibile în România, condițiile de acordare 
             și cum să îți calculezi corect drepturile de pensie pentru fiecare categorie.
           </p>
-          <Link href="/calculator">
+          <Link href="/">
             <Button size="lg" className="bg-white text-brand-green hover:bg-gray-50">
               <Calculator className="mr-2 h-5 w-5" />
               Calculează Pensia Ta
@@ -89,7 +89,7 @@ export default function TipuriPensiiPage() {
                     <h4 className="font-semibold mb-2">Calcul Pensie:</h4>
                     <ul className="text-sm text-gray-700 space-y-1">
                       <li>• Formula: Număr Total de Puncte × VPR</li>
-                                            <li>• VPR 2025: 91 RON</li>
+                                            <li>• VPR 2026: 91 RON</li>
                                             <li>• Puncte de stabilitate pentru stagiul peste 25 ani</li>
                     </ul>
                   </div>
@@ -151,7 +151,7 @@ export default function TipuriPensiiPage() {
                       Ghid Pensie Anticipată <ArrowRight className="ml-2 h-4 w-4" />
                     </Button>
                   </Link>
-                  <Link href="/calculator?type=early">
+                  <Link href="/calculator-pensie-anticipata">
                     <Button className="bg-brand-red hover:bg-red-700">
                       <Calculator className="mr-2 h-4 w-4" />
                       Calculează Penalizarea
@@ -312,13 +312,13 @@ export default function TipuriPensiiPage() {
               în funcție de tipul ales și situația ta specifică.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/calculator">
+              <Link href="/">
                 <Button size="lg" className="bg-brand-green hover:bg-green-700">
                   <Calculator className="mr-2 h-5 w-5" />
                   Calculator Pensie Standard
                 </Button>
               </Link>
-              <Link href="/calculator?type=early">
+              <Link href="/calculator-pensie-anticipata">
                 <Button size="lg" variant="outline" className="border-brand-green text-brand-green hover:bg-brand-green hover:text-white">
                   Calculator Pensie Anticipată
                 </Button>

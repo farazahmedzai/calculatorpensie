@@ -107,9 +107,6 @@ export class PerformanceManager {
   preloadCriticalResources(): void {
     if ('requestIdleCallback' in window) {
       requestIdleCallback(() => {
-        // Preload calculator page (most used)
-        import('@/pages/calculator');
-        
         // Preload FAQ component
         import('@/components/FAQSection');
         
@@ -118,7 +115,6 @@ export class PerformanceManager {
     } else {
       // Fallback for browsers without requestIdleCallback
       setTimeout(() => {
-        import('@/pages/calculator');
         import('@/components/FAQSection');
       }, 2000);
     }

@@ -10,14 +10,14 @@ export default function LegislatiePage() {
   return (
     <div className="min-h-screen bg-white">
       <MetaTags 
-        title="Legea Pensiilor 2025 | Ghid Legislativ Oficial CNPP"
-        description="Ghid complet despre legislația pensiilor din România în 2025. Condiții de pensionare, recalculare, stagiul de cotizare și valoarea punctului de referință (VPR)."
+        title="Legislație Pensii România 2026 - Legea 360/2023 Actualizată"
+        description="Ghid complet despre legislația pensiilor din România în 2026. Condiții de pensionare, recalculare, stagiul de cotizare și valoarea punctului de referință (VPR)."
         canonical="https://calculatorpensie.com/legislatie"
-        keywords="legea pensiilor 2025, legislatie pensii romania, vpr 2025, cnpp legea"
+        keywords="legea pensiilor 2026, legislatie pensii romania, vpr 2026, legea 360/2023, cnpp legea"
       />
       <WebPageSchema 
-        name="Legislație Pensii România - Ghid Complet 2025"
-        description="Explicații clare despre legislația pensiilor unitare publice din România și recalcularea din 2025"
+        name="Legislație Pensii România - Ghid Complet 2026"
+        description="Explicații clare despre legislația pensiilor unitare publice din România și recalcularea din 2026"
         url="https://calculatorpensie.com/legislatie"
         breadcrumbs={[
           { name: "Acasă", url: "https://calculatorpensie.com" },
@@ -29,11 +29,11 @@ export default function LegislatiePage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center mb-6">
             <Gavel className="h-8 w-8 mr-3" />
-            <h1 className="text-4xl font-bold">Legea Pensiilor 2025 pe Înțelesul Tuturor</h1>
+            <h1 className="text-4xl font-bold">Legislația Pensiilor Publice în România</h1>
           </div>
           <p className="text-xl text-yellow-200 mb-8 font-bold bg-black/20 p-4 rounded-lg">
             Ghid complet despre legislația pensiilor din România, cu explicații clare, 
-            actualizări legislative și resurse oficiale pentru înțelegerea drepturilor tale de pensionare în 2025.
+            actualizări legislative și resurse oficiale pentru înțelegerea drepturilor tale de pensionare în 2026 conform noii Legi 360/2023.
           </p>
           <div className="flex flex-wrap gap-4">
             <Link href="/calculator">
@@ -58,13 +58,12 @@ export default function LegislatiePage() {
           <div className="bg-blue-50 border border-blue-200 rounded-xl p-6 mb-12">
             <div className="flex items-center mb-4">
               <Calendar className="h-5 w-5 text-blue-600 mr-2" />
-              <h3 className="text-lg font-semibold text-blue-800">Actualizări Legislative 2025</h3>
+              <h3 className="text-lg font-semibold text-blue-800">Actualizări Legislative 2026</h3>
               <Badge className="ml-2 bg-blue-600">Nou</Badge>
             </div>
             <ul className="text-blue-700 space-y-2">
-              <li>• <strong>Ianuarie 2025:</strong> Valoarea punctului de pensie este menținută la <strong>2.031 Lei</strong>.</li>
-              <li>• <strong>Ianuarie 2025:</strong> Valoarea Punctului de Referință (VPR) este de <strong>91 Lei</strong> (creștere de la 81 Lei).</li>
-              <li>• <strong>Vârsta de pensionare (Femei):</strong> Creștere graduală spre 63 de ani conform calendarului legii.</li>
+              <li>• <strong>Ianuarie 2026:</strong> Valoarea Punctului de Referință (VPR) este utilizată ca bază de calcul în valoare de <strong>91 Lei</strong>.</li>
+              <li>• <strong>Vârsta de pensionare (Femei):</strong> Creștere graduală spre 63 de ani (ulterior 65) conform calendarului legii.</li>
             </ul>
           </div>
 
@@ -72,7 +71,7 @@ export default function LegislatiePage() {
           <div className="prose prose-lg max-w-none mb-12">
             <h2>Legea 360/2023 - Sistemul Public de Pensii Actualizat</h2>
                         <p>
-                          Legea nr. 360/2023 privind sistemul public de pensii este cadrul principal aplicabil calculului pensiilor în 2025. Aceasta introduce formula bazată pe numărul total de puncte, punctele de stabilitate și Valoarea Punctului de Referință (VPR).
+                          Legea nr. 360/2023 privind sistemul public de pensii este cadrul principal aplicabil calculului pensiilor în 2026. Aceasta introduce formula bazată pe numărul total de puncte, punctele de stabilitate și Valoarea Punctului de Referință (VPR).
                         </p>
 
             <h3>Principiile Fundamentale ale Sistemului</h3>

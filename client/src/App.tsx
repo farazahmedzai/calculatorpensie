@@ -15,7 +15,7 @@ import Header from "@/components/layout/header";
 import Footer from "@/components/layout/footer";
 
 // Lazy load heavy pages to reduce initial bundle size
-const LazyCalculator = lazy(() => import("@/pages/calculator"));
+
 const LazyBlog = lazy(() => import("@/pages/blog"));
 const LazyBlogArticle = lazy(() => import("@/pages/blog-article"));
 const LazyContact = lazy(() => import("@/pages/contact"));
@@ -51,11 +51,6 @@ function Router() {
       <main className="flex-1">
         <Switch>
           <Route path="/" component={Home} />
-          <Route path="/calculator">
-            <Suspense fallback={<LoadingSpinner />}>
-              <LazyCalculator />
-            </Suspense>
-          </Route>
           <Route path="/calculator-pensie-anticipata">
             <Suspense fallback={<LoadingSpinner />}>
               <LazyCalculatorAnticipata />

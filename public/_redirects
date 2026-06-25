@@ -17,7 +17,7 @@
 /legislatie /index.html 200
 
 # Handle other routes
-/calculator /index.html 200
+/calculator / 301!
 /despre-noi /index.html 200
 /metodologie /index.html 200
 /contact /index.html 200

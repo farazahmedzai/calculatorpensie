@@ -69,9 +69,9 @@ export const staticArticles: Article[] = [
 
 
 
-## Analiză Aprofundată: Impactul Noulei Legi a Pensiilor 360/2023 (Extindere 2025)
+## Analiză Aprofundată: Impactul Noulei Legi a Pensiilor 360/2023 (Extindere 2026)
 
-Sistemul public de pensii din România traversează o perioadă de schimbări structurale profunde odată cu implementarea integrală a Legii 360/2023, care vizează o mai mare echitate și predictibilitate. Această secțiune extinsă este dedicată analizării contextului legislativ, economic și social care stă la baza calculelor și a politicilor de pensionare din 2025.
+Sistemul public de pensii din România traversează o perioadă de schimbări structurale profunde odată cu implementarea integrală a Legii 360/2023, care vizează o mai mare echitate și predictibilitate. Această secțiune extinsă este dedicată analizării contextului legislativ, economic și social care stă la baza calculelor și a politicilor de pensionare din 2026.
 
 ### Contextul Macroeconomic și Sustenabilitatea Sistemului
 Pentru a înțelege pe deplin cum funcționează pensiile în România, trebuie să privim către factorii demografici și economici. Bugetul Asigurărilor Sociale de Stat (BASS) se bazează pe principiul solidarității între generații (sistemul *pay-as-you-go*). Contribuțiile lucrătorilor activi (CAS - 25% din salariul brut, din care 20.25% merg către Pilonul I) plătesc pensiile actualilor pensionari. 
@@ -81,7 +81,7 @@ Pentru a înțelege pe deplin cum funcționează pensiile în România, trebuie 
 - **Egalizarea vârstei de pensionare:** Până în 2035, vârsta de pensionare pentru femei va crește treptat, atingând pragul de 65 de ani, egalizându-se astfel cu cea a bărbaților.
 
 ### Cum Se Calculează Pensia în Noul Sistem (Ghid Pas cu Pas)
-Valoarea pensiei rezultă din înmulțirea Numărului Total de Puncte cu Valoarea Punctului de Referință (VPR). În anul 2025, VPR a crescut la 91 lei (în urma indexării cu 10.4% aplicată în ianuarie).
+Valoarea pensiei rezultă din înmulțirea Numărului Total de Puncte cu Valoarea Punctului de Referință (VPR). În anul 2026, VPR a crescut la 91 lei (în urma indexării cu 10.4% aplicată în ianuarie).
 
 Numărul total de puncte este format din trei categorii majore:
 1. **Punctele de contributivitate:** Se calculează lunar, împărțind salariul brut câștigat la salariul mediu brut pe economie din luna respectivă.
@@ -91,7 +91,7 @@ Numărul total de puncte este format din trei categorii majore:
 *Studiu de caz:* Un pensionar cu un stagiu de cotizare de 38 de ani, cu un număr de puncte de contributivitate de 45.
 - Puncte de stabilitate: (5 ani × 0.5) + (5 ani × 0.75) + (3 ani × 1.0) = 2.5 + 3.75 + 3 = 9.25 puncte.
 - Punctaj total = 45 + 9.25 = 54.25 puncte.
-- Pensia brută în 2025 = 54.25 × 91 lei = 4.936 lei.
+- Pensia brută în 2026 = 54.25 × 91 lei = 4.936 lei.
 
 ### Tipuri de Pensii și Condiții
 Sistemul românesc reglementează patru tipuri principale de pensii:
@@ -112,7 +112,7 @@ Pentru pensionarii cu limită de vârstă, legea permite cumulul pensiei cu sala
 Orice cetățean poate să își creeze un cont gratuit pe portalul CNPP (Casa Națională de Pensii Publice). Acolo se poate descărca stagiul complet de cotizare începând cu anul 2001 (pentru perioadele anterioare este necesar carnetul de muncă).
 
 **4. Pensia Minimă Garantată (Indemnizația Socială)**
-Pentru persoanele cu un număr redus de puncte, dar care au totuși stagiul minim de 15 ani, statul oferă o indemnizație socială. În 2025, nivelul acesteia este de 1.281 lei. Dacă pensia calculată matematic este mai mică, statul suportă diferența.
+Pentru persoanele cu un număr redus de puncte, dar care au totuși stagiul minim de 15 ani, statul oferă o indemnizație socială. În 2026, nivelul acesteia este de 1.281 lei. Dacă pensia calculată matematic este mai mică, statul suportă diferența.
 
 ### Concluzie și Perspective
 Legislația pensiilor este un organism viu, care suferă modificări constante. Este vital ca viitorii pensionari să își analizeze din timp dosarul, să recupereze adeverințele pentru sporuri și acord global (acum luate în calcul conform noii legi) și să ia în considerare și sistemele alternative (Pilonul II obligatoriu privat și Pilonul III facultativ privat) pentru a-și securiza veniturile la bătrânețe. Sperăm ca acest ghid extensiv să vă clarifice poziția și drepturile financiare.
@@ -121,7 +121,7 @@ Legislația pensiilor este un organism viu, care suferă modificări constante. 
 
 
 
-## Analiză Detaliată: Impactul Inflației și a Modificărilor Legislative asupra Puterii de Cumpărare în 2025
+## Analiză Detaliată: Impactul Inflației și a Modificărilor Legislative asupra Puterii de Cumpărare în 2026
 
 Un aspect esențial, adesea trecut cu vederea în planificarea pensionării, este impactul direct al inflației asupra puterii de cumpărare pe termen lung. Deși Legea 360/2023 aduce un mecanism clar de indexare anuală a punctului de pensie (și implicit a Valorii Punctului de Referință - VPR) bazat pe rata inflației și pe creșterea câștigului salarial mediu brut, este crucial ca viitorii pensionari să înțeleagă mecanismele economice care le protejează veniturile.
 
@@ -133,7 +133,7 @@ De exemplu, dacă inflația anuală este de 5%, iar salariul mediu brut pe econo
 
 ### Studiu de Caz: Diferența dintre Pensia Minimă și Pensia pe Bază de Contributivitate
 
-Pentru a ilustra mai bine importanța stagiului complet de cotizare, să luăm în considerare două scenarii ipotetice la momentul pensionării în 2025:
+Pentru a ilustra mai bine importanța stagiului complet de cotizare, să luăm în considerare două scenarii ipotetice la momentul pensionării în 2026:
 
 1. **Scenariul A (Stagiu Minim de Cotizare - 15 ani):** O persoană care a lucrat exact 15 ani pe salariul minim pe economie va beneficia, cel mai probabil, de indemnizația socială pentru pensionari (pensia minimă garantată). Deși statul asigură un venit minim de subzistență, acest venit este fix și supus unor reguli stricte de indexare, limitând capacitatea pensionarului de a face față unor cheltuieli neprevăzute (de exemplu, cheltuieli medicale complexe).
 
@@ -153,7 +153,7 @@ Indiferent de vârsta pe care o aveți în prezent, o planificare riguroasă est
   <h3 class="text-xl font-bold text-blue-900 mb-4">Instrumente și Resurse Utile</h3>
   <p class="text-gray-700 mb-4">Pentru a vă planifica mai bine viitorul financiar, vă recomandăm să utilizați instrumentele noastre gratuite, actualizate la zi conform Legii 360/2023:</p>
   <ul class="space-y-2 list-none pl-0">
-    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/" class="text-blue-700 font-bold hover:underline">Calculator Pensie de Stat 2025</a> - Estimează-ți instant pensia lunară.</li>
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/" class="text-blue-700 font-bold hover:underline">Calculator Pensie de Stat 2026</a> - Estimează-ți instant pensia lunară.</li>
     <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-varsta-pensionare" class="text-blue-700 font-bold hover:underline">Calculator Vârstă de Pensionare</a> - Află exact anul și luna în care poți ieși la pensie.</li>
     <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-pensie-anticipata" class="text-blue-700 font-bold hover:underline">Calculator Pensie Anticipată</a> - Calculează penalizarea aplicată dacă ieși la pensie mai devreme.</li>
     <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-puncte-pensie" class="text-blue-700 font-bold hover:underline">Calculator Puncte de Stabilitate</a> - Vezi câte puncte bonus primești pentru vechimea în muncă.</li>
@@ -164,17 +164,17 @@ Indiferent de vârsta pe care o aveți în prezent, o planificare riguroasă est
   },
   {
     id: 2,
-    title: "Ghid Complet: Cum să Calculezi Pensia de Stat în 2025",
+    title: "Ghid Complet: Cum să Calculezi Pensia de Stat în 2026",
     excerpt: "Înțelege formula oficială de calcul a pensiei de stat, punctajul anual și cum să îți calculezi drepturile de pensie conform legislației actuale.",
     category: "legislatie",
     publishDate: "2026-04-10",
     readTime: 12,
-    slug: "ghid-calcul-pensie-stat-2025",
+    slug: "ghid-calcul-pensie-stat-2026",
     published: true,
     author: authors.alexandruPopescu,
     image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=480",
     content: `
-<p>Formula de calcul a pensiei de stat în România se bazează pe sistemul de puncte reglementat prin lege. Începând cu anul 2025, valoarea punctului de pensie este fixată la <strong>2.031 Lei</strong>, fiind calculată conform noii legi a pensiilor nr. 360/2023. Totodată, Valoarea Punctului de Referință (VPR) este stabilită la <strong>91 Lei</strong>, asigurând o indexare procentuală substanțială a veniturilor pentru milioane de pensionari.</p>
+<p>Formula de calcul a pensiei de stat în România se bazează pe sistemul de puncte reglementat prin lege. Începând cu anul 2026, valoarea punctului de pensie este fixată la <strong>2.031 Lei</strong>, fiind calculată conform noii legi a pensiilor nr. 360/2023. Totodată, Valoarea Punctului de Referință (VPR) este stabilită la <strong>91 Lei</strong>, asigurând o indexare procentuală substanțială a veniturilor pentru milioane de pensionari.</p>
 
 <h3>Care sunt pașii oficiali de calcul?</h3>
 <p>Pentru a determina valoarea brută a pensiei de stat pe care o vei primi lunar, algoritmul oficial al CNPP aplică un sistem format din trei piloni principali de calcul:</p>
@@ -188,7 +188,7 @@ Indiferent de vârsta pe care o aveți în prezent, o planificare riguroasă est
 <h3>1. Determinarea Punctajului de Contributivitate</h3>
 <p>Punctajul de contributivitate reprezintă numărul de puncte pe care l-ai acumulat prin contribuțiile tale directe plătite din salarii pe parcursul carierei active. În fiecare lună, salariul tău brut este raportat la salariul mediu brut pe economie aprobat pentru bugetul de asigurări sociale din acea lună. 
 <br />
-De exemplu, dacă în luna respectivă salariul tău brut este egal cu câștigul mediu brut național (aprox 8,417 RON în 2025), vei acumula exact <strong>1.0 punct</strong> pentru acea lună. Dacă salariul tău brut este jumătate din media pe economie, acumulezi <strong>0.5 puncte</strong>. Toate punctele lunare se însumează și se împart la 12 pentru a determina punctajul tău anual.</p>
+De exemplu, dacă în luna respectivă salariul tău brut este egal cu câștigul mediu brut național (aprox 8,417 RON în 2026), vei acumula exact <strong>1.0 punct</strong> pentru acea lună. Dacă salariul tău brut este jumătate din media pe economie, acumulezi <strong>0.5 puncte</strong>. Toate punctele lunare se însumează și se împart la 12 pentru a determina punctajul tău anual.</p>
 
 <h3>2. Noua Bonificație: Punctele de Stabilitate (Fidelitate)</h3>
 <p>Reforma Legii 360/2023 a introdus punctele de stabilitate pentru a stimula salariații să rămână activi peste pragul de 25 de ani de muncă. Aceste puncte se acordă automat în funcție de stagiul de cotizare total realizat:</p>
@@ -202,7 +202,7 @@ De exemplu, dacă în luna respectivă salariul tău brut este egal cu câștigu
 <h3>3. Punctele Asimilate (Perioade Necontributive)</h3>
 <p>Statul oferă de asemenea puncte pentru perioadele în care nu s-au plătit contribuții, dar care sunt recunoscute ca stagiu legal (facultatea absolvită la zi cu diplomă, stagiul militar obligatoriu, concediul de creștere a copilului). Fiecare an asimilat se bonifică cu <strong>0.25 puncte pe an</strong>.</p>
 
-<h3>Exemple Practice de Calcul (Raportat la VPR 2025 = 91 Lei)</h3>
+<h3>Exemple Practice de Calcul (Raportat la VPR 2026 = 91 Lei)</h3>
 <p>Să analizăm trei scenarii posibile de pensionare pentru a înțelege exact cum se aplică formula:</p>
 
 <div class="space-y-4 my-6">
@@ -244,9 +244,9 @@ De exemplu, dacă în luna respectivă salariul tău brut este egal cu câștigu
 
 
 
-## Analiză Aprofundată: Impactul Noulei Legi a Pensiilor 360/2023 (Extindere 2025)
+## Analiză Aprofundată: Impactul Noulei Legi a Pensiilor 360/2023 (Extindere 2026)
 
-Sistemul public de pensii din România traversează o perioadă de schimbări structurale profunde odată cu implementarea integrală a Legii 360/2023, care vizează o mai mare echitate și predictibilitate. Această secțiune extinsă este dedicată analizării contextului legislativ, economic și social care stă la baza calculelor și a politicilor de pensionare din 2025.
+Sistemul public de pensii din România traversează o perioadă de schimbări structurale profunde odată cu implementarea integrală a Legii 360/2023, care vizează o mai mare echitate și predictibilitate. Această secțiune extinsă este dedicată analizării contextului legislativ, economic și social care stă la baza calculelor și a politicilor de pensionare din 2026.
 
 ### Contextul Macroeconomic și Sustenabilitatea Sistemului
 Pentru a înțelege pe deplin cum funcționează pensiile în România, trebuie să privim către factorii demografici și economici. Bugetul Asigurărilor Sociale de Stat (BASS) se bazează pe principiul solidarității între generații (sistemul *pay-as-you-go*). Contribuțiile lucrătorilor activi (CAS - 25% din salariul brut, din care 20.25% merg către Pilonul I) plătesc pensiile actualilor pensionari. 
@@ -256,7 +256,7 @@ Pentru a înțelege pe deplin cum funcționează pensiile în România, trebuie 
 - **Egalizarea vârstei de pensionare:** Până în 2035, vârsta de pensionare pentru femei va crește treptat, atingând pragul de 65 de ani, egalizându-se astfel cu cea a bărbaților.
 
 ### Cum Se Calculează Pensia în Noul Sistem (Ghid Pas cu Pas)
-Valoarea pensiei rezultă din înmulțirea Numărului Total de Puncte cu Valoarea Punctului de Referință (VPR). În anul 2025, VPR a crescut la 91 lei (în urma indexării cu 10.4% aplicată în ianuarie).
+Valoarea pensiei rezultă din înmulțirea Numărului Total de Puncte cu Valoarea Punctului de Referință (VPR). În anul 2026, VPR a crescut la 91 lei (în urma indexării cu 10.4% aplicată în ianuarie).
 
 Numărul total de puncte este format din trei categorii majore:
 1. **Punctele de contributivitate:** Se calculează lunar, împărțind salariul brut câștigat la salariul mediu brut pe economie din luna respectivă.
@@ -266,7 +266,7 @@ Numărul total de puncte este format din trei categorii majore:
 *Studiu de caz:* Un pensionar cu un stagiu de cotizare de 38 de ani, cu un număr de puncte de contributivitate de 45.
 - Puncte de stabilitate: (5 ani × 0.5) + (5 ani × 0.75) + (3 ani × 1.0) = 2.5 + 3.75 + 3 = 9.25 puncte.
 - Punctaj total = 45 + 9.25 = 54.25 puncte.
-- Pensia brută în 2025 = 54.25 × 91 lei = 4.936 lei.
+- Pensia brută în 2026 = 54.25 × 91 lei = 4.936 lei.
 
 ### Tipuri de Pensii și Condiții
 Sistemul românesc reglementează patru tipuri principale de pensii:
@@ -287,7 +287,7 @@ Pentru pensionarii cu limită de vârstă, legea permite cumulul pensiei cu sala
 Orice cetățean poate să își creeze un cont gratuit pe portalul CNPP (Casa Națională de Pensii Publice). Acolo se poate descărca stagiul complet de cotizare începând cu anul 2001 (pentru perioadele anterioare este necesar carnetul de muncă).
 
 **4. Pensia Minimă Garantată (Indemnizația Socială)**
-Pentru persoanele cu un număr redus de puncte, dar care au totuși stagiul minim de 15 ani, statul oferă o indemnizație socială. În 2025, nivelul acesteia este de 1.281 lei. Dacă pensia calculată matematic este mai mică, statul suportă diferența.
+Pentru persoanele cu un număr redus de puncte, dar care au totuși stagiul minim de 15 ani, statul oferă o indemnizație socială. În 2026, nivelul acesteia este de 1.281 lei. Dacă pensia calculată matematic este mai mică, statul suportă diferența.
 
 ### Concluzie și Perspective
 Legislația pensiilor este un organism viu, care suferă modificări constante. Este vital ca viitorii pensionari să își analizeze din timp dosarul, să recupereze adeverințele pentru sporuri și acord global (acum luate în calcul conform noii legi) și să ia în considerare și sistemele alternative (Pilonul II obligatoriu privat și Pilonul III facultativ privat) pentru a-și securiza veniturile la bătrânețe. Sperăm ca acest ghid extensiv să vă clarifice poziția și drepturile financiare.
@@ -296,7 +296,7 @@ Legislația pensiilor este un organism viu, care suferă modificări constante. 
 
 
 
-## Analiză Detaliată: Impactul Inflației și a Modificărilor Legislative asupra Puterii de Cumpărare în 2025
+## Analiză Detaliată: Impactul Inflației și a Modificărilor Legislative asupra Puterii de Cumpărare în 2026
 
 Un aspect esențial, adesea trecut cu vederea în planificarea pensionării, este impactul direct al inflației asupra puterii de cumpărare pe termen lung. Deși Legea 360/2023 aduce un mecanism clar de indexare anuală a punctului de pensie (și implicit a Valorii Punctului de Referință - VPR) bazat pe rata inflației și pe creșterea câștigului salarial mediu brut, este crucial ca viitorii pensionari să înțeleagă mecanismele economice care le protejează veniturile.
 
@@ -308,7 +308,7 @@ De exemplu, dacă inflația anuală este de 5%, iar salariul mediu brut pe econo
 
 ### Studiu de Caz: Diferența dintre Pensia Minimă și Pensia pe Bază de Contributivitate
 
-Pentru a ilustra mai bine importanța stagiului complet de cotizare, să luăm în considerare două scenarii ipotetice la momentul pensionării în 2025:
+Pentru a ilustra mai bine importanța stagiului complet de cotizare, să luăm în considerare două scenarii ipotetice la momentul pensionării în 2026:
 
 1. **Scenariul A (Stagiu Minim de Cotizare - 15 ani):** O persoană care a lucrat exact 15 ani pe salariul minim pe economie va beneficia, cel mai probabil, de indemnizația socială pentru pensionari (pensia minimă garantată). Deși statul asigură un venit minim de subzistență, acest venit este fix și supus unor reguli stricte de indexare, limitând capacitatea pensionarului de a face față unor cheltuieli neprevăzute (de exemplu, cheltuieli medicale complexe).
 
@@ -328,7 +328,7 @@ Indiferent de vârsta pe care o aveți în prezent, o planificare riguroasă est
   <h3 class="text-xl font-bold text-blue-900 mb-4">Instrumente și Resurse Utile</h3>
   <p class="text-gray-700 mb-4">Pentru a vă planifica mai bine viitorul financiar, vă recomandăm să utilizați instrumentele noastre gratuite, actualizate la zi conform Legii 360/2023:</p>
   <ul class="space-y-2 list-none pl-0">
-    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/" class="text-blue-700 font-bold hover:underline">Calculator Pensie de Stat 2025</a> - Estimează-ți instant pensia lunară.</li>
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/" class="text-blue-700 font-bold hover:underline">Calculator Pensie de Stat 2026</a> - Estimează-ți instant pensia lunară.</li>
     <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-varsta-pensionare" class="text-blue-700 font-bold hover:underline">Calculator Vârstă de Pensionare</a> - Află exact anul și luna în care poți ieși la pensie.</li>
     <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-pensie-anticipata" class="text-blue-700 font-bold hover:underline">Calculator Pensie Anticipată</a> - Calculează penalizarea aplicată dacă ieși la pensie mai devreme.</li>
     <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-puncte-pensie" class="text-blue-700 font-bold hover:underline">Calculator Puncte de Stabilitate</a> - Vezi câte puncte bonus primești pentru vechimea în muncă.</li>
@@ -374,9 +374,9 @@ Indiferent de vârsta pe care o aveți în prezent, o planificare riguroasă est
 
 
 
-## Analiză Aprofundată: Impactul Noulei Legi a Pensiilor 360/2023 (Extindere 2025)
+## Analiză Aprofundată: Impactul Noulei Legi a Pensiilor 360/2023 (Extindere 2026)
 
-Sistemul public de pensii din România traversează o perioadă de schimbări structurale profunde odată cu implementarea integrală a Legii 360/2023, care vizează o mai mare echitate și predictibilitate. Această secțiune extinsă este dedicată analizării contextului legislativ, economic și social care stă la baza calculelor și a politicilor de pensionare din 2025.
+Sistemul public de pensii din România traversează o perioadă de schimbări structurale profunde odată cu implementarea integrală a Legii 360/2023, care vizează o mai mare echitate și predictibilitate. Această secțiune extinsă este dedicată analizării contextului legislativ, economic și social care stă la baza calculelor și a politicilor de pensionare din 2026.
 
 ### Contextul Macroeconomic și Sustenabilitatea Sistemului
 Pentru a înțelege pe deplin cum funcționează pensiile în România, trebuie să privim către factorii demografici și economici. Bugetul Asigurărilor Sociale de Stat (BASS) se bazează pe principiul solidarității între generații (sistemul *pay-as-you-go*). Contribuțiile lucrătorilor activi (CAS - 25% din salariul brut, din care 20.25% merg către Pilonul I) plătesc pensiile actualilor pensionari. 
@@ -386,7 +386,7 @@ Pentru a înțelege pe deplin cum funcționează pensiile în România, trebuie 
 - **Egalizarea vârstei de pensionare:** Până în 2035, vârsta de pensionare pentru femei va crește treptat, atingând pragul de 65 de ani, egalizându-se astfel cu cea a bărbaților.
 
 ### Cum Se Calculează Pensia în Noul Sistem (Ghid Pas cu Pas)
-Valoarea pensiei rezultă din înmulțirea Numărului Total de Puncte cu Valoarea Punctului de Referință (VPR). În anul 2025, VPR a crescut la 91 lei (în urma indexării cu 10.4% aplicată în ianuarie).
+Valoarea pensiei rezultă din înmulțirea Numărului Total de Puncte cu Valoarea Punctului de Referință (VPR). În anul 2026, VPR a crescut la 91 lei (în urma indexării cu 10.4% aplicată în ianuarie).
 
 Numărul total de puncte este format din trei categorii majore:
 1. **Punctele de contributivitate:** Se calculează lunar, împărțind salariul brut câștigat la salariul mediu brut pe economie din luna respectivă.
@@ -396,7 +396,7 @@ Numărul total de puncte este format din trei categorii majore:
 *Studiu de caz:* Un pensionar cu un stagiu de cotizare de 38 de ani, cu un număr de puncte de contributivitate de 45.
 - Puncte de stabilitate: (5 ani × 0.5) + (5 ani × 0.75) + (3 ani × 1.0) = 2.5 + 3.75 + 3 = 9.25 puncte.
 - Punctaj total = 45 + 9.25 = 54.25 puncte.
-- Pensia brută în 2025 = 54.25 × 91 lei = 4.936 lei.
+- Pensia brută în 2026 = 54.25 × 91 lei = 4.936 lei.
 
 ### Tipuri de Pensii și Condiții
 Sistemul românesc reglementează patru tipuri principale de pensii:
@@ -417,7 +417,7 @@ Pentru pensionarii cu limită de vârstă, legea permite cumulul pensiei cu sala
 Orice cetățean poate să își creeze un cont gratuit pe portalul CNPP (Casa Națională de Pensii Publice). Acolo se poate descărca stagiul complet de cotizare începând cu anul 2001 (pentru perioadele anterioare este necesar carnetul de muncă).
 
 **4. Pensia Minimă Garantată (Indemnizația Socială)**
-Pentru persoanele cu un număr redus de puncte, dar care au totuși stagiul minim de 15 ani, statul oferă o indemnizație socială. În 2025, nivelul acesteia este de 1.281 lei. Dacă pensia calculată matematic este mai mică, statul suportă diferența.
+Pentru persoanele cu un număr redus de puncte, dar care au totuși stagiul minim de 15 ani, statul oferă o indemnizație socială. În 2026, nivelul acesteia este de 1.281 lei. Dacă pensia calculată matematic este mai mică, statul suportă diferența.
 
 ### Concluzie și Perspective
 Legislația pensiilor este un organism viu, care suferă modificări constante. Este vital ca viitorii pensionari să își analizeze din timp dosarul, să recupereze adeverințele pentru sporuri și acord global (acum luate în calcul conform noii legi) și să ia în considerare și sistemele alternative (Pilonul II obligatoriu privat și Pilonul III facultativ privat) pentru a-și securiza veniturile la bătrânețe. Sperăm ca acest ghid extensiv să vă clarifice poziția și drepturile financiare.
@@ -426,7 +426,7 @@ Legislația pensiilor este un organism viu, care suferă modificări constante. 
 
 
 
-## Analiză Detaliată: Impactul Inflației și a Modificărilor Legislative asupra Puterii de Cumpărare în 2025
+## Analiză Detaliată: Impactul Inflației și a Modificărilor Legislative asupra Puterii de Cumpărare în 2026
 
 Un aspect esențial, adesea trecut cu vederea în planificarea pensionării, este impactul direct al inflației asupra puterii de cumpărare pe termen lung. Deși Legea 360/2023 aduce un mecanism clar de indexare anuală a punctului de pensie (și implicit a Valorii Punctului de Referință - VPR) bazat pe rata inflației și pe creșterea câștigului salarial mediu brut, este crucial ca viitorii pensionari să înțeleagă mecanismele economice care le protejează veniturile.
 
@@ -438,7 +438,7 @@ De exemplu, dacă inflația anuală este de 5%, iar salariul mediu brut pe econo
 
 ### Studiu de Caz: Diferența dintre Pensia Minimă și Pensia pe Bază de Contributivitate
 
-Pentru a ilustra mai bine importanța stagiului complet de cotizare, să luăm în considerare două scenarii ipotetice la momentul pensionării în 2025:
+Pentru a ilustra mai bine importanța stagiului complet de cotizare, să luăm în considerare două scenarii ipotetice la momentul pensionării în 2026:
 
 1. **Scenariul A (Stagiu Minim de Cotizare - 15 ani):** O persoană care a lucrat exact 15 ani pe salariul minim pe economie va beneficia, cel mai probabil, de indemnizația socială pentru pensionari (pensia minimă garantată). Deși statul asigură un venit minim de subzistență, acest venit este fix și supus unor reguli stricte de indexare, limitând capacitatea pensionarului de a face față unor cheltuieli neprevăzute (de exemplu, cheltuieli medicale complexe).
 
@@ -458,7 +458,7 @@ Indiferent de vârsta pe care o aveți în prezent, o planificare riguroasă est
   <h3 class="text-xl font-bold text-blue-900 mb-4">Instrumente și Resurse Utile</h3>
   <p class="text-gray-700 mb-4">Pentru a vă planifica mai bine viitorul financiar, vă recomandăm să utilizați instrumentele noastre gratuite, actualizate la zi conform Legii 360/2023:</p>
   <ul class="space-y-2 list-none pl-0">
-    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/" class="text-blue-700 font-bold hover:underline">Calculator Pensie de Stat 2025</a> - Estimează-ți instant pensia lunară.</li>
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/" class="text-blue-700 font-bold hover:underline">Calculator Pensie de Stat 2026</a> - Estimează-ți instant pensia lunară.</li>
     <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-varsta-pensionare" class="text-blue-700 font-bold hover:underline">Calculator Vârstă de Pensionare</a> - Află exact anul și luna în care poți ieși la pensie.</li>
     <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-pensie-anticipata" class="text-blue-700 font-bold hover:underline">Calculator Pensie Anticipată</a> - Calculează penalizarea aplicată dacă ieși la pensie mai devreme.</li>
     <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-puncte-pensie" class="text-blue-700 font-bold hover:underline">Calculator Puncte de Stabilitate</a> - Vezi câte puncte bonus primești pentru vechimea în muncă.</li>
@@ -472,7 +472,7 @@ Indiferent de vârsta pe care o aveți în prezent, o planificare riguroasă est
     title: "Pensia Anticipată: Când Poți Ieși Mai Devreme la Pensie",
     excerpt: "Află în ce condiții poți opta pentru pensia anticipată, care sunt penalizările și cum să îți calculezi cuantumul pensiei reduse.",
     category: "legislatie",
-    publishDate: "2025-11-20",
+    publishDate: "2026-11-20",
     readTime: 7,
     slug: "pensie-anticipata-conditii-penalizari",
     published: true,
@@ -481,8 +481,8 @@ Indiferent de vârsta pe care o aveți în prezent, o planificare riguroasă est
     content: `
 <p>Pensia anticipată reprezintă opțiunea legală prin care te poți pensiona cu maximum 5 ani înainte de împlinirea vârstei standard, dar cu anumite condiții stricte de cotizare și cu o penalizare aplicabilă cuantumului lunar.</p>
 
-<h3>Condiții de eligibilitate în 2025</h3>
-<p>Pentru a solicita pensia anticipată, solicitantul trebuie să fi realizat stagiul complet de cotizare prevăzut de lege (35 de ani pentru bărbați și 30-33 de ani pentru femei) sau să îl fi depășit cu până la 8 ani. Vârsta minimă este de 60 de ani pentru bărbați și 58 de ani pentru femei în 2025.</p>
+<h3>Condiții de eligibilitate în 2026</h3>
+<p>Pentru a solicita pensia anticipată, solicitantul trebuie să fi realizat stagiul complet de cotizare prevăzut de lege (35 de ani pentru bărbați și 30-33 de ani pentru femei) sau să îl fi depășit cu până la 8 ani. Vârsta minimă este de 60 de ani pentru bărbați și 58 de ani pentru femei în 2026.</p>
 
 <h3>Mecanismul de penalizare</h3>
 <p>Penalizarea se calculează sub formă de procent scăzut din valoarea pensiei complete pentru fiecare lună de anticipare. Conform noilor reglementări, penalizarea este cuprinsă între <strong>0,15% și 0,40% pentru fiecare lună</strong>, în funcție de numărul de ani cu care a fost depășit stagiul complet de cotizare.</p>
@@ -491,9 +491,9 @@ Indiferent de vârsta pe care o aveți în prezent, o planificare riguroasă est
 
 
 
-## Analiză Aprofundată: Impactul Noulei Legi a Pensiilor 360/2023 (Extindere 2025)
+## Analiză Aprofundată: Impactul Noulei Legi a Pensiilor 360/2023 (Extindere 2026)
 
-Sistemul public de pensii din România traversează o perioadă de schimbări structurale profunde odată cu implementarea integrală a Legii 360/2023, care vizează o mai mare echitate și predictibilitate. Această secțiune extinsă este dedicată analizării contextului legislativ, economic și social care stă la baza calculelor și a politicilor de pensionare din 2025.
+Sistemul public de pensii din România traversează o perioadă de schimbări structurale profunde odată cu implementarea integrală a Legii 360/2023, care vizează o mai mare echitate și predictibilitate. Această secțiune extinsă este dedicată analizării contextului legislativ, economic și social care stă la baza calculelor și a politicilor de pensionare din 2026.
 
 ### Contextul Macroeconomic și Sustenabilitatea Sistemului
 Pentru a înțelege pe deplin cum funcționează pensiile în România, trebuie să privim către factorii demografici și economici. Bugetul Asigurărilor Sociale de Stat (BASS) se bazează pe principiul solidarității între generații (sistemul *pay-as-you-go*). Contribuțiile lucrătorilor activi (CAS - 25% din salariul brut, din care 20.25% merg către Pilonul I) plătesc pensiile actualilor pensionari. 
@@ -503,7 +503,7 @@ Pentru a înțelege pe deplin cum funcționează pensiile în România, trebuie 
 - **Egalizarea vârstei de pensionare:** Până în 2035, vârsta de pensionare pentru femei va crește treptat, atingând pragul de 65 de ani, egalizându-se astfel cu cea a bărbaților.
 
 ### Cum Se Calculează Pensia în Noul Sistem (Ghid Pas cu Pas)
-Valoarea pensiei rezultă din înmulțirea Numărului Total de Puncte cu Valoarea Punctului de Referință (VPR). În anul 2025, VPR a crescut la 91 lei (în urma indexării cu 10.4% aplicată în ianuarie).
+Valoarea pensiei rezultă din înmulțirea Numărului Total de Puncte cu Valoarea Punctului de Referință (VPR). În anul 2026, VPR a crescut la 91 lei (în urma indexării cu 10.4% aplicată în ianuarie).
 
 Numărul total de puncte este format din trei categorii majore:
 1. **Punctele de contributivitate:** Se calculează lunar, împărțind salariul brut câștigat la salariul mediu brut pe economie din luna respectivă.
@@ -513,7 +513,7 @@ Numărul total de puncte este format din trei categorii majore:
 *Studiu de caz:* Un pensionar cu un stagiu de cotizare de 38 de ani, cu un număr de puncte de contributivitate de 45.
 - Puncte de stabilitate: (5 ani × 0.5) + (5 ani × 0.75) + (3 ani × 1.0) = 2.5 + 3.75 + 3 = 9.25 puncte.
 - Punctaj total = 45 + 9.25 = 54.25 puncte.
-- Pensia brută în 2025 = 54.25 × 91 lei = 4.936 lei.
+- Pensia brută în 2026 = 54.25 × 91 lei = 4.936 lei.
 
 ### Tipuri de Pensii și Condiții
 Sistemul românesc reglementează patru tipuri principale de pensii:
@@ -534,7 +534,7 @@ Pentru pensionarii cu limită de vârstă, legea permite cumulul pensiei cu sala
 Orice cetățean poate să își creeze un cont gratuit pe portalul CNPP (Casa Națională de Pensii Publice). Acolo se poate descărca stagiul complet de cotizare începând cu anul 2001 (pentru perioadele anterioare este necesar carnetul de muncă).
 
 **4. Pensia Minimă Garantată (Indemnizația Socială)**
-Pentru persoanele cu un număr redus de puncte, dar care au totuși stagiul minim de 15 ani, statul oferă o indemnizație socială. În 2025, nivelul acesteia este de 1.281 lei. Dacă pensia calculată matematic este mai mică, statul suportă diferența.
+Pentru persoanele cu un număr redus de puncte, dar care au totuși stagiul minim de 15 ani, statul oferă o indemnizație socială. În 2026, nivelul acesteia este de 1.281 lei. Dacă pensia calculată matematic este mai mică, statul suportă diferența.
 
 ### Concluzie și Perspective
 Legislația pensiilor este un organism viu, care suferă modificări constante. Este vital ca viitorii pensionari să își analizeze din timp dosarul, să recupereze adeverințele pentru sporuri și acord global (acum luate în calcul conform noii legi) și să ia în considerare și sistemele alternative (Pilonul II obligatoriu privat și Pilonul III facultativ privat) pentru a-și securiza veniturile la bătrânețe. Sperăm ca acest ghid extensiv să vă clarifice poziția și drepturile financiare.
@@ -543,7 +543,7 @@ Legislația pensiilor este un organism viu, care suferă modificări constante. 
 
 
 
-## Analiză Detaliată: Impactul Inflației și a Modificărilor Legislative asupra Puterii de Cumpărare în 2025
+## Analiză Detaliată: Impactul Inflației și a Modificărilor Legislative asupra Puterii de Cumpărare în 2026
 
 Un aspect esențial, adesea trecut cu vederea în planificarea pensionării, este impactul direct al inflației asupra puterii de cumpărare pe termen lung. Deși Legea 360/2023 aduce un mecanism clar de indexare anuală a punctului de pensie (și implicit a Valorii Punctului de Referință - VPR) bazat pe rata inflației și pe creșterea câștigului salarial mediu brut, este crucial ca viitorii pensionari să înțeleagă mecanismele economice care le protejează veniturile.
 
@@ -555,7 +555,7 @@ De exemplu, dacă inflația anuală este de 5%, iar salariul mediu brut pe econo
 
 ### Studiu de Caz: Diferența dintre Pensia Minimă și Pensia pe Bază de Contributivitate
 
-Pentru a ilustra mai bine importanța stagiului complet de cotizare, să luăm în considerare două scenarii ipotetice la momentul pensionării în 2025:
+Pentru a ilustra mai bine importanța stagiului complet de cotizare, să luăm în considerare două scenarii ipotetice la momentul pensionării în 2026:
 
 1. **Scenariul A (Stagiu Minim de Cotizare - 15 ani):** O persoană care a lucrat exact 15 ani pe salariul minim pe economie va beneficia, cel mai probabil, de indemnizația socială pentru pensionari (pensia minimă garantată). Deși statul asigură un venit minim de subzistență, acest venit este fix și supus unor reguli stricte de indexare, limitând capacitatea pensionarului de a face față unor cheltuieli neprevăzute (de exemplu, cheltuieli medicale complexe).
 
@@ -575,7 +575,7 @@ Indiferent de vârsta pe care o aveți în prezent, o planificare riguroasă est
   <h3 class="text-xl font-bold text-blue-900 mb-4">Instrumente și Resurse Utile</h3>
   <p class="text-gray-700 mb-4">Pentru a vă planifica mai bine viitorul financiar, vă recomandăm să utilizați instrumentele noastre gratuite, actualizate la zi conform Legii 360/2023:</p>
   <ul class="space-y-2 list-none pl-0">
-    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/" class="text-blue-700 font-bold hover:underline">Calculator Pensie de Stat 2025</a> - Estimează-ți instant pensia lunară.</li>
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/" class="text-blue-700 font-bold hover:underline">Calculator Pensie de Stat 2026</a> - Estimează-ți instant pensia lunară.</li>
     <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-varsta-pensionare" class="text-blue-700 font-bold hover:underline">Calculator Vârstă de Pensionare</a> - Află exact anul și luna în care poți ieși la pensie.</li>
     <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-pensie-anticipata" class="text-blue-700 font-bold hover:underline">Calculator Pensie Anticipată</a> - Calculează penalizarea aplicată dacă ieși la pensie mai devreme.</li>
     <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-puncte-pensie" class="text-blue-700 font-bold hover:underline">Calculator Puncte de Stabilitate</a> - Vezi câte puncte bonus primești pentru vechimea în muncă.</li>
@@ -589,7 +589,7 @@ Indiferent de vârsta pe care o aveți în prezent, o planificare riguroasă est
     title: "Condiții Speciale de Muncă: Impact asupra Pensiei",
     excerpt: "Înțelege cum condițiile deosebite și speciale de muncă influențează calculul pensiei și vârsta de pensionare în România.",
     category: "legislatie",
-    publishDate: "2025-10-15",
+    publishDate: "2026-10-15",
     readTime: 9,
     slug: "conditii-speciale-munca-impact-pensie",
     published: true,
@@ -606,9 +606,9 @@ Indiferent de vârsta pe care o aveți în prezent, o planificare riguroasă est
 
 
 
-## Analiză Aprofundată: Impactul Noulei Legi a Pensiilor 360/2023 (Extindere 2025)
+## Analiză Aprofundată: Impactul Noulei Legi a Pensiilor 360/2023 (Extindere 2026)
 
-Sistemul public de pensii din România traversează o perioadă de schimbări structurale profunde odată cu implementarea integrală a Legii 360/2023, care vizează o mai mare echitate și predictibilitate. Această secțiune extinsă este dedicată analizării contextului legislativ, economic și social care stă la baza calculelor și a politicilor de pensionare din 2025.
+Sistemul public de pensii din România traversează o perioadă de schimbări structurale profunde odată cu implementarea integrală a Legii 360/2023, care vizează o mai mare echitate și predictibilitate. Această secțiune extinsă este dedicată analizării contextului legislativ, economic și social care stă la baza calculelor și a politicilor de pensionare din 2026.
 
 ### Contextul Macroeconomic și Sustenabilitatea Sistemului
 Pentru a înțelege pe deplin cum funcționează pensiile în România, trebuie să privim către factorii demografici și economici. Bugetul Asigurărilor Sociale de Stat (BASS) se bazează pe principiul solidarității între generații (sistemul *pay-as-you-go*). Contribuțiile lucrătorilor activi (CAS - 25% din salariul brut, din care 20.25% merg către Pilonul I) plătesc pensiile actualilor pensionari. 
@@ -618,7 +618,7 @@ Pentru a înțelege pe deplin cum funcționează pensiile în România, trebuie 
 - **Egalizarea vârstei de pensionare:** Până în 2035, vârsta de pensionare pentru femei va crește treptat, atingând pragul de 65 de ani, egalizându-se astfel cu cea a bărbaților.
 
 ### Cum Se Calculează Pensia în Noul Sistem (Ghid Pas cu Pas)
-Valoarea pensiei rezultă din înmulțirea Numărului Total de Puncte cu Valoarea Punctului de Referință (VPR). În anul 2025, VPR a crescut la 91 lei (în urma indexării cu 10.4% aplicată în ianuarie).
+Valoarea pensiei rezultă din înmulțirea Numărului Total de Puncte cu Valoarea Punctului de Referință (VPR). În anul 2026, VPR a crescut la 91 lei (în urma indexării cu 10.4% aplicată în ianuarie).
 
 Numărul total de puncte este format din trei categorii majore:
 1. **Punctele de contributivitate:** Se calculează lunar, împărțind salariul brut câștigat la salariul mediu brut pe economie din luna respectivă.
@@ -628,7 +628,7 @@ Numărul total de puncte este format din trei categorii majore:
 *Studiu de caz:* Un pensionar cu un stagiu de cotizare de 38 de ani, cu un număr de puncte de contributivitate de 45.
 - Puncte de stabilitate: (5 ani × 0.5) + (5 ani × 0.75) + (3 ani × 1.0) = 2.5 + 3.75 + 3 = 9.25 puncte.
 - Punctaj total = 45 + 9.25 = 54.25 puncte.
-- Pensia brută în 2025 = 54.25 × 91 lei = 4.936 lei.
+- Pensia brută în 2026 = 54.25 × 91 lei = 4.936 lei.
 
 ### Tipuri de Pensii și Condiții
 Sistemul românesc reglementează patru tipuri principale de pensii:
@@ -649,7 +649,7 @@ Pentru pensionarii cu limită de vârstă, legea permite cumulul pensiei cu sala
 Orice cetățean poate să își creeze un cont gratuit pe portalul CNPP (Casa Națională de Pensii Publice). Acolo se poate descărca stagiul complet de cotizare începând cu anul 2001 (pentru perioadele anterioare este necesar carnetul de muncă).
 
 **4. Pensia Minimă Garantată (Indemnizația Socială)**
-Pentru persoanele cu un număr redus de puncte, dar care au totuși stagiul minim de 15 ani, statul oferă o indemnizație socială. În 2025, nivelul acesteia este de 1.281 lei. Dacă pensia calculată matematic este mai mică, statul suportă diferența.
+Pentru persoanele cu un număr redus de puncte, dar care au totuși stagiul minim de 15 ani, statul oferă o indemnizație socială. În 2026, nivelul acesteia este de 1.281 lei. Dacă pensia calculată matematic este mai mică, statul suportă diferența.
 
 ### Concluzie și Perspective
 Legislația pensiilor este un organism viu, care suferă modificări constante. Este vital ca viitorii pensionari să își analizeze din timp dosarul, să recupereze adeverințele pentru sporuri și acord global (acum luate în calcul conform noii legi) și să ia în considerare și sistemele alternative (Pilonul II obligatoriu privat și Pilonul III facultativ privat) pentru a-și securiza veniturile la bătrânețe. Sperăm ca acest ghid extensiv să vă clarifice poziția și drepturile financiare.
@@ -658,7 +658,7 @@ Legislația pensiilor este un organism viu, care suferă modificări constante. 
 
 
 
-## Analiză Detaliată: Impactul Inflației și a Modificărilor Legislative asupra Puterii de Cumpărare în 2025
+## Analiză Detaliată: Impactul Inflației și a Modificărilor Legislative asupra Puterii de Cumpărare în 2026
 
 Un aspect esențial, adesea trecut cu vederea în planificarea pensionării, este impactul direct al inflației asupra puterii de cumpărare pe termen lung. Deși Legea 360/2023 aduce un mecanism clar de indexare anuală a punctului de pensie (și implicit a Valorii Punctului de Referință - VPR) bazat pe rata inflației și pe creșterea câștigului salarial mediu brut, este crucial ca viitorii pensionari să înțeleagă mecanismele economice care le protejează veniturile.
 
@@ -670,7 +670,7 @@ De exemplu, dacă inflația anuală este de 5%, iar salariul mediu brut pe econo
 
 ### Studiu de Caz: Diferența dintre Pensia Minimă și Pensia pe Bază de Contributivitate
 
-Pentru a ilustra mai bine importanța stagiului complet de cotizare, să luăm în considerare două scenarii ipotetice la momentul pensionării în 2025:
+Pentru a ilustra mai bine importanța stagiului complet de cotizare, să luăm în considerare două scenarii ipotetice la momentul pensionării în 2026:
 
 1. **Scenariul A (Stagiu Minim de Cotizare - 15 ani):** O persoană care a lucrat exact 15 ani pe salariul minim pe economie va beneficia, cel mai probabil, de indemnizația socială pentru pensionari (pensia minimă garantată). Deși statul asigură un venit minim de subzistență, acest venit este fix și supus unor reguli stricte de indexare, limitând capacitatea pensionarului de a face față unor cheltuieli neprevăzute (de exemplu, cheltuieli medicale complexe).
 
@@ -690,7 +690,7 @@ Indiferent de vârsta pe care o aveți în prezent, o planificare riguroasă est
   <h3 class="text-xl font-bold text-blue-900 mb-4">Instrumente și Resurse Utile</h3>
   <p class="text-gray-700 mb-4">Pentru a vă planifica mai bine viitorul financiar, vă recomandăm să utilizați instrumentele noastre gratuite, actualizate la zi conform Legii 360/2023:</p>
   <ul class="space-y-2 list-none pl-0">
-    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/" class="text-blue-700 font-bold hover:underline">Calculator Pensie de Stat 2025</a> - Estimează-ți instant pensia lunară.</li>
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/" class="text-blue-700 font-bold hover:underline">Calculator Pensie de Stat 2026</a> - Estimează-ți instant pensia lunară.</li>
     <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-varsta-pensionare" class="text-blue-700 font-bold hover:underline">Calculator Vârstă de Pensionare</a> - Află exact anul și luna în care poți ieși la pensie.</li>
     <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-pensie-anticipata" class="text-blue-700 font-bold hover:underline">Calculator Pensie Anticipată</a> - Calculează penalizarea aplicată dacă ieși la pensie mai devreme.</li>
     <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-puncte-pensie" class="text-blue-700 font-bold hover:underline">Calculator Puncte de Stabilitate</a> - Vezi câte puncte bonus primești pentru vechimea în muncă.</li>
@@ -704,7 +704,7 @@ Indiferent de vârsta pe care o aveți în prezent, o planificare riguroasă est
     title: "Stagiul de Cotizare: Cum să Îți Cumperi Ani de Muncă",
     excerpt: "Descoperă metodele legale prin care poți completa stagiul de cotizare necesar pentru pensia completă prin cumpărarea de ani de muncă.",
     category: "planificare",
-    publishDate: "2025-12-05",
+    publishDate: "2026-12-05",
     readTime: 11,
     slug: "stagiul-cotizare-cumparare-ani-munca",
     published: true,
@@ -720,9 +720,9 @@ Indiferent de vârsta pe care o aveți în prezent, o planificare riguroasă est
 
 
 
-## Analiză Aprofundată: Impactul Noulei Legi a Pensiilor 360/2023 (Extindere 2025)
+## Analiză Aprofundată: Impactul Noulei Legi a Pensiilor 360/2023 (Extindere 2026)
 
-Sistemul public de pensii din România traversează o perioadă de schimbări structurale profunde odată cu implementarea integrală a Legii 360/2023, care vizează o mai mare echitate și predictibilitate. Această secțiune extinsă este dedicată analizării contextului legislativ, economic și social care stă la baza calculelor și a politicilor de pensionare din 2025.
+Sistemul public de pensii din România traversează o perioadă de schimbări structurale profunde odată cu implementarea integrală a Legii 360/2023, care vizează o mai mare echitate și predictibilitate. Această secțiune extinsă este dedicată analizării contextului legislativ, economic și social care stă la baza calculelor și a politicilor de pensionare din 2026.
 
 ### Contextul Macroeconomic și Sustenabilitatea Sistemului
 Pentru a înțelege pe deplin cum funcționează pensiile în România, trebuie să privim către factorii demografici și economici. Bugetul Asigurărilor Sociale de Stat (BASS) se bazează pe principiul solidarității între generații (sistemul *pay-as-you-go*). Contribuțiile lucrătorilor activi (CAS - 25% din salariul brut, din care 20.25% merg către Pilonul I) plătesc pensiile actualilor pensionari. 
@@ -732,7 +732,7 @@ Pentru a înțelege pe deplin cum funcționează pensiile în România, trebuie 
 - **Egalizarea vârstei de pensionare:** Până în 2035, vârsta de pensionare pentru femei va crește treptat, atingând pragul de 65 de ani, egalizându-se astfel cu cea a bărbaților.
 
 ### Cum Se Calculează Pensia în Noul Sistem (Ghid Pas cu Pas)
-Valoarea pensiei rezultă din înmulțirea Numărului Total de Puncte cu Valoarea Punctului de Referință (VPR). În anul 2025, VPR a crescut la 91 lei (în urma indexării cu 10.4% aplicată în ianuarie).
+Valoarea pensiei rezultă din înmulțirea Numărului Total de Puncte cu Valoarea Punctului de Referință (VPR). În anul 2026, VPR a crescut la 91 lei (în urma indexării cu 10.4% aplicată în ianuarie).
 
 Numărul total de puncte este format din trei categorii majore:
 1. **Punctele de contributivitate:** Se calculează lunar, împărțind salariul brut câștigat la salariul mediu brut pe economie din luna respectivă.
@@ -742,7 +742,7 @@ Numărul total de puncte este format din trei categorii majore:
 *Studiu de caz:* Un pensionar cu un stagiu de cotizare de 38 de ani, cu un număr de puncte de contributivitate de 45.
 - Puncte de stabilitate: (5 ani × 0.5) + (5 ani × 0.75) + (3 ani × 1.0) = 2.5 + 3.75 + 3 = 9.25 puncte.
 - Punctaj total = 45 + 9.25 = 54.25 puncte.
-- Pensia brută în 2025 = 54.25 × 91 lei = 4.936 lei.
+- Pensia brută în 2026 = 54.25 × 91 lei = 4.936 lei.
 
 ### Tipuri de Pensii și Condiții
 Sistemul românesc reglementează patru tipuri principale de pensii:
@@ -763,7 +763,7 @@ Pentru pensionarii cu limită de vârstă, legea permite cumulul pensiei cu sala
 Orice cetățean poate să își creeze un cont gratuit pe portalul CNPP (Casa Națională de Pensii Publice). Acolo se poate descărca stagiul complet de cotizare începând cu anul 2001 (pentru perioadele anterioare este necesar carnetul de muncă).
 
 **4. Pensia Minimă Garantată (Indemnizația Socială)**
-Pentru persoanele cu un număr redus de puncte, dar care au totuși stagiul minim de 15 ani, statul oferă o indemnizație socială. În 2025, nivelul acesteia este de 1.281 lei. Dacă pensia calculată matematic este mai mică, statul suportă diferența.
+Pentru persoanele cu un număr redus de puncte, dar care au totuși stagiul minim de 15 ani, statul oferă o indemnizație socială. În 2026, nivelul acesteia este de 1.281 lei. Dacă pensia calculată matematic este mai mică, statul suportă diferența.
 
 ### Concluzie și Perspective
 Legislația pensiilor este un organism viu, care suferă modificări constante. Este vital ca viitorii pensionari să își analizeze din timp dosarul, să recupereze adeverințele pentru sporuri și acord global (acum luate în calcul conform noii legi) și să ia în considerare și sistemele alternative (Pilonul II obligatoriu privat și Pilonul III facultativ privat) pentru a-și securiza veniturile la bătrânețe. Sperăm ca acest ghid extensiv să vă clarifice poziția și drepturile financiare.
@@ -772,7 +772,7 @@ Legislația pensiilor este un organism viu, care suferă modificări constante. 
 
 
 
-## Analiză Detaliată: Impactul Inflației și a Modificărilor Legislative asupra Puterii de Cumpărare în 2025
+## Analiză Detaliată: Impactul Inflației și a Modificărilor Legislative asupra Puterii de Cumpărare în 2026
 
 Un aspect esențial, adesea trecut cu vederea în planificarea pensionării, este impactul direct al inflației asupra puterii de cumpărare pe termen lung. Deși Legea 360/2023 aduce un mecanism clar de indexare anuală a punctului de pensie (și implicit a Valorii Punctului de Referință - VPR) bazat pe rata inflației și pe creșterea câștigului salarial mediu brut, este crucial ca viitorii pensionari să înțeleagă mecanismele economice care le protejează veniturile.
 
@@ -784,7 +784,7 @@ De exemplu, dacă inflația anuală este de 5%, iar salariul mediu brut pe econo
 
 ### Studiu de Caz: Diferența dintre Pensia Minimă și Pensia pe Bază de Contributivitate
 
-Pentru a ilustra mai bine importanța stagiului complet de cotizare, să luăm în considerare două scenarii ipotetice la momentul pensionării în 2025:
+Pentru a ilustra mai bine importanța stagiului complet de cotizare, să luăm în considerare două scenarii ipotetice la momentul pensionării în 2026:
 
 1. **Scenariul A (Stagiu Minim de Cotizare - 15 ani):** O persoană care a lucrat exact 15 ani pe salariul minim pe economie va beneficia, cel mai probabil, de indemnizația socială pentru pensionari (pensia minimă garantată). Deși statul asigură un venit minim de subzistență, acest venit este fix și supus unor reguli stricte de indexare, limitând capacitatea pensionarului de a face față unor cheltuieli neprevăzute (de exemplu, cheltuieli medicale complexe).
 
@@ -804,7 +804,7 @@ Indiferent de vârsta pe care o aveți în prezent, o planificare riguroasă est
   <h3 class="text-xl font-bold text-blue-900 mb-4">Instrumente și Resurse Utile</h3>
   <p class="text-gray-700 mb-4">Pentru a vă planifica mai bine viitorul financiar, vă recomandăm să utilizați instrumentele noastre gratuite, actualizate la zi conform Legii 360/2023:</p>
   <ul class="space-y-2 list-none pl-0">
-    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/" class="text-blue-700 font-bold hover:underline">Calculator Pensie de Stat 2025</a> - Estimează-ți instant pensia lunară.</li>
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/" class="text-blue-700 font-bold hover:underline">Calculator Pensie de Stat 2026</a> - Estimează-ți instant pensia lunară.</li>
     <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-varsta-pensionare" class="text-blue-700 font-bold hover:underline">Calculator Vârstă de Pensionare</a> - Află exact anul și luna în care poți ieși la pensie.</li>
     <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-pensie-anticipata" class="text-blue-700 font-bold hover:underline">Calculator Pensie Anticipată</a> - Calculează penalizarea aplicată dacă ieși la pensie mai devreme.</li>
     <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-puncte-pensie" class="text-blue-700 font-bold hover:underline">Calculator Puncte de Stabilitate</a> - Vezi câte puncte bonus primești pentru vechimea în muncă.</li>
@@ -818,7 +818,7 @@ Indiferent de vârsta pe care o aveți în prezent, o planificare riguroasă est
     title: "Pensia de Urmaș: Drepturi și Proceduri de Solicitare",
     excerpt: "Ghid complet despre pensia de urmaș în România: cine are dreptul, cum se calculează și care sunt pașii pentru obținerea acesteia.",
     category: "tipuri-pensii",
-    publishDate: "2025-08-10",
+    publishDate: "2026-08-10",
     readTime: 8,
     slug: "pensia-urmas-drepturi-proceduri",
     published: true,
@@ -835,9 +835,9 @@ Indiferent de vârsta pe care o aveți în prezent, o planificare riguroasă est
 
 
 
-## Analiză Aprofundată: Impactul Noulei Legi a Pensiilor 360/2023 (Extindere 2025)
+## Analiză Aprofundată: Impactul Noulei Legi a Pensiilor 360/2023 (Extindere 2026)
 
-Sistemul public de pensii din România traversează o perioadă de schimbări structurale profunde odată cu implementarea integrală a Legii 360/2023, care vizează o mai mare echitate și predictibilitate. Această secțiune extinsă este dedicată analizării contextului legislativ, economic și social care stă la baza calculelor și a politicilor de pensionare din 2025.
+Sistemul public de pensii din România traversează o perioadă de schimbări structurale profunde odată cu implementarea integrală a Legii 360/2023, care vizează o mai mare echitate și predictibilitate. Această secțiune extinsă este dedicată analizării contextului legislativ, economic și social care stă la baza calculelor și a politicilor de pensionare din 2026.
 
 ### Contextul Macroeconomic și Sustenabilitatea Sistemului
 Pentru a înțelege pe deplin cum funcționează pensiile în România, trebuie să privim către factorii demografici și economici. Bugetul Asigurărilor Sociale de Stat (BASS) se bazează pe principiul solidarității între generații (sistemul *pay-as-you-go*). Contribuțiile lucrătorilor activi (CAS - 25% din salariul brut, din care 20.25% merg către Pilonul I) plătesc pensiile actualilor pensionari. 
@@ -847,7 +847,7 @@ Pentru a înțelege pe deplin cum funcționează pensiile în România, trebuie 
 - **Egalizarea vârstei de pensionare:** Până în 2035, vârsta de pensionare pentru femei va crește treptat, atingând pragul de 65 de ani, egalizându-se astfel cu cea a bărbaților.
 
 ### Cum Se Calculează Pensia în Noul Sistem (Ghid Pas cu Pas)
-Valoarea pensiei rezultă din înmulțirea Numărului Total de Puncte cu Valoarea Punctului de Referință (VPR). În anul 2025, VPR a crescut la 91 lei (în urma indexării cu 10.4% aplicată în ianuarie).
+Valoarea pensiei rezultă din înmulțirea Numărului Total de Puncte cu Valoarea Punctului de Referință (VPR). În anul 2026, VPR a crescut la 91 lei (în urma indexării cu 10.4% aplicată în ianuarie).
 
 Numărul total de puncte este format din trei categorii majore:
 1. **Punctele de contributivitate:** Se calculează lunar, împărțind salariul brut câștigat la salariul mediu brut pe economie din luna respectivă.
@@ -857,7 +857,7 @@ Numărul total de puncte este format din trei categorii majore:
 *Studiu de caz:* Un pensionar cu un stagiu de cotizare de 38 de ani, cu un număr de puncte de contributivitate de 45.
 - Puncte de stabilitate: (5 ani × 0.5) + (5 ani × 0.75) + (3 ani × 1.0) = 2.5 + 3.75 + 3 = 9.25 puncte.
 - Punctaj total = 45 + 9.25 = 54.25 puncte.
-- Pensia brută în 2025 = 54.25 × 91 lei = 4.936 lei.
+- Pensia brută în 2026 = 54.25 × 91 lei = 4.936 lei.
 
 ### Tipuri de Pensii și Condiții
 Sistemul românesc reglementează patru tipuri principale de pensii:
@@ -878,7 +878,7 @@ Pentru pensionarii cu limită de vârstă, legea permite cumulul pensiei cu sala
 Orice cetățean poate să își creeze un cont gratuit pe portalul CNPP (Casa Națională de Pensii Publice). Acolo se poate descărca stagiul complet de cotizare începând cu anul 2001 (pentru perioadele anterioare este necesar carnetul de muncă).
 
 **4. Pensia Minimă Garantată (Indemnizația Socială)**
-Pentru persoanele cu un număr redus de puncte, dar care au totuși stagiul minim de 15 ani, statul oferă o indemnizație socială. În 2025, nivelul acesteia este de 1.281 lei. Dacă pensia calculată matematic este mai mică, statul suportă diferența.
+Pentru persoanele cu un număr redus de puncte, dar care au totuși stagiul minim de 15 ani, statul oferă o indemnizație socială. În 2026, nivelul acesteia este de 1.281 lei. Dacă pensia calculată matematic este mai mică, statul suportă diferența.
 
 ### Concluzie și Perspective
 Legislația pensiilor este un organism viu, care suferă modificări constante. Este vital ca viitorii pensionari să își analizeze din timp dosarul, să recupereze adeverințele pentru sporuri și acord global (acum luate în calcul conform noii legi) și să ia în considerare și sistemele alternative (Pilonul II obligatoriu privat și Pilonul III facultativ privat) pentru a-și securiza veniturile la bătrânețe. Sperăm ca acest ghid extensiv să vă clarifice poziția și drepturile financiare.
@@ -887,7 +887,7 @@ Legislația pensiilor este un organism viu, care suferă modificări constante. 
 
 
 
-## Analiză Detaliată: Impactul Inflației și a Modificărilor Legislative asupra Puterii de Cumpărare în 2025
+## Analiză Detaliată: Impactul Inflației și a Modificărilor Legislative asupra Puterii de Cumpărare în 2026
 
 Un aspect esențial, adesea trecut cu vederea în planificarea pensionării, este impactul direct al inflației asupra puterii de cumpărare pe termen lung. Deși Legea 360/2023 aduce un mecanism clar de indexare anuală a punctului de pensie (și implicit a Valorii Punctului de Referință - VPR) bazat pe rata inflației și pe creșterea câștigului salarial mediu brut, este crucial ca viitorii pensionari să înțeleagă mecanismele economice care le protejează veniturile.
 
@@ -899,7 +899,7 @@ De exemplu, dacă inflația anuală este de 5%, iar salariul mediu brut pe econo
 
 ### Studiu de Caz: Diferența dintre Pensia Minimă și Pensia pe Bază de Contributivitate
 
-Pentru a ilustra mai bine importanța stagiului complet de cotizare, să luăm în considerare două scenarii ipotetice la momentul pensionării în 2025:
+Pentru a ilustra mai bine importanța stagiului complet de cotizare, să luăm în considerare două scenarii ipotetice la momentul pensionării în 2026:
 
 1. **Scenariul A (Stagiu Minim de Cotizare - 15 ani):** O persoană care a lucrat exact 15 ani pe salariul minim pe economie va beneficia, cel mai probabil, de indemnizația socială pentru pensionari (pensia minimă garantată). Deși statul asigură un venit minim de subzistență, acest venit este fix și supus unor reguli stricte de indexare, limitând capacitatea pensionarului de a face față unor cheltuieli neprevăzute (de exemplu, cheltuieli medicale complexe).
 
@@ -919,7 +919,7 @@ Indiferent de vârsta pe care o aveți în prezent, o planificare riguroasă est
   <h3 class="text-xl font-bold text-blue-900 mb-4">Instrumente și Resurse Utile</h3>
   <p class="text-gray-700 mb-4">Pentru a vă planifica mai bine viitorul financiar, vă recomandăm să utilizați instrumentele noastre gratuite, actualizate la zi conform Legii 360/2023:</p>
   <ul class="space-y-2 list-none pl-0">
-    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/" class="text-blue-700 font-bold hover:underline">Calculator Pensie de Stat 2025</a> - Estimează-ți instant pensia lunară.</li>
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/" class="text-blue-700 font-bold hover:underline">Calculator Pensie de Stat 2026</a> - Estimează-ți instant pensia lunară.</li>
     <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-varsta-pensionare" class="text-blue-700 font-bold hover:underline">Calculator Vârstă de Pensionare</a> - Află exact anul și luna în care poți ieși la pensie.</li>
     <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-pensie-anticipata" class="text-blue-700 font-bold hover:underline">Calculator Pensie Anticipată</a> - Calculează penalizarea aplicată dacă ieși la pensie mai devreme.</li>
     <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-puncte-pensie" class="text-blue-700 font-bold hover:underline">Calculator Puncte de Stabilitate</a> - Vezi câte puncte bonus primești pentru vechimea în muncă.</li>
@@ -930,28 +930,28 @@ Indiferent de vârsta pe care o aveți în prezent, o planificare riguroasă est
   },
   {
     id: 8,
-    title: "Reforma Sistemului de Pensii: Ce Se Schimbă în 2025",
+    title: "Reforma Sistemului de Pensii: Ce Se Schimbă în 2026",
     excerpt: "Analizează cele mai recente modificări legislative în sistemul de pensii român și cum vor afecta aceasta drepturile tale viitoare.",
     category: "legislatie",
     publishDate: "2026-01-15",
     readTime: 13,
-    slug: "reforma-sistem-pensii-2025",
+    slug: "reforma-sistem-pensii-2026",
     published: true,
     author: authors.elenaRadu,
     image: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=480",
     content: `
-<p>Anul 2025 aduce stabilitate dar și noi indexări în sistemul public de pensii, ca urmare a implementării depline a noii Legi a pensiilor nr. 360/2023.</p>
+<p>Anul 2026 aduce stabilitate dar și noi indexări în sistemul public de pensii, ca urmare a implementării depline a noii Legi a pensiilor nr. 360/2023.</p>
 
-<h3>Puncte de interes în 2025:</h3>
+<h3>Puncte de interes în 2026:</h3>
 <p>Eliminarea inechităților dintre genuri prin egalizarea graduală a vârstei de pensionare și aplicarea formulei bazate pe VPR (Valoarea Punctului de Referință) de 91 de Lei sunt pilonii noii recalculări.</p>
 
 <p>Citește detaliile oficiale de la CNPP pe <a href="https://www.cnpp.ro" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline font-semibold">CNPP</a>. Textul legislativ integral este disponibil pe <a href="https://legislatie.just.ro" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline font-semibold">Just.ro</a>.</p>
 
 
 
-## Analiză Aprofundată: Impactul Noulei Legi a Pensiilor 360/2023 (Extindere 2025)
+## Analiză Aprofundată: Impactul Noulei Legi a Pensiilor 360/2023 (Extindere 2026)
 
-Sistemul public de pensii din România traversează o perioadă de schimbări structurale profunde odată cu implementarea integrală a Legii 360/2023, care vizează o mai mare echitate și predictibilitate. Această secțiune extinsă este dedicată analizării contextului legislativ, economic și social care stă la baza calculelor și a politicilor de pensionare din 2025.
+Sistemul public de pensii din România traversează o perioadă de schimbări structurale profunde odată cu implementarea integrală a Legii 360/2023, care vizează o mai mare echitate și predictibilitate. Această secțiune extinsă este dedicată analizării contextului legislativ, economic și social care stă la baza calculelor și a politicilor de pensionare din 2026.
 
 ### Contextul Macroeconomic și Sustenabilitatea Sistemului
 Pentru a înțelege pe deplin cum funcționează pensiile în România, trebuie să privim către factorii demografici și economici. Bugetul Asigurărilor Sociale de Stat (BASS) se bazează pe principiul solidarității între generații (sistemul *pay-as-you-go*). Contribuțiile lucrătorilor activi (CAS - 25% din salariul brut, din care 20.25% merg către Pilonul I) plătesc pensiile actualilor pensionari. 
@@ -961,7 +961,7 @@ Pentru a înțelege pe deplin cum funcționează pensiile în România, trebuie 
 - **Egalizarea vârstei de pensionare:** Până în 2035, vârsta de pensionare pentru femei va crește treptat, atingând pragul de 65 de ani, egalizându-se astfel cu cea a bărbaților.
 
 ### Cum Se Calculează Pensia în Noul Sistem (Ghid Pas cu Pas)
-Valoarea pensiei rezultă din înmulțirea Numărului Total de Puncte cu Valoarea Punctului de Referință (VPR). În anul 2025, VPR a crescut la 91 lei (în urma indexării cu 10.4% aplicată în ianuarie).
+Valoarea pensiei rezultă din înmulțirea Numărului Total de Puncte cu Valoarea Punctului de Referință (VPR). În anul 2026, VPR a crescut la 91 lei (în urma indexării cu 10.4% aplicată în ianuarie).
 
 Numărul total de puncte este format din trei categorii majore:
 1. **Punctele de contributivitate:** Se calculează lunar, împărțind salariul brut câștigat la salariul mediu brut pe economie din luna respectivă.
@@ -971,7 +971,7 @@ Numărul total de puncte este format din trei categorii majore:
 *Studiu de caz:* Un pensionar cu un stagiu de cotizare de 38 de ani, cu un număr de puncte de contributivitate de 45.
 - Puncte de stabilitate: (5 ani × 0.5) + (5 ani × 0.75) + (3 ani × 1.0) = 2.5 + 3.75 + 3 = 9.25 puncte.
 - Punctaj total = 45 + 9.25 = 54.25 puncte.
-- Pensia brută în 2025 = 54.25 × 91 lei = 4.936 lei.
+- Pensia brută în 2026 = 54.25 × 91 lei = 4.936 lei.
 
 ### Tipuri de Pensii și Condiții
 Sistemul românesc reglementează patru tipuri principale de pensii:
@@ -992,7 +992,7 @@ Pentru pensionarii cu limită de vârstă, legea permite cumulul pensiei cu sala
 Orice cetățean poate să își creeze un cont gratuit pe portalul CNPP (Casa Națională de Pensii Publice). Acolo se poate descărca stagiul complet de cotizare începând cu anul 2001 (pentru perioadele anterioare este necesar carnetul de muncă).
 
 **4. Pensia Minimă Garantată (Indemnizația Socială)**
-Pentru persoanele cu un număr redus de puncte, dar care au totuși stagiul minim de 15 ani, statul oferă o indemnizație socială. În 2025, nivelul acesteia este de 1.281 lei. Dacă pensia calculată matematic este mai mică, statul suportă diferența.
+Pentru persoanele cu un număr redus de puncte, dar care au totuși stagiul minim de 15 ani, statul oferă o indemnizație socială. În 2026, nivelul acesteia este de 1.281 lei. Dacă pensia calculată matematic este mai mică, statul suportă diferența.
 
 ### Concluzie și Perspective
 Legislația pensiilor este un organism viu, care suferă modificări constante. Este vital ca viitorii pensionari să își analizeze din timp dosarul, să recupereze adeverințele pentru sporuri și acord global (acum luate în calcul conform noii legi) și să ia în considerare și sistemele alternative (Pilonul II obligatoriu privat și Pilonul III facultativ privat) pentru a-și securiza veniturile la bătrânețe. Sperăm ca acest ghid extensiv să vă clarifice poziția și drepturile financiare.
@@ -1001,7 +1001,7 @@ Legislația pensiilor este un organism viu, care suferă modificări constante. 
 
 
 
-## Analiză Detaliată: Impactul Inflației și a Modificărilor Legislative asupra Puterii de Cumpărare în 2025
+## Analiză Detaliată: Impactul Inflației și a Modificărilor Legislative asupra Puterii de Cumpărare în 2026
 
 Un aspect esențial, adesea trecut cu vederea în planificarea pensionării, este impactul direct al inflației asupra puterii de cumpărare pe termen lung. Deși Legea 360/2023 aduce un mecanism clar de indexare anuală a punctului de pensie (și implicit a Valorii Punctului de Referință - VPR) bazat pe rata inflației și pe creșterea câștigului salarial mediu brut, este crucial ca viitorii pensionari să înțeleagă mecanismele economice care le protejează veniturile.
 
@@ -1013,7 +1013,7 @@ De exemplu, dacă inflația anuală este de 5%, iar salariul mediu brut pe econo
 
 ### Studiu de Caz: Diferența dintre Pensia Minimă și Pensia pe Bază de Contributivitate
 
-Pentru a ilustra mai bine importanța stagiului complet de cotizare, să luăm în considerare două scenarii ipotetice la momentul pensionării în 2025:
+Pentru a ilustra mai bine importanța stagiului complet de cotizare, să luăm în considerare două scenarii ipotetice la momentul pensionării în 2026:
 
 1. **Scenariul A (Stagiu Minim de Cotizare - 15 ani):** O persoană care a lucrat exact 15 ani pe salariul minim pe economie va beneficia, cel mai probabil, de indemnizația socială pentru pensionari (pensia minimă garantată). Deși statul asigură un venit minim de subzistență, acest venit este fix și supus unor reguli stricte de indexare, limitând capacitatea pensionarului de a face față unor cheltuieli neprevăzute (de exemplu, cheltuieli medicale complexe).
 
@@ -1033,7 +1033,7 @@ Indiferent de vârsta pe care o aveți în prezent, o planificare riguroasă est
   <h3 class="text-xl font-bold text-blue-900 mb-4">Instrumente și Resurse Utile</h3>
   <p class="text-gray-700 mb-4">Pentru a vă planifica mai bine viitorul financiar, vă recomandăm să utilizați instrumentele noastre gratuite, actualizate la zi conform Legii 360/2023:</p>
   <ul class="space-y-2 list-none pl-0">
-    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/" class="text-blue-700 font-bold hover:underline">Calculator Pensie de Stat 2025</a> - Estimează-ți instant pensia lunară.</li>
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/" class="text-blue-700 font-bold hover:underline">Calculator Pensie de Stat 2026</a> - Estimează-ți instant pensia lunară.</li>
     <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-varsta-pensionare" class="text-blue-700 font-bold hover:underline">Calculator Vârstă de Pensionare</a> - Află exact anul și luna în care poți ieși la pensie.</li>
     <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-pensie-anticipata" class="text-blue-700 font-bold hover:underline">Calculator Pensie Anticipată</a> - Calculează penalizarea aplicată dacă ieși la pensie mai devreme.</li>
     <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-puncte-pensie" class="text-blue-700 font-bold hover:underline">Calculator Puncte de Stabilitate</a> - Vezi câte puncte bonus primești pentru vechimea în muncă.</li>
@@ -1047,7 +1047,7 @@ Indiferent de vârsta pe care o aveți în prezent, o planificare riguroasă est
     title: "Calculul Pensiei pentru Freelanceri și PFA",
     excerpt: "Înțelege specificul calculului pensiei pentru persoanele fizice autorizate și freelanceri: contribuții, stagiu și drepturi speciale.",
     category: "planificare",
-    publishDate: "2025-07-20",
+    publishDate: "2026-07-20",
     readTime: 10,
     slug: "calculul-pensiei-freelanceri-pfa",
     published: true,
@@ -1063,9 +1063,9 @@ Indiferent de vârsta pe care o aveți în prezent, o planificare riguroasă est
 
 
 
-## Analiză Aprofundată: Impactul Noulei Legi a Pensiilor 360/2023 (Extindere 2025)
+## Analiză Aprofundată: Impactul Noulei Legi a Pensiilor 360/2023 (Extindere 2026)
 
-Sistemul public de pensii din România traversează o perioadă de schimbări structurale profunde odată cu implementarea integrală a Legii 360/2023, care vizează o mai mare echitate și predictibilitate. Această secțiune extinsă este dedicată analizării contextului legislativ, economic și social care stă la baza calculelor și a politicilor de pensionare din 2025.
+Sistemul public de pensii din România traversează o perioadă de schimbări structurale profunde odată cu implementarea integrală a Legii 360/2023, care vizează o mai mare echitate și predictibilitate. Această secțiune extinsă este dedicată analizării contextului legislativ, economic și social care stă la baza calculelor și a politicilor de pensionare din 2026.
 
 ### Contextul Macroeconomic și Sustenabilitatea Sistemului
 Pentru a înțelege pe deplin cum funcționează pensiile în România, trebuie să privim către factorii demografici și economici. Bugetul Asigurărilor Sociale de Stat (BASS) se bazează pe principiul solidarității între generații (sistemul *pay-as-you-go*). Contribuțiile lucrătorilor activi (CAS - 25% din salariul brut, din care 20.25% merg către Pilonul I) plătesc pensiile actualilor pensionari. 
@@ -1075,7 +1075,7 @@ Pentru a înțelege pe deplin cum funcționează pensiile în România, trebuie 
 - **Egalizarea vârstei de pensionare:** Până în 2035, vârsta de pensionare pentru femei va crește treptat, atingând pragul de 65 de ani, egalizându-se astfel cu cea a bărbaților.
 
 ### Cum Se Calculează Pensia în Noul Sistem (Ghid Pas cu Pas)
-Valoarea pensiei rezultă din înmulțirea Numărului Total de Puncte cu Valoarea Punctului de Referință (VPR). În anul 2025, VPR a crescut la 91 lei (în urma indexării cu 10.4% aplicată în ianuarie).
+Valoarea pensiei rezultă din înmulțirea Numărului Total de Puncte cu Valoarea Punctului de Referință (VPR). În anul 2026, VPR a crescut la 91 lei (în urma indexării cu 10.4% aplicată în ianuarie).
 
 Numărul total de puncte este format din trei categorii majore:
 1. **Punctele de contributivitate:** Se calculează lunar, împărțind salariul brut câștigat la salariul mediu brut pe economie din luna respectivă.
@@ -1085,7 +1085,7 @@ Numărul total de puncte este format din trei categorii majore:
 *Studiu de caz:* Un pensionar cu un stagiu de cotizare de 38 de ani, cu un număr de puncte de contributivitate de 45.
 - Puncte de stabilitate: (5 ani × 0.5) + (5 ani × 0.75) + (3 ani × 1.0) = 2.5 + 3.75 + 3 = 9.25 puncte.
 - Punctaj total = 45 + 9.25 = 54.25 puncte.
-- Pensia brută în 2025 = 54.25 × 91 lei = 4.936 lei.
+- Pensia brută în 2026 = 54.25 × 91 lei = 4.936 lei.
 
 ### Tipuri de Pensii și Condiții
 Sistemul românesc reglementează patru tipuri principale de pensii:
@@ -1106,7 +1106,7 @@ Pentru pensionarii cu limită de vârstă, legea permite cumulul pensiei cu sala
 Orice cetățean poate să își creeze un cont gratuit pe portalul CNPP (Casa Națională de Pensii Publice). Acolo se poate descărca stagiul complet de cotizare începând cu anul 2001 (pentru perioadele anterioare este necesar carnetul de muncă).
 
 **4. Pensia Minimă Garantată (Indemnizația Socială)**
-Pentru persoanele cu un număr redus de puncte, dar care au totuși stagiul minim de 15 ani, statul oferă o indemnizație socială. În 2025, nivelul acesteia este de 1.281 lei. Dacă pensia calculată matematic este mai mică, statul suportă diferența.
+Pentru persoanele cu un număr redus de puncte, dar care au totuși stagiul minim de 15 ani, statul oferă o indemnizație socială. În 2026, nivelul acesteia este de 1.281 lei. Dacă pensia calculată matematic este mai mică, statul suportă diferența.
 
 ### Concluzie și Perspective
 Legislația pensiilor este un organism viu, care suferă modificări constante. Este vital ca viitorii pensionari să își analizeze din timp dosarul, să recupereze adeverințele pentru sporuri și acord global (acum luate în calcul conform noii legi) și să ia în considerare și sistemele alternative (Pilonul II obligatoriu privat și Pilonul III facultativ privat) pentru a-și securiza veniturile la bătrânețe. Sperăm ca acest ghid extensiv să vă clarifice poziția și drepturile financiare.
@@ -1115,7 +1115,7 @@ Legislația pensiilor este un organism viu, care suferă modificări constante. 
 
 
 
-## Analiză Detaliată: Impactul Inflației și a Modificărilor Legislative asupra Puterii de Cumpărare în 2025
+## Analiză Detaliată: Impactul Inflației și a Modificărilor Legislative asupra Puterii de Cumpărare în 2026
 
 Un aspect esențial, adesea trecut cu vederea în planificarea pensionării, este impactul direct al inflației asupra puterii de cumpărare pe termen lung. Deși Legea 360/2023 aduce un mecanism clar de indexare anuală a punctului de pensie (și implicit a Valorii Punctului de Referință - VPR) bazat pe rata inflației și pe creșterea câștigului salarial mediu brut, este crucial ca viitorii pensionari să înțeleagă mecanismele economice care le protejează veniturile.
 
@@ -1127,7 +1127,7 @@ De exemplu, dacă inflația anuală este de 5%, iar salariul mediu brut pe econo
 
 ### Studiu de Caz: Diferența dintre Pensia Minimă și Pensia pe Bază de Contributivitate
 
-Pentru a ilustra mai bine importanța stagiului complet de cotizare, să luăm în considerare două scenarii ipotetice la momentul pensionării în 2025:
+Pentru a ilustra mai bine importanța stagiului complet de cotizare, să luăm în considerare două scenarii ipotetice la momentul pensionării în 2026:
 
 1. **Scenariul A (Stagiu Minim de Cotizare - 15 ani):** O persoană care a lucrat exact 15 ani pe salariul minim pe economie va beneficia, cel mai probabil, de indemnizația socială pentru pensionari (pensia minimă garantată). Deși statul asigură un venit minim de subzistență, acest venit este fix și supus unor reguli stricte de indexare, limitând capacitatea pensionarului de a face față unor cheltuieli neprevăzute (de exemplu, cheltuieli medicale complexe).
 
@@ -1147,7 +1147,7 @@ Indiferent de vârsta pe care o aveți în prezent, o planificare riguroasă est
   <h3 class="text-xl font-bold text-blue-900 mb-4">Instrumente și Resurse Utile</h3>
   <p class="text-gray-700 mb-4">Pentru a vă planifica mai bine viitorul financiar, vă recomandăm să utilizați instrumentele noastre gratuite, actualizate la zi conform Legii 360/2023:</p>
   <ul class="space-y-2 list-none pl-0">
-    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/" class="text-blue-700 font-bold hover:underline">Calculator Pensie de Stat 2025</a> - Estimează-ți instant pensia lunară.</li>
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/" class="text-blue-700 font-bold hover:underline">Calculator Pensie de Stat 2026</a> - Estimează-ți instant pensia lunară.</li>
     <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-varsta-pensionare" class="text-blue-700 font-bold hover:underline">Calculator Vârstă de Pensionare</a> - Află exact anul și luna în care poți ieși la pensie.</li>
     <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-pensie-anticipata" class="text-blue-700 font-bold hover:underline">Calculator Pensie Anticipată</a> - Calculează penalizarea aplicată dacă ieși la pensie mai devreme.</li>
     <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-puncte-pensie" class="text-blue-700 font-bold hover:underline">Calculator Puncte de Stabilitate</a> - Vezi câte puncte bonus primești pentru vechimea în muncă.</li>
@@ -1161,7 +1161,7 @@ Indiferent de vârsta pe care o aveți în prezent, o planificare riguroasă est
     title: "Transferul Drepturilor de Pensie între Țări UE",
     excerpt: "Ghid pentru românii care au lucrat în străinătate: cum să îți transferi drepturile de pensie și să beneficiezi de totalitate.",
     category: "tipuri-pensii",
-    publishDate: "2025-06-15",
+    publishDate: "2026-06-15",
     readTime: 15,
     slug: "transfer-drepturi-pensie-ue",
     published: true,
@@ -1177,9 +1177,9 @@ Indiferent de vârsta pe care o aveți în prezent, o planificare riguroasă est
 
 
 
-## Analiză Aprofundată: Impactul Noulei Legi a Pensiilor 360/2023 (Extindere 2025)
+## Analiză Aprofundată: Impactul Noulei Legi a Pensiilor 360/2023 (Extindere 2026)
 
-Sistemul public de pensii din România traversează o perioadă de schimbări structurale profunde odată cu implementarea integrală a Legii 360/2023, care vizează o mai mare echitate și predictibilitate. Această secțiune extinsă este dedicată analizării contextului legislativ, economic și social care stă la baza calculelor și a politicilor de pensionare din 2025.
+Sistemul public de pensii din România traversează o perioadă de schimbări structurale profunde odată cu implementarea integrală a Legii 360/2023, care vizează o mai mare echitate și predictibilitate. Această secțiune extinsă este dedicată analizării contextului legislativ, economic și social care stă la baza calculelor și a politicilor de pensionare din 2026.
 
 ### Contextul Macroeconomic și Sustenabilitatea Sistemului
 Pentru a înțelege pe deplin cum funcționează pensiile în România, trebuie să privim către factorii demografici și economici. Bugetul Asigurărilor Sociale de Stat (BASS) se bazează pe principiul solidarității între generații (sistemul *pay-as-you-go*). Contribuțiile lucrătorilor activi (CAS - 25% din salariul brut, din care 20.25% merg către Pilonul I) plătesc pensiile actualilor pensionari. 
@@ -1189,7 +1189,7 @@ Pentru a înțelege pe deplin cum funcționează pensiile în România, trebuie 
 - **Egalizarea vârstei de pensionare:** Până în 2035, vârsta de pensionare pentru femei va crește treptat, atingând pragul de 65 de ani, egalizându-se astfel cu cea a bărbaților.
 
 ### Cum Se Calculează Pensia în Noul Sistem (Ghid Pas cu Pas)
-Valoarea pensiei rezultă din înmulțirea Numărului Total de Puncte cu Valoarea Punctului de Referință (VPR). În anul 2025, VPR a crescut la 91 lei (în urma indexării cu 10.4% aplicată în ianuarie).
+Valoarea pensiei rezultă din înmulțirea Numărului Total de Puncte cu Valoarea Punctului de Referință (VPR). În anul 2026, VPR a crescut la 91 lei (în urma indexării cu 10.4% aplicată în ianuarie).
 
 Numărul total de puncte este format din trei categorii majore:
 1. **Punctele de contributivitate:** Se calculează lunar, împărțind salariul brut câștigat la salariul mediu brut pe economie din luna respectivă.
@@ -1199,7 +1199,7 @@ Numărul total de puncte este format din trei categorii majore:
 *Studiu de caz:* Un pensionar cu un stagiu de cotizare de 38 de ani, cu un număr de puncte de contributivitate de 45.
 - Puncte de stabilitate: (5 ani × 0.5) + (5 ani × 0.75) + (3 ani × 1.0) = 2.5 + 3.75 + 3 = 9.25 puncte.
 - Punctaj total = 45 + 9.25 = 54.25 puncte.
-- Pensia brută în 2025 = 54.25 × 91 lei = 4.936 lei.
+- Pensia brută în 2026 = 54.25 × 91 lei = 4.936 lei.
 
 ### Tipuri de Pensii și Condiții
 Sistemul românesc reglementează patru tipuri principale de pensii:
@@ -1220,7 +1220,7 @@ Pentru pensionarii cu limită de vârstă, legea permite cumulul pensiei cu sala
 Orice cetățean poate să își creeze un cont gratuit pe portalul CNPP (Casa Națională de Pensii Publice). Acolo se poate descărca stagiul complet de cotizare începând cu anul 2001 (pentru perioadele anterioare este necesar carnetul de muncă).
 
 **4. Pensia Minimă Garantată (Indemnizația Socială)**
-Pentru persoanele cu un număr redus de puncte, dar care au totuși stagiul minim de 15 ani, statul oferă o indemnizație socială. În 2025, nivelul acesteia este de 1.281 lei. Dacă pensia calculată matematic este mai mică, statul suportă diferența.
+Pentru persoanele cu un număr redus de puncte, dar care au totuși stagiul minim de 15 ani, statul oferă o indemnizație socială. În 2026, nivelul acesteia este de 1.281 lei. Dacă pensia calculată matematic este mai mică, statul suportă diferența.
 
 ### Concluzie și Perspective
 Legislația pensiilor este un organism viu, care suferă modificări constante. Este vital ca viitorii pensionari să își analizeze din timp dosarul, să recupereze adeverințele pentru sporuri și acord global (acum luate în calcul conform noii legi) și să ia în considerare și sistemele alternative (Pilonul II obligatoriu privat și Pilonul III facultativ privat) pentru a-și securiza veniturile la bătrânețe. Sperăm ca acest ghid extensiv să vă clarifice poziția și drepturile financiare.
@@ -1229,7 +1229,7 @@ Legislația pensiilor este un organism viu, care suferă modificări constante. 
 
 
 
-## Analiză Detaliată: Impactul Inflației și a Modificărilor Legislative asupra Puterii de Cumpărare în 2025
+## Analiză Detaliată: Impactul Inflației și a Modificărilor Legislative asupra Puterii de Cumpărare în 2026
 
 Un aspect esențial, adesea trecut cu vederea în planificarea pensionării, este impactul direct al inflației asupra puterii de cumpărare pe termen lung. Deși Legea 360/2023 aduce un mecanism clar de indexare anuală a punctului de pensie (și implicit a Valorii Punctului de Referință - VPR) bazat pe rata inflației și pe creșterea câștigului salarial mediu brut, este crucial ca viitorii pensionari să înțeleagă mecanismele economice care le protejează veniturile.
 
@@ -1241,7 +1241,7 @@ De exemplu, dacă inflația anuală este de 5%, iar salariul mediu brut pe econo
 
 ### Studiu de Caz: Diferența dintre Pensia Minimă și Pensia pe Bază de Contributivitate
 
-Pentru a ilustra mai bine importanța stagiului complet de cotizare, să luăm în considerare două scenarii ipotetice la momentul pensionării în 2025:
+Pentru a ilustra mai bine importanța stagiului complet de cotizare, să luăm în considerare două scenarii ipotetice la momentul pensionării în 2026:
 
 1. **Scenariul A (Stagiu Minim de Cotizare - 15 ani):** O persoană care a lucrat exact 15 ani pe salariul minim pe economie va beneficia, cel mai probabil, de indemnizația socială pentru pensionari (pensia minimă garantată). Deși statul asigură un venit minim de subzistență, acest venit este fix și supus unor reguli stricte de indexare, limitând capacitatea pensionarului de a face față unor cheltuieli neprevăzute (de exemplu, cheltuieli medicale complexe).
 
@@ -1261,7 +1261,7 @@ Indiferent de vârsta pe care o aveți în prezent, o planificare riguroasă est
   <h3 class="text-xl font-bold text-blue-900 mb-4">Instrumente și Resurse Utile</h3>
   <p class="text-gray-700 mb-4">Pentru a vă planifica mai bine viitorul financiar, vă recomandăm să utilizați instrumentele noastre gratuite, actualizate la zi conform Legii 360/2023:</p>
   <ul class="space-y-2 list-none pl-0">
-    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/" class="text-blue-700 font-bold hover:underline">Calculator Pensie de Stat 2025</a> - Estimează-ți instant pensia lunară.</li>
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/" class="text-blue-700 font-bold hover:underline">Calculator Pensie de Stat 2026</a> - Estimează-ți instant pensia lunară.</li>
     <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-varsta-pensionare" class="text-blue-700 font-bold hover:underline">Calculator Vârstă de Pensionare</a> - Află exact anul și luna în care poți ieși la pensie.</li>
     <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-pensie-anticipata" class="text-blue-700 font-bold hover:underline">Calculator Pensie Anticipată</a> - Calculează penalizarea aplicată dacă ieși la pensie mai devreme.</li>
     <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-puncte-pensie" class="text-blue-700 font-bold hover:underline">Calculator Puncte de Stabilitate</a> - Vezi câte puncte bonus primești pentru vechimea în muncă.</li>
@@ -1275,7 +1275,7 @@ Indiferent de vârsta pe care o aveți în prezent, o planificare riguroasă est
     title: "Optimizarea Fiscală a Contribuțiilor la Pensie",
     excerpt: "Strategii avansate pentru optimizarea fiscală a contribuțiilor la toate piloanele de pensie și maximizarea beneficiilor fiscale.",
     category: "planificare",
-    publishDate: "2025-09-12",
+    publishDate: "2026-09-12",
     readTime: 12,
     slug: "optimizare-fiscala-contributii-pensie",
     published: true,
@@ -1290,9 +1290,9 @@ Indiferent de vârsta pe care o aveți în prezent, o planificare riguroasă est
 
 
 
-## Analiză Aprofundată: Impactul Noulei Legi a Pensiilor 360/2023 (Extindere 2025)
+## Analiză Aprofundată: Impactul Noulei Legi a Pensiilor 360/2023 (Extindere 2026)
 
-Sistemul public de pensii din România traversează o perioadă de schimbări structurale profunde odată cu implementarea integrală a Legii 360/2023, care vizează o mai mare echitate și predictibilitate. Această secțiune extinsă este dedicată analizării contextului legislativ, economic și social care stă la baza calculelor și a politicilor de pensionare din 2025.
+Sistemul public de pensii din România traversează o perioadă de schimbări structurale profunde odată cu implementarea integrală a Legii 360/2023, care vizează o mai mare echitate și predictibilitate. Această secțiune extinsă este dedicată analizării contextului legislativ, economic și social care stă la baza calculelor și a politicilor de pensionare din 2026.
 
 ### Contextul Macroeconomic și Sustenabilitatea Sistemului
 Pentru a înțelege pe deplin cum funcționează pensiile în România, trebuie să privim către factorii demografici și economici. Bugetul Asigurărilor Sociale de Stat (BASS) se bazează pe principiul solidarității între generații (sistemul *pay-as-you-go*). Contribuțiile lucrătorilor activi (CAS - 25% din salariul brut, din care 20.25% merg către Pilonul I) plătesc pensiile actualilor pensionari. 
@@ -1302,7 +1302,7 @@ Pentru a înțelege pe deplin cum funcționează pensiile în România, trebuie 
 - **Egalizarea vârstei de pensionare:** Până în 2035, vârsta de pensionare pentru femei va crește treptat, atingând pragul de 65 de ani, egalizându-se astfel cu cea a bărbaților.
 
 ### Cum Se Calculează Pensia în Noul Sistem (Ghid Pas cu Pas)
-Valoarea pensiei rezultă din înmulțirea Numărului Total de Puncte cu Valoarea Punctului de Referință (VPR). În anul 2025, VPR a crescut la 91 lei (în urma indexării cu 10.4% aplicată în ianuarie).
+Valoarea pensiei rezultă din înmulțirea Numărului Total de Puncte cu Valoarea Punctului de Referință (VPR). În anul 2026, VPR a crescut la 91 lei (în urma indexării cu 10.4% aplicată în ianuarie).
 
 Numărul total de puncte este format din trei categorii majore:
 1. **Punctele de contributivitate:** Se calculează lunar, împărțind salariul brut câștigat la salariul mediu brut pe economie din luna respectivă.
@@ -1312,7 +1312,7 @@ Numărul total de puncte este format din trei categorii majore:
 *Studiu de caz:* Un pensionar cu un stagiu de cotizare de 38 de ani, cu un număr de puncte de contributivitate de 45.
 - Puncte de stabilitate: (5 ani × 0.5) + (5 ani × 0.75) + (3 ani × 1.0) = 2.5 + 3.75 + 3 = 9.25 puncte.
 - Punctaj total = 45 + 9.25 = 54.25 puncte.
-- Pensia brută în 2025 = 54.25 × 91 lei = 4.936 lei.
+- Pensia brută în 2026 = 54.25 × 91 lei = 4.936 lei.
 
 ### Tipuri de Pensii și Condiții
 Sistemul românesc reglementează patru tipuri principale de pensii:
@@ -1333,7 +1333,7 @@ Pentru pensionarii cu limită de vârstă, legea permite cumulul pensiei cu sala
 Orice cetățean poate să își creeze un cont gratuit pe portalul CNPP (Casa Națională de Pensii Publice). Acolo se poate descărca stagiul complet de cotizare începând cu anul 2001 (pentru perioadele anterioare este necesar carnetul de muncă).
 
 **4. Pensia Minimă Garantată (Indemnizația Socială)**
-Pentru persoanele cu un număr redus de puncte, dar care au totuși stagiul minim de 15 ani, statul oferă o indemnizație socială. În 2025, nivelul acesteia este de 1.281 lei. Dacă pensia calculată matematic este mai mică, statul suportă diferența.
+Pentru persoanele cu un număr redus de puncte, dar care au totuși stagiul minim de 15 ani, statul oferă o indemnizație socială. În 2026, nivelul acesteia este de 1.281 lei. Dacă pensia calculată matematic este mai mică, statul suportă diferența.
 
 ### Concluzie și Perspective
 Legislația pensiilor este un organism viu, care suferă modificări constante. Este vital ca viitorii pensionari să își analizeze din timp dosarul, să recupereze adeverințele pentru sporuri și acord global (acum luate în calcul conform noii legi) și să ia în considerare și sistemele alternative (Pilonul II obligatoriu privat și Pilonul III facultativ privat) pentru a-și securiza veniturile la bătrânețe. Sperăm ca acest ghid extensiv să vă clarifice poziția și drepturile financiare.
@@ -1342,7 +1342,7 @@ Legislația pensiilor este un organism viu, care suferă modificări constante. 
 
 
 
-## Analiză Detaliată: Impactul Inflației și a Modificărilor Legislative asupra Puterii de Cumpărare în 2025
+## Analiză Detaliată: Impactul Inflației și a Modificărilor Legislative asupra Puterii de Cumpărare în 2026
 
 Un aspect esențial, adesea trecut cu vederea în planificarea pensionării, este impactul direct al inflației asupra puterii de cumpărare pe termen lung. Deși Legea 360/2023 aduce un mecanism clar de indexare anuală a punctului de pensie (și implicit a Valorii Punctului de Referință - VPR) bazat pe rata inflației și pe creșterea câștigului salarial mediu brut, este crucial ca viitorii pensionari să înțeleagă mecanismele economice care le protejează veniturile.
 
@@ -1354,7 +1354,7 @@ De exemplu, dacă inflația anuală este de 5%, iar salariul mediu brut pe econo
 
 ### Studiu de Caz: Diferența dintre Pensia Minimă și Pensia pe Bază de Contributivitate
 
-Pentru a ilustra mai bine importanța stagiului complet de cotizare, să luăm în considerare două scenarii ipotetice la momentul pensionării în 2025:
+Pentru a ilustra mai bine importanța stagiului complet de cotizare, să luăm în considerare două scenarii ipotetice la momentul pensionării în 2026:
 
 1. **Scenariul A (Stagiu Minim de Cotizare - 15 ani):** O persoană care a lucrat exact 15 ani pe salariul minim pe economie va beneficia, cel mai probabil, de indemnizația socială pentru pensionari (pensia minimă garantată). Deși statul asigură un venit minim de subzistență, acest venit este fix și supus unor reguli stricte de indexare, limitând capacitatea pensionarului de a face față unor cheltuieli neprevăzute (de exemplu, cheltuieli medicale complexe).
 
@@ -1374,7 +1374,7 @@ Indiferent de vârsta pe care o aveți în prezent, o planificare riguroasă est
   <h3 class="text-xl font-bold text-blue-900 mb-4">Instrumente și Resurse Utile</h3>
   <p class="text-gray-700 mb-4">Pentru a vă planifica mai bine viitorul financiar, vă recomandăm să utilizați instrumentele noastre gratuite, actualizate la zi conform Legii 360/2023:</p>
   <ul class="space-y-2 list-none pl-0">
-    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/" class="text-blue-700 font-bold hover:underline">Calculator Pensie de Stat 2025</a> - Estimează-ți instant pensia lunară.</li>
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/" class="text-blue-700 font-bold hover:underline">Calculator Pensie de Stat 2026</a> - Estimează-ți instant pensia lunară.</li>
     <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-varsta-pensionare" class="text-blue-700 font-bold hover:underline">Calculator Vârstă de Pensionare</a> - Află exact anul și luna în care poți ieși la pensie.</li>
     <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-pensie-anticipata" class="text-blue-700 font-bold hover:underline">Calculator Pensie Anticipată</a> - Calculează penalizarea aplicată dacă ieși la pensie mai devreme.</li>
     <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-puncte-pensie" class="text-blue-700 font-bold hover:underline">Calculator Puncte de Stabilitate</a> - Vezi câte puncte bonus primești pentru vechimea în muncă.</li>
@@ -1388,7 +1388,7 @@ Indiferent de vârsta pe care o aveți în prezent, o planificare riguroasă est
     title: "Simulare Pensie: Instrumente și Metode de Calcul",
     excerpt: "Prezentare detaliată a instrumentelor disponibile pentru simularea pensiei și metodele cele mai precise de estimare a veniturilor viitoare.",
     category: "tipuri-pensii",
-    publishDate: "2025-05-18",
+    publishDate: "2026-05-18",
     readTime: 9,
     slug: "simulare-pensie-instrumente-metode",
     published: true,
@@ -1403,9 +1403,9 @@ Indiferent de vârsta pe care o aveți în prezent, o planificare riguroasă est
 
 
 
-## Analiză Aprofundată: Impactul Noulei Legi a Pensiilor 360/2023 (Extindere 2025)
+## Analiză Aprofundată: Impactul Noulei Legi a Pensiilor 360/2023 (Extindere 2026)
 
-Sistemul public de pensii din România traversează o perioadă de schimbări structurale profunde odată cu implementarea integrală a Legii 360/2023, care vizează o mai mare echitate și predictibilitate. Această secțiune extinsă este dedicată analizării contextului legislativ, economic și social care stă la baza calculelor și a politicilor de pensionare din 2025.
+Sistemul public de pensii din România traversează o perioadă de schimbări structurale profunde odată cu implementarea integrală a Legii 360/2023, care vizează o mai mare echitate și predictibilitate. Această secțiune extinsă este dedicată analizării contextului legislativ, economic și social care stă la baza calculelor și a politicilor de pensionare din 2026.
 
 ### Contextul Macroeconomic și Sustenabilitatea Sistemului
 Pentru a înțelege pe deplin cum funcționează pensiile în România, trebuie să privim către factorii demografici și economici. Bugetul Asigurărilor Sociale de Stat (BASS) se bazează pe principiul solidarității între generații (sistemul *pay-as-you-go*). Contribuțiile lucrătorilor activi (CAS - 25% din salariul brut, din care 20.25% merg către Pilonul I) plătesc pensiile actualilor pensionari. 
@@ -1415,7 +1415,7 @@ Pentru a înțelege pe deplin cum funcționează pensiile în România, trebuie 
 - **Egalizarea vârstei de pensionare:** Până în 2035, vârsta de pensionare pentru femei va crește treptat, atingând pragul de 65 de ani, egalizându-se astfel cu cea a bărbaților.
 
 ### Cum Se Calculează Pensia în Noul Sistem (Ghid Pas cu Pas)
-Valoarea pensiei rezultă din înmulțirea Numărului Total de Puncte cu Valoarea Punctului de Referință (VPR). În anul 2025, VPR a crescut la 91 lei (în urma indexării cu 10.4% aplicată în ianuarie).
+Valoarea pensiei rezultă din înmulțirea Numărului Total de Puncte cu Valoarea Punctului de Referință (VPR). În anul 2026, VPR a crescut la 91 lei (în urma indexării cu 10.4% aplicată în ianuarie).
 
 Numărul total de puncte este format din trei categorii majore:
 1. **Punctele de contributivitate:** Se calculează lunar, împărțind salariul brut câștigat la salariul mediu brut pe economie din luna respectivă.
@@ -1425,7 +1425,7 @@ Numărul total de puncte este format din trei categorii majore:
 *Studiu de caz:* Un pensionar cu un stagiu de cotizare de 38 de ani, cu un număr de puncte de contributivitate de 45.
 - Puncte de stabilitate: (5 ani × 0.5) + (5 ani × 0.75) + (3 ani × 1.0) = 2.5 + 3.75 + 3 = 9.25 puncte.
 - Punctaj total = 45 + 9.25 = 54.25 puncte.
-- Pensia brută în 2025 = 54.25 × 91 lei = 4.936 lei.
+- Pensia brută în 2026 = 54.25 × 91 lei = 4.936 lei.
 
 ### Tipuri de Pensii și Condiții
 Sistemul românesc reglementează patru tipuri principale de pensii:
@@ -1446,7 +1446,7 @@ Pentru pensionarii cu limită de vârstă, legea permite cumulul pensiei cu sala
 Orice cetățean poate să își creeze un cont gratuit pe portalul CNPP (Casa Națională de Pensii Publice). Acolo se poate descărca stagiul complet de cotizare începând cu anul 2001 (pentru perioadele anterioare este necesar carnetul de muncă).
 
 **4. Pensia Minimă Garantată (Indemnizația Socială)**
-Pentru persoanele cu un număr redus de puncte, dar care au totuși stagiul minim de 15 ani, statul oferă o indemnizație socială. În 2025, nivelul acesteia este de 1.281 lei. Dacă pensia calculată matematic este mai mică, statul suportă diferența.
+Pentru persoanele cu un număr redus de puncte, dar care au totuși stagiul minim de 15 ani, statul oferă o indemnizație socială. În 2026, nivelul acesteia este de 1.281 lei. Dacă pensia calculată matematic este mai mică, statul suportă diferența.
 
 ### Concluzie și Perspective
 Legislația pensiilor este un organism viu, care suferă modificări constante. Este vital ca viitorii pensionari să își analizeze din timp dosarul, să recupereze adeverințele pentru sporuri și acord global (acum luate în calcul conform noii legi) și să ia în considerare și sistemele alternative (Pilonul II obligatoriu privat și Pilonul III facultativ privat) pentru a-și securiza veniturile la bătrânețe. Sperăm ca acest ghid extensiv să vă clarifice poziția și drepturile financiare.
@@ -1455,7 +1455,7 @@ Legislația pensiilor este un organism viu, care suferă modificări constante. 
 
 
 
-## Analiză Detaliată: Impactul Inflației și a Modificărilor Legislative asupra Puterii de Cumpărare în 2025
+## Analiză Detaliată: Impactul Inflației și a Modificărilor Legislative asupra Puterii de Cumpărare în 2026
 
 Un aspect esențial, adesea trecut cu vederea în planificarea pensionării, este impactul direct al inflației asupra puterii de cumpărare pe termen lung. Deși Legea 360/2023 aduce un mecanism clar de indexare anuală a punctului de pensie (și implicit a Valorii Punctului de Referință - VPR) bazat pe rata inflației și pe creșterea câștigului salarial mediu brut, este crucial ca viitorii pensionari să înțeleagă mecanismele economice care le protejează veniturile.
 
@@ -1467,7 +1467,7 @@ De exemplu, dacă inflația anuală este de 5%, iar salariul mediu brut pe econo
 
 ### Studiu de Caz: Diferența dintre Pensia Minimă și Pensia pe Bază de Contributivitate
 
-Pentru a ilustra mai bine importanța stagiului complet de cotizare, să luăm în considerare două scenarii ipotetice la momentul pensionării în 2025:
+Pentru a ilustra mai bine importanța stagiului complet de cotizare, să luăm în considerare două scenarii ipotetice la momentul pensionării în 2026:
 
 1. **Scenariul A (Stagiu Minim de Cotizare - 15 ani):** O persoană care a lucrat exact 15 ani pe salariul minim pe economie va beneficia, cel mai probabil, de indemnizația socială pentru pensionari (pensia minimă garantată). Deși statul asigură un venit minim de subzistență, acest venit este fix și supus unor reguli stricte de indexare, limitând capacitatea pensionarului de a face față unor cheltuieli neprevăzute (de exemplu, cheltuieli medicale complexe).
 
@@ -1487,7 +1487,7 @@ Indiferent de vârsta pe care o aveți în prezent, o planificare riguroasă est
   <h3 class="text-xl font-bold text-blue-900 mb-4">Instrumente și Resurse Utile</h3>
   <p class="text-gray-700 mb-4">Pentru a vă planifica mai bine viitorul financiar, vă recomandăm să utilizați instrumentele noastre gratuite, actualizate la zi conform Legii 360/2023:</p>
   <ul class="space-y-2 list-none pl-0">
-    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/" class="text-blue-700 font-bold hover:underline">Calculator Pensie de Stat 2025</a> - Estimează-ți instant pensia lunară.</li>
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/" class="text-blue-700 font-bold hover:underline">Calculator Pensie de Stat 2026</a> - Estimează-ți instant pensia lunară.</li>
     <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-varsta-pensionare" class="text-blue-700 font-bold hover:underline">Calculator Vârstă de Pensionare</a> - Află exact anul și luna în care poți ieși la pensie.</li>
     <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-pensie-anticipata" class="text-blue-700 font-bold hover:underline">Calculator Pensie Anticipată</a> - Calculează penalizarea aplicată dacă ieși la pensie mai devreme.</li>
     <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-puncte-pensie" class="text-blue-700 font-bold hover:underline">Calculator Puncte de Stabilitate</a> - Vezi câte puncte bonus primești pentru vechimea în muncă.</li>
@@ -1498,22 +1498,22 @@ Indiferent de vârsta pe care o aveți în prezent, o planificare riguroasă est
   },
   {
     id: 13,
-    title: "Pensia Minimă Garantată în 2025: Condiții și Cuantum",
-    excerpt: "Află care este valoarea pensiei minime garantate (indemnizația socială pentru pensionari) în 2025 și cine este eligibil pentru a o primi.",
+    title: "Pensia Minimă Garantată în 2026: Condiții și Cuantum",
+    excerpt: "Află care este valoarea pensiei minime garantate (indemnizația socială pentru pensionari) în 2026 și cine este eligibil pentru a o primi.",
     category: "tipuri-pensii",
-    publishDate: "2025-04-20",
+    publishDate: "2026-04-20",
     readTime: 9,
-    slug: "pensie-minima-garantata-2025",
+    slug: "pensie-minima-garantata-2026",
     published: true,
     author: authors.elenaRadu,
     image: "https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=480",
     content: `
 <p>Indemnizația socială pentru pensionari, cunoscută public sub denumirea de <strong>pensie minimă garantată</strong>, este un sprijin social critic oferit de statul român. Scopul său este de a asigura un nivel de trai minim decent pentru toți pensionarii din sistemul public de pensii ale căror contribuții pe parcursul vieții active nu ating pragul social stabilit prin lege.</p>
 
-<p>Odată cu intrarea în vigoare a noii legi a pensiilor, <strong>Legea nr. 360/2023</strong>, aplicabilă pe deplin în 2025 și 2026, sistemul public de pensii a suferit transformări majore. Totuși, mecanismul de protecție a pensiei minime a rămas un pilon de stabilitate pentru sute de mii de beneficiari. În acest ghid complet, vom analiza în detaliu valoarea pensiei minime în 2025, condițiile de eligibilitate, modul în care se calculează diferența plătită de la bugetul de stat și noutățile legislative aduse de reforma sistemului public.</p>
+<p>Odată cu intrarea în vigoare a noii legi a pensiilor, <strong>Legea nr. 360/2023</strong>, aplicabilă pe deplin în 2026 și 2026, sistemul public de pensii a suferit transformări majore. Totuși, mecanismul de protecție a pensiei minime a rămas un pilon de stabilitate pentru sute de mii de beneficiari. În acest ghid complet, vom analiza în detaliu valoarea pensiei minime în 2026, condițiile de eligibilitate, modul în care se calculează diferența plătită de la bugetul de stat și noutățile legislative aduse de reforma sistemului public.</p>
 
-<h3>Valoarea Pensiei Minime în 2025 și Istoricul Creșterilor</h3>
-<p>Începând cu 1 ianuarie 2025, cuantumul pensiei minime garantate în România este stabilit oficial la valoarea de <strong>1.281 Lei</strong> pe lună. Această valoare a fost menținută la nivelul stabilit prin reglementări guvernamentale anterioare pentru a asigura un echilibru între sustenabilitatea bugetară și protecția categoriilor vulnerabile de pensionari împotriva inflației crescute din ultimii ani.</p>
+<h3>Valoarea Pensiei Minime în 2026 și Istoricul Creșterilor</h3>
+<p>Începând cu 1 ianuarie 2026, cuantumul pensiei minime garantate în România este stabilit oficial la valoarea de <strong>1.281 Lei</strong> pe lună. Această valoare a fost menținută la nivelul stabilit prin reglementări guvernamentale anterioare pentru a asigura un echilibru între sustenabilitatea bugetară și protecția categoriilor vulnerabile de pensionari împotriva inflației crescute din ultimii ani.</p>
 
 <p>Pentru a înțelege evoluția acestui indicator social în ultimii ani, vă prezentăm tabelul de mai jos:</p>
 
@@ -1559,7 +1559,7 @@ Indiferent de vârsta pe care o aveți în prezent, o planificare riguroasă est
         <td className="border p-2">OUG 115/2023</td>
       </tr>
       <tr class="bg-blue-50">
-        <td className="border p-2 font-bold">2025</td>
+        <td className="border p-2 font-bold">2026</td>
         <td className="border p-2 font-bold">1.281 Lei</td>
         <td className="border p-2">0.0% (Menținut)</td>
         <td className="border p-2">Legea Bugetului / OUG</td>
@@ -1573,7 +1573,7 @@ Indiferent de vârsta pe care o aveți în prezent, o planificare riguroasă est
 
 <p>În momentul pensionării sau al recalculării, Casa de Pensii urmează următorul flux:</p>
 <ol class="list-decimal ml-6 space-y-2 text-sm text-gray-700">
-  <li>Se calculează pensia pe baza contributivității reale: se înmulțește numărul total de puncte acumulate (puncte de contributivitate, asimilate și stabilitate) cu Valoarea Punctului de Referință (VPR = 91 Lei în 2025).</li>
+  <li>Se calculează pensia pe baza contributivității reale: se înmulțește numărul total de puncte acumulate (puncte de contributivitate, asimilate și stabilitate) cu Valoarea Punctului de Referință (VPR = 91 Lei în 2026).</li>
   <li>Dacă rezultatul este mai mare sau egal cu 1.281 Lei, pensionarul va primi suma rezultată din calculul contributiv.</li>
   <li>Dacă rezultatul este mai mic de 1.281 Lei (de exemplu, 950 Lei), statul intervine și plătește o diferență numită <strong>indemnizație socială</strong> (în valoare de 331 Lei în acest exemplu). Suma finală primită va fi de exact 1.281 Lei.</li>
 </ol>
@@ -1587,7 +1587,7 @@ Indiferent de vârsta pe care o aveți în prezent, o planificare riguroasă est
   </p>
 </div>
 
-<h3>Cine are dreptul la pensia minimă garantată în 2025?</h3>
+<h3>Cine are dreptul la pensia minimă garantată în 2026?</h3>
 <p>Pentru a beneficia de acoperirea automată până la plafonul minim de 1.281 Lei, solicitantul trebuie să îndeplinească cumulativ următoarele criterii legale stabilite de Legea 360/2023:</p>
 <ul class="list-disc ml-6 space-y-2 text-gray-700">
   <li>Să aibă calitatea oficială de pensionar în sistemul unitar public de pensii (indiferent că este vorba despre pensie pentru limită de vârstă, pensie de invaliditate sau pensie de urmaș);</li>
@@ -1614,7 +1614,7 @@ Indiferent de vârsta pe care o aveți în prezent, o planificare riguroasă est
 <h3>Facilități auxiliare și drepturi suplimentare pentru beneficiarii pensiei minime</h3>
 <p>Statutul de beneficiar al pensiei minime garantate atrage după sine o serie de drepturi și gratuități menite să completeze veniturile reduse ale pensionarilor și să le asigure un trai mai bun:</p>
 <ul class="list-disc ml-6 space-y-2 text-gray-700">
-  <li><strong>Rețete de medicamente compensate cu 90%:</strong> Pensionarii cu venituri din pensii de până la 1.830 Lei pe lună (plafon valabil în 2025) beneficiază de o compensare de 90% pentru medicamentele din sublista B prevăzută de Contractul-Cadru al CNAS, indiferent dacă pensia lor este una de limită de vârstă sau invaliditate.</li>
+  <li><strong>Rețete de medicamente compensate cu 90%:</strong> Pensionarii cu venituri din pensii de până la 1.830 Lei pe lună (plafon valabil în 2026) beneficiază de o compensare de 90% pentru medicamentele din sublista B prevăzută de Contractul-Cadru al CNAS, indiferent dacă pensia lor este una de limită de vârstă sau invaliditate.</li>
   <li><strong>Călătorii gratuite sau reduse pe calea ferată (CFR):</strong> Conform legii, pensionarii din sistemul public beneficiază anual de 6 călătorii simple cu reducere de 50% din tariful biletelor la trenurile Regio și InterRegio. În cazul pensionarilor de invaliditate Gradul I, aceștia (și însoțitorii lor) beneficiază de gratuitate totală conform reglementărilor privind protecția persoanelor cu dizabilități.</li>
   <li><strong>Ajutoare de încălzire în sezonul rece:</strong> Beneficiarii pensiei minime pot solicita primăriilor de domiciliu subvenții pentru încălzirea locuinței în perioada noiembrie - martie, fiind încadrați în cele mai favorabile grile de sprijin financiar din cauza nivelului scăzut al veniturilor declarate.</li>
 </ul>
@@ -1624,12 +1624,12 @@ Indiferent de vârsta pe care o aveți în prezent, o planificare riguroasă est
 <p>La împlinirea vârstei de 65 de ani, domnul Vasile trece din oficiu de la pensia de invaliditate la pensia pentru limită de vârstă. Deoarece stagiul său de cotizare este de 18 ani (peste minimul de 15 ani), el este eligibil pentru pensia de limită de vârstă. Casa Teritorială de Pensii efectuează recalcularea dosarului. Deoarece nu a mai lucrat după pensionarea de invaliditate, numărul său de puncte de pensie rămâne neschimbat. Astfel, pensia contributivă recalculată este tot de 720 Lei. Domnul Vasile va continua să primească în plată tot suma de 1.281 Lei, trecerea la limita de vârstă asigurându-i stabilitatea acestui venit minim pe viață, fără obligativitatea revizuirilor medicale periodice.</p>
 
 <h3>Impactul noii Legi 360/2023 asupra Pensiilor Minime</h3>
-<p>Recalcularea generală a pensiilor finalizată în septembrie 2024 a modificat dosarele a peste 4,6 milioane de pensionari. Noua formula bazată pe VPR (Valoarea Punctului de Referință = 91 Lei în 2025) a determinat noi punctaje contributive. Pentru unii pensionari aflați în plată cu pensia minimă, recalcularea a arătat o valoare contributivă reală și mai mică decât cea anterioară. Datorită garanțiilor legislative, **nicio pensie nu a scăzut**, aceștia rămânând în plată cu valoarea minimă garantată de 1.281 Lei.</p>
+<p>Recalcularea generală a pensiilor finalizată în septembrie 2024 a modificat dosarele a peste 4,6 milioane de pensionari. Noua formula bazată pe VPR (Valoarea Punctului de Referință = 91 Lei în 2026) a determinat noi punctaje contributive. Pentru unii pensionari aflați în plată cu pensia minimă, recalcularea a arătat o valoare contributivă reală și mai mică decât cea anterioară. Datorită garanțiilor legislative, **nicio pensie nu a scăzut**, aceștia rămânând în plată cu valoarea minimă garantată de 1.281 Lei.</p>
 
 <p>În schimb, pentru pensionarii cu stagii de cotizare lungi (peste 25-30 de ani) care aveau pensia minimă, adăugarea punctelor de stabilitate (fidelitate) le-a permis să depășească plafonul de 1.281 Lei și să încaseze pensii contributive reale semnificativ mai mari.</p>
 
 <h3>Impozitarea și Contribuțiile de Sănătate</h3>
-<p>Conform reglementărilor din Codul Fiscal român actualizate pentru anul 2025, veniturile lunare din pensii sunt scutite complet de impozitul pe venit de 10% pentru sumele ce nu depășesc pragul de <strong>3.000 Lei</strong> net. Deoarece pensia minimă garantată este de 1.281 Lei, aceasta se situează cu mult sub pragul de impozitare. Prin urmare, <strong>pensionarii care primesc pensia minimă nu plătesc niciun fel de impozit pe venit și nicio contribuție la asigurările sociale de sănătate (CASS)</strong>, suma primită fiind 100% netă.</p>
+<p>Conform reglementărilor din Codul Fiscal român actualizate pentru anul 2026, veniturile lunare din pensii sunt scutite complet de impozitul pe venit de 10% pentru sumele ce nu depășesc pragul de <strong>3.000 Lei</strong> net. Deoarece pensia minimă garantată este de 1.281 Lei, aceasta se situează cu mult sub pragul de impozitare. Prin urmare, <strong>pensionarii care primesc pensia minimă nu plătesc niciun fel de impozit pe venit și nicio contribuție la asigurările sociale de sănătate (CASS)</strong>, suma primită fiind 100% netă.</p>
 
 <h3>Întrebări Frecvente (FAQ)</h3>
 <div class="space-y-4 my-6">
@@ -1671,7 +1671,7 @@ Indiferent de vârsta pe care o aveți în prezent, o planificare riguroasă est
 
 
 
-## Analiză Detaliată: Impactul Inflației și a Modificărilor Legislative asupra Puterii de Cumpărare în 2025
+## Analiză Detaliată: Impactul Inflației și a Modificărilor Legislative asupra Puterii de Cumpărare în 2026
 
 Un aspect esențial, adesea trecut cu vederea în planificarea pensionării, este impactul direct al inflației asupra puterii de cumpărare pe termen lung. Deși Legea 360/2023 aduce un mecanism clar de indexare anuală a punctului de pensie (și implicit a Valorii Punctului de Referință - VPR) bazat pe rata inflației și pe creșterea câștigului salarial mediu brut, este crucial ca viitorii pensionari să înțeleagă mecanismele economice care le protejează veniturile.
 
@@ -1683,7 +1683,7 @@ De exemplu, dacă inflația anuală este de 5%, iar salariul mediu brut pe econo
 
 ### Studiu de Caz: Diferența dintre Pensia Minimă și Pensia pe Bază de Contributivitate
 
-Pentru a ilustra mai bine importanța stagiului complet de cotizare, să luăm în considerare două scenarii ipotetice la momentul pensionării în 2025:
+Pentru a ilustra mai bine importanța stagiului complet de cotizare, să luăm în considerare două scenarii ipotetice la momentul pensionării în 2026:
 
 1. **Scenariul A (Stagiu Minim de Cotizare - 15 ani):** O persoană care a lucrat exact 15 ani pe salariul minim pe economie va beneficia, cel mai probabil, de indemnizația socială pentru pensionari (pensia minimă garantată). Deși statul asigură un venit minim de subzistență, acest venit este fix și supus unor reguli stricte de indexare, limitând capacitatea pensionarului de a face față unor cheltuieli neprevăzute (de exemplu, cheltuieli medicale complexe).
 
@@ -1703,7 +1703,7 @@ Indiferent de vârsta pe care o aveți în prezent, o planificare riguroasă est
   <h3 class="text-xl font-bold text-blue-900 mb-4">Instrumente și Resurse Utile</h3>
   <p class="text-gray-700 mb-4">Pentru a vă planifica mai bine viitorul financiar, vă recomandăm să utilizați instrumentele noastre gratuite, actualizate la zi conform Legii 360/2023:</p>
   <ul class="space-y-2 list-none pl-0">
-    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/" class="text-blue-700 font-bold hover:underline">Calculator Pensie de Stat 2025</a> - Estimează-ți instant pensia lunară.</li>
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/" class="text-blue-700 font-bold hover:underline">Calculator Pensie de Stat 2026</a> - Estimează-ți instant pensia lunară.</li>
     <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-varsta-pensionare" class="text-blue-700 font-bold hover:underline">Calculator Vârstă de Pensionare</a> - Află exact anul și luna în care poți ieși la pensie.</li>
     <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-pensie-anticipata" class="text-blue-700 font-bold hover:underline">Calculator Pensie Anticipată</a> - Calculează penalizarea aplicată dacă ieși la pensie mai devreme.</li>
     <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-puncte-pensie" class="text-blue-700 font-bold hover:underline">Calculator Puncte de Stabilitate</a> - Vezi câte puncte bonus primești pentru vechimea în muncă.</li>
@@ -1715,8 +1715,8 @@ Indiferent de vârsta pe care o aveți în prezent, o planificare riguroasă est
   },
   {
     id: 14,
-    title: "Cum se Calculează Punctul de Referință (VPR) în 2025",
-    excerpt: "Înțelege în detaliu mecanismul de calcul al Valorii Punctului de Referință (VPR) stabilit la 91 lei în 2025 conform noilor reglementări legislative.",
+    title: "Cum se Calculează Punctul de Referință (VPR) în 2026",
+    excerpt: "Înțelege în detaliu mecanismul de calcul al Valorii Punctului de Referință (VPR) stabilit la 91 lei în 2026 conform noilor reglementări legislative.",
     category: "legislatie",
     publishDate: "2026-05-02",
     readTime: 11,
@@ -1725,7 +1725,7 @@ Indiferent de vârsta pe care o aveți în prezent, o planificare riguroasă est
     author: authors.alexandruPopescu,
     image: "https://images.unsplash.com/photo-1554224155-6f9664d00d2f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=480",
     content: `
-<p>Noua reformă a pensiilor din România, guvernată de Legea nr. 360/2023, a introdus un concept fundamental în algoritmul de calcul al drepturilor bănești: <strong>Valoarea Punctului de Referință (VPR)</strong>. În 2025, valoarea VPR este fixată la nivelul de <strong>91 Lei</strong>.</p>
+<p>Noua reformă a pensiilor din România, guvernată de Legea nr. 360/2023, a introdus un concept fundamental în algoritmul de calcul al drepturilor bănești: <strong>Valoarea Punctului de Referință (VPR)</strong>. În 2026, valoarea VPR este fixată la nivelul de <strong>91 Lei</strong>.</p>
 
 <h3>Formula de determinare a VPR</h3>
 <p>Valoarea punctului de referință este un indicator matematic dedus direct prin raportarea Valorii Punctului de Pensie la stagiul de cotizare mediu prevăzut de legislația anterioară (25 de ani):</p>
@@ -1733,11 +1733,11 @@ Indiferent de vârsta pe care o aveți în prezent, o planificare riguroasă est
 <div class="bg-slate-50 p-4 rounded-lg my-6 border border-slate-200">
   <p class="font-bold text-slate-900">Formula de calcul a VPR:</p>
   <p class="font-mono text-lg text-blue-700 font-bold">VPR = Valoarea Punctului de Pensie / 25</p>
-  <p class="text-xs text-slate-600 mt-2">Pentru 2025: VPR = 2.031 Lei / 25 = 81,24 Lei (rotunjit prin decizie specială guvernamentală la 91 Lei în avantajul pensionarilor)</p>
+  <p class="text-xs text-slate-600 mt-2">Pentru 2026: VPR = 2.031 Lei / 25 = 81,24 Lei (rotunjit prin decizie specială guvernamentală la 91 Lei în avantajul pensionarilor)</p>
 </div>
 
 <h3>Cum se utilizează VPR în formula finală de calcul?</h3>
-<p>Pentru a stabili cuantumul brut al pensiei lunare pentru limită de vârstă, numărul total de puncte acumulate de asigurat pe parcursul activității se înmulțește cu Valoarea Punctului de Referință (91 Lei în 2025):</p>
+<p>Pentru a stabili cuantumul brut al pensiei lunare pentru limită de vârstă, numărul total de puncte acumulate de asigurat pe parcursul activității se înmulțește cu Valoarea Punctului de Referință (91 Lei în 2026):</p>
 
 <div class="bg-blue-50 p-4 rounded-lg my-6 border border-blue-200">
   <p class="font-mono text-lg text-blue-800 font-bold">Pensia Brută = Număr Total Puncte × VPR (91 Lei)</p>
@@ -1749,9 +1749,9 @@ Indiferent de vârsta pe care o aveți în prezent, o planificare riguroasă est
 
 
 
-## Analiză Aprofundată: Impactul Noulei Legi a Pensiilor 360/2023 (Extindere 2025)
+## Analiză Aprofundată: Impactul Noulei Legi a Pensiilor 360/2023 (Extindere 2026)
 
-Sistemul public de pensii din România traversează o perioadă de schimbări structurale profunde odată cu implementarea integrală a Legii 360/2023, care vizează o mai mare echitate și predictibilitate. Această secțiune extinsă este dedicată analizării contextului legislativ, economic și social care stă la baza calculelor și a politicilor de pensionare din 2025.
+Sistemul public de pensii din România traversează o perioadă de schimbări structurale profunde odată cu implementarea integrală a Legii 360/2023, care vizează o mai mare echitate și predictibilitate. Această secțiune extinsă este dedicată analizării contextului legislativ, economic și social care stă la baza calculelor și a politicilor de pensionare din 2026.
 
 ### Contextul Macroeconomic și Sustenabilitatea Sistemului
 Pentru a înțelege pe deplin cum funcționează pensiile în România, trebuie să privim către factorii demografici și economici. Bugetul Asigurărilor Sociale de Stat (BASS) se bazează pe principiul solidarității între generații (sistemul *pay-as-you-go*). Contribuțiile lucrătorilor activi (CAS - 25% din salariul brut, din care 20.25% merg către Pilonul I) plătesc pensiile actualilor pensionari. 
@@ -1761,7 +1761,7 @@ Pentru a înțelege pe deplin cum funcționează pensiile în România, trebuie 
 - **Egalizarea vârstei de pensionare:** Până în 2035, vârsta de pensionare pentru femei va crește treptat, atingând pragul de 65 de ani, egalizându-se astfel cu cea a bărbaților.
 
 ### Cum Se Calculează Pensia în Noul Sistem (Ghid Pas cu Pas)
-Valoarea pensiei rezultă din înmulțirea Numărului Total de Puncte cu Valoarea Punctului de Referință (VPR). În anul 2025, VPR a crescut la 91 lei (în urma indexării cu 10.4% aplicată în ianuarie).
+Valoarea pensiei rezultă din înmulțirea Numărului Total de Puncte cu Valoarea Punctului de Referință (VPR). În anul 2026, VPR a crescut la 91 lei (în urma indexării cu 10.4% aplicată în ianuarie).
 
 Numărul total de puncte este format din trei categorii majore:
 1. **Punctele de contributivitate:** Se calculează lunar, împărțind salariul brut câștigat la salariul mediu brut pe economie din luna respectivă.
@@ -1771,7 +1771,7 @@ Numărul total de puncte este format din trei categorii majore:
 *Studiu de caz:* Un pensionar cu un stagiu de cotizare de 38 de ani, cu un număr de puncte de contributivitate de 45.
 - Puncte de stabilitate: (5 ani × 0.5) + (5 ani × 0.75) + (3 ani × 1.0) = 2.5 + 3.75 + 3 = 9.25 puncte.
 - Punctaj total = 45 + 9.25 = 54.25 puncte.
-- Pensia brută în 2025 = 54.25 × 91 lei = 4.936 lei.
+- Pensia brută în 2026 = 54.25 × 91 lei = 4.936 lei.
 
 ### Tipuri de Pensii și Condiții
 Sistemul românesc reglementează patru tipuri principale de pensii:
@@ -1792,7 +1792,7 @@ Pentru pensionarii cu limită de vârstă, legea permite cumulul pensiei cu sala
 Orice cetățean poate să își creeze un cont gratuit pe portalul CNPP (Casa Națională de Pensii Publice). Acolo se poate descărca stagiul complet de cotizare începând cu anul 2001 (pentru perioadele anterioare este necesar carnetul de muncă).
 
 **4. Pensia Minimă Garantată (Indemnizația Socială)**
-Pentru persoanele cu un număr redus de puncte, dar care au totuși stagiul minim de 15 ani, statul oferă o indemnizație socială. În 2025, nivelul acesteia este de 1.281 lei. Dacă pensia calculată matematic este mai mică, statul suportă diferența.
+Pentru persoanele cu un număr redus de puncte, dar care au totuși stagiul minim de 15 ani, statul oferă o indemnizație socială. În 2026, nivelul acesteia este de 1.281 lei. Dacă pensia calculată matematic este mai mică, statul suportă diferența.
 
 ### Concluzie și Perspective
 Legislația pensiilor este un organism viu, care suferă modificări constante. Este vital ca viitorii pensionari să își analizeze din timp dosarul, să recupereze adeverințele pentru sporuri și acord global (acum luate în calcul conform noii legi) și să ia în considerare și sistemele alternative (Pilonul II obligatoriu privat și Pilonul III facultativ privat) pentru a-și securiza veniturile la bătrânețe. Sperăm ca acest ghid extensiv să vă clarifice poziția și drepturile financiare.
@@ -1801,7 +1801,7 @@ Legislația pensiilor este un organism viu, care suferă modificări constante. 
 
 
 
-## Analiză Detaliată: Impactul Inflației și a Modificărilor Legislative asupra Puterii de Cumpărare în 2025
+## Analiză Detaliată: Impactul Inflației și a Modificărilor Legislative asupra Puterii de Cumpărare în 2026
 
 Un aspect esențial, adesea trecut cu vederea în planificarea pensionării, este impactul direct al inflației asupra puterii de cumpărare pe termen lung. Deși Legea 360/2023 aduce un mecanism clar de indexare anuală a punctului de pensie (și implicit a Valorii Punctului de Referință - VPR) bazat pe rata inflației și pe creșterea câștigului salarial mediu brut, este crucial ca viitorii pensionari să înțeleagă mecanismele economice care le protejează veniturile.
 
@@ -1813,7 +1813,7 @@ De exemplu, dacă inflația anuală este de 5%, iar salariul mediu brut pe econo
 
 ### Studiu de Caz: Diferența dintre Pensia Minimă și Pensia pe Bază de Contributivitate
 
-Pentru a ilustra mai bine importanța stagiului complet de cotizare, să luăm în considerare două scenarii ipotetice la momentul pensionării în 2025:
+Pentru a ilustra mai bine importanța stagiului complet de cotizare, să luăm în considerare două scenarii ipotetice la momentul pensionării în 2026:
 
 1. **Scenariul A (Stagiu Minim de Cotizare - 15 ani):** O persoană care a lucrat exact 15 ani pe salariul minim pe economie va beneficia, cel mai probabil, de indemnizația socială pentru pensionari (pensia minimă garantată). Deși statul asigură un venit minim de subzistență, acest venit este fix și supus unor reguli stricte de indexare, limitând capacitatea pensionarului de a face față unor cheltuieli neprevăzute (de exemplu, cheltuieli medicale complexe).
 
@@ -1833,7 +1833,7 @@ Indiferent de vârsta pe care o aveți în prezent, o planificare riguroasă est
   <h3 class="text-xl font-bold text-blue-900 mb-4">Instrumente și Resurse Utile</h3>
   <p class="text-gray-700 mb-4">Pentru a vă planifica mai bine viitorul financiar, vă recomandăm să utilizați instrumentele noastre gratuite, actualizate la zi conform Legii 360/2023:</p>
   <ul class="space-y-2 list-none pl-0">
-    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/" class="text-blue-700 font-bold hover:underline">Calculator Pensie de Stat 2025</a> - Estimează-ți instant pensia lunară.</li>
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/" class="text-blue-700 font-bold hover:underline">Calculator Pensie de Stat 2026</a> - Estimează-ți instant pensia lunară.</li>
     <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-varsta-pensionare" class="text-blue-700 font-bold hover:underline">Calculator Vârstă de Pensionare</a> - Află exact anul și luna în care poți ieși la pensie.</li>
     <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-pensie-anticipata" class="text-blue-700 font-bold hover:underline">Calculator Pensie Anticipată</a> - Calculează penalizarea aplicată dacă ieși la pensie mai devreme.</li>
     <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-puncte-pensie" class="text-blue-700 font-bold hover:underline">Calculator Puncte de Stabilitate</a> - Vezi câte puncte bonus primești pentru vechimea în muncă.</li>
@@ -1844,12 +1844,12 @@ Indiferent de vârsta pe care o aveți în prezent, o planificare riguroasă est
   },
   {
     id: 15,
-    title: "Ghid Complet pentru Pensia de Invaliditate în 2025",
+    title: "Ghid Complet pentru Pensia de Invaliditate în 2026",
     excerpt: "Care sunt noile criterii de evaluare medicală, gradele de invaliditate și cuantumul indemnizațiilor de însoțitor valabile în acest an.",
     category: "tipuri-pensii",
-    publishDate: "2025-03-10",
+    publishDate: "2026-03-10",
     readTime: 10,
-    slug: "ghid-pensie-invaliditate-2025",
+    slug: "ghid-pensie-invaliditate-2026",
     published: true,
     author: authors.alexandruPopescu,
     image: "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=480",
@@ -1864,16 +1864,16 @@ Indiferent de vârsta pe care o aveți în prezent, o planificare riguroasă est
   <li><strong>Gradul III:</strong> Caracterizat prin pierderea a cel puțin jumătate din capacitatea de muncă, persoana putând să presteze o activitate profesională cu program redus.</li>
 </ul>
 
-<h3>Indemnizația de însoțitor în 2025</h3>
-<p>Pensionarii încadrați în Gradul I de invaliditate au dreptul legal, pe lângă pensia propriu-zisă, la o **indemnizație lunară pentru însoțitor**. În 2025, această indemnizație reprezintă exact 80% din valoarea unui punct de pensie, echivalentul a **1.625 Lei** lunar.</p>
+<h3>Indemnizația de însoțitor în 2026</h3>
+<p>Pensionarii încadrați în Gradul I de invaliditate au dreptul legal, pe lângă pensia propriu-zisă, la o **indemnizație lunară pentru însoțitor**. În 2026, această indemnizație reprezintă exact 80% din valoarea unui punct de pensie, echivalentul a **1.625 Lei** lunar.</p>
 
 <p>Expertiza medicală se realizează de către medicii specializați din subordinea CNPP. Pentru a afla lista unităților și documentele medicale necesare depunerii dosarului, vizitați secțiunea dedicată de pe portalul <a href="https://www.cnpp.ro" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline font-semibold">CNPP</a>. Textul legislativ complet privind asistența socială și gradele de expertiză poate fi citit pe <a href="https://legislatie.just.ro" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline font-semibold">Just.ro</a>.</p>
 
 
 
-## Analiză Aprofundată: Impactul Noulei Legi a Pensiilor 360/2023 (Extindere 2025)
+## Analiză Aprofundată: Impactul Noulei Legi a Pensiilor 360/2023 (Extindere 2026)
 
-Sistemul public de pensii din România traversează o perioadă de schimbări structurale profunde odată cu implementarea integrală a Legii 360/2023, care vizează o mai mare echitate și predictibilitate. Această secțiune extinsă este dedicată analizării contextului legislativ, economic și social care stă la baza calculelor și a politicilor de pensionare din 2025.
+Sistemul public de pensii din România traversează o perioadă de schimbări structurale profunde odată cu implementarea integrală a Legii 360/2023, care vizează o mai mare echitate și predictibilitate. Această secțiune extinsă este dedicată analizării contextului legislativ, economic și social care stă la baza calculelor și a politicilor de pensionare din 2026.
 
 ### Contextul Macroeconomic și Sustenabilitatea Sistemului
 Pentru a înțelege pe deplin cum funcționează pensiile în România, trebuie să privim către factorii demografici și economici. Bugetul Asigurărilor Sociale de Stat (BASS) se bazează pe principiul solidarității între generații (sistemul *pay-as-you-go*). Contribuțiile lucrătorilor activi (CAS - 25% din salariul brut, din care 20.25% merg către Pilonul I) plătesc pensiile actualilor pensionari. 
@@ -1883,7 +1883,7 @@ Pentru a înțelege pe deplin cum funcționează pensiile în România, trebuie 
 - **Egalizarea vârstei de pensionare:** Până în 2035, vârsta de pensionare pentru femei va crește treptat, atingând pragul de 65 de ani, egalizându-se astfel cu cea a bărbaților.
 
 ### Cum Se Calculează Pensia în Noul Sistem (Ghid Pas cu Pas)
-Valoarea pensiei rezultă din înmulțirea Numărului Total de Puncte cu Valoarea Punctului de Referință (VPR). În anul 2025, VPR a crescut la 91 lei (în urma indexării cu 10.4% aplicată în ianuarie).
+Valoarea pensiei rezultă din înmulțirea Numărului Total de Puncte cu Valoarea Punctului de Referință (VPR). În anul 2026, VPR a crescut la 91 lei (în urma indexării cu 10.4% aplicată în ianuarie).
 
 Numărul total de puncte este format din trei categorii majore:
 1. **Punctele de contributivitate:** Se calculează lunar, împărțind salariul brut câștigat la salariul mediu brut pe economie din luna respectivă.
@@ -1893,7 +1893,7 @@ Numărul total de puncte este format din trei categorii majore:
 *Studiu de caz:* Un pensionar cu un stagiu de cotizare de 38 de ani, cu un număr de puncte de contributivitate de 45.
 - Puncte de stabilitate: (5 ani × 0.5) + (5 ani × 0.75) + (3 ani × 1.0) = 2.5 + 3.75 + 3 = 9.25 puncte.
 - Punctaj total = 45 + 9.25 = 54.25 puncte.
-- Pensia brută în 2025 = 54.25 × 91 lei = 4.936 lei.
+- Pensia brută în 2026 = 54.25 × 91 lei = 4.936 lei.
 
 ### Tipuri de Pensii și Condiții
 Sistemul românesc reglementează patru tipuri principale de pensii:
@@ -1914,7 +1914,7 @@ Pentru pensionarii cu limită de vârstă, legea permite cumulul pensiei cu sala
 Orice cetățean poate să își creeze un cont gratuit pe portalul CNPP (Casa Națională de Pensii Publice). Acolo se poate descărca stagiul complet de cotizare începând cu anul 2001 (pentru perioadele anterioare este necesar carnetul de muncă).
 
 **4. Pensia Minimă Garantată (Indemnizația Socială)**
-Pentru persoanele cu un număr redus de puncte, dar care au totuși stagiul minim de 15 ani, statul oferă o indemnizație socială. În 2025, nivelul acesteia este de 1.281 lei. Dacă pensia calculată matematic este mai mică, statul suportă diferența.
+Pentru persoanele cu un număr redus de puncte, dar care au totuși stagiul minim de 15 ani, statul oferă o indemnizație socială. În 2026, nivelul acesteia este de 1.281 lei. Dacă pensia calculată matematic este mai mică, statul suportă diferența.
 
 ### Concluzie și Perspective
 Legislația pensiilor este un organism viu, care suferă modificări constante. Este vital ca viitorii pensionari să își analizeze din timp dosarul, să recupereze adeverințele pentru sporuri și acord global (acum luate în calcul conform noii legi) și să ia în considerare și sistemele alternative (Pilonul II obligatoriu privat și Pilonul III facultativ privat) pentru a-și securiza veniturile la bătrânețe. Sperăm ca acest ghid extensiv să vă clarifice poziția și drepturile financiare.
@@ -1923,7 +1923,7 @@ Legislația pensiilor este un organism viu, care suferă modificări constante. 
 
 
 
-## Analiză Detaliată: Impactul Inflației și a Modificărilor Legislative asupra Puterii de Cumpărare în 2025
+## Analiză Detaliată: Impactul Inflației și a Modificărilor Legislative asupra Puterii de Cumpărare în 2026
 
 Un aspect esențial, adesea trecut cu vederea în planificarea pensionării, este impactul direct al inflației asupra puterii de cumpărare pe termen lung. Deși Legea 360/2023 aduce un mecanism clar de indexare anuală a punctului de pensie (și implicit a Valorii Punctului de Referință - VPR) bazat pe rata inflației și pe creșterea câștigului salarial mediu brut, este crucial ca viitorii pensionari să înțeleagă mecanismele economice care le protejează veniturile.
 
@@ -1935,7 +1935,7 @@ De exemplu, dacă inflația anuală este de 5%, iar salariul mediu brut pe econo
 
 ### Studiu de Caz: Diferența dintre Pensia Minimă și Pensia pe Bază de Contributivitate
 
-Pentru a ilustra mai bine importanța stagiului complet de cotizare, să luăm în considerare două scenarii ipotetice la momentul pensionării în 2025:
+Pentru a ilustra mai bine importanța stagiului complet de cotizare, să luăm în considerare două scenarii ipotetice la momentul pensionării în 2026:
 
 1. **Scenariul A (Stagiu Minim de Cotizare - 15 ani):** O persoană care a lucrat exact 15 ani pe salariul minim pe economie va beneficia, cel mai probabil, de indemnizația socială pentru pensionari (pensia minimă garantată). Deși statul asigură un venit minim de subzistență, acest venit este fix și supus unor reguli stricte de indexare, limitând capacitatea pensionarului de a face față unor cheltuieli neprevăzute (de exemplu, cheltuieli medicale complexe).
 
@@ -1955,7 +1955,7 @@ Indiferent de vârsta pe care o aveți în prezent, o planificare riguroasă est
   <h3 class="text-xl font-bold text-blue-900 mb-4">Instrumente și Resurse Utile</h3>
   <p class="text-gray-700 mb-4">Pentru a vă planifica mai bine viitorul financiar, vă recomandăm să utilizați instrumentele noastre gratuite, actualizate la zi conform Legii 360/2023:</p>
   <ul class="space-y-2 list-none pl-0">
-    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/" class="text-blue-700 font-bold hover:underline">Calculator Pensie de Stat 2025</a> - Estimează-ți instant pensia lunară.</li>
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/" class="text-blue-700 font-bold hover:underline">Calculator Pensie de Stat 2026</a> - Estimează-ți instant pensia lunară.</li>
     <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-varsta-pensionare" class="text-blue-700 font-bold hover:underline">Calculator Vârstă de Pensionare</a> - Află exact anul și luna în care poți ieși la pensie.</li>
     <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-pensie-anticipata" class="text-blue-700 font-bold hover:underline">Calculator Pensie Anticipată</a> - Calculează penalizarea aplicată dacă ieși la pensie mai devreme.</li>
     <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-puncte-pensie" class="text-blue-700 font-bold hover:underline">Calculator Puncte de Stabilitate</a> - Vezi câte puncte bonus primești pentru vechimea în muncă.</li>
@@ -1966,12 +1966,12 @@ Indiferent de vârsta pe care o aveți în prezent, o planificare riguroasă est
   },
   {
     id: 16,
-    title: "Cum și Când Se Indexează Pensiile în 2025 și 2026",
+    title: "Cum și Când Se Indexează Pensiile în 2026 și 2026",
     excerpt: "Înțelege mecanismul automat de indexare al pensiilor din România, corelația cu rata inflației și creșterea salariului mediu brut.",
     category: "legislatie",
     publishDate: "2026-02-10",
     readTime: 8,
-    slug: "indexare-pensii-2025-2026",
+    slug: "indexare-pensii-2026-2026",
     published: true,
     author: authors.elenaRadu,
     image: "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=480",
@@ -1992,15 +1992,15 @@ Indiferent de vârsta pe care o aveți în prezent, o planificare riguroasă est
   <p class="text-xs text-slate-600 mb-0">Unde indicatorii sunt stabiliți pe baza anului calendaristic anterior, finalizați și validați de INS și Comisia Națională de Prognoză.</p>
 </div>
 
-<h3>Indexarea aplicată în anul 2025</h3>
-<p>În luna ianuarie 2025, aplicarea acestei formule de indexare a adus o majorare semnificativă de **12,1%** a valorilor de referință. Astfel:</p>
+<h3>Indexarea aplicată în anul 2026</h3>
+<p>În luna ianuarie 2026, aplicarea acestei formule de indexare a adus o majorare semnificativă de **12,1%** a valorilor de referință. Astfel:</p>
 <ul class="list-disc ml-6 space-y-1 text-slate-800">
   <li><strong>VPR (Valoarea Punctului de Referință):</strong> A crescut de la 81 Lei (valoarea inițială din septembrie 2024) la <strong>91 Lei</strong>.</li>
   <li><strong>Valoarea Punctului de Pensie:</strong> A fost menținută la nivelul de 2.031 Lei pentru dosarele aflate în plată.</li>
 </ul>
 <p>Această indexare a generat o creștere directă a pensiilor brute pentru pensionarii români, contribuind la atenuarea efectelor inflației crescute din anii anteriori.</p>
 
-<h3>Evoluția Istorică a Punctului de Pensie și VPR (2015 - 2025)</h3>
+<h3>Evoluția Istorică a Punctului de Pensie și VPR (2015 - 2026)</h3>
 <p>Pentru a înțelege dinamica majorărilor și modul în care puterea de cumpărare a pensionarilor a fost influențată de deciziile guvernamentale, este util să analizăm evoluția valorilor nominale ale Punctului de Pensie și ale VPR în ultimul deceniu:</p>
 
 <div class="overflow-x-auto my-6">
@@ -2093,11 +2093,11 @@ Indiferent de vârsta pe care o aveți în prezent, o planificare riguroasă est
         <td className="border p-2">Legea nr. 360/2023</td>
       </tr>
       <tr class="bg-blue-50">
-        <td className="border p-2 font-bold">1 Ianuarie 2025</td>
+        <td className="border p-2 font-bold">1 Ianuarie 2026</td>
         <td className="border p-2 font-bold">2.031,0 Lei</td>
         <td className="border p-2 font-bold">91,0 Lei</td>
         <td className="border p-2 font-bold">+12,1% (la VPR)</td>
-        <td className="border p-2 font-bold">Bugetul de Stat 2025</td>
+        <td className="border p-2 font-bold">Bugetul de Stat 2026</td>
       </tr>
     </tbody>
   </table>
@@ -2134,7 +2134,7 @@ Indiferent de vârsta pe care o aveți în prezent, o planificare riguroasă est
 
 <h3>Cum sunt influențate punctele de stabilitate de indexarea anuală?</h3>
 <p>O întrebare frecventă a pensionarilor este dacă punctele de stabilitate (acordate pentru stagiile de cotizare ce depășesc 25 de ani: 0.5 puncte/an între 26-30 ani, 0.75 puncte/an între 31-35 ani, și 1.0 punct/an peste 35 ani) beneficiază și ele de indexare.</p>
-<p>Răspunsul este da, în mod indirect și integral. Punctele de stabilitate sunt adăugate la numărul de puncte de contributivitate și la cele asimilate, formând un <strong>Număr Total de Puncte</strong> înscris pe decizia de pensionare. Formula de calcul înmulțește acest Număr Total de Puncte cu VPR. Prin urmare, deoarece indexarea mărește direct valoarea VPR (de la 81 Lei la 91 Lei în 2025 și continuând în anii următori), întreaga valoare a punctelor de stabilitate crește proporțional cu procentul de indexare stabilit.</p>
+<p>Răspunsul este da, în mod indirect și integral. Punctele de stabilitate sunt adăugate la numărul de puncte de contributivitate și la cele asimilate, formând un <strong>Număr Total de Puncte</strong> înscris pe decizia de pensionare. Formula de calcul înmulțește acest Număr Total de Puncte cu VPR. Prin urmare, deoarece indexarea mărește direct valoarea VPR (de la 81 Lei la 91 Lei în 2026 și continuând în anii următori), întreaga valoare a punctelor de stabilitate crește proporțional cu procentul de indexare stabilit.</p>
 
 <h3>Întrebări Frecvente (FAQ)</h3>
 <div class="space-y-4 my-6">
@@ -2170,7 +2170,7 @@ Indiferent de vârsta pe care o aveți în prezent, o planificare riguroasă est
 
 
 
-## Analiză Detaliată: Impactul Inflației și a Modificărilor Legislative asupra Puterii de Cumpărare în 2025
+## Analiză Detaliată: Impactul Inflației și a Modificărilor Legislative asupra Puterii de Cumpărare în 2026
 
 Un aspect esențial, adesea trecut cu vederea în planificarea pensionării, este impactul direct al inflației asupra puterii de cumpărare pe termen lung. Deși Legea 360/2023 aduce un mecanism clar de indexare anuală a punctului de pensie (și implicit a Valorii Punctului de Referință - VPR) bazat pe rata inflației și pe creșterea câștigului salarial mediu brut, este crucial ca viitorii pensionari să înțeleagă mecanismele economice care le protejează veniturile.
 
@@ -2182,7 +2182,7 @@ De exemplu, dacă inflația anuală este de 5%, iar salariul mediu brut pe econo
 
 ### Studiu de Caz: Diferența dintre Pensia Minimă și Pensia pe Bază de Contributivitate
 
-Pentru a ilustra mai bine importanța stagiului complet de cotizare, să luăm în considerare două scenarii ipotetice la momentul pensionării în 2025:
+Pentru a ilustra mai bine importanța stagiului complet de cotizare, să luăm în considerare două scenarii ipotetice la momentul pensionării în 2026:
 
 1. **Scenariul A (Stagiu Minim de Cotizare - 15 ani):** O persoană care a lucrat exact 15 ani pe salariul minim pe economie va beneficia, cel mai probabil, de indemnizația socială pentru pensionari (pensia minimă garantată). Deși statul asigură un venit minim de subzistență, acest venit este fix și supus unor reguli stricte de indexare, limitând capacitatea pensionarului de a face față unor cheltuieli neprevăzute (de exemplu, cheltuieli medicale complexe).
 
@@ -2202,7 +2202,7 @@ Indiferent de vârsta pe care o aveți în prezent, o planificare riguroasă est
   <h3 class="text-xl font-bold text-blue-900 mb-4">Instrumente și Resurse Utile</h3>
   <p class="text-gray-700 mb-4">Pentru a vă planifica mai bine viitorul financiar, vă recomandăm să utilizați instrumentele noastre gratuite, actualizate la zi conform Legii 360/2023:</p>
   <ul class="space-y-2 list-none pl-0">
-    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/" class="text-blue-700 font-bold hover:underline">Calculator Pensie de Stat 2025</a> - Estimează-ți instant pensia lunară.</li>
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/" class="text-blue-700 font-bold hover:underline">Calculator Pensie de Stat 2026</a> - Estimează-ți instant pensia lunară.</li>
     <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-varsta-pensionare" class="text-blue-700 font-bold hover:underline">Calculator Vârstă de Pensionare</a> - Află exact anul și luna în care poți ieși la pensie.</li>
     <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-pensie-anticipata" class="text-blue-700 font-bold hover:underline">Calculator Pensie Anticipată</a> - Calculează penalizarea aplicată dacă ieși la pensie mai devreme.</li>
     <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-puncte-pensie" class="text-blue-700 font-bold hover:underline">Calculator Puncte de Stabilitate</a> - Vezi câte puncte bonus primești pentru vechimea în muncă.</li>
@@ -2213,10 +2213,10 @@ Indiferent de vârsta pe care o aveți în prezent, o planificare riguroasă est
   },
   {
     id: 17,
-    title: "Actele Necesare pentru Dosarul de Pensionare în 2025",
+    title: "Actele Necesare pentru Dosarul de Pensionare în 2026",
     excerpt: "Lista completă și actualizată de documente pe care trebuie să le pregătești pentru depunerea dosarului de pensie de limită de vârstă sau anticipată.",
     category: "planificare",
-    publishDate: "2025-11-10",
+    publishDate: "2026-11-10",
     readTime: 12,
     slug: "acte-necesare-dosar-pensionare",
     published: true,
@@ -2225,7 +2225,7 @@ Indiferent de vârsta pe care o aveți în prezent, o planificare riguroasă est
     content: `
 <p>Procesul de pensionare în România reprezintă trecerea oficială a asiguratului de la viața activă la statutul de pensionar și presupune întocmirea și depunerea unui dosar administrativ complex. O eroare aparent minoră, cum ar fi lipsa unei copii sau a unei adeverințe oficiale de sporuri, poate duce la respingerea dosarului, la calcularea eronată a drepturilor financiare sau la întârzieri de câteva luni în emiterea deciziei de pensionare și în plata primei pensii.</p>
 
-<p>Intrarea în vigoare a noii legi a pensiilor, <strong>Legea nr. 360/2023</strong>, aplicabilă în totalitate în 2025 și 2026, a adus clarificări suplimentare referitoare la procedurile de depunere a dosarelor și la modul în care sunt recunoscute și evaluate diversele stagii de cotizare (contributive, asimilate sau necontributive). În acest ghid complet, vom analiza pas cu pas fiecare document pe care trebuie să îl conțină dosarul dumneavoastră, cum și de unde se obține fiecare act și cum puteți eficientiza întregul proces procedural.</p>
+<p>Intrarea în vigoare a noii legi a pensiilor, <strong>Legea nr. 360/2023</strong>, aplicabilă în totalitate în 2026 și 2026, a adus clarificări suplimentare referitoare la procedurile de depunere a dosarelor și la modul în care sunt recunoscute și evaluate diversele stagii de cotizare (contributive, asimilate sau necontributive). În acest ghid complet, vom analiza pas cu pas fiecare document pe care trebuie să îl conțină dosarul dumneavoastră, cum și de unde se obține fiecare act și cum puteți eficientiza întregul proces procedural.</p>
 
 <h3>1. Dosarul pentru Pensia pentru Limită de Vârstă</h3>
 <p>Pensia pentru limită de vârstă este tipul standard de pensie acordat persoanelor care îndeplinesc simultan două condiții esențiale la data solicitării: au atins vârsta standard de pensionare (65 de ani pentru bărbați; o creștere graduală spre 65 de ani până în 2035 pentru femei) și au realizat stagiul minim de cotizare contributiv prevăzut de lege (15 ani).</p>
@@ -2368,7 +2368,7 @@ Indiferent de vârsta pe care o aveți în prezent, o planificare riguroasă est
 
 
 
-## Analiză Detaliată: Impactul Inflației și a Modificărilor Legislative asupra Puterii de Cumpărare în 2025
+## Analiză Detaliată: Impactul Inflației și a Modificărilor Legislative asupra Puterii de Cumpărare în 2026
 
 Un aspect esențial, adesea trecut cu vederea în planificarea pensionării, este impactul direct al inflației asupra puterii de cumpărare pe termen lung. Deși Legea 360/2023 aduce un mecanism clar de indexare anuală a punctului de pensie (și implicit a Valorii Punctului de Referință - VPR) bazat pe rata inflației și pe creșterea câștigului salarial mediu brut, este crucial ca viitorii pensionari să înțeleagă mecanismele economice care le protejează veniturile.
 
@@ -2380,7 +2380,7 @@ De exemplu, dacă inflația anuală este de 5%, iar salariul mediu brut pe econo
 
 ### Studiu de Caz: Diferența dintre Pensia Minimă și Pensia pe Bază de Contributivitate
 
-Pentru a ilustra mai bine importanța stagiului complet de cotizare, să luăm în considerare două scenarii ipotetice la momentul pensionării în 2025:
+Pentru a ilustra mai bine importanța stagiului complet de cotizare, să luăm în considerare două scenarii ipotetice la momentul pensionării în 2026:
 
 1. **Scenariul A (Stagiu Minim de Cotizare - 15 ani):** O persoană care a lucrat exact 15 ani pe salariul minim pe economie va beneficia, cel mai probabil, de indemnizația socială pentru pensionari (pensia minimă garantată). Deși statul asigură un venit minim de subzistență, acest venit este fix și supus unor reguli stricte de indexare, limitând capacitatea pensionarului de a face față unor cheltuieli neprevăzute (de exemplu, cheltuieli medicale complexe).
 
@@ -2400,7 +2400,7 @@ Indiferent de vârsta pe care o aveți în prezent, o planificare riguroasă est
   <h3 class="text-xl font-bold text-blue-900 mb-4">Instrumente și Resurse Utile</h3>
   <p class="text-gray-700 mb-4">Pentru a vă planifica mai bine viitorul financiar, vă recomandăm să utilizați instrumentele noastre gratuite, actualizate la zi conform Legii 360/2023:</p>
   <ul class="space-y-2 list-none pl-0">
-    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/" class="text-blue-700 font-bold hover:underline">Calculator Pensie de Stat 2025</a> - Estimează-ți instant pensia lunară.</li>
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/" class="text-blue-700 font-bold hover:underline">Calculator Pensie de Stat 2026</a> - Estimează-ți instant pensia lunară.</li>
     <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-varsta-pensionare" class="text-blue-700 font-bold hover:underline">Calculator Vârstă de Pensionare</a> - Află exact anul și luna în care poți ieși la pensie.</li>
     <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-pensie-anticipata" class="text-blue-700 font-bold hover:underline">Calculator Pensie Anticipată</a> - Calculează penalizarea aplicată dacă ieși la pensie mai devreme.</li>
     <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-puncte-pensie" class="text-blue-700 font-bold hover:underline">Calculator Puncte de Stabilitate</a> - Vezi câte puncte bonus primești pentru vechimea în muncă.</li>
@@ -2411,10 +2411,10 @@ Indiferent de vârsta pe care o aveți în prezent, o planificare riguroasă est
   },
   {
     id: 18,
-    title: "Pensionarea Anticipată Fără Penalizare în 2025",
+    title: "Pensionarea Anticipată Fără Penalizare în 2026",
     excerpt: "Descoperă excepțiile legale și categoriile profesionale care pot ieși la pensie anticipat cu 5 ani mai devreme fără a suferi nicio diminuare a cuantumului.",
     category: "tipuri-pensii",
-    publishDate: "2025-08-25",
+    publishDate: "2026-08-25",
     readTime: 9,
     slug: "pensie-anticipata-fara-penalizare",
     published: true,
@@ -2424,7 +2424,7 @@ Indiferent de vârsta pe care o aveți în prezent, o planificare riguroasă est
 <p>Deși în majoritatea cazurilor retragerea anticipată din activitate presupune penalizări substanțiale aplicate pensiei lunare, legislația românească prevede câteva excepții foarte importante în care reducerea vârstei nu aduce nicio penalitate.</p>
 
 <h3>Depășirea stagiului de cotizare cu peste 8 ani</h3>
-<p>Conform regulilor actualizate în 2025, persoanele care au depășit stagiul complet de cotizare de 35 de ani prevăzut de lege cu cel puțin **8 ani** (realizând un total de minimum **43 de ani de cotizare efectivă**) se pot pensiona cu până la 5 ani înainte de vârsta standard de 65 de ani **fără nicio penalizare**.</p>
+<p>Conform regulilor actualizate în 2026, persoanele care au depășit stagiul complet de cotizare de 35 de ani prevăzut de lege cu cel puțin **8 ani** (realizând un total de minimum **43 de ani de cotizare efectivă**) se pot pensiona cu până la 5 ani înainte de vârsta standard de 65 de ani **fără nicio penalizare**.</p>
 
 <h3>Alte categorii exceptate de la diminuare</h3>
 <p>Beneficiază de pensionare anticipată fără penalități de cuantum următoarele categorii profesionale și sociale specifice:</p>
@@ -2438,9 +2438,9 @@ Indiferent de vârsta pe care o aveți în prezent, o planificare riguroasă est
 
 
 
-## Analiză Aprofundată: Impactul Noulei Legi a Pensiilor 360/2023 (Extindere 2025)
+## Analiză Aprofundată: Impactul Noulei Legi a Pensiilor 360/2023 (Extindere 2026)
 
-Sistemul public de pensii din România traversează o perioadă de schimbări structurale profunde odată cu implementarea integrală a Legii 360/2023, care vizează o mai mare echitate și predictibilitate. Această secțiune extinsă este dedicată analizării contextului legislativ, economic și social care stă la baza calculelor și a politicilor de pensionare din 2025.
+Sistemul public de pensii din România traversează o perioadă de schimbări structurale profunde odată cu implementarea integrală a Legii 360/2023, care vizează o mai mare echitate și predictibilitate. Această secțiune extinsă este dedicată analizării contextului legislativ, economic și social care stă la baza calculelor și a politicilor de pensionare din 2026.
 
 ### Contextul Macroeconomic și Sustenabilitatea Sistemului
 Pentru a înțelege pe deplin cum funcționează pensiile în România, trebuie să privim către factorii demografici și economici. Bugetul Asigurărilor Sociale de Stat (BASS) se bazează pe principiul solidarității între generații (sistemul *pay-as-you-go*). Contribuțiile lucrătorilor activi (CAS - 25% din salariul brut, din care 20.25% merg către Pilonul I) plătesc pensiile actualilor pensionari. 
@@ -2450,7 +2450,7 @@ Pentru a înțelege pe deplin cum funcționează pensiile în România, trebuie 
 - **Egalizarea vârstei de pensionare:** Până în 2035, vârsta de pensionare pentru femei va crește treptat, atingând pragul de 65 de ani, egalizându-se astfel cu cea a bărbaților.
 
 ### Cum Se Calculează Pensia în Noul Sistem (Ghid Pas cu Pas)
-Valoarea pensiei rezultă din înmulțirea Numărului Total de Puncte cu Valoarea Punctului de Referință (VPR). În anul 2025, VPR a crescut la 91 lei (în urma indexării cu 10.4% aplicată în ianuarie).
+Valoarea pensiei rezultă din înmulțirea Numărului Total de Puncte cu Valoarea Punctului de Referință (VPR). În anul 2026, VPR a crescut la 91 lei (în urma indexării cu 10.4% aplicată în ianuarie).
 
 Numărul total de puncte este format din trei categorii majore:
 1. **Punctele de contributivitate:** Se calculează lunar, împărțind salariul brut câștigat la salariul mediu brut pe economie din luna respectivă.
@@ -2460,7 +2460,7 @@ Numărul total de puncte este format din trei categorii majore:
 *Studiu de caz:* Un pensionar cu un stagiu de cotizare de 38 de ani, cu un număr de puncte de contributivitate de 45.
 - Puncte de stabilitate: (5 ani × 0.5) + (5 ani × 0.75) + (3 ani × 1.0) = 2.5 + 3.75 + 3 = 9.25 puncte.
 - Punctaj total = 45 + 9.25 = 54.25 puncte.
-- Pensia brută în 2025 = 54.25 × 91 lei = 4.936 lei.
+- Pensia brută în 2026 = 54.25 × 91 lei = 4.936 lei.
 
 ### Tipuri de Pensii și Condiții
 Sistemul românesc reglementează patru tipuri principale de pensii:
@@ -2481,7 +2481,7 @@ Pentru pensionarii cu limită de vârstă, legea permite cumulul pensiei cu sala
 Orice cetățean poate să își creeze un cont gratuit pe portalul CNPP (Casa Națională de Pensii Publice). Acolo se poate descărca stagiul complet de cotizare începând cu anul 2001 (pentru perioadele anterioare este necesar carnetul de muncă).
 
 **4. Pensia Minimă Garantată (Indemnizația Socială)**
-Pentru persoanele cu un număr redus de puncte, dar care au totuși stagiul minim de 15 ani, statul oferă o indemnizație socială. În 2025, nivelul acesteia este de 1.281 lei. Dacă pensia calculată matematic este mai mică, statul suportă diferența.
+Pentru persoanele cu un număr redus de puncte, dar care au totuși stagiul minim de 15 ani, statul oferă o indemnizație socială. În 2026, nivelul acesteia este de 1.281 lei. Dacă pensia calculată matematic este mai mică, statul suportă diferența.
 
 ### Concluzie și Perspective
 Legislația pensiilor este un organism viu, care suferă modificări constante. Este vital ca viitorii pensionari să își analizeze din timp dosarul, să recupereze adeverințele pentru sporuri și acord global (acum luate în calcul conform noii legi) și să ia în considerare și sistemele alternative (Pilonul II obligatoriu privat și Pilonul III facultativ privat) pentru a-și securiza veniturile la bătrânețe. Sperăm ca acest ghid extensiv să vă clarifice poziția și drepturile financiare.
@@ -2490,7 +2490,7 @@ Legislația pensiilor este un organism viu, care suferă modificări constante. 
 
 
 
-## Analiză Detaliată: Impactul Inflației și a Modificărilor Legislative asupra Puterii de Cumpărare în 2025
+## Analiză Detaliată: Impactul Inflației și a Modificărilor Legislative asupra Puterii de Cumpărare în 2026
 
 Un aspect esențial, adesea trecut cu vederea în planificarea pensionării, este impactul direct al inflației asupra puterii de cumpărare pe termen lung. Deși Legea 360/2023 aduce un mecanism clar de indexare anuală a punctului de pensie (și implicit a Valorii Punctului de Referință - VPR) bazat pe rata inflației și pe creșterea câștigului salarial mediu brut, este crucial ca viitorii pensionari să înțeleagă mecanismele economice care le protejează veniturile.
 
@@ -2502,7 +2502,7 @@ De exemplu, dacă inflația anuală este de 5%, iar salariul mediu brut pe econo
 
 ### Studiu de Caz: Diferența dintre Pensia Minimă și Pensia pe Bază de Contributivitate
 
-Pentru a ilustra mai bine importanța stagiului complet de cotizare, să luăm în considerare două scenarii ipotetice la momentul pensionării în 2025:
+Pentru a ilustra mai bine importanța stagiului complet de cotizare, să luăm în considerare două scenarii ipotetice la momentul pensionării în 2026:
 
 1. **Scenariul A (Stagiu Minim de Cotizare - 15 ani):** O persoană care a lucrat exact 15 ani pe salariul minim pe economie va beneficia, cel mai probabil, de indemnizația socială pentru pensionari (pensia minimă garantată). Deși statul asigură un venit minim de subzistență, acest venit este fix și supus unor reguli stricte de indexare, limitând capacitatea pensionarului de a face față unor cheltuieli neprevăzute (de exemplu, cheltuieli medicale complexe).
 
@@ -2522,7 +2522,7 @@ Indiferent de vârsta pe care o aveți în prezent, o planificare riguroasă est
   <h3 class="text-xl font-bold text-blue-900 mb-4">Instrumente și Resurse Utile</h3>
   <p class="text-gray-700 mb-4">Pentru a vă planifica mai bine viitorul financiar, vă recomandăm să utilizați instrumentele noastre gratuite, actualizate la zi conform Legii 360/2023:</p>
   <ul class="space-y-2 list-none pl-0">
-    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/" class="text-blue-700 font-bold hover:underline">Calculator Pensie de Stat 2025</a> - Estimează-ți instant pensia lunară.</li>
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/" class="text-blue-700 font-bold hover:underline">Calculator Pensie de Stat 2026</a> - Estimează-ți instant pensia lunară.</li>
     <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-varsta-pensionare" class="text-blue-700 font-bold hover:underline">Calculator Vârstă de Pensionare</a> - Află exact anul și luna în care poți ieși la pensie.</li>
     <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-pensie-anticipata" class="text-blue-700 font-bold hover:underline">Calculator Pensie Anticipată</a> - Calculează penalizarea aplicată dacă ieși la pensie mai devreme.</li>
     <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-puncte-pensie" class="text-blue-700 font-bold hover:underline">Calculator Puncte de Stabilitate</a> - Vezi câte puncte bonus primești pentru vechimea în muncă.</li>
@@ -2666,7 +2666,7 @@ Indiferent de vârsta pe care o aveți în prezent, o planificare riguroasă est
 
 
 
-## Analiză Detaliată: Impactul Inflației și a Modificărilor Legislative asupra Puterii de Cumpărare în 2025
+## Analiză Detaliată: Impactul Inflației și a Modificărilor Legislative asupra Puterii de Cumpărare în 2026
 
 Un aspect esențial, adesea trecut cu vederea în planificarea pensionării, este impactul direct al inflației asupra puterii de cumpărare pe termen lung. Deși Legea 360/2023 aduce un mecanism clar de indexare anuală a punctului de pensie (și implicit a Valorii Punctului de Referință - VPR) bazat pe rata inflației și pe creșterea câștigului salarial mediu brut, este crucial ca viitorii pensionari să înțeleagă mecanismele economice care le protejează veniturile.
 
@@ -2678,7 +2678,7 @@ De exemplu, dacă inflația anuală este de 5%, iar salariul mediu brut pe econo
 
 ### Studiu de Caz: Diferența dintre Pensia Minimă și Pensia pe Bază de Contributivitate
 
-Pentru a ilustra mai bine importanța stagiului complet de cotizare, să luăm în considerare două scenarii ipotetice la momentul pensionării în 2025:
+Pentru a ilustra mai bine importanța stagiului complet de cotizare, să luăm în considerare două scenarii ipotetice la momentul pensionării în 2026:
 
 1. **Scenariul A (Stagiu Minim de Cotizare - 15 ani):** O persoană care a lucrat exact 15 ani pe salariul minim pe economie va beneficia, cel mai probabil, de indemnizația socială pentru pensionari (pensia minimă garantată). Deși statul asigură un venit minim de subzistență, acest venit este fix și supus unor reguli stricte de indexare, limitând capacitatea pensionarului de a face față unor cheltuieli neprevăzute (de exemplu, cheltuieli medicale complexe).
 
@@ -2698,7 +2698,7 @@ Indiferent de vârsta pe care o aveți în prezent, o planificare riguroasă est
   <h3 class="text-xl font-bold text-blue-900 mb-4">Instrumente și Resurse Utile</h3>
   <p class="text-gray-700 mb-4">Pentru a vă planifica mai bine viitorul financiar, vă recomandăm să utilizați instrumentele noastre gratuite, actualizate la zi conform Legii 360/2023:</p>
   <ul class="space-y-2 list-none pl-0">
-    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/" class="text-blue-700 font-bold hover:underline">Calculator Pensie de Stat 2025</a> - Estimează-ți instant pensia lunară.</li>
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/" class="text-blue-700 font-bold hover:underline">Calculator Pensie de Stat 2026</a> - Estimează-ți instant pensia lunară.</li>
     <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-varsta-pensionare" class="text-blue-700 font-bold hover:underline">Calculator Vârstă de Pensionare</a> - Află exact anul și luna în care poți ieși la pensie.</li>
     <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-pensie-anticipata" class="text-blue-700 font-bold hover:underline">Calculator Pensie Anticipată</a> - Calculează penalizarea aplicată dacă ieși la pensie mai devreme.</li>
     <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-puncte-pensie" class="text-blue-700 font-bold hover:underline">Calculator Puncte de Stabilitate</a> - Vezi câte puncte bonus primești pentru vechimea în muncă.</li>
@@ -2709,10 +2709,10 @@ Indiferent de vârsta pe care o aveți în prezent, o planificare riguroasă est
   },
   {
     id: 20,
-    title: "Pilonul II de Pensii: Modificări Legislative în 2025",
+    title: "Pilonul II de Pensii: Modificări Legislative în 2026",
     excerpt: "Analiza noilor reglementări privind cota de contribuție redirecționată către pensiile private obligatorii și opțiunile de retragere sau moștenire.",
     category: "tipuri-pensii",
-    publishDate: "2025-05-30",
+    publishDate: "2026-05-30",
     readTime: 12,
     slug: "pilonul-2-modificari-legislative",
     published: true,
@@ -2721,7 +2721,7 @@ Indiferent de vârsta pe care o aveți în prezent, o planificare riguroasă est
     content: `
 <p>Pilonul II (pensia privată obligatorie administrată de companii private) reprezintă un element cheie în arhitectura financiară a fiecărui român activ, adunând contribuții lunare pentru completarea venitului public.</p>
 
-<h3>Cota de contribuție în 2025</h3>
+<h3>Cota de contribuție în 2026</h3>
 <p>Începând cu anul trecut, cota de contribuție direcționată automat din CAS (Contribuția la Asigurări Sociale) către contul tău individual de Pilon II este de <strong>4,75%</strong> din salariul brut. Această sumă este reținută și virată de angajator fără ca salariul tău net să fie diminuat, fiind o redistribuire internă a taxelor.</p>
 
 <h3>Dreptul la moștenire al fondurilor</h3>
@@ -2734,9 +2734,9 @@ Indiferent de vârsta pe care o aveți în prezent, o planificare riguroasă est
 
 
 
-## Analiză Aprofundată: Impactul Noulei Legi a Pensiilor 360/2023 (Extindere 2025)
+## Analiză Aprofundată: Impactul Noulei Legi a Pensiilor 360/2023 (Extindere 2026)
 
-Sistemul public de pensii din România traversează o perioadă de schimbări structurale profunde odată cu implementarea integrală a Legii 360/2023, care vizează o mai mare echitate și predictibilitate. Această secțiune extinsă este dedicată analizării contextului legislativ, economic și social care stă la baza calculelor și a politicilor de pensionare din 2025.
+Sistemul public de pensii din România traversează o perioadă de schimbări structurale profunde odată cu implementarea integrală a Legii 360/2023, care vizează o mai mare echitate și predictibilitate. Această secțiune extinsă este dedicată analizării contextului legislativ, economic și social care stă la baza calculelor și a politicilor de pensionare din 2026.
 
 ### Contextul Macroeconomic și Sustenabilitatea Sistemului
 Pentru a înțelege pe deplin cum funcționează pensiile în România, trebuie să privim către factorii demografici și economici. Bugetul Asigurărilor Sociale de Stat (BASS) se bazează pe principiul solidarității între generații (sistemul *pay-as-you-go*). Contribuțiile lucrătorilor activi (CAS - 25% din salariul brut, din care 20.25% merg către Pilonul I) plătesc pensiile actualilor pensionari. 
@@ -2746,7 +2746,7 @@ Pentru a înțelege pe deplin cum funcționează pensiile în România, trebuie 
 - **Egalizarea vârstei de pensionare:** Până în 2035, vârsta de pensionare pentru femei va crește treptat, atingând pragul de 65 de ani, egalizându-se astfel cu cea a bărbaților.
 
 ### Cum Se Calculează Pensia în Noul Sistem (Ghid Pas cu Pas)
-Valoarea pensiei rezultă din înmulțirea Numărului Total de Puncte cu Valoarea Punctului de Referință (VPR). În anul 2025, VPR a crescut la 91 lei (în urma indexării cu 10.4% aplicată în ianuarie).
+Valoarea pensiei rezultă din înmulțirea Numărului Total de Puncte cu Valoarea Punctului de Referință (VPR). În anul 2026, VPR a crescut la 91 lei (în urma indexării cu 10.4% aplicată în ianuarie).
 
 Numărul total de puncte este format din trei categorii majore:
 1. **Punctele de contributivitate:** Se calculează lunar, împărțind salariul brut câștigat la salariul mediu brut pe economie din luna respectivă.
@@ -2756,7 +2756,7 @@ Numărul total de puncte este format din trei categorii majore:
 *Studiu de caz:* Un pensionar cu un stagiu de cotizare de 38 de ani, cu un număr de puncte de contributivitate de 45.
 - Puncte de stabilitate: (5 ani × 0.5) + (5 ani × 0.75) + (3 ani × 1.0) = 2.5 + 3.75 + 3 = 9.25 puncte.
 - Punctaj total = 45 + 9.25 = 54.25 puncte.
-- Pensia brută în 2025 = 54.25 × 91 lei = 4.936 lei.
+- Pensia brută în 2026 = 54.25 × 91 lei = 4.936 lei.
 
 ### Tipuri de Pensii și Condiții
 Sistemul românesc reglementează patru tipuri principale de pensii:
@@ -2777,7 +2777,7 @@ Pentru pensionarii cu limită de vârstă, legea permite cumulul pensiei cu sala
 Orice cetățean poate să își creeze un cont gratuit pe portalul CNPP (Casa Națională de Pensii Publice). Acolo se poate descărca stagiul complet de cotizare începând cu anul 2001 (pentru perioadele anterioare este necesar carnetul de muncă).
 
 **4. Pensia Minimă Garantată (Indemnizația Socială)**
-Pentru persoanele cu un număr redus de puncte, dar care au totuși stagiul minim de 15 ani, statul oferă o indemnizație socială. În 2025, nivelul acesteia este de 1.281 lei. Dacă pensia calculată matematic este mai mică, statul suportă diferența.
+Pentru persoanele cu un număr redus de puncte, dar care au totuși stagiul minim de 15 ani, statul oferă o indemnizație socială. În 2026, nivelul acesteia este de 1.281 lei. Dacă pensia calculată matematic este mai mică, statul suportă diferența.
 
 ### Concluzie și Perspective
 Legislația pensiilor este un organism viu, care suferă modificări constante. Este vital ca viitorii pensionari să își analizeze din timp dosarul, să recupereze adeverințele pentru sporuri și acord global (acum luate în calcul conform noii legi) și să ia în considerare și sistemele alternative (Pilonul II obligatoriu privat și Pilonul III facultativ privat) pentru a-și securiza veniturile la bătrânețe. Sperăm ca acest ghid extensiv să vă clarifice poziția și drepturile financiare.
@@ -2786,7 +2786,7 @@ Legislația pensiilor este un organism viu, care suferă modificări constante. 
 
 
 
-## Analiză Detaliată: Impactul Inflației și a Modificărilor Legislative asupra Puterii de Cumpărare în 2025
+## Analiză Detaliată: Impactul Inflației și a Modificărilor Legislative asupra Puterii de Cumpărare în 2026
 
 Un aspect esențial, adesea trecut cu vederea în planificarea pensionării, este impactul direct al inflației asupra puterii de cumpărare pe termen lung. Deși Legea 360/2023 aduce un mecanism clar de indexare anuală a punctului de pensie (și implicit a Valorii Punctului de Referință - VPR) bazat pe rata inflației și pe creșterea câștigului salarial mediu brut, este crucial ca viitorii pensionari să înțeleagă mecanismele economice care le protejează veniturile.
 
@@ -2798,7 +2798,7 @@ De exemplu, dacă inflația anuală este de 5%, iar salariul mediu brut pe econo
 
 ### Studiu de Caz: Diferența dintre Pensia Minimă și Pensia pe Bază de Contributivitate
 
-Pentru a ilustra mai bine importanța stagiului complet de cotizare, să luăm în considerare două scenarii ipotetice la momentul pensionării în 2025:
+Pentru a ilustra mai bine importanța stagiului complet de cotizare, să luăm în considerare două scenarii ipotetice la momentul pensionării în 2026:
 
 1. **Scenariul A (Stagiu Minim de Cotizare - 15 ani):** O persoană care a lucrat exact 15 ani pe salariul minim pe economie va beneficia, cel mai probabil, de indemnizația socială pentru pensionari (pensia minimă garantată). Deși statul asigură un venit minim de subzistență, acest venit este fix și supus unor reguli stricte de indexare, limitând capacitatea pensionarului de a face față unor cheltuieli neprevăzute (de exemplu, cheltuieli medicale complexe).
 
@@ -2818,7 +2818,7 @@ Indiferent de vârsta pe care o aveți în prezent, o planificare riguroasă est
   <h3 class="text-xl font-bold text-blue-900 mb-4">Instrumente și Resurse Utile</h3>
   <p class="text-gray-700 mb-4">Pentru a vă planifica mai bine viitorul financiar, vă recomandăm să utilizați instrumentele noastre gratuite, actualizate la zi conform Legii 360/2023:</p>
   <ul class="space-y-2 list-none pl-0">
-    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/" class="text-blue-700 font-bold hover:underline">Calculator Pensie de Stat 2025</a> - Estimează-ți instant pensia lunară.</li>
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/" class="text-blue-700 font-bold hover:underline">Calculator Pensie de Stat 2026</a> - Estimează-ți instant pensia lunară.</li>
     <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-varsta-pensionare" class="text-blue-700 font-bold hover:underline">Calculator Vârstă de Pensionare</a> - Află exact anul și luna în care poți ieși la pensie.</li>
     <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-pensie-anticipata" class="text-blue-700 font-bold hover:underline">Calculator Pensie Anticipată</a> - Calculează penalizarea aplicată dacă ieși la pensie mai devreme.</li>
     <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-puncte-pensie" class="text-blue-700 font-bold hover:underline">Calculator Puncte de Stabilitate</a> - Vezi câte puncte bonus primești pentru vechimea în muncă.</li>

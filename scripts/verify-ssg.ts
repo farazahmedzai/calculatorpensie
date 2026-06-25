@@ -98,43 +98,43 @@ function main() {
   // 1. Verify static routes
   const staticRoutesMeta: Record<string, { title: string; desc: string }> = {
     'calculator': {
-      title: 'Calculator Pensie de Stat 2025 | Estimare Online',
+      title: 'Calculator Pensie de Stat 2026 | Estimare Online',
       desc: 'Utilizează calculatoarele noastre avansate pentru a afla pensia de stat, pensia anticipată și contribuțiile Pilonul III. Calcule precise bazate pe legislația română actualizată.'
     },
     'calculator-pensie-anticipata': {
-      title: 'Calculator Pensie Anticipată 2025 | Penalizări și Vârstă',
+      title: 'Calculator Pensie Anticipată 2026 | Penalizări și Vârstă',
       desc: 'Calculează penalizarea aplicată pentru pensionarea anticipată în România. Află vârsta minimă, stagiul necesar și procentul de reducere conform Legii 360/2023.'
     },
     'calculator-varsta-pensionare': {
-      title: 'Calculator Vârstă Pensionare 2025 | Data Exactă Limită de Vârstă',
+      title: 'Calculator Vârstă Pensionare 2026 | Data Exactă Limită de Vârstă',
       desc: 'Calculează vârsta legală de pensionare în România pentru femei și bărbați. Află data exactă la care te poți pensiona și stagiul de cotizare necesar.'
     },
     'calculator-puncte-pensie': {
-      title: 'Calculator Puncte Pensie 2025 | Puncte de Stabilitate Noua Lege',
+      title: 'Calculator Puncte Pensie 2026 | Puncte de Stabilitate Noua Lege',
       desc: 'Calculează numărul total de puncte de pensie acumulate. Află câte puncte de stabilitate primești pentru stagiul peste 25 de ani conform Legii 360/2023.'
     },
     'calculator-pensie-pilon-2': {
-      title: 'Calculator Pensie Pilon 2 2025 | Capitalizare și Profit',
+      title: 'Calculator Pensie Pilon 2 2026 | Capitalizare și Profit',
       desc: 'Calculează suma strânsă în contul tău de pensie privată obligatorie Pilonul II. Proiectează-ți acumulările pe baza contribuției lunare de 4.75% din salariu.'
     },
     'program-excel-calcul-pensie': {
-      title: 'Program Excel Calcul Pensie | Descărcare Simulator 2025',
-      desc: 'Descarcă gratuit simulatorul Excel (.csv) pentru calculul pensiei din România în 2025. Introduceți salariul pentru a estima punctele lunare și pensia CNPP.'
+      title: 'Program Excel Calcul Pensie | Descărcare Simulator 2026',
+      desc: 'Descarcă gratuit simulatorul Excel (.csv) pentru calculul pensiei din România în 2026. Introduceți salariul pentru a estima punctele lunare și pensia CNPP.'
     },
     'planificare': {
-      title: 'Planificare Pensie România | Ghid Practic 2025',
+      title: 'Planificare Pensie România | Ghid Practic 2026',
       desc: 'Ghid complet pentru planificarea pensiei în România. Strategii pentru economisire voluntară, pensie privată facultativă și optimizare fiscală.'
     },
     'tipuri-pensii': {
-      title: 'Tipuri de Pensii în România | Ghid Complet 2025',
+      title: 'Tipuri de Pensii în România | Ghid Complet 2026',
       desc: 'Descoperă toate tipurile de pensii din sistemul public din România: limită de vârstă, anticipată, de invaliditate și de urmaș. Condiții oficiale și documente.'
     },
     'legislatie': {
-      title: 'Legea Pensiilor 2025 | Ghid Legislativ Oficial CNPP',
-      desc: 'Ghid complet despre legislația pensiilor din România în 2025. Condiții de pensionare, recalculare, stagiul de cotizare și valoarea punctului de referință (VPR).'
+      title: 'Legea Pensiilor 2026 | Ghid Legislativ Oficial CNPP',
+      desc: 'Ghid complet despre legislația pensiilor din România în 2026. Condiții de pensionare, recalculare, stagiul de cotizare și valoarea punctului de referință (VPR).'
     },
     'blog': {
-      title: 'Blog Pensii România 2025 - Ghiduri Complete și Noutăți | CalculatorPensie.com',
+      title: 'Blog Pensii România 2026 - Ghiduri Complete și Noutăți | CalculatorPensie.com',
       desc: 'Citește cele mai recente articole despre pensii în România. Ghiduri de planificare, analize legislative și sfaturi de la experți pentru a-ți optimiza pensia.'
     },
     'despre-noi': {
@@ -158,7 +158,7 @@ function main() {
       desc: 'Termenii și condițiile de utilizare a platformei CalculatorPensie.com. Citește regulile de folosire a calculatoarelor noastre de pensie și disclaimerele legale.'
     },
     'faq': {
-      title: 'Întrebări Frecvente - Calculator Pensie România | FAQ Pensii 2025',
+      title: 'Întrebări Frecvente - Calculator Pensie România | FAQ Pensii 2026',
       desc: 'Răspunsuri la întrebările frecvente despre pensii în România. Află la ce vârstă te poți pensiona, cum se calculează pensia și care sunt avantajele Pilonului III.'
     }
   };

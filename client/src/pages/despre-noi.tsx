@@ -120,7 +120,7 @@ export default function DespreNoi() {
             </p>
 
             <p className="text-gray-700 mb-6">
-              Platforma noastră s-a născut în 2025 cu obiectivul clar de a democratiza accesul la informațiile despre pensii și de a oferi calculatoare bazate pe formulele oficiale ale Casei Naționale de Pensii Publice (CNPP).
+              Platforma noastră s-a născut în 2026 cu obiectivul clar de a democratiza accesul la informațiile despre pensii și de a oferi calculatoare bazate pe formulele oficiale ale Casei Naționale de Pensii Publice (CNPP).
             </p>
 
             <p className="text-gray-700 mb-6">
@@ -225,7 +225,7 @@ export default function DespreNoi() {
                     <h3 className="text-xl font-bold text-slate-900 mb-1">Dr. Elena Radu</h3>
                     <p className="text-sm font-semibold text-brand-green mb-3">Economist Financiar & Expert Pensii Private (Pilon II/III)</p>
                     <p className="text-sm text-slate-600 mb-4 leading-relaxed">
-                      Specialistă în optimizarea portofoliilor de pensionare privată, cu experiență în cadrul fondurilor de pensii din România și analiză macroeconomică. Lector asociat la Facultatea de Finanțe, Asigurări, Bănci și Burse de Valori (ASE).
+                      Specialistă în optimizarea portofoliilor de pensionare privată, cu experiență în cadrul fondurilor de pensii din România și analiză macroeconomică. Lector asociat la Facultatea de Finanțe, Asigurări, Bănci și Burse de Valori (ASE). Toate articolele trec prin filtrul său editorial strict pentru a garanta calitatea E-E-A-T.
                     </p>
                     <div className="text-xs text-slate-500 mb-4 bg-slate-50 p-3 rounded border border-slate-100">
                       <strong>Educație & Acreditări:</strong><br/>
