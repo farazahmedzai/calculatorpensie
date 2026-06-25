@@ -167,6 +167,35 @@ export default function DespreNoi() {
         </div>
       </section>
 
+      {/* Editorial & Accuracy Policy */}
+      <section className="py-16 bg-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Politică Editorială și Acuratețe</h2>
+          <div className="bg-green-50 p-8 rounded-lg border border-green-100 shadow-sm">
+            <h3 className="text-xl font-semibold text-green-900 mb-4 flex items-center gap-2">
+              <Shield className="h-6 w-6" /> Cum ne asigurăm de corectitudinea datelor
+            </h3>
+            <p className="text-gray-700 mb-4 leading-relaxed font-medium">
+              Suntem conștienți de impactul major pe care informațiile financiare îl au asupra vieții cititorilor noștri. Din acest motiv, toate articolele și instrumentele noastre de calcul urmează o <strong>politică editorială strictă</strong>, bazată exclusiv pe legislația oficială în vigoare.
+            </p>
+            <ul className="space-y-3 text-gray-700">
+              <li className="flex items-start gap-2">
+                <span className="font-bold text-green-600 mt-1">•</span>
+                <span><strong>Surse Oficiale:</strong> Toate formulele folosite sunt preluate direct din <strong>Legea 360/2023</strong> privind sistemul public de pensii și metodologiile elaborate de <strong>Casa Națională de Pensii Publice (CNPP)</strong>.</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="font-bold text-green-600 mt-1">•</span>
+                <span><strong>Actualizare Proactivă:</strong> De fiecare dată când Valoarea Punctului de Referință (VPR) este ajustată de Guvern, implementăm noile valori imediat. Orice actualizare este clar documentată prin eticheta "Actualizat" vizibilă pe toate paginile de calcul.</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="font-bold text-green-600 mt-1">•</span>
+                <span><strong>Revizuire Specializată:</strong> Articolele din blog și datele de pe site sunt revizuite de către experții noștri în asigurări sociale pentru a ne asigura că reflectă precis interpretările legale.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
       {/* Experts Section (E-E-A-T) */}
       <section className="py-16 bg-gradient-to-br from-slate-50 to-indigo-50 border-t border-b border-indigo-100">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">

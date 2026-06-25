@@ -36,7 +36,7 @@ export default function LegislatiePage() {
             actualizări legislative și resurse oficiale pentru înțelegerea drepturilor tale de pensionare în 2026 conform noii Legi 360/2023.
           </p>
           <div className="flex flex-wrap gap-4">
-            <Link href="/calculator">
+            <Link href="/">
               <Button size="lg" className="bg-white text-brand-red hover:bg-gray-50">
                 <Calculator className="mr-2 h-5 w-5" />
                 Calculează Pensia
@@ -70,9 +70,18 @@ export default function LegislatiePage() {
           {/* Overview */}
           <div className="prose prose-lg max-w-none mb-12">
             <h2>Legea 360/2023 - Sistemul Public de Pensii Actualizat</h2>
-                        <p>
-                          Legea nr. 360/2023 privind sistemul public de pensii este cadrul principal aplicabil calculului pensiilor în 2026. Aceasta introduce formula bazată pe numărul total de puncte, punctele de stabilitate și Valoarea Punctului de Referință (VPR).
-                        </p>
+            <p>
+              Legea nr. 360/2023 privind sistemul public de pensii este cadrul principal aplicabil calculului pensiilor în 2026. Aceasta introduce formula bazată pe numărul total de puncte, punctele de stabilitate și Valoarea Punctului de Referință (VPR).
+            </p>
+
+            <h3>Top 5 Schimbări Majore în 2026</h3>
+            <ul>
+              <li><strong>1. Introducerea Punctelor de Stabilitate:</strong> Primești puncte bonus pentru fiecare an de muncă peste stagiul de 25 de ani (0.5, 0.75, sau 1 punct per an).</li>
+              <li><strong>2. Noua Formulă de Calcul:</strong> Pensia se calculează înmulțind numărul total de puncte cu Valoarea Punctului de Referință (VPR = 91 Lei în 2026).</li>
+              <li><strong>3. Egalizarea Vârstei de Pensionare:</strong> Vârsta standard pentru femei va continua să crească gradual până la 65 de ani (egalizare cu bărbații) până în anul 2035.</li>
+              <li><strong>4. Modificări la Pensia Anticipată:</strong> Penalizarea maximă scade de la 30% la 24%, devenind mai accesibilă pentru cei cu stagiu lung de cotizare.</li>
+              <li><strong>5. Perioade Asimilate:</strong> Mamele beneficiază de reducerea vârstei de pensionare cu 6 luni pentru fiecare copil născut și crescut (maxim 3 ani și 6 luni).</li>
+            </ul>
 
             <h3>Principiile Fundamentale ale Sistemului</h3>
             <p>
@@ -316,7 +325,7 @@ export default function LegislatiePage() {
               a afla exact ce pensie vei avea în funcție de situația ta specifică.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/calculator">
+              <Link href="/">
                 <Button size="lg" className="bg-brand-red hover:bg-red-700">
                   <Calculator className="mr-2 h-5 w-5" />
                   Calculează Pensia

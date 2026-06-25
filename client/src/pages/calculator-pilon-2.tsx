@@ -6,7 +6,7 @@ import { Label } from "@/components/ui/label";
 import MetaTags from "@/components/seo/MetaTags";
 import BreadcrumbNavigation from "@/components/seo/BreadcrumbNavigation";
 import { WebPageSchema } from "@/components/seo/StructuredData";
-import { PiggyBank, ArrowRight, Info, HelpCircle } from "lucide-react";
+import { PiggyBank, ArrowRight, Info, HelpCircle, CheckCircle } from "lucide-react";
 
 export default function CalculatorPilon2Page() {
   const [netSalary, setNetSalary] = useState<number>(5000);
@@ -96,6 +96,10 @@ export default function CalculatorPilon2Page() {
               <CardDescription>Introdu datele financiare</CardDescription>
             </CardHeader>
             <CardContent className="space-y-4">
+              <div className="flex items-center text-sm text-green-700 bg-green-50 p-3 rounded-md mb-2 border border-green-200">
+                <CheckCircle className="w-5 h-5 mr-2 flex-shrink-0" />
+                <span className="font-semibold">Actualizat Iunie 2026</span>
+              </div>
               <div className="space-y-2">
                 <Label htmlFor="salary">Salariul Tău Net Lunar (RON)</Label>
                 <Input 

@@ -35,7 +35,7 @@ export default function PlanificarePage() {
             costisitoare în planificarea viitorului tău financiar.
           </p>
           <div className="flex flex-wrap gap-4">
-            <Link href="/calculator">
+            <Link href="/">
               <Button size="lg" className="bg-white text-brand-blue hover:bg-gray-50">
                 <Calculator className="mr-2 h-5 w-5" />
                 Calculează Pensia
@@ -74,6 +74,7 @@ export default function PlanificarePage() {
             <p>
               Pentru cei născuți după 1 ianuarie 1977, participarea la Pilonul II este obligatorie. 
               Contribuția este de 4,75% din venitul brut asigurat și este administrată de fonduri de pensii private.
+              Află cât ai putea acumula folosind <Link href="/calculator-pensie-pilon-2" className="text-brand-blue hover:underline font-medium">calculatorul nostru de pensie Pilon 2</Link>.
             </p>
 
             <h3>3. Pilonul III - Pensiile Private Facultative</h3>
@@ -169,7 +170,7 @@ export default function PlanificarePage() {
                   Folosește calculatorul nostru specializat pentru a determina contribuția optimă 
                   la Pilonul III și economia fiscală rezultată.
                 </p>
-                <Link href="/calculator?type=pillar3">
+                <Link href="/?type=pillar3">
                   <Button className="w-full bg-brand-green hover:bg-green-700">
                     Deschide Calculatorul <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
@@ -185,7 +186,7 @@ export default function PlanificarePage() {
             <h3>1. Evaluează Situația Financiară Actuală</h3>
             <p>
               Începe prin a calcula pensia estimată din sistemul public folosind 
-              <Link href="/calculator"> calculatorul nostru de pensie</Link>. 
+              <Link href="/" className="text-brand-blue hover:underline font-medium"> calculatorul nostru de pensie</Link>. 
               Compară această sumă cu cheltuielile estimate pentru perioada de pensionare.
             </p>
 
@@ -223,7 +224,7 @@ export default function PlanificarePage() {
               a dezvolta o strategie personalizată de planificare.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/calculator">
+              <Link href="/">
                 <Button size="lg" className="bg-brand-blue hover:bg-blue-700">
                   <Calculator className="mr-2 h-5 w-5" />
                   Calculează Pensia

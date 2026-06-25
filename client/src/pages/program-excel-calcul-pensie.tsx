@@ -112,11 +112,13 @@ export default function ProgramExcelPage() {
                 <div className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded-r-lg my-4">
                   <h5 className="font-bold mt-0 text-blue-900 flex items-center gap-2">
                     <Info className="h-4.5 w-4.5" />
-                    Instrucțiuni de import în Excel:
+                    Tutorial: Cum să folosești fișierul (3 Pași Simpli)
                   </h5>
-                  <p className="text-xs text-blue-950 mb-0">
-                    Fișierul descărcat este de tip CSV (semicolon delimited) cu codificare UTF-8. Dacă deschizi fișierul direct în Excel și datele apar grupate într-o singură coloană, utilizează funcția <strong>Data → Text to Columns</strong> din meniul Excel, alege caracterul separator punct-virgulă (;) și datele se vor aranja pe coloane perfect!
-                  </p>
+                  <ol className="text-sm text-blue-950 mt-2 space-y-2 list-decimal list-inside font-medium">
+                    <li><strong>Descarcă</strong> dând click pe butonul albastru. Vei primi un fișier de tip <code>.csv</code>.</li>
+                    <li><strong>Deschide în Excel</strong> și, dacă datele apar grupate pe o singură coloană, folosește funcția <strong>Data → Text to Columns</strong> din meniu, selectând caracterul punct-virgulă (;) ca separator.</li>
+                    <li><strong>Introdu Salariul:</strong> Editează doar coloana "Salariu Brut Estimativ (RON)". Toate celelalte coloane cu CAS și punctaj se vor recalcula automat!</li>
+                  </ol>
                 </div>
               </CardContent>
             </Card>

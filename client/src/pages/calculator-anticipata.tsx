@@ -3,7 +3,7 @@ import EarlyRetirementCalculator from "@/components/calculators/early-retirement
 import MetaTags from "@/components/seo/MetaTags";
 import BreadcrumbNavigation from "@/components/seo/BreadcrumbNavigation";
 import { WebPageSchema } from "@/components/seo/StructuredData";
-import { Info, HelpCircle } from "lucide-react";
+import { Info, HelpCircle, CheckCircle } from "lucide-react";
 
 export default function CalculatorAnticipataPage() {
   return (
@@ -49,6 +49,10 @@ export default function CalculatorAnticipataPage() {
             </CardDescription>
           </CardHeader>
           <CardContent>
+            <div className="flex items-center text-sm text-green-700 bg-green-50 p-3 rounded-md mb-6 border border-green-200">
+              <CheckCircle className="w-5 h-5 mr-2 flex-shrink-0" />
+              <span className="font-semibold">Ultima actualizare a formulei: Iunie 2026 (Complet actualizat la Legea 360/2023)</span>
+            </div>
             <EarlyRetirementCalculator />
           </CardContent>
         </Card>
@@ -71,7 +75,7 @@ export default function CalculatorAnticipataPage() {
             </p>
           </div>
 
-          <h3>Cum se calculează penalizarea la pensia anticipată?</h3>
+          <h2>Cum se calculează penalizarea (Conform Legii 360/2023)</h2>
           <p>
             Recalcularea penalizării se realizează raportat la lunile de anticipare (până la 60 de luni) și la numărul de ani cu care ai depășit stagiul complet de cotizare (35 de ani). Procentul de penalizare lunară este determinat conform următoarei grile oficiale CNPP:
           </p>

@@ -15,7 +15,7 @@ export default function Header() {
   };
 
   const navLinks = [
-    { href: "/calculator", label: "Calculator", highlight: true },
+    { href: "/", label: "Calculator", highlight: true },
     { href: "/planificare", label: "Planificare" },
     { href: "/tipuri-pensii", label: "Tipuri Pensii" },
     { href: "/legislatie", label: "Legislație" },
@@ -143,7 +143,7 @@ export default function Header() {
 
                 {/* Mobile CTA */}
                 <div className="mt-8 pt-6 border-t border-blue-200">
-                  <Link href="/calculator">
+                  <Link href="/">
                     <Button 
                       className="w-full bg-blue-600 hover:bg-blue-700 text-white shadow-lg" 
                       onClick={() => setMobileMenuOpen(false)}

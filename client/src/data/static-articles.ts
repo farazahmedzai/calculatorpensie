@@ -48,7 +48,7 @@ export const staticArticles: Article[] = [
     author: authors.alexandruPopescu,
     image: "https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=480",
     content: `
-<p>Planificarea pensiei este una dintre cele mai importante decizii financiare pe care le poți lua pe parcursul vieții active. Din păcate, mulți români fac greșeli costisitoare care le afectează dramatic nivelul de trai la bătrânețe. Iată topul celor mai mari greșeli de planificare și metodele prin care le poți evita:</p>
+<p>Planificarea pensiei este una dintre cele mai importante decizii financiare pe care le poți lua pe parcursul vieții active. Din păcate, mulți români fac greșeli costisitoare care le afectează dramatic nivelul de trai la bătrânețe. Iată topul celor mai mari greșeli de planificare și metodele prin care le poți evita. Poți folosi <a href="/" class="text-blue-600 hover:underline font-semibold">calculatorul de pensie 2026</a> pentru a verifica imediat situația ta.</p>
 
 <h3>1. Amânarea începerii economisirii</h3>
 <p>Mulți consideră că pensia este prea îndepărtată pentru a reprezenta o prioritate la 20 sau 30 de ani. Însă, datorită dobânzii compuse, sumele mici investite devreme valorează mult mai mult decât sumele mari investite târziu. Fiecare an de întârziere crește efortul financiar necesar ulterior.</p>
@@ -174,7 +174,7 @@ Indiferent de vârsta pe care o aveți în prezent, o planificare riguroasă est
     author: authors.alexandruPopescu,
     image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=480",
     content: `
-<p>Formula de calcul a pensiei de stat în România se bazează pe sistemul de puncte reglementat prin lege. Începând cu anul 2026, valoarea punctului de pensie este fixată la <strong>2.031 Lei</strong>, fiind calculată conform noii legi a pensiilor nr. 360/2023. Totodată, Valoarea Punctului de Referință (VPR) este stabilită la <strong>91 Lei</strong>, asigurând o indexare procentuală substanțială a veniturilor pentru milioane de pensionari.</p>
+<p>Formula de calcul a pensiei de stat în România se bazează pe sistemul de puncte reglementat prin lege. Începând cu anul 2026, valoarea punctului de pensie este fixată la <strong>2.031 Lei</strong>, fiind calculată conform noii legi a pensiilor nr. 360/2023. Totodată, Valoarea Punctului de Referință (VPR) este stabilită la <strong>91 Lei</strong>, asigurând o indexare procentuală substanțială a veniturilor pentru milioane de pensionari. Pentru a simula rapid aceste calcule, accesează gratuit <a href="/" class="text-blue-600 hover:underline font-semibold">noul calculator de pensie online</a>.</p>
 
 <h3>Care sunt pașii oficiali de calcul?</h3>
 <p>Pentru a determina valoarea brută a pensiei de stat pe care o vei primi lunar, algoritmul oficial al CNPP aplică un sistem format din trei piloni principali de calcul:</p>
@@ -349,7 +349,7 @@ Indiferent de vârsta pe care o aveți în prezent, o planificare riguroasă est
     author: authors.elenaRadu,
     image: "https://images.unsplash.com/photo-1544377193-33dcf4d68fb5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=480",
     content: `
-<p>Pilonul III de pensii oferă românilor o opțiune excelentă de a economisi suplimentar pentru perioada de pensionare, având în același timp beneficii fiscale imediate garantate prin lege.</p>
+<p>Pilonul III de pensii oferă românilor o opțiune excelentă de a economisi suplimentar pentru perioada de pensionare, având în același timp beneficii fiscale imediate garantate prin lege. Pentru a afla cu cât se cumulează aceasta cu pensia de stat, folosește <a href="/" class="text-blue-600 hover:underline font-semibold">calculatorul nostru oficial</a>.</p>
 
 <h3>Ce este Pilonul III de pensii?</h3>
 <p>Spre deosebire de Pilonul I (pensia de stat obligatorie) și Pilonul II (pensia privată obligatorie, unde se redirecționează o parte din CAS), Pilonul III reprezintă <strong>pensia privată facultativă</strong>. Oricine înregistrează venituri profesionale asimilate poate alege să contribuie individual la un fond administrat privat ales, contribuțiile fiind opționale și flexibile ca valoare.</p>

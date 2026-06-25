@@ -6,7 +6,7 @@ import { Label } from "@/components/ui/label";
 import MetaTags from "@/components/seo/MetaTags";
 import BreadcrumbNavigation from "@/components/seo/BreadcrumbNavigation";
 import { WebPageSchema } from "@/components/seo/StructuredData";
-import { Calculator, Award, Info, HelpCircle } from "lucide-react";
+import { Calculator, Award, Info, HelpCircle, CheckCircle } from "lucide-react";
 
 export default function CalculatorPunctePage() {
   const [netSalary, setNetSalary] = useState<number>(5000);
@@ -105,6 +105,10 @@ export default function CalculatorPunctePage() {
               <CardDescription>Introdu salariul și stagiul de cotizare</CardDescription>
             </CardHeader>
             <CardContent className="space-y-4">
+              <div className="flex items-center text-sm text-green-700 bg-green-50 p-3 rounded-md mb-2 border border-green-200">
+                <CheckCircle className="w-5 h-5 mr-2 flex-shrink-0" />
+                <span className="font-semibold">Actualizat Iunie 2026 (Legea 360/2023)</span>
+              </div>
               <div className="space-y-2">
                 <Label htmlFor="salary">Salariul Net Lunar Actual (RON)</Label>
                 <Input 
@@ -196,11 +200,32 @@ export default function CalculatorPunctePage() {
               <p>
                 Punctele de stabilitate sunt puncte bonus oferite de stat conform Legii 360/2023 pentru a stimula persoanele să rămână active pe piața muncii mai mulți ani. Acestea se adaugă direct la punctele din contribuții salariale după cum urmează:
               </p>
-              <ul>
-                <li><strong>Pentru anii de muncă 26 - 30:</strong> primești <strong>0.5 puncte</strong> pentru fiecare an (total max 2.5 puncte).</li>
-                <li><strong>Pentru anii de muncă 31 - 35:</strong> primești <strong>0.75 puncte</strong> pentru fiecare an (total max 3.75 puncte).</li>
-                <li><strong>Pentru anii de muncă peste 35:</strong> primești <strong>1.0 punct</strong> pentru fiecare an.</li>
-              </ul>
+              <table className="w-full text-sm border-collapse my-6">
+                <thead>
+                  <tr className="bg-slate-100">
+                    <th className="border p-2">Vechime în Muncă (Ani)</th>
+                    <th className="border p-2">Puncte de Stabilitate / An</th>
+                    <th className="border p-2">Total Maxim de Puncte pe Interval</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td className="border p-2">Între 26 și 30 ani</td>
+                    <td className="border p-2"><strong>0.5 puncte</strong></td>
+                    <td className="border p-2">2.5 puncte</td>
+                  </tr>
+                  <tr>
+                    <td className="border p-2">Între 31 și 35 ani</td>
+                    <td className="border p-2"><strong>0.75 puncte</strong></td>
+                    <td className="border p-2">3.75 puncte</td>
+                  </tr>
+                  <tr>
+                    <td className="border p-2">Peste 35 de ani</td>
+                    <td className="border p-2"><strong>1.0 punct</strong></td>
+                    <td className="border p-2">fără limită maximă</td>
+                  </tr>
+                </tbody>
+              </table>
               
               <figure className="my-6">
                 <img 

@@ -230,7 +230,8 @@ export default function CalculatorVarstaPage() {
 
             {/* Explanatory tables */}
             <div className="bg-white rounded-lg p-6 shadow-sm prose prose-sm max-w-none">
-              <h3 className="font-bold text-slate-800">Cadrul Legal în România (Legea 360/2023)</h3>
+              <h2>Când ies la pensie?</h2>
+              <h3 className="font-bold text-slate-800 mt-4">Cadrul Legal în România (Legea 360/2023)</h3>
               <p>
                 Conform legii, vârsta standard de pensionare este de <strong>65 de ani</strong> atât pentru bărbați, cât și pentru femei. Totuși, atingerea acestei vârste se realizează diferit:
               </p>

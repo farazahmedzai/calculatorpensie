@@ -309,12 +309,12 @@ export default function PensionComparison() {
             cel mai bine situației tale financiare și preferințelor personale.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/calculator">
+            <Link href="/">
               <Button className="bg-blue-600 hover:bg-blue-700">
                 Calculator Principal
               </Button>
             </Link>
-            <Link href="/calculator?type=early">
+            <Link href="/?type=early">
               <Button variant="outline" className="border-blue-600 text-blue-600 hover:bg-blue-50">
                 Pensie Anticipată
               </Button>

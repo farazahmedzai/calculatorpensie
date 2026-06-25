@@ -22,7 +22,7 @@ const staticRoutes: Record<string, PageMeta> = {
     keywords: 'calculator pensie romania, calcul pensie de stat, pensie anticipata, pilon III, calculator pilon 3'
   },
   '/calculator-pensie-anticipata': {
-    title: 'Calculator Pensie Anticipată 2026 | Penalizări și Vârstă',
+    title: 'Calculator Pensie Anticipată 2026 | Află Penalizarea (Legea 360)',
     description: 'Calculează penalizarea aplicată pentru pensionarea anticipată în România. Află vârsta minimă, stagiul necesar și procentul de reducere conform Legii 360/2023.',
     canonical: 'https://calculatorpensie.com/calculator-pensie-anticipata/',
     keywords: 'calculator pensie anticipata, pensie anticipata cu penalizare, varsta pensionare anticipata, legea pensiilor 360/2023'
@@ -76,7 +76,7 @@ const staticRoutes: Record<string, PageMeta> = {
     keywords: 'blog pensii romania, ghid pensie, noutati pensii, planificare pensie, legislatie pensii'
   },
   '/despre-noi': {
-    title: 'Despre Noi - CalculatorPensie.com | Misiunea și Echipa Noastră',
+    title: 'Despre CalculatorPensie: Experți în Legislația Pensiilor',
     description: 'Află mai multe despre CalculatorPensie.com, misiunea noastră de a oferi calculatoare de pensie precise și resurse educaționale pentru românii care își planifică viitorul financiar.',
     canonical: 'https://calculatorpensie.com/despre-noi/',
     keywords: 'despre calculatorpensie, misiune pensii romania, echipa calculatoare pensie'

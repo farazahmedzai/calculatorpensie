@@ -6,7 +6,7 @@ import { Label } from "@/components/ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
-import { Calculator, HelpCircle, Calendar, Users, TrendingUp, MapPin, ListCheck, Gavel } from "lucide-react";
+import { Calculator, HelpCircle, Calendar, Users, TrendingUp, MapPin, ListCheck, Gavel, CheckCircle } from "lucide-react";
 import { Link } from "wouter";
 import { calculateStandardPension } from "@/lib/pension-calculations";
 import { WebApplicationSchema, OrganizationSchema, WebSiteSchema, WebPageSchema } from "@/components/seo/StructuredData";
@@ -122,6 +122,10 @@ export default function Home() {
 
           <Card className="max-w-4xl mx-auto shadow-2xl border-0">
             <CardContent className="p-8">
+              <div className="flex items-center text-sm text-green-700 bg-green-50 p-3 rounded-md mb-6 border border-green-200">
+                <CheckCircle className="w-5 h-5 mr-2 flex-shrink-0" />
+                <span className="font-semibold">Ultima actualizare a formulei: Iunie 2026 (Complet actualizat la Legea 360/2023)</span>
+              </div>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {/* Birth Date - Calendar Input */}
                 <div className="space-y-2">
