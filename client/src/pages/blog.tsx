@@ -149,8 +149,8 @@ export default function BlogPage() {
                       </span>
                     </div>
                     <CardTitle className={`text-xl mb-3 transition-colors ${getCategoryColor(article.category)}`}>
-                      <Link href={`~/blog/${article.slug}`}>
-                        <a>{article.title}</a>
+                      <Link href={`/blog/${article.slug}`}>
+                        <a className="hover:underline">{article.title}</a>
                       </Link>
                     </CardTitle>
                     <CardDescription className="mb-4 line-clamp-3">
@@ -164,7 +164,7 @@ export default function BlogPage() {
                       <span className="font-semibold text-gray-800">Scris de: {article.author.name}</span>
                     </div>
                     <div className="flex items-center justify-end">
-                      <Link href={`~/blog/${article.slug}`}>
+                      <Link href={`/blog/${article.slug}`}>
                         <Button variant="ghost" size="sm" className={`${getCategoryColor(article.category)} font-bold`}>
                           Citește mai mult →
                         </Button>

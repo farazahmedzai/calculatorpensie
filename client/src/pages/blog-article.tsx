@@ -8,6 +8,7 @@ import MetaTags from "@/components/seo/MetaTags";
 import BreadcrumbNavigation from "@/components/seo/BreadcrumbNavigation";
 import { ArticleSchema } from "@/components/seo/StructuredData";
 import { getArticleBySlug } from "@/data/static-articles";
+import { marked } from "marked";
 
 export default function BlogArticle() {
   const params = useParams();
@@ -139,7 +140,7 @@ export default function BlogArticle() {
             <CardContent className="pt-6">
               <div 
                 className="prose prose-lg max-w-none prose-headings:text-gray-900 prose-p:text-gray-700 prose-a:text-brand-blue prose-strong:text-gray-900"
-                dangerouslySetInnerHTML={{ __html: article.content || "" }}
+                dangerouslySetInnerHTML={{ __html: article.content ? marked.parse(article.content) as string : "" }}
               />
             </CardContent>
           </Card>
