@@ -100,7 +100,7 @@ export default function CalculatorVarstaPage() {
   return (
     <div className="min-h-screen bg-neutral-light py-8">
       <MetaTags 
-        title="Calculator Vârstă Pensionare 2025 | Data Exactă Limită de Vârstă"
+        title="Calculator Vârstă Pensionare 2026 | Data Exactă Limită de Vârstă"
         description="Calculează vârsta legală de pensionare în România pentru femei și bărbați. Află data exactă la care te poți pensiona și stagiul de cotizare necesar."
         canonical="https://calculatorpensie.com/calculator-varsta-pensionare"
         keywords="calculator varsta pensionare, cand ies la pensie, varsta pensionare femei romania, stagiu cotizare obligatoriu"
@@ -245,8 +245,8 @@ export default function CalculatorVarstaPage() {
               
               <figure className="mt-8 mb-4">
                 <img 
-                  src="/images/infografic-varsta-pensionare-2025.png" 
-                  alt="Infografic Vârsta de Pensionare Femei și Bărbați România 2025-2035" 
+                  src="/images/infografic-varsta-pensionare-2026.png" 
+                  alt="Infografic Vârsta de Pensionare Femei și Bărbați România 2026-2035" 
                   className="w-full rounded-lg shadow-md border border-gray-100"
                   loading="lazy"
                 />

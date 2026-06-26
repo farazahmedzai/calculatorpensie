@@ -69,10 +69,10 @@ export default function CalculatorPunctePage() {
   return (
     <div className="min-h-screen bg-neutral-light py-8">
       <MetaTags 
-        title="Calculator Puncte Pensie 2025 | Puncte de Stabilitate Noua Lege"
+        title="Calculator Puncte Pensie 2026 | Puncte de Stabilitate Noua Lege"
         description="Calculează numărul total de puncte de pensie acumulate. Află câte puncte de stabilitate primești pentru stagiul peste 25 de ani conform Legii 360/2023."
         canonical="https://calculatorpensie.com/calculator-puncte-pensie"
-        keywords="calculator puncte pensie, puncte de stabilitate, calcul puncte pensie 2025, calcul puncte stabilitate noua lege"
+        keywords="calculator puncte pensie, puncte de stabilitate, calcul puncte pensie 2026, calcul puncte stabilitate noua lege"
       />
       
       <WebPageSchema 
@@ -181,7 +181,7 @@ export default function CalculatorPunctePage() {
                     <strong className="text-2xl text-blue-700 block mt-1">
                       {result.estimatedPension.toLocaleString("ro-RO")} RON/lună
                     </strong>
-                    <span className="text-xs text-gray-500 block mt-1">*Formula: {result.totalPoints} puncte × 91 Lei VPR (Valoare Punct de Referință 2025)</span>
+                    <span className="text-xs text-gray-500 block mt-1">*Formula: {result.totalPoints} puncte × 91 Lei VPR (Valoare Punct de Referință 2026)</span>
                   </div>
                 </CardContent>
               </Card>
@@ -229,8 +229,8 @@ export default function CalculatorPunctePage() {
               
               <figure className="my-6">
                 <img 
-                  src="/images/puncte-stabilitate-legea-360.png" 
-                  alt="Infografic Puncte de Stabilitate Noua Lege a Pensiilor 2025" 
+                  src="/images/puncte-stabilitate-legea-360-new.png" 
+                  alt="Infografic Puncte de Stabilitate Noua Lege a Pensiilor 2026" 
                   className="w-full rounded-lg shadow-md border border-gray-100"
                   loading="lazy"
                 />

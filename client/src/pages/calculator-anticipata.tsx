@@ -9,7 +9,7 @@ export default function CalculatorAnticipataPage() {
   return (
     <div className="min-h-screen bg-neutral-light py-8">
       <MetaTags 
-        title="Calculator Pensie Anticipată 2025 | Penalizări și Vârstă"
+        title="Calculator Pensie Anticipată 2026 | Penalizări și Vârstă"
         description="Calculează penalizarea aplicată pentru pensionarea anticipată în România. Află vârsta minimă, stagiul necesar și procentul de reducere conform Legii 360/2023."
         canonical="https://calculatorpensie.com/calculator-pensie-anticipata"
         keywords="calculator pensie anticipata, pensie anticipata cu penalizare, varsta pensionare anticipata, legea pensiilor 360/2023"
@@ -82,8 +82,8 @@ export default function CalculatorAnticipataPage() {
           
           <figure className="my-6">
             <img 
-              src="/images/infografic-penalizare-anticipata.png" 
-              alt="Infografic Penalizare Pensie Anticipată România 2025" 
+              src="/images/tabel-penalizari-anticipata.png" 
+              alt="Infografic Penalizare Pensie Anticipată România 2026" 
               className="w-full rounded-lg shadow-md border border-gray-100"
               loading="lazy"
             />
