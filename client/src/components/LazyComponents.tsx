@@ -1,7 +1,6 @@
 import { lazy } from 'react';
 
 // Lazy load heavy components to reduce initial bundle size by ~100KB
-export const LazyCalculatorPage = lazy(() => import('../pages/calculator'));
 export const LazyBlogPage = lazy(() => import('../pages/blog'));
 export const LazyBlogArticle = lazy(() => import('../pages/blog-article'));
 export const LazyContactPage = lazy(() => import('../pages/contact'));

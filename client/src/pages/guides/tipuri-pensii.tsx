@@ -99,7 +99,7 @@ export default function TipuriPensiiPage() {
                   Pentru detalii complete despre condițiile de acordare și modalitatea de calcul, 
                   consultă <strong>articolul nostru dedicat despre pensia pentru limită de vârstă</strong>.
                 </p>
-                <Link href="/blog/ghid-calcul-pensie-stat-2025">
+                <Link href="/blog/ghid-calcul-pensie-stat-2026">
                   <Button variant="outline" className="text-brand-blue border-brand-blue hover:bg-brand-blue hover:text-white">
                     Citește Ghidul Complet <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>

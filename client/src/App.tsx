@@ -31,6 +31,7 @@ const LazyCalculatorAnticipata = lazy(() => import("@/pages/calculator-anticipat
 const LazyCalculatorVarsta = lazy(() => import("@/pages/calculator-varsta-pensionare"));
 const LazyCalculatorPuncte = lazy(() => import("@/pages/calculator-puncte-pensie"));
 const LazyCalculatorPilon2 = lazy(() => import("@/pages/calculator-pilon-2"));
+const LazyCalculatorPilon3 = lazy(() => import("@/pages/calculator-pensie-pilon-3"));
 const LazyProgramExcel = lazy(() => import("@/pages/program-excel-calcul-pensie"));
 
 // Loading component
@@ -69,6 +70,11 @@ function Router() {
           <Route path="/calculator-pensie-pilon-2">
             <Suspense fallback={<LoadingSpinner />}>
               <LazyCalculatorPilon2 />
+            </Suspense>
+          </Route>
+          <Route path="/calculator-pensie-pilon-3">
+            <Suspense fallback={<LoadingSpinner />}>
+              <LazyCalculatorPilon3 />
             </Suspense>
           </Route>
           <Route path="/program-excel-calcul-pensie">
@@ -130,6 +136,9 @@ function Router() {
             <Suspense fallback={<LoadingSpinner />}>
               <LazyFAQ />
             </Suspense>
+          </Route>
+          <Route path="/calculator">
+            <Redirect to="/" />
           </Route>
           <Route path="/termeni">
             <Redirect to="/terms" />

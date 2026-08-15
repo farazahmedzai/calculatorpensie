@@ -45,6 +45,12 @@ const staticRoutes: Record<string, PageMeta> = {
     canonical: 'https://calculatorpensie.com/calculator-pensie-pilon-2/',
     keywords: 'calculator pensie pilon 2, pilonul ii pensii private, randament pilon 2, fond de pensii privat'
   },
+  '/calculator-pensie-pilon-3': {
+    title: 'Calculator Pensie Pilon 3 (Facultativă) 2026',
+    description: 'Calculează suma pe care o poți strânge în Pilonul III de pensii facultative. Vezi avantajele deductibilității fiscale și profitul estimat.',
+    canonical: 'https://calculatorpensie.com/calculator-pensie-pilon-3/',
+    keywords: 'calculator pensie pilon 3, pensie facultativa pilon 3, calculator pensie facultativa, pilonul 3 pensie privata'
+  },
   '/program-excel-calcul-pensie': {
     title: 'Program Excel Calcul Pensie 2026 (Download Gratuit)',
     description: 'Descarcă simulatorul Excel gratuit pentru pensia de stat 2026. Introdu salariul și calculează automat punctajul lunar.',
@@ -154,16 +160,49 @@ function replaceMeta(html: string, meta: PageMeta, bodyContent?: string): string
     result = result.replace(/<\/head>/i, `${additionalTags}\n</head>`);
   }
 
-  // Inject visually hidden SEO content so Googlebot parses actual text before JS hydration
-  const srOnlyStyle = 'position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border-width:0;';
-  let injectedBody = `\n    <h1 style="${srOnlyStyle}">${meta.title}</h1>`;
-  if (bodyContent) {
-    injectedBody += `\n    <article style="${srOnlyStyle}">\n      <p>${bodyContent}</p>\n    </article>`;
+  // Inject server-side JSON-LD so structured data is in the initial HTML (Google prefers
+  // this over JS-injected schema — see Dec 2025 JS-SEO guidance). No hidden text is injected.
+  const jsonLd = buildJsonLd(meta, bodyContent);
+  if (jsonLd) {
+    result = result.replace(/<\/head>/i, `    <script type="application/ld+json">\n${JSON.stringify(jsonLd, null, 2)}\n    </script>\n  </head>`);
   }
-  
-  result = result.replace(/<body>/i, `<body>${injectedBody}`);
 
   return result;
+}
+
+function buildJsonLd(meta: PageMeta, bodyContent?: string): object | null {
+  const graph: object[] = [
+    {
+      "@type": "Organization",
+      "name": "CalculatorPensie.com",
+      "url": "https://calculatorpensie.com/",
+      "logo": "https://calculatorpensie.com/og-image.jpg"
+    },
+    {
+      "@type": "WebSite",
+      "name": "CalculatorPensie.com",
+      "url": "https://calculatorpensie.com/"
+    }
+  ];
+
+  // For blog articles, add Article schema with author + dates (E-E-A-T signal)
+  if (bodyContent && bodyContent.startsWith('ARTICLE:')) {
+    const payload = bodyContent.slice(8);
+    const parts = payload.split('|');
+    if (parts.length >= 3) {
+      graph.push({
+        "@type": "Article",
+        "headline": meta.title,
+        "description": meta.description,
+        "datePublished": parts[0],
+        "dateModified": parts[1],
+        "author": { "@type": "Person", "name": parts[2] },
+        "publisher": { "@type": "Organization", "name": "CalculatorPensie.com" }
+      });
+    }
+  }
+
+  return { "@context": "https://schema.org", "@graph": graph };
 }
 
 function main() {
@@ -213,8 +252,8 @@ function main() {
       keywords: `${article.category}, pensii romania, ${article.title.toLowerCase()}`
     };
 
-    const articleBodyText = article.excerpt + " " + (article.content.length > 1000 ? article.content.slice(0, 1000) + '...' : article.content);
-    const preRenderedHtml = replaceMeta(baseHtml, meta, articleBodyText);
+    const articlePayload = `ARTICLE:${article.publishDate}|${article.publishDate}|${article.author.name}`;
+    const preRenderedHtml = replaceMeta(baseHtml, meta, articlePayload);
     fs.writeFileSync(path.join(targetDir, 'index.html'), preRenderedHtml, 'utf-8');
     console.log(`- Pre-rendered dynamic blog route: /${route}`);
   }

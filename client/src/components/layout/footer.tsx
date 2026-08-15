@@ -108,10 +108,10 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/?type=pillar3">
+                <Link href="/calculator-pensie-pilon-3">
                   <span className="text-gray-300 hover:text-blue-400 transition-all duration-300 cursor-pointer flex items-center group">
                     <div className="w-2 h-2 bg-blue-600 rounded-full mr-3 group-hover:bg-blue-400 transition-colors"></div>
-                    Contribuții Pilon III
+                    Calculator Pensie Pilon 3
                   </span>
                 </Link>
               </li>

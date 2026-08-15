@@ -34,6 +34,12 @@ try {
 
     // Create _redirects file for SPA routing only (ads.txt now served as static file)
     const redirectsContent = `/blog/blog/*  /blog/:splat  301!
+/blog/ghid-calcul-pensie-stat-2025  /blog/ghid-calcul-pensie-stat-2026  301!
+/blog/reforma-sistem-pensii-2025  /blog/reforma-sistem-pensii-2026  301!
+/blog/pensie-minima-garantata-2025  /blog/pensie-minima-garantata-2026  301!
+/blog/ghid-pensie-invaliditate-2025  /blog/ghid-pensie-invaliditate-2026  301!
+/blog/indexare-pensii-2025-2026  /blog/indexare-pensii-2026-2026  301!
+/blog/cumparare-vechime-munca  /blog/stagiul-cotizare-cumparare-ani-munca  301!
 /calculator  /  301!
 /robots.txt  /robots.txt  200
 /sitemap.xml  /sitemap.xml  200

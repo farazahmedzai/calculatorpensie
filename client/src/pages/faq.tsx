@@ -370,7 +370,7 @@ export default function FAQ() {
                 <p className="text-sm text-gray-600 mb-4">Optimizează contribuțiile</p>
                 <Button 
                   className="w-full bg-green-600 hover:bg-green-700"
-                  onClick={() => window.location.href = '/calculator?type=pillar3'}
+                  onClick={() => window.location.href = '/calculator-pensie-pilon-3'}
                 >
                   Calculează
                 </Button>

@@ -12,6 +12,43 @@
   status = 301
   force = true
 
+# Old 2025 blog URLs -> new 2026 slugs (preserve link equity, kill soft-404s)
+[[redirects]]
+  from = "/blog/ghid-calcul-pensie-stat-2025"
+  to = "/blog/ghid-calcul-pensie-stat-2026"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog/reforma-sistem-pensii-2025"
+  to = "/blog/reforma-sistem-pensii-2026"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog/pensie-minima-garantata-2025"
+  to = "/blog/pensie-minima-garantata-2026"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog/ghid-pensie-invaliditate-2025"
+  to = "/blog/ghid-pensie-invaliditate-2026"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog/indexare-pensii-2025-2026"
+  to = "/blog/indexare-pensii-2026-2026"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog/cumparare-vechime-munca"
+  to = "/blog/stagiul-cotizare-cumparare-ani-munca"
+  status = 301
+  force = true
+
 [[redirects]]
   from = "/robots.txt"
   to = "/robots.txt"

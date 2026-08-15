@@ -1,0 +1,1587 @@
+{
+  "communities": {
+    "0": [
+      "client_src_components_calculators_early_retirement_calculator",
+      "client_src_components_calculators_early_retirement_calculator_earlyretirementcalculator",
+      "client_src_components_calculators_early_retirement_calculator_earlyretirementform",
+      "client_src_components_calculators_early_retirement_calculator_earlyretirementschema",
+      "client_src_components_calculators_main_calculator",
+      "client_src_components_calculators_main_calculator_calculatorform",
+      "client_src_components_calculators_main_calculator_calculatorschema",
+      "client_src_components_calculators_main_calculator_maincalculator",
+      "client_src_components_calculators_main_calculator_maincalculatorprops",
+      "client_src_components_calculators_pillar3_calculator",
+      "client_src_components_calculators_pillar3_calculator_pillar3calculator",
+      "client_src_components_calculators_pillar3_calculator_pillar3form",
+      "client_src_components_calculators_pillar3_calculator_pillar3schema",
+      "client_src_components_features_pensioncomparison",
+      "client_src_components_features_pensioncomparison_pensioncomparison",
+      "client_src_components_features_pensioncomparison_pensionscenario",
+      "client_src_components_features_pensioncomparison_pensionscenarios",
+      "client_src_components_newsletter_newslettersignup",
+      "client_src_components_newsletter_newslettersignup_newsletterform",
+      "client_src_components_newsletter_newslettersignup_newsletterschema",
+      "client_src_components_newsletter_newslettersignup_newslettersignup",
+      "client_src_components_newsletter_newslettersignup_newslettersignupprops",
+      "client_src_components_seo_breadcrumbnavigation",
+      "client_src_components_seo_breadcrumbnavigation_breadcrumbitem",
+      "client_src_components_seo_breadcrumbnavigation_breadcrumbnavigation",
+      "client_src_components_seo_breadcrumbnavigation_breadcrumbnavigationprops",
+      "client_src_components_seo_metatags",
+      "client_src_components_seo_metatags_metatags",
+      "client_src_components_seo_metatags_metatagsprops",
+      "client_src_components_seo_structureddata",
+      "client_src_components_seo_structureddata_articleschema",
+      "client_src_components_seo_structureddata_articleschemaprops",
+      "client_src_components_seo_structureddata_faqpageschema",
+      "client_src_components_seo_structureddata_faqschemaprops",
+      "client_src_components_seo_structureddata_howtoschema",
+      "client_src_components_seo_structureddata_howtoschemaprops",
+      "client_src_components_seo_structureddata_localbusinessschema",
+      "client_src_components_seo_structureddata_localbusinessschemaprops",
+      "client_src_components_seo_structureddata_organizationschema",
+      "client_src_components_seo_structureddata_organizationschemaprops",
+      "client_src_components_seo_structureddata_webapplicationschema",
+      "client_src_components_seo_structureddata_webapplicationschemaprops",
+      "client_src_components_seo_structureddata_webpageschema",
+      "client_src_components_seo_structureddata_websiteschema",
+      "client_src_components_ui_badge",
+      "client_src_components_ui_badge_badge",
+      "client_src_components_ui_badge_badgeprops",
+      "client_src_components_ui_badge_badgevariants",
+      "client_src_components_ui_button",
+      "client_src_components_ui_button_button",
+      "client_src_components_ui_card",
+      "client_src_components_ui_card_card",
+      "client_src_components_ui_card_cardcontent",
+      "client_src_components_ui_card_carddescription",
+      "client_src_components_ui_card_cardfooter",
+      "client_src_components_ui_card_cardheader",
+      "client_src_components_ui_card_cardtitle",
+      "client_src_components_ui_form",
+      "client_src_components_ui_form_formcontrol",
+      "client_src_components_ui_form_formdescription",
+      "client_src_components_ui_form_formfield",
+      "client_src_components_ui_form_formfieldcontext",
+      "client_src_components_ui_form_formfieldcontextvalue",
+      "client_src_components_ui_form_formitem",
+      "client_src_components_ui_form_formitemcontext",
+      "client_src_components_ui_form_formitemcontextvalue",
+      "client_src_components_ui_form_formlabel",
+      "client_src_components_ui_form_formmessage",
+      "client_src_components_ui_input",
+      "client_src_components_ui_input_input",
+      "client_src_components_ui_label",
+      "client_src_components_ui_label_label",
+      "client_src_components_ui_label_labelvariants",
+      "client_src_components_ui_radio_group",
+      "client_src_components_ui_radio_group_radiogroup",
+      "client_src_components_ui_radio_group_radiogroupitem",
+      "client_src_components_ui_select",
+      "client_src_components_ui_select_selectcontent",
+      "client_src_components_ui_select_selectitem",
+      "client_src_components_ui_select_selectlabel",
+      "client_src_components_ui_select_selectscrolldownbutton",
+      "client_src_components_ui_select_selectscrollupbutton",
+      "client_src_components_ui_select_selectseparator",
+      "client_src_components_ui_select_selecttrigger",
+      "client_src_lib_analytics_trackcalculatorusage",
+      "client_src_lib_analytics_tracknewslettersignup",
+      "client_src_lib_pension_calculations",
+      "client_src_lib_pension_calculations_calculateearlyretirement",
+      "client_src_lib_pension_calculations_calculatepillar3contributions",
+      "client_src_lib_pension_calculations_calculatepurchasableyears",
+      "client_src_lib_pension_calculations_calculatestandardpension",
+      "client_src_lib_pension_calculations_earlyretirementinput",
+      "client_src_lib_pension_calculations_pensionresult",
+      "client_src_lib_pension_calculations_pillar3input",
+      "client_src_lib_pension_calculations_standardpensioninput",
+      "client_src_lib_pension_calculations_validatepensioneligibility",
+      "client_src_lib_queryclient",
+      "client_src_lib_queryclient_apirequest",
+      "client_src_lib_queryclient_getqueryfn",
+      "client_src_lib_queryclient_throwifresnotok",
+      "client_src_lib_queryclient_unauthorizedbehavior",
+      "client_src_pages_blog",
+      "client_src_pages_blog_article",
+      "client_src_pages_blog_article_blogarticle",
+      "client_src_pages_blog_blogpage",
+      "client_src_pages_calculator_anticipata",
+      "client_src_pages_calculator_anticipata_calculatoranticipatapage",
+      "client_src_pages_calculator_anticipata_calculatoricon",
+      "client_src_pages_calculator_pensie_pilon_3",
+      "client_src_pages_calculator_pensie_pilon_3_calculatorpilon3page",
+      "client_src_pages_calculator_pilon_2",
+      "client_src_pages_calculator_pilon_2_calculatorpilon2page",
+      "client_src_pages_calculator_puncte_pensie",
+      "client_src_pages_calculator_puncte_pensie_calculatorpunctepage",
+      "client_src_pages_calculator_varsta_pensionare",
+      "client_src_pages_calculator_varsta_pensionare_calculatorvarstapage",
+      "client_src_pages_contact",
+      "client_src_pages_despre_noi",
+      "client_src_pages_despre_noi_desprenoi",
+      "client_src_pages_faq",
+      "client_src_pages_faq_faq",
+      "client_src_pages_guides_legislatie",
+      "client_src_pages_guides_legislatie_legislatiepage",
+      "client_src_pages_guides_planificare",
+      "client_src_pages_guides_planificare_planificarepage",
+      "client_src_pages_guides_tipuri_pensii",
+      "client_src_pages_guides_tipuri_pensii_tipuripensiipage",
+      "client_src_pages_home",
+      "client_src_pages_home_backup",
+      "client_src_pages_home_backup_article",
+      "client_src_pages_home_backup_home",
+      "client_src_pages_home_faqsection",
+      "client_src_pages_home_home",
+      "client_src_pages_metodologie",
+      "client_src_pages_metodologie_metodologie",
+      "client_src_pages_privacy",
+      "client_src_pages_privacy_privacy",
+      "client_src_pages_program_excel_calcul_pensie",
+      "client_src_pages_program_excel_calcul_pensie_programexcelpage",
+      "client_src_pages_terms",
+      "client_src_pages_terms_terms"
+    ],
+    "1": [
+      "netlify_functions_api",
+      "netlify_functions_api_handler",
+      "server_index",
+      "server_index_app",
+      "server_routes",
+      "server_routes_registerroutes",
+      "server_storage",
+      "server_storage_istorage",
+      "server_storage_istorage_createarticle",
+      "server_storage_istorage_createnewslettersubscription",
+      "server_storage_istorage_createpensioncalculation",
+      "server_storage_istorage_createuser",
+      "server_storage_istorage_getactivenewslettersubscriptions",
+      "server_storage_istorage_getarticlebyslug",
+      "server_storage_istorage_getarticles",
+      "server_storage_istorage_getcalculationsbytype",
+      "server_storage_istorage_getnewslettersubscriptionbyemail",
+      "server_storage_istorage_getrecentarticles",
+      "server_storage_istorage_getrecentcalculations",
+      "server_storage_istorage_getsystemstats",
+      "server_storage_istorage_getuser",
+      "server_storage_istorage_getuserbyusername",
+      "server_storage_istorage_updatearticle",
+      "server_storage_istorage_updatenewslettersubscription",
+      "server_storage_memstorage",
+      "server_storage_memstorage_constructor",
+      "server_storage_memstorage_createarticle",
+      "server_storage_memstorage_createnewslettersubscription",
+      "server_storage_memstorage_createpensioncalculation",
+      "server_storage_memstorage_createuser",
+      "server_storage_memstorage_getactivenewslettersubscriptions",
+      "server_storage_memstorage_getarticlebyslug",
+      "server_storage_memstorage_getarticles",
+      "server_storage_memstorage_getcalculationsbytype",
+      "server_storage_memstorage_getnewslettersubscriptionbyemail",
+      "server_storage_memstorage_getrecentarticles",
+      "server_storage_memstorage_getrecentcalculations",
+      "server_storage_memstorage_getsystemstats",
+      "server_storage_memstorage_getuser",
+      "server_storage_memstorage_getuserbyusername",
+      "server_storage_memstorage_initializearticles",
+      "server_storage_memstorage_updatearticle",
+      "server_storage_memstorage_updatenewslettersubscription",
+      "server_storage_storage",
+      "server_vite",
+      "server_vite_log",
+      "server_vite_servestatic",
+      "server_vite_setupvite",
+      "server_vite_vitelogger",
+      "shared_schema",
+      "shared_schema_article",
+      "shared_schema_articles",
+      "shared_schema_insertarticle",
+      "shared_schema_insertarticleschema",
+      "shared_schema_insertnewslettersubscription",
+      "shared_schema_insertnewslettersubscriptionschema",
+      "shared_schema_insertpensioncalculation",
+      "shared_schema_insertpensioncalculationschema",
+      "shared_schema_insertuser",
+      "shared_schema_insertuserschema",
+      "shared_schema_newslettersubscription",
+      "shared_schema_newslettersubscriptions",
+      "shared_schema_pensioncalculation",
+      "shared_schema_pensioncalculations",
+      "shared_schema_user",
+      "shared_schema_users",
+      "vite_config"
+    ],
+    "2": [
+      "client_src_app",
+      "client_src_app_app",
+      "client_src_app_lazyblog",
+      "client_src_app_lazyblogarticle",
+      "client_src_app_lazycalculatoranticipata",
+      "client_src_app_lazycalculatorpilon2",
+      "client_src_app_lazycalculatorpilon3",
+      "client_src_app_lazycalculatorpuncte",
+      "client_src_app_lazycalculatorvarsta",
+      "client_src_app_lazycontact",
+      "client_src_app_lazydesprenoi",
+      "client_src_app_lazyfaq",
+      "client_src_app_lazylegislatie",
+      "client_src_app_lazymetodologie",
+      "client_src_app_lazyplanificare",
+      "client_src_app_lazyprivacy",
+      "client_src_app_lazyprogramexcel",
+      "client_src_app_lazyterms",
+      "client_src_app_lazytipuripensii",
+      "client_src_app_loadingspinner",
+      "client_src_app_router",
+      "client_src_components_analytics_performancetracker",
+      "client_src_components_analytics_performancetracker_performancetracker",
+      "client_src_components_analytics_performancetracker_performancetrackerprops",
+      "client_src_components_layout_footer",
+      "client_src_components_layout_footer_footer",
+      "client_src_hooks_use_analytics",
+      "client_src_hooks_use_analytics_getpagetitle",
+      "client_src_hooks_use_analytics_useanalytics",
+      "client_src_lib_analytics",
+      "client_src_lib_analytics_initga",
+      "client_src_lib_analytics_trackarticleview",
+      "client_src_lib_analytics_trackcontactsubmission",
+      "client_src_lib_analytics_trackdownload",
+      "client_src_lib_analytics_trackerror",
+      "client_src_lib_analytics_trackexternalclick",
+      "client_src_lib_analytics_trackfaqinteraction",
+      "client_src_lib_analytics_trackguideview",
+      "client_src_lib_analytics_trackpageview",
+      "client_src_lib_analytics_trackscrolldepth",
+      "client_src_lib_analytics_tracksearch",
+      "client_src_lib_analytics_tracktimeonpage",
+      "client_src_lib_analytics_window",
+      "client_src_lib_queryclient_queryclient",
+      "client_src_main",
+      "client_src_pages_not_found",
+      "client_src_pages_not_found_notfound"
+    ],
+    "3": [
+      "ref_build",
+      "ref_client_src",
+      "ref_dist",
+      "ref_dom",
+      "ref_dom_iterable",
+      "ref_esnext",
+      "ref_node",
+      "ref_node_modules",
+      "ref_server",
+      "ref_shared",
+      "ref_test_ts",
+      "ref_vite_client",
+      "tsconfig",
+      "tsconfig_compileroptions",
+      "tsconfig_compileroptions_allowimportingtsextensions",
+      "tsconfig_compileroptions_baseurl",
+      "tsconfig_compileroptions_esmoduleinterop",
+      "tsconfig_compileroptions_incremental",
+      "tsconfig_compileroptions_jsx",
+      "tsconfig_compileroptions_lib",
+      "tsconfig_compileroptions_module",
+      "tsconfig_compileroptions_moduleresolution",
+      "tsconfig_compileroptions_noemit",
+      "tsconfig_compileroptions_paths",
+      "tsconfig_compileroptions_skiplibcheck",
+      "tsconfig_compileroptions_strict",
+      "tsconfig_compileroptions_tsbuildinfofile",
+      "tsconfig_compileroptions_types",
+      "tsconfig_exclude",
+      "tsconfig_include",
+      "tsconfig_paths_shared"
+    ],
+    "4": [
+      "client_src_components_ui_separator",
+      "client_src_components_ui_separator_separator",
+      "client_src_components_ui_sidebar",
+      "client_src_components_ui_sidebar_sidebar",
+      "client_src_components_ui_sidebar_sidebarcontent",
+      "client_src_components_ui_sidebar_sidebarcontext",
+      "client_src_components_ui_sidebar_sidebarcontextprops",
+      "client_src_components_ui_sidebar_sidebarfooter",
+      "client_src_components_ui_sidebar_sidebargroup",
+      "client_src_components_ui_sidebar_sidebargroupaction",
+      "client_src_components_ui_sidebar_sidebargroupcontent",
+      "client_src_components_ui_sidebar_sidebargrouplabel",
+      "client_src_components_ui_sidebar_sidebarheader",
+      "client_src_components_ui_sidebar_sidebarinput",
+      "client_src_components_ui_sidebar_sidebarinset",
+      "client_src_components_ui_sidebar_sidebarmenu",
+      "client_src_components_ui_sidebar_sidebarmenuaction",
+      "client_src_components_ui_sidebar_sidebarmenubadge",
+      "client_src_components_ui_sidebar_sidebarmenubutton",
+      "client_src_components_ui_sidebar_sidebarmenubuttonvariants",
+      "client_src_components_ui_sidebar_sidebarmenuitem",
+      "client_src_components_ui_sidebar_sidebarmenuskeleton",
+      "client_src_components_ui_sidebar_sidebarmenusub",
+      "client_src_components_ui_sidebar_sidebarmenusubbutton",
+      "client_src_components_ui_sidebar_sidebarmenusubitem",
+      "client_src_components_ui_sidebar_sidebarprovider",
+      "client_src_components_ui_sidebar_sidebarrail",
+      "client_src_components_ui_sidebar_sidebarseparator",
+      "client_src_components_ui_sidebar_sidebartrigger"
+    ],
+    "5": [
+      "client_src_components_faqsection",
+      "client_src_components_faqsection_faqdata",
+      "client_src_components_faqsection_faqitem",
+      "client_src_components_faqsection_faqsection",
+      "client_src_components_lazycomponents",
+      "client_src_components_lazycomponents_componentloader",
+      "client_src_components_lazycomponents_lazyblogarticle",
+      "client_src_components_lazycomponents_lazyblogpage",
+      "client_src_components_lazycomponents_lazycontactpage",
+      "client_src_components_lazycomponents_lazyearlyretirementcalculator",
+      "client_src_components_lazycomponents_lazyfaqsection",
+      "client_src_components_lazycomponents_lazylegislatie",
+      "client_src_components_lazycomponents_lazymaincalculator",
+      "client_src_components_lazycomponents_lazypillar3calculator",
+      "client_src_components_lazycomponents_lazyplanificare",
+      "client_src_components_lazycomponents_lazytipuripensii",
+      "client_src_components_lazycomponents_preloadcriticalcomponents",
+      "client_src_lib_performance_manager",
+      "client_src_lib_performance_manager_performancemanager",
+      "client_src_lib_performance_manager_performancemanager_calculatesavings",
+      "client_src_lib_performance_manager_performancemanager_enableserviceworker",
+      "client_src_lib_performance_manager_performancemanager_getinstance",
+      "client_src_lib_performance_manager_performancemanager_init",
+      "client_src_lib_performance_manager_performancemanager_measureperformance",
+      "client_src_lib_performance_manager_performancemanager_optimizefonts",
+      "client_src_lib_performance_manager_performancemanager_optimizeresourceloading",
+      "client_src_lib_performance_manager_performancemanager_preloadcriticalresources",
+      "client_src_lib_performance_manager_performancemanager_setupintersectionobserver"
+    ],
+    "6": [
+      "client_src_components_ui_toast",
+      "client_src_components_ui_toast_toast",
+      "client_src_components_ui_toast_toastaction",
+      "client_src_components_ui_toast_toastactionelement",
+      "client_src_components_ui_toast_toastclose",
+      "client_src_components_ui_toast_toastdescription",
+      "client_src_components_ui_toast_toastprops",
+      "client_src_components_ui_toast_toasttitle",
+      "client_src_components_ui_toast_toastvariants",
+      "client_src_components_ui_toast_toastviewport",
+      "client_src_components_ui_toaster",
+      "client_src_components_ui_toaster_toaster",
+      "client_src_hooks_use_toast",
+      "client_src_hooks_use_toast_action",
+      "client_src_hooks_use_toast_actiontype",
+      "client_src_hooks_use_toast_actiontypes",
+      "client_src_hooks_use_toast_addtoremovequeue",
+      "client_src_hooks_use_toast_dispatch",
+      "client_src_hooks_use_toast_genid",
+      "client_src_hooks_use_toast_listeners",
+      "client_src_hooks_use_toast_memorystate",
+      "client_src_hooks_use_toast_reducer",
+      "client_src_hooks_use_toast_state",
+      "client_src_hooks_use_toast_toast",
+      "client_src_hooks_use_toast_toastertoast",
+      "client_src_hooks_use_toast_toasttimeouts",
+      "client_src_hooks_use_toast_usetoast",
+      "client_src_pages_contact_contact"
+    ],
+    "7": [
+      "client_src_components_ui_button_buttonprops",
+      "client_src_components_ui_button_buttonvariants",
+      "client_src_components_ui_calendar",
+      "client_src_components_ui_calendar_calendar",
+      "client_src_components_ui_calendar_calendarprops",
+      "client_src_components_ui_pagination",
+      "client_src_components_ui_pagination_pagination",
+      "client_src_components_ui_pagination_paginationcontent",
+      "client_src_components_ui_pagination_paginationellipsis",
+      "client_src_components_ui_pagination_paginationitem",
+      "client_src_components_ui_pagination_paginationlink",
+      "client_src_components_ui_pagination_paginationlinkprops",
+      "client_src_components_ui_pagination_paginationnext",
+      "client_src_components_ui_pagination_paginationprevious",
+      "client_src_components_ui_resizable",
+      "client_src_components_ui_resizable_resizablehandle",
+      "client_src_components_ui_resizable_resizablepanelgroup",
+      "client_src_components_ui_sheet_sheetfooter",
+      "client_src_components_ui_skeleton",
+      "client_src_components_ui_skeleton_skeleton",
+      "client_src_lib_utils_cn"
+    ],
+    "8": [
+      "client_src_components_ui_checkbox",
+      "client_src_components_ui_checkbox_checkbox",
+      "client_src_components_ui_hover_card",
+      "client_src_components_ui_hover_card_hovercardcontent",
+      "client_src_components_ui_popover",
+      "client_src_components_ui_popover_popovercontent",
+      "client_src_components_ui_progress",
+      "client_src_components_ui_progress_progress",
+      "client_src_components_ui_scroll_area",
+      "client_src_components_ui_scroll_area_scrollarea",
+      "client_src_components_ui_scroll_area_scrollbar",
+      "client_src_components_ui_slider",
+      "client_src_components_ui_slider_slider",
+      "client_src_components_ui_switch",
+      "client_src_components_ui_switch_switch",
+      "client_src_components_ui_textarea",
+      "client_src_components_ui_textarea_textarea",
+      "client_src_lib_utils"
+    ],
+    "9": [
+      "client_src_lib_seo_audit",
+      "client_src_lib_seo_audit_seoauditor",
+      "client_src_lib_seo_audit_seoauditor_addissue",
+      "client_src_lib_seo_audit_seoauditor_auditaccessibility",
+      "client_src_lib_seo_audit_seoauditor_auditcanonicaltags",
+      "client_src_lib_seo_audit_seoauditor_auditcontent",
+      "client_src_lib_seo_audit_seoauditor_auditheadingstructure",
+      "client_src_lib_seo_audit_seoauditor_auditimages",
+      "client_src_lib_seo_audit_seoauditor_auditlinks",
+      "client_src_lib_seo_audit_seoauditor_auditmetatags",
+      "client_src_lib_seo_audit_seoauditor_auditperformance",
+      "client_src_lib_seo_audit_seoauditor_auditstructureddata",
+      "client_src_lib_seo_audit_seoauditor_constructor",
+      "client_src_lib_seo_audit_seoauditor_generaterecommendations",
+      "client_src_lib_seo_audit_seoauditor_generatereport",
+      "client_src_lib_seo_audit_seoauditor_runfullaudit",
+      "client_src_lib_seo_audit_seoauditresult",
+      "client_src_lib_seo_audit_seoissue"
+    ],
+    "10": [
+      "client_src_components_ui_command",
+      "client_src_components_ui_command_command",
+      "client_src_components_ui_command_commanddialog",
+      "client_src_components_ui_command_commandempty",
+      "client_src_components_ui_command_commandgroup",
+      "client_src_components_ui_command_commandinput",
+      "client_src_components_ui_command_commanditem",
+      "client_src_components_ui_command_commandlist",
+      "client_src_components_ui_command_commandseparator",
+      "client_src_components_ui_command_commandshortcut",
+      "client_src_components_ui_dialog",
+      "client_src_components_ui_dialog_dialogcontent",
+      "client_src_components_ui_dialog_dialogdescription",
+      "client_src_components_ui_dialog_dialogfooter",
+      "client_src_components_ui_dialog_dialogheader",
+      "client_src_components_ui_dialog_dialogoverlay",
+      "client_src_components_ui_dialog_dialogtitle"
+    ],
+    "11": [
+      "client_src_components_ui_menubar",
+      "client_src_components_ui_menubar_menubar",
+      "client_src_components_ui_menubar_menubarcheckboxitem",
+      "client_src_components_ui_menubar_menubarcontent",
+      "client_src_components_ui_menubar_menubargroup",
+      "client_src_components_ui_menubar_menubaritem",
+      "client_src_components_ui_menubar_menubarlabel",
+      "client_src_components_ui_menubar_menubarmenu",
+      "client_src_components_ui_menubar_menubarportal",
+      "client_src_components_ui_menubar_menubarradiogroup",
+      "client_src_components_ui_menubar_menubarradioitem",
+      "client_src_components_ui_menubar_menubarseparator",
+      "client_src_components_ui_menubar_menubarshortcut",
+      "client_src_components_ui_menubar_menubarsub",
+      "client_src_components_ui_menubar_menubarsubcontent",
+      "client_src_components_ui_menubar_menubarsubtrigger",
+      "client_src_components_ui_menubar_menubartrigger"
+    ],
+    "12": [
+      "client_src_lib_sitemap_generator",
+      "client_src_lib_sitemap_generator_robotstxtconfig",
+      "client_src_lib_sitemap_generator_seoanalyzer",
+      "client_src_lib_sitemap_generator_seoanalyzer_analyzepagespeed",
+      "client_src_lib_sitemap_generator_seoanalyzer_analyzetitletags",
+      "client_src_lib_sitemap_generator_seoanalyzer_generateseoreport",
+      "client_src_lib_sitemap_generator_sitemapgenerator",
+      "client_src_lib_sitemap_generator_sitemapgenerator_addblogarticles",
+      "client_src_lib_sitemap_generator_sitemapgenerator_addurl",
+      "client_src_lib_sitemap_generator_sitemapgenerator_constructor",
+      "client_src_lib_sitemap_generator_sitemapgenerator_generaterobotstxt",
+      "client_src_lib_sitemap_generator_sitemapgenerator_generatexmlsitemap",
+      "client_src_lib_sitemap_generator_sitemapgenerator_geturlcount",
+      "client_src_lib_sitemap_generator_sitemapgenerator_geturls",
+      "client_src_lib_sitemap_generator_sitemapgenerator_initializestaticpages",
+      "client_src_lib_sitemap_generator_sitemapgenerator_validateurls",
+      "client_src_lib_sitemap_generator_sitemapurl"
+    ],
+    "13": [
+      "components",
+      "components_aliases",
+      "components_aliases_components",
+      "components_aliases_hooks",
+      "components_aliases_lib",
+      "components_aliases_ui",
+      "components_aliases_utils",
+      "components_rsc",
+      "components_schema",
+      "components_style",
+      "components_tailwind",
+      "components_tailwind_basecolor",
+      "components_tailwind_config",
+      "components_tailwind_css",
+      "components_tailwind_cssvariables",
+      "components_tailwind_prefix",
+      "components_tsx"
+    ],
+    "14": [
+      "date_fns",
+      "jridgewell_trace_mapping",
+      "netlify_functions",
+      "package_dependencies",
+      "package_dependencies_date_fns",
+      "package_dependencies_jridgewell_trace_mapping",
+      "package_dependencies_netlify_functions",
+      "package_dependencies_radix_ui_react_tabs",
+      "package_dependencies_radix_ui_react_toast",
+      "package_dependencies_tailwind_merge",
+      "package_dependencies_wouter",
+      "package_dependencies_zod_validation_error",
+      "radix_ui_react_tabs",
+      "tailwind_merge",
+      "wouter",
+      "zod_validation_error"
+    ],
+    "15": [
+      "client_src_lib_performance_optimizer",
+      "client_src_lib_performance_optimizer_criticalresource",
+      "client_src_lib_performance_optimizer_performancemetrics",
+      "client_src_lib_performance_optimizer_performanceoptimizer",
+      "client_src_lib_performance_optimizer_performanceoptimizer_getmetricrating",
+      "client_src_lib_performance_optimizer_performanceoptimizer_getperformancescore",
+      "client_src_lib_performance_optimizer_performanceoptimizer_init",
+      "client_src_lib_performance_optimizer_performanceoptimizer_injectcriticalcss",
+      "client_src_lib_performance_optimizer_performanceoptimizer_monitorcorewebvitals",
+      "client_src_lib_performance_optimizer_performanceoptimizer_optimizeimages",
+      "client_src_lib_performance_optimizer_performanceoptimizer_preloadpageresources",
+      "client_src_lib_performance_optimizer_performanceoptimizer_reportmetric",
+      "client_src_lib_performance_optimizer_performanceoptimizer_setupresourcehints",
+      "client_src_lib_performance_optimizer_performanceoptimizer_setupserviceworker",
+      "client_src_lib_performance_optimizer_performanceoptimizer_supportswebp"
+    ],
+    "16": [
+      "autoprefixer",
+      "drizzle_kit",
+      "package_devdependencies",
+      "package_devdependencies_autoprefixer",
+      "package_devdependencies_drizzle_kit",
+      "package_devdependencies_postcss",
+      "package_devdependencies_replit_vite_plugin_cartographer",
+      "package_devdependencies_types_ws",
+      "package_devdependencies_vite",
+      "postcss",
+      "replit_vite_plugin_cartographer",
+      "types_ws",
+      "vite"
+    ],
+    "17": [
+      "client_src_components_ui_carousel",
+      "client_src_components_ui_carousel_carousel",
+      "client_src_components_ui_carousel_carouselapi",
+      "client_src_components_ui_carousel_carouselcontent",
+      "client_src_components_ui_carousel_carouselcontext",
+      "client_src_components_ui_carousel_carouselcontextprops",
+      "client_src_components_ui_carousel_carouselitem",
+      "client_src_components_ui_carousel_carouselnext",
+      "client_src_components_ui_carousel_carouseloptions",
+      "client_src_components_ui_carousel_carouselplugin",
+      "client_src_components_ui_carousel_carouselprevious",
+      "client_src_components_ui_carousel_carouselprops",
+      "client_src_components_ui_carousel_usecarouselparameters"
+    ],
+    "18": [
+      "client_src_lib_internal_linking",
+      "client_src_lib_internal_linking_internallink",
+      "client_src_lib_internal_linking_internallinking",
+      "client_src_lib_internal_linking_internallinkingoptimizer",
+      "client_src_lib_internal_linking_internallinkingoptimizer_analyzeinternallinking",
+      "client_src_lib_internal_linking_internallinkingoptimizer_calculatelinkpriority",
+      "client_src_lib_internal_linking_internallinkingoptimizer_generatecontextuallinks",
+      "client_src_lib_internal_linking_internallinkingoptimizer_generateoptimalanchor",
+      "client_src_lib_internal_linking_internallinkingoptimizer_getbreadcrumbs",
+      "client_src_lib_internal_linking_internallinkingoptimizer_getctalinks",
+      "client_src_lib_internal_linking_internallinkingoptimizer_getfootersitemap",
+      "client_src_lib_internal_linking_pagecontext"
+    ],
+    "19": [
+      "client_src_components_layout_header",
+      "client_src_components_layout_header_header",
+      "client_src_components_ui_sheet",
+      "client_src_components_ui_sheet_sheetcontent",
+      "client_src_components_ui_sheet_sheetcontentprops",
+      "client_src_components_ui_sheet_sheetdescription",
+      "client_src_components_ui_sheet_sheetheader",
+      "client_src_components_ui_sheet_sheetoverlay",
+      "client_src_components_ui_sheet_sheettitle",
+      "client_src_components_ui_sheet_sheetvariants"
+    ],
+    "20": [
+      "client_src_components_ui_chart",
+      "client_src_components_ui_chart_chartconfig",
+      "client_src_components_ui_chart_chartcontainer",
+      "client_src_components_ui_chart_chartcontext",
+      "client_src_components_ui_chart_chartcontextprops",
+      "client_src_components_ui_chart_chartlegendcontent",
+      "client_src_components_ui_chart_chartstyle",
+      "client_src_components_ui_chart_charttooltipcontent",
+      "client_src_components_ui_chart_getpayloadconfigfrompayload",
+      "client_src_components_ui_chart_themes"
+    ],
+    "21": [
+      "client_src_components_ui_context_menu",
+      "client_src_components_ui_context_menu_contextmenucheckboxitem",
+      "client_src_components_ui_context_menu_contextmenucontent",
+      "client_src_components_ui_context_menu_contextmenuitem",
+      "client_src_components_ui_context_menu_contextmenulabel",
+      "client_src_components_ui_context_menu_contextmenuradioitem",
+      "client_src_components_ui_context_menu_contextmenuseparator",
+      "client_src_components_ui_context_menu_contextmenushortcut",
+      "client_src_components_ui_context_menu_contextmenusubcontent",
+      "client_src_components_ui_context_menu_contextmenusubtrigger"
+    ],
+    "22": [
+      "client_src_components_ui_dropdown_menu",
+      "client_src_components_ui_dropdown_menu_dropdownmenucheckboxitem",
+      "client_src_components_ui_dropdown_menu_dropdownmenucontent",
+      "client_src_components_ui_dropdown_menu_dropdownmenuitem",
+      "client_src_components_ui_dropdown_menu_dropdownmenulabel",
+      "client_src_components_ui_dropdown_menu_dropdownmenuradioitem",
+      "client_src_components_ui_dropdown_menu_dropdownmenuseparator",
+      "client_src_components_ui_dropdown_menu_dropdownmenushortcut",
+      "client_src_components_ui_dropdown_menu_dropdownmenusubcontent",
+      "client_src_components_ui_dropdown_menu_dropdownmenusubtrigger"
+    ],
+    "23": [
+      "client_src_lib_build_optimizer",
+      "client_src_lib_build_optimizer_buildoptimizer",
+      "client_src_lib_build_optimizer_buildoptimizer_eliminaterenderblocking",
+      "client_src_lib_build_optimizer_buildoptimizer_eliminateunusedjs",
+      "client_src_lib_build_optimizer_buildoptimizer_getinstance",
+      "client_src_lib_build_optimizer_buildoptimizer_injectoptimizedcss",
+      "client_src_lib_build_optimizer_buildoptimizer_optimize",
+      "client_src_lib_build_optimizer_buildoptimizer_preloadcriticalresources",
+      "client_src_lib_build_optimizer_buildoptimizer_reduceunusedcss",
+      "client_src_lib_build_optimizer_buildoptimizer_removeunusedstylesheets"
+    ],
+    "24": [
+      "client_src_lib_css_optimizer",
+      "client_src_lib_css_optimizer_cssoptimizer",
+      "client_src_lib_css_optimizer_cssoptimizer_analyzedomusage",
+      "client_src_lib_css_optimizer_cssoptimizer_defernoncriticalcss",
+      "client_src_lib_css_optimizer_cssoptimizer_generatecriticalcss",
+      "client_src_lib_css_optimizer_cssoptimizer_inlinecriticalcss",
+      "client_src_lib_css_optimizer_cssoptimizer_iscriticalselector",
+      "client_src_lib_css_optimizer_cssoptimizer_measureoptimization",
+      "client_src_lib_css_optimizer_cssoptimizer_optimizetailwindcss",
+      "client_src_lib_css_optimizer_cssoptimizer_removeunusedrules"
+    ],
+    "25": [
+      "client_src_lib_link_validator",
+      "client_src_lib_link_validator_checkduplicatecontent",
+      "client_src_lib_link_validator_generateseofriendlyurl",
+      "client_src_lib_link_validator_generatesitemapdata",
+      "client_src_lib_link_validator_getsuggestedinternallinks",
+      "client_src_lib_link_validator_internal_routes",
+      "client_src_lib_link_validator_internalroute",
+      "client_src_lib_link_validator_linkvalidationresult",
+      "client_src_lib_link_validator_optimizeanchortext",
+      "client_src_lib_link_validator_validateinternallink"
+    ],
+    "26": [
+      "client_src_components_ui_alert_dialog",
+      "client_src_components_ui_alert_dialog_alertdialogaction",
+      "client_src_components_ui_alert_dialog_alertdialogcancel",
+      "client_src_components_ui_alert_dialog_alertdialogcontent",
+      "client_src_components_ui_alert_dialog_alertdialogdescription",
+      "client_src_components_ui_alert_dialog_alertdialogfooter",
+      "client_src_components_ui_alert_dialog_alertdialogheader",
+      "client_src_components_ui_alert_dialog_alertdialogoverlay",
+      "client_src_components_ui_alert_dialog_alertdialogtitle"
+    ],
+    "27": [
+      "client_src_components_ui_table",
+      "client_src_components_ui_table_table",
+      "client_src_components_ui_table_tablebody",
+      "client_src_components_ui_table_tablecaption",
+      "client_src_components_ui_table_tablecell",
+      "client_src_components_ui_table_tablefooter",
+      "client_src_components_ui_table_tablehead",
+      "client_src_components_ui_table_tableheader",
+      "client_src_components_ui_table_tablerow"
+    ],
+    "28": [
+      "bufferutil",
+      "package",
+      "package_license",
+      "package_name",
+      "package_optionaldependencies",
+      "package_optionaldependencies_bufferutil",
+      "package_type",
+      "package_version"
+    ],
+    "29": [
+      "client_src_components_ui_breadcrumb",
+      "client_src_components_ui_breadcrumb_breadcrumb",
+      "client_src_components_ui_breadcrumb_breadcrumbellipsis",
+      "client_src_components_ui_breadcrumb_breadcrumbitem",
+      "client_src_components_ui_breadcrumb_breadcrumblink",
+      "client_src_components_ui_breadcrumb_breadcrumblist",
+      "client_src_components_ui_breadcrumb_breadcrumbpage",
+      "client_src_components_ui_breadcrumb_breadcrumbseparator"
+    ],
+    "30": [
+      "client_src_components_ui_carousel_usecarousel",
+      "client_src_components_ui_chart_usechart",
+      "client_src_components_ui_form_useformfield",
+      "client_src_components_ui_sidebar_usesidebar",
+      "client_src_hooks_use_mobile",
+      "client_src_hooks_use_mobile_useismobile",
+      "package_dependencies_react",
+      "react"
+    ],
+    "31": [
+      "client_src_components_ui_drawer",
+      "client_src_components_ui_drawer_drawer",
+      "client_src_components_ui_drawer_drawercontent",
+      "client_src_components_ui_drawer_drawerdescription",
+      "client_src_components_ui_drawer_drawerfooter",
+      "client_src_components_ui_drawer_drawerheader",
+      "client_src_components_ui_drawer_draweroverlay",
+      "client_src_components_ui_drawer_drawertitle"
+    ],
+    "32": [
+      "client_src_components_ui_navigation_menu",
+      "client_src_components_ui_navigation_menu_navigationmenu",
+      "client_src_components_ui_navigation_menu_navigationmenucontent",
+      "client_src_components_ui_navigation_menu_navigationmenuindicator",
+      "client_src_components_ui_navigation_menu_navigationmenulist",
+      "client_src_components_ui_navigation_menu_navigationmenutrigger",
+      "client_src_components_ui_navigation_menu_navigationmenutriggerstyle",
+      "client_src_components_ui_navigation_menu_navigationmenuviewport"
+    ],
+    "33": [
+      "client_src_components_ui_toggle",
+      "client_src_components_ui_toggle_group",
+      "client_src_components_ui_toggle_group_togglegroup",
+      "client_src_components_ui_toggle_group_togglegroupcontext",
+      "client_src_components_ui_toggle_group_togglegroupitem",
+      "client_src_components_ui_toggle_toggle",
+      "client_src_components_ui_toggle_togglevariants"
+    ],
+    "34": [
+      "client_src_lib_performance_bundle",
+      "client_src_lib_performance_bundle_bundleoptimizer",
+      "client_src_lib_performance_bundle_performancebundleoptimizer",
+      "client_src_lib_performance_bundle_performancebundleoptimizer_extractcriticalcss",
+      "client_src_lib_performance_bundle_performancebundleoptimizer_generatecomponentmanifest",
+      "client_src_lib_performance_bundle_performancebundleoptimizer_purgeunusedcss",
+      "client_src_lib_performance_bundle_performancebundleoptimizer_trackcomponentusage"
+    ],
+    "35": [
+      "scripts_generate_meta_pages",
+      "scripts_generate_meta_pages_dirname",
+      "scripts_generate_meta_pages_filename",
+      "scripts_generate_meta_pages_main",
+      "scripts_generate_meta_pages_pagemeta",
+      "scripts_generate_meta_pages_replacemeta",
+      "scripts_generate_meta_pages_staticroutes"
+    ],
+    "36": [
+      "client_src_components_seo_imageoptimization",
+      "client_src_components_seo_imageoptimization_heroimage",
+      "client_src_components_seo_imageoptimization_logoimage",
+      "client_src_components_seo_imageoptimization_optimizedimage",
+      "client_src_components_seo_imageoptimization_optimizedimageprops",
+      "client_src_components_seo_imageoptimization_thumbnailimage"
+    ],
+    "37": [
+      "package_scripts",
+      "package_scripts_build",
+      "package_scripts_check",
+      "package_scripts_db_push",
+      "package_scripts_dev",
+      "package_scripts_start"
+    ],
+    "38": [
+      "client_src_app_simple",
+      "client_src_app_simple_app",
+      "client_src_app_simple_router",
+      "client_src_app_simple_simplehome",
+      "client_src_app_simple_simplenotfound"
+    ],
+    "39": [
+      "client_src_components_ui_alert",
+      "client_src_components_ui_alert_alert",
+      "client_src_components_ui_alert_alertdescription",
+      "client_src_components_ui_alert_alerttitle",
+      "client_src_components_ui_alert_alertvariants"
+    ],
+    "40": [
+      "client_src_components_ui_input_otp",
+      "client_src_components_ui_input_otp_inputotp",
+      "client_src_components_ui_input_otp_inputotpgroup",
+      "client_src_components_ui_input_otp_inputotpseparator",
+      "client_src_components_ui_input_otp_inputotpslot"
+    ],
+    "41": [
+      "fix_index",
+      "fix_index_fs",
+      "fix_index_html",
+      "fix_index_indexpath",
+      "fix_index_path"
+    ],
+    "42": [
+      "fix_sitemap_cjs_fix_sitemap",
+      "fix_sitemap_cjs_fix_sitemap_content",
+      "fix_sitemap_cjs_fix_sitemap_fs",
+      "fix_sitemap_cjs_fix_sitemap_path",
+      "fix_sitemap_cjs_fix_sitemap_sitemappath"
+    ],
+    "43": [
+      "fix_sitemap_js_fix_sitemap",
+      "fix_sitemap_js_fix_sitemap_content",
+      "fix_sitemap_js_fix_sitemap_fs",
+      "fix_sitemap_js_fix_sitemap_path",
+      "fix_sitemap_js_fix_sitemap_sitemappath"
+    ],
+    "44": [
+      "scratch_test_cjs_scratch_test",
+      "scratch_test_cjs_scratch_test_fs",
+      "scratch_test_cjs_scratch_test_jsdom",
+      "scratch_test_cjs_scratch_test_main",
+      "scratch_test_cjs_scratch_test_path"
+    ],
+    "45": [
+      "scratch_test_js_scratch_test",
+      "scratch_test_js_scratch_test_fs",
+      "scratch_test_js_scratch_test_jsdom",
+      "scratch_test_js_scratch_test_main",
+      "scratch_test_js_scratch_test_path"
+    ],
+    "46": [
+      "scratch_test_server",
+      "scratch_test_server_express",
+      "scratch_test_server_jsdom",
+      "scratch_test_server_main",
+      "scratch_test_server_path"
+    ],
+    "47": [
+      "scripts_verify_ssg",
+      "scripts_verify_ssg_dirname",
+      "scripts_verify_ssg_filename",
+      "scripts_verify_ssg_main",
+      "scripts_verify_ssg_staticroutes"
+    ],
+    "48": [
+      "client_src_components_ui_accordion",
+      "client_src_components_ui_accordion_accordioncontent",
+      "client_src_components_ui_accordion_accordionitem",
+      "client_src_components_ui_accordion_accordiontrigger"
+    ],
+    "49": [
+      "client_src_components_ui_avatar",
+      "client_src_components_ui_avatar_avatar",
+      "client_src_components_ui_avatar_avatarfallback",
+      "client_src_components_ui_avatar_avatarimage"
+    ],
+    "50": [
+      "client_src_components_ui_tabs",
+      "client_src_components_ui_tabs_tabscontent",
+      "client_src_components_ui_tabs_tabslist",
+      "client_src_components_ui_tabs_tabstrigger"
+    ],
+    "51": [
+      "client_src_components_ads_revbidad",
+      "client_src_components_ads_revbidad_revbidad",
+      "client_src_components_ads_revbidad_revbidadprops"
+    ],
+    "52": [
+      "enable_prerender",
+      "enable_prerender_data",
+      "enable_prerender_execsync"
+    ],
+    "53": [
+      "pad_blogs_more",
+      "pad_blogs_more_content",
+      "pad_blogs_more_newcontent"
+    ],
+    "54": [
+      "test_titles",
+      "test_titles_main",
+      "test_titles_routes"
+    ],
+    "55": [
+      "check_live",
+      "check_live_https"
+    ],
+    "56": [
+      "check_words",
+      "check_words_content"
+    ],
+    "57": [
+      "class_variance_authority",
+      "package_dependencies_class_variance_authority"
+    ],
+    "58": [
+      "client_src_components_ui_tooltip",
+      "client_src_components_ui_tooltip_tooltipcontent"
+    ],
+    "59": [
+      "client_sw",
+      "client_sw_static_files"
+    ],
+    "60": [
+      "clsx",
+      "package_dependencies_clsx"
+    ],
+    "61": [
+      "cmdk",
+      "package_dependencies_cmdk"
+    ],
+    "62": [
+      "connect_pg_simple",
+      "package_dependencies_connect_pg_simple"
+    ],
+    "63": [
+      "drizzle_orm",
+      "package_dependencies_drizzle_orm"
+    ],
+    "64": [
+      "drizzle_zod",
+      "package_dependencies_drizzle_zod"
+    ],
+    "65": [
+      "embla_carousel_react",
+      "package_dependencies_embla_carousel_react"
+    ],
+    "66": [
+      "esbuild",
+      "package_devdependencies_esbuild"
+    ],
+    "67": [
+      "express",
+      "package_dependencies_express"
+    ],
+    "68": [
+      "express_session",
+      "package_dependencies_express_session"
+    ],
+    "69": [
+      "framer_motion",
+      "package_dependencies_framer_motion"
+    ],
+    "70": [
+      "hookform_resolvers",
+      "package_dependencies_hookform_resolvers"
+    ],
+    "71": [
+      "inject_info",
+      "inject_info_c"
+    ],
+    "72": [
+      "inject_interlinks",
+      "inject_interlinks_content"
+    ],
+    "73": [
+      "input_otp",
+      "package_dependencies_input_otp"
+    ],
+    "74": [
+      "jsdom",
+      "package_dependencies_jsdom"
+    ],
+    "75": [
+      "lucide_react",
+      "package_dependencies_lucide_react"
+    ],
+    "76": [
+      "marked",
+      "package_dependencies_marked"
+    ],
+    "77": [
+      "memorystore",
+      "package_dependencies_memorystore"
+    ],
+    "78": [
+      "neondatabase_serverless",
+      "package_dependencies_neondatabase_serverless"
+    ],
+    "79": [
+      "next_themes",
+      "package_dependencies_next_themes"
+    ],
+    "80": [
+      "package_dependencies_passport",
+      "passport"
+    ],
+    "81": [
+      "package_dependencies_passport_local",
+      "passport_local"
+    ],
+    "82": [
+      "package_dependencies_radix_ui_react_accordion",
+      "radix_ui_react_accordion"
+    ],
+    "83": [
+      "package_dependencies_radix_ui_react_alert_dialog",
+      "radix_ui_react_alert_dialog"
+    ],
+    "84": [
+      "package_dependencies_radix_ui_react_aspect_ratio",
+      "radix_ui_react_aspect_ratio"
+    ],
+    "85": [
+      "package_dependencies_radix_ui_react_avatar",
+      "radix_ui_react_avatar"
+    ],
+    "86": [
+      "package_dependencies_radix_ui_react_checkbox",
+      "radix_ui_react_checkbox"
+    ],
+    "87": [
+      "package_dependencies_radix_ui_react_collapsible",
+      "radix_ui_react_collapsible"
+    ],
+    "88": [
+      "package_dependencies_radix_ui_react_context_menu",
+      "radix_ui_react_context_menu"
+    ],
+    "89": [
+      "package_dependencies_radix_ui_react_dialog",
+      "radix_ui_react_dialog"
+    ],
+    "90": [
+      "package_dependencies_radix_ui_react_dropdown_menu",
+      "radix_ui_react_dropdown_menu"
+    ],
+    "91": [
+      "package_dependencies_radix_ui_react_hover_card",
+      "radix_ui_react_hover_card"
+    ],
+    "92": [
+      "package_dependencies_radix_ui_react_label",
+      "radix_ui_react_label"
+    ],
+    "93": [
+      "package_dependencies_radix_ui_react_menubar",
+      "radix_ui_react_menubar"
+    ],
+    "94": [
+      "package_dependencies_radix_ui_react_navigation_menu",
+      "radix_ui_react_navigation_menu"
+    ],
+    "95": [
+      "package_dependencies_radix_ui_react_popover",
+      "radix_ui_react_popover"
+    ],
+    "96": [
+      "package_dependencies_radix_ui_react_progress",
+      "radix_ui_react_progress"
+    ],
+    "97": [
+      "package_dependencies_radix_ui_react_radio_group",
+      "radix_ui_react_radio_group"
+    ],
+    "98": [
+      "package_dependencies_radix_ui_react_scroll_area",
+      "radix_ui_react_scroll_area"
+    ],
+    "99": [
+      "package_dependencies_radix_ui_react_select",
+      "radix_ui_react_select"
+    ],
+    "100": [
+      "package_dependencies_radix_ui_react_separator",
+      "radix_ui_react_separator"
+    ],
+    "101": [
+      "package_dependencies_radix_ui_react_slider",
+      "radix_ui_react_slider"
+    ],
+    "102": [
+      "package_dependencies_radix_ui_react_slot",
+      "radix_ui_react_slot"
+    ],
+    "103": [
+      "package_dependencies_radix_ui_react_switch",
+      "radix_ui_react_switch"
+    ],
+    "104": [
+      "package_dependencies_radix_ui_react_toggle",
+      "radix_ui_react_toggle"
+    ],
+    "105": [
+      "package_dependencies_radix_ui_react_toggle_group",
+      "radix_ui_react_toggle_group"
+    ],
+    "106": [
+      "package_dependencies_radix_ui_react_tooltip",
+      "radix_ui_react_tooltip"
+    ],
+    "107": [
+      "package_dependencies_react_day_picker",
+      "react_day_picker"
+    ],
+    "108": [
+      "package_dependencies_react_dom",
+      "react_dom"
+    ],
+    "109": [
+      "package_dependencies_react_hook_form",
+      "react_hook_form"
+    ],
+    "110": [
+      "package_dependencies_react_icons",
+      "react_icons"
+    ],
+    "111": [
+      "package_dependencies_react_resizable_panels",
+      "react_resizable_panels"
+    ],
+    "112": [
+      "package_dependencies_recharts",
+      "recharts"
+    ],
+    "113": [
+      "package_dependencies_tailwindcss_animate",
+      "tailwindcss_animate"
+    ],
+    "114": [
+      "package_dependencies_tanstack_react_query",
+      "tanstack_react_query"
+    ],
+    "115": [
+      "package_dependencies_tw_animate_css",
+      "tw_animate_css"
+    ],
+    "116": [
+      "package_dependencies_types_marked",
+      "types_marked"
+    ],
+    "117": [
+      "package_dependencies_vaul",
+      "vaul"
+    ],
+    "118": [
+      "package_dependencies_ws",
+      "ws"
+    ],
+    "119": [
+      "package_dependencies_zod",
+      "zod"
+    ],
+    "120": [
+      "package_devdependencies_puppeteer",
+      "puppeteer"
+    ],
+    "121": [
+      "package_devdependencies_replit_vite_plugin_runtime_error_modal",
+      "replit_vite_plugin_runtime_error_modal"
+    ],
+    "122": [
+      "package_devdependencies_tailwindcss",
+      "tailwindcss"
+    ],
+    "123": [
+      "package_devdependencies_tailwindcss_typography",
+      "tailwindcss_typography"
+    ],
+    "124": [
+      "package_devdependencies_tailwindcss_vite",
+      "tailwindcss_vite"
+    ],
+    "125": [
+      "package_devdependencies_tsx",
+      "tsx"
+    ],
+    "126": [
+      "package_devdependencies_types_connect_pg_simple",
+      "types_connect_pg_simple"
+    ],
+    "127": [
+      "package_devdependencies_types_express",
+      "types_express"
+    ],
+    "128": [
+      "package_devdependencies_types_express_session",
+      "types_express_session"
+    ],
+    "129": [
+      "package_devdependencies_types_node",
+      "types_node"
+    ],
+    "130": [
+      "package_devdependencies_types_passport",
+      "types_passport"
+    ],
+    "131": [
+      "package_devdependencies_types_passport_local",
+      "types_passport_local"
+    ],
+    "132": [
+      "package_devdependencies_types_react",
+      "types_react"
+    ],
+    "133": [
+      "package_devdependencies_types_react_dom",
+      "types_react_dom"
+    ],
+    "134": [
+      "package_devdependencies_typescript",
+      "typescript"
+    ],
+    "135": [
+      "package_devdependencies_vitejs_plugin_react",
+      "vitejs_plugin_react"
+    ],
+    "136": [
+      "pad_articles",
+      "pad_articles_content"
+    ],
+    "137": [
+      "pad_blogs",
+      "pad_blogs_content"
+    ],
+    "138": [
+      "test_live_cjs_test_live",
+      "test_live_puppeteer"
+    ],
+    "139": [
+      "test_netlify",
+      "test_netlify_cp"
+    ],
+    "140": [
+      "test_netlify_delete",
+      "test_netlify_delete_cp"
+    ],
+    "141": [
+      "build_netlify"
+    ],
+    "142": [
+      "build_static"
+    ],
+    "143": [
+      "client_src_components_ui_aspect_ratio"
+    ],
+    "144": [
+      "client_src_components_ui_collapsible"
+    ],
+    "145": [
+      "drizzle_config"
+    ],
+    "146": [
+      "postcss_config"
+    ],
+    "147": [
+      "tailwind_config"
+    ],
+    "148": [
+      "test_live_fetch"
+    ],
+    "149": [
+      "test_live_js_test_live"
+    ],
+    "150": [
+      "test_live_mjs_test_live"
+    ]
+  },
+  "cohesion": {
+    "0": 0.051367781155015196,
+    "1": 0.06105834464043419,
+    "2": 0.06105457909343201,
+    "3": 0.06666666666666667,
+    "4": 0.07142857142857142,
+    "5": 0.082010582010582,
+    "6": 0.11375661375661375,
+    "7": 0.1523809523809524,
+    "8": 0.1111111111111111,
+    "9": 0.24183006535947713,
+    "10": 0.125,
+    "11": 0.11764705882352941,
+    "12": 0.13970588235294118,
+    "13": 0.11764705882352941,
+    "14": 0.13333333333333333,
+    "15": 0.20952380952380953,
+    "16": 0.15384615384615385,
+    "17": 0.15384615384615385,
+    "18": 0.19696969696969696,
+    "19": 0.2222222222222222,
+    "20": 0.2,
+    "21": 0.2,
+    "22": 0.2,
+    "23": 0.3333333333333333,
+    "24": 0.3111111111111111,
+    "25": 0.24444444444444444,
+    "26": 0.2222222222222222,
+    "27": 0.2222222222222222,
+    "28": 0.25,
+    "29": 0.25,
+    "30": 0.25,
+    "31": 0.25,
+    "32": 0.25,
+    "33": 0.3333333333333333,
+    "34": 0.2857142857142857,
+    "35": 0.3333333333333333,
+    "36": 0.3333333333333333,
+    "37": 0.3333333333333333,
+    "38": 0.4,
+    "39": 0.4,
+    "40": 0.4,
+    "41": 0.4,
+    "42": 0.4,
+    "43": 0.4,
+    "44": 0.4,
+    "45": 0.4,
+    "46": 0.5,
+    "47": 0.4,
+    "48": 0.5,
+    "49": 0.5,
+    "50": 0.5,
+    "51": 0.6666666666666666,
+    "52": 0.6666666666666666,
+    "53": 0.6666666666666666,
+    "54": 0.6666666666666666,
+    "55": 1.0,
+    "56": 1.0,
+    "57": 1.0,
+    "58": 1.0,
+    "59": 1.0,
+    "60": 1.0,
+    "61": 1.0,
+    "62": 1.0,
+    "63": 1.0,
+    "64": 1.0,
+    "65": 1.0,
+    "66": 1.0,
+    "67": 1.0,
+    "68": 1.0,
+    "69": 1.0,
+    "70": 1.0,
+    "71": 1.0,
+    "72": 1.0,
+    "73": 1.0,
+    "74": 1.0,
+    "75": 1.0,
+    "76": 1.0,
+    "77": 1.0,
+    "78": 1.0,
+    "79": 1.0,
+    "80": 1.0,
+    "81": 1.0,
+    "82": 1.0,
+    "83": 1.0,
+    "84": 1.0,
+    "85": 1.0,
+    "86": 1.0,
+    "87": 1.0,
+    "88": 1.0,
+    "89": 1.0,
+    "90": 1.0,
+    "91": 1.0,
+    "92": 1.0,
+    "93": 1.0,
+    "94": 1.0,
+    "95": 1.0,
+    "96": 1.0,
+    "97": 1.0,
+    "98": 1.0,
+    "99": 1.0,
+    "100": 1.0,
+    "101": 1.0,
+    "102": 1.0,
+    "103": 1.0,
+    "104": 1.0,
+    "105": 1.0,
+    "106": 1.0,
+    "107": 1.0,
+    "108": 1.0,
+    "109": 1.0,
+    "110": 1.0,
+    "111": 1.0,
+    "112": 1.0,
+    "113": 1.0,
+    "114": 1.0,
+    "115": 1.0,
+    "116": 1.0,
+    "117": 1.0,
+    "118": 1.0,
+    "119": 1.0,
+    "120": 1.0,
+    "121": 1.0,
+    "122": 1.0,
+    "123": 1.0,
+    "124": 1.0,
+    "125": 1.0,
+    "126": 1.0,
+    "127": 1.0,
+    "128": 1.0,
+    "129": 1.0,
+    "130": 1.0,
+    "131": 1.0,
+    "132": 1.0,
+    "133": 1.0,
+    "134": 1.0,
+    "135": 1.0,
+    "136": 1.0,
+    "137": 1.0,
+    "138": 1.0,
+    "139": 1.0,
+    "140": 1.0,
+    "141": 1.0,
+    "142": 1.0,
+    "143": 1.0,
+    "144": 1.0,
+    "145": 1.0,
+    "146": 1.0,
+    "147": 1.0,
+    "148": 1.0,
+    "149": 1.0,
+    "150": 1.0
+  },
+  "gods": [
+    {
+      "id": "client_src_lib_utils_cn",
+      "label": "cn()",
+      "degree": 69
+    },
+    {
+      "id": "client_src_components_ui_card_card",
+      "label": "Card",
+      "degree": 26
+    },
+    {
+      "id": "client_src_components_ui_card_cardcontent",
+      "label": "CardContent",
+      "degree": 26
+    },
+    {
+      "id": "server_storage_memstorage",
+      "label": "MemStorage",
+      "degree": 24
+    },
+    {
+      "id": "client_src_components_ui_button_button",
+      "label": "Button",
+      "degree": 23
+    },
+    {
+      "id": "client_src_components_seo_metatags_metatags",
+      "label": "MetaTags()",
+      "degree": 20
+    },
+    {
+      "id": "client_src_components_seo_structureddata_webpageschema",
+      "label": "WebPageSchema()",
+      "degree": 18
+    },
+    {
+      "id": "server_storage_istorage",
+      "label": "IStorage",
+      "degree": 18
+    },
+    {
+      "id": "client_src_components_ui_card_cardheader",
+      "label": "CardHeader",
+      "degree": 15
+    },
+    {
+      "id": "client_src_components_ui_card_cardtitle",
+      "label": "CardTitle",
+      "degree": 15
+    }
+  ],
+  "surprises": [
+    {
+      "source": "useCarousel()",
+      "target": "react",
+      "source_files": [
+        "client/src/components/ui/carousel.tsx",
+        "package.json"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "connects across different repos/directories; peripheral node `useCarousel()` unexpectedly reaches hub `react`"
+    },
+    {
+      "source": "useChart()",
+      "target": "react",
+      "source_files": [
+        "client/src/components/ui/chart.tsx",
+        "package.json"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "connects across different repos/directories; peripheral node `useChart()` unexpectedly reaches hub `react`"
+    },
+    {
+      "source": "useFormField()",
+      "target": "react",
+      "source_files": [
+        "client/src/components/ui/form.tsx",
+        "package.json"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "connects across different repos/directories; peripheral node `useFormField()` unexpectedly reaches hub `react`"
+    },
+    {
+      "source": "useSidebar()",
+      "target": "react",
+      "source_files": [
+        "client/src/components/ui/sidebar.tsx",
+        "package.json"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "connects across different repos/directories; peripheral node `useSidebar()` unexpectedly reaches hub `react`"
+    },
+    {
+      "source": "useToast()",
+      "target": "react",
+      "source_files": [
+        "client/src/hooks/use-toast.ts",
+        "package.json"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "connects across different repos/directories; bridges separate communities"
+    }
+  ],
+  "questions": [
+    {
+      "type": "bridge_node",
+      "question": "Why does `dependencies` connect `dependencies` to `package.json`, `react`, `class-variance-authority`, `clsx`, `cmdk`, `connect-pg-simple`, `drizzle-orm`, `drizzle-zod`, `embla-carousel-react`, `express`, `express-session`, `framer-motion`, `@hookform/resolvers`, `input-otp`, `jsdom`, `lucide-react`, `marked`, `memorystore`, `@neondatabase/serverless`, `next-themes`, `passport`, `passport-local`, `@radix-ui/react-accordion`, `@radix-ui/react-alert-dialog`, `@radix-ui/react-aspect-ratio`, `@radix-ui/react-avatar`, `@radix-ui/react-checkbox`, `@radix-ui/react-collapsible`, `@radix-ui/react-context-menu`, `@radix-ui/react-dialog`, `@radix-ui/react-dropdown-menu`, `@radix-ui/react-hover-card`, `@radix-ui/react-label`, `@radix-ui/react-menubar`, `@radix-ui/react-navigation-menu`, `@radix-ui/react-popover`, `@radix-ui/react-progress`, `@radix-ui/react-radio-group`, `@radix-ui/react-scroll-area`, `@radix-ui/react-select`, `@radix-ui/react-separator`, `@radix-ui/react-slider`, `@radix-ui/react-slot`, `@radix-ui/react-switch`, `@radix-ui/react-toggle`, `@radix-ui/react-toggle-group`, `@radix-ui/react-tooltip`, `react-day-picker`, `react-dom`, `react-hook-form`, `react-icons`, `react-resizable-panels`, `recharts`, `tailwindcss-animate`, `@tanstack/react-query`, `tw-animate-css`, `@types/marked`, `vaul`, `ws`, `zod`?",
+      "why": "High betweenness centrality (0.232) - this node is a cross-community bridge."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `react` connect `react` to `use-toast.ts`, `dependencies`?",
+      "why": "High betweenness centrality (0.200) - this node is a cross-community bridge."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `cn()` connect `cn` to `home.tsx`, `sidebar.tsx`, `use-toast.ts`, `utils.ts`, `command.tsx`, `menubar.tsx`, `carousel.tsx`, `sheet.tsx`, `chart.tsx`, `context-menu.tsx`, `dropdown-menu.tsx`, `alert-dialog.tsx`, `table.tsx`, `breadcrumb.tsx`, `drawer.tsx`, `navigation-menu.tsx`, `toggle-group.tsx`, `alert.tsx`, `input-otp.tsx`, `accordion.tsx`, `avatar.tsx`, `tabs.tsx`, `tooltip.tsx`?",
+      "why": "High betweenness centrality (0.117) - this node is a cross-community bridge."
+    },
+    {
+      "type": "isolated_nodes",
+      "question": "What connects `https`, `content`, `LazyBlog` to the rest of the system?",
+      "why": "414 weakly-connected nodes found - possible documentation gaps or missing edges."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `home.tsx` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.051367781155015196 - nodes in this community are weakly interconnected."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `MemStorage` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.06105834464043419 - nodes in this community are weakly interconnected."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `App.tsx` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.06105457909343201 - nodes in this community are weakly interconnected."
+    }
+  ]
+}

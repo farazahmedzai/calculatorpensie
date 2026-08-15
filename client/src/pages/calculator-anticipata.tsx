@@ -171,11 +171,6 @@ export default function CalculatorAnticipataPage() {
             </div>
           </div>
         </div>
-
-        {/* Ad block */}
-        <div className="mt-8 flex justify-center">
-          <div data-placement-id="revbid-square" id='revbid-square-4741' style={{minWidth: '300px', minHeight: '250px', textAlign: 'center'}}></div>
-        </div>
       </div>
     </div>
   );

@@ -126,7 +126,7 @@ export default function LegislatiePage() {
                   Pentru informații complete despre evoluția vârstei de pensionare, consultă 
                   <strong> tabelul nostru complet cu vârsta standard de pensionare în România</strong>.
                 </p>
-                <Link href="/blog/ghid-calcul-pensie-stat-2025">
+                <Link href="/blog/ghid-calcul-pensie-stat-2026">
                   <Button variant="outline" className="text-brand-red border-brand-red hover:bg-brand-red hover:text-white">
                     Tabel Complet Vârste Pensionare <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
@@ -198,7 +198,7 @@ export default function LegislatiePage() {
                   inflația și creșterea economică. Pentru înțelegerea completă a 
                   <strong> mecanismului și impactului indexării pensiilor</strong>, consultă analiza noastră detaliată.
                 </p>
-                <Link href="/blog/reforma-sistem-pensii-2025">
+                <Link href="/blog/reforma-sistem-pensii-2026">
                   <Button variant="outline" className="text-brand-green border-brand-green hover:bg-brand-green hover:text-white">
                     Mecanism Indexare <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
