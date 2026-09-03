@@ -185,6 +185,46 @@ function buildJsonLd(meta: PageMeta, bodyContent?: string): object | null {
     }
   ];
 
+  // For calculator tools, add WebApplication schema (Rich Results & FinanceApplication classification)
+  if (meta.canonical.includes('calculator') || meta.canonical === 'https://calculatorpensie.com/' || meta.canonical.includes('program-excel')) {
+    graph.push({
+      "@type": "WebApplication",
+      "name": meta.title,
+      "description": meta.description,
+      "url": meta.canonical,
+      "applicationCategory": "FinanceApplication",
+      "operatingSystem": "All",
+      "browserRequirements": "Requires JavaScript. Requires HTML5.",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "RON"
+      }
+    });
+  }
+
+  // Breadcrumbs schema for all subpages
+  if (meta.canonical !== 'https://calculatorpensie.com/') {
+    const pageName = meta.title.split('|')[0].split(':')[0].trim();
+    graph.push({
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Acasă",
+          "item": "https://calculatorpensie.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": pageName,
+          "item": meta.canonical
+        }
+      ]
+    });
+  }
+
   // For blog articles, add Article schema with author + dates (E-E-A-T signal)
   if (bodyContent && bodyContent.startsWith('ARTICLE:')) {
     const payload = bodyContent.slice(8);

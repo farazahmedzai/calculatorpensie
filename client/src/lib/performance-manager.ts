@@ -77,29 +77,57 @@ export class PerformanceManager {
     }
   }
   
-  // Measure performance metrics
+  // Measure performance metrics (Core Web Vitals: FCP, LCP, CLS, INP)
   private measurePerformance(): void {
     if ('PerformanceObserver' in window) {
-      // Measure First Contentful Paint
-      const fcpObserver = new PerformanceObserver((list) => {
-        const entries = list.getEntries();
-        entries.forEach((entry) => {
-          if (entry.name === 'first-contentful-paint') {
-            console.log(`FCP: ${entry.startTime.toFixed(2)}ms`);
+      try {
+        // Measure First Contentful Paint
+        const fcpObserver = new PerformanceObserver((list) => {
+          const entries = list.getEntries();
+          entries.forEach((entry) => {
+            if (entry.name === 'first-contentful-paint') {
+              console.log(`FCP: ${entry.startTime.toFixed(2)}ms`);
+            }
+          });
+        });
+        fcpObserver.observe({ entryTypes: ['paint'] });
+
+        // Measure Largest Contentful Paint (LCP)
+        const lcpObserver = new PerformanceObserver((list) => {
+          const entries = list.getEntries();
+          const lastEntry = entries[entries.length - 1];
+          if (lastEntry) {
+            console.log(`LCP: ${lastEntry.startTime.toFixed(2)}ms`);
           }
         });
-      });
-      
-      fcpObserver.observe({ entryTypes: ['paint'] });
-      
-      // Measure Largest Contentful Paint
-      const lcpObserver = new PerformanceObserver((list) => {
-        const entries = list.getEntries();
-        const lastEntry = entries[entries.length - 1];
-        console.log(`LCP: ${lastEntry.startTime.toFixed(2)}ms`);
-      });
-      
-      lcpObserver.observe({ entryTypes: ['largest-contentful-paint'] });
+        lcpObserver.observe({ entryTypes: ['largest-contentful-paint'] });
+
+        // Measure Cumulative Layout Shift (CLS)
+        let clsValue = 0;
+        const clsObserver = new PerformanceObserver((list) => {
+          for (const entry of list.getEntries()) {
+            if (!(entry as any).hadRecentInput) {
+              clsValue += (entry as any).value;
+              console.log(`CLS: ${clsValue.toFixed(4)}`);
+            }
+          }
+        });
+        clsObserver.observe({ type: 'layout-shift', buffered: true } as any);
+
+        // Measure Interaction to Next Paint (INP) - Official Core Web Vital (2024-2026)
+        let maxDuration = 0;
+        const inpObserver = new PerformanceObserver((list) => {
+          for (const entry of list.getEntries()) {
+            if (entry.duration > maxDuration) {
+              maxDuration = entry.duration;
+              console.log(`INP: ${maxDuration.toFixed(2)}ms`);
+            }
+          }
+        });
+        inpObserver.observe({ type: 'event', buffered: true, durationThreshold: 16 } as any);
+      } catch (e) {
+        // Gracefully ignore unsupported observer types in legacy browsers
+      }
     }
   }
   

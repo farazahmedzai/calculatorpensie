@@ -124,7 +124,7 @@ export default function Home() {
             <CardContent className="p-8">
               <div className="flex items-center text-sm text-green-700 bg-green-50 p-3 rounded-md mb-6 border border-green-200">
                 <CheckCircle className="w-5 h-5 mr-2 flex-shrink-0" />
-                <span className="font-semibold">Ultima actualizare a formulei: Iunie 2026 (Complet actualizat la Legea 360/2023)</span>
+                <span className="font-semibold">Ultima actualizare a formulei: Septembrie 2026 (Complet actualizat la Legea 360/2023)</span>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {/* Birth Date - Calendar Input */}
