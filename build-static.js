@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 import { execSync } from 'child_process';
-import { copyFileSync, mkdirSync, existsSync, writeFileSync } from 'fs';
+import { copyFileSync, mkdirSync, existsSync, writeFileSync, readdirSync } from 'fs';
 
 console.log('Building static site for Netlify...');
 
@@ -13,23 +13,12 @@ try {
   // Ensure dist/public exists and copy static files
   const distPath = 'dist/public';
   if (existsSync(distPath)) {
-    console.log('Copying static files...');
-    
-    // Copy static files (robots.txt, sitemap.xml, ads.txt) if they exist
-    if (existsSync('public/robots.txt')) {
-      copyFileSync('public/robots.txt', `${distPath}/robots.txt`);
-    }
-    
-    if (existsSync('public/sitemap.xml')) {
-      copyFileSync('public/sitemap.xml', `${distPath}/sitemap.xml`);
-    }
-    
-    if (existsSync('public/ads.txt')) {
-      copyFileSync('public/ads.txt', `${distPath}/ads.txt`);
-    }
-
-    if (existsSync('public/llms.txt')) {
-      copyFileSync('public/llms.txt', `${distPath}/llms.txt`);
+    console.log('Copying static files from public/...');
+    if (existsSync('public')) {
+      const publicFiles = readdirSync('public');
+      for (const file of publicFiles) {
+        copyFileSync(`public/${file}`, `${distPath}/${file}`);
+      }
     }
     
     // Run metadata pre-rendering script

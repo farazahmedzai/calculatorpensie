@@ -149,10 +149,13 @@ function replaceMeta(html: string, meta: PageMeta, bodyContent?: string): string
     `<meta property="og:url" content="${meta.canonical}" />`
   );
 
-  // Add keywords tag and twitter card
+  // Add keywords tag and complete twitter card tags
   const additionalTags = `
     <meta name="keywords" content="${meta.keywords}" />
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="${meta.title}" />
+    <meta name="twitter:description" content="${meta.description}" />
+    <meta name="twitter:image" content="https://calculatorpensie.com/og-image.jpg" />
   `;
   if (/<meta\s+name=["']keywords["']/i.test(result)) {
     result = result.replace(/<meta\s+name=["']keywords["']\s+content=["'][^"']*["']\s*\/?>/i, additionalTags);
