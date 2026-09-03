@@ -22,16 +22,16 @@ export interface Article {
 
 export const authors = {
   alexandruPopescu: {
-    name: "Alexandru Popescu",
-    role: "Expert Asigurări Sociale & Fost Consultant CNPP",
-    bio: "Alexandru are o experiență de peste 15 ani în consultanță privind asigurările sociale și legislația pensiilor din România. Fost funcționar CNPP, licențiat al ASE București, el s-a specializat în optimizarea dosarelor de pensionare și în interpretarea noii Legi 360/2023.",
-    image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&h=150"
+    name: "Redacția CalculatorPensie.com (Analiză Legislativă)",
+    role: "Departamentul de Asigurări Sociale & Legislație CNPP",
+    bio: "Echipa redacțională CalculatorPensie.com este specializată în interpretarea cadrului legal al asigurărilor sociale și a noii Legi 360/2023. Toate ghidurile noastre sunt verificate direct împotriva normelor de aplicare oficiale emise de Casa Națională de Pensii Publice (CNPP).",
+    image: "https://calculatorpensie.com/og-image.jpg"
   },
   elenaRadu: {
-    name: "Dr. Elena Radu",
-    role: "Economist Financiar & Expert Pensii Private",
-    bio: "Elena este doctor în economie și lector universitar la Facultatea de Finanțe, Asigurări, Bănci și Burse de Valori (ASE București). Cu acreditare CFA, ea este specializată în planificare financiară pe termen lung, optimizarea portofoliilor de pensionare și auditul pilonilor de pensii private.",
-    image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&h=150"
+    name: "Departamentul Financiar & Pensii Private",
+    role: "Analiză Economică & Pilonul II / III",
+    bio: "Specialiștii noștri în finanțe personale și piețe de capital analizează cotele de contribuție, randamentele istorice ale fondurilor de pensii din România și optimizarea facilităților fiscale prevăzute de Codul Fiscal pentru Pilonul III.",
+    image: "https://calculatorpensie.com/og-image.jpg"
   }
 };
 

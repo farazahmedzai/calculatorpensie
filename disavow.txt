@@ -1,0 +1,25 @@
+# Google Disavow File for CalculatorPensie.com
+# Generated for Google Search Console Disavow Links Tool
+# https://search.google.com/search-console/disavow-links
+# Purpose: Neutralize toxic comment spam, automated link blasts, and foreign PBN backlinks
+
+# Identified toxic comment spam and scraper domains:
+domain:novacleaners.gr
+domain:3guys.gr
+domain:patiniotisstands.gr
+domain:pepico.gr
+domain:mpilor.gr
+domain:powerfit.nz
+domain:e-motokonstantinou.gr
+domain:businesslink.com.cy
+domain:acci.gr
+
+# INSTRUCTIONS FOR USER:
+# 1. Log into Google Search Console (https://search.google.com/search-console)
+# 2. Go to "Links" -> "Top linking sites" -> Click "EXPORT"
+# 3. If you see other foreign spam sites, blog comment domains, or link networks, add them above using:
+#    domain:example.com
+# 4. Save this file as disavow.txt (plain UTF-8 text)
+# 5. Open the Google Disavow Tool: https://search.google.com/search-console/disavow-links
+# 6. Select your property: https://calculatorpensie.com
+# 7. Upload this disavow.txt file.

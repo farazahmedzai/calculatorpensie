@@ -76,7 +76,7 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/calculator-pensie-anticipata">
+                <Link href="/calculator-pensie-anticipata/">
                   <span className="text-gray-300 hover:text-blue-400 transition-all duration-300 cursor-pointer flex items-center group">
                     <div className="w-2 h-2 bg-blue-600 rounded-full mr-3 group-hover:bg-blue-400 transition-colors"></div>
                     Pensie Anticipată
@@ -84,7 +84,7 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/calculator-varsta-pensionare">
+                <Link href="/calculator-varsta-pensionare/">
                   <span className="text-gray-300 hover:text-blue-400 transition-all duration-300 cursor-pointer flex items-center group">
                     <div className="w-2 h-2 bg-blue-600 rounded-full mr-3 group-hover:bg-blue-400 transition-colors"></div>
                     Vârstă Pensionare
@@ -92,7 +92,7 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/calculator-puncte-pensie">
+                <Link href="/calculator-puncte-pensie/">
                   <span className="text-gray-300 hover:text-blue-400 transition-all duration-300 cursor-pointer flex items-center group">
                     <div className="w-2 h-2 bg-blue-600 rounded-full mr-3 group-hover:bg-blue-400 transition-colors"></div>
                     Calculator Puncte
@@ -100,7 +100,7 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/calculator-pensie-pilon-2">
+                <Link href="/calculator-pensie-pilon-2/">
                   <span className="text-gray-300 hover:text-blue-400 transition-all duration-300 cursor-pointer flex items-center group">
                     <div className="w-2 h-2 bg-blue-600 rounded-full mr-3 group-hover:bg-blue-400 transition-colors"></div>
                     Pensie Pilon II
@@ -108,7 +108,7 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/calculator-pensie-pilon-3">
+                <Link href="/calculator-pensie-pilon-3/">
                   <span className="text-gray-300 hover:text-blue-400 transition-all duration-300 cursor-pointer flex items-center group">
                     <div className="w-2 h-2 bg-blue-600 rounded-full mr-3 group-hover:bg-blue-400 transition-colors"></div>
                     Calculator Pensie Pilon 3
@@ -116,7 +116,7 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/program-excel-calcul-pensie">
+                <Link href="/program-excel-calcul-pensie/">
                   <span className="text-gray-300 hover:text-blue-400 transition-all duration-300 cursor-pointer flex items-center group">
                     <div className="w-2 h-2 bg-blue-600 rounded-full mr-3 group-hover:bg-blue-400 transition-colors"></div>
                     Program Excel Calcul
@@ -130,7 +130,7 @@ export default function Footer() {
             <h3 className="text-white font-semibold mb-6 text-lg">📚 Resurse</h3>
             <ul className="space-y-4">
               <li>
-                <Link href="/planificare">
+                <Link href="/planificare/">
                   <span className="text-gray-300 hover:text-blue-400 transition-all duration-300 cursor-pointer flex items-center group">
                     <div className="w-2 h-2 bg-green-600 rounded-full mr-3 group-hover:bg-green-400 transition-colors"></div>
                     Planificarea Pensiei
@@ -138,7 +138,7 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/tipuri-pensii">
+                <Link href="/tipuri-pensii/">
                   <span className="text-gray-300 hover:text-blue-400 transition-all duration-300 cursor-pointer flex items-center group">
                     <div className="w-2 h-2 bg-green-600 rounded-full mr-3 group-hover:bg-green-400 transition-colors"></div>
                     Tipuri de Pensii
@@ -146,7 +146,7 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/legislatie">
+                <Link href="/legislatie/">
                   <span className="text-gray-300 hover:text-blue-400 transition-all duration-300 cursor-pointer flex items-center group">
                     <div className="w-2 h-2 bg-green-600 rounded-full mr-3 group-hover:bg-green-400 transition-colors"></div>
                     Legislație Pensii
@@ -154,7 +154,7 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/blog">
+                <Link href="/blog/">
                   <span className="text-gray-300 hover:text-blue-400 transition-all duration-300 cursor-pointer flex items-center group">
                     <div className="w-2 h-2 bg-green-600 rounded-full mr-3 group-hover:bg-green-400 transition-colors"></div>
                     Blog & Știri
@@ -168,7 +168,7 @@ export default function Footer() {
             <h3 className="text-white font-semibold mb-6 text-lg">🏢 Companie</h3>
             <ul className="space-y-4">
               <li>
-                <Link href="/despre-noi">
+                <Link href="/despre-noi/">
                   <span className="text-gray-300 hover:text-blue-400 transition-all duration-300 cursor-pointer flex items-center group">
                     <div className="w-2 h-2 bg-purple-600 rounded-full mr-3 group-hover:bg-purple-400 transition-colors"></div>
                     Despre Noi
@@ -176,7 +176,7 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/metodologie">
+                <Link href="/metodologie/">
                   <span className="text-gray-300 hover:text-blue-400 transition-all duration-300 cursor-pointer flex items-center group">
                     <div className="w-2 h-2 bg-purple-600 rounded-full mr-3 group-hover:bg-purple-400 transition-colors"></div>
                     Metodologie Calcul
@@ -184,7 +184,7 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/contact">
+                <Link href="/contact/">
                   <span className="text-gray-300 hover:text-blue-400 transition-all duration-300 cursor-pointer flex items-center group">
                     <div className="w-2 h-2 bg-purple-600 rounded-full mr-3 group-hover:bg-purple-400 transition-colors"></div>
                     Contact
@@ -192,7 +192,7 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/privacy">
+                <Link href="/privacy/">
                   <span className="text-gray-300 hover:text-blue-400 transition-all duration-300 cursor-pointer flex items-center group">
                     <div className="w-2 h-2 bg-purple-600 rounded-full mr-3 group-hover:bg-purple-400 transition-colors"></div>
                     Confidențialitate
@@ -200,7 +200,7 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/terms">
+                <Link href="/terms/">
                   <span className="text-gray-300 hover:text-blue-400 transition-all duration-300 cursor-pointer flex items-center group">
                     <div className="w-2 h-2 bg-purple-600 rounded-full mr-3 group-hover:bg-purple-400 transition-colors"></div>
                     Termeni și Condiții
@@ -222,7 +222,7 @@ export default function Footer() {
                   Informații Legale
                 </h4>
                 <p className="text-gray-300 text-sm leading-relaxed mb-3">
-                  <strong className="text-white">Valoarea punctului de pensie 2025:</strong> 2.031 Lei | <strong className="text-white">Valoarea Punctului de Referință (VPR) 2025:</strong> 91 Lei
+                  <strong className="text-white">Valoarea punctului de pensie 2026:</strong> 2.031 Lei | <strong className="text-white">Valoarea Punctului de Referință (VPR) 2026:</strong> 91 Lei
                 </p>
                 <p className="text-gray-200 text-xs leading-relaxed">
                   <strong className="text-white">Disclaimer:</strong> Acest calculator oferă estimări informative bazate pe Legea 360/2023 și nu are valoare oficială. 
@@ -253,22 +253,22 @@ export default function Footer() {
           {/* Copyright */}
           <div className="flex flex-col md:flex-row justify-between items-center pt-6 border-t border-slate-500">
             <div className="text-sm mb-4 md:mb-0">
-              <p className="footer-text-visible">&copy; 2025 CalculatorPensie.com. Toate drepturile rezervate.</p>
+              <p className="footer-text-visible">&copy; 2026 CalculatorPensie.com. Toate drepturile rezervate.</p>
             </div>
             <div className="flex flex-wrap gap-6 text-sm">
-              <Link href="/metodologie">
+              <Link href="/metodologie/">
                 <span className="footer-text-visible hover:text-blue-300 transition-colors cursor-pointer">Metodologie</span>
               </Link>
-              <Link href="/privacy">
+              <Link href="/privacy/">
                 <span className="footer-text-visible hover:text-blue-300 transition-colors cursor-pointer">Privacy</span>
               </Link>
-              <Link href="/terms">
+              <Link href="/terms/">
                 <span className="footer-text-visible hover:text-blue-300 transition-colors cursor-pointer">Terms</span>
               </Link>
-              <Link href="/contact">
+              <Link href="/contact/">
                 <span className="footer-text-visible hover:text-blue-300 transition-colors cursor-pointer">Contact</span>
               </Link>
-              <Link href="/faq">
+              <Link href="/faq/">
                 <span className="footer-text-visible hover:text-blue-300 transition-colors cursor-pointer">FAQ</span>
               </Link>
             </div>

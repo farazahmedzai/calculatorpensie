@@ -200,75 +200,67 @@ export default function DespreNoi() {
       <section className="py-16 bg-gradient-to-br from-slate-50 to-indigo-50 border-t border-b border-indigo-100">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3.5xl font-bold text-slate-900 mb-4">Experții din Spatele Platformei</h2>
+            <h2 className="text-3.5xl font-bold text-slate-900 mb-4">Structura Editorială și Metodologia Noastră</h2>
             <p className="text-lg text-slate-700 max-w-3xl mx-auto font-medium">
-              Calculele și analizele noastre legislative sunt supervizate de specialiști cu vastă experiență în asigurări sociale și economie din România.
+              Calculele și analizele noastre legislative sunt realizate și verificate conform standardelor oficiale ale sistemului public de pensii din România.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            {/* Alexandru Popescu */}
+            {/* Redacția Legislativă */}
             <Card className="hover:shadow-xl transition-shadow duration-300 border-indigo-100 bg-white">
               <CardContent className="p-8">
                 <div className="flex flex-col sm:flex-row items-center sm:items-start gap-6">
-                  <img 
-                    src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&h=200" 
-                    alt="Alexandru Popescu" 
-                    className="w-24 h-24 rounded-full object-cover border-2 border-brand-blue shadow-md"
-                  />
+                  <div className="w-20 h-20 rounded-2xl bg-blue-100 text-blue-600 flex items-center justify-center font-bold text-2xl shadow-sm border border-blue-200">
+                    CNPP
+                  </div>
                   <div className="text-center sm:text-left flex-1">
-                    <h3 className="text-xl font-bold text-slate-900 mb-1">Alexandru Popescu</h3>
-                    <p className="text-sm font-semibold text-brand-blue mb-3">Specialist în Asigurări Sociale & Fost Consultant CNPP</p>
+                    <h3 className="text-xl font-bold text-slate-900 mb-1">Echipa de Analiză Legislativă</h3>
+                    <p className="text-sm font-semibold text-brand-blue mb-3">Asigurări Sociale & Sistemul Public (Pilonul I)</p>
                     <p className="text-sm text-slate-600 mb-4 leading-relaxed">
-                      Fost consultant în cadrul Casei Naționale de Pensii Publice (CNPP) cu peste 15 ani de experiență în auditul dosarelor de pensionare și interpretarea legii pensiilor. Absolvent al Academiei de Studii Economice (ASE) București.
+                      Responsabilă cu monitorizarea zilnică a cadrului legal (Legea 360/2023), a deciziilor Casei Naționale de Pensii Publice (CNPP) și a formulelor de calcul pentru punctajul mediu anual și punctele de stabilitate.
                     </p>
                     <div className="text-xs text-slate-500 mb-4 bg-slate-50 p-3 rounded border border-slate-100">
-                      <strong>Educație & Acreditări:</strong><br/>
-                      • Licențiat în Economie (ASE București)<br/>
-                      • Master în Managementul Finanțelor Publice<br/>
-                      • Certificat Oficial de Expert în Asigurări Sociale
+                      <strong>Standarde de Conformitate:</strong><br/>
+                      • Formule oficiale CNPP verificate 1:1<br/>
+                      • Monitorizarea stagiului complet de cotizare<br/>
+                      • Actualizare proactivă VPR conform deciziilor de Guvern
                     </div>
                     <a 
-                      href="https://www.linkedin.com/in/alexandru-popescu-pension" 
-                      target="_blank" 
-                      rel="noopener noreferrer"
+                      href="/metodologie/" 
                       className="text-brand-blue hover:text-blue-800 text-sm font-semibold inline-flex items-center gap-1 hover:underline"
                     >
-                      Vezi Profilul LinkedIn →
+                      Consultă Metodologia de Calcul →
                     </a>
                   </div>
                 </div>
               </CardContent>
             </Card>
 
-            {/* Dr. Elena Radu */}
+            {/* Departamentul Financiar */}
             <Card className="hover:shadow-xl transition-shadow duration-300 border-indigo-100 bg-white">
               <CardContent className="p-8">
                 <div className="flex flex-col sm:flex-row items-center sm:items-start gap-6">
-                  <img 
-                    src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&h=200" 
-                    alt="Dr. Elena Radu" 
-                    className="w-24 h-24 rounded-full object-cover border-2 border-brand-green shadow-md"
-                  />
+                  <div className="w-20 h-20 rounded-2xl bg-green-100 text-green-600 flex items-center justify-center font-bold text-2xl shadow-sm border border-green-200">
+                    ASF
+                  </div>
                   <div className="text-center sm:text-left flex-1">
-                    <h3 className="text-xl font-bold text-slate-900 mb-1">Dr. Elena Radu</h3>
-                    <p className="text-sm font-semibold text-brand-green mb-3">Economist Financiar & Expert Pensii Private (Pilon II/III)</p>
+                    <h3 className="text-xl font-bold text-slate-900 mb-1">Departamentul de Calcul Financiar</h3>
+                    <p className="text-sm font-semibold text-brand-green mb-3">Pensii Private Facultative (Pilonul II & III)</p>
                     <p className="text-sm text-slate-600 mb-4 leading-relaxed">
-                      Specialistă în optimizarea portofoliilor de pensionare privată, cu experiență în cadrul fondurilor de pensii din România și analiză macroeconomică. Lector asociat la Facultatea de Finanțe, Asigurări, Bănci și Burse de Valori (ASE). Toate articolele trec prin filtrul său editorial strict pentru a garanta calitatea E-E-A-T.
+                      Echipa responsabilă de modelele matematice de randament, simulările de capitalizare pentru Pilonul II (obligatoriu administrat privat) și optimizarea deducerilor fiscale pentru contribuțiile la Pilonul III.
                     </p>
                     <div className="text-xs text-slate-500 mb-4 bg-slate-50 p-3 rounded border border-slate-100">
-                      <strong>Educație & Acreditări:</strong><br/>
-                      • Doctor în Finanțe (ASE București)<br/>
-                      • Consultant Financiar Autorizat (CFA)<br/>
-                      • Autoare a numeroase studii și ghiduri practice de economisire
+                      <strong>Standarde Financiare:</strong><br/>
+                      • Cota de contribuție 4.75% Pilon II<br/>
+                      • Plafon deductibilitate fiscală 400 EUR/an Pilon III<br/>
+                      • Modele transparente de dobândă compusă
                     </div>
                     <a 
-                      href="https://www.linkedin.com/in/dr-elena-radu-finance" 
-                      target="_blank" 
-                      rel="noopener noreferrer"
+                      href="/contact/" 
                       className="text-brand-green hover:text-green-800 text-sm font-semibold inline-flex items-center gap-1 hover:underline"
                     >
-                      Vezi Profilul LinkedIn →
+                      Trimite o Întrebare Tehnică →
                     </a>
                   </div>
                 </div>

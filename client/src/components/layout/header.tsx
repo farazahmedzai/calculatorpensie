@@ -16,11 +16,11 @@ export default function Header() {
 
   const navLinks = [
     { href: "/", label: "Calculator", highlight: true },
-    { href: "/planificare", label: "Planificare" },
-    { href: "/tipuri-pensii", label: "Tipuri Pensii" },
-    { href: "/legislatie", label: "Legislație" },
-    { href: "/faq", label: "FAQ" },
-    { href: "/blog", label: "Blog" },
+    { href: "/planificare/", label: "Planificare" },
+    { href: "/tipuri-pensii/", label: "Tipuri Pensii" },
+    { href: "/legislatie/", label: "Legislație" },
+    { href: "/faq/", label: "FAQ" },
+    { href: "/blog/", label: "Blog" },
   ];
 
   const NavLink = ({ href, label, highlight = false, mobile = false }: { 
@@ -128,12 +128,12 @@ export default function Header() {
                 {/* Mobile Extra Links */}
                 <div className="mt-8 pt-6 border-t border-blue-200">
                   <div className="space-y-3">
-                    <Link href="/despre-noi">
+                    <Link href="/despre-noi/">
                       <span className="block px-4 py-3 text-sm text-slate-600 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-all cursor-pointer dark:text-slate-400 dark:hover:text-blue-400 dark:hover:bg-slate-800">
                         Despre Noi
                       </span>
                     </Link>
-                    <Link href="/contact">
+                    <Link href="/contact/">
                       <span className="block px-4 py-3 text-sm text-slate-600 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-all cursor-pointer dark:text-slate-400 dark:hover:text-blue-400 dark:hover:bg-slate-800">
                         Contact
                       </span>
