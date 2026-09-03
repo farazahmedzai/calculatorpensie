@@ -1,15 +1,24 @@
 User-agent: *
 Allow: /
 
-# Priority pages for crawling
-Allow: /calculator
-Allow: /faq
-Allow: /planificare
-Allow: /tipuri-pensii
-Allow: /legislatie
-Allow: /blog
+# Priority canonical paths for crawling
+Allow: /
+Allow: /calculator-pensie-anticipata/
+Allow: /calculator-varsta-pensionare/
+Allow: /calculator-puncte-pensie/
+Allow: /calculator-pensie-pilon-2/
+Allow: /calculator-pensie-pilon-3/
+Allow: /program-excel-calcul-pensie/
+Allow: /planificare/
+Allow: /tipuri-pensii/
+Allow: /legislatie/
+Allow: /faq/
+Allow: /blog/
+Allow: /despre-noi/
+Allow: /metodologie/
+Allow: /contact/
 
-# Allow all static assets
+# Static assets
 Allow: /assets/
 Allow: /*.css
 Allow: /*.js
@@ -20,25 +29,33 @@ Allow: /*.gif
 Allow: /*.svg
 Allow: /*.webp
 
-# Block admin/internal paths (if any exist in future)
+# Admin and parameters
 Disallow: /admin/
 Disallow: /api/
 Disallow: /_internal/
-
-# Block certain query parameters that might create duplicate content
 Disallow: /*?utm_*
 Disallow: /*?ref=*
 Disallow: /*?track=*
 
-# Sitemap location
-Sitemap: https://calculatorpensie.com/sitemap.xml
-
-# Specific instructions for major search engines
+# Search Engine Crawlers
 User-agent: Googlebot
 Allow: /
 
 User-agent: Bingbot
 Allow: /
 
-User-agent: YandexBot
+# AI Search Crawlers (GEO - Generative Engine Optimization)
+User-agent: Google-Extended
 Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+# Sitemaps & LLMs specification
+Sitemap: https://calculatorpensie.com/sitemap.xml

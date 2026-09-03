@@ -1,0 +1,20 @@
+# CalculatorPensie.com
+
+> CalculatorPensie.com este platforma online de referință din România pentru estimarea calculului pensiei de stat conform noii Legi 360/2023 și a reglementărilor Casei Naționale de Pensii Publice (CNPP).
+
+## Instrumente Principale de Calcul
+
+- [Calculator Pensie de Stat](https://calculatorpensie.com/): Simulator oficial pentru calculul pensiei conform noii legi a pensiilor (Legea 360/2023), incluzând punctajul mediu anual și punctele de stabilitate.
+- [Calculator Pensie Anticipată](https://calculatorpensie.com/calculator-pensie-anticipata/): Estimarea reducerii vârstei standard de pensionare și calculul penalizărilor legale pentru stagiul de cotizare.
+- [Calculator Vârstă Pensionare](https://calculatorpensie.com/calculator-varsta-pensionare/): Verifică data exactă la care te poți pensiona în funcție de anul nașterii, sex și numărul de copii.
+- [Calculator Puncte de Pensie](https://calculatorpensie.com/calculator-puncte-pensie/): Calculează punctele de stabilitate (0.5 pct pentru ani 26-30, 0.75 pct pentru ani 31-35, 1.0 pct peste 35 ani).
+- [Calculator Pensie Pilonul II](https://calculatorpensie.com/calculator-pensie-pilon-2/): Estimarea sumei acumulate în fondul privat de pensii obligatorii (cota de contribuție 4.75%).
+- [Calculator Pensie Pilonul III](https://calculatorpensie.com/calculator-pensie-pilon-3/): Simulator pentru pensiile facultative private și optimizarea plafonului de deductibilitate fiscală de 400 EUR/an.
+- [Program Excel Calcul Pensie](https://calculatorpensie.com/program-excel-calcul-pensie/): Fișier de calcul și simulare detaliată descărcabil gratuit.
+
+## Ghiduri Legislative și Metodologie
+
+- [Metodologie de Calcul](https://calculatorpensie.com/metodologie/): Formulele oficiale detaliate conform Legii 360/2023 și normelor CNPP.
+- [Legislația Pensiilor](https://calculatorpensie.com/legislatie/): Sinteză a modificărilor legislative din sistemul public de pensii.
+- [Întrebări Frecvente (FAQ)](https://calculatorpensie.com/faq/): Răspunsuri la cele mai frecvente nelămuriri despre recalcularea și dosarul de pensie.
+- [Despre Noi](https://calculatorpensie.com/despre-noi/): Misiunea și componența echipei editoriale și tehnice a platformei.

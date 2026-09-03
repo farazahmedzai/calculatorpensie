@@ -27,12 +27,16 @@ try {
     if (existsSync('public/ads.txt')) {
       copyFileSync('public/ads.txt', `${distPath}/ads.txt`);
     }
+
+    if (existsSync('public/llms.txt')) {
+      copyFileSync('public/llms.txt', `${distPath}/llms.txt`);
+    }
     
     // Run metadata pre-rendering script
     console.log('Generating pre-rendered static pages with custom metadata...');
     execSync('npx tsx scripts/generate-meta-pages.ts', { stdio: 'inherit' });
 
-    // Create _redirects file for SPA routing only (ads.txt now served as static file)
+    // Create _redirects file for SPA routing only (ads.txt and llms.txt now served as static file)
     const redirectsContent = `/blog/blog/*  /blog/:splat  301!
 /blog/ghid-calcul-pensie-stat-2025  /blog/ghid-calcul-pensie-stat-2026  301!
 /blog/reforma-sistem-pensii-2025  /blog/reforma-sistem-pensii-2026  301!
@@ -43,6 +47,7 @@ try {
 /calculator  /  301!
 /robots.txt  /robots.txt  200
 /sitemap.xml  /sitemap.xml  200
+/llms.txt    /llms.txt    200
 /*          /index.html   200`;
     writeFileSync(`${distPath}/_redirects`, redirectsContent);
     
