@@ -174,34 +174,55 @@ function replaceMeta(html: string, meta: PageMeta, bodyContent?: string): string
 }
 
 function buildJsonLd(meta: PageMeta, bodyContent?: string): object | null {
+  const isArticle = bodyContent && bodyContent.startsWith('ARTICLE:');
+  const isCalculator = meta.canonical.includes('calculator') || meta.canonical === 'https://calculatorpensie.com/' || meta.canonical.includes('program-excel');
+  
   const graph: object[] = [
     {
       "@type": "Organization",
+      "@id": "https://calculatorpensie.com/#organization",
       "name": "CalculatorPensie.com",
       "url": "https://calculatorpensie.com/",
-      "logo": "https://calculatorpensie.com/og-image.jpg"
+      "logo": "https://calculatorpensie.com/og-image.jpg",
+      "sameAs": [
+        "https://calculatorpensie.com/despre-noi/",
+        "https://calculatorpensie.com/metodologie/"
+      ]
     },
     {
       "@type": "WebSite",
+      "@id": "https://calculatorpensie.com/#website",
       "name": "CalculatorPensie.com",
-      "url": "https://calculatorpensie.com/"
+      "url": "https://calculatorpensie.com/",
+      "inLanguage": "ro-RO",
+      "publisher": { "@id": "https://calculatorpensie.com/#organization" }
     }
   ];
 
   // For calculator tools, add WebApplication schema (Rich Results & FinanceApplication classification)
-  if (meta.canonical.includes('calculator') || meta.canonical === 'https://calculatorpensie.com/' || meta.canonical.includes('program-excel')) {
+  if (isCalculator) {
     graph.push({
       "@type": "WebApplication",
+      "@id": `${meta.canonical}#webapplication`,
       "name": meta.title,
       "description": meta.description,
       "url": meta.canonical,
+      "inLanguage": "ro-RO",
       "applicationCategory": "FinanceApplication",
       "operatingSystem": "All",
       "browserRequirements": "Requires JavaScript. Requires HTML5.",
+      "featureList": [
+        "Simulare calcul pensie de stat conform Legii 360/2023",
+        "Calcul puncte de stabilitate pentru stagii cotizare peste 25 ani",
+        "Calcul penalizare reducere vârstă pensie anticipată",
+        "Calcul vârstă standard de pensionare pe baza datei nașterii",
+        "Proiecție fond privat Pilonul II și Pilonul III"
+      ],
       "offers": {
         "@type": "Offer",
         "price": "0",
-        "priceCurrency": "RON"
+        "priceCurrency": "RON",
+        "availability": "https://schema.org/InStock"
       }
     });
   }
@@ -211,6 +232,7 @@ function buildJsonLd(meta: PageMeta, bodyContent?: string): object | null {
     const pageName = meta.title.split('|')[0].split(':')[0].trim();
     graph.push({
       "@type": "BreadcrumbList",
+      "@id": `${meta.canonical}#breadcrumb`,
       "itemListElement": [
         {
           "@type": "ListItem",
@@ -228,19 +250,29 @@ function buildJsonLd(meta: PageMeta, bodyContent?: string): object | null {
     });
   }
 
-  // For blog articles, add Article schema with author + dates (E-E-A-T signal)
-  if (bodyContent && bodyContent.startsWith('ARTICLE:')) {
+  // For blog articles, add Article schema with author + dates (E-E-A-T signal) and speakable
+  if (isArticle) {
     const payload = bodyContent.slice(8);
     const parts = payload.split('|');
     if (parts.length >= 3) {
       graph.push({
         "@type": "Article",
+        "@id": `${meta.canonical}#article`,
         "headline": meta.title,
         "description": meta.description,
+        "inLanguage": "ro-RO",
         "datePublished": parts[0],
         "dateModified": parts[1],
-        "author": { "@type": "Person", "name": parts[2] },
-        "publisher": { "@type": "Organization", "name": "CalculatorPensie.com" }
+        "author": { 
+          "@type": "Organization", 
+          "name": parts[2],
+          "url": "https://calculatorpensie.com/despre-noi/"
+        },
+        "publisher": { "@id": "https://calculatorpensie.com/#organization" },
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": ["h1", "article p"]
+        }
       });
     }
   }
