@@ -38,6 +38,9 @@ try {
 /sitemap.xml  /sitemap.xml  200
 /llms.txt    /llms.txt    200
 /c7f96a3501a24d5ea3bc55625bf9892c.txt  /c7f96a3501a24d5ea3bc55625bf9892c.txt  200
+/ghid-calcul-pensie-2026.pdf  /ghid-calcul-pensie-2026.pdf  200
+/rss.xml     /rss.xml     200
+/tools.json  /tools.json  200
 /*          /index.html   200`;
     writeFileSync(`${distPath}/_redirects`, redirectsContent);
     

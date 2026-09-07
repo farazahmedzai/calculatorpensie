@@ -1,0 +1,56 @@
+{
+  "name": "CalculatorPensie.com API & Machine Specification",
+  "version": "1.0.0",
+  "publisher": "CalculatorPensie.com",
+  "canonical": "https://calculatorpensie.com/",
+  "documentation": "https://calculatorpensie.com/metodologie/",
+  "legislation": "Legea nr. 360/2023 privind sistemul public de pensii",
+  "vpr_2026": 81.0,
+  "endpoints": {
+    "website": "https://calculatorpensie.com/",
+    "sitemap": "https://calculatorpensie.com/sitemap.xml",
+    "rss": "https://calculatorpensie.com/rss.xml",
+    "pdf_guide": "https://calculatorpensie.com/ghid-calcul-pensie-2026.pdf",
+    "github_repository": "https://github.com/jibranpcccc/calculator-pensie-romania",
+    "github_release": "https://github.com/jibranpcccc/calculator-pensie-romania/releases/tag/v1.0.0",
+    "github_gist": "https://gist.github.com/jibranpcccc/0f7c69a87749ac9f82cd2a568b20735c",
+    "github_pages_profile": "https://jibranpcccc.github.io/tools/calculatorpensie.html"
+  },
+  "modules": [
+    {
+      "name": "Calculator Pensie Limită de Vârstă",
+      "url": "https://calculatorpensie.com/",
+      "category": "FinanceApplication"
+    },
+    {
+      "name": "Calculator Vârstă Pensionare",
+      "url": "https://calculatorpensie.com/calculator-varsta-pensionare/",
+      "category": "FinanceApplication"
+    },
+    {
+      "name": "Calculator Pensie Anticipată",
+      "url": "https://calculatorpensie.com/calculator-pensie-anticipata/",
+      "category": "FinanceApplication"
+    },
+    {
+      "name": "Calculator Puncte de Stabilitate",
+      "url": "https://calculatorpensie.com/calculator-puncte-pensie/",
+      "category": "FinanceApplication"
+    },
+    {
+      "name": "Calculator Pensie Pilonul II",
+      "url": "https://calculatorpensie.com/calculator-pensie-pilon-2/",
+      "category": "FinanceApplication"
+    },
+    {
+      "name": "Calculator Pensie Pilonul III",
+      "url": "https://calculatorpensie.com/calculator-pensie-pilon-3/",
+      "category": "FinanceApplication"
+    },
+    {
+      "name": "Program Excel Calcul Pensie",
+      "url": "https://calculatorpensie.com/program-excel-calcul-pensie/",
+      "category": "DownloadableSoftware"
+    }
+  ]
+}
