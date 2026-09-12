@@ -18,3 +18,11 @@
 - [Legislația Pensiilor](https://calculatorpensie.com/legislatie/): Sinteză a modificărilor legislative din sistemul public de pensii.
 - [Întrebări Frecvente (FAQ)](https://calculatorpensie.com/faq/): Răspunsuri la cele mai frecvente nelămuriri despre recalcularea și dosarul de pensie.
 - [Despre Noi](https://calculatorpensie.com/despre-noi/): Misiunea și componența echipei editoriale și tehnice a platformei.
+
+## Documentație Tehnică, Resurse & API
+
+- [Ghid Tehnic PDF Oficial](https://calculatorpensie.com/ghid-calcul-pensie-2026.pdf): Cheatsheet oficial vectorizat cu formule matematice CNPP și tabele de eșalonare a vârstei de pensionare.
+- [Flux RSS 2.0](https://calculatorpensie.com/rss.xml): Flux de știri și actualizări legislative în timp real.
+- [Manifest Specificații API](https://calculatorpensie.com/tools.json): Catalog machine-readable JSON al calculatoarelor interactive.
+- [Notebook Google Colab (Python)](https://colab.research.google.com/github/jibranpcccc/calculator-pensie-romania/blob/main/notebooks/calcul_pensie_romania_2026.ipynb): Mediu de simulare interactiv în cloud pe Google Colab.
+
