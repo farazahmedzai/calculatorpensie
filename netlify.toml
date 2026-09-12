@@ -68,6 +68,42 @@
   force = true
 
 [[redirects]]
+  from = "/calculator-puncte-de-stabilitate"
+  to = "/calculator-puncte-pensie/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/calculator-puncte-stabilitate"
+  to = "/calculator-puncte-pensie/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/calculator-pensie-invaliditate"
+  to = "/blog/ghid-pensie-invaliditate-2026/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/calculator-pensie-de-invaliditate"
+  to = "/blog/ghid-pensie-invaliditate-2026/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/calculator-pensie-urmas"
+  to = "/blog/pensia-urmas-drepturi-proceduri/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/calculator-pensie-de-urmas"
+  to = "/blog/pensia-urmas-drepturi-proceduri/"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200

@@ -34,6 +34,12 @@ try {
 /blog/indexare-pensii-2025-2026  /blog/indexare-pensii-2026-2026  301!
 /blog/cumparare-vechime-munca  /blog/stagiul-cotizare-cumparare-ani-munca  301!
 /calculator  /  301!
+/calculator-puncte-de-stabilitate  /calculator-puncte-pensie/  301!
+/calculator-puncte-stabilitate  /calculator-puncte-pensie/  301!
+/calculator-pensie-invaliditate  /blog/ghid-pensie-invaliditate-2026/  301!
+/calculator-pensie-de-invaliditate  /blog/ghid-pensie-invaliditate-2026/  301!
+/calculator-pensie-urmas  /blog/pensia-urmas-drepturi-proceduri/  301!
+/calculator-pensie-de-urmas  /blog/pensia-urmas-drepturi-proceduri/  301!
 /robots.txt  /robots.txt  200
 /sitemap.xml  /sitemap.xml  200
 /llms.txt    /llms.txt    200
