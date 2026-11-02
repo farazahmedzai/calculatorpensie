@@ -30,8 +30,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     
-    <!-- Load Google Fonts with display=swap to prevent FOIT -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Load Google Fonts NON-BLOCKING.
+         This stylesheet is the only render-blocking resource on the critical path,
+         and it is a third-party request on a different origin. Measured LCP was
+         5.7-8.7s on pages with little content; removing this block lets the
+         prerendered HTML paint immediately. `display=swap` (already set) means the
+         text shows in the fallback font and swaps when Inter arrives — so nothing
+         is invisible in the meantime, and the noscript fallback covers no-JS. -->
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"></noscript>
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-4XHK61Q7LP"></script>

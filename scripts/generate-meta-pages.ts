@@ -119,7 +119,7 @@ const staticRoutes: Record<string, PageMeta> = {
   }
 };
 
-function replaceMeta(html: string, meta: PageMeta, pageHeights: { routes: Record<string, number>; defaults: { article: number; other: number } }, bodyContent?: string, reservePx?: number): string {
+function replaceMeta(html: string, meta: PageMeta, pageHeights: { routes: Record<string, number>; defaults: { article: number; other: number } }, rootPath: string, bodyContent?: string, reservePx?: number): string {
   let result = html;
 
   // Reserve the final rendered height so the footer is not pushed down when React
@@ -131,6 +131,30 @@ function replaceMeta(html: string, meta: PageMeta, pageHeights: { routes: Record
         : pageHeights.defaults.other);
   if (reserve) {
     result = result.replace('</head>', `    <style>main{min-height:${reserve}px}</style>\n  </head>`);
+  }
+
+  // Inline the main stylesheet so the critical CSS does not wait on a
+  // render-blocking request. It is a local hashed asset (111 KB, ~17 KB gzip), so
+  // this removes a round-trip from the critical path.
+  //
+  // Note: Vite's script injects the CSS <link> into index.html AFTER vite build
+  // returns, so this runs after that and the tag carries `crossorigin`. The regex
+  // deliberately allows attributes on either side of href.
+  try {
+    const assetsDir = path.join(rootPath, 'dist', 'public', 'assets');
+    const cssName = fs.readdirSync(assetsDir).find(n => n.endsWith('.css'));
+    if (cssName) {
+      const href = `/assets/${cssName}`;
+      const linkRe = new RegExp(`<link\\b[^>]*href="${href.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}"[^>]*>`, 'i');
+      if (linkRe.test(result)) {
+        const css = fs.readFileSync(path.join(assetsDir, cssName), 'utf-8');
+        result = result.replace(linkRe, `<style>${css}</style>`);
+      } else {
+        console.warn(`   ! css link not found for ${href} — stylesheet left external`);
+      }
+    }
+  } catch (e) {
+    console.warn('   ! css inline failed:', String(e).slice(0, 80));
   }
 
   result = result.replace(/<title>[^<]*<\/title>/i, `<title>${meta.title}</title>`);
@@ -337,7 +361,7 @@ function main() {
       fs.mkdirSync(targetDir, { recursive: true });
     }
 
-    const preRenderedHtml = replaceMeta(baseHtml, meta, pageHeights, meta.description, pageHeights.routes[`${route}/`] || pageHeights.routes[route]);
+    const preRenderedHtml = replaceMeta(baseHtml, meta, pageHeights, rootPath, meta.description, pageHeights.routes[`${route}/`] || pageHeights.routes[route]);
     fs.writeFileSync(path.join(targetDir, 'index.html'), preRenderedHtml, 'utf-8');
     console.log(`- Pre-rendered static route: /${cleanRoute}`);
   }
@@ -362,7 +386,7 @@ function main() {
     };
 
     const articlePayload = `ARTICLE:${article.publishDate}|${article.publishDate}|${article.author.name}`;
-    const preRenderedHtml = replaceMeta(baseHtml, meta, pageHeights, articlePayload, pageHeights.routes[`/blog/${article.slug}/`] || pageHeights.defaults.article);
+    const preRenderedHtml = replaceMeta(baseHtml, meta, pageHeights, rootPath, articlePayload, pageHeights.routes[`/blog/${article.slug}/`] || pageHeights.defaults.article);
     fs.writeFileSync(path.join(targetDir, 'index.html'), preRenderedHtml, 'utf-8');
     console.log(`- Pre-rendered dynamic blog route: /${route}`);
   }
