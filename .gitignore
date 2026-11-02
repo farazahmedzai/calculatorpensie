@@ -10,3 +10,8 @@ vite.config.ts.*
 # Local safety copies of the pre-WebP PNGs; the originals are already in git history
 client/public/images/_originals_png/
 
+
+# Local safety backups from scripts/disavow_builder.mjs - never commit these
+disavow.backup-*.txt
+scripts/.height-server.cjs
+
