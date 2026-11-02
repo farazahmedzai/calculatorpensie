@@ -10,7 +10,7 @@ export default function Metodologie() {
       <MetaTags 
         title="Metodologie Calcul Pensie - Formulele Oficiale CNPP | CalculatorPensie.com"
         description="Descoperă metodologia completă de calcul a pensiei folosită de CalculatorPensie.com. Formulele oficiale CNPP, sursele legislative și transparența calculelor."
-        canonical="https://calculatorpensie.com/metodologie"
+        canonical="https://calculatorpensie.com/metodologie/"
         keywords="metodologie calcul pensie, formula pensie romania, cnpp, legea pensiilor, puncte de stabilitate, vpr 2026"
       />
       

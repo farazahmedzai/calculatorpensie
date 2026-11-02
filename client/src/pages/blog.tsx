@@ -55,9 +55,9 @@ export default function BlogPage() {
   return (
     <div className="min-h-screen bg-white">
       <MetaTags 
-        title="Blog Pensii România 2025 - Ghiduri Complete și Noutăți | CalculatorPensie.com"
+        title="Blog Pensii România 2026 - Ghiduri Complete și Noutăți | CalculatorPensie.com"
         description="Citește cele mai recente articole despre pensii în România. Ghiduri de planificare, analize legislative și sfaturi de la experți pentru a-ți optimiza pensia."
-        canonical="https://calculatorpensie.com/blog"
+        canonical="https://calculatorpensie.com/blog/"
         keywords="blog pensii romania, ghid pensie, noutati pensii, planificare pensie, legislatie pensii"
       />
       

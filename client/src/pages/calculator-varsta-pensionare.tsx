@@ -102,7 +102,7 @@ export default function CalculatorVarstaPage() {
       <MetaTags 
         title="Calculator Vârstă Pensionare 2026 | Data Exactă Limită de Vârstă"
         description="Calculează vârsta legală de pensionare în România pentru femei și bărbați. Află data exactă la care te poți pensiona și stagiul de cotizare necesar."
-        canonical="https://calculatorpensie.com/calculator-varsta-pensionare"
+        canonical="https://calculatorpensie.com/calculator-varsta-pensionare/"
         keywords="calculator varsta pensionare, cand ies la pensie, varsta pensionare femei romania, stagiu cotizare obligatoriu"
       />
       
@@ -244,12 +244,12 @@ export default function CalculatorVarstaPage() {
               </p>
               
               <figure className="mt-8 mb-4">
-                <img 
-                  src="/images/infografic-varsta-pensionare-2026.png" 
+                <picture><source srcSet="/images/infografic-varsta-pensionare-2026.webp" type="image/webp" /><img 
+                  src="/images/infografic-varsta-pensionare-2026.png" width={1024} height={1024} 
                   alt="Infografic Vârsta de Pensionare Femei și Bărbați România 2026-2035" 
                   className="w-full rounded-lg shadow-md border border-gray-100"
                   loading="lazy"
-                />
+                /></picture>
                 <figcaption className="text-center text-xs text-gray-500 mt-2">
                   Evoluția vârstei standard de pensionare conform Legii 360/2023.
                 </figcaption>

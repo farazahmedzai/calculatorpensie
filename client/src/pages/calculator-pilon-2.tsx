@@ -60,9 +60,9 @@ export default function CalculatorPilon2Page() {
   return (
     <div className="min-h-screen bg-neutral-light py-8">
       <MetaTags 
-        title="Calculator Pensie Pilon 2 2025 | Capitalizare și Profit"
+        title="Calculator Pensie Pilon 2 2026 | Capitalizare și Profit"
         description="Calculează suma strânsă în contul tău de pensie privată obligatorie Pilonul II. Proiectează-ți acumulările pe baza contribuției lunare de 4.75% din salariu."
-        canonical="https://calculatorpensie.com/calculator-pensie-pilon-2"
+        canonical="https://calculatorpensie.com/calculator-pensie-pilon-2/"
         keywords="calculator pensie pilon 2, pilonul ii pensii private, randament pilon 2, fond de pensii privat"
       />
       

@@ -6,6 +6,7 @@ import { Link } from "wouter";
 import { ArrowLeft, Clock, Calendar } from "lucide-react";
 import MetaTags from "@/components/seo/MetaTags";
 import BreadcrumbNavigation from "@/components/seo/BreadcrumbNavigation";
+import RelatedLinks from "@/components/seo/RelatedLinks";
 import { ArticleSchema } from "@/components/seo/StructuredData";
 import { getArticleBySlug } from "@/data/static-articles";
 import { marked } from "marked";
@@ -167,6 +168,8 @@ export default function BlogArticle() {
           </Card>
 
           {/* Related articles navigation */}
+          <RelatedLinks slug={article.slug} title={article.title} category={article.category} />
+
           <div className="mt-12 text-center">
             <Link href="/blog">
               <Button size="lg" className="bg-brand-blue hover:bg-blue-700">

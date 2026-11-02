@@ -61,7 +61,7 @@ export default function ProgramExcelPage() {
       <MetaTags 
         title="Program Excel Calcul Pensie | Descărcare Simulator 2026"
         description="Descarcă gratuit simulatorul Excel (.csv) pentru calculul pensiei din România în 2026. Introduceți salariul pentru a estima punctele lunare și pensia CNPP."
-        canonical="https://calculatorpensie.com/program-excel-calcul-pensie"
+        canonical="https://calculatorpensie.com/program-excel-calcul-pensie/"
         keywords="program excel calcul pensie, tabel excel calcul pensie de stat, simulator pensie excel gratis, descarca calculator pensie xls"
       />
       

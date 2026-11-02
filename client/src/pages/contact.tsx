@@ -44,7 +44,7 @@ export default function Contact() {
       <MetaTags 
         title="Contact - CalculatorPensie.com | Întrebări și Suport"
         description="Contactează echipa CalculatorPensie.com pentru întrebări despre calculatoarele de pensie, sugestii de îmbunătățire sau suport tehnic. Răspundem în 24 ore."
-        canonical="https://calculatorpensie.com/contact"
+        canonical="https://calculatorpensie.com/contact/"
         keywords="contact calculatorpensie, suport pensii romania, intrebari calculator pensie"
       />
       

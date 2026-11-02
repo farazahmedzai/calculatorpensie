@@ -6,3 +6,7 @@ vite.config.ts.*
 *.tar.gz
 # Local Netlify folder
 .netlify
+
+# Local safety copies of the pre-WebP PNGs; the originals are already in git history
+client/public/images/_originals_png/
+

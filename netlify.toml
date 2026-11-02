@@ -103,10 +103,36 @@
   status = 301
   force = true
 
+# Duplicate legacy routes -> their canonical slug (they are aliases, not pages,
+# and were never in the sitemap). Redirecting them is what makes the 404
+# fallback below safe: every remaining route has its own prerendered index.html.
+[[redirects]]
+  from = "/termeni"
+  to = "/terms/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/termeni-si-conditii"
+  to = "/terms/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/politica-confidentialitate"
+  to = "/privacy/"
+  status = 301
+  force = true
+
+# Unknown paths now return a REAL 404 instead of the homepage with status 200.
+# Previously every bad URL served /index.html as 200 and canonicalised to /,
+# which is a soft 404: wasted crawl budget and typo'd URLs indexing as home.
+# scripts/verify-routes-prerendered.mjs fails the build if a real route would
+# lose its page to this rule.
 [[redirects]]
   from = "/*"
-  to = "/index.html"
-  status = 200
+  to = "/404.html"
+  status = 404
 
 [dev]
   command = "npm run dev"

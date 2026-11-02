@@ -74,7 +74,7 @@ export default function Home() {
   return (
     <div className="bg-white">
       <MetaTags 
-        title="Calculator Pensie 2025 - Calculează Pensia de Stat (Pilon I) și Privată | CalculatorPensie.com"
+        title="Calculator Pensie 2026 - Calculează Pensia de Stat (Pilon I) și Privată | CalculatorPensie.com"
         description="✅ Folosește cel mai simplu calculator de pensie online. Află vârsta de pensionare și estimează-ți pensia lunară (Pilon I și II) în mai puțin de 60 de secunde. Gratuit și precis!"
         canonical="https://calculatorpensie.com"
         keywords="calculator pensie, pensie romania, calculul pensiei, varsta pensionare, pilon 1, pilon 2, pilon 3, cnpp"

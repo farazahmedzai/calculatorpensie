@@ -36,6 +36,7 @@ Disallow: /_internal/
 Disallow: /*?utm_*
 Disallow: /*?ref=*
 Disallow: /*?track=*
+Disallow: /*?type=
 
 # Search Engine Crawlers
 User-agent: Googlebot

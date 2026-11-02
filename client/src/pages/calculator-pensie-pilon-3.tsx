@@ -59,7 +59,7 @@ export default function CalculatorPilon3Page() {
       <MetaTags 
         title="Calculator Pensie Pilon 3 (Facultativă) 2026"
         description="Calculează suma pe care o poți strânge în Pilonul III de pensii facultative. Vezi avantajele deductibilității fiscale și profitul estimat la pensionare."
-        canonical="https://calculatorpensie.com/calculator-pensie-pilon-3"
+        canonical="https://calculatorpensie.com/calculator-pensie-pilon-3/"
         keywords="calculator pensie pilon 3, pensie facultativa pilon 3, calculator pensie facultativa, pilonul 3 pensie privata"
       />
       

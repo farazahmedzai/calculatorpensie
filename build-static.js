@@ -25,6 +25,14 @@ try {
     console.log('Generating pre-rendered static pages with custom metadata...');
     execSync('npx tsx scripts/generate-meta-pages.ts', { stdio: 'inherit' });
 
+    // Give non-JS crawlers (GPTBot/ClaudeBot/PerplexityBot - all allowed in robots.txt) real body content.
+    // The meta step above only rewrites <head> tags; without this the body is still <div id="root"></div>.
+    console.log('Injecting prerendered body content for non-JS crawlers...');
+    execSync('node scripts/prerender-body.mjs', { stdio: 'inherit' });
+
+    // Refuse to ship a 404 fallback that would swallow a real route.
+    execSync('node scripts/verify-routes-prerendered.mjs', { stdio: 'inherit' });
+
     // Create _redirects file for SPA routing only (ads.txt and llms.txt now served as static file)
     const redirectsContent = `/blog/blog/*  /blog/:splat  301!
 /blog/ghid-calcul-pensie-stat-2025  /blog/ghid-calcul-pensie-stat-2026  301!
@@ -47,7 +55,10 @@ try {
 /ghid-calcul-pensie-2026.pdf  /ghid-calcul-pensie-2026.pdf  200
 /rss.xml     /rss.xml     200
 /tools.json  /tools.json  200
-/*          /index.html   200`;
+/termeni  /terms/  301!
+/termeni-si-conditii  /terms/  301!
+/politica-confidentialitate  /privacy/  301!
+/*          /404.html   404`;
     writeFileSync(`${distPath}/_redirects`, redirectsContent);
     
     console.log('Static build completed successfully!');

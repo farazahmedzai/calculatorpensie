@@ -10,7 +10,7 @@ export default function DespreNoi() {
       <MetaTags 
         title="Despre Noi - CalculatorPensie.com | Misiunea și Echipa Noastră"
         description="Află mai multe despre CalculatorPensie.com, misiunea noastră de a oferi calculatoare de pensie precise și resurse educaționale pentru românii care își planifică viitorul financiar."
-        canonical="https://calculatorpensie.com/despre-noi"
+        canonical="https://calculatorpensie.com/despre-noi/"
         keywords="despre calculatorpensie, misiune pensii romania, echipa calculatoare pensie"
       />
       

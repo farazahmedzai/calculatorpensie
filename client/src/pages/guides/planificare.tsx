@@ -9,9 +9,9 @@ export default function PlanificarePage() {
   return (
     <div className="min-h-screen bg-white">
       <MetaTags 
-        title="Planificare Pensie România | Ghid Practic 2025"
+        title="Planificare Pensie România | Ghid Practic 2026"
         description="Ghid complet pentru planificarea pensiei în România. Strategii pentru economisire voluntară, pensie privată facultativă și optimizare fiscală."
-        canonical="https://calculatorpensie.com/planificare"
+        canonical="https://calculatorpensie.com/planificare/"
         keywords="planificare pensie, pensie privata, pilon 3, deducere fiscala, pensie voluntara"
       />
       <WebPageSchema 

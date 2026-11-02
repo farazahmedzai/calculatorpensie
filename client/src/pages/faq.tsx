@@ -66,10 +66,10 @@ export default function FAQ() {
   return (
     <div className="min-h-screen bg-white">
       <MetaTags 
-        title="Întrebări Frecvente - Calculator Pensie România | FAQ Pensii 2025"
+        title="Întrebări Frecvente - Calculator Pensie România | FAQ Pensii 2026"
         description="Răspunsuri la întrebările frecvente despre pensii în România. Află la ce vârstă te poți pensiona, cum se calculează pensia și care sunt avantajele Pilonului III."
-        canonical="https://calculatorpensie.com/faq"
-        keywords="intrebari frecvente pensii, FAQ pensii romania, varsta pensionare, legea 360/2023, vpr 2025, puncte de stabilitate"
+        canonical="https://calculatorpensie.com/faq/"
+        keywords="intrebari frecvente pensii, FAQ pensii romania, varsta pensionare, legea 360/2023, vpr 2026, puncte de stabilitate"
       />
       
       <FAQPageSchema questions={faqSchema.mainEntity.map(q => ({

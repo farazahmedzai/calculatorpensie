@@ -206,7 +206,7 @@ De exemplu, dacă în luna respectivă salariul tău brut este egal cu câștigu
     author: authors.alexandruPopescu,
     image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=480",
     content: `
-<p>Pensia anticipată reprezintă opțiunea legală prin care te poți pensiona cu maximum 5 ani înainte de împlinirea vârstei standard, dar cu anumite condiții stricte de cotizare și cu o penalizare aplicabilă cuantumului lunar. Poți afla exact care este penalizarea folosind <a href="/calculator-pensie-anticipata" class="text-blue-600 hover:underline font-semibold">calculator pensie anticipată</a>.</p>
+<p>Pensia anticipată reprezintă opțiunea legală prin care te poți pensiona cu maximum 5 ani înainte de împlinirea vârstei standard, dar cu anumite condiții stricte de cotizare și cu o penalizare aplicabilă cuantumului lunar. Poți afla exact care este penalizarea folosind <a href="/calculator-pensie-anticipata/" class="text-blue-600 hover:underline font-semibold">calculator pensie anticipată</a>.</p>
 
 <h3>Condiții de eligibilitate în 2026</h3>
 <p>Pentru a solicita pensia anticipată, solicitantul trebuie să fi realizat stagiul complet de cotizare prevăzut de lege (35 de ani pentru bărbați și 30-33 de ani pentru femei) sau să îl fi depășit cu până la 8 ani. Vârsta minimă este de 60 de ani pentru bărbați și 58 de ani pentru femei în 2026.</p>
@@ -612,10 +612,10 @@ Indiferent de vârsta pe care o aveți în prezent, o planificare riguroasă est
   <p class="text-gray-700 mb-4">Pentru a vă planifica mai bine viitorul financiar, vă recomandăm să utilizați instrumentele noastre gratuite, actualizate la zi conform Legii 360/2023:</p>
   <ul class="space-y-2 list-none pl-0">
     <li class="flex items-center"><span class="mr-2">👉</span> <a href="/" class="text-blue-700 font-bold hover:underline">Calculator Pensie de Stat 2026</a> - Estimează-ți instant pensia lunară.</li>
-    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-varsta-pensionare" class="text-blue-700 font-bold hover:underline">Calculator Vârstă de Pensionare</a> - Află exact anul și luna în care poți ieși la pensie.</li>
-    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-pensie-anticipata" class="text-blue-700 font-bold hover:underline">Calculator Pensie Anticipată</a> - Calculează penalizarea aplicată dacă ieși la pensie mai devreme.</li>
-    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-puncte-pensie" class="text-blue-700 font-bold hover:underline">Calculator Puncte de Stabilitate</a> - Vezi câte puncte bonus primești pentru vechimea în muncă.</li>
-    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/legislatie" class="text-blue-700 font-bold hover:underline">Ghidul Legislației (Legea 360/2023)</a> - Descoperă toate noutățile noului sistem public de pensii.</li>
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-varsta-pensionare/" class="text-blue-700 font-bold hover:underline">Calculator Vârstă de Pensionare</a> - Află exact anul și luna în care poți ieși la pensie.</li>
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-pensie-anticipata/" class="text-blue-700 font-bold hover:underline">Calculator Pensie Anticipată</a> - Calculează penalizarea aplicată dacă ieși la pensie mai devreme.</li>
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-puncte-pensie/" class="text-blue-700 font-bold hover:underline">Calculator Puncte de Stabilitate</a> - Vezi câte puncte bonus primești pentru vechimea în muncă.</li>
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/legislatie/" class="text-blue-700 font-bold hover:underline">Ghidul Legislației (Legea 360/2023)</a> - Descoperă toate noutățile noului sistem public de pensii.</li>
   </ul>
 </div>
 `
@@ -929,10 +929,10 @@ Indiferent de vârsta pe care o aveți în prezent, o planificare riguroasă est
   <p class="text-gray-700 mb-4">Pentru a vă planifica mai bine viitorul financiar, vă recomandăm să utilizați instrumentele noastre gratuite, actualizate la zi conform Legii 360/2023:</p>
   <ul class="space-y-2 list-none pl-0">
     <li class="flex items-center"><span class="mr-2">👉</span> <a href="/" class="text-blue-700 font-bold hover:underline">Calculator Pensie de Stat 2026</a> - Estimează-ți instant pensia lunară.</li>
-    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-varsta-pensionare" class="text-blue-700 font-bold hover:underline">Calculator Vârstă de Pensionare</a> - Află exact anul și luna în care poți ieși la pensie.</li>
-    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-pensie-anticipata" class="text-blue-700 font-bold hover:underline">Calculator Pensie Anticipată</a> - Calculează penalizarea aplicată dacă ieși la pensie mai devreme.</li>
-    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-puncte-pensie" class="text-blue-700 font-bold hover:underline">Calculator Puncte de Stabilitate</a> - Vezi câte puncte bonus primești pentru vechimea în muncă.</li>
-    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/legislatie" class="text-blue-700 font-bold hover:underline">Ghidul Legislației (Legea 360/2023)</a> - Descoperă toate noutățile noului sistem public de pensii.</li>
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-varsta-pensionare/" class="text-blue-700 font-bold hover:underline">Calculator Vârstă de Pensionare</a> - Află exact anul și luna în care poți ieși la pensie.</li>
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-pensie-anticipata/" class="text-blue-700 font-bold hover:underline">Calculator Pensie Anticipată</a> - Calculează penalizarea aplicată dacă ieși la pensie mai devreme.</li>
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-puncte-pensie/" class="text-blue-700 font-bold hover:underline">Calculator Puncte de Stabilitate</a> - Vezi câte puncte bonus primești pentru vechimea în muncă.</li>
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/legislatie/" class="text-blue-700 font-bold hover:underline">Ghidul Legislației (Legea 360/2023)</a> - Descoperă toate noutățile noului sistem public de pensii.</li>
   </ul>
 </div>
 `
@@ -1127,10 +1127,10 @@ Indiferent de vârsta pe care o aveți în prezent, o planificare riguroasă est
   <p class="text-gray-700 mb-4">Pentru a vă planifica mai bine viitorul financiar, vă recomandăm să utilizați instrumentele noastre gratuite, actualizate la zi conform Legii 360/2023:</p>
   <ul class="space-y-2 list-none pl-0">
     <li class="flex items-center"><span class="mr-2">👉</span> <a href="/" class="text-blue-700 font-bold hover:underline">Calculator Pensie de Stat 2026</a> - Estimează-ți instant pensia lunară.</li>
-    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-varsta-pensionare" class="text-blue-700 font-bold hover:underline">Calculator Vârstă de Pensionare</a> - Află exact anul și luna în care poți ieși la pensie.</li>
-    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-pensie-anticipata" class="text-blue-700 font-bold hover:underline">Calculator Pensie Anticipată</a> - Calculează penalizarea aplicată dacă ieși la pensie mai devreme.</li>
-    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-puncte-pensie" class="text-blue-700 font-bold hover:underline">Calculator Puncte de Stabilitate</a> - Vezi câte puncte bonus primești pentru vechimea în muncă.</li>
-    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/legislatie" class="text-blue-700 font-bold hover:underline">Ghidul Legislației (Legea 360/2023)</a> - Descoperă toate noutățile noului sistem public de pensii.</li>
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-varsta-pensionare/" class="text-blue-700 font-bold hover:underline">Calculator Vârstă de Pensionare</a> - Află exact anul și luna în care poți ieși la pensie.</li>
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-pensie-anticipata/" class="text-blue-700 font-bold hover:underline">Calculator Pensie Anticipată</a> - Calculează penalizarea aplicată dacă ieși la pensie mai devreme.</li>
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-puncte-pensie/" class="text-blue-700 font-bold hover:underline">Calculator Puncte de Stabilitate</a> - Vezi câte puncte bonus primești pentru vechimea în muncă.</li>
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/legislatie/" class="text-blue-700 font-bold hover:underline">Ghidul Legislației (Legea 360/2023)</a> - Descoperă toate noutățile noului sistem public de pensii.</li>
   </ul>
 </div>
 `
@@ -1334,10 +1334,10 @@ Indiferent de vârsta pe care o aveți în prezent, o planificare riguroasă est
   <p class="text-gray-700 mb-4">Pentru a vă planifica mai bine viitorul financiar, vă recomandăm să utilizați instrumentele noastre gratuite, actualizate la zi conform Legii 360/2023:</p>
   <ul class="space-y-2 list-none pl-0">
     <li class="flex items-center"><span class="mr-2">👉</span> <a href="/" class="text-blue-700 font-bold hover:underline">Calculator Pensie de Stat 2026</a> - Estimează-ți instant pensia lunară.</li>
-    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-varsta-pensionare" class="text-blue-700 font-bold hover:underline">Calculator Vârstă de Pensionare</a> - Află exact anul și luna în care poți ieși la pensie.</li>
-    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-pensie-anticipata" class="text-blue-700 font-bold hover:underline">Calculator Pensie Anticipată</a> - Calculează penalizarea aplicată dacă ieși la pensie mai devreme.</li>
-    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-puncte-pensie" class="text-blue-700 font-bold hover:underline">Calculator Puncte de Stabilitate</a> - Vezi câte puncte bonus primești pentru vechimea în muncă.</li>
-    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/legislatie" class="text-blue-700 font-bold hover:underline">Ghidul Legislației (Legea 360/2023)</a> - Descoperă toate noutățile noului sistem public de pensii.</li>
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-varsta-pensionare/" class="text-blue-700 font-bold hover:underline">Calculator Vârstă de Pensionare</a> - Află exact anul și luna în care poți ieși la pensie.</li>
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-pensie-anticipata/" class="text-blue-700 font-bold hover:underline">Calculator Pensie Anticipată</a> - Calculează penalizarea aplicată dacă ieși la pensie mai devreme.</li>
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/calculator-puncte-pensie/" class="text-blue-700 font-bold hover:underline">Calculator Puncte de Stabilitate</a> - Vezi câte puncte bonus primești pentru vechimea în muncă.</li>
+    <li class="flex items-center"><span class="mr-2">👉</span> <a href="/legislatie/" class="text-blue-700 font-bold hover:underline">Ghidul Legislației (Legea 360/2023)</a> - Descoperă toate noutățile noului sistem public de pensii.</li>
   </ul>
 </div>
 `

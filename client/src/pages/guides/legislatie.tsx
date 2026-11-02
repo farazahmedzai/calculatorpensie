@@ -12,7 +12,7 @@ export default function LegislatiePage() {
       <MetaTags 
         title="Legislație Pensii România 2026 - Legea 360/2023 Actualizată"
         description="Ghid complet despre legislația pensiilor din România în 2026. Condiții de pensionare, recalculare, stagiul de cotizare și valoarea punctului de referință (VPR)."
-        canonical="https://calculatorpensie.com/legislatie"
+        canonical="https://calculatorpensie.com/legislatie/"
         keywords="legea pensiilor 2026, legislatie pensii romania, vpr 2026, legea 360/2023, cnpp legea"
       />
       <WebPageSchema 

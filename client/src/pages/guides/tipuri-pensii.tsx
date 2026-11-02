@@ -12,7 +12,7 @@ export default function TipuriPensiiPage() {
       <MetaTags 
         title="Tipuri de Pensii în România - Limită Vârstă, Anticipată, Invaliditate"
         description="Descoperă toate tipurile de pensii din sistemul public din România în 2026: limită de vârstă, anticipată, de invaliditate și de urmaș. Condiții oficiale și documente."
-        canonical="https://calculatorpensie.com/tipuri-pensii"
+        canonical="https://calculatorpensie.com/tipuri-pensii/"
         keywords="tipuri pensii, pensie limita de varsta, pensie anticipata, pensie invaliditate, pensie urmas"
       />
       <WebPageSchema 

@@ -71,7 +71,7 @@ export default function CalculatorPunctePage() {
       <MetaTags 
         title="Calculator Puncte Pensie 2026 | Puncte de Stabilitate Noua Lege"
         description="Calculează numărul total de puncte de pensie acumulate. Află câte puncte de stabilitate primești pentru stagiul peste 25 de ani conform Legii 360/2023."
-        canonical="https://calculatorpensie.com/calculator-puncte-pensie"
+        canonical="https://calculatorpensie.com/calculator-puncte-pensie/"
         keywords="calculator puncte pensie, puncte de stabilitate, calcul puncte pensie 2026, calcul puncte stabilitate noua lege"
       />
       
@@ -228,12 +228,12 @@ export default function CalculatorPunctePage() {
               </table>
               
               <figure className="my-6">
-                <img 
-                  src="/images/puncte-stabilitate-legea-360-new.png" 
+                <picture><source srcSet="/images/puncte-stabilitate-legea-360-new.webp" type="image/webp" /><img 
+                  src="/images/puncte-stabilitate-legea-360-new.png" width={1024} height={1024} 
                   alt="Infografic Puncte de Stabilitate Noua Lege a Pensiilor 2026" 
                   className="w-full rounded-lg shadow-md border border-gray-100"
                   loading="lazy"
-                />
+                /></picture>
                 <figcaption className="text-center text-xs text-gray-500 mt-2">
                   Treptele de acordare a punctelor de stabilitate pentru vechimea în muncă (Legea 360/2023).
                 </figcaption>

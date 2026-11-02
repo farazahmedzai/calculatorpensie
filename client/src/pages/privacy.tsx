@@ -10,7 +10,7 @@ export default function Privacy() {
       <MetaTags 
         title="Politică de Confidențialitate - CalculatorPensie.com | Protecția Datelor"
         description="Politica de confidențialitate a CalculatorPensie.com. Află cum protejăm datele tale personale și ce informații colectăm când folosești calculatoarele de pensie."
-        canonical="https://calculatorpensie.com/privacy"
+        canonical="https://calculatorpensie.com/privacy/"
         keywords="politica confidentialitate, protectia datelor, gdpr, calculatorpensie"
       />
       

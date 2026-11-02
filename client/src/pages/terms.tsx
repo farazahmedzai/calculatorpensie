@@ -10,7 +10,7 @@ export default function Terms() {
       <MetaTags 
         title="Termeni și Condiții - CalculatorPensie.com | Reguli de Utilizare"
         description="Termenii și condițiile de utilizare a platformei CalculatorPensie.com. Citește regulile de folosire a calculatoarelor noastre de pensie și disclaimerele legale."
-        canonical="https://calculatorpensie.com/terms"
+        canonical="https://calculatorpensie.com/terms/"
         keywords="termeni si conditii, reguli utilizare, disclaimer legal, calculatorpensie"
       />
       
