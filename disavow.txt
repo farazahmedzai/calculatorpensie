@@ -8,7 +8,7 @@
 # reverse in practice, so anything uncertain is left OUT rather than guessed at.
 #
 # Generated: 2026-11-02
-# Entries: 89 (9 carried over, 80 added from export)
+# Entries: 92 (89 carried over, 83 added from export)
 
 domain:3guys.gr
 domain:6789000000.com
@@ -43,6 +43,7 @@ domain:english-coach-provence.com
 domain:ermetindanismanlik.com
 domain:fandomartists.com
 domain:fjfdm.com
+domain:fngzweb.com
 domain:foodfarmfilmfest.com
 domain:freshandfiery.com
 domain:fxlayer.net
@@ -89,12 +90,14 @@ domain:systeams.org
 domain:tech-news.tech
 domain:thevirtualassistantservice.com
 domain:toko56link.xyz
+domain:uncledocscardcloset.com
 domain:unthinkkfc.com
 domain:vedicheritageinc.com
 domain:vehiclemaintenancelog.net
 domain:vicd.info
 domain:visehospitals.com
 domain:westbysouthwestdecor.com
+domain:willjoelfriedman.com
 domain:wingdom.org
 domain:withthisbling.com
 domain:worldchampionshiprings.com
