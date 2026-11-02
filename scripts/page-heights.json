@@ -1,0 +1,51 @@
+{
+  "generated": "2026-11-02T08:02:53.158Z",
+  "viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "note": "Rendered document height per route, mobile viewport. Used to reserve layout so the footer does not shift. See scripts/prerender-body.mjs header for the A/B that proved this fixes CLS 0.81 -> 0.02.",
+  "routes": {
+    "/": 13811,
+    "/calculator-pensie-anticipata/": 7619,
+    "/calculator-pensie-pilon-2/": 3757,
+    "/calculator-pensie-pilon-3/": 3897,
+    "/calculator-puncte-pensie/": 4248,
+    "/calculator-varsta-pensionare/": 4071,
+    "/contact/": 4954,
+    "/despre-noi/": 9135,
+    "/faq/": 4482,
+    "/legislatie/": 9402,
+    "/metodologie/": 10831,
+    "/planificare/": 7222,
+    "/privacy/": 7133,
+    "/program-excel-calcul-pensie/": 4003,
+    "/terms/": 6539,
+    "/tipuri-pensii/": 6947,
+    "/blog/": 15447,
+    "/blog/acte-necesare-dosar-pensionare/": 20966,
+    "/blog/calcul-punct-referinta-vpr/": 5831,
+    "/blog/calculul-pensiei-freelanceri-pfa/": 4450,
+    "/blog/conditii-speciale-munca-impact-pensie/": 4879,
+    "/blog/ghid-calcul-pensie-stat-2026/": 9062,
+    "/blog/ghid-pensie-invaliditate-2026/": 5835,
+    "/blog/indexare-pensii-2026-2026/": 22396,
+    "/blog/optimizare-fiscala-contributii-pensie/": 4256,
+    "/blog/pensia-urmas-drepturi-proceduri/": 4760,
+    "/blog/pensie-anticipata-conditii-penalizari/": 5203,
+    "/blog/pensie-anticipata-fara-penalizare/": 5490,
+    "/blog/pensie-minima-garantata-2026/": 24489,
+    "/blog/pilonul-2-modificari-legislative/": 5693,
+    "/blog/pilonul-3-avantaje-fiscale-strategii/": 6203,
+    "/blog/reforma-sistem-pensii-2026/": 4437,
+    "/blog/simulare-pensie-instrumente-metode/": 4403,
+    "/blog/stagiul-cotizare-cumparare-ani-munca/": 4746,
+    "/blog/top-5-greseli-planificare-pensie/": 6793,
+    "/blog/transfer-drepturi-pensie-ue/": 4441,
+    "/blog/vizualizare-vechime-munca-cnpp/": 18848
+  },
+  "defaults": {
+    "article": 24489,
+    "other": 13811
+  }
+}

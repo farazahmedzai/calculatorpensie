@@ -119,8 +119,19 @@ const staticRoutes: Record<string, PageMeta> = {
   }
 };
 
-function replaceMeta(html: string, meta: PageMeta, bodyContent?: string): string {
+function replaceMeta(html: string, meta: PageMeta, pageHeights: { routes: Record<string, number>; defaults: { article: number; other: number } }, bodyContent?: string, reservePx?: number): string {
   let result = html;
+
+  // Reserve the final rendered height so the footer is not pushed down when React
+  // mounts. Presentational only. See the pageHeights comment for the measurement.
+  const reserve = reservePx
+    || (meta.canonical.startsWith('https://calculatorpensie.com/blog/')
+        && meta.canonical !== 'https://calculatorpensie.com/blog/'
+        ? pageHeights.defaults.article
+        : pageHeights.defaults.other);
+  if (reserve) {
+    result = result.replace('</head>', `    <style>main{min-height:${reserve}px}</style>\n  </head>`);
+  }
 
   result = result.replace(/<title>[^<]*<\/title>/i, `<title>${meta.title}</title>`);
   
@@ -282,6 +293,29 @@ function buildJsonLd(meta: PageMeta, bodyContent?: string): object | null {
 
 function main() {
   const rootPath = path.resolve(__dirname, '..');
+
+  // Rendered document heights per route, measured with scripts/measure_heights.mjs.
+  // Read here, inside main(), not at module scope: __dirname is defined at line 6
+  // but a module-scope read throws "Cannot access '__dirname' before
+  // initialization" (top-level await in this ESM file defers the TDZ).
+  //
+  // WHY THIS EXISTS
+  //   The page grows from 844px (mobile viewport) to 4,000-24,000px when React
+  //   mounts, and because App.tsx uses `min-h-screen flex flex-col` the footer is
+  //   a flex child pushed down by the whole difference, in one shift. Measured
+  //   CLS 0.79-0.95 on every page: 8-9x Google's 0.1 "good" threshold.
+  //
+  //   Same-page A/B, only one variable changed:
+  //     no reserve              CLS 0.81
+  //     main{min-height:6700px} CLS 0.02
+  //   With the real per-route numbers, across page types:
+  //     anticipata 0.79 -> 0.043 | faq 0.79 -> 0.024 | article 0.954 -> 0.022
+  //
+  //   `min-height: 100vh` does NOT work: it covers ~12% of an 8-viewport page.
+  //   The reserve is presentational only and cannot change what Google indexes.
+  const pageHeights: { routes: Record<string, number>; defaults: { article: number; other: number } } =
+    JSON.parse(fs.readFileSync(path.join(__dirname, 'page-heights.json'), 'utf-8'));
+
   const distPublicPath = path.join(rootPath, 'dist', 'public');
   const templatePath = path.join(distPublicPath, 'index.html');
 
@@ -303,7 +337,7 @@ function main() {
       fs.mkdirSync(targetDir, { recursive: true });
     }
 
-    const preRenderedHtml = replaceMeta(baseHtml, meta, meta.description);
+    const preRenderedHtml = replaceMeta(baseHtml, meta, pageHeights, meta.description, pageHeights.routes[`${route}/`] || pageHeights.routes[route]);
     fs.writeFileSync(path.join(targetDir, 'index.html'), preRenderedHtml, 'utf-8');
     console.log(`- Pre-rendered static route: /${cleanRoute}`);
   }
@@ -328,7 +362,7 @@ function main() {
     };
 
     const articlePayload = `ARTICLE:${article.publishDate}|${article.publishDate}|${article.author.name}`;
-    const preRenderedHtml = replaceMeta(baseHtml, meta, articlePayload);
+    const preRenderedHtml = replaceMeta(baseHtml, meta, pageHeights, articlePayload, pageHeights.routes[`/blog/${article.slug}/`] || pageHeights.defaults.article);
     fs.writeFileSync(path.join(targetDir, 'index.html'), preRenderedHtml, 'utf-8');
     console.log(`- Pre-rendered dynamic blog route: /${route}`);
   }
