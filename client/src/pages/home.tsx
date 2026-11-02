@@ -116,7 +116,19 @@ export default function Home() {
               Calculator Pensie România 2026 (Noul VPR)
             </h1>
             <p className="text-xl text-gray-900 dark:text-gray-100 max-w-3xl mx-auto font-medium">
-              Folosește cel mai precis calculator de pensie din România. Calculează instant pensia de stat și vârsta de pensionare bazate pe formulele oficiale CNPP (Legea 360/2023).
+              Folosește cel mai precis calculator de pensie din România. Calculul pensiei de stat și al vârstei de pensionare se face pe baza formulelor oficiale din Legea 360/2023. Instrumentul funcționează și ca simulator de pensie: poți rula o simulare a pensiei oricând, fără cont și fără costuri.
+            </p>
+            <p className="text-sm text-gray-600 dark:text-gray-400 max-w-3xl mx-auto mt-4">
+              CalculatorPensie.com este un instrument independent, neafiliat Casei Naționale de Pensii Publice (CNPP). Formulele aplicate urmăresc prevederile Legii 360/2023. Pentru situația oficială a dosarului tău, verifică{" "}
+              <a
+                href="https://www.cnpp.ro"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-brand-blue font-semibold underline hover:text-blue-700"
+              >
+                Casa Națională de Pensii Publice (cnpp.ro)
+              </a>
+              .
             </p>
           </div>
 

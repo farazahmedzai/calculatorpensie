@@ -3,6 +3,7 @@ import EarlyRetirementCalculator from "@/components/calculators/early-retirement
 import MetaTags from "@/components/seo/MetaTags";
 import BreadcrumbNavigation from "@/components/seo/BreadcrumbNavigation";
 import { WebPageSchema } from "@/components/seo/StructuredData";
+import { Link } from "wouter";
 import { Info, HelpCircle, CheckCircle } from "lucide-react";
 
 export default function CalculatorAnticipataPage() {
@@ -134,10 +135,10 @@ export default function CalculatorAnticipataPage() {
           <h3>Întrebări Frecvente (FAQ)</h3>
           <div className="space-y-4 mt-6">
             <div className="border-b pb-4">
-              <h4 className="font-bold flex items-center gap-2">
+              <h3 className="font-bold flex items-center gap-2">
                 <HelpCircle className="h-4.5 w-4.5 text-brand-blue" />
                 Care este penalizarea maximă?
-              </h4>
+              </h3>
               <p className="text-gray-700">
                 Penalizarea maximă se aplică pentru perioada maximă de anticipare (5 ani / 60 de luni) la cota maximă de 0.40% pe lună, adică o reducere totală de <strong>24%</strong> din valoarea pensiei complete.
               </p>
@@ -170,6 +171,44 @@ export default function CalculatorAnticipataPage() {
               </p>
             </div>
           </div>
+
+          {/* Internal links: this page previously linked NOWHERE (0 internal
+              links), so it received authority and passed none on. It ranks 33.9
+              for "calculator pensie anticipata cu penalizare", and these are the
+              pages that query actually needs next. */}
+          <Card className="mt-8">
+            <CardHeader>
+              <CardTitle className="text-xl">Vezi și</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <ul className="space-y-2 text-gray-700">
+                <li>
+                  <Link href="/blog/pensie-anticipata-conditii-penalizari/" className="text-brand-blue font-semibold underline">
+                    Pensie anticipată: condiții și penalizări
+                  </Link>
+                  {" "}— explicația detaliată a condițiilor de eligibilitate.
+                </li>
+                <li>
+                  <Link href="/calculator-varsta-pensionare/" className="text-brand-blue font-semibold underline">
+                    Calculator Vârstă de Pensionare
+                  </Link>
+                  {" "}— află vârsta standard și data la care ai putea ieși la pensie.
+                </li>
+                <li>
+                  <Link href="/calculator-puncte-pensie/" className="text-brand-blue font-semibold underline">
+                    Calculator Puncte de Pensie
+                  </Link>
+                  {" "}— verifică dacă ai stagiul complet necesar (35 de ani) pentru a evita penalizarea.
+                </li>
+                <li>
+                  <Link href="/legislatie/" className="text-brand-blue font-semibold underline">
+                    Legea Pensiilor 360/2023
+                  </Link>
+                  {" "}— textul oficial pe care se bazează grila de penalizări.
+                </li>
+              </ul>
+            </CardContent>
+          </Card>
         </div>
       </div>
     </div>

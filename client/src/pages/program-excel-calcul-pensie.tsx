@@ -7,6 +7,7 @@ import MetaTags from "@/components/seo/MetaTags";
 import BreadcrumbNavigation from "@/components/seo/BreadcrumbNavigation";
 import { WebPageSchema } from "@/components/seo/StructuredData";
 import { Download, FileSpreadsheet, CheckCircle, Info } from "lucide-react";
+import { Link } from "wouter";
 
 export default function ProgramExcelPage() {
   const [downloadSuccess, setDownloadSuccess] = useState(false);
@@ -200,6 +201,43 @@ export default function ProgramExcelPage() {
                   Descărcare inițiată cu succes! Verificați folderul 'Downloads'.
                 </div>
               )}
+            </CardContent>
+          </Card>
+
+          {/* Internal links: this page previously linked NOWHERE, so it received
+              authority and passed none on. These are the pages a user of an Excel
+              pension template actually needs next. */}
+          <Card className="mt-8">
+            <CardHeader>
+              <CardTitle className="text-xl">Vezi și</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <ul className="space-y-2 text-gray-700">
+                <li>
+                  <Link href="/calculator-puncte-pensie/" className="text-brand-blue font-semibold underline">
+                    Calculator Puncte de Pensie
+                  </Link>
+                  {" "}— verifică punctele de stabilitate pentru anii munciți peste stagiul complet.
+                </li>
+                <li>
+                  <Link href="/calculator-varsta-pensionare/" className="text-brand-blue font-semibold underline">
+                    Calculator Vârstă de Pensionare
+                  </Link>
+                  {" "}— află data exactă la care te poți pensiona, în funcție de anul nașterii și stagiul realizat.
+                </li>
+                <li>
+                  <Link href="/legislatie/" className="text-brand-blue font-semibold underline">
+                    Legea Pensiilor 360/2023
+                  </Link>
+                  {" "}— prevederile pe care se bazează formulele din tabel.
+                </li>
+                <li>
+                  <Link href="/metodologie/" className="text-brand-blue font-semibold underline">
+                    Metodologia de calcul
+                  </Link>
+                  {" "}— cum se aplică formulele pas cu pas.
+                </li>
+              </ul>
             </CardContent>
           </Card>
         </div>
