@@ -1,25 +1,101 @@
-# Google Disavow File for CalculatorPensie.com
-# Generated for Google Search Console Disavow Links Tool
-# https://search.google.com/search-console/disavow-links
-# Purpose: Neutralize toxic comment spam, automated link blasts, and foreign PBN backlinks
+# Disavow file for CalculatorPensie.com
+#
+# Upload to Google: https://search.google.com/search-console/disavow-links
+#   (property: https://calculatorpensie.com/)
+# Bing uses the same file format: Bing Webmaster Tools -> Disavow backlinks.
+#
+# Scope: this list is a deliberate, reviewed decision. Disavowing is slow to
+# reverse in practice, so anything uncertain is left OUT rather than guessed at.
+#
+# Generated: 2026-11-02
+# Entries: 89 (9 carried over, 80 added from export)
 
-# Identified toxic comment spam and scraper domains:
-domain:novacleaners.gr
 domain:3guys.gr
-domain:patiniotisstands.gr
-domain:pepico.gr
-domain:mpilor.gr
-domain:powerfit.nz
-domain:e-motokonstantinou.gr
-domain:businesslink.com.cy
+domain:6789000000.com
+domain:aabhushancasting.com
+domain:abogadosdeaccidentesjusticialegal.com
 domain:acci.gr
-
-# INSTRUCTIONS FOR USER:
-# 1. Log into Google Search Console (https://search.google.com/search-console)
-# 2. Go to "Links" -> "Top linking sites" -> Click "EXPORT"
-# 3. If you see other foreign spam sites, blog comment domains, or link networks, add them above using:
-#    domain:example.com
-# 4. Save this file as disavow.txt (plain UTF-8 text)
-# 5. Open the Google Disavow Tool: https://search.google.com/search-console/disavow-links
-# 6. Select your property: https://calculatorpensie.com
-# 7. Upload this disavow.txt file.
+domain:accuratetalkings.com
+domain:acryliceffect.com
+domain:amplewonder.com
+domain:appac.gr
+domain:areiaocampos.com
+domain:avkdimage.com
+domain:betgurunation.com
+domain:bfsico.com
+domain:bjjindashuzhi.com
+domain:blueeantlas.com
+domain:bujinkancr.com
+domain:businesslink.com.cy
+domain:ccio.co
+domain:championshipsofpoker.com
+domain:chanelnavi.com
+domain:cheapnfljerseyschina.cc
+domain:chessfeed.com
+domain:chloroquineorder.com
+domain:combatscenevegas.com
+domain:cygnux.org
+domain:dwirelesshua.com
+domain:e-motokonstantinou.gr
+domain:elenkamusic.com
+domain:emancipacion.org
+domain:english-coach-provence.com
+domain:ermetindanismanlik.com
+domain:fandomartists.com
+domain:fjfdm.com
+domain:foodfarmfilmfest.com
+domain:freshandfiery.com
+domain:fxlayer.net
+domain:gfwqdf.com
+domain:globaleasyweb.com
+domain:goodcompanyjp.com
+domain:green-tech-africa.com
+domain:haifa.muni.il
+domain:hissingfetus.com
+domain:illusivesoul.com
+domain:izolacniskla.cz
+domain:jackpotcityslotss.com
+domain:jkrcne.com
+domain:kale-seo.com
+domain:kitedu.tech
+domain:kodedewa.net
+domain:lakesidesaddlery.com
+domain:localwifipoacher.com
+domain:lokerjobsid123.com
+domain:lovereplica.com
+domain:mitiduresou.com
+domain:modellandmarkthialand.com
+domain:mpilor.gr
+domain:muhteremsarioglu.com
+domain:news-usa.tech
+domain:novacleaners.gr
+domain:patiniotisstands.gr
+domain:pavlovchampionsleague.com
+domain:pepico.gr
+domain:planta9.com
+domain:portalines.com
+domain:powerfit.nz
+domain:pr9websites.com
+domain:robertgardenartist.com
+domain:rqknhp.com
+domain:saxdoll.com
+domain:sblsaltari.com
+domain:server-ke296.com
+domain:shopbestnaija.com
+domain:southeasternequestriantrails.com
+domain:stanssmokehouse.com
+domain:sweetheartscupcakes.com
+domain:systeams.org
+domain:tech-news.tech
+domain:thevirtualassistantservice.com
+domain:toko56link.xyz
+domain:unthinkkfc.com
+domain:vedicheritageinc.com
+domain:vehiclemaintenancelog.net
+domain:vicd.info
+domain:visehospitals.com
+domain:westbysouthwestdecor.com
+domain:wingdom.org
+domain:withthisbling.com
+domain:worldchampionshiprings.com
+domain:wpfound.com
