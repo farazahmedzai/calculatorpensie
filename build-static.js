@@ -33,6 +33,15 @@ try {
     // Refuse to ship a 404 fallback that would swallow a real route.
     execSync('node scripts/verify-routes-prerendered.mjs', { stdio: 'inherit' });
 
+    // Tell IndexNow about every URL in the built sitemap. Bing backs ChatGPT's
+    // browsing, so this is a discovery channel for AI answers as well as search.
+    // Never fails the build.
+    try {
+      execSync('node scripts/ping-indexnow.js', { stdio: 'inherit' });
+    } catch (e) {
+      console.warn('IndexNow submission skipped:', e.message);
+    }
+
     // Create _redirects file for SPA routing only (ads.txt and llms.txt now served as static file)
     const redirectsContent = `/blog/blog/*  /blog/:splat  301!
 /blog/ghid-calcul-pensie-stat-2025  /blog/ghid-calcul-pensie-stat-2026  301!

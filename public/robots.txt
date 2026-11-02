@@ -66,3 +66,7 @@ Allow: /
 
 # Sitemaps & LLMs specification
 Sitemap: https://calculatorpensie.com/sitemap.xml
+
+# IndexNow key (Bing / Yandex / Seznam / Naver instant indexing)
+# https://www.indexnow.org/documentation
+IndexNow: c7f96a3501a24d5ea3bc55625bf9892c
