@@ -1,397 +1,213 @@
-import fs from 'fs';
-import path from 'path';
-import { fileURLToPath } from 'url';
-import { staticArticles } from '../client/src/data/static-articles.ts';
+import fs from "node:fs";
+import path from "node:path";
+import { pathToFileURL } from "node:url";
+import { staticArticles } from "../client/src/data/static-articles";
+import {
+  buildJsonLdGraph,
+  DEFAULT_OG_IMAGE,
+  ROUTES_META,
+  type RouteMetaDef,
+} from "../client/src/data/routes-meta";
 
-// Fix for __dirname in ES Modules
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-
-interface PageMeta {
-  title: string;
-  description: string;
-  canonical: string;
-  keywords: string;
+function escapeAttr(val: string): string {
+  return String(val)
+    .replace(/&/g, "&amp;")
+    .replace(/"/g, "&quot;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;");
 }
 
-const staticRoutes: Record<string, PageMeta> = {
-  '/': {
-    title: 'Calculator Pensie 2026: Află Pensia de Stat (Legea 360)',
-    description: 'Calculează online pensia de stat în 2026. Află exact punctajul și valoarea pensiei pe baza noii Legi 360/2023.',
-    canonical: 'https://calculatorpensie.com/',
-    keywords: 'calculator pensie romania, calcul pensie de stat, pensie anticipata, pilon III, calculator pilon 3'
-  },
-  '/calculator-pensie-anticipata': {
-    title: 'Calculator Pensie Anticipată 2026 | Află Penalizarea (Legea 360)',
-    description: 'Calculează penalizarea aplicată pentru pensionarea anticipată în România. Află vârsta minimă, stagiul necesar și procentul de reducere conform Legii 360/2023.',
-    canonical: 'https://calculatorpensie.com/calculator-pensie-anticipata/',
-    keywords: 'calculator pensie anticipata, pensie anticipata cu penalizare, varsta pensionare anticipata, legea pensiilor 360/2023'
-  },
-  '/calculator-varsta-pensionare': {
-    title: 'Calculator Vârstă Pensionare 2026 | Data Exactă Limită de Vârstă',
-    description: 'Calculează vârsta legală de pensionare în România pentru femei și bărbați. Află data exactă la care te poți pensiona și stagiul de cotizare necesar.',
-    canonical: 'https://calculatorpensie.com/calculator-varsta-pensionare/',
-    keywords: 'calculator varsta pensionare, cand ies la pensie, varsta pensionare femei romania, stagiu cotizare obligatoriu'
-  },
-  '/calculator-puncte-pensie': {
-    title: 'Calculator Puncte Pensie 2026 | Puncte de Stabilitate Noua Lege',
-    description: 'Calculează numărul total de puncte de pensie acumulate. Află câte puncte de stabilitate primești pentru stagiul peste 25 de ani conform Legii 360/2023.',
-    canonical: 'https://calculatorpensie.com/calculator-puncte-pensie/',
-    keywords: 'calculator puncte pensie, puncte de stabilitate, calcul puncte pensie 2026, calcul puncte stabilitate noua lege'
-  },
-  '/calculator-pensie-pilon-2': {
-    title: 'Calculator Pensie Pilon 2 2026 | Capitalizare și Profit',
-    description: 'Calculează suma strânsă în contul tău de pensie privată obligatorie Pilonul II. Proiectează-ți acumulările pe baza contribuției lunare de 4.75% din salariu.',
-    canonical: 'https://calculatorpensie.com/calculator-pensie-pilon-2/',
-    keywords: 'calculator pensie pilon 2, pilonul ii pensii private, randament pilon 2, fond de pensii privat'
-  },
-  '/calculator-pensie-pilon-3': {
-    title: 'Calculator Pensie Pilon 3 (Facultativă) 2026',
-    description: 'Calculează suma pe care o poți strânge în Pilonul III de pensii facultative. Vezi avantajele deductibilității fiscale și profitul estimat.',
-    canonical: 'https://calculatorpensie.com/calculator-pensie-pilon-3/',
-    keywords: 'calculator pensie pilon 3, pensie facultativa pilon 3, calculator pensie facultativa, pilonul 3 pensie privata'
-  },
-  '/program-excel-calcul-pensie': {
-    title: 'Program Excel Calcul Pensie 2026 (Download Gratuit)',
-    description: 'Descarcă simulatorul Excel gratuit pentru pensia de stat 2026. Introdu salariul și calculează automat punctajul lunar.',
-    canonical: 'https://calculatorpensie.com/program-excel-calcul-pensie/',
-    keywords: 'program excel calcul pensie, tabel excel calcul pensie de stat, simulator pensie excel gratis, descarca calculator pensie xls'
-  },
-  '/planificare': {
-    title: 'Planificare Pensie România | Ghid Practic 2026',
-    description: 'Ghid complet pentru planificarea pensiei în România. Strategii pentru economisire voluntară, pensie privată facultativă și optimizare fiscală.',
-    canonical: 'https://calculatorpensie.com/planificare/',
-    keywords: 'planificare pensie, pensie privata, pilon 3, deducere fiscala, pensie voluntara'
-  },
-  '/tipuri-pensii': {
-    title: 'Tipuri de Pensii în România | Ghid Complet 2026',
-    description: 'Descoperă toate tipurile de pensii din sistemul public din România: limită de vârstă, anticipată, de invaliditate și de urmaș. Condiții oficiale și documente.',
-    canonical: 'https://calculatorpensie.com/tipuri-pensii/',
-    keywords: 'tipuri pensii, pensie limita de varsta, pensie anticipata, pensie invaliditate, pensie urmas'
-  },
-  '/legislatie': {
-    title: 'Legea Pensiilor 2026 | Ghid Legislativ Oficial CNPP',
-    description: 'Ghid complet despre legislația pensiilor din România în 2026. Condiții de pensionare, recalculare, stagiul de cotizare și valoarea punctului de referință (VPR).',
-    canonical: 'https://calculatorpensie.com/legislatie/',
-    keywords: 'legea pensiilor 2026, legislatie pensii romania, vpr 2026, cnpp legea'
-  },
-  '/blog': {
-    title: 'Blog Pensii România 2026 - Ghiduri Complete și Noutăți | CalculatorPensie.com',
-    description: 'Citește cele mai recente articole despre pensii în România. Ghiduri de planificare, analize legislative și sfaturi de la experți pentru a-ți optimiza pensia.',
-    canonical: 'https://calculatorpensie.com/blog/',
-    keywords: 'blog pensii romania, ghid pensie, noutati pensii, planificare pensie, legislatie pensii'
-  },
-  '/despre-noi': {
-    title: 'Despre CalculatorPensie: Experți în Legislația Pensiilor',
-    description: 'Află mai multe despre CalculatorPensie.com, misiunea noastră de a oferi calculatoare de pensie precise și resurse educaționale pentru românii care își planifică viitorul financiar.',
-    canonical: 'https://calculatorpensie.com/despre-noi/',
-    keywords: 'despre calculatorpensie, misiune pensii romania, echipa calculatoare pensie'
-  },
-  '/metodologie': {
-    title: 'Metodologie Calcul Pensie - Formulele Oficiale CNPP | CalculatorPensie.com',
-    description: 'Descoperă metodologia completă de calcul a pensiei folosită de CalculatorPensie.com. Formulele oficiale CNPP, sursele legislative și transparența calculelor.',
-    canonical: 'https://calculatorpensie.com/metodologie/',
-    keywords: 'metodologie calcul pensie, formula pensie romania, cnpp, legea pensiilor, puncte de stabilitate, vpr 2026'
-  },
-  '/contact': {
-    title: 'Contact - CalculatorPensie.com | Întrebări și Suport',
-    description: 'Contactează echipa CalculatorPensie.com pentru întrebări despre calculatoarele de pensie, sugestii de îmbunătățire sau suport tehnic. Răspundem în 24 ore.',
-    canonical: 'https://calculatorpensie.com/contact/',
-    keywords: 'contact calculatorpensie, suport pensii romania, intrebari calculator pensie'
-  },
-  '/privacy': {
-    title: 'Politică de Confidențialitate - CalculatorPensie.com | Protecția Datelor',
-    description: 'Politica de confidențialitate a CalculatorPensie.com. Află cum protejăm datele tale personale și ce informații colectăm când folosești calculatoarele de pensie.',
-    canonical: 'https://calculatorpensie.com/privacy/',
-    keywords: 'politica confidentialitate, protectia datelor, gdpr, calculatorpensie'
-  },
-  '/terms': {
-    title: 'Termeni și Condiții - CalculatorPensie.com | Reguli de Utilizare',
-    description: 'Termenii și condițiile de utilizare a platformei CalculatorPensie.com. Citește regulile de folosire a calculatoarelor noastre de pensie și disclaimerele legale.',
-    canonical: 'https://calculatorpensie.com/terms/',
-    keywords: 'termeni si conditii, reguli utilizare, disclaimer legal, calculatorpensie'
-  },
-  '/faq': {
-    title: 'Întrebări Frecvente - Calculator Pensie România | FAQ Pensii 2026',
-    description: 'Răspunsuri la întrebările frecvente despre pensii în România. Află la ce vârstă te poți pensiona, cum se calculează pensia și care sunt avantajele Pilonului III.',
-    canonical: 'https://calculatorpensie.com/faq/',
-    keywords: 'intrebari frecvente pensii, FAQ pensii romania, varsta pensionare, legea 360/2023, vpr 2026, puncte de stabilitate'
-  }
-};
+function escapeText(val: string): string {
+  return String(val)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;");
+}
 
-function replaceMeta(html: string, meta: PageMeta, pageHeights: { routes: Record<string, number>; defaults: { article: number; other: number } }, rootPath: string, bodyContent?: string, reservePx?: number): string {
-  let result = html;
+function injectHeadAndBody(
+  template: string,
+  meta: RouteMetaDef,
+  appHtml: string,
+  extra: {
+    articleAuthor?: string;
+    articleCategory?: string;
+    articleImage?: string;
+  } = {}
+): string {
+  let html = template;
 
-  // Reserve the final rendered height so the footer is not pushed down when React
-  // mounts. Presentational only. See the pageHeights comment for the measurement.
-  const reserve = reservePx
-    || (meta.canonical.startsWith('https://calculatorpensie.com/blog/')
-        && meta.canonical !== 'https://calculatorpensie.com/blog/'
-        ? pageHeights.defaults.article
-        : pageHeights.defaults.other);
-  if (reserve) {
-    result = result.replace('</head>', `    <style>main{min-height:${reserve}px}</style>\n  </head>`);
-  }
+  const escapedTitle = escapeText(meta.title);
+  const escapedDesc = escapeAttr(meta.description);
+  const escapedTitleAttr = escapeAttr(meta.title);
+  const escapedCanonical = escapeAttr(meta.canonical);
+  const escapedKeywords = escapeAttr(meta.keywords);
+  const ogImage = escapeAttr(extra.articleImage || DEFAULT_OG_IMAGE);
+  const ogType = meta.ogType || "website";
 
-  // Inline the main stylesheet so the critical CSS does not wait on a
-  // render-blocking request. It is a local hashed asset (111 KB, ~17 KB gzip), so
-  // this removes a round-trip from the critical path.
-  //
-  // Note: Vite's script injects the CSS <link> into index.html AFTER vite build
-  // returns, so this runs after that and the tag carries `crossorigin`. The regex
-  // deliberately allows attributes on either side of href.
-  try {
-    const assetsDir = path.join(rootPath, 'dist', 'public', 'assets');
-    const cssName = fs.readdirSync(assetsDir).find(n => n.endsWith('.css'));
-    if (cssName) {
-      const href = `/assets/${cssName}`;
-      const linkRe = new RegExp(`<link\\b[^>]*href="${href.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}"[^>]*>`, 'i');
-      if (linkRe.test(result)) {
-        const css = fs.readFileSync(path.join(assetsDir, cssName), 'utf-8');
-        result = result.replace(linkRe, `<style>${css}</style>`);
-      } else {
-        console.warn(`   ! css link not found for ${href} — stylesheet left external`);
-      }
-    }
-  } catch (e) {
-    console.warn('   ! css inline failed:', String(e).slice(0, 80));
-  }
-
-  result = result.replace(/<title>[^<]*<\/title>/i, `<title>${meta.title}</title>`);
-  
-  result = result.replace(
+  // Replace core meta tags
+  html = html.replace(/<title>[\s\S]*?<\/title>/i, `<title>${escapedTitle}</title>`);
+  html = html.replace(
     /<meta\s+name=["']description["']\s+content=["'][^"']*["']\s*\/?>/i,
-    `<meta name="description" content="${meta.description}" />`
+    `<meta name="description" content="${escapedDesc}" />`
   );
-
-  result = result.replace(
+  html = html.replace(
     /<link\s+rel=["']canonical["']\s+href=["'][^"']*["']\s*\/?>/i,
-    `<link rel="canonical" href="${meta.canonical}" />`
+    `<link rel="canonical" href="${escapedCanonical}" />`
   );
 
-  result = result.replace(
+  // Open Graph
+  html = html.replace(
     /<meta\s+property=["']og:title["']\s+content=["'][^"']*["']\s*\/?>/i,
-    `<meta property="og:title" content="${meta.title}" />`
+    `<meta property="og:title" content="${escapedTitleAttr}" />`
   );
-
-  result = result.replace(
+  html = html.replace(
     /<meta\s+property=["']og:description["']\s+content=["'][^"']*["']\s*\/?>/i,
-    `<meta property="og:description" content="${meta.description}" />`
+    `<meta property="og:description" content="${escapedDesc}" />`
   );
-
-  result = result.replace(
+  html = html.replace(
+    /<meta\s+property=["']og:type["']\s+content=["'][^"']*["']\s*\/?>/i,
+    `<meta property="og:type" content="${ogType}" />`
+  );
+  html = html.replace(
     /<meta\s+property=["']og:url["']\s+content=["'][^"']*["']\s*\/?>/i,
-    `<meta property="og:url" content="${meta.canonical}" />`
+    `<meta property="og:url" content="${escapedCanonical}" />`
+  );
+  html = html.replace(
+    /<meta\s+property=["']og:image["']\s+content=["'][^"']*["']\s*\/?>/i,
+    `<meta property="og:image" content="${ogImage}" />`
   );
 
-  // Add keywords tag and complete twitter card tags
-  const additionalTags = `
-    <meta name="keywords" content="${meta.keywords}" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="${meta.title}" />
-    <meta name="twitter:description" content="${meta.description}" />
-    <meta name="twitter:image" content="https://calculatorpensie.com/og-image.jpg" />
-  `;
-  if (/<meta\s+name=["']keywords["']/i.test(result)) {
-    result = result.replace(/<meta\s+name=["']keywords["']\s+content=["'][^"']*["']\s*\/?>/i, additionalTags);
+  // Twitter Cards
+  html = html.replace(
+    /<meta\s+name=["']twitter:title["']\s+content=["'][^"']*["']\s*\/?>/i,
+    `<meta name="twitter:title" content="${escapedTitleAttr}" />`
+  );
+  html = html.replace(
+    /<meta\s+name=["']twitter:description["']\s+content=["'][^"']*["']\s*\/?>/i,
+    `<meta name="twitter:description" content="${escapedDesc}" />`
+  );
+  html = html.replace(
+    /<meta\s+name=["']twitter:image["']\s+content=["'][^"']*["']\s*\/?>/i,
+    `<meta name="twitter:image" content="${ogImage}" />`
+  );
+
+  // Keywords tag
+  const kwTag = `    <meta name="keywords" content="${escapedKeywords}" />`;
+  if (/<meta\s+name=["']keywords["']/i.test(html)) {
+    html = html.replace(/<meta\s+name=["']keywords["'][^>]*\/?>/i, kwTag.trim());
   } else {
-    result = result.replace(/<\/head>/i, `${additionalTags}\n</head>`);
+    html = html.replace(/<\/head>/i, `${kwTag}\n  </head>`);
   }
 
-  // Inject server-side JSON-LD so structured data is in the initial HTML (Google prefers
-  // this over JS-injected schema — see Dec 2025 JS-SEO guidance). No hidden text is injected.
-  const jsonLd = buildJsonLd(meta, bodyContent);
-  if (jsonLd) {
-    result = result.replace(/<\/head>/i, `    <script type="application/ld+json">\n${JSON.stringify(jsonLd, null, 2)}\n    </script>\n  </head>`);
-  }
+  // Single unified @graph JSON-LD schema
+  const jsonLd = buildJsonLdGraph({
+    meta,
+    articleAuthor: extra.articleAuthor,
+    articleCategory: extra.articleCategory,
+    articleImage: extra.articleImage,
+  });
+  const safeJson = JSON.stringify(jsonLd).replace(/</g, "\\u003c");
+  html = html.replace(
+    /<script\s+id=["']page-schema["'][^>]*>[\s\S]*?<\/script>/i,
+    `<script id="page-schema" type="application/ld+json">${safeJson}</script>`
+  );
 
-  return result;
+  // Inject SSR-rendered React HTML into #root (zero layout voids / zero noscript hacks)
+  html = html.replace(
+    /<div\s+id=["']root["']\s*>[\s\S]*?<\/div>/i,
+    `<div id="root">${appHtml}</div>`
+  );
+
+  return html;
 }
 
-function buildJsonLd(meta: PageMeta, bodyContent?: string): object | null {
-  const isArticle = bodyContent && bodyContent.startsWith('ARTICLE:');
-  const isCalculator = meta.canonical.includes('calculator') || meta.canonical === 'https://calculatorpensie.com/' || meta.canonical.includes('program-excel');
-  
-  const graph: object[] = [
-    {
-      "@type": "Organization",
-      "@id": "https://calculatorpensie.com/#organization",
-      "name": "CalculatorPensie.com",
-      "url": "https://calculatorpensie.com/",
-      "logo": "https://calculatorpensie.com/og-image.jpg",
-      "sameAs": [
-        "https://calculatorpensie.com/despre-noi/",
-        "https://calculatorpensie.com/metodologie/"
-      ]
-    },
-    {
-      "@type": "WebSite",
-      "@id": "https://calculatorpensie.com/#website",
-      "name": "CalculatorPensie.com",
-      "url": "https://calculatorpensie.com/",
-      "inLanguage": "ro-RO",
-      "publisher": { "@id": "https://calculatorpensie.com/#organization" }
-    }
-  ];
+async function main() {
+  const rootPath = process.cwd();
+  const distPath = path.join(rootPath, "dist", "public");
+  const indexHtmlPath = path.join(distPath, "index.html");
+  const ssrEntryPath = path.join(rootPath, "dist", "ssr", "entry-server.js");
 
-  // For calculator tools, add WebApplication schema (Rich Results & FinanceApplication classification)
-  if (isCalculator) {
-    graph.push({
-      "@type": "WebApplication",
-      "@id": `${meta.canonical}#webapplication`,
-      "name": meta.title,
-      "description": meta.description,
-      "url": meta.canonical,
-      "inLanguage": "ro-RO",
-      "applicationCategory": "FinanceApplication",
-      "operatingSystem": "All",
-      "browserRequirements": "Requires JavaScript. Requires HTML5.",
-      "featureList": [
-        "Simulare calcul pensie de stat conform Legii 360/2023",
-        "Calcul puncte de stabilitate pentru stagii cotizare peste 25 ani",
-        "Calcul penalizare reducere vârstă pensie anticipată",
-        "Calcul vârstă standard de pensionare pe baza datei nașterii",
-        "Proiecție fond privat Pilonul II și Pilonul III"
-      ],
-      "offers": {
-        "@type": "Offer",
-        "price": "0",
-        "priceCurrency": "RON",
-        "availability": "https://schema.org/InStock"
-      }
-    });
+  if (!fs.existsSync(indexHtmlPath)) {
+    console.error("dist/public/index.html not found! Run vite client build first.");
+    process.exit(1);
   }
-
-  // Breadcrumbs schema for all subpages
-  if (meta.canonical !== 'https://calculatorpensie.com/') {
-    const pageName = meta.title.split('|')[0].split(':')[0].trim();
-    graph.push({
-      "@type": "BreadcrumbList",
-      "@id": `${meta.canonical}#breadcrumb`,
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Acasă",
-          "item": "https://calculatorpensie.com/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": pageName,
-          "item": meta.canonical
-        }
-      ]
-    });
-  }
-
-  // For blog articles, add Article schema with author + dates (E-E-A-T signal) and speakable
-  if (isArticle) {
-    const payload = bodyContent.slice(8);
-    const parts = payload.split('|');
-    if (parts.length >= 3) {
-      graph.push({
-        "@type": "Article",
-        "@id": `${meta.canonical}#article`,
-        "headline": meta.title,
-        "description": meta.description,
-        "inLanguage": "ro-RO",
-        "datePublished": parts[0],
-        "dateModified": parts[1],
-        "author": { 
-          "@type": "Organization", 
-          "name": parts[2],
-          "url": "https://calculatorpensie.com/despre-noi/"
-        },
-        "publisher": { "@id": "https://calculatorpensie.com/#organization" },
-        "speakable": {
-          "@type": "SpeakableSpecification",
-          "cssSelector": ["h1", "article p"]
-        }
-      });
-    }
-  }
-
-  return { "@context": "https://schema.org", "@graph": graph };
-}
-
-function main() {
-  const rootPath = path.resolve(__dirname, '..');
-
-  // Rendered document heights per route, measured with scripts/measure_heights.mjs.
-  // Read here, inside main(), not at module scope: __dirname is defined at line 6
-  // but a module-scope read throws "Cannot access '__dirname' before
-  // initialization" (top-level await in this ESM file defers the TDZ).
-  //
-  // WHY THIS EXISTS
-  //   The page grows from 844px (mobile viewport) to 4,000-24,000px when React
-  //   mounts, and because App.tsx uses `min-h-screen flex flex-col` the footer is
-  //   a flex child pushed down by the whole difference, in one shift. Measured
-  //   CLS 0.79-0.95 on every page: 8-9x Google's 0.1 "good" threshold.
-  //
-  //   Same-page A/B, only one variable changed:
-  //     no reserve              CLS 0.81
-  //     main{min-height:6700px} CLS 0.02
-  //   With the real per-route numbers, across page types:
-  //     anticipata 0.79 -> 0.043 | faq 0.79 -> 0.024 | article 0.954 -> 0.022
-  //
-  //   `min-height: 100vh` does NOT work: it covers ~12% of an 8-viewport page.
-  //   The reserve is presentational only and cannot change what Google indexes.
-  const pageHeights: { routes: Record<string, number>; defaults: { article: number; other: number } } =
-    JSON.parse(fs.readFileSync(path.join(__dirname, 'page-heights.json'), 'utf-8'));
-
-  const distPublicPath = path.join(rootPath, 'dist', 'public');
-  const templatePath = path.join(distPublicPath, 'index.html');
-
-  if (!fs.existsSync(templatePath)) {
-    console.error(`Base template not found at ${templatePath}. Did you run the build step first?`);
+  if (!fs.existsSync(ssrEntryPath)) {
+    console.error("dist/ssr/entry-server.js not found! Run vite --ssr build first.");
     process.exit(1);
   }
 
-  const baseHtml = fs.readFileSync(templatePath, 'utf-8');
+  const templateHtml = fs.readFileSync(indexHtmlPath, "utf-8");
+  const ssrMod = await import(pathToFileURL(ssrEntryPath).href);
+  const renderRouteHtml: (routePath: string) => string = ssrMod.renderRouteHtml;
 
-  console.log('Generating pre-rendered static pages with route-specific metadata...');
-
-  // 1. Generate static pages from staticRoutes mapping
-  for (const [route, meta] of Object.entries(staticRoutes)) {
-    const cleanRoute = route.startsWith('/') ? route.slice(1) : route;
-    const targetDir = path.join(distPublicPath, cleanRoute);
-
-    if (!fs.existsSync(targetDir)) {
-      fs.mkdirSync(targetDir, { recursive: true });
-    }
-
-    const preRenderedHtml = replaceMeta(baseHtml, meta, pageHeights, rootPath, meta.description, pageHeights.routes[`${route}/`] || pageHeights.routes[route]);
-    fs.writeFileSync(path.join(targetDir, 'index.html'), preRenderedHtml, 'utf-8');
-    console.log(`- Pre-rendered static route: /${cleanRoute}`);
+  if (typeof renderRouteHtml !== "function") {
+    throw new Error("renderRouteHtml export missing from dist/ssr/entry-server.js");
   }
 
-  // 2. Generate static pages for dynamic blog articles
-  console.log(`Found ${staticArticles.length} blog articles to pre-render.`);
+  console.log("Generating true SSR HTML pages with unified metadata and @graph schema...");
+  let generatedCount = 0;
+
+  // 1. All static routes (including homepage /)
+  for (const [routePath, meta] of Object.entries(ROUTES_META)) {
+    const appHtml = renderRouteHtml(routePath);
+    if (!appHtml || appHtml.length < 200) {
+      throw new Error(`SSR produced empty/short HTML for ${routePath}`);
+    }
+    const finalHtml = injectHeadAndBody(templateHtml, meta, appHtml);
+    if (routePath === "/") {
+      fs.writeFileSync(indexHtmlPath, finalHtml, "utf-8");
+    } else {
+      const cleanRel = routePath.replace(/^\/|\/$/g, "");
+      const dir = path.join(distPath, cleanRel);
+      fs.mkdirSync(dir, { recursive: true });
+      fs.writeFileSync(path.join(dir, "index.html"), finalHtml, "utf-8");
+    }
+    generatedCount++;
+  }
+
+  // 2. All published blog articles
   for (const article of staticArticles) {
     if (!article.published) continue;
-
-    const route = `blog/${article.slug}`;
-    const targetDir = path.join(distPublicPath, route);
-
-    if (!fs.existsSync(targetDir)) {
-      fs.mkdirSync(targetDir, { recursive: true });
-    }
-
-    const meta: PageMeta = {
+    const routePath = `/blog/${article.slug}/`;
+    const canonical = `https://calculatorpensie.com${routePath}`;
+    const meta: RouteMetaDef = {
+      path: routePath,
       title: `${article.title} | CalculatorPensie.com`,
       description: article.excerpt,
-      canonical: `https://calculatorpensie.com/blog/${article.slug}/`,
-      keywords: `${article.category}, pensii romania, ${article.title.toLowerCase()}`
+      canonical,
+      keywords: `${article.category}, pensii romania, ${article.title.toLowerCase()}`,
+      ogType: "article",
+      schemaKind: "article",
+      schemaName: article.title,
+      breadcrumbs: [
+        { name: "Acasă", url: "https://calculatorpensie.com/" },
+        { name: "Blog", url: "https://calculatorpensie.com/blog/" },
+        { name: article.title, url: canonical },
+      ],
+      datePublished: article.publishDate,
+      dateModified: article.modifiedDate || "2026-11-25",
     };
 
-    const articlePayload = `ARTICLE:${article.publishDate}|${article.publishDate}|${article.author.name}`;
-    const preRenderedHtml = replaceMeta(baseHtml, meta, pageHeights, rootPath, articlePayload, pageHeights.routes[`/blog/${article.slug}/`] || pageHeights.defaults.article);
-    fs.writeFileSync(path.join(targetDir, 'index.html'), preRenderedHtml, 'utf-8');
-    console.log(`- Pre-rendered dynamic blog route: /${route}`);
+    const appHtml = renderRouteHtml(routePath);
+    if (!appHtml || appHtml.length < 200) {
+      throw new Error(`SSR produced empty/short HTML for ${routePath}`);
+    }
+    const finalHtml = injectHeadAndBody(templateHtml, meta, appHtml, {
+      articleAuthor: article.author?.name || "CalculatorPensie.com",
+      articleCategory: article.category,
+      articleImage: article.image || DEFAULT_OG_IMAGE,
+    });
+
+    const dir = path.join(distPath, "blog", article.slug);
+    fs.mkdirSync(dir, { recursive: true });
+    fs.writeFileSync(path.join(dir, "index.html"), finalHtml, "utf-8");
+    generatedCount++;
   }
 
-  console.log('All static meta pre-rendering completed successfully!');
+  console.log(`Successfully SSR-prerendered ${generatedCount} routes into dist/public.`);
 }
 
-main();
+main().catch((err) => {
+  console.error("Failed generating SSR pages:", err);
+  process.exit(1);
+});

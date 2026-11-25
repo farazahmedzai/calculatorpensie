@@ -1,4 +1,11 @@
-import { useEffect } from 'react';
+import { useEffect } from "react";
+import {
+  buildJsonLdGraph,
+  DEFAULT_OG_IMAGE,
+  normalizeCanonicalUrl,
+  ROUTES_META,
+  type PageSchemaKind,
+} from "@/data/routes-meta";
 
 interface MetaTagsProps {
   title: string;
@@ -9,6 +16,9 @@ interface MetaTagsProps {
   ogImage?: string;
   keywords?: string;
   structuredData?: object;
+  schemaKind?: PageSchemaKind;
+  schemaName?: string;
+  faqQuestions?: Array<{ question: string; answer: string }>;
   articleAuthor?: string;
   articlePublishedTime?: string;
   articleModifiedTime?: string;
@@ -18,137 +28,116 @@ interface MetaTagsProps {
   alternateLanguages?: Array<{ hreflang: string; href: string }>;
 }
 
+function upsertMeta(attr: "name" | "property", key: string, content: string) {
+  let el = document.head.querySelector(`meta[${attr}="${key}"]`) as HTMLMetaElement | null;
+  if (!el) {
+    el = document.createElement("meta");
+    el.setAttribute(attr, key);
+    document.head.appendChild(el);
+  }
+  el.setAttribute("content", content);
+}
+
 export default function MetaTags({
   title,
   description,
   canonical,
   ogTitle,
   ogDescription,
-  ogImage = '/assets/og-image.png',
+  ogImage = DEFAULT_OG_IMAGE,
   keywords,
   structuredData,
+  schemaKind,
+  schemaName,
+  faqQuestions,
   articleAuthor,
   articlePublishedTime,
   articleModifiedTime,
   articleSection,
-  articleTag,
   noindex = false,
-  alternateLanguages
 }: MetaTagsProps) {
   useEffect(() => {
-    document.title = title;
+    const rawCanonical = canonical || window.location.pathname;
+    const normalizedCanonical = normalizeCanonicalUrl(rawCanonical);
+    const routePath = new URL(normalizedCanonical).pathname;
+    const matchedMeta = ROUTES_META[routePath];
 
-    const existingMetas = document.querySelectorAll('[data-pension-meta="true"]');
-    existingMetas.forEach(meta => meta.remove());
+    const finalTitle = matchedMeta ? matchedMeta.title : title;
+    const finalDescription = matchedMeta ? matchedMeta.description : description;
+    const finalImage = ogImage.startsWith("http")
+      ? ogImage
+      : `https://calculatorpensie.com${ogImage.startsWith("/") ? ogImage : `/${ogImage}`}`;
 
-    // Only remove JSON-LD inserted by this component. Other schema components
-    // such as <WebPageSchema />, <ArticleSchema />, <FAQPageSchema /> render
-    // their own <script type="application/ld+json"> tags during React commit;
-    // removing every JSON-LD script here can delete valid page schema at runtime.
-    const existingStructured = document.querySelectorAll('script[type="application/ld+json"][data-pension-meta="true"]');
-    existingStructured.forEach(script => script.remove());
-
-    const metas: Array<{ name?: string; property?: string; content: string }> = [
-      { name: 'description', content: description },
-      { name: 'robots', content: noindex ? 'noindex,nofollow' : 'index,follow' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { name: 'author', content: articleAuthor || 'CalculatorPensie.com' },
-      { name: 'language', content: 'Romanian' },
-      { name: 'geo.region', content: 'RO' },
-      { name: 'geo.country', content: 'Romania' },
-      { name: 'rating', content: 'general' },
-      { name: 'distribution', content: 'global' },
-      { name: 'revisit-after', content: '7 days' },
-      
-      { property: 'og:type', content: articlePublishedTime ? 'article' : 'website' },
-      { property: 'og:title', content: ogTitle || title },
-      { property: 'og:description', content: ogDescription || description },
-      { property: 'og:image', content: ogImage },
-      { property: 'og:url', content: window.location.href },
-      { property: 'og:site_name', content: 'CalculatorPensie.com' },
-      { property: 'og:locale', content: 'ro_RO' },
-      
-      { name: 'twitter:card', content: 'summary_large_image' },
-      { name: 'twitter:title', content: ogTitle || title },
-      { name: 'twitter:description', content: ogDescription || description },
-      { name: 'twitter:image', content: ogImage },
-      
-      { name: 'theme-color', content: '#2563eb' },
-      { name: 'msapplication-TileColor', content: '#2563eb' },
-      { name: 'apple-mobile-web-app-capable', content: 'yes' },
-      { name: 'apple-mobile-web-app-status-bar-style', content: 'default' },
-    ];
-
-    // Add article-specific meta tags
-    if (articlePublishedTime) {
-      metas.push({ property: 'article:published_time', content: articlePublishedTime });
-    }
-    if (articleModifiedTime) {
-      metas.push({ property: 'article:modified_time', content: articleModifiedTime });
-    }
-    if (articleAuthor) {
-      metas.push({ property: 'article:author', content: articleAuthor });
-    }
-    if (articleSection) {
-      metas.push({ property: 'article:section', content: articleSection });
-    }
-    if (articleTag) {
-      articleTag.forEach(tag => {
-        metas.push({ property: 'article:tag', content: tag });
-      });
+    document.title = finalTitle;
+    upsertMeta("name", "description", finalDescription);
+    upsertMeta("name", "robots", noindex ? "noindex, nofollow" : "index, follow");
+    if (keywords || matchedMeta?.keywords) {
+      upsertMeta("name", "keywords", matchedMeta?.keywords || keywords || "");
     }
 
-    if (keywords) {
-      metas.push({ name: 'keywords', content: keywords });
-    }
+    upsertMeta("property", "og:type", articlePublishedTime ? "article" : matchedMeta?.ogType || "website");
+    upsertMeta("property", "og:title", ogTitle || finalTitle);
+    upsertMeta("property", "og:description", ogDescription || finalDescription);
+    upsertMeta("property", "og:image", finalImage);
+    upsertMeta("property", "og:url", normalizedCanonical);
+    upsertMeta("property", "og:site_name", "CalculatorPensie.com");
+    upsertMeta("property", "og:locale", "ro_RO");
 
-    metas.forEach(meta => {
-      const metaElement = document.createElement('meta');
-      if ('name' in meta && meta.name) {
-        metaElement.setAttribute('name', meta.name);
-      } else if ('property' in meta && meta.property) {
-        metaElement.setAttribute('property', meta.property);
-      }
-      metaElement.setAttribute('content', meta.content);
-      metaElement.setAttribute('data-pension-meta', 'true');
-      document.head.appendChild(metaElement);
+    upsertMeta("name", "twitter:card", "summary_large_image");
+    upsertMeta("name", "twitter:title", ogTitle || finalTitle);
+    upsertMeta("name", "twitter:description", ogDescription || finalDescription);
+    upsertMeta("name", "twitter:image", finalImage);
+
+    // Ensure single canonical link matching exact trailing-slash standard
+    const existingCanonicals = document.head.querySelectorAll('link[rel="canonical"]');
+    existingCanonicals.forEach((el, i) => {
+      if (i > 0) el.remove();
     });
-
-    // Add alternate language links
-    if (alternateLanguages) {
-      alternateLanguages.forEach(lang => {
-        const linkElement = document.createElement('link');
-        linkElement.setAttribute('rel', 'alternate');
-        linkElement.setAttribute('hreflang', lang.hreflang);
-        linkElement.setAttribute('href', lang.href);
-        linkElement.setAttribute('data-pension-meta', 'true');
-        document.head.appendChild(linkElement);
-      });
-    }
-
-    if (canonical) {
-      const existingCanonical = document.querySelector('link[rel="canonical"]');
-      if (existingCanonical) existingCanonical.remove();
-      
-      const canonicalLink = document.createElement('link');
-      canonicalLink.setAttribute('rel', 'canonical');
-      canonicalLink.setAttribute('href', canonical);
-      canonicalLink.setAttribute('data-pension-meta', 'true');
+    let canonicalLink = document.head.querySelector('link[rel="canonical"]') as HTMLLinkElement | null;
+    if (!canonicalLink) {
+      canonicalLink = document.createElement("link");
+      canonicalLink.setAttribute("rel", "canonical");
       document.head.appendChild(canonicalLink);
     }
+    canonicalLink.setAttribute("href", normalizedCanonical);
 
-    if (structuredData) {
-      const script = document.createElement('script');
-      script.type = 'application/ld+json';
-      script.textContent = JSON.stringify(structuredData);
-      script.setAttribute('data-pension-meta', 'true');
-      document.head.appendChild(script);
+    // Update single unified @graph JSON-LD tag cleanly
+    const schemaDef =
+      structuredData ||
+      buildJsonLdGraph({
+        meta: matchedMeta || {
+          path: routePath,
+          title: finalTitle,
+          description: finalDescription,
+          canonical: normalizedCanonical,
+          keywords: keywords || "",
+          ogType: articlePublishedTime ? "article" : "website",
+          schemaKind: schemaKind || (articlePublishedTime ? "article" : "webpage"),
+          schemaName: schemaName || finalTitle.replace(/\s*\|\s*CalculatorPensie\.com$/i, ""),
+          breadcrumbs: routePath.startsWith("/blog/") && routePath !== "/blog/"
+            ? [
+                { name: "Acasă", url: "https://calculatorpensie.com/" },
+                { name: "Blog", url: "https://calculatorpensie.com/blog/" },
+                { name: schemaName || finalTitle.replace(/\s*\|\s*CalculatorPensie\.com$/i, "") },
+              ]
+            : [{ name: "Acasă", url: "https://calculatorpensie.com/" }],
+          datePublished: articlePublishedTime,
+          dateModified: articleModifiedTime || articlePublishedTime || "2026-11-25",
+        },
+        faqQuestions,
+        articleAuthor,
+        articleCategory: articleSection,
+        articleImage: finalImage,
+      });
+
+    let schemaEl = document.getElementById("page-schema") as HTMLScriptElement | null;
+    if (!schemaEl) {
+      schemaEl = document.createElement("script");
+      schemaEl.id = "page-schema";
+      schemaEl.type = "application/ld+json";
+      document.head.appendChild(schemaEl);
     }
-
-    return () => {
-      const elementsToRemove = document.querySelectorAll('[data-pension-meta="true"]');
-      elementsToRemove.forEach(el => el.remove());
-    };
+    schemaEl.textContent = JSON.stringify(schemaDef);
   }, [
     title,
     description,
@@ -158,13 +147,14 @@ export default function MetaTags({
     ogImage,
     keywords,
     structuredData,
+    schemaKind,
+    schemaName,
+    faqQuestions,
     articleAuthor,
     articlePublishedTime,
     articleModifiedTime,
     articleSection,
-    articleTag,
     noindex,
-    alternateLanguages,
   ]);
 
   return null;

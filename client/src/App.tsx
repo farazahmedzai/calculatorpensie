@@ -1,153 +1,180 @@
-import { Switch, Route, Redirect } from "wouter";
+import { Switch, Route, Redirect, Router as WouterRouter } from "wouter";
 import { queryClient } from "./lib/queryClient";
 import { QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
-import { Suspense, useEffect, lazy } from "react";
-import { initGA } from "./lib/analytics";
+import { Suspense, useEffect, lazy, type ComponentType } from "react";
 import { useAnalytics } from "./hooks/use-analytics";
-import { performanceManager } from "./lib/performance-manager";
+import { normalizePath } from "./data/routes-meta";
 
-// Import critical components directly for immediate render
+// Eagerly load layout + primary calculator for 0ms homepage LCP & clean hydration
 import NotFound from "@/pages/not-found";
 import Home from "@/pages/home";
 import Header from "@/components/layout/header";
 import Footer from "@/components/layout/footer";
 
-// Lazy load heavy pages to reduce initial bundle size
+export type RouteKey =
+  | "home"
+  | "anticipata"
+  | "varsta"
+  | "puncte"
+  | "pilon2"
+  | "pilon3"
+  | "excel"
+  | "planificare"
+  | "tipuri"
+  | "legislatie"
+  | "blog"
+  | "blogArticle"
+  | "despreNoi"
+  | "metodologie"
+  | "contact"
+  | "privacy"
+  | "terms"
+  | "faq";
 
-const LazyBlog = lazy(() => import("@/pages/blog"));
-const LazyBlogArticle = lazy(() => import("@/pages/blog-article"));
-const LazyContact = lazy(() => import("@/pages/contact"));
-const LazyPlanificare = lazy(() => import("@/pages/guides/planificare"));
-const LazyTipuriPensii = lazy(() => import("@/pages/guides/tipuri-pensii"));
-const LazyLegislatie = lazy(() => import("@/pages/guides/legislatie"));
-const LazyDespreNoi = lazy(() => import("@/pages/despre-noi"));
-const LazyMetodologie = lazy(() => import("@/pages/metodologie"));
-const LazyPrivacy = lazy(() => import("@/pages/privacy"));
-const LazyTerms = lazy(() => import("@/pages/terms"));
-const LazyFAQ = lazy(() => import("@/pages/faq"));
-const LazyCalculatorAnticipata = lazy(() => import("@/pages/calculator-anticipata"));
-const LazyCalculatorVarsta = lazy(() => import("@/pages/calculator-varsta-pensionare"));
-const LazyCalculatorPuncte = lazy(() => import("@/pages/calculator-puncte-pensie"));
-const LazyCalculatorPilon2 = lazy(() => import("@/pages/calculator-pilon-2"));
-const LazyCalculatorPilon3 = lazy(() => import("@/pages/calculator-pensie-pilon-3"));
-const LazyProgramExcel = lazy(() => import("@/pages/program-excel-calcul-pensie"));
+export const PAGE_LOADERS: Record<Exclude<RouteKey, "home">, () => Promise<{ default: ComponentType<any> }>> = {
+  anticipata: () => import("@/pages/calculator-anticipata"),
+  varsta: () => import("@/pages/calculator-varsta-pensionare"),
+  puncte: () => import("@/pages/calculator-puncte-pensie"),
+  pilon2: () => import("@/pages/calculator-pilon-2"),
+  pilon3: () => import("@/pages/calculator-pensie-pilon-3"),
+  excel: () => import("@/pages/program-excel-calcul-pensie"),
+  planificare: () => import("@/pages/guides/planificare"),
+  tipuri: () => import("@/pages/guides/tipuri-pensii"),
+  legislatie: () => import("@/pages/guides/legislatie"),
+  blog: () => import("@/pages/blog"),
+  blogArticle: () => import("@/pages/blog-article"),
+  despreNoi: () => import("@/pages/despre-noi"),
+  metodologie: () => import("@/pages/metodologie"),
+  contact: () => import("@/pages/contact"),
+  privacy: () => import("@/pages/privacy"),
+  terms: () => import("@/pages/terms"),
+  faq: () => import("@/pages/faq"),
+};
 
-// Loading component
+// Cache resolved before hydrateRoot so SSR pages hydrate synchronously without Suspense flash
+const PRELOADED_PAGES: Partial<Record<RouteKey, ComponentType<any>>> = {
+  home: Home,
+};
+
+function resolveRouteKey(pathname: string): RouteKey | null {
+  const norm = normalizePath(pathname);
+  const map: Record<string, RouteKey> = {
+    "/": "home",
+    "/calculator-pensie-anticipata/": "anticipata",
+    "/calculator-varsta-pensionare/": "varsta",
+    "/calculator-puncte-pensie/": "puncte",
+    "/calculator-pensie-pilon-2/": "pilon2",
+    "/calculator-pensie-pilon-3/": "pilon3",
+    "/program-excel-calcul-pensie/": "excel",
+    "/planificare/": "planificare",
+    "/tipuri-pensii/": "tipuri",
+    "/legislatie/": "legislatie",
+    "/blog/": "blog",
+    "/despre-noi/": "despreNoi",
+    "/metodologie/": "metodologie",
+    "/contact/": "contact",
+    "/privacy/": "privacy",
+    "/terms/": "terms",
+    "/faq/": "faq",
+  };
+  if (map[norm]) return map[norm];
+  if (norm.startsWith("/blog/") && norm.length > "/blog/".length) return "blogArticle";
+  return null;
+}
+
+export async function preloadRouteChunk(pathname: string): Promise<void> {
+  const key = resolveRouteKey(pathname);
+  if (!key || key === "home" || PRELOADED_PAGES[key]) return;
+  const mod = await PAGE_LOADERS[key]();
+  PRELOADED_PAGES[key] = mod.default;
+}
+
+const LazyPages: Record<Exclude<RouteKey, "home">, ComponentType<any>> = {
+  anticipata: lazy(PAGE_LOADERS.anticipata),
+  varsta: lazy(PAGE_LOADERS.varsta),
+  puncte: lazy(PAGE_LOADERS.puncte),
+  pilon2: lazy(PAGE_LOADERS.pilon2),
+  pilon3: lazy(PAGE_LOADERS.pilon3),
+  excel: lazy(PAGE_LOADERS.excel),
+  planificare: lazy(PAGE_LOADERS.planificare),
+  tipuri: lazy(PAGE_LOADERS.tipuri),
+  legislatie: lazy(PAGE_LOADERS.legislatie),
+  blog: lazy(PAGE_LOADERS.blog),
+  blogArticle: lazy(PAGE_LOADERS.blogArticle),
+  despreNoi: lazy(PAGE_LOADERS.despreNoi),
+  metodologie: lazy(PAGE_LOADERS.metodologie),
+  contact: lazy(PAGE_LOADERS.contact),
+  privacy: lazy(PAGE_LOADERS.privacy),
+  terms: lazy(PAGE_LOADERS.terms),
+  faq: lazy(PAGE_LOADERS.faq),
+};
+
 const LoadingSpinner = () => (
   <div className="flex items-center justify-center p-8">
-    <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-600"></div>
+    <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-600" />
     <span className="ml-2 text-gray-600">Se încarcă...</span>
   </div>
 );
 
-function Router() {
-  // Track page views when routes change
+interface AppProps {
+  ssrPath?: string;
+  pageOverrides?: Partial<Record<RouteKey, ComponentType<any>>>;
+}
+
+function renderPage(key: Exclude<RouteKey, "home">, overrides?: Partial<Record<RouteKey, ComponentType<any>>>) {
+  const SyncComp = overrides?.[key] || PRELOADED_PAGES[key];
+  if (SyncComp) {
+    return <SyncComp />;
+  }
+  const LazyComp = LazyPages[key];
+  return (
+    <Suspense fallback={<LoadingSpinner />}>
+      <LazyComp />
+    </Suspense>
+  );
+}
+
+function RouterContent({ pageOverrides }: { pageOverrides?: Partial<Record<RouteKey, ComponentType<any>>> }) {
   useAnalytics();
-  
+
+  const HomeComp = pageOverrides?.home || Home;
+
   return (
     <div className="min-h-screen flex flex-col">
       <Header />
       <main className="flex-1">
         <Switch>
-          <Route path="/" component={Home} />
-          <Route path="/calculator-pensie-anticipata">
-            <Suspense fallback={<LoadingSpinner />}>
-              <LazyCalculatorAnticipata />
-            </Suspense>
-          </Route>
-          <Route path="/calculator-varsta-pensionare">
-            <Suspense fallback={<LoadingSpinner />}>
-              <LazyCalculatorVarsta />
-            </Suspense>
-          </Route>
-          <Route path="/calculator-puncte-pensie">
-            <Suspense fallback={<LoadingSpinner />}>
-              <LazyCalculatorPuncte />
-            </Suspense>
-          </Route>
-          <Route path="/calculator-pensie-pilon-2">
-            <Suspense fallback={<LoadingSpinner />}>
-              <LazyCalculatorPilon2 />
-            </Suspense>
-          </Route>
-          <Route path="/calculator-pensie-pilon-3">
-            <Suspense fallback={<LoadingSpinner />}>
-              <LazyCalculatorPilon3 />
-            </Suspense>
-          </Route>
-          <Route path="/program-excel-calcul-pensie">
-            <Suspense fallback={<LoadingSpinner />}>
-              <LazyProgramExcel />
-            </Suspense>
-          </Route>
-          <Route path="/planificare">
-            <Suspense fallback={<LoadingSpinner />}>
-              <LazyPlanificare />
-            </Suspense>
-          </Route>
-          <Route path="/tipuri-pensii">
-            <Suspense fallback={<LoadingSpinner />}>
-              <LazyTipuriPensii />
-            </Suspense>
-          </Route>
-          <Route path="/legislatie">
-            <Suspense fallback={<LoadingSpinner />}>
-              <LazyLegislatie />
-            </Suspense>
-          </Route>
-          <Route path="/blog">
-            <Suspense fallback={<LoadingSpinner />}>
-              <LazyBlog />
-            </Suspense>
-          </Route>
-          <Route path="/blog/:slug">
-            <Suspense fallback={<LoadingSpinner />}>
-              <LazyBlogArticle />
-            </Suspense>
-          </Route>
-          <Route path="/despre-noi">
-            <Suspense fallback={<LoadingSpinner />}>
-              <LazyDespreNoi />
-            </Suspense>
-          </Route>
-          <Route path="/metodologie">
-            <Suspense fallback={<LoadingSpinner />}>
-              <LazyMetodologie />
-            </Suspense>
-          </Route>
-          <Route path="/contact">
-            <Suspense fallback={<LoadingSpinner />}>
-              <LazyContact />
-            </Suspense>
-          </Route>
-          <Route path="/privacy">
-            <Suspense fallback={<LoadingSpinner />}>
-              <LazyPrivacy />
-            </Suspense>
-          </Route>
-          <Route path="/terms">
-            <Suspense fallback={<LoadingSpinner />}>
-              <LazyTerms />
-            </Suspense>
-          </Route>
-          <Route path="/faq">
-            <Suspense fallback={<LoadingSpinner />}>
-              <LazyFAQ />
-            </Suspense>
-          </Route>
+          <Route path="/">{() => <HomeComp />}</Route>
+          <Route path="/calculator-pensie-anticipata">{() => renderPage("anticipata", pageOverrides)}</Route>
+          <Route path="/calculator-varsta-pensionare">{() => renderPage("varsta", pageOverrides)}</Route>
+          <Route path="/calculator-puncte-pensie">{() => renderPage("puncte", pageOverrides)}</Route>
+          <Route path="/calculator-pensie-pilon-2">{() => renderPage("pilon2", pageOverrides)}</Route>
+          <Route path="/calculator-pensie-pilon-3">{() => renderPage("pilon3", pageOverrides)}</Route>
+          <Route path="/program-excel-calcul-pensie">{() => renderPage("excel", pageOverrides)}</Route>
+          <Route path="/planificare">{() => renderPage("planificare", pageOverrides)}</Route>
+          <Route path="/tipuri-pensii">{() => renderPage("tipuri", pageOverrides)}</Route>
+          <Route path="/legislatie">{() => renderPage("legislatie", pageOverrides)}</Route>
+          <Route path="/blog">{() => renderPage("blog", pageOverrides)}</Route>
+          <Route path="/blog/:slug">{() => renderPage("blogArticle", pageOverrides)}</Route>
+          <Route path="/despre-noi">{() => renderPage("despreNoi", pageOverrides)}</Route>
+          <Route path="/metodologie">{() => renderPage("metodologie", pageOverrides)}</Route>
+          <Route path="/contact">{() => renderPage("contact", pageOverrides)}</Route>
+          <Route path="/privacy">{() => renderPage("privacy", pageOverrides)}</Route>
+          <Route path="/terms">{() => renderPage("terms", pageOverrides)}</Route>
+          <Route path="/faq">{() => renderPage("faq", pageOverrides)}</Route>
           <Route path="/calculator">
             <Redirect to="/" />
           </Route>
           <Route path="/termeni">
-            <Redirect to="/terms" />
+            <Redirect to="/terms/" />
           </Route>
           <Route path="/termeni-si-conditii">
-            <Redirect to="/terms" />
+            <Redirect to="/terms/" />
           </Route>
           <Route path="/politica-confidentialitate">
-            <Redirect to="/privacy" />
+            <Redirect to="/privacy/" />
           </Route>
           <Route component={NotFound} />
         </Switch>
@@ -157,29 +184,24 @@ function Router() {
   );
 }
 
-function App() {
-  // Initialize Google Analytics and performance optimizations
+export function App({ ssrPath, pageOverrides }: AppProps = {}) {
   useEffect(() => {
-    initGA();
-    
-    // Initialize performance manager
-    performanceManager.init();
-    performanceManager.optimizeFonts();
-    performanceManager.preloadCriticalResources();
-    
-    // Log performance improvements
-    const savings = performanceManager.calculateSavings();
-    console.log(`Performance optimized: ${savings.renderBlockingReduction}ms faster, ${savings.bundleSizeReduction}KB smaller`);
+    window.scrollTo?.(0, 0);
   }, []);
 
-  return (
+  const content = (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
         <Toaster />
-        <Router />
+        <RouterContent pageOverrides={pageOverrides} />
       </TooltipProvider>
     </QueryClientProvider>
   );
+
+  if (ssrPath) {
+    return <WouterRouter ssrPath={ssrPath}>{content}</WouterRouter>;
+  }
+  return content;
 }
 
 export default App;

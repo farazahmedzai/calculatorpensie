@@ -170,7 +170,7 @@ export default function Terms() {
                   </p>
                   <p>
                     Pentru detalii suplimentare referitoare la modul de protejare a datelor personale și utilizarea fișierelor cookies, vă rugăm să vizitați pagina noastră de 
-                    <a href="/privacy" className="text-blue-600 hover:text-blue-800 ml-1 underline font-medium">
+                    <a href="/privacy/" className="text-blue-600 hover:text-blue-800 ml-1 underline font-medium">
                       Politică de Confidențialitate
                     </a>.
                   </p>

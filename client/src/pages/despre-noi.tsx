@@ -1,33 +1,21 @@
 import MetaTags from "@/components/seo/MetaTags";
-import { OrganizationSchema, WebPageSchema } from "@/components/seo/StructuredData";
 import BreadcrumbNavigation from "@/components/seo/BreadcrumbNavigation";
 import { Card, CardContent } from "@/components/ui/card";
 import { Shield, Target, Users, Award } from "lucide-react";
+import { ROUTES_META } from "@/data/routes-meta";
+
+const PAGE_META = ROUTES_META["/despre-noi/"];
 
 export default function DespreNoi() {
   return (
     <div className="bg-white">
-      <MetaTags 
-        title="Despre Noi - CalculatorPensie.com | Misiunea și Echipa Noastră"
-        description="Află mai multe despre CalculatorPensie.com, misiunea noastră de a oferi calculatoare de pensie precise și resurse educaționale pentru românii care își planifică viitorul financiar."
-        canonical="https://calculatorpensie.com/despre-noi/"
-        keywords="despre calculatorpensie, misiune pensii romania, echipa calculatoare pensie"
-      />
-      
-      <OrganizationSchema 
-        name="CalculatorPensie.com"
-        url="https://calculatorpensie.com"
-        description="Platforma #1 din România pentru calculul pensiilor și planificarea financiară pentru pensionare"
-      />
-      
-      <WebPageSchema 
-        name="Despre Noi - CalculatorPensie.com"
-        description="Misiunea și valorile echipei CalculatorPensie.com în oferirea celor mai precise instrumente de calcul al pensiei"
-        url="https://calculatorpensie.com/despre-noi"
-        breadcrumbs={[
-          { name: "Acasă", url: "https://calculatorpensie.com" },
-          { name: "Despre Noi" }
-        ]}
+      <MetaTags
+        title={PAGE_META.title}
+        description={PAGE_META.description}
+        canonical={PAGE_META.canonical}
+        keywords={PAGE_META.keywords}
+        schemaKind="webpage"
+        schemaName={PAGE_META.schemaName}
       />
 
       {/* Breadcrumb Navigation */}

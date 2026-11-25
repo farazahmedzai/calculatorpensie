@@ -1,82 +1,50 @@
-#!/usr/bin/env node
+import { execSync } from "node:child_process";
+import fs from "node:fs";
+import path from "node:path";
 
-import { execSync } from 'child_process';
-import { copyFileSync, mkdirSync, existsSync, writeFileSync, readdirSync } from 'fs';
+console.log("Building CalculatorPensie.com (Vite Client + Vite SSR Static Generation)...");
 
-console.log('Building static site for Netlify...');
+const rootDir = process.cwd();
+const distDir = path.resolve(rootDir, "dist/public");
+const ssrOutDir = path.resolve(rootDir, "dist/ssr");
+const publicDir = path.resolve(rootDir, "public");
 
-try {
-  // Build only the frontend (no server)
-  console.log('Building frontend assets...');
-  execSync('npx vite build --mode production', { stdio: 'inherit' });
-
-  // Ensure dist/public exists and copy static files
-  const distPath = 'dist/public';
-  if (existsSync(distPath)) {
-    console.log('Copying static files from public/...');
-    if (existsSync('public')) {
-      const publicFiles = readdirSync('public');
-      for (const file of publicFiles) {
-        copyFileSync(`public/${file}`, `${distPath}/${file}`);
-      }
-    }
-    
-    // Run metadata pre-rendering script
-    console.log('Generating pre-rendered static pages with custom metadata...');
-    execSync('npx tsx scripts/generate-meta-pages.ts', { stdio: 'inherit' });
-
-    // Give non-JS crawlers (GPTBot/ClaudeBot/PerplexityBot - all allowed in robots.txt) real body content.
-    // The meta step above only rewrites <head> tags; without this the body is still <div id="root"></div>.
-    console.log('Injecting prerendered body content for non-JS crawlers...');
-    execSync('node scripts/prerender-body.mjs', { stdio: 'inherit' });
-
-    // Refuse to ship a 404 fallback that would swallow a real route.
-    execSync('node scripts/verify-routes-prerendered.mjs', { stdio: 'inherit' });
-
-    // Tell IndexNow about every URL in the built sitemap. Bing backs ChatGPT's
-    // browsing, so this is a discovery channel for AI answers as well as search.
-    // Never fails the build.
-    try {
-      execSync('node scripts/ping-indexnow.js', { stdio: 'inherit' });
-    } catch (e) {
-      console.warn('IndexNow submission skipped:', e.message);
-    }
-
-    // Create _redirects file for SPA routing only (ads.txt and llms.txt now served as static file)
-    const redirectsContent = `/blog/blog/*  /blog/:splat  301!
-/blog/ghid-calcul-pensie-stat-2025  /blog/ghid-calcul-pensie-stat-2026  301!
-/blog/reforma-sistem-pensii-2025  /blog/reforma-sistem-pensii-2026  301!
-/blog/pensie-minima-garantata-2025  /blog/pensie-minima-garantata-2026  301!
-/blog/ghid-pensie-invaliditate-2025  /blog/ghid-pensie-invaliditate-2026  301!
-/blog/indexare-pensii-2025-2026  /blog/indexare-pensii-2026-2026  301!
-/blog/cumparare-vechime-munca  /blog/stagiul-cotizare-cumparare-ani-munca  301!
-/calculator  /  301!
-/calculator-puncte-de-stabilitate  /calculator-puncte-pensie/  301!
-/calculator-puncte-stabilitate  /calculator-puncte-pensie/  301!
-/calculator-pensie-invaliditate  /blog/ghid-pensie-invaliditate-2026/  301!
-/calculator-pensie-de-invaliditate  /blog/ghid-pensie-invaliditate-2026/  301!
-/calculator-pensie-urmas  /blog/pensia-urmas-drepturi-proceduri/  301!
-/calculator-pensie-de-urmas  /blog/pensia-urmas-drepturi-proceduri/  301!
-/robots.txt  /robots.txt  200
-/sitemap.xml  /sitemap.xml  200
-/llms.txt    /llms.txt    200
-/c7f96a3501a24d5ea3bc55625bf9892c.txt  /c7f96a3501a24d5ea3bc55625bf9892c.txt  200
-/ghid-calcul-pensie-2026.pdf  /ghid-calcul-pensie-2026.pdf  200
-/rss.xml     /rss.xml     200
-/tools.json  /tools.json  200
-/termeni  /terms/  301!
-/termeni-si-conditii  /terms/  301!
-/politica-confidentialitate  /privacy/  301!
-/*          /404.html   404`;
-    writeFileSync(`${distPath}/_redirects`, redirectsContent);
-    
-    console.log('Static build completed successfully!');
-    console.log('Static ads.txt file copied to deployment');
-  } else {
-    console.error('Build output directory not found');
-    process.exit(1);
-  }
-} catch (error) {
-  console.error('Build failed:', error);
-  process.exit(1);
+if (fs.existsSync(distDir)) {
+  fs.rmSync(distDir, { recursive: true, force: true });
 }
+if (fs.existsSync(ssrOutDir)) {
+  fs.rmSync(ssrOutDir, { recursive: true, force: true });
+}
+
+console.log("1. Building client bundle with Vite...");
+execSync("npx vite build --mode production", { stdio: "inherit" });
+
+console.log("2. Building SSR entry bundle with Vite...");
+execSync(
+  `npx vite build --ssr src/entry-server.tsx --outDir "${ssrOutDir}" --mode production`,
+  { stdio: "inherit" }
+);
+
+console.log("3. Copying root public assets into dist/public...");
+if (fs.existsSync(publicDir)) {
+  fs.cpSync(publicDir, distDir, { recursive: true });
+}
+
+console.log("4. Rendering all routes with SSR HTML + unified metadata + @graph JSON-LD...");
+execSync("npx tsx scripts/generate-meta-pages.ts", { stdio: "inherit" });
+
+console.log("5. Verifying SSR content & canonical trailing slashes across every HTML page...");
+execSync("node scripts/prerender-body.mjs", { stdio: "inherit" });
+
+console.log("6. Running route coverage guard (no 404 traps)...");
+execSync("node scripts/verify-routes-prerendered.mjs", { stdio: "inherit" });
+
+// Only notify IndexNow during real production deploys (Netlify CI or explicit RUN_INDEXNOW=1)
+if (process.env.NETLIFY === "true" || process.env.RUN_INDEXNOW === "1") {
+  console.log("7. Submitting sitemap URLs to IndexNow...");
+  execSync("node scripts/ping-indexnow.js", { stdio: "inherit" });
+} else {
+  console.log("7. Skipping IndexNow ping on local build (set RUN_INDEXNOW=1 to ping).");
+}
+
+console.log("Static SSR build completed cleanly! Output: dist/public");

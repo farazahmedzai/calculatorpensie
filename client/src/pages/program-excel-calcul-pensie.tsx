@@ -1,80 +1,71 @@
 import { useState } from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
 import MetaTags from "@/components/seo/MetaTags";
 import BreadcrumbNavigation from "@/components/seo/BreadcrumbNavigation";
-import { WebPageSchema } from "@/components/seo/StructuredData";
 import { Download, FileSpreadsheet, CheckCircle, Info } from "lucide-react";
 import { Link } from "wouter";
+import { AVERAGE_GROSS_SALARY_2026, OFFICIAL_VPR_2026 } from "@/lib/pension-calculations";
+import { ROUTES_META } from "@/data/routes-meta";
+import { trackDownload } from "@/lib/analytics";
+
+const PAGE_META = ROUTES_META["/program-excel-calcul-pensie/"];
 
 export default function ProgramExcelPage() {
   const [downloadSuccess, setDownloadSuccess] = useState(false);
-  const [userEmail, setUserEmail] = useState("");
 
   const handleDownload = (e: React.FormEvent) => {
     e.preventDefault();
-    
-    // Generate CSV content representing the Romanian Pension Calculator template
-    // Semicolon separator is standard for Romanian regional settings in Excel
+
     const csvRows = [
       ["# CalculatorPensie.com - Simulator Calcul Pensie Romania 2026"],
-      ["# NOTA: Completati coloana 'Salariu Brut Estimativ (RON)' pentru anii corespunzatori. Restul campurilor se vor calcula automat."],
+      ["# INSTRUCTIUNI: Editati coloana Salariu Brut (RON). Separator standard ; pentru Excel Romania."],
       [],
-      ["An", "Salariu Brut Estimativ (RON)", "CAS Redirectionat Pilon II (4.75%)", "Punctaj Lunar Estimativ", "Punctaj Anual Estimativ"],
-      ["2025", "8000", "380", "0.9505", "0.9505"],
-      ["2026", "8400", "399", "0.9980", "0.9980"],
-      ["2027", "8800", "418", "1.0455", "1.0455"],
-      ["2028", "9200", "437", "1.0930", "1.0930"],
-      ["2029", "9600", "456", "1.1405", "1.1405"],
-      ["2030", "10000", "475", "1.1881", "1.1881"],
-      ["2031", "10500", "498.75", "1.2475", "1.2475"],
-      ["2032", "11000", "522.5", "1.3069", "1.3069"],
-      ["2033", "11500", "546.25", "1.3663", "1.3663"],
-      ["2034", "12000", "570", "1.4257", "1.4257"],
-      ["2035", "12500", "593.75", "1.4851", "1.4851"],
+      ["An", "Salariu Brut Estimativ (RON)", "CAS Pilon II (4.75%)", "Punctaj Lunar Estimativ", "Punctaj Anual Estimativ", "Pensie Brută Acumulată / An (VPR 81 Lei)"],
+      ["2025", "8620", "409.45", "0.9378", "0.9378", "75.96"],
+      ["2026", "9192", "436.62", "1.0000", "1.0000", "81.00"],
+      ["2027", "9500", "451.25", "1.0335", "1.0335", "83.71"],
+      ["2028", "9900", "470.25", "1.0770", "1.0770", "87.24"],
+      ["2029", "10300", "489.25", "1.1205", "1.1205", "90.76"],
+      ["2030", "10700", "508.25", "1.1641", "1.1641", "94.29"],
+      ["2031", "11200", "532.00", "1.2185", "1.2185", "98.70"],
+      ["2032", "11700", "555.75", "1.2728", "1.2728", "103.10"],
+      ["2033", "12200", "579.50", "1.3272", "1.3272", "107.50"],
+      ["2034", "12700", "603.25", "1.3816", "1.3816", "111.91"],
+      ["2035", "13200", "627.00", "1.4360", "1.4360", "116.32"],
       [],
-      ["# Valori de referinta utilizate in formule:"],
-      ["Salariu Mediu Brut pe Economie (2026)", "8417", "RON"],
-      ["Valoarea Punctului de Referinta VPR (2026)", "91", "RON"]
+      ["# Valori oficiale de referinta 2026:"],
+      ["Castig Salarial Mediu Brut (Legea 44/2026)", String(AVERAGE_GROSS_SALARY_2026), "RON"],
+      ["Valoarea Punctului de Referinta VPR (Legea 141/2025)", String(OFFICIAL_VPR_2026), "RON"],
     ];
 
-    // Join rows into a CSV string using semicolon as delimiter
-    const csvString = csvRows.map(row => row.join(";")).join("\n");
-    
-    // Create blob and trigger browser download
-    const blob = new Blob([new Uint8Array([0xEF, 0xBB, 0xBF]), csvString], { type: "text/csv;charset=utf-8;" });
+    const csvString = csvRows.map((row) => row.join(";")).join("\n");
+    const blob = new Blob([new Uint8Array([0xef, 0xbb, 0xbf]), csvString], {
+      type: "text/csv;charset=utf-8;",
+    });
     const url = URL.createObjectURL(blob);
     const link = document.createElement("a");
-    link.setAttribute("href", url);
-    link.setAttribute("download", "Simulator_Calcul_Pensie_Romania_2026.csv");
+    link.href = url;
+    link.download = "Simulator_Calcul_Pensie_Romania_2026.csv";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
+    URL.revokeObjectURL(url);
 
+    trackDownload("Simulator_Calcul_Pensie_Romania_2026.csv");
     setDownloadSuccess(true);
     setTimeout(() => setDownloadSuccess(false), 5000);
   };
 
   return (
     <div className="min-h-screen bg-neutral-light py-8">
-      <MetaTags 
-        title="Program Excel Calcul Pensie | Descărcare Simulator 2026"
-        description="Descarcă gratuit simulatorul Excel (.csv) pentru calculul pensiei din România în 2026. Introduceți salariul pentru a estima punctele lunare și pensia CNPP."
-        canonical="https://calculatorpensie.com/program-excel-calcul-pensie/"
-        keywords="program excel calcul pensie, tabel excel calcul pensie de stat, simulator pensie excel gratis, descarca calculator pensie xls"
-      />
-      
-      <WebPageSchema 
-        name="Program Excel Calcul Pensie - Descarcă Gratis"
-        description="Landing page oferind simulatorul de pensii în format tabelar Excel/CSV bazat pe noul sistem de punctaj al Legii 360/2023"
-        url="https://calculatorpensie.com/program-excel-calcul-pensie"
-        breadcrumbs={[
-          { name: "Acasă", url: "https://calculatorpensie.com" },
-          { name: "Resurse", url: "https://calculatorpensie.com/blog" },
-          { name: "Excel Calcul Pensie" }
-        ]}
+      <MetaTags
+        title={PAGE_META.title}
+        description={PAGE_META.description}
+        canonical={PAGE_META.canonical}
+        keywords={PAGE_META.keywords}
+        schemaKind="calculator"
+        schemaName={PAGE_META.schemaName}
       />
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -83,9 +74,9 @@ export default function ProgramExcelPage() {
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 mt-4">
         <div className="text-center mb-8">
-          <h1 className="text-3xl font-bold mb-4">Program Excel Calcul Pensie</h1>
+          <h1 className="text-3xl font-bold mb-4">Program Excel Calcul Pensie 2026 (Descărcare Gratuită)</h1>
           <p className="text-xl text-gray-700">
-            Descarcă simulatorul tabelar gratuit pentru prognoza drepturilor tale de pensionare
+            Șablon tabelar compatibil Microsoft Excel, Google Sheets &amp; LibreOffice bazat pe VPR = {OFFICIAL_VPR_2026} Lei
           </p>
         </div>
 
@@ -95,70 +86,70 @@ export default function ProgramExcelPage() {
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
                   <FileSpreadsheet className="h-5 w-5 text-green-600" />
-                  Despre Simulatorul Tabelar
+                  Despre Șablonul Excel / CSV de Calcul Pensie
                 </CardTitle>
               </CardHeader>
               <CardContent className="prose prose-sm max-w-none">
                 <p>
-                  Acest program tabelar (compatibil cu <strong>Microsoft Excel, Google Sheets și LibreOffice Calc</strong>) îți permite să introduci propria listă de salarii brute estimate pentru anii viitori și să estimezi automat punctajul acumulat lunar și anual.
+                  Acest fișier tabelar îți permite să introduci salariile brute lunare sau anuale pe parcursul carierei și să urmărești automat acumularea punctajului CNPP și contribuția către Pilonul II (4,75%).
                 </p>
-                
-                <h4 className="font-bold text-slate-800">Ce include tabelul:</h4>
+
+                <h3 className="font-bold text-slate-800">Parametri oficiali 2026 integrați:</h3>
                 <ul>
-                  <li><strong>Istoric pe ani:</strong> Rânduri dedicate pentru simularea veniturilor de la 2026 până în 2035+.</li>
-                  <li><strong>Contribuția CAS:</strong> Formula calculează automat redirecționarea de 4.75% a salariului brut către Pilonul II de pensie privată obligatorie.</li>
-                  <li><strong>Algoritmul de punctaj:</strong> Calculează punctele lunare raportat la câștigul salarial mediu brut pe economie utilizat în 2026 (8.417 RON).</li>
+                  <li>
+                    <strong>Salariul mediu brut de referință:</strong> {AVERAGE_GROSS_SALARY_2026.toLocaleString("ro-RO")} RON (Legea nr. 44/2026).
+                  </li>
+                  <li>
+                    <strong>Valoarea Punctului de Referință (VPR):</strong> {OFFICIAL_VPR_2026} RON (menținut în 2026 prin Legea nr. 141/2025).
+                  </li>
+                  <li>
+                    <strong>Punctaj de contributivitate + stabilitate:</strong> compatibil cu formula din Legea nr. 360/2023.
+                  </li>
                 </ul>
 
                 <div className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded-r-lg my-4">
-                  <h5 className="font-bold mt-0 text-blue-900 flex items-center gap-2">
-                    <Info className="h-4.5 w-4.5" />
-                    Tutorial: Cum să folosești fișierul (3 Pași Simpli)
-                  </h5>
-                  <ol className="text-sm text-blue-950 mt-2 space-y-2 list-decimal list-inside font-medium">
-                    <li><strong>Descarcă</strong> dând click pe butonul albastru. Vei primi un fișier de tip <code>.csv</code>.</li>
-                    <li><strong>Deschide în Excel</strong> și, dacă datele apar grupate pe o singură coloană, folosește funcția <strong>Data → Text to Columns</strong> din meniu, selectând caracterul punct-virgulă (;) ca separator.</li>
-                    <li><strong>Introdu Salariul:</strong> Editează doar coloana "Salariu Brut Estimativ (RON)". Toate celelalte coloane cu CAS și punctaj se vor recalcula automat!</li>
+                  <h4 className="font-bold mt-0 text-blue-900 flex items-center gap-2">
+                    <Info className="h-4 w-4" />
+                    Cum folosești fișierul în 3 pași:
+                  </h4>
+                  <ol className="text-sm text-blue-950 mt-2 space-y-1.5 list-decimal list-inside font-medium">
+                    <li>Apasă butonul de descărcare gratuită (nu solicită cont sau email).</li>
+                    <li>Deschide fișierul `.csv` în Microsoft Excel (setările regionale în română folosesc automat separatorul <code>;</code>).</li>
+                    <li>Adaptează coloana <em>Salariu Brut Estimativ</em> după istoricul tău din extrasul CNPP.</li>
                   </ol>
                 </div>
               </CardContent>
             </Card>
 
-            {/* Preview table */}
             <div className="bg-white rounded-lg p-6 shadow-sm border">
-              <h3 className="text-sm font-bold text-gray-700 uppercase tracking-wide mb-4">Previzualizare Structură Tabel</h3>
+              <h3 className="text-sm font-bold text-gray-800 uppercase tracking-wide mb-4">
+                Previzualizare Date Tabel (2025–2026)
+              </h3>
               <div className="overflow-x-auto text-xs font-mono">
                 <table className="w-full border-collapse">
                   <thead>
-                    <tr className="bg-slate-50 text-slate-600">
+                    <tr className="bg-slate-100 text-slate-700 text-left">
                       <th className="border p-2">An</th>
-                      <th className="border p-2">Salariu Brut Estimativ (RON)</th>
-                      <th className="border p-2">CAS Pilon II (4.75%)</th>
-                      <th className="border p-2">Punctaj Lunar</th>
+                      <th className="border p-2">Salariu Brut</th>
+                      <th className="border p-2">Pilon II (4,75%)</th>
                       <th className="border p-2">Punctaj Anual</th>
+                      <th className="border p-2">Valoare (VPR 81 Lei)</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <td className="border p-2">2026</td>
-                      <td className="border p-2">8.000 Lei</td>
-                      <td className="border p-2">380 Lei</td>
-                      <td className="border p-2">0.9505</td>
-                      <td className="border p-2">0.9505</td>
+                      <td className="border p-2">2025</td>
+                      <td className="border p-2">8.620 Lei</td>
+                      <td className="border p-2">409,45 Lei</td>
+                      <td className="border p-2">0,9378</td>
+                      <td className="border p-2">75,96 Lei/an</td>
                     </tr>
-                    <tr className="bg-slate-50/50">
-                      <td className="border p-2">2027</td>
-                      <td className="border p-2">8.400 Lei</td>
-                      <td className="border p-2">399 Lei</td>
-                      <td className="border p-2">0.9980</td>
-                      <td className="border p-2">0.9980</td>
-                    </tr>
-                    <tr>
-                      <td className="border p-2">...</td>
-                      <td className="border p-2">...</td>
-                      <td className="border p-2">...</td>
-                      <td className="border p-2">...</td>
-                      <td className="border p-2">...</td>
+                    <tr className="bg-slate-50">
+                      <td className="border p-2 font-bold">2026</td>
+                      <td className="border p-2 font-bold">9.192 Lei</td>
+                      <td className="border p-2 font-bold">436,62 Lei</td>
+                      <td className="border p-2 font-bold">1,0000</td>
+                      <td className="border p-2 font-bold">81,00 Lei/an</td>
                     </tr>
                   </tbody>
                 </table>
@@ -170,72 +161,65 @@ export default function ProgramExcelPage() {
             <CardHeader>
               <CardTitle className="text-lg flex items-center gap-2">
                 <Download className="h-5 w-5 text-brand-blue" />
-                Descarcă Fișierul
+                Descarcă Simulatorul
               </CardTitle>
-              <CardDescription>Obține simulatorul gratuit acum</CardDescription>
+              <CardDescription>Acces instant, gratuit, fără înregistrare</CardDescription>
             </CardHeader>
             <CardContent className="space-y-4">
               <form onSubmit={handleDownload} className="space-y-4">
-                <div className="space-y-2">
-                  <Label htmlFor="email">Adresă de Email (Opțional)</Label>
-                  <Input 
-                    id="email" 
-                    type="email" 
-                    placeholder="nume@exemplu.ro"
-                    value={userEmail}
-                    onChange={(e) => setUserEmail(e.target.value)}
-                  />
-                </div>
-                <Button 
-                  type="submit" 
-                  className="w-full bg-brand-blue hover:bg-blue-700 flex items-center justify-center gap-2"
-                >
+                <Button type="submit" className="w-full bg-brand-blue hover:bg-blue-700 flex items-center justify-center gap-2">
                   <Download className="h-4 w-4" />
-                  Descarcă Tabel Simulator (.CSV)
+                  Descarcă Tabel 2026 (.CSV)
                 </Button>
               </form>
 
+              <a
+                href="/ghid-calcul-pensie-2026.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block w-full text-center rounded-md border border-slate-300 bg-white px-4 py-2 text-sm font-medium text-slate-800 hover:bg-slate-50"
+              >
+                Descarcă Ghidul PDF 2026
+              </a>
+
               {downloadSuccess && (
-                <div className="bg-green-50 border border-green-200 rounded-lg p-3 text-green-800 text-sm flex items-center gap-2">
-                  <CheckCircle className="h-5 w-5 text-green-600 flex-shrink-0" />
-                  Descărcare inițiată cu succes! Verificați folderul 'Downloads'.
+                <div className="bg-green-50 border border-green-200 rounded-lg p-3 text-green-800 text-xs flex items-center gap-2">
+                  <CheckCircle className="h-4 w-4 text-green-600 flex-shrink-0" />
+                  Descărcare pornită cu succes! Verifică folderul Downloads.
                 </div>
               )}
             </CardContent>
           </Card>
 
-          {/* Internal links: this page previously linked NOWHERE, so it received
-              authority and passed none on. These are the pages a user of an Excel
-              pension template actually needs next. */}
-          <Card className="mt-8">
+          <Card className="md:col-span-3 mt-4">
             <CardHeader>
-              <CardTitle className="text-xl">Vezi și</CardTitle>
+              <CardTitle className="text-xl">Vezi și alte calculatoare</CardTitle>
             </CardHeader>
             <CardContent>
-              <ul className="space-y-2 text-gray-700">
+              <ul className="space-y-2 text-gray-700 text-sm">
+                <li>
+                  <Link href="/" className="text-brand-blue font-semibold underline">
+                    Calculator Pensie de Stat 2026
+                  </Link>{" "}
+                  — estimează rapid pensia online fără descărcare.
+                </li>
                 <li>
                   <Link href="/calculator-puncte-pensie/" className="text-brand-blue font-semibold underline">
                     Calculator Puncte de Pensie
-                  </Link>
-                  {" "}— verifică punctele de stabilitate pentru anii munciți peste stagiul complet.
+                  </Link>{" "}
+                  — calculează punctele de stabilitate pentru vechime &gt; 25 ani.
                 </li>
                 <li>
                   <Link href="/calculator-varsta-pensionare/" className="text-brand-blue font-semibold underline">
                     Calculator Vârstă de Pensionare
-                  </Link>
-                  {" "}— află data exactă la care te poți pensiona, în funcție de anul nașterii și stagiul realizat.
-                </li>
-                <li>
-                  <Link href="/legislatie/" className="text-brand-blue font-semibold underline">
-                    Legea Pensiilor 360/2023
-                  </Link>
-                  {" "}— prevederile pe care se bazează formulele din tabel.
+                  </Link>{" "}
+                  — verifică data ieșirii la pensie conform Anexei 5.
                 </li>
                 <li>
                   <Link href="/metodologie/" className="text-brand-blue font-semibold underline">
-                    Metodologia de calcul
-                  </Link>
-                  {" "}— cum se aplică formulele pas cu pas.
+                    Metodologia de Calcul CNPP
+                  </Link>{" "}
+                  — exemple matematice pas cu pas.
                 </li>
               </ul>
             </CardContent>

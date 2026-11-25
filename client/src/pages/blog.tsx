@@ -3,13 +3,16 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Link } from "wouter";
 import { Search, Clock, Filter, BookOpen } from "lucide-react";
 import MetaTags from "@/components/seo/MetaTags";
 import BreadcrumbNavigation from "@/components/seo/BreadcrumbNavigation";
-import { WebPageSchema } from "@/components/seo/StructuredData";
-import { getArticlesByCategory, searchArticles, type Article } from "@/data/static-articles";
+import { getArticlesByCategory, searchArticles } from "@/data/static-articles";
+import { ROUTES_META } from "@/data/routes-meta";
+import { formatRoDate } from "@/lib/utils";
+
+const PAGE_META = ROUTES_META["/blog/"];
 
 export default function BlogPage() {
   const [searchTerm, setSearchTerm] = useState("");
@@ -17,23 +20,23 @@ export default function BlogPage() {
 
   const allArticles = getArticlesByCategory(selectedCategory);
   const articles = searchTerm ? searchArticles(searchTerm) : allArticles;
-  const isLoading = false;
 
-  const filteredArticles = articles.filter(article => {
-    const matchesSearch = article.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-                         article.excerpt.toLowerCase().includes(searchTerm.toLowerCase());
+  const filteredArticles = articles.filter((article) => {
+    const matchesSearch =
+      article.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      article.excerpt.toLowerCase().includes(searchTerm.toLowerCase());
     const matchesCategory = selectedCategory === "all" || article.category === selectedCategory;
     return matchesSearch && matchesCategory && article.published;
   });
 
   const getCategoryBadge = (category: string) => {
     switch (category) {
-      case 'planificare':
-        return <Badge className="bg-brand-blue">Planificare</Badge>;
-      case 'tipuri-pensii':
-        return <Badge className="bg-brand-green">Tipuri Pensii</Badge>;
-      case 'legislatie':
-        return <Badge className="bg-brand-red">Legislație</Badge>;
+      case "planificare":
+        return <Badge className="bg-brand-blue text-white">Planificare</Badge>;
+      case "tipuri-pensii":
+        return <Badge className="bg-brand-green text-white">Tipuri Pensii</Badge>;
+      case "legislatie":
+        return <Badge className="bg-brand-red text-white">Legislație</Badge>;
       default:
         return <Badge variant="secondary">General</Badge>;
     }
@@ -41,58 +44,46 @@ export default function BlogPage() {
 
   const getCategoryColor = (category: string) => {
     switch (category) {
-      case 'planificare':
-        return 'text-brand-blue hover:text-blue-700';
-      case 'tipuri-pensii':
-        return 'text-brand-green hover:text-green-700';
-      case 'legislatie':
-        return 'text-brand-red hover:text-red-700';
+      case "planificare":
+        return "text-brand-blue hover:text-blue-700";
+      case "tipuri-pensii":
+        return "text-brand-green hover:text-green-700";
+      case "legislatie":
+        return "text-brand-red hover:text-red-700";
       default:
-        return 'text-brand-blue hover:text-blue-700';
+        return "text-brand-blue hover:text-blue-700";
     }
   };
 
   return (
     <div className="min-h-screen bg-white">
-      <MetaTags 
-        title="Blog Pensii România 2026 - Ghiduri Complete și Noutăți | CalculatorPensie.com"
-        description="Citește cele mai recente articole despre pensii în România. Ghiduri de planificare, analize legislative și sfaturi de la experți pentru a-ți optimiza pensia."
-        canonical="https://calculatorpensie.com/blog/"
-        keywords="blog pensii romania, ghid pensie, noutati pensii, planificare pensie, legislatie pensii"
-      />
-      
-      <WebPageSchema 
-        name="Blog Pensii România - Ghiduri și Analize Experte"
-        description="Articole complete despre sistemul de pensii din România, planificare financiară și legislație actualizată"
-        url="https://calculatorpensie.com/blog"
-        breadcrumbs={[
-          { name: "Acasă", url: "https://calculatorpensie.com" },
-          { name: "Blog Pensii" }
-        ]}
+      <MetaTags
+        title={PAGE_META.title}
+        description={PAGE_META.description}
+        canonical={PAGE_META.canonical}
+        keywords={PAGE_META.keywords}
+        schemaKind="collection"
+        schemaName={PAGE_META.schemaName}
       />
 
-      {/* Breadcrumb Navigation */}
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-4">
         <BreadcrumbNavigation />
       </div>
 
-      {/* Hero Section */}
       <section className="bg-gradient-to-r from-neutral-dark to-gray-800 text-white py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <BookOpen className="h-12 w-12 mx-auto mb-6" />
-          <h1 className="text-4xl font-bold mb-4">Blog Pensii România</h1>
-          <p className="text-xl text-yellow-200 mb-8 font-bold bg-black/20 p-4 rounded-lg">
-            Ghiduri complete, analize și noutăți despre sistemul de pensii din România. 
-            Rămâi informat cu experții noștri.
+          <h1 className="text-4xl font-bold mb-4 text-white">Blog Pensii România 2026</h1>
+          <p className="text-xl text-blue-100 mb-4 max-w-2xl mx-auto">
+            Ghiduri practice, analize legislative și exemple de calcul actualizate conform Legii nr. 360/2023.
           </p>
         </div>
       </section>
 
-      {/* Search and Filter */}
       <section className="py-8 bg-neutral-light">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row gap-4 items-center">
-            <div className="relative flex-1">
+            <div className="relative flex-1 w-full">
               <Search className="absolute left-3 top-3 h-4 w-4 text-gray-700" />
               <Input
                 placeholder="Caută articole..."
@@ -116,59 +107,49 @@ export default function BlogPage() {
         </div>
       </section>
 
-      {/* Articles Grid */}
       <section className="py-16">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          {isLoading ? (
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {[...Array(6)].map((_, i) => (
-                <Card key={i} className="animate-pulse">
-                  <div className="h-48 bg-gray-200"></div>
-                  <CardContent className="p-6">
-                    <div className="h-4 bg-gray-200 rounded mb-2"></div>
-                    <div className="h-6 bg-gray-200 rounded mb-4"></div>
-                    <div className="h-16 bg-gray-200 rounded"></div>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-          ) : filteredArticles.length > 0 ? (
+          {filteredArticles.length > 0 ? (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {filteredArticles.map((article) => (
-                <Card key={article.id} className="overflow-hidden hover:shadow-xl transition-shadow">
-                  <img 
-                    src={article.image || "https://images.unsplash.com/photo-1554224154-26032ffc0d07?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=200"} 
-                    alt={article.title} 
-                    className="w-full h-48 object-cover" 
+                <Card key={article.id} className="overflow-hidden hover:shadow-xl transition-shadow flex flex-col">
+                  <img
+                    src={article.image || "/og-image.jpg"}
+                    alt={article.title}
+                    width={800}
+                    height={480}
+                    loading="lazy"
+                    decoding="async"
+                    className="w-full h-48 object-cover"
                   />
-                  <CardContent className="p-6">
-                    <div className="flex items-center justify-between mb-3">
-                      {getCategoryBadge(article.category)}
-                      <span className="text-gray-700 text-sm">
-                        {new Date(article.publishDate).toLocaleDateString('ro-RO')}
-                      </span>
+                  <CardContent className="p-6 flex flex-col flex-1 justify-between">
+                    <div>
+                      <div className="flex items-center justify-between mb-3">
+                        {getCategoryBadge(article.category)}
+                        <span className="text-gray-700 text-sm">{formatRoDate(article.publishDate)}</span>
+                      </div>
+                      <CardTitle className={`text-xl mb-3 transition-colors ${getCategoryColor(article.category)}`}>
+                        <Link href={`/blog/${article.slug}/`} className="hover:underline">
+                          {article.title}
+                        </Link>
+                      </CardTitle>
+                      <CardDescription className="mb-4 line-clamp-3">{article.excerpt}</CardDescription>
                     </div>
-                    <CardTitle className={`text-xl mb-3 transition-colors ${getCategoryColor(article.category)}`}>
-                      <Link href={`/blog/${article.slug}`}>
-                        <a className="hover:underline">{article.title}</a>
-                      </Link>
-                    </CardTitle>
-                    <CardDescription className="mb-4 line-clamp-3">
-                      {article.excerpt}
-                    </CardDescription>
-                    <div className="text-xs text-gray-600 mb-4 border-t pt-3 flex items-center justify-between">
-                      <span className="flex items-center font-medium">
-                        <Clock className="h-3.5 w-3.5 mr-1" />
-                        {article.readTime} min citire
-                      </span>
-                      <span className="font-semibold text-gray-800">Scris de: {article.author.name}</span>
-                    </div>
-                    <div className="flex items-center justify-end">
-                      <Link href={`/blog/${article.slug}`}>
-                        <Button variant="ghost" size="sm" className={`${getCategoryColor(article.category)} font-bold`}>
-                          Citește mai mult →
-                        </Button>
-                      </Link>
+                    <div>
+                      <div className="text-xs text-gray-600 mb-3 border-t pt-3 flex items-center justify-between">
+                        <span className="flex items-center font-medium">
+                          <Clock className="h-3.5 w-3.5 mr-1" />
+                          {article.readTime} min citire
+                        </span>
+                        <span className="font-semibold text-gray-800 truncate ml-2">{article.author.name}</span>
+                      </div>
+                      <div className="flex items-center justify-end">
+                        <Link href={`/blog/${article.slug}/`}>
+                          <Button variant="ghost" size="sm" className={`${getCategoryColor(article.category)} font-bold`}>
+                            Citește mai mult →
+                          </Button>
+                        </Link>
+                      </div>
                     </div>
                   </CardContent>
                 </Card>
@@ -179,10 +160,9 @@ export default function BlogPage() {
               <BookOpen className="h-16 w-16 text-gray-700 mx-auto mb-4" />
               <h3 className="text-xl font-semibold mb-2">Nu s-au găsit articole</h3>
               <p className="text-gray-700 mb-6">
-                {searchTerm ? 
-                  `Nu există articole care să conțină "${searchTerm}"` : 
-                  'Nu există articole în această categorie momentan.'
-                }
+                {searchTerm
+                  ? `Nu există articole care să conțină "${searchTerm}"`
+                  : "Nu există articole în această categorie momentan."}
               </p>
               {searchTerm && (
                 <Button onClick={() => setSearchTerm("")} variant="outline">
@@ -194,109 +174,50 @@ export default function BlogPage() {
         </div>
       </section>
 
-      {/* Featured Guides */}
       <section className="py-16 bg-neutral-light">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Ghidurile Noastre Complete</h2>
-            <p className="text-xl text-gray-700">
-              Resurse detaliate pentru fiecare aspect al sistemului de pensii
-            </p>
+            <h2 className="text-3xl font-bold mb-4">Ghidurile Noastre Principale</h2>
+            <p className="text-xl text-gray-700">Resurse structurate pentru fiecare aspect al sistemului de pensii</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <Card className="text-center hover:shadow-lg transition-shadow">
               <CardHeader>
-                <div className="bg-brand-blue text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                  <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
-                    <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                </div>
                 <CardTitle>Planificarea Pensiei</CardTitle>
-                <CardDescription>
-                  Strategii complete pentru o pensie liniștită
-                </CardDescription>
+                <CardDescription>Strategii pentru Pilonul I, II și III</CardDescription>
               </CardHeader>
               <CardContent>
-                <Link href="/planificare">
-                  <Button className="w-full bg-brand-blue hover:bg-blue-700">
-                    Vezi Ghidul
-                  </Button>
+                <Link href="/planificare/">
+                  <Button className="w-full bg-brand-blue hover:bg-blue-700">Vezi Ghidul</Button>
                 </Link>
               </CardContent>
             </Card>
 
             <Card className="text-center hover:shadow-lg transition-shadow">
               <CardHeader>
-                <div className="bg-brand-green text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                  <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
-                    <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                </div>
                 <CardTitle>Tipuri de Pensii</CardTitle>
-                <CardDescription>
-                  Toate opțiunile disponibile în sistemul românesc
-                </CardDescription>
+                <CardDescription>Limită de vârstă, anticipată, invaliditate, urmaș</CardDescription>
               </CardHeader>
               <CardContent>
-                <Link href="/tipuri-pensii">
-                  <Button className="w-full bg-brand-green hover:bg-green-700">
-                    Vezi Ghidul
-                  </Button>
+                <Link href="/tipuri-pensii/">
+                  <Button className="w-full bg-brand-green hover:bg-green-700">Vezi Ghidul</Button>
                 </Link>
               </CardContent>
             </Card>
 
             <Card className="text-center hover:shadow-lg transition-shadow">
               <CardHeader>
-                <div className="bg-brand-red text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                  <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
-                    <path d="M3 6a3 3 0 013-3h10a1 1 0 01.8 1.6l-2.4 3.2a1 1 0 000 1.2l2.4 3.2A1 1 0 0116 13H6a1 1 0 00-1 1v3a1 1 0 11-2 0V6z" />
-                  </svg>
-                </div>
-                <CardTitle>Legislație</CardTitle>
-                <CardDescription>
-                  Legea pensiilor pe înțelesul tuturor
-                </CardDescription>
+                <CardTitle>Legislație 2026</CardTitle>
+                <CardDescription>Legea nr. 360/2023 și Legea nr. 141/2025</CardDescription>
               </CardHeader>
               <CardContent>
-                <Link href="/legislatie">
-                  <Button className="w-full bg-brand-red hover:bg-red-700">
-                    Vezi Ghidul
-                  </Button>
+                <Link href="/legislatie/">
+                  <Button className="w-full bg-brand-red hover:bg-red-700">Vezi Ghidul</Button>
                 </Link>
               </CardContent>
             </Card>
           </div>
-        </div>
-      </section>
-
-      {/* Newsletter CTA */}
-      <section className="py-16 bg-gradient-to-r from-brand-blue to-blue-700 text-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold mb-4">Nu Rata Niciun Articol Important</h2>
-          <p className="text-xl text-blue-50 mb-8">
-            Abonează-te la newsletter pentru a primi în email cele mai importante 
-            actualizări despre sistemul de pensii din România.
-          </p>
-          <form className="max-w-md mx-auto">
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Input 
-                type="email" 
-                placeholder="Adresa ta de email" 
-                className="flex-1 bg-white text-neutral-dark"
-              />
-              <Button 
-                type="submit" 
-                className="bg-brand-red hover:bg-red-700 whitespace-nowrap"
-              >
-                Abonează-te
-              </Button>
-            </div>
-            <p className="text-sm text-blue-50 mt-4">
-              🔒 Datele tale sunt protejate. Nu trimitem spam.
-            </p>
-          </form>
         </div>
       </section>
     </div>

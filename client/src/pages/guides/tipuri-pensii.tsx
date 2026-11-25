@@ -4,36 +4,38 @@ import { Badge } from "@/components/ui/badge";
 import { Link } from "wouter";
 import { ListCheck, ArrowRight, Calculator, Clock, Users, Heart, AlertCircle } from "lucide-react";
 import MetaTags from "@/components/seo/MetaTags";
-import { WebPageSchema } from "@/components/seo/StructuredData";
+import BreadcrumbNavigation from "@/components/seo/BreadcrumbNavigation";
+import { OFFICIAL_VPR_2026 } from "@/lib/pension-calculations";
+import { ROUTES_META } from "@/data/routes-meta";
+
+const PAGE_META = ROUTES_META["/tipuri-pensii/"];
 
 export default function TipuriPensiiPage() {
   return (
     <div className="min-h-screen bg-white">
-      <MetaTags 
-        title="Tipuri de Pensii în România - Limită Vârstă, Anticipată, Invaliditate"
-        description="Descoperă toate tipurile de pensii din sistemul public din România în 2026: limită de vârstă, anticipată, de invaliditate și de urmaș. Condiții oficiale și documente."
-        canonical="https://calculatorpensie.com/tipuri-pensii/"
-        keywords="tipuri pensii, pensie limita de varsta, pensie anticipata, pensie invaliditate, pensie urmas"
+      <MetaTags
+        title={PAGE_META.title}
+        description={PAGE_META.description}
+        canonical={PAGE_META.canonical}
+        keywords={PAGE_META.keywords}
+        schemaKind="article"
+        schemaName={PAGE_META.schemaName}
+        articlePublishedTime={PAGE_META.datePublished}
+        articleModifiedTime={PAGE_META.dateModified}
       />
-      <WebPageSchema 
-        name="Tipuri de Pensii în România - Ghid Complet"
-        description="Ghid exhaustiv despre tipurile de pensii din sistemul unitar public de pensii în România"
-        url="https://calculatorpensie.com/tipuri-pensii"
-        breadcrumbs={[
-          { name: "Acasă", url: "https://calculatorpensie.com" },
-          { name: "Tipuri de Pensii" }
-        ]}
-      />
-      {/* Hero Section */}
+
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-4">
+        <BreadcrumbNavigation />
+      </div>
+
       <section className="bg-gradient-to-r from-brand-green to-green-700 text-white py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center mb-6">
             <ListCheck className="h-8 w-8 mr-3" />
-            <h1 className="text-4xl font-bold">Ghid Exhaustiv: Tipuri de Pensii din Sistemul Public din România</h1>
+            <h1 className="text-4xl font-bold text-white">Tipuri de Pensii din Sistemul Public (2026)</h1>
           </div>
-          <p className="text-xl text-yellow-200 mb-8 font-bold bg-black/20 p-4 rounded-lg">
-            Descoperă toate tipurile de pensii disponibile în România, condițiile de acordare 
-            și cum să îți calculezi corect drepturile de pensie pentru fiecare categorie.
+          <p className="text-xl text-white/95 mb-8 font-medium bg-black/20 p-4 rounded-lg">
+            Ghid complet al categoriilor de pensii reglementate de Legea nr. 360/2023: limită de vârstă, anticipată, invaliditate și urmaș.
           </p>
           <Link href="/">
             <Button size="lg" className="bg-white text-brand-green hover:bg-gray-50">
@@ -44,62 +46,40 @@ export default function TipuriPensiiPage() {
         </div>
       </section>
 
-      {/* Main Content */}
       <section className="py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          
-          {/* Overview */}
-          <div className="prose prose-lg max-w-none mb-12">
-            <h2>Sistemul de Pensii din România - Prezentare Generală</h2>
-            <p>
-              Sistemul public de pensii din România oferă mai multe tipuri de pensii, 
-              fiecare cu condiții specifice de acordare. Înțelegerea acestor diferențe 
-              este crucială pentru planificarea corectă a viitorului tău financiar.
-            </p>
-          </div>
-
-          {/* Types of Pensions */}
           <div className="space-y-8 mb-12">
-            
-            {/* 1. Pensia pentru Limită de Vârstă */}
             <Card className="border-l-4 border-l-brand-blue">
               <CardHeader>
                 <div className="flex items-center justify-between">
                   <div className="flex items-center">
                     <Clock className="h-6 w-6 text-brand-blue mr-3" />
-                    <CardTitle className="text-xl">1. Pensia pentru Limită de Vârstă: Baza Sistemului</CardTitle>
+                    <CardTitle className="text-xl">1. Pensia pentru Limită de Vârstă</CardTitle>
                   </div>
                   <Badge variant="secondary">Principală</Badge>
                 </div>
-                <CardDescription>
-                  Pensia standard acordată la împlinirea vârstei legale de pensionare
-                </CardDescription>
+                <CardDescription>Pensia standard acordată la împlinirea vârstei legale de pensionare</CardDescription>
               </CardHeader>
               <CardContent>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6 text-sm text-gray-700">
                   <div>
-                    <h4 className="font-semibold mb-2">Condiții de Acordare:</h4>
-                    <ul className="text-sm text-gray-700 space-y-1">
-                      <li>• Vârsta: 65 ani (bărbați), 63 ani (femei, cu creștere graduală)</li>
-                      <li>• Stagiu minim: 15 ani de cotizare</li>
-                      <li>• Pentru pensie completă: 35 ani (bărbați), 30 ani (femei)</li>
+                    <h4 className="font-semibold mb-2 text-gray-900">Condiții de Acordare:</h4>
+                    <ul className="space-y-1">
+                      <li>• Vârstă: 65 ani (bărbați); femei în creștere graduală spre 65 ani (Anexa 5)</li>
+                      <li>• Stagiu minim contributiv: 15 ani</li>
+                      <li>• Stagiu complet: 35 ani (cu eșalonare pentru femei)</li>
                     </ul>
                   </div>
                   <div>
-                    <h4 className="font-semibold mb-2">Calcul Pensie:</h4>
-                    <ul className="text-sm text-gray-700 space-y-1">
-                      <li>• Formula: Număr Total de Puncte × VPR</li>
-                                            <li>• VPR 2026: 91 RON</li>
-                                            <li>• Puncte de stabilitate pentru stagiul peste 25 ani</li>
+                    <h4 className="font-semibold mb-2 text-gray-900">Calcul 2026:</h4>
+                    <ul className="space-y-1">
+                      <li>• Formula: Număr Total Puncte × VPR</li>
+                      <li>• VPR 2026: <strong>{OFFICIAL_VPR_2026} RON</strong></li>
+                      <li>• Puncte de stabilitate pentru stagiul &gt; 25 ani</li>
                     </ul>
                   </div>
                 </div>
-                <p className="text-sm text-gray-700 mb-4">
-                  Pensia pentru limită de vârstă este forma principală de pensie din sistemul public românesc. 
-                  Pentru detalii complete despre condițiile de acordare și modalitatea de calcul, 
-                  consultă <strong>articolul nostru dedicat despre pensia pentru limită de vârstă</strong>.
-                </p>
-                <Link href="/blog/ghid-calcul-pensie-stat-2026">
+                <Link href="/blog/ghid-calcul-pensie-stat-2026/">
                   <Button variant="outline" className="text-brand-blue border-brand-blue hover:bg-brand-blue hover:text-white">
                     Citește Ghidul Complet <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
@@ -107,52 +87,45 @@ export default function TipuriPensiiPage() {
               </CardContent>
             </Card>
 
-            {/* 2. Pensia Anticipată */}
             <Card className="border-l-4 border-l-brand-red">
               <CardHeader>
                 <div className="flex items-center justify-between">
                   <div className="flex items-center">
                     <AlertCircle className="h-6 w-6 text-brand-red mr-3" />
-                    <CardTitle className="text-xl">2. Pensia Anticipată și Pensia Anticipată Parțială</CardTitle>
+                    <CardTitle className="text-xl">2. Pensia Anticipată (Legea 360/2023)</CardTitle>
                   </div>
-                  <Badge variant="destructive">Cu Penalizare</Badge>
+                  <Badge variant="destructive">Cu până la 5 ani mai devreme</Badge>
                 </div>
                 <CardDescription>
-                  Opțiuni pentru pensionarea înainte de vârsta standard cu reducerea cuvenită
+                  Noua lege a unificat vechea pensie anticipată și cea parțială într-o singură categorie
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6 text-sm text-gray-700">
                   <div>
-                    <h4 className="font-semibold mb-2">Pensie Anticipată:</h4>
-                    <ul className="text-sm text-gray-700 space-y-1">
-                      <li>• Cu 5 ani mai devreme decât vârsta standard</li>
-                      <li>• Stagiu: 35 ani (bărbați), 30 ani (femei)</li>
-                      <li>• Penalizare: 0,15%–0,40% pentru fiecare lună anticipată</li>
+                    <h4 className="font-semibold mb-2 text-gray-900">Condiții:</h4>
+                    <ul className="space-y-1">
+                      <li>• Cu cel mult 5 ani înaintea vârstei standard</li>
+                      <li>• Stagiu complet contributiv îndeplinit integral</li>
+                      <li>• Perioadele asimilate nu intră în calculul de acces</li>
                     </ul>
                   </div>
                   <div>
-                    <h4 className="font-semibold mb-2">Pensie Anticipată Parțială:</h4>
-                    <ul className="text-sm text-gray-700 space-y-1">
-                      <li>• Cu 2 ani mai devreme</li>
-                      <li>• Stagiu: 37 ani (bărbați), 32 ani (femei)</li>
-                      <li>• Penalizare: 0,15%–0,40% pentru fiecare lună anticipată</li>
+                    <h4 className="font-semibold mb-2 text-gray-900">Penalizare Lunară:</h4>
+                    <ul className="space-y-1">
+                      <li>• Între 0,15% și 0,40% pe lună de anticipare</li>
+                      <li>• Diminuarea încetează la vârsta standard</li>
                     </ul>
                   </div>
                 </div>
-                <p className="text-sm text-gray-700 mb-4">
-                  Dacă vrei să te retragi mai devreme, este important să înțelegi impactul penalizării. 
-                  Consultă <strong>ghidul nostru despre calculul și condițiile pensiei anticipate parțiale</strong> 
-                  pentru a lua o decizie informată.
-                </p>
-                <div className="flex gap-4">
-                  <Link href="/blog/pensie-anticipata-conditii-penalizari">
+                <div className="flex flex-wrap gap-4">
+                  <Link href="/blog/pensie-anticipata-conditii-penalizari/">
                     <Button variant="outline" className="text-brand-red border-brand-red hover:bg-brand-red hover:text-white">
                       Ghid Pensie Anticipată <ArrowRight className="ml-2 h-4 w-4" />
                     </Button>
                   </Link>
-                  <Link href="/calculator-pensie-anticipata">
-                    <Button className="bg-brand-red hover:bg-red-700">
+                  <Link href="/calculator-pensie-anticipata/">
+                    <Button className="bg-brand-red hover:bg-red-700 text-white">
                       <Calculator className="mr-2 h-4 w-4" />
                       Calculează Penalizarea
                     </Button>
@@ -161,46 +134,22 @@ export default function TipuriPensiiPage() {
               </CardContent>
             </Card>
 
-            {/* 3. Pensia de Urmaș */}
             <Card className="border-l-4 border-l-brand-green">
               <CardHeader>
                 <div className="flex items-center justify-between">
                   <div className="flex items-center">
                     <Heart className="h-6 w-6 text-brand-green mr-3" />
-                    <CardTitle className="text-xl">3. Pensia de Urmaș: Protecție pentru Familie</CardTitle>
+                    <CardTitle className="text-xl">3. Pensia de Urmaș</CardTitle>
                   </div>
-                  <Badge className="bg-brand-green">Protecție Socială</Badge>
+                  <Badge className="bg-brand-green text-white">Protecție Familie</Badge>
                 </div>
-                <CardDescription>
-                  Pensie acordată membrilor familiei în cazul decesului asiguratului sau pensionarului
-                </CardDescription>
+                <CardDescription>Pensie acordată copiilor și soțului supraviețuitor</CardDescription>
               </CardHeader>
               <CardContent>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-                  <div>
-                    <h4 className="font-semibold mb-2">Beneficiari:</h4>
-                    <ul className="text-sm text-gray-700 space-y-1">
-                      <li>• Soțul/Soția supraviețuitor</li>
-                      <li>• Copiii minori sau în întreținere</li>
-                      <li>• Părinții în întreținere</li>
-                      <li>• Alte persoane în întreținere (condiții speciale)</li>
-                    </ul>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold mb-2">Condiții:</h4>
-                    <ul className="text-sm text-gray-700 space-y-1">
-                      <li>• Decedatul avea drept la pensie sau era pensionar</li>
-                      <li>• Minimum 1 an de căsătorie (soț/soție)</li>
-                      <li>• Copiii: până la 16 ani (26 ani dacă studiază)</li>
-                    </ul>
-                  </div>
-                </div>
                 <p className="text-sm text-gray-700 mb-4">
-                  Pensia de urmaș asigură protecție financiară familiei în caz de deces. 
-                  Înțelege <strong>cine beneficiază și cum se calculează</strong> citind articolul nostru 
-                  dedicat despre pensia de urmaș.
+                  Se acordă copiilor până la 16 ani (sau 26 de ani pe durata studiilor) și soțului supraviețuitor la îndeplinirea condițiilor de durată a căsătoriei și vârstă/venit.
                 </p>
-                <Link href="/blog/pensia-urmas-drepturi-proceduri">
+                <Link href="/blog/pensia-urmas-drepturi-proceduri/">
                   <Button variant="outline" className="text-brand-green border-brand-green hover:bg-brand-green hover:text-white">
                     Detalii Complete <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
@@ -208,7 +157,6 @@ export default function TipuriPensiiPage() {
               </CardContent>
             </Card>
 
-            {/* 4. Pensia de Invaliditate */}
             <Card className="border-l-4 border-l-yellow-500">
               <CardHeader>
                 <div className="flex items-center justify-between">
@@ -216,116 +164,22 @@ export default function TipuriPensiiPage() {
                     <Users className="h-6 w-6 text-yellow-600 mr-3" />
                     <CardTitle className="text-xl">4. Pensia de Invaliditate</CardTitle>
                   </div>
-                  <Badge className="bg-yellow-500">Grad I, II, III</Badge>
+                  <Badge className="bg-yellow-500 text-white">Grad I, II, III</Badge>
                 </div>
-                <CardDescription>
-                  Pensie acordată persoanelor cu capacitate de muncă diminuată
-                </CardDescription>
+                <CardDescription>Acordată persoanelor cu capacitatea de muncă diminuată sau pierdută</CardDescription>
               </CardHeader>
               <CardContent>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
-                  <div className="text-center p-4 bg-yellow-50 rounded-lg">
-                    <h4 className="font-semibold text-yellow-800">Gradul I</h4>
-                    <p className="text-sm text-yellow-600">Invaliditate severă</p>
-                    <p className="text-xs text-yellow-600 mt-1">100% din pensia de referință</p>
-                  </div>
-                  <div className="text-center p-4 bg-orange-50 rounded-lg">
-                    <h4 className="font-semibold text-orange-800">Gradul II</h4>
-                    <p className="text-sm text-orange-600">Invaliditate accentuată</p>
-                    <p className="text-xs text-orange-600 mt-1">85% din pensia de referință</p>
-                  </div>
-                  <div className="text-center p-4 bg-red-50 rounded-lg">
-                    <h4 className="font-semibold text-red-800">Gradul III</h4>
-                    <p className="text-sm text-red-600">Invaliditate mediu</p>
-                    <p className="text-xs text-red-600 mt-1">70% din pensia de referință</p>
-                  </div>
-                </div>
                 <p className="text-sm text-gray-700 mb-4">
-                  Pensia de invaliditate se acordă în funcție de gradul de invaliditate stabilit 
-                  de comisia de expertiză medicală. Detalii complete despre 
-                  <strong> gradele de invaliditate</strong> găsești în ghidul nostru despre pensia de invaliditate.
+                  Încadrarea se stabilește prin expertiză medicală în Gradul I (cu indemnizație de însoțitor egală cu 50% din salariul minim brut pe economie), Gradul II sau Gradul III.
                 </p>
-                <Link href="/blog/conditii-speciale-munca-impact-pensie">
-                  <Button variant="outline" className="text-yellow-600 border-yellow-500 hover:bg-yellow-500 hover:text-white">
+                <Link href="/blog/ghid-pensie-invaliditate-2026/">
+                  <Button variant="outline" className="text-yellow-700 border-yellow-600 hover:bg-yellow-600 hover:text-white">
                     Ghid Pensie Invaliditate <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
                 </Link>
               </CardContent>
             </Card>
-
           </div>
-
-          {/* Comparison Table */}
-          <div className="bg-neutral-light rounded-xl p-6 mb-12">
-            <h3 className="text-xl font-bold mb-4">Comparație Rapidă - Tipuri de Pensii</h3>
-            <div className="overflow-x-auto">
-              <table className="w-full text-sm">
-                <thead>
-                  <tr className="border-b border-gray-300">
-                    <th className="text-left py-2">Tip Pensie</th>
-                    <th className="text-left py-2">Vârsta Minimă</th>
-                    <th className="text-left py-2">Stagiu Minim</th>
-                    <th className="text-left py-2">Observații</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr className="border-b border-gray-200">
-                    <td className="py-2 font-medium">Limită Vârstă</td>
-                    <td className="py-2">65/63 ani</td>
-                    <td className="py-2">15 ani</td>
-                    <td className="py-2">Standard, fără penalizare</td>
-                  </tr>
-                  <tr className="border-b border-gray-200">
-                    <td className="py-2 font-medium">Anticipată</td>
-                    <td className="py-2">60/58 ani</td>
-                    <td className="py-2">35/30 ani</td>
-                    <td className="py-2">0,15%–0,40%/lună</td>
-                  </tr>
-                  <tr className="border-b border-gray-200">
-                    <td className="py-2 font-medium">Anticipată Parțială</td>
-                    <td className="py-2">63/61 ani</td>
-                    <td className="py-2">37/32 ani</td>
-                    <td className="py-2">0,15%–0,40%/lună</td>
-                  </tr>
-                  <tr className="border-b border-gray-200">
-                    <td className="py-2 font-medium">Urmaș</td>
-                    <td className="py-2">Nu se aplică</td>
-                    <td className="py-2">Variable</td>
-                    <td className="py-2">Pentru beneficiarii legali</td>
-                  </tr>
-                  <tr>
-                    <td className="py-2 font-medium">Invaliditate</td>
-                    <td className="py-2">Nu se aplică</td>
-                    <td className="py-2">Variable</td>
-                    <td className="py-2">În funcție de gradul de invaliditate</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-
-          {/* CTA Section */}
-          <div className="bg-brand-green bg-opacity-10 rounded-xl p-8 text-center border border-brand-green border-opacity-20">
-            <h3 className="text-2xl font-bold text-brand-green mb-4">Calculează-ți Pensia pentru Orice Tip</h3>
-            <p className="text-gray-700 mb-6">
-              Folosește calculatoarele noastre specializate pentru a afla exact ce pensie ai avea 
-              în funcție de tipul ales și situația ta specifică.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/">
-                <Button size="lg" className="bg-brand-green hover:bg-green-700">
-                  <Calculator className="mr-2 h-5 w-5" />
-                  Calculator Pensie Standard
-                </Button>
-              </Link>
-              <Link href="/calculator-pensie-anticipata">
-                <Button size="lg" variant="outline" className="border-brand-green text-brand-green hover:bg-brand-green hover:text-white">
-                  Calculator Pensie Anticipată
-                </Button>
-              </Link>
-            </div>
-          </div>
-
         </div>
       </section>
     </div>

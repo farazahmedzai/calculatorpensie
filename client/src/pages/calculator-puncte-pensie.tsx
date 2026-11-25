@@ -3,87 +3,63 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+import { Link } from "wouter";
 import MetaTags from "@/components/seo/MetaTags";
 import BreadcrumbNavigation from "@/components/seo/BreadcrumbNavigation";
-import { WebPageSchema } from "@/components/seo/StructuredData";
-import { Calculator, Award, Info, HelpCircle, CheckCircle } from "lucide-react";
+import { Award, CheckCircle } from "lucide-react";
+import {
+  AVERAGE_GROSS_SALARY_2026,
+  calculateStabilityPoints,
+  estimateNetPension2026,
+  OFFICIAL_VPR_2026,
+} from "@/lib/pension-calculations";
+import { ROUTES_META } from "@/data/routes-meta";
+
+const PAGE_META = ROUTES_META["/calculator-puncte-pensie/"];
 
 export default function CalculatorPunctePage() {
-  const [netSalary, setNetSalary] = useState<number>(5000);
-  const [workYears, setWorkYears] = useState<number>(30);
+  const [netSalary, setNetSalary] = useState<number>(5400);
+  const [workYears, setWorkYears] = useState<number>(35);
   const [assimilatedYears, setAssimilatedYears] = useState<number>(0);
-  
+
   const [result, setResult] = useState<{
     contributoryPoints: number;
     stabilityPoints: number;
     assimilatedPoints: number;
     totalPoints: number;
     estimatedPension: number;
+    estimatedNet: number;
   } | null>(null);
 
   const handleCalculate = () => {
-    // Official average gross salary (Salariul Mediu Brut pe Economie) for 2025/2026 is approx 8,417 RON
-    const averageGrossEconomy = 8417;
-    
-    // Approximate Gross Salary from Net (approx 55% of Gross is Net in Romania)
-    const estimatedGross = netSalary / 0.55;
-    
-    // 1. Contributory points (Puncte de contributivitate)
-    // Points per year = (estimatedGross / averageGrossEconomy)
-    const pointsPerYear = estimatedGross / averageGrossEconomy;
+    const estimatedGross = netSalary / 0.585;
+    const pointsPerYear = estimatedGross / AVERAGE_GROSS_SALARY_2026;
     const contributoryPoints = pointsPerYear * workYears;
-
-    // 2. Stability points (Puncte de stabilitate) for years worked > 25
-    let stabilityPoints = 0;
-    if (workYears > 25) {
-      const extraYears = workYears - 25;
-      
-      if (extraYears <= 5) {
-        stabilityPoints = extraYears * 0.5;
-      } else if (extraYears <= 10) {
-        stabilityPoints = (5 * 0.5) + ((extraYears - 5) * 0.75);
-      } else {
-        stabilityPoints = (5 * 0.5) + (5 * 0.75) + ((extraYears - 10) * 1.0);
-      }
-    }
-
-    // 3. Assimilated points (Puncte asimilate) = 0.25 per year
+    const stabilityPoints = calculateStabilityPoints(workYears);
     const assimilatedPoints = assimilatedYears * 0.25;
-
-    // 4. Total points
     const totalPoints = contributoryPoints + stabilityPoints + assimilatedPoints;
-
-    // 5. Estimated pension = Total points * VPR (91 RON in 2025)
-    const vpr = 91;
-    const estimatedPension = totalPoints * vpr;
+    const estimatedPension = Math.round(totalPoints * OFFICIAL_VPR_2026);
+    const estimatedNet = estimateNetPension2026(estimatedPension);
 
     setResult({
       contributoryPoints: parseFloat(contributoryPoints.toFixed(4)),
       stabilityPoints: parseFloat(stabilityPoints.toFixed(4)),
       assimilatedPoints: parseFloat(assimilatedPoints.toFixed(4)),
       totalPoints: parseFloat(totalPoints.toFixed(4)),
-      estimatedPension: Math.round(estimatedPension)
+      estimatedPension,
+      estimatedNet,
     });
   };
 
   return (
     <div className="min-h-screen bg-neutral-light py-8">
-      <MetaTags 
-        title="Calculator Puncte Pensie 2026 | Puncte de Stabilitate Noua Lege"
-        description="Calculează numărul total de puncte de pensie acumulate. Află câte puncte de stabilitate primești pentru stagiul peste 25 de ani conform Legii 360/2023."
-        canonical="https://calculatorpensie.com/calculator-puncte-pensie/"
-        keywords="calculator puncte pensie, puncte de stabilitate, calcul puncte pensie 2026, calcul puncte stabilitate noua lege"
-      />
-      
-      <WebPageSchema 
-        name="Calculator Puncte de Pensie"
-        description="Instrument online de calcul pentru punctele de contributivitate, stabilitate și asimilate conform noului algoritm CNPP"
-        url="https://calculatorpensie.com/calculator-puncte-pensie"
-        breadcrumbs={[
-          { name: "Acasă", url: "https://calculatorpensie.com" },
-          { name: "Calculator", url: "https://calculatorpensie.com/calculator" },
-          { name: "Puncte Pensie" }
-        ]}
+      <MetaTags
+        title={PAGE_META.title}
+        description={PAGE_META.description}
+        canonical={PAGE_META.canonical}
+        keywords={PAGE_META.keywords}
+        schemaKind="calculator"
+        schemaName={PAGE_META.schemaName}
       />
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -92,26 +68,27 @@ export default function CalculatorPunctePage() {
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 mt-4">
         <div className="text-center mb-8">
-          <h1 className="text-3xl font-bold mb-4">Calculator Puncte de Pensie</h1>
+          <h1 className="text-3xl font-bold mb-4">Calculator Puncte de Pensie &amp; Stabilitate 2026</h1>
           <p className="text-xl text-gray-700">
-            Află punctele tale de contributivitate și bonificațiile de stabilitate în noua formulă
+            Calculează punctele de contributivitate și bonusul pentru stagiu peste 25 de ani (VPR = {OFFICIAL_VPR_2026} Lei)
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <Card className="md:col-span-1">
+          <Card className="md:col-span-1 h-fit">
             <CardHeader>
               <CardTitle className="text-lg">Date de Calcul</CardTitle>
-              <CardDescription>Introdu salariul și stagiul de cotizare</CardDescription>
+              <CardDescription>Introdu salariul și vechimea</CardDescription>
             </CardHeader>
             <CardContent className="space-y-4">
-              <div className="flex items-center text-sm text-green-700 bg-green-50 p-3 rounded-md mb-2 border border-green-200">
-                <CheckCircle className="w-5 h-5 mr-2 flex-shrink-0" />
-                <span className="font-semibold">Actualizat Iunie 2026 (Legea 360/2023)</span>
+              <div className="flex items-center text-xs text-green-800 bg-green-50 p-2.5 rounded border border-green-200">
+                <CheckCircle className="w-4 h-4 mr-2 flex-shrink-0 text-green-700" />
+                <span className="font-semibold">Actualizat 2026 (VPR {OFFICIAL_VPR_2026} Lei)</span>
               </div>
+
               <div className="space-y-2">
                 <Label htmlFor="salary">Salariul Net Lunar Actual (RON)</Label>
-                <Input 
+                <Input
                   id="salary"
                   type="number"
                   value={netSalary}
@@ -121,7 +98,7 @@ export default function CalculatorPunctePage() {
 
               <div className="space-y-2">
                 <Label htmlFor="years">Ani de Muncă Contributivă</Label>
-                <Input 
+                <Input
                   id="years"
                   type="number"
                   value={workYears}
@@ -130,8 +107,8 @@ export default function CalculatorPunctePage() {
               </div>
 
               <div className="space-y-2">
-                <Label htmlFor="assimilated">Ani Asimilați (studii la zi, armată)</Label>
-                <Input 
+                <Label htmlFor="assimilated">Ani Asimilați (facultate la zi, armată)</Label>
+                <Input
                   id="assimilated"
                   type="number"
                   value={assimilatedYears}
@@ -139,10 +116,7 @@ export default function CalculatorPunctePage() {
                 />
               </div>
 
-              <Button 
-                onClick={handleCalculate} 
-                className="w-full bg-brand-blue hover:bg-blue-700"
-              >
+              <Button type="button" onClick={handleCalculate} className="w-full bg-brand-blue hover:bg-blue-700">
                 Calculează Punctele
               </Button>
             </CardContent>
@@ -150,100 +124,104 @@ export default function CalculatorPunctePage() {
 
           <div className="md:col-span-2 space-y-6">
             {result ? (
-              <Card className="bg-brand-blue bg-opacity-5 border-brand-blue border-opacity-10">
+              <Card className="bg-blue-50 border-blue-200">
                 <CardHeader>
                   <CardTitle className="text-xl text-brand-blue flex items-center gap-2">
                     <Award className="h-5 w-5" />
-                    Punctaj Estimativ
+                    Punctaj Estimat (Legea 360/2023)
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-4">
-                  <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 border-b pb-4">
+                  <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 border-b border-blue-200 pb-4">
                     <div>
-                      <span className="text-xs text-gray-500 block">Puncte Contributive:</span>
-                      <strong className="text-lg text-slate-800">{result.contributoryPoints}</strong>
+                      <span className="text-xs text-gray-600 block">Puncte Contributive:</span>
+                      <strong className="text-lg text-slate-900">{result.contributoryPoints}</strong>
                     </div>
                     <div>
-                      <span className="text-xs text-gray-500 block">Puncte Stabilitate:</span>
-                      <strong className="text-lg text-brand-green">{result.stabilityPoints}</strong>
+                      <span className="text-xs text-gray-600 block">Puncte Stabilitate:</span>
+                      <strong className="text-lg text-green-700">+{result.stabilityPoints}</strong>
                     </div>
                     <div>
-                      <span className="text-xs text-gray-500 block">Puncte Asimilate:</span>
-                      <strong className="text-lg text-orange-600">{result.assimilatedPoints}</strong>
+                      <span className="text-xs text-gray-600 block">Puncte Asimilate:</span>
+                      <strong className="text-lg text-orange-700">{result.assimilatedPoints}</strong>
                     </div>
                   </div>
                   <div>
-                    <span className="text-gray-600 block text-sm">Număr total de puncte:</span>
-                    <strong className="text-3xl text-slate-800">{result.totalPoints}</strong>
+                    <span className="text-gray-700 block text-sm">Număr total de puncte:</span>
+                    <strong className="text-3xl text-slate-900">{result.totalPoints}</strong>
                   </div>
-                  <div className="border-t pt-4 bg-slate-50 p-4 rounded-lg">
-                    <span className="text-gray-600 block text-xs uppercase font-bold tracking-wider">Pensia Brută Estimată:</span>
+                  <div className="border-t border-blue-200 pt-4 bg-white p-4 rounded-lg">
+                    <span className="text-gray-600 block text-xs uppercase font-bold tracking-wider">
+                      Pensie Brută Estimată (VPR {OFFICIAL_VPR_2026} Lei):
+                    </span>
                     <strong className="text-2xl text-blue-700 block mt-1">
-                      {result.estimatedPension.toLocaleString("ro-RO")} RON/lună
+                      {result.estimatedPension.toLocaleString("ro-RO")} RON brut/lună
                     </strong>
-                    <span className="text-xs text-gray-500 block mt-1">*Formula: {result.totalPoints} puncte × 91 Lei VPR (Valoare Punct de Referință 2026)</span>
+                    <span className="text-sm text-gray-700 block mt-1">
+                      Net estimat după CASS și impozit (&gt;3.000 lei):{" "}
+                      <strong>{result.estimatedNet.toLocaleString("ro-RO")} RON/lună</strong>
+                    </span>
                   </div>
                 </CardContent>
               </Card>
             ) : (
-              <Card className="h-full flex items-center justify-center p-8 text-center text-gray-500 border-dashed">
+              <Card className="flex items-center justify-center p-8 text-center text-gray-600 border-dashed">
                 <div>
                   <Award className="h-12 w-12 mx-auto mb-3 text-gray-400" />
-                  <p>Completează datele din stânga pentru a simula numărul tău de puncte de pensie.</p>
+                  <p>Apasă „Calculează Punctele” pentru a vedea defalcarea completă pe categorii de puncte.</p>
                 </div>
               </Card>
             )}
 
-            {/* Informational guide */}
             <div className="bg-white rounded-lg p-6 shadow-sm prose prose-sm max-w-none">
-              <h3 className="font-bold text-slate-800">Ce sunt Punctele de Stabilitate?</h3>
+              <h2>Cum se acordă Punctele de Stabilitate (Art. 85 Legea 360/2023)?</h2>
               <p>
-                Punctele de stabilitate sunt puncte bonus oferite de stat conform Legii 360/2023 pentru a stimula persoanele să rămână active pe piața muncii mai mulți ani. Acestea se adaugă direct la punctele din contribuții salariale după cum urmează:
+                Punctele de stabilitate recompensează stagiul de cotizare contributiv ce depășește <strong>25 de ani</strong>, crescând direct numărul total de puncte:
               </p>
-              <table className="w-full text-sm border-collapse my-6">
+              <table className="w-full text-sm border-collapse my-4">
                 <thead>
                   <tr className="bg-slate-100">
-                    <th className="border p-2">Vechime în Muncă (Ani)</th>
-                    <th className="border p-2">Puncte de Stabilitate / An</th>
-                    <th className="border p-2">Total Maxim de Puncte pe Interval</th>
+                    <th className="border p-2">Interval Vechime Contributivă</th>
+                    <th className="border p-2">Puncte / An</th>
+                    <th className="border p-2">Maxim pe Interval</th>
+                    <th className="border p-2">Plus Brut (VPR 81 Lei)</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td className="border p-2">Între 26 și 30 ani</td>
-                    <td className="border p-2"><strong>0.5 puncte</strong></td>
-                    <td className="border p-2">2.5 puncte</td>
+                    <td className="border p-2">Anii 26 – 30 (5 ani)</td>
+                    <td className="border p-2"><strong>+0,50 puncte</strong></td>
+                    <td className="border p-2">2,50 puncte</td>
+                    <td className="border p-2">+203 Lei / lună</td>
+                  </tr>
+                  <tr className="bg-slate-50">
+                    <td className="border p-2">Anii 31 – 35 (5 ani)</td>
+                    <td className="border p-2"><strong>+0,75 puncte</strong></td>
+                    <td className="border p-2">3,75 puncte (cumulat 6,25)</td>
+                    <td className="border p-2">+506 Lei / lună cumulat</td>
                   </tr>
                   <tr>
-                    <td className="border p-2">Între 31 și 35 ani</td>
-                    <td className="border p-2"><strong>0.75 puncte</strong></td>
-                    <td className="border p-2">3.75 puncte</td>
-                  </tr>
-                  <tr>
-                    <td className="border p-2">Peste 35 de ani</td>
-                    <td className="border p-2"><strong>1.0 punct</strong></td>
-                    <td className="border p-2">fără limită maximă</td>
+                    <td className="border p-2">Peste 35 ani</td>
+                    <td className="border p-2"><strong>+1,00 punct</strong></td>
+                    <td className="border p-2">Fără plafon</td>
+                    <td className="border p-2">+81 Lei / lună pentru fiecare an</td>
                   </tr>
                 </tbody>
               </table>
-              
-              <figure className="my-6">
-                <picture><source srcSet="/images/puncte-stabilitate-legea-360-new.webp" type="image/webp" /><img 
-                  src="/images/puncte-stabilitate-legea-360-new.png" width={1024} height={1024} 
-                  alt="Infografic Puncte de Stabilitate Noua Lege a Pensiilor 2026" 
-                  className="w-full rounded-lg shadow-md border border-gray-100"
-                  loading="lazy"
-                /></picture>
-                <figcaption className="text-center text-xs text-gray-500 mt-2">
-                  Treptele de acordare a punctelor de stabilitate pentru vechimea în muncă (Legea 360/2023).
-                </figcaption>
-              </figure>
-              
+
               <p>
-                De exemplu, o persoană cu un stagiu de cotizare de 40 de ani va acumula automat un bonus de stabilitate de: 
-                <br />
-                <code>(5 × 0.5) + (5 × 0.75) + (5 × 1.0) = 2.5 + 3.75 + 5.0 = 11.25 puncte</code>. La valoarea actuală de 91 RON a VPR, acest bonus crește pensia lunară cu <strong>1.023 RON</strong> brut!
+                <strong>Exemplu concret (40 de ani stagiu contributiv):</strong>{" "}
+                <code>(5 × 0,50) + (5 × 0,75) + (5 × 1,00) = 11,25 puncte</code> de stabilitate, care la VPR de <strong>81 Lei</strong> adaugă <strong>+911 Lei brut/lună</strong> peste pensia din contributivitate!
               </p>
+
+              <div className="not-prose mt-6 grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
+                <Link href="/metodologie/" className="p-3 border rounded bg-slate-50 hover:bg-blue-50 text-blue-700 font-semibold">
+                  → Metodologia Matematică Completă
+                </Link>
+                <Link href="/blog/calcul-punct-referinta-vpr/" className="p-3 border rounded bg-slate-50 hover:bg-blue-50 text-blue-700 font-semibold">
+                  → Ghid VPR 2026: Cum se stabilește
+                </Link>
+              </div>
             </div>
           </div>
         </div>

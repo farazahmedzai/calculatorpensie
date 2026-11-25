@@ -7,8 +7,8 @@
 # Scope: this list is a deliberate, reviewed decision. Disavowing is slow to
 # reverse in practice, so anything uncertain is left OUT rather than guessed at.
 #
-# Generated: 2026-11-02
-# Entries: 92 (89 carried over, 83 added from export)
+# Generated: 2026-11-25
+# Entries: 93 (92 carried over, 1 added from GSC Links export)
 
 domain:3guys.gr
 domain:6789000000.com
@@ -53,6 +53,7 @@ domain:goodcompanyjp.com
 domain:green-tech-africa.com
 domain:haifa.muni.il
 domain:hissingfetus.com
+domain:horses5.com
 domain:illusivesoul.com
 domain:izolacniskla.cz
 domain:jackpotcityslotss.com

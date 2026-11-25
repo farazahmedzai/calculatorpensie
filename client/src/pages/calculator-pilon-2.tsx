@@ -3,16 +3,20 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+import { Link } from "wouter";
 import MetaTags from "@/components/seo/MetaTags";
 import BreadcrumbNavigation from "@/components/seo/BreadcrumbNavigation";
-import { WebPageSchema } from "@/components/seo/StructuredData";
-import { PiggyBank, ArrowRight, Info, HelpCircle, CheckCircle } from "lucide-react";
+import { PiggyBank, CheckCircle } from "lucide-react";
+import { ROUTES_META } from "@/data/routes-meta";
+
+const PAGE_META = ROUTES_META["/calculator-pensie-pilon-2/"];
 
 export default function CalculatorPilon2Page() {
-  const [netSalary, setNetSalary] = useState<number>(5000);
+  const [netSalary, setNetSalary] = useState<number>(5400);
   const [currentAge, setCurrentAge] = useState<number>(30);
   const [annualYield, setAnnualYield] = useState<number>(5.5);
-  
+  const [errorMsg, setErrorMsg] = useState<string | null>(null);
+
   const [result, setResult] = useState<{
     monthlyContribution: number;
     totalContributed: number;
@@ -22,28 +26,22 @@ export default function CalculatorPilon2Page() {
   } | null>(null);
 
   const handleCalculate = () => {
-    // Gross Salary estimation from Net
-    const estimatedGross = netSalary / 0.55;
-    
-    // Pillar 2 contribution is 4.75% of Gross Salary
+    setErrorMsg(null);
+    const estimatedGross = netSalary / 0.585;
     const monthlyContribution = estimatedGross * 0.0475;
-    
     const yearsToRetirement = 65 - currentAge;
     if (yearsToRetirement <= 0) {
-      alert("Vârsta actuală trebuie să fie sub 65 de ani (vârsta de pensionare).");
+      setErrorMsg("Vârsta actuală trebuie să fie sub 65 de ani.");
       return;
     }
 
     const months = yearsToRetirement * 12;
-    const r = (annualYield / 100) / 12; // monthly rate
+    const r = annualYield / 100 / 12;
 
-    // Future Value of Annuity formula: FV = P * (((1 + r)^n - 1) / r)
-    let finalBalance = 0;
-    if (r > 0) {
-      finalBalance = monthlyContribution * ((Math.pow(1 + r, months) - 1) / r);
-    } else {
-      finalBalance = monthlyContribution * months;
-    }
+    const finalBalance =
+      r > 0
+        ? monthlyContribution * ((Math.pow(1 + r, months) - 1) / r)
+        : monthlyContribution * months;
 
     const totalContributed = monthlyContribution * months;
     const interestEarned = finalBalance - totalContributed;
@@ -53,28 +51,19 @@ export default function CalculatorPilon2Page() {
       totalContributed: Math.round(totalContributed),
       interestEarned: Math.round(interestEarned),
       finalBalance: Math.round(finalBalance),
-      yearsToRetirement
+      yearsToRetirement,
     });
   };
 
   return (
     <div className="min-h-screen bg-neutral-light py-8">
-      <MetaTags 
-        title="Calculator Pensie Pilon 2 2026 | Capitalizare și Profit"
-        description="Calculează suma strânsă în contul tău de pensie privată obligatorie Pilonul II. Proiectează-ți acumulările pe baza contribuției lunare de 4.75% din salariu."
-        canonical="https://calculatorpensie.com/calculator-pensie-pilon-2/"
-        keywords="calculator pensie pilon 2, pilonul ii pensii private, randament pilon 2, fond de pensii privat"
-      />
-      
-      <WebPageSchema 
-        name="Calculator Pensie Pilon 2"
-        description="Proiectează valoarea fondului personal din Pilonul II de pensii private obligatorii folosind formula dobânzii compuse"
-        url="https://calculatorpensie.com/calculator-pensie-pilon-2"
-        breadcrumbs={[
-          { name: "Acasă", url: "https://calculatorpensie.com" },
-          { name: "Calculator", url: "https://calculatorpensie.com/calculator" },
-          { name: "Pensie Pilon 2" }
-        ]}
+      <MetaTags
+        title={PAGE_META.title}
+        description={PAGE_META.description}
+        canonical={PAGE_META.canonical}
+        keywords={PAGE_META.keywords}
+        schemaKind="calculator"
+        schemaName={PAGE_META.schemaName}
       />
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -83,26 +72,27 @@ export default function CalculatorPilon2Page() {
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 mt-4">
         <div className="text-center mb-8">
-          <h1 className="text-3xl font-bold mb-4">Calculator Pensie Pilon II</h1>
+          <h1 className="text-3xl font-bold mb-4">Calculator Pensie Pilon II (2026)</h1>
           <p className="text-xl text-gray-700">
-            Estimează valoarea contului tău de pensie privată obligatorie la vârsta de 65 de ani
+            Estimează soldul contului tău privat obligatoriu (cotă 4,75% din salariul brut) până la pensionare
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <Card className="md:col-span-1">
+          <Card className="md:col-span-1 h-fit">
             <CardHeader>
               <CardTitle className="text-lg">Setări Simulare</CardTitle>
-              <CardDescription>Introdu datele financiare</CardDescription>
+              <CardDescription>Introdu venitul și orizontul</CardDescription>
             </CardHeader>
             <CardContent className="space-y-4">
-              <div className="flex items-center text-sm text-green-700 bg-green-50 p-3 rounded-md mb-2 border border-green-200">
-                <CheckCircle className="w-5 h-5 mr-2 flex-shrink-0" />
-                <span className="font-semibold">Actualizat Iunie 2026</span>
+              <div className="flex items-center text-xs text-green-800 bg-green-50 p-2.5 rounded border border-green-200">
+                <CheckCircle className="w-4 h-4 mr-2 flex-shrink-0 text-green-700" />
+                <span className="font-semibold">Cotă oficială Pilon II: 4,75% (2026)</span>
               </div>
+
               <div className="space-y-2">
-                <Label htmlFor="salary">Salariul Tău Net Lunar (RON)</Label>
-                <Input 
+                <Label htmlFor="salary">Salariul Net Lunar (RON)</Label>
+                <Input
                   id="salary"
                   type="number"
                   value={netSalary}
@@ -112,7 +102,7 @@ export default function CalculatorPilon2Page() {
 
               <div className="space-y-2">
                 <Label htmlFor="age">Vârsta Actuală (ani)</Label>
-                <Input 
+                <Input
                   id="age"
                   type="number"
                   value={currentAge}
@@ -122,7 +112,7 @@ export default function CalculatorPilon2Page() {
 
               <div className="space-y-2">
                 <Label htmlFor="yield">Randament Anual Estimat (%)</Label>
-                <Input 
+                <Input
                   id="yield"
                   type="number"
                   step="0.1"
@@ -131,10 +121,9 @@ export default function CalculatorPilon2Page() {
                 />
               </div>
 
-              <Button 
-                onClick={handleCalculate} 
-                className="w-full bg-brand-green hover:bg-green-700"
-              >
+              {errorMsg && <p className="text-xs text-red-600">{errorMsg}</p>}
+
+              <Button type="button" onClick={handleCalculate} className="w-full bg-brand-green hover:bg-green-700">
                 Calculează Fondul
               </Button>
             </CardContent>
@@ -142,65 +131,82 @@ export default function CalculatorPilon2Page() {
 
           <div className="md:col-span-2 space-y-6">
             {result ? (
-              <Card className="bg-brand-green bg-opacity-5 border-brand-green border-opacity-10">
+              <Card className="bg-green-50 border-green-200">
                 <CardHeader>
-                  <CardTitle className="text-xl text-brand-green flex items-center gap-2">
+                  <CardTitle className="text-xl text-green-800 flex items-center gap-2">
                     <PiggyBank className="h-5 w-5" />
                     Proiecție Acumulare Pilon II
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-4">
-                  <div className="grid grid-cols-2 gap-4 border-b pb-4">
+                  <div className="grid grid-cols-2 gap-4 border-b border-green-200 pb-4">
                     <div>
-                      <span className="text-xs text-gray-500 block">Contribuție lunară estimată:</span>
-                      <strong className="text-lg text-slate-800">{result.monthlyContribution.toLocaleString()} RON/lună</strong>
-                      <span className="text-xxs text-gray-400 block">(4.75% din Salariul Brut)</span>
+                      <span className="text-xs text-gray-600 block">Contribuție lunară estimată:</span>
+                      <strong className="text-lg text-slate-900">
+                        {result.monthlyContribution.toLocaleString("ro-RO")} RON/lună
+                      </strong>
+                      <span className="text-xs text-gray-500 block">(4,75% din brut)</span>
                     </div>
                     <div>
-                      <span className="text-xs text-gray-500 block">Ani de capitalizare:</span>
-                      <strong className="text-lg text-slate-800">{result.yearsToRetirement} ani</strong>
+                      <span className="text-xs text-gray-600 block">Ani de capitalizare:</span>
+                      <strong className="text-lg text-slate-900">{result.yearsToRetirement} ani</strong>
                     </div>
                   </div>
-                  <div className="grid grid-cols-2 gap-4 border-b pb-4 text-sm">
+                  <div className="grid grid-cols-2 gap-4 border-b border-green-200 pb-4 text-sm">
                     <div>
-                      <span className="text-xs text-gray-500">Total depuneri:</span>
-                      <p className="font-semibold text-slate-800">{result.totalContributed.toLocaleString()} RON</p>
+                      <span className="text-xs text-gray-600">Total viramente din CAS:</span>
+                      <p className="font-semibold text-slate-900">
+                        {result.totalContributed.toLocaleString("ro-RO")} RON
+                      </p>
                     </div>
                     <div>
-                      <span className="text-xs text-gray-500">Dobândă compusă acumulată (Profit):</span>
-                      <p className="font-semibold text-brand-green">+{result.interestEarned.toLocaleString()} RON</p>
+                      <span className="text-xs text-gray-600">Câștig investițional (dobândă compusă):</span>
+                      <p className="font-semibold text-green-700">
+                        +{result.interestEarned.toLocaleString("ro-RO")} RON
+                      </p>
                     </div>
                   </div>
                   <div className="pt-2">
-                    <span className="text-gray-600 block text-xs uppercase font-bold tracking-wider">Sold cont estimat la 65 de ani:</span>
-                    <strong className="text-3xl text-brand-green block mt-1">
+                    <span className="text-gray-600 block text-xs uppercase font-bold tracking-wider">
+                      Sold estimat la 65 de ani:
+                    </span>
+                    <strong className="text-3xl text-green-800 block mt-1">
                       {result.finalBalance.toLocaleString("ro-RO")} RON
                     </strong>
-                    <span className="text-xs text-gray-500 block mt-1">*Proprietate privată garantată. Această sumă este scutită de impozit pe profit în perioada de acumulare.</span>
+                    <span className="text-xs text-gray-600 block mt-1">
+                      Sumă aflată în proprietatea privată a participantului, complet moștenibilă.
+                    </span>
                   </div>
                 </CardContent>
               </Card>
             ) : (
-              <Card className="h-full flex items-center justify-center p-8 text-center text-gray-500 border-dashed">
+              <Card className="flex items-center justify-center p-8 text-center text-gray-600 border-dashed">
                 <div>
                   <PiggyBank className="h-12 w-12 mx-auto mb-3 text-gray-400" />
-                  <p>Completează datele din stânga pentru a simula fondul tău din Pilonul II de pensii private.</p>
+                  <p>Completează datele din stânga pentru a simula acumularea în Pilonul II.</p>
                 </div>
               </Card>
             )}
 
-            {/* Informational guide */}
             <div className="bg-white rounded-lg p-6 shadow-sm prose prose-sm max-w-none">
-              <h3 className="font-bold text-slate-800">Ce este Pilonul II de pensii?</h3>
+              <h2>Cum funcționează Pilonul II de pensii private obligatorii?</h2>
               <p>
-                Pilonul II reprezintă <strong>sistemul de pensii administrate privat obligatorii</strong>. Cota de contribuție este de <strong>4.75% din salariul tău brut</strong>, fiind redirecționată automat din cota generală de CAS (25%) pe care angajatorul o plătește la stat. Asta înseamnă că nu plătești nimic în plus din buzunar, ci o parte din impozit se mută în contul tău personal de pensie.
+                Pilonul II redirecționează automat <strong>4,75% din venitul tău salarial brut</strong> (din cota totală de 25% CAS) într-un cont individual administrat privat. Participarea nu îți reduce salariul net și transformă o parte din contribuții într-un activ personal investit pe piețele financiare.
               </p>
-              <p>
-                Banii din Pilonul II sunt proprietate privată, sunt investiți pe piețele financiare de către administratorul fondului tău (în special în titluri de stat românești și acțiuni la bursă) și <strong>sunt complet moștenibili</strong> de către rudele legale în caz de deces.
-              </p>
-              <p>
-                De-a lungul celor peste 15 ani de existență în România, fondurile de pensii private Pilon II au înregistrat un randament mediu anual de peste <strong>6% - 7%</strong>, depășind considerabil rata medie a inflației și oferind un profit solid viitorilor pensionari.
-              </p>
+              <ul>
+                <li><strong>Proprietate privată garantată:</strong> banii îți aparțin exclusiv ție și sunt moștenibili legal în caz de deces înaintea pensionării.</li>
+                <li><strong>Protecție prin lege:</strong> fondurile sunt supravegheate de ASF (Autoritatea de Supraveghere Financiară) și investite preponderent în titluri de stat și acțiuni listate.</li>
+                <li><strong>Complementar Pilonului I:</strong> se încasează separat față de pensia de stat calculată prin CNPP.</li>
+              </ul>
+
+              <div className="not-prose mt-6 grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
+                <Link href="/calculator-pensie-pilon-3/" className="p-3 border rounded bg-slate-50 hover:bg-blue-50 text-blue-700 font-semibold">
+                  → Calculator Pensie Facultativă Pilon III
+                </Link>
+                <Link href="/blog/pilonul-2-modificari-legislative/" className="p-3 border rounded bg-slate-50 hover:bg-blue-50 text-blue-700 font-semibold">
+                  → Pilonul II: Reguli și Moștenire 2026
+                </Link>
+              </div>
             </div>
           </div>
         </div>
