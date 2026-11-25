@@ -1,4 +1,4 @@
-// Static articles data for Netlify SSR build
+// Static articles data for Vite + Netlify SSR build (upgraded with Proof KB, Unslop SEO & Upper-40% Internal Linking)
 
 export interface Author {
   name: string;
@@ -40,12 +40,12 @@ export const authors = {
 export const staticArticles: Article[] = [
   {
     id: 1,
-    title: "Top 5 Greșeli de Evitat în Planificarea Pensiei",
+    title: "Top 5 Greșeli de Evitat în Planificarea Pensiei (2026)",
     excerpt:
-      "Descoperă cele mai frecvente cinci greșeli pe care salariații și PFA-urile din România le fac înainte de pensionare și cum le poți corecta din timp.",
+      "Cele mai frecvente cinci greșeli făcute de salariați și PFA înainte de pensionare în 2026 și soluțiile concrete conform Legii 360/2023.",
     category: "planificare",
     publishDate: "2026-03-15",
-    modifiedDate: "2026-11-25",
+    modifiedDate: "2026-11-26",
     readTime: 8,
     slug: "top-5-greseli-planificare-pensie",
     published: true,
@@ -53,39 +53,52 @@ export const staticArticles: Article[] = [
     image:
       "https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=480",
     content: `
-<p>Planificarea retragerii din activitate este una dintre cele mai importante decizii financiare pe termen lung. O singură eroare administrativă sau amânarea deciziilor cu 5–10 ani poate reduce considerabil venitul lunar la bătrânețe. Mai jos analizăm cinci greșeli reale observate frecvent în România și soluțiile practice pentru fiecare. Poți testa scenariul tău imediat în <a href="/" class="text-blue-600 hover:underline font-semibold">calculatorul nostru de pensie 2026</a>.</p>
+<p>În 2026, cele mai mari pierderi la pensie provin din lipsa adeverințelor de vechime înainte de 2011, ratarea pragurilor de stabilitate de 25-35 ani (VPR 81 lei) și ignorarea reținerii CASS de 10% peste 3.000 lei. Poți testa impactul imediat cu <a href="/" class="text-blue-700 hover:underline font-semibold">calculatorul de pensie brută și netă 2026</a>.</p>
 
-<h3>1. Neverificarea stagiului de cotizare și a declarației 112 înainte de depunerea dosarului</h3>
-<p>Mulți asigurați presupun că toate lunile lucrate apar automat în evidența CNPP. În practică, firme radiată înainte de 2011, erori în REVISAL sau neplata CAS de către angajatori pot lăsa goluri în extrasul de vechime. Verificarea anuală a contului CNPP îți permite să soliciți adeverințe rectificative cât timp angajatorii sau arhivele sunt ușor de accesat.</p>
+<h2>De ce apar diferențe mari la dosarul de pensionare?</h2>
+<p>Diferențele apar deoarece Casa Națională de Pensii Publice (CNPP) calculează strict pe baza veniturilor declarate în Declarația 112 și a documentelor din arhivă, nu pe presupuneri. Un an lipsă sau neîncadrat la timp poate reduce atât punctajul contributiv, cât și bonificația de stabilitate din Legea nr. 360/2023.</p>
 
-<h3>2. Ignorarea pragului de 25 de ani și a punctelor de stabilitate</h3>
-<p>Sub Legea nr. 360/2023, anii contributivi lucrați peste pragul de 25 de ani generează puncte de stabilitate (+0,50 pct/an între 26–30 ani, +0,75 pct/an între 31–35 ani și +1,00 pct/an peste 35 de ani). Retragerea la 24 ani și 10 luni în locul împlinirii pragurilor superioare sau omiterea depunerii unor adeverințe vechi poate costa sute de lei lunar la pensie.</p>
+<aside class="not-prose my-6 rounded-xl border border-blue-200 bg-blue-50/70 p-5">
+  <p class="font-bold text-slate-900">Verifică-ți pensia netă înainte să depui dosarul</p>
+  <p class="mt-1 text-sm text-slate-700">Introdu vechimea actuală și salariul pentru a vedea pensia estimată cu VPR 81 lei și taxele din 2026.</p>
+  <a href="/calculator-puncte-pensie/" class="mt-3 inline-block font-semibold text-blue-700 underline">Calculează punctele contributive și de stabilitate -></a>
+</aside>
 
-<h3>3. Dependența exclusivă de Pilonul I (Pensia de Stat)</h3>
-<p>Sistemul public funcționează pe solidaritate între generații (PAYG), iar presiunile demografice și înghețarea temporară a VPR la 81 lei arată de ce rata de înlocuire a salariului prin Pilonul I este limitată. Combinarea Pilonului I cu Pilonul II (4,75% redirecționat din brut) și economisirea facultativă (Pilonul III sau investiții diversificate) protejează nivelul de trai.</p>
+<h2>1. Neverificarea stagiului din Declarația 112</h2>
+<p>Mulți asigurați presupun că toate lunile lucrate apar automat în evidența CNPP. În practică, firme radiate înainte de 2011, erori REVISAL sau neplata CAS pot lăsa goluri în extrasul de vechime. Verificarea anuală a contului CNPP îți permite să ceri adeverințe rectificative cât timp arhivele sunt ușor accesibile.</p>
 
-<h3>4. Ratarea deductibilității fiscale de 400 EUR/an la Pilonul III</h3>
-<p>Contribuțiile la pensia facultativă Pilon III sunt deductibile fiscal în limita a 400 EUR anual (aproximativ 166 lei/lună), separat atât pentru salariat, cât și pentru angajator. Nefolosirea acestui plafon înseamnă renunțarea la o economie directă de impozit pe venit.</p>
+<h2>2. Retragerea chiar înainte de pragul de stabilitate</h2>
+<p>Conform Art. 85 din Legea nr. 360/2023, anii contributivi lucrați peste pragul de 25 de ani primesc +0,50 puncte/an (anii 26-30), +0,75 puncte/an (anii 31-35) și +1,00 punct/an (peste 35 ani). Pensionarea cu 2-3 luni înainte de împlinirea unui an întreg peste 25 ani sau înaintea vârstei standard reduce definitiv venitul inițial. Verifică din timp cu <a href="/calculator-pensie-anticipata/" class="text-blue-700 hover:underline font-semibold">simulatorul penalizării la pensia anticipată</a>.</p>
 
-<h3>5. Subestimarea fiscalității pensiilor peste 3.000 Lei</h3>
-<p>Începând cu august 2025 și pe parcursul anului 2026 (Legea nr. 141/2025), pensiile care depășesc plafonul de 3.000 lei suportă CASS de 10% pentru partea excedentară, pe lângă impozitul pe venit de 10% aplicat peste pragul neimpozabil. Când îți proiectezi bugetul de pensionar, calculează întotdeauna <strong>pensia netă</strong>, nu doar suma brută.</p>
+<h2>3. Dependența exclusivă de Pilonul I</h2>
+<p>Sistemul public funcționează pe solidaritate între generații (PAYG), iar înghețarea VPR la 81 lei în 2026 arată că rata de înlocuire a salariului rămâne limitată. Pentru echilibru, monitorizează <a href="/calculator-pensie-pilon-2/" class="text-blue-700 hover:underline font-semibold">acumularea din Pilonul II obligatoriu (4,75%)</a> și completează cu un plan facultativ.</p>
 
-<h3>Checklist rapid de verificare anuală</h3>
+<h2>4. Ratarea deducerii de 400 EUR/an la Pilonul III</h2>
+<p>Contribuțiile la Pilonul III beneficiază de deductibilitate fiscală de până la 400 EUR anual separat pentru angajat și pentru angajator. Nefolosirea plafonului înseamnă pierderea economiei anuale de impozit pe venit (10%).</p>
+
+<h2>5. Calculul bugetului pe suma brută în locul pensiei nete</h2>
+<p>Conform Legii nr. 141/2025, pensiile ce depășesc 3.000 lei suportă în 2026 atât CASS de 10% pe suma peste 3.000 lei, cât și impozit pe venit de 10% aplicat după deducerea CASS și a plafonului neimpozabil. La o pensie brută de 5.000 lei, pensia netă reală este 4.620 lei.</p>
+
+<figure class="my-6">
+  <img src="/images/calcul-pensie-neta-brut-2026.svg" alt="Comparatie pensie bruta versus pensie neta in 2026 cu CASS 10% si impozit 10% peste pragul de 3.000 lei" width="1536" height="864" loading="lazy" decoding="async" class="w-full h-auto rounded-lg border border-slate-200" />
+</figure>
+
+<h2>Checklist rapid de pregătire</h2>
 <ul>
-  <li>Descarcă extrasul de stagiu din <a href="https://www.cnpp.ro" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline font-semibold">portalul oficial CNPP</a> cel puțin o dată pe an.</li>
-  <li>Păstrează în siguranță carnetul de muncă original și adeverințele de sporuri pentru perioadele anterioare anului 2001.</li>
-  <li>Simulează impactul ieșirii anticipate cu <a href="/calculator-pensie-anticipata/" class="text-blue-600 hover:underline font-semibold">calculatorul de pensie anticipată</a> înainte de a depune cererea.</li>
+  <li>Descarcă raportul lunar din portalul CNPP și compară-l cu <a href="/program-excel-calcul-pensie/" class="text-blue-700 hover:underline font-semibold">tabelul Excel CSV de evidență pe ani</a>.</li>
+  <li>Păstrează în siguranță carnetul de muncă original și adeverințele de sporuri permanente anterioare anului 2001.</li>
+  <li>Verifică exact luna și anul retragerii în <a href="/calculator-varsta-pensionare/" class="text-blue-700 hover:underline font-semibold">calendarul oficial al vârstei de pensionare</a>.</li>
 </ul>
 `,
   },
   {
     id: 2,
-    title: "Ghid Complet: Cum să Calculezi Pensia de Stat în 2026",
+    title: "Cum Calculezi Pensia de Stat în 2026 (Ghid Complet)",
     excerpt:
-      "Formula oficială CNPP din Legea nr. 360/2023 cu VPR 81 lei, punctele de stabilitate, salariul mediu brut bugetar 9.192 lei și impozitarea netă în 2026.",
+      "Formula oficială CNPP din Legea 360/2023 cu VPR 81 lei, puncte de stabilitate, salariul mediu brut 9.192 lei și calculul net după CASS.",
     category: "legislatie",
     publishDate: "2026-04-10",
-    modifiedDate: "2026-11-25",
+    modifiedDate: "2026-11-26",
     readTime: 10,
     slug: "ghid-calcul-pensie-stat-2026",
     published: true,
@@ -93,76 +106,66 @@ export const staticArticles: Article[] = [
     image:
       "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=480",
     content: `
-<p>Calculul pensiei de stat în România urmează formula unitară introdusă prin <strong>Legea nr. 360/2023</strong>. În anul 2026, <strong>Valoarea Punctului de Referință (VPR) este de 81 lei</strong> (menținută la nivelul din 2024–2025 prin OUG nr. 156/2024 și Legea nr. 141/2025), iar câștigul salarial mediu brut de fundamentare din bugetul asigurărilor sociale este de <strong>9.192 lei</strong>. Poți calcula estimarea ta gratuit în <a href="/" class="text-blue-600 hover:underline font-semibold">calculatorul principal de pensie</a>.</p>
+<p>În 2026, pensia brută de stat se calculează înmulțind numărul total de puncte acumulate cu <strong>Valoarea Punctului de Referință (VPR = 81 lei)</strong>, raportând fiecare salariu brut lunar la salariul mediu brut bugetar de <strong>9.192 lei</strong>. Simulează rezultatul imediat în <a href="/" class="text-blue-700 hover:underline font-semibold">calculatorul online de pensie 2026</a>.</p>
 
-<h3>Formula Oficială CNPP în 2026</h3>
-<div class="bg-slate-50 p-4 rounded-lg my-6 border border-slate-200">
-  <p class="font-bold text-slate-900">Pensia Brută = Număr Total de Puncte × VPR (81 Lei)</p>
-  <p class="text-sm text-slate-700 mt-1">Unde <strong>Număr Total de Puncte</strong> = Puncte Contributivitate + Puncte Stabilitate + Puncte Asimilate.</p>
-</div>
+<h2>Care este formula oficială CNPP în 2026?</h2>
+<p>Formula introdusă prin Legea nr. 360/2023 adună punctele de contributivitate, punctele de stabilitate (peste 25 ani lucrați) și punctele asimilate, apoi înmulțește totalul cu VPR de 81 lei menținut prin OUG nr. 156/2024 și Legea nr. 141/2025.</p>
 
-<h3>1. Punctele de Contributivitate</h3>
-<p>Pentru fiecare lună lucrată, salariul tău brut se împarte la salariul mediu brut oficial din luna respectivă (9.192 lei reper bugetar 2026). Dacă câștigi exact media pe economie, acumulezi 1,00 punct/lună (și 1,00 punct anual după împărțirea celor 12 luni la 12).</p>
+<aside class="not-prose my-6 rounded-xl border border-blue-200 bg-blue-50/70 p-5">
+  <p class="font-bold text-slate-900">Calculează punctajul total și venitul net în mână</p>
+  <p class="mt-1 text-sm text-slate-700">Verifică automat atât punctele de stabilitate de după 25 ani de muncă, cât și reținerile CASS și impozit 2026.</p>
+  <a href="/calculator-puncte-pensie/" class="mt-3 inline-block font-semibold text-blue-700 underline">Deschide calculatorul de puncte și stabilitate -></a>
+</aside>
 
-<h3>2. Punctele de Stabilitate (Legea 360/2023)</h3>
-<p>Se acordă exclusiv pentru anii contributivi ce depășesc 25 de ani de muncă:</p>
+<h2>Cum se formează cele 3 categorii de puncte?</h2>
+<p>Fiecare lună de activitate generează un punctaj egal cu raportul dintre venitul tău brut și câștigul salarial mediu brut pe economie din anul respectiv (9.192 lei în 2026 după Legea nr. 44/2026).</p>
 <ul>
-  <li><strong>+0,50 puncte/an</strong> pentru anii 26–30;</li>
-  <li><strong>+0,75 puncte/an</strong> pentru anii 31–35;</li>
-  <li><strong>+1,00 punct/an</strong> pentru fiecare an peste 35 de ani.</li>
+  <li><strong>Puncte de contributivitate:</strong> suma punctajelor anuale realizate prin contribuția CAS de 25% (un salariu egal cu media pe economie adună exact 1,00 punct/an).</li>
+  <li><strong>Puncte de stabilitate (Art. 85):</strong> +0,50 pct/an pentru anii 26-30, +0,75 pct/an pentru anii 31-35 și +1,00 pct/an pentru fiecare an contributiv peste 35 de ani.</li>
+  <li><strong>Perioade asimilate (0,25 pct/an):</strong> studiile universitare la zi finalizate, stagiul militar și perioadele legale necontributive.</li>
 </ul>
 
-<h3>3. Punctele pentru Perioade Asimilate</h3>
-<p>Facultatea absolvită la zi cu diplomă, stagiul militar obligatoriu și concediul pentru creșterea copilului (în condițiile legii) aduc câte <strong>0,25 puncte pe an</strong>.</p>
+<h2>Exemplu complet: 35 ani stagiu la salariu mediu pe economie</h2>
+<p>Un salariat cu 35 ani contributivi și 1,00 punct/an acumulează 35,00 puncte contributive plus 6,25 puncte de stabilitate (5 ani × 0,50 + 5 ani × 0,75). Totalul de 41,25 puncte × 81 lei = <strong>3.341 lei pensie brută</strong>.</p>
+<p>Pentru a trece de la brut la net în 2026: peste pragul de 3.000 lei rămân 341 lei, din care se rețin CASS 10% (34 lei) și impozit 10% din baza rămasă de 307 lei (31 lei), rezultând <strong>3.276 lei pensie netă</strong>. Dacă preferi evidența istorică an cu an, descarcă <a href="/program-excel-calcul-pensie/" class="text-blue-700 hover:underline font-semibold">șablonul Excel CSV pentru calculul pensiei</a>.</p>
 
-<h3>Exemple Concrete Calculate la VPR = 81 Lei</h3>
-<table>
-  <thead>
-    <tr>
-      <th>Scenariu</th>
-      <th>Puncte Contributive</th>
-      <th>Puncte Stabilitate</th>
-      <th>Total Puncte</th>
-      <th>Pensie Brută (× 81 Lei)</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>15 ani stagiu minim (punctaj 1,00/an)</td>
-      <td>15,00</td>
-      <td>0,00</td>
-      <td>15,00</td>
-      <td><strong>1.281 Lei</strong> (completat la pensia minimă de la 1.215 Lei)</td>
-    </tr>
-    <tr>
-      <td>35 ani stagiu complet (punctaj 1,00/an)</td>
-      <td>35,00</td>
-      <td>6,25</td>
-      <td>41,25</td>
-      <td><strong>3.341 Lei</strong></td>
-    </tr>
-    <tr>
-      <td>40 ani stagiu (punctaj 1,00/an)</td>
-      <td>40,00</td>
-      <td>11,25</td>
-      <td>51,25</td>
-      <td><strong>4.151 Lei</strong></td>
-    </tr>
-  </tbody>
-</table>
+<h2>Tabel comparativ Pensie Brută vs Netă în 2026</h2>
+<div class="overflow-x-auto my-4">
+  <table class="w-full text-sm border-collapse border border-slate-200">
+    <thead>
+      <tr class="bg-slate-100 text-left">
+        <th class="border p-2.5">Puncte Totale</th>
+        <th class="border p-2.5">Pensie Brută (× 81 Lei)</th>
+        <th class="border p-2.5">CASS (10% &gt; 3.000)</th>
+        <th class="border p-2.5">Impozit (10%)</th>
+        <th class="border p-2.5">Pensie Netă</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td class="border p-2.5">30,00 pct</td><td class="border p-2.5">2.430 Lei</td><td class="border p-2.5">0 Lei</td><td class="border p-2.5">0 Lei</td><td class="border p-2.5 font-bold">2.430 Lei</td></tr>
+      <tr class="bg-slate-50"><td class="border p-2.5">43,21 pct</td><td class="border p-2.5">3.500 Lei</td><td class="border p-2.5">50 Lei</td><td class="border p-2.5">45 Lei</td><td class="border p-2.5 font-bold">3.405 Lei</td></tr>
+      <tr><td class="border p-2.5">61,73 pct</td><td class="border p-2.5">5.000 Lei</td><td class="border p-2.5">200 Lei</td><td class="border p-2.5">180 Lei</td><td class="border p-2.5 font-bold">4.620 Lei</td></tr>
+      <tr class="bg-slate-50"><td class="border p-2.5">86,42 pct</td><td class="border p-2.5">7.000 Lei</td><td class="border p-2.5">400 Lei</td><td class="border p-2.5">360 Lei</td><td class="border p-2.5 font-bold">6.240 Lei</td></tr>
+    </tbody>
+  </table>
+</div>
 
-<h3>Impozitarea și CASS pentru Pensii în 2026</h3>
-<p>Pensiile de până la <strong>3.000 lei</strong> nu datorează nici impozit pe venit, nici contribuție la sănătate (CASS). Pentru pensiile ce depășesc 3.000 lei, conform Legii nr. 141/2025 se reține <strong>10% CASS</strong> exclusiv pentru partea de peste 3.000 lei și <strong>10% impozit pe venit</strong> pe diferența rămasă peste pragul neimpozabil de 3.000 lei. Textele legislative oficiale pot fi consultate pe <a href="https://www.cnpp.ro" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline font-semibold">CNPP.ro</a> și <a href="https://legislatie.just.ro" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline font-semibold">Just.ro</a>.</p>
+<figure class="my-6">
+  <img src="/images/calcul-pensie-neta-brut-2026.svg" alt="Graficul pensiei brute fata de pensia neta incasata in 2026 dupa deducerea CASS 10% si a impozitului 10% peste 3.000 lei" width="1536" height="864" loading="lazy" decoding="async" class="w-full h-auto rounded-lg border border-slate-200" />
+</figure>
+
+<h2>Nu uita de pensia privată Pilonul II</h2>
+<p>Pe lângă pensia publică CNPP, salariații născuți după 1973 contribuie automat cu 4,75% din venitul brut către fondurile private. Poți estima suma cumulată pe termen lung folosind <a href="/calculator-pensie-pilon-2/" class="text-blue-700 hover:underline font-semibold">estimatorul de acumulare Pilonul II</a>.</p>
 `,
   },
   {
     id: 3,
-    title: "Pilonul III: Avantaje Fiscale și Strategii de Investiție",
+    title: "Pilonul III 2026: Deductibilitate și Strategii",
     excerpt:
-      "Cum funcționează pensia privată facultativă Pilon III în 2026: plafonul deductibil de 400 EUR/an, condițiile de retragere la 60 de ani și simulări.",
+      "Cum funcționează pensia facultativă Pilon III în 2026: plafon deductibil 400 EUR/an, retragere de la 60 de ani și randament comparativ.",
     category: "tipuri-pensii",
     publishDate: "2026-02-28",
-    modifiedDate: "2026-11-25",
+    modifiedDate: "2026-11-26",
     readTime: 9,
     slug: "pilonul-3-avantaje-fiscale-strategii",
     published: true,
@@ -170,61 +173,40 @@ export const staticArticles: Article[] = [
     image:
       "https://images.unsplash.com/photo-1544377193-33dcf4d68fb5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=480",
     content: `
-<p>Pilonul III de pensii facultative este cel mai simplu instrument reglementat din România prin care poți construi un venit suplimentar pentru vârsta pensionării beneficiind simultan de deduceri fiscale din impozitul pe venit. Poți simula evoluția fondului tău direct în <a href="/calculator-pensie-pilon-3/" class="text-blue-600 hover:underline font-semibold">calculatorul Pilon III</a>.</p>
+<p>Pilonul III îți permite în 2026 să economisești cu deductibilitate fiscală de <strong>400 EUR/an (~166 lei/lună)</strong> atât pentru angajat, cât și separat pentru angajator, banii putând fi încasați de la vârsta de <strong>60 de ani</strong>. Simulează imediat creșterea în <a href="/calculator-pensie-pilon-3/" class="text-blue-700 hover:underline font-semibold">calculatorul de pensie facultativă Pilon III</a>.</p>
 
-<h3>Diferența dintre Pilonul II și Pilonul III</h3>
-<p>În timp ce Pilonul II (4,75% din salariul brut) este obligatoriu pentru angajații sub 35 de ani la momentul aderării și redirecționează taxe deja plătite la CAS, <strong>Pilonul III este voluntar</strong>: alegi suma lunară (în limita legală de 15% din venitul brut) și poți modifica, suspenda sau relua contribuțiile oricând.</p>
+<h2>Ce avantaje fiscale are Pilonul III față de economisirea clasică?</h2>
+<p>Avantajul principal este scutirea de impozit pe venit (10%) pentru contribuțiile până la 400 EUR anual (~2.000 lei/an), ceea ce reduce costul net real al economisirii pentru orice salariat cu venituri impozabile.</p>
 
-<h3>Avantajul Fiscal de 400 EUR / An (Dublu cu Angajatorul)</h3>
+<aside class="not-prose my-6 rounded-xl border border-green-200 bg-green-50/70 p-5">
+  <p class="font-bold text-slate-900">Vezi soldul Pilon III la 60 de ani și economia anuală de taxe</p>
+  <p class="mt-1 text-sm text-slate-700">Testează contribuția lunară optimă de 166 lei (deductibilitate 100%) sau scenarii cu contribuție de angajator.</p>
+  <a href="/calculator-pensie-pilon-3/" class="mt-3 inline-block font-semibold text-green-800 underline">Simulează acum acumularea Pilonul III -></a>
+</aside>
+
+<h2>Ce condiții legale trebuie să îndeplinești la retragere?</h2>
+<p>Potrivit legislației pensiilor facultative supravegheate de ASF, activul acumulat poate fi accesat la împlinirea vârstei de 60 de ani dacă ai cel puțin 90 de contribuții lunare plătite și un activ care atinge pragul minim stabilit în prospectul fondului.</p>
 <ul>
-  <li><strong>Deductibilitate personală:</strong> Contribuțiile proprii de până la 400 EUR/an (~166 lei/lună) se scad din baza de calcul a impozitului pe venit (10%), generând o economie fiscală de ~200 lei anual dacă angajatorul aplică deducerea prin statul de plată.</li>
-  <li><strong>Contribuție prin angajator:</strong> Separata de plafonul tău, angajatorul poate vira încă 400 EUR/an fără taxe salariale obișnuite.</li>
+  <li><strong>Limită legală de contribuție:</strong> până la 15% din venitul salarial brut lunar.</li>
+  <li><strong>Proprietate privată integrală:</strong> sumele investite sunt moștenibile fără excepție de către moștenitorii legali.</li>
+  <li><strong>Flexibilitate totală:</strong> contribuțiile pot fi suspendate sau modificate oricând printr-o simplă notificare către administrator.</li>
 </ul>
 
-<h3>Exemplu Comparativ de Acumulare (Până la 60 de Ani)</h3>
-<table>
-  <thead>
-    <tr>
-      <th>Contribuție Lunară</th>
-      <th>Durată</th>
-      <th>Total Depus</th>
-      <th>Sold Estimat (randament 5%/an)</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>166 Lei/lună (plafon deductibil)</td>
-      <td>20 ani</td>
-      <td>39.840 Lei</td>
-      <td><strong>~68.200 Lei</strong></td>
-    </tr>
-    <tr>
-      <td>166 Lei/lună</td>
-      <td>30 ani</td>
-      <td>59.760 Lei</td>
-      <td><strong>~138.150 Lei</strong></td>
-    </tr>
-    <tr>
-      <td>332 Lei/lună (angajat + angajator)</td>
-      <td>25 ani</td>
-      <td>99.600 Lei</td>
-      <td><strong>~197.700 Lei</strong></td>
-    </tr>
-  </tbody>
-</table>
+<h2>Exemplu de acumulare: 166 lei/lună vs 332 lei/lună</h2>
+<p>La o contribuție de 166 lei/lună timpi de 25 de ani cu un randament mediu net de 5%/an, depunerile totale de 49.800 lei ajung la aproximativ 98.850 lei la vârsta de 60 ani. Dacă și angajatorul adaugă încă 166 lei/lună în cadrul plafonului său deductibil de 400 EUR/an, soldul estimat se dublează spre 197.700 lei.</p>
 
-<h3>Condiții de Retragere și Moștenire</h3>
-<p>Fondurile acumulate în Pilonul III pot fi solicitate la împlinirea vârstei de <strong>60 de ani</strong> dacă ai efectuat cel puțin <strong>90 de contribuții lunare</strong>, fiind eligibile pentru plată unică sau eșalonată. În caz de invaliditate permanentă sau deces înainte de retragere, activul personal revine moștenitorilor legali.</p>
+<h2>Cum combini Pilonul I, II și III pentru pensionare optimă?</h2>
+<p>Pentru o imagine financiară completă, adună pensia publică din <a href="/" class="text-blue-700 hover:underline font-semibold">simulatorul principal Pilon I</a>, verifică contribuția obligatorie de 4,75% din <a href="/calculator-pensie-pilon-2/" class="text-blue-700 hover:underline font-semibold">proiecția fondului Pilon II</a> și folosește Pilonul III drept punte între 60 și 65 de ani fără a apela la o pensie anticipată penalizată.</p>
 `,
   },
   {
     id: 4,
-    title: "Pensia Anticipată 2026: Condiții, Penalizări și Excepții",
+    title: "Pensia Anticipată 2026: Condiții și Penalizări",
     excerpt:
-      "Cine se poate pensiona cu până la 5 ani mai devreme sub Legea 360/2023, ce grilă de penalizări (0,15%–0,40%) se aplică și când dispare reducerea.",
+      "Cine se poate pensiona cu până la 5 ani mai devreme sub Legea 360/2023, grila completă de penalizare 0,15%-0,40%/lună și excepțiile fără penalizare.",
     category: "legislatie",
     publishDate: "2026-10-15",
-    modifiedDate: "2026-11-25",
+    modifiedDate: "2026-11-26",
     readTime: 8,
     slug: "pensie-anticipata-conditii-penalizari",
     published: true,
@@ -232,46 +214,45 @@ export const staticArticles: Article[] = [
     image:
       "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=480",
     content: `
-<p>Sub Legea nr. 360/2023, fosta pensie anticipată și pensia anticipată parțială au fost unificate într-un singur tip de <strong>pensie anticipată</strong>, cu reduceri semnificativ mai blânde decât în legislația anterioară. Calculează imediat impactul financiar folosind <a href="/calculator-pensie-anticipata/" class="text-blue-600 hover:underline font-semibold">calculatorul de pensie anticipată</a>.</p>
+<p>Sub Legea nr. 360/2023, pensia anticipată permite retragerea cu <strong>cel mult 5 ani (60 luni)</strong> înaintea vârstei standard dacă ai îndeplinit integral stagiul complet contributiv (35 ani la bărbați), aplicând o penalizare între <strong>0,15% și 0,40% pe lună</strong>. Calculează diminuarea exactă cu <a href="/calculator-pensie-anticipata/" class="text-blue-700 hover:underline font-semibold">calculatorul de pensie anticipată 2026</a>.</p>
 
-<h3>Condiții Obligatorii de Eligibilitate în 2026</h3>
+<h2>Care sunt condițiile obligatorii de stagiu în 2026?</h2>
+<p>Legea 360/2023 a eliminat împărțirea în două pensii anticipate și cere îndeplinirea stagiului complet exclusiv din perioade contributive efectiv lucrate. Studiile universitare la zi și armata (perioade asimilate) nu intră la deschiderea dreptului de pensie anticipată, deși se valorifică ulterior la punctaj după împlinirea vârstei standard.</p>
+
+<aside class="not-prose my-6 rounded-xl border border-orange-200 bg-orange-50/70 p-5">
+  <p class="font-bold text-slate-900">Verifică vârsta standard și penalizarea totală</p>
+  <p class="mt-1 text-sm text-slate-700">Află câte luni mai ai până la limita legală și cât scade exact pensia brută cu penalizarea actuală.</p>
+  <a href="/calculator-pensie-anticipata/" class="mt-3 inline-block font-semibold text-orange-800 underline">Calculează penalizarea lunară și pensia anticipată -></a>
+</aside>
+
+<h2>Grila penalizărilor lunare sub Legea 360/2023</h2>
+<p>Penalizarea maximă de 0,40%/lună este semnificativ mai redusă decât vechiul prag de 0,75%/lună și scade cu cât ai mai mulți ani lucrați peste stagiul complet:</p>
 <ul>
-  <li><strong>Maximum 5 ani</strong> înaintea împlinirii vârstei standard de pensionare prevăzute de Anexa 5.</li>
-  <li><strong>Realizarea integrală a stagiului complet de cotizare contributiv</strong> (35 de ani pentru bărbați; pentru femei în creștere graduală conform Anexei 5).</li>
-  <li><strong>Perioadele asimilate NU se iau în calcul:</strong> studiile universitare, armata și perioadele necontributive nu ajută la îndeplinirea stagiului necesar pentru anticipată.</li>
+  <li><strong>Până la 1 an peste stagiu:</strong> 0,40% / lună (maxim -24% la 60 luni).</li>
+  <li><strong>Între 1 și 2 ani peste stagiu:</strong> 0,35% / lună (maxim -21%).</li>
+  <li><strong>Între 2 și 3 ani peste stagiu:</strong> 0,30% / lună (maxim -18%).</li>
+  <li><strong>Între 3 și 4 ani peste stagiu:</strong> 0,25% / lună (maxim -15%).</li>
+  <li><strong>Între 4 și 5 ani peste stagiu:</strong> 0,20% / lună (maxim -12%).</li>
+  <li><strong>Peste 5 ani (5-8 ani peste stagiu):</strong> 0,15% / lună, iar la depășirea cu 8 ani peste stagiu reducerea devine zero.</li>
 </ul>
 
-<h3>Grila de Penalizări pe Lună de Anticipare (Art. 58 Legea 360/2023)</h3>
-<table>
-  <thead>
-    <tr>
-      <th>Ani realizați peste stagiul complet</th>
-      <th>Diminuare / lună</th>
-      <th>Diminuare pentru 3 ani (36 luni)</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr><td>Până la 1 an</td><td>0,40%</td><td>14,4%</td></tr>
-    <tr><td>1 – 2 ani</td><td>0,35%</td><td>12,6%</td></tr>
-    <tr><td>2 – 3 ani</td><td>0,30%</td><td>10,8%</td></tr>
-    <tr><td>3 – 4 ani</td><td>0,25%</td><td>9,0%</td></tr>
-    <tr><td>4 – 5 ani</td><td>0,20%</td><td>7,2%</td></tr>
-    <tr><td>5 – 8 ani (peste 5 ani)</td><td>0,15%</td><td>5,4%</td></tr>
-  </tbody>
-</table>
+<figure class="my-6">
+  <img src="/images/penalizari-pensie-anticipata-2026.svg" alt="Grila oficiala a penalizarilor lunare la pensia anticipata din Romania in 2026 intre 0,15% si 0,40% pe luna" width="1536" height="864" loading="lazy" decoding="async" class="w-full h-auto rounded-lg border border-slate-200" />
+</figure>
 
-<h3>Când încetează penalizarea și ce interdicții există?</h3>
-<p>Pe durata pensiei anticipate este interzis cumulul cu venituri dintr-un contract individual de muncă. Vestea bună este că <strong>la împlinirea vârstei standard de pensionare</strong>, pensia anticipată se transformă automat în pensie pentru limită de vârstă și <strong>penalizarea se elimină definitiv</strong>.</p>
+<h2>Exemplu concret de calcul cu 24 luni anticipare</h2>
+<p>Un salariat cu pensia standard calculată la 4.000 lei brut care a realizat 36,5 ani contributivi (1,5 ani peste stagiul complet) se încadrează la 0,35%/lună. Pentru 24 luni de anticipare rezultă 24 × 0,35% = 8,40% diminuare, adică -336 lei lunar până la împlinirea vârstei standard de 65 ani, când pensia revine automat la cuantumul întreg nepenalizat.</p>
+<p>Verifică data exactă de referință în <a href="/calculator-varsta-pensionare/" class="text-blue-700 hover:underline font-semibold">calculatorul vârstei de pensionare Anexa 5</a> sau planifică tranziția cu o rezervă din <a href="/calculator-pensie-pilon-3/" class="text-blue-700 hover:underline font-semibold">economisirea facultativă Pilon III</a>.</p>
 `,
   },
   {
     id: 5,
-    title: "Condiții Speciale și Deosebite de Muncă: Impact asupra Pensiei",
+    title: "Condiții Speciale și Deosebite: Impact la Pensie",
     excerpt:
-      "Cum reduc grupele de muncă (condiții speciale și deosebite) vârsta standard de pensionare și ce sporuri de punctaj se acordă sub Legea 360/2023.",
+      "Cum reduc grupele de muncă (condiții speciale și deosebite) vârsta de pensionare și ce puncte suplimentare primești sub Legea 360/2023.",
     category: "legislatie",
     publishDate: "2026-09-20",
-    modifiedDate: "2026-11-25",
+    modifiedDate: "2026-11-26",
     readTime: 9,
     slug: "conditii-speciale-munca-impact-pensie",
     published: true,
@@ -279,48 +260,50 @@ export const staticArticles: Article[] = [
     image:
       "https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=480",
     content: `
-<p>Asigurații care au lucrat în medii industriale cu risc ridicat, substanțe toxice, temperaturi extreme, radiații, minerit sau transport feroviar/aeronautic beneficiază de încadrări în <strong>condiții deosebite</strong> și <strong>condiții speciale de muncă</strong>, cu efect direct asupra reducerii vârstei standard de pensionare și creșterii punctajului.</p>
+<p>Asigurații cu activitate în condiții deosebite sau speciale de muncă primesc atât <strong>reducerea vârstei standard de pensionare</strong> (cu până la 10-13 ani la stagiul complet), cât și puncte suplimentare de contributivitate de <strong>0,25 sau 0,50 puncte/an</strong>. Verifică imediat data ieșirii cu <a href="/calculator-varsta-pensionare/" class="text-blue-700 hover:underline font-semibold">calculatorul pentru vârsta de pensionare 2026</a>.</p>
 
-<h3>1. Condiții Deosebite vs. Condiții Speciale</h3>
-<ul>
-  <li><strong>Condiții deosebite de muncă (fosta Grupă II):</strong> acordă un stagiu suplimentar de <strong>4 luni</strong> pentru fiecare an lucrat integral și reducerea proporțională a vârstei standard (de regulă cu 4 luni pe an lucrat, în funcție de tranșa din lege) plus majorarea punctajelor aferente perioadei cu <strong>25%</strong> (respectiv prevederile specifice perioadelor de după aprilie 2001 / Legea 360).</li>
-  <li><strong>Condiții speciale de muncă (fosta Grupă I):</strong> vizează mineritul subteran, siderurgia grea, aviația civilă, unitățile nucleare, acordând <strong>6 luni</strong> spor la stagiu per an lucrat, reducere mai accentuată a vârstei standard și punctaj suplimentar de până la <strong>50%</strong>.</li>
-</ul>
+<h2>Ce beneficii acordă condițiile deosebite și speciale?</h2>
+<p>Pentru fiecare an lucrat în grupă de risc se acordă atât majorare de punctaj (pentru vechimea trecută și actuală), cât și scăderea vârstei legale fără nicio penalizare asupra cuantumului.</p>
 
-<h3>Documente Doveditoare pentru Dosarul CNPP</h3>
-<table>
+<aside class="not-prose my-6 rounded-xl border border-blue-200 bg-blue-50/70 p-5">
+  <p class="font-bold text-slate-900">Calculează impactul asupra punctajului și vârstei</p>
+  <p class="mt-1 text-sm text-slate-700">Estimarea completă combină reducerea vârstei standard cu punctajul suplimentar aferent condițiilor de muncă.</p>
+  <a href="/calculator-puncte-pensie/" class="mt-3 inline-block font-semibold text-blue-700 underline">Calculează punctele și pensia cu VPR 81 lei -></a>
+</aside>
+
+<h2>Diferența dintre condiții deosebite și condiții speciale</h2>
+<table class="w-full text-sm border-collapse my-4">
   <thead>
-    <tr>
-      <th>Perioadă Lucrată</th>
-      <th>Document Necesar la Dosar</th>
-      <th>Observație</th>
+    <tr class="bg-slate-100 text-left">
+      <th class="border p-2.5">Tip Încadrare</th>
+      <th class="border p-2.5">Contribuție Angajator CAS</th>
+      <th class="border p-2.5">Spor Punctaj Legal</th>
+      <th class="border p-2.5">Impact Vârstă (orientativ)</th>
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <td>Anterior 1 aprilie 2001</td>
-      <td>Carnet de muncă + Adeverință tip grupă I/II cu temei legal</td>
-      <td>Obligatorie menționarea ordinului/actului normativ de încadrare</td>
-    </tr>
-    <tr>
-      <td>După 1 aprilie 2001</td>
-      <td>Declarații nominale lunare (D112) raportate de angajator</td>
-      <td>Se verifică în extrasul din contul CNPP (coloana D / S)</td>
-    </tr>
+    <tr><td class="border p-2.5 font-semibold">Condiții Deosebite (fosta Gr. II)</td><td class="border p-2.5">+4% suplimentar</td><td class="border p-2.5">+0,25 pct / an lucrat</td><td class="border p-2.5">Reducere proporțională până la 7 ani</td></tr>
+    <tr class="bg-slate-50"><td class="border p-2.5 font-semibold">Condiții Speciale (fosta Gr. I)</td><td class="border p-2.5">+8% suplimentar</td><td class="border p-2.5">+0,50 pct / an lucrat</td><td class="border p-2.5">Reducere substanțială până la 10-13 ani</td></tr>
   </tbody>
 </table>
 
-<p>Înainte de a planifica ieșirea la pensie, verifică încadrarea grupei de muncă în contul <a href="https://www.cnpp.ro" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline font-semibold">CNPP.ro</a> și consultă <a href="/calculator-varsta-pensionare/" class="text-blue-600 hover:underline font-semibold">calculatorul vârstei de pensionare</a>.</p>
+<figure class="my-6">
+  <img src="/images/varsta-pensionare-femei-2026-2035.svg" alt="Grafic evolutie varsta standard de pensionare in Romania 2024-2035 conform Anexei 5 Legea 360/2023" width="1536" height="864" loading="lazy" decoding="async" class="w-full h-auto rounded-lg border border-slate-200" />
+</figure>
+
+<h2>Ce acte sunt necesare la dosarul CNPP?</h2>
+<p>Pentru perioadele anterioare datei de 1 aprilie 2001 sunt obligatorii adeverințele emise de angajatori sau de deținătorii de arhive cu temeiul juridic exact al încadrării în Grupa I ori Grupa II. Pentru perioadele după 2001, încadrarea rezultă direct din declarațiile lunare nominale (D112) ale angajatorului.</p>
+<p>Dacă ai lucrat atât în condiții speciale cât și normale, centralizează perioadele an cu an folosind <a href="/program-excel-calcul-pensie/" class="text-blue-700 hover:underline font-semibold">tabelul Excel CSV pentru evidența punctajului</a> sau rulează o simulare comparativă în <a href="/" class="text-blue-700 hover:underline font-semibold">calculatorul principal cu condiții speciale</a>.</p>
 `,
   },
   {
     id: 6,
-    title: "Stagiul de Cotizare: Cum să Îți Cumperi Vechime în Muncă (2026)",
+    title: "Cumpărare Vechime Pensie 2026: Cost și Pași CNPP",
     excerpt:
-      "Ghid practic conform Art. 6 Legea 360/2023: limita de 6 ani retroactiv, costul de 25% din salariul minim brut (1.012,50 Lei/lună la 4.050 Lei) și pașii la CNPP.",
+      "Ghid practic conform Art. 6 Legea 360/2023: limita de 6 ani retroactiv, costul de 1.012,50 Lei/lună la salariul minim 4.050 Lei și contractul la CNPP.",
     category: "planificare",
     publishDate: "2026-08-10",
-    modifiedDate: "2026-11-25",
+    modifiedDate: "2026-11-26",
     readTime: 9,
     slug: "stagiul-cotizare-cumparare-ani-munca",
     published: true,
@@ -328,53 +311,44 @@ export const staticArticles: Article[] = [
     image:
       "https://images.unsplash.com/photo-1506784983877-45594efa4cbe?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=480",
     content: `
-<p>Dacă îți lipsesc luni sau ani de vechime pentru a îndeplini <strong>stagiul minim contributiv de 15 ani</strong> ori pentru a completa stagiul pentru limită de vârstă, <strong>Legea nr. 360/2023 (Art. 6)</strong> îți permite să închei un contract de asigurare socială retroactivă cu Casa Teritorială de Pensii.</p>
+<p>În 2026 poți cumpăra retroactiv <strong>maximum 6 ani</strong> de vechime pentru pensia de limită de vârstă (Art. 6 Legea 360/2023), plătind <strong>25% din salariul minim brut (1.012,50 lei/lună la 4.050 lei)</strong>. Verifică mai întâi dacă pragul de 25 ani merită investiția în <a href="/calculator-puncte-pensie/" class="text-blue-700 hover:underline font-semibold">calculatorul de puncte și stabilitate 2026</a>.</p>
 
-<h3>Reguli Principale pentru Cumpărarea Vechimii în 2026</h3>
+<h2>Cine poate cumpăra vechime la pensie?</h2>
+<p>Contractul de asigurare socială retroactivă se poate încheia de orice persoană care nu are calitatea de pensionar, exclusiv pentru perioade anterioare în care nu a realizat stagiu de cotizare în sistemul public românesc ori într-un stat UE cu care România aplică regulamente de coordonare.</p>
+
+<aside class="not-prose my-6 rounded-xl border border-blue-200 bg-blue-50/70 p-5">
+  <p class="font-bold text-slate-900">Calculează dacă atingi stagiul minim sau punctele bonus</p>
+  <p class="mt-1 text-sm text-slate-700">Adaugă anii lipsă în simulatorul nostru pentru a vedea diferența exactă la pensia brută cu VPR = 81 lei.</p>
+  <a href="/calculator-puncte-pensie/" class="mt-3 inline-block font-semibold text-blue-700 underline">Testează punctajul cu ani cumpărați -></a>
+</aside>
+
+<h2>Cât costă 1 lună și 1 an de vechime în 2026?</h2>
+<p>Baza lunară de calcul nu poate fi mai mică decât salariul de bază minim brut pe țară garantat în plată (4.050 lei), la care se aplică cota de 25% CAS:</p>
 <ul>
-  <li><strong>Limită maximă de 6 ani:</strong> Poți acoperi perioade de maximum <strong>6 ani calendaristici</strong> (72 de luni) anterioare lunii semnării contractului, în care nu ai fost asigurat în sistemul public.</li>
-  <li><strong>Eligibilitate:</strong> Să nu ai calitatea de pensionar la data semnării contractului și să fi împlinit cel puțin 18 ani în perioadele vizate.</li>
-  <li><strong>Valabilitate:</strong> Vechimea cumpărată se ia în calcul exclusiv pentru pensia pentru <strong>limită de vârstă</strong> (nu pentru pensia anticipată!).</li>
+  <li><strong>1 lună cumpărată:</strong> 1.012,50 lei (generează 4.050 / 9.192 / 12 ≈ 0,0367 puncte/lună).</li>
+  <li><strong>1 an cumpărat (12 luni):</strong> 12.150 lei (adaugă ~0,44 puncte contributive = ~35,7 lei brut/lună, plus accesul la pensia minimă de 1.281 lei dacă îți lipsea stagiul minim de 15 ani).</li>
+  <li><strong>Plafon maxim (6 ani):</strong> 72.900 lei, achitabil integral sau în tranșe lunare până la data pensionării.</li>
 </ul>
 
-<h3>Costul Cumpărării Vechimii în 2026</h3>
-<p>Cota de contribuție socială (CAS) este de <strong>25%</strong> aplicată cel puțin asupra salariului de bază minim brut pe țară garantat în plată la data încheierii contractului.</p>
-<table>
-  <thead>
-    <tr>
-      <th>Bază de Calcul Minimă</th>
-      <th>Cotă CAS</th>
-      <th>Cost Lunar</th>
-      <th>Cost pentru 1 An (12 luni)</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Salariu minim brut 4.050 Lei</td>
-      <td>25%</td>
-      <td><strong>1.012,50 Lei/lună</strong></td>
-      <td><strong>12.150 Lei/an</strong></td>
-    </tr>
-  </tbody>
-</table>
+<h2>Atenție: capcana pensiei anticipate</h2>
+<p>Contractul de cumpărare retroactivă a vechimii este valorificat legal pentru îndeplinirea stagiului minim de 15 ani și pentru creșterea pensiei la limită de vârstă, însă nu este egal cu anii necesari pentru pensia anticipată decât în condițiile stricte ale legii. Verifică prima dată calendarul oficial cu <a href="/calculator-varsta-pensionare/" class="text-blue-700 hover:underline font-semibold">instrumentul pentru vârsta standard de pensionare</a>, iar pentru pensia estimată compară rezultatul în <a href="/" class="text-blue-700 hover:underline font-semibold">calculatorul principal de pensie</a>.</p>
 
-<h3>Cum Procedezi Concret la Casa de Pensii?</h3>
-<ol>
-  <li>Programează-te la Casa Teritorială de Pensii de domiciliu (sau printr-un mandatar cu procură specială din diaspora).</li>
-  <li>Prezintă actul de identitate și extrasul/verificarea perioadelor necotizate.</li>
-  <li>Semnează contractul de asigurare socială și alege plata integrală sau în tranșe lunare pe durata contractului (max. 1 an de la încheiere).</li>
-</ol>
-<p>Poți verifica ce punctaj îți lipsește înainte de achiziție folosind <a href="/calculator-puncte-pensie/" class="text-blue-600 hover:underline font-semibold">calculatorul de puncte de pensie</a>.</p>
+<figure class="my-6">
+  <img src="/images/puncte-stabilitate-legea-360-2026.svg" alt="Bonusurile in puncte de stabilitate si impactul in lei la VPR 81 Lei intre 25 si 45 ani de stagiu" width="1536" height="864" loading="lazy" decoding="async" class="w-full h-auto rounded-lg border border-slate-200" />
+</figure>
+
+<h2>Ce acte depui la Casa Teritorială de Pensii?</h2>
+<p>Te prezinți la Casa de Pensii de domiciliu doar cu actul de identitate în original și copie, completezi declarația pe proprie răspundere privind perioadele neasigurate și semnezi contractul cu scadența de plată stabilită.</p>
 `,
   },
   {
     id: 7,
-    title: "Pensia de Urmaș 2026: Drepturi, Procente și Documente",
+    title: "Pensia de Urmaș 2026: Drepturi, Procente și Acte",
     excerpt:
-      "Cine are dreptul la pensie de urmaș în România, ce cote (50%, 75%, 100%) se acordă copiilor și soțului supraviețuitor și cum se depune dosarul.",
+      "Cine are dreptul la pensie de urmaș în România în 2026, ce cote de 50%, 75% sau 100% primesc copiii și soțul supraviețuitor și actele necesare.",
     category: "tipuri-pensii",
     publishDate: "2026-01-15",
-    modifiedDate: "2026-11-25",
+    modifiedDate: "2026-11-26",
     readTime: 8,
     slug: "pensia-urmas-drepturi-proceduri",
     published: true,
@@ -382,40 +356,35 @@ export const staticArticles: Article[] = [
     image:
       "https://images.unsplash.com/photo-1502082553048-f009c37129b9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=480",
     content: `
-<p>Pensia de urmaș oferă protecție financiară membrilor familiei (copiilor și soțului supraviețuitor) după decesul unui pensionar sau al unui asigurat care îndeplinea condițiile de pensionare în sistemul public din România.</p>
+<p>Pensia de urmaș în 2026 se calculează ca procent din pensia susținătorului decedat: <strong>50% pentru 1 urmaș</strong>, <strong>75% pentru 2 urmași</strong> și <strong>100% pentru 3 sau mai mulți urmași</strong>, acordată copiilor și soțului supraviețuitor. Estimează cuantumul de bază cu <a href="/" class="text-blue-700 hover:underline font-semibold">calculatorul de pensie de stat 2026</a>.</p>
 
-<h3>Cine Are Dreptul la Pensia de Urmaș?</h3>
+<h2>Cine are dreptul legal la pensia de urmaș?</h2>
+<p>Dreptul există dacă persoana decedată era pensionar sau îndeplinea condițiile de pensionare în sistemul public, beneficiarii fiind copiii și, în condiții specifice de vârstă și durată a căsătoriei, soțul supraviețuitor.</p>
+
+<aside class="not-prose my-6 rounded-xl border border-blue-200 bg-blue-50/70 p-5">
+  <p class="font-bold text-slate-900">Verifică vârsta standard și comparația cu pensia proprie</p>
+  <p class="mt-1 text-sm text-slate-700">Soțul supraviețuitor trebuie să aleagă între pensia proprie și pensia de urmaș calculată ca procent.</p>
+  <a href="/calculator-varsta-pensionare/" class="mt-3 inline-block font-semibold text-blue-700 underline">Verifică vârsta legală de pensionare -></a>
+</aside>
+
+<h2>Condițiile pentru copii și pentru soțul supraviețuitor</h2>
 <ul>
-  <li><strong>Copiii:</strong> până la vârsta de <strong>16 ani</strong>, ori până la finalizarea studiilor liceale/universitare fără a depăși <strong>26 de ani</strong>, precum și pe toată durata invalidității de orice grad survenite în intervalul eligibil.</li>
-  <li><strong>Soțul supraviețuitor:</strong> la împlinirea vârstei standard de pensionare, dacă durata căsătoriei a fost de cel puțin <strong>15 ani</strong> (pro-rata dacă între 10 și 15 ani: scădere cu 0,5% pentru fiecare lună lipsă), sau temporar 6 luni în lipsa veniturilor peste pragul legal.</li>
+  <li><strong>Copiii:</strong> până la 16 ani necondiționat; până la 26 ani dacă își continuă studiile într-o formă de învățământ organizată potrivit legii; pe toată durata invalidității de orice grad survenite în aceste intervale.</li>
+  <li><strong>Soțul supraviețuitor (durată căsătorie):</strong> la împlinirea vârstei standard de pensionare, dacă căsătoria a durat cel puțin 15 ani (reducere proporțională între 10 și 15 ani, sau necondiționat dacă decesul s-a produs printr-un accident de muncă/boală profesională).</li>
 </ul>
 
-<h3>Cotele Legale de Stabilire din Pensia Susținătorului</h3>
-<table>
-  <thead>
-    <tr>
-      <th>Număr Urmași Îndreptățiți</th>
-      <th>Procent Acordat</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr><td>1 urmaș</td><td><strong>50%</strong> din pensia decedatului</td></tr>
-    <tr><td>2 urmași</td><td><strong>75%</strong> (împărțit egal)</td></tr>
-    <tr><td>3 sau mai mulți urmași</td><td><strong>100%</strong> (împărțit egal)</td></tr>
-  </tbody>
-</table>
-
-<p>Dacă suma rezultată pe dosar se situează sub nivelul indemnizației sociale, pensia de urmaș poate beneficia de completarea până la plafonul minim garantat de 1.281 lei (împărțit pe beneficiari). Consultă <a href="/tipuri-pensii/" class="text-blue-600 hover:underline font-semibold">ghidul tipurilor de pensii</a> pentru detalii conexe.</p>
+<h2>Ce se întâmplă cu Pilonul II și Pilonul III în caz de deces?</h2>
+<p>Spre deosebire de Pilonul I public (unde se aplică procentele de 50%, 75% sau 100%), întreaga sumă acumulată în conturile private ale defunctului din Pilonul II și Pilonul III revine 100% moștenitorilor legali sau testamentari sub formă de plată unică ori transfer în contul propriu. Poți estima acumularea folosind <a href="/calculator-pensie-pilon-2/" class="text-blue-700 hover:underline font-semibold">calculatorul fondului privat Pilonul II</a> sau vezi celelalte categorii în ghidul despre <a href="/tipuri-pensii/" class="text-blue-700 hover:underline font-semibold">tipurile de pensii CNPP</a>.</p>
 `,
   },
   {
     id: 8,
-    title: "Reforma Sistemului de Pensii în 2026: Bilanț și Noutăți",
+    title: "Reforma Pensiilor 2026: Legea 360 și Legea 141",
     excerpt:
-      "Analiză practică asupra aplicării Legii nr. 360/2023 și Legii nr. 141/2025 în 2026: menținerea VPR la 81 lei, punctele de stabilitate și impozitarea CASS.",
+      "Bilanțul reformei pensiilor în 2026: înghețarea VPR la 81 lei, punctele de stabilitate peste 25 ani, CASS 10% peste 3.000 lei și egalizarea Anexei 5.",
     category: "legislatie",
     publishDate: "2026-07-20",
-    modifiedDate: "2026-11-25",
+    modifiedDate: "2026-11-26",
     readTime: 9,
     slug: "reforma-sistem-pensii-2026",
     published: true,
@@ -423,27 +392,41 @@ export const staticArticles: Article[] = [
     image:
       "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=480",
     content: `
-<p>Reforma sistemului public de pensii demarată prin <strong>Legea nr. 360/2023</strong> a schimbat fundamental modul în care fiecare an de muncă este valorificat la pensionare, punând accent pe principiul contributivității și pe bonificarea vechimii îndelungate prin punctele de stabilitate.</p>
+<p>În 2026, sistemul public funcționează pe baza a trei piloni normativi activi: <strong>Legea nr. 360/2023</strong> (VPR și puncte de stabilitate), <strong>Legea nr. 141/2025</strong> (menținere VPR la 81 lei și CASS 10% peste 3.000 lei) și <strong>Legea nr. 44/2026</strong> (salariul mediu brut 9.192 lei). Testează imediat impactul în <a href="/" class="text-blue-700 hover:underline font-semibold">simulatorul pensiei adaptat la 2026</a>.</p>
 
-<h3>Cum Arată Sistemul de Pensii în 2026</h3>
-<ul>
-  <li><strong>Menținerea VPR la 81 Lei:</strong> Deși formula inițială a legii prevedea o indexare anuală în ianuarie, prin OUG nr. 156/2024 și <strong>Legea nr. 141/2025</strong>, Valoarea Punctului de Referință a fost menținută la <strong>81 Lei</strong> și pe parcursul anului 2026.</li>
-  <li><strong>Protecția pensiilor aflate deja în plată:</strong> Dacă în urma recalculării din 2024 a rezultat un cuantum mai mic decât suma în plată anterior, pensionarul a păstrat suma mai avantajoasă.</li>
-  <li><strong>Taxare CASS pentru pensiile mari:</strong> Începând cu 1 august 2025 și până la 31 decembrie 2027, pensiile ce depășesc <strong>3.000 lei</strong> sunt supuse CASS de 10% exclusiv pentru diferența ce trece de 3.000 lei.</li>
-  <li><strong>Tranziția treptată către 65 ani:</strong> Pentru femei, vârsta de pensionare continuă urcarea lunară din Anexa 5 spre ținta finală din 2035.</li>
-</ul>
+<h2>Ce s-a schimbat concret față de vechea legislație?</h2>
+<p>Recalcularea generală și noua formulă au eliminat indicele de corecție variabil și au introdus punctele bonus pentru stagiile de muncă lungi peste 25 de ani contributivi.</p>
 
-<p>Verifică efectul direct al reformei asupra dosarului tău folosind <a href="/" class="text-blue-600 hover:underline font-semibold">calculatorul de pensie 2026</a> și compară strategiile de ieșire în <a href="/legislatie/" class="text-blue-600 hover:underline font-semibold">secțiunea de legislație</a>.</p>
+<aside class="not-prose my-6 rounded-xl border border-blue-200 bg-blue-50/70 p-5">
+  <p class="font-bold text-slate-900">Vezi cum influențează punctele de stabilitate pensia ta</p>
+  <p class="mt-1 text-sm text-slate-700">Verifică separat punctele contributive vs punctele bonus obținute după 25, 30 și 35 ani de muncă.</p>
+  <a href="/calculator-puncte-pensie/" class="mt-3 inline-block font-semibold text-blue-700 underline">Calculează punctele de stabilitate pentru 2026 -></a>
+</aside>
+
+<h2>Cele 4 reguli esențiale valabile în 2026</h2>
+<ol>
+  <li><strong>VPR înghețat la 81 lei:</strong> OUG 156/2024 și Legea 141/2025 au amânat indexările programate inițial, păstrând VPR la 81 lei.</li>
+  <li><strong>Salariul mediu brut bugetar 9.192 lei:</strong> raportarea veniturilor lunare din 2026 se face la această referință (1.00 punct pe an pentru salariul mediu).</li>
+  <li><strong>CASS 10% + Impozit 10% peste 3.000 lei:</strong> pensiile până în 3.000 lei rămân integral netaxate, iar sumele excedentare plătesc CASS 10% și apoi impozit 10%.</li>
+  <li><strong>Pensia anticipată unificată:</strong> penalizare între 0,15% și 0,40% pe lună (detalii complete în <a href="/calculator-pensie-anticipata/" class="text-blue-700 hover:underline font-semibold">estimatorul de pensie anticipată</a>).</li>
+</ol>
+
+<figure class="my-6">
+  <img src="/images/calcul-pensie-neta-brut-2026.svg" alt="Impactul CASS 10% si al impozitului de 10% asupra pensiei nete in 2026 peste pragul de 3.000 lei" width="1536" height="864" loading="lazy" decoding="async" class="w-full h-auto rounded-lg border border-slate-200" />
+</figure>
+
+<h2>Ce ar trebui să urmărești pentru pensia privată?</h2>
+<p>În paralel cu modificările publice, contribuția la Pilonul II rămâne 4,75% din venitul brut. Poți proiecta separat randamentul privat în <a href="/calculator-pensie-pilon-2/" class="text-blue-700 hover:underline font-semibold">calculatorul dedicat Pilonului II</a> sau descărca <a href="/program-excel-calcul-pensie/" class="text-blue-700 hover:underline font-semibold">fișierul Excel pentru simulări pe ani</a>.</p>
 `,
   },
   {
     id: 9,
-    title: "Calculul Pensiei pentru PFA, Profesii Liberale și Freelanceri (2026)",
+    title: "Calcul Pensie PFA și Freelanceri 2026 (Plafoane)",
     excerpt:
-      "Cum se calculează vechimea și punctajul la pensie pentru PFA-uri în 2026: plafoanele CAS de 12 și 24 salarii minime brute și impactul asupra VPR.",
+      "Cum acumulează vechime și puncte de pensie PFA-urile, Întreprinderile Individuale și freelancerii pe baza plafoanelor CAS de 12 și 24 salarii minime.",
     category: "planificare",
     publishDate: "2026-06-15",
-    modifiedDate: "2026-11-25",
+    modifiedDate: "2026-11-26",
     readTime: 9,
     slug: "calculul-pensiei-freelanceri-pfa",
     published: true,
@@ -451,49 +434,49 @@ export const staticArticles: Article[] = [
     image:
       "https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=480",
     content: `
-<p>Persoanele fizice autorizate (PFA), titularul de Întreprindere Individuală, profesiile liberale și freelancerii cu venituri independente nu contribuie automat pe întregul venit net, ci în funcție de plafoanele anuale reglementate de Codul Fiscal. Acest mecanism are un efect major asupra viitoarei pensii de stat.</p>
+<p>Un PFA care achită în 2026 contribuția CAS minimă de 25% la plafonul de <strong>12 salarii minime brute (48.600 lei/an)</strong> acumulează anual doar <strong>0,44 puncte de pensie (~35,7 lei brut/lună de pensie per an lucrat)</strong>, mult sub un salariat cu venit echivalent. Calculează scenariul tău în <a href="/calculator-puncte-pensie/" class="text-blue-700 hover:underline font-semibold">calculatorul de punctaj CNPP și stabilitate</a>.</p>
 
-<h3>Plafoanele CAS (25%) pentru Venituri Independente</h3>
-<table>
+<h2>Cum afectează plafoanele de 12 și 24 salarii pensia unui PFA?</h2>
+<p>Spre deosebire de un salariat unde CAS se plătește la întregul venit brut, persoana fizică autorizată plătește 25% raportat strict la plafonul de 12 sau 24 salarii minime (4.050 lei × 12 = 48.600 lei, respectiv 24 = 97.200 lei).</p>
+
+<aside class="not-prose my-6 rounded-xl border border-blue-200 bg-blue-50/70 p-5">
+  <p class="font-bold text-slate-900">Verifică diferența între baza minimă și plafonul dublu</p>
+  <p class="mt-1 text-sm text-slate-700">Vezi exact câte puncte acumulezi în sistemul public și cum completezi decalajul prin Pilon III deductibil.</p>
+  <a href="/calculator-pensie-pilon-3/" class="mt-3 inline-block font-semibold text-blue-700 underline">Calculează alternativa Pilon III cu deducere fiscală -></a>
+</aside>
+
+<h2>Simulare comparativă PFA 2026 (35 ani stagiu)</h2>
+<table class="w-full text-sm border-collapse my-4">
   <thead>
-    <tr>
-      <th>Venit Net Anual Realizat</th>
-      <th>Bază Minimă de Calcul CAS</th>
-      <th>Punctaj Anual Estimat (la 4.050 Lei minim brut vs. 9.192 Lei mediu)</th>
+    <tr class="bg-slate-100 text-left">
+      <th class="border p-2.5">Opțiune CAS PFA (Salariu Minim 4.050 Lei)</th>
+      <th class="border p-2.5">CAS Plătit Anual (25%)</th>
+      <th class="border p-2.5">Punctaj / An (raportat la 9.192 × 12)</th>
+      <th class="border p-2.5">Pensie Brută după 35 Ani (+6,25 bonus)</th>
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <td>Sub 12 salarii minime brute</td>
-      <td>Opțional (poți opta pentru cel puțin 12 salarii minime)</td>
-      <td>0,00 puncte dacă nu optezi; ~0,44 pct/an dacă optezi</td>
-    </tr>
-    <tr>
-      <td>Între 12 și 24 salarii minime brute</td>
-      <td>Obligatoriu minimum <strong>12 salarii minime brute</strong></td>
-      <td>~<strong>0,44 puncte/an</strong> (cu bază minimă aleasă)</td>
-    </tr>
-    <tr>
-      <td>Peste 24 salarii minime brute</td>
-      <td>Obligatoriu minimum <strong>24 salarii minime brute</strong></td>
-      <td>~<strong>0,88 puncte/an</strong></td>
-    </tr>
+    <tr><td class="border p-2.5 font-semibold">Plafon 12 salarii (48.600 lei)</td><td class="border p-2.5">12.150 lei/an</td><td class="border p-2.5">0,4406 pct</td><td class="border p-2.5">21,67 pct × 81 = 1.755 lei</td></tr>
+    <tr class="bg-slate-50"><td class="border p-2.5 font-semibold">Plafon 24 salarii (97.200 lei)</td><td class="border p-2.5">24.300 lei/an</td><td class="border p-2.5">0,8812 pct</td><td class="border p-2.5 font-bold text-blue-800">37,09 pct × 81 = 3.004 lei</td></tr>
   </tbody>
 </table>
 
-<h3>De ce mulți freelanceri obțin pensii mici la stat?</h3>
-<p>Contribuția la plafonul minim de 12 salarii minime brute (25% × salariul minim brut) acoperă stagiul de cotizare legal pentru acei ani, însă generează sub jumătate de punct de pensie pe an. Pentru o pensie similară unui angajat cu venit mediu, freelancerii au două opțiuni: alegerea unei baze CAS mai ridicate în Declarația Unică sau suplimentarea prin <strong>Pilonul III</strong> și investiții financiare private.</p>
-<p>Poți verifica echivalentul în puncte folosind <a href="/calculator-puncte-pensie/" class="text-blue-600 hover:underline font-semibold">calculatorul punctelor de pensie</a>.</p>
+<figure class="my-6">
+  <img src="/images/puncte-stabilitate-legea-360-2026.svg" alt="Impactul punctelor de stabilitate peste 25 de ani asupra pensiei calculate pentru PFA si salariati" width="1536" height="864" loading="lazy" decoding="async" class="w-full h-auto rounded-lg border border-slate-200" />
+</figure>
+
+<h2>De ce trebuie un PFA să urmărească atent anii contributivi?</h2>
+<p>Fiecare lună cu Declarația Unică achitată integral contează ca stagiu contributiv (inclusiv la calculul punctelor de stabilitate peste 25 ani!), însă suma efectivă rezultată din Pilonul I este mică dacă rămâi toată cariera pe plafonul minim. Pentru urmărirea anuală a bazei alese folosește <a href="/program-excel-calcul-pensie/" class="text-blue-700 hover:underline font-semibold">tabelul Excel CSV pentru punctajul anual</a> sau testează rapid în <a href="/" class="text-blue-700 hover:underline font-semibold">calculatorul principal de pensie 2026</a>.</p>
 `,
   },
   {
     id: 10,
-    title: "Pensia Comunitară UE: Transferul și Totalizarea Vechimii din Străinătate",
+    title: "Pensia Comunitară UE: Totalizare Vechime 2026",
     excerpt:
-      "Ai lucrat în România și în alt stat UE (Italia, Spania, Germania, UK)? Află cum funcționează Regulamentul 883/2004, calculul pro-rata și depunerea dosarului.",
+      "Ai lucrat în România și în Italia, Spania, Germania sau UK? Află cum funcționează totalizarea stagiilor, calculul pro-rata și cererea prin CNPP.",
     category: "tipuri-pensii",
     publishDate: "2026-09-12",
-    modifiedDate: "2026-11-25",
+    modifiedDate: "2026-11-26",
     readTime: 10,
     slug: "transfer-drepturi-pensie-ue",
     published: true,
@@ -501,30 +484,36 @@ export const staticArticles: Article[] = [
     image:
       "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=480",
     content: `
-<p>Milioane de români au lucrat legal atât în România, cât și în state membre ale Uniunii Europene, SEE sau în țări cu acorduri bilaterale (precum Marea Britanie, Canada sau Israel). Contribuțiile plătite peste hotare <strong>nu se pierd</strong> și nu se „transferă” printr-un singur transfer bancar al fondului, ci se cumulează printr-un mecanism european clar: <strong>totalizarea perioadelor de asigurare</strong>.</p>
+<p>Sub Regulamentul European nr. 883/2004, perioadele lucrate legal în România și în alte state UE/SEE sau Marea Britanie se <strong>cumulează (totalizează)</strong> pentru îndeplinirea stagiului minim de 15 ani, iar fiecare țară plătește cota sa <strong>pro-rata</strong> direct pensionarului. Estimează partea românească cu <a href="/" class="text-blue-700 hover:underline font-semibold">calculatorul pensiei de stat din România</a>.</p>
 
-<h3>Cum Funcționează Totalizarea Stagiilor (Regulamentul CE 883/2004)?</h3>
+<h2>Se pierd anii lucrați dacă ai sub 15 ani într-o singură țară?</h2>
+<p>Nu. Dacă ai 9 ani în România și 11 ani în Italia (total 20 ani, peste pragul minim românesc de 15 ani), România îți recunoaște accesul la pensie prin totalizare, dar achită strict cuantumul aferent celor 9 ani cotizați în România.</p>
+
+<aside class="not-prose my-6 rounded-xl border border-blue-200 bg-blue-50/70 p-5">
+  <p class="font-bold text-slate-900">Verifică vârsta legală de pensionare din România</p>
+  <p class="mt-1 text-sm text-slate-700">Fiecare stat aplică propria vârstă legală de pensionare conform Anexei naționale înainte de plata cotei pro-rata.</p>
+  <a href="/calculator-varsta-pensionare/" class="mt-3 inline-block font-semibold text-blue-700 underline">Verifică data legală a pensionării în România -></a>
+</aside>
+
+<h2>Cum se calculează pensia pro-rata din România în 2026?</h2>
 <ol>
-  <li><strong>Îndeplinirea stagiului minim:</strong> Dacă ai 10 ani lucrați în România și 8 ani în Germania, România va recunoaște totalul de 18 ani exclusiv pentru a îndeplini pragul minim de 15 ani necesar accesului la pensie.</li>
-  <li><strong>Calculul pro-rata temporis:</strong> Fiecare țară îți plătește direct pensia corespunzătoare anilor contribuiți pe teritoriul său, la împlinirea vârstei legale din acel stat. Astfel vei primi două decizii și două plăți distincte.</li>
+  <li><strong>Calculul național:</strong> punctele realizate în România × VPR 81 lei.</li>
+  <li><strong>Calculul teoretic totalizat:</strong> pensia ipotetică dacă întreaga carieră (România + străinătate) s-ar fi desfășurat în România, înmulțită cu raportul (stagiu România / stagiu total cumulat).</li>
+  <li><strong>Acordarea sumei mai avantajoase:</strong> CNPP acordă automat valoarea mai mare dintre pensia națională pură și cea pro-rata.</li>
 </ol>
 
-<h3>Unde se Depune Dosarul de Pensie Comunitară?</h3>
-<ul>
-  <li><strong>Dacă locuiești în România:</strong> Depui cererea la Casa Teritorială de Pensii din județul de domiciliu, declarând toate perioadele lucrate în străinătate (formularele europene P1 / seria E200).</li>
-  <li><strong>Dacă locuiești în străinătate:</strong> Depui o singură cerere la instituția de pensii din statul de reședință (ex: INPS Italia, INSS Spania, DRV Germania), iar aceasta contactează oficial CNPP din România.</li>
-</ul>
-<p>Nu uita că indemnizația socială minimă din România (1.281 lei) se acordă doar beneficiarilor cu domiciliul stabil în România.</p>
+<h2>Cum și unde depui un singur dosar pentru toate țările?</h2>
+<p>Depui dosarul într-un singur loc: la instituția de pensii din statul în care ai domiciliul legal actual (Casa Teritorială de Pensii din România sau INPS Italia, Seguridad Social Spania, Deutsche Rentenversicherung Germania), completând formularele de legătură (E202 / SED P2000). Pentru a centraliza separat veniturile românești înainte de depunere, utilizează <a href="/program-excel-calcul-pensie/" class="text-blue-700 hover:underline font-semibold">fișierul Excel CSV pe ani de contribuție</a> și <a href="/calculator-puncte-pensie/" class="text-blue-700 hover:underline font-semibold">simulatorul de puncte CNPP</a>.</p>
 `,
   },
   {
     id: 11,
-    title: "Optimizarea Fiscală a Contribuțiilor pentru Pensie (2026)",
+    title: "Optimizare Fiscală Contribuții Pensie 2026",
     excerpt:
-      "Cum reduci legal taxele în timp ce construiești o pensie privată: deduceri Pilon III, avantaje angajator-salariat și diferențe de impozitare la retragere.",
+      "Cum reduci taxele în 2026 construind un venit suplimentar pentru pensie: deducere Pilon III (400 EUR angajat + angajator), Pilon II și reguli CASS.",
     category: "planificare",
     publishDate: "2026-05-18",
-    modifiedDate: "2026-11-25",
+    modifiedDate: "2026-11-26",
     readTime: 9,
     slug: "optimizare-fiscala-contributii-pensie",
     published: true,
@@ -532,26 +521,36 @@ export const staticArticles: Article[] = [
     image:
       "https://images.unsplash.com/photo-1450133064473-71024230f91b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=480",
     content: `
-<p>Construirea unei rezerve financiare pentru pensie nu ține doar de suma economisită, ci și de eficiența fiscală a fiecărui canal utilizat. În 2026, combinația optimă implică folosirea inteligentă a deducerilor salariale existente în Codul Fiscal.</p>
+<p>Optimizarea fiscală a pensiei în 2026 combină deducerea dublă de <strong>400 EUR/an salariat + 400 EUR/an angajator</strong> la Pilonul III, cota gratuită de <strong>4,75% din brut în Pilonul II</strong> și calculul pragului neimpozabil de 3.000 lei. Verifică economia anuală cu <a href="/calculator-pensie-pilon-3/" class="text-blue-700 hover:underline font-semibold">calculatorul de deducere fiscală Pilon III</a>.</p>
 
-<h3>3 Pârghii Fiscale Disponibile în România</h3>
-<ol>
-  <li><strong>Pilonul III prin reținere pe statul de plată:</strong> Până la <strong>400 EUR/an</strong> (~166 lei/lună) contribuiți de angajat sunt deduși din venitul impozabil (economisind 10% impozit pe venit imediat).</li>
-  <li><strong>Beneficiu extra-salarial de la angajator:</strong> Angajatorul poate contribui separat până la <strong>400 EUR/an</strong> către fondul tău Pilon III în cadrul plafonului de beneficii neimpozabile, sumă netaxată cu CAS și CASS.</li>
-  <li><strong>Strategia mixtă cu investiții pe termen lung:</strong> Sumele peste plafonul de 400 EUR/an merită comparate între comisioanele fondurilor de pensii și instrumente cu impozit pe câștigul de capital de 1%/3% prin brokeri autorizați în România.</li>
-</ol>
+<h2>Cum funcționează deducerea fiscală dublă la Pilonul III?</h2>
+<p>Codul Fiscal acordă o scutire anuală separată atât salariatului (400 EUR/an reținuți din brut fără impozit de 10%), cât și angajatorului (până la 400 EUR/an neconsiderat avantaj salarial în plafonul de beneficii extrasalariale).</p>
 
-<p>Testează randamentul net și economia de impozit direct în <a href="/calculator-pensie-pilon-3/" class="text-blue-600 hover:underline font-semibold">calculatorul Pilon III</a> sau citește planul complet în <a href="/planificare/" class="text-blue-600 hover:underline font-semibold">ghidul de planificare</a>.</p>
+<aside class="not-prose my-6 rounded-xl border border-green-200 bg-green-50/70 p-5">
+  <p class="font-bold text-slate-900">Compară Pilonul II și Pilonul III în 2026</p>
+  <p class="mt-1 text-sm text-slate-700">Vezi cum crește fondul privat fără cost net de contribuție vs economisirea facultativă deductibilă.</p>
+  <a href="/calculator-pensie-pilon-2/" class="mt-3 inline-block font-semibold text-green-800 underline">Estimează acum acumularile în Pilonul II -></a>
+</aside>
+
+<h2>3 pârghii fiscale legale pentru angajați și companii</h2>
+<ul>
+  <li><strong>Contributivitate Pilon III prin angajator:</strong> 166 lei/lună dedicați pensiei facultative îți aduc în cont mai mult net investit decât acordarea aceleiași sume sub formă de bonus salarial brut taxat cu ~42%.</li>
+  <li><strong>Verificarea reținerii 4,75% Pilon II:</strong> banii merg fără impozitare suplimentară din CAS-ul obligatoriu de 25% direct în contul personal privat.</li>
+  <li><strong>Monitorizarea plafonului de 3.000 lei la pensia publică:</strong> peste 3.000 lei brut în 2026, pensia publică achită 10% CASS și 10% impozit pe excedent (vezi detaliile nete în <a href="/" class="text-blue-700 hover:underline font-semibold">simulatorul principal net/brut 2026</a> și în <a href="/program-excel-calcul-pensie/" class="text-blue-700 hover:underline font-semibold">tabelul Excel calcul pensie CSV</a>).</li>
+</ul>
+
+<h2>Impact estimat pe un orizont de 20 de ani</h2>
+<p>Investind constant 400 EUR/an prin deducere de angajat și alți 400 EUR/an ca beneficiu de la angajator, economisești circa 400 lei anual în taxe și acumulezi o sumă estimată de ~136.000 lei la un randament compus de 5%/an, disponibilă la 60 ani fără a afecta pensia de stat din Pilonul I.</p>
 `,
   },
   {
     id: 12,
-    title: "Simulare Pensie Online vs. Extras Oficial CNPP: Ghid Practic",
+    title: "Simulare Pensie Online vs Extras Oficial CNPP",
     excerpt:
-      "Cum să combini simulatoarele online cu extrasul oficial de stagiu de la CNPP și șablonul Excel pentru o estimare cât mai apropiată de decizia finală.",
-    category: "tipuri-pensii",
-    publishDate: "2026-04-20",
-    modifiedDate: "2026-11-25",
+      "De ce diferă uneori simularea online rapidă față de decizia CNPP și cum poți reproduce exact punctajul lunar cu tabelul Excel și extrasul de stagiu.",
+    category: "planificare",
+    publishDate: "2026-06-05",
+    modifiedDate: "2026-11-26",
     readTime: 8,
     slug: "simulare-pensie-instrumente-metode",
     published: true,
@@ -559,25 +558,36 @@ export const staticArticles: Article[] = [
     image:
       "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=480",
     content: `
-<p>De ce o simulare rapidă de 30 de secunde poate diferi uneori față de decizia finală emisă de Casa Teritorială de Pensii? Pentru că în decizia oficială intră istoricul exact din fiecare lună a carierei tale (care nu a avut același raport față de salariul mediu din anii respectivi).</p>
+<p>O simulare rapidă online folosește salariul actual ca medie pe carieră, în timp ce decizia CNPP calculează exact raportul <strong>Salariu Brut Lunar / Salariu Mediu Brut (9.192 lei în 2026)</strong> pentru fiecare din cele 400+ luni lucrate. Pentru calcul exact lună de lună, folosește <a href="/program-excel-calcul-pensie/" class="text-blue-700 hover:underline font-semibold">simulatorul Excel CSV pe ani de vechime</a>.</p>
 
-<h3>Metoda în 3 Pași pentru cea mai Precisă Estimare</h3>
+<h2>De ce apar diferențe de 5-15% față de un calcul rapid?</h2>
+<p>Fluctuațiile salariale de-a lungul carierei, perioadele de șomaj, concediile de creștere a copilului, sporurile permanente înainte de 2001 și indexările salariului mediu brut național modifică punctajul anual real față de salariul din prezent.</p>
+
+<aside class="not-prose my-6 rounded-xl border border-blue-200 bg-blue-50/70 p-5">
+  <p class="font-bold text-slate-900">Descarcă tabelul CSV 2026 pentru calcul exact an cu an</p>
+  <p class="mt-1 text-sm text-slate-700">Pre-configurat cu salariul mediu brut bugetar 9.192 lei și VPR 81 lei, fără înregistrare sau email.</p>
+  <a href="/program-excel-calcul-pensie/" class="mt-3 inline-block font-semibold text-blue-700 underline">Descarcă gratuit Program Excel Calcul Pensie -></a>
+</aside>
+
+<h2>Cum obții estimarea cu precizie de 99% în 3 pași?</h2>
 <ol>
-  <li><strong>Pasul 1 — Descarcă stagiile oficiale:</strong> Intră în contul <a href="https://www.cnpp.ro" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline font-semibold">CNPP.ro</a> („Datele mele” → „Stagii de cotizare”) și citește punctajul total acumulat până în prezent.</li>
-  <li><strong>Pasul 2 — Proiectează anii rămași până la pensionare:</strong> Folosește <a href="/calculator-puncte-pensie/" class="text-blue-600 hover:underline font-semibold">calculatorul de puncte de pensie</a> sau <a href="/program-excel-calcul-pensie/" class="text-blue-600 hover:underline font-semibold">tabelul nostru Excel CSV</a> pentru a estima punctele viitoare + bonusul de stabilitate.</li>
-  <li><strong>Pasul 3 — Aplică VPR oficial și fiscalitatea netă:</strong> Înmulțește totalul cu <strong>81 Lei</strong> (VPR 2026) și verifică eventuala reținere de CASS 10% + impozit peste 3.000 lei.</li>
+  <li><strong>Pasul 1:</strong> Descarcă raportul "Stagii de cotizare lunare" din contul tău gratuit pe portalul oficial CNPP (vezi instrucțiunile din <a href="/blog/vizualizare-vechime-munca-cnpp/" class="text-blue-700 hover:underline font-semibold">ghidul contului CNPP online</a>).</li>
+  <li><strong>Pasul 2:</strong> Introdu punctajul total cumulat din adeverință plus anii de stabilitate în <a href="/calculator-puncte-pensie/" class="text-blue-700 hover:underline font-semibold">calculatorul de puncte de pensie 2026</a> (fiecare punct valorează 81 lei brut).</li>
+  <li><strong>Pasul 3:</strong> Aplică reținerile fiscale din 2026 folosind <a href="/" class="text-blue-700 hover:underline font-semibold">calculatorul principal cu estimare netă după CASS</a>.</li>
 </ol>
-<p>Pentru detalii pas cu pas despre crearea contului pe portalul Casei Naționale, consultă <a href="/blog/vizualizare-vechime-munca-cnpp/" class="text-blue-600 hover:underline font-semibold">ghidul vizualizare vechime CNPP</a>.</p>
+
+<h2>Când merită un simulator rapid online vs Excel CSV?</h2>
+<p>Folosește calculatorul online instant pentru scenarii viitoare (de exemplu: cum crește pensia dacă mai lucrezi până la 65 de ani sau dacă treci la un salariu mai mare) și tabelul Excel atunci când ai extrasul istoric CNPP în față și vrei verificare auditată a fiecărui an.</p>
 `,
   },
   {
     id: 13,
-    title: "Pensia Minimă Garantată în 2026: Condiții și Cuantum (1.281 Lei)",
+    title: "Pensia Minimă Garantată 2026: 1.281 Lei (Condiții)",
     excerpt:
-      "Află valoarea exactă a indemnizației sociale pentru pensionari în 2026 (1.281 lei), condițiile de rezidență și stagiu minim, impozitare și facilități sociale.",
+      "Valoarea exactă a indemnizației sociale pentru pensionari în 2026 (1.281 lei), cine se califică cu minim 15 ani de stagiu și de ce nu plătește taxe.",
     category: "tipuri-pensii",
     publishDate: "2026-04-20",
-    modifiedDate: "2026-11-25",
+    modifiedDate: "2026-11-26",
     readTime: 9,
     slug: "pensie-minima-garantata-2026",
     published: true,
@@ -585,56 +595,36 @@ export const staticArticles: Article[] = [
     image:
       "https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=480",
     content: `
-<p>Indemnizația socială pentru pensionari, cunoscută drept <strong>pensia minimă garantată</strong>, asigură un venit lunar minim pentru pensionarii din sistemul public ale căror contribuții calculate pe baza punctelor de pensie rezultă sub pragul stabilit prin lege.</p>
+<p>În anul 2026, pensia minimă garantată (indemnizația socială pentru pensionari) este de <strong>1.281 lei pe lună</strong> și se acordă persoanelor cu domiciliul în România care au îndeplinit stagiul minim de cotizare contributiv de <strong>15 ani</strong>. Verifică unde te situezi cu <a href="/" class="text-blue-700 hover:underline font-semibold">calculatorul online al pensiei de stat</a>.</p>
 
-<p>Sub <strong>Legea nr. 360/2023</strong> și bugetul asigurărilor sociale aplicabil în <strong>2026</strong>, plafonul pensiei minime garantate este menținut la <strong>1.281 Lei pe lună</strong>. Mai jos explicăm cine o primește, cum se calculează diferența de la buget și ce se întâmplă în cazul pensiilor de urmaș, CAP sau invaliditate.</p>
+<h2>Cum se calculează completarea statului până la 1.281 lei?</h2>
+<p>Dacă pensia rezultată strict din punctele de contributivitate × 81 lei este sub 1.281 lei (de exemplu 13,5 puncte × 81 lei = 1.094 lei), bugetul de stat acoperă lunar diferența de 187 lei astfel încât beneficiarul să încaseze 1.281 lei net.</p>
 
-<h3>Evoluția Pensiei Minime Garantate (2020–2026)</h3>
-<div class="overflow-x-auto my-6">
-  <table class="w-full text-sm text-left border border-slate-200">
-    <thead class="bg-slate-100">
-      <tr>
-        <th class="border p-2">Anul</th>
-        <th class="border p-2">Valoare Pensie Minimă (Lei)</th>
-        <th class="border p-2">Modificare (%)</th>
-        <th class="border p-2">Baza Legală</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr><td class="border p-2">2020–2021</td><td class="border p-2">800 Lei</td><td class="border p-2">+14% / 0%</td><td class="border p-2">OUG 135/2020</td></tr>
-      <tr><td class="border p-2">2022</td><td class="border p-2">1.000 Lei</td><td class="border p-2">+25,0%</td><td class="border p-2">OUG 125/2021</td></tr>
-      <tr><td class="border p-2">2023</td><td class="border p-2">1.125 Lei</td><td class="border p-2">+12,5%</td><td class="border p-2">OUG 168/2022</td></tr>
-      <tr><td class="border p-2">2024–2025</td><td class="border p-2">1.281 Lei</td><td class="border p-2">+13,8% / înghețat</td><td class="border p-2">OUG 115/2023 &amp; OUG 156/2024</td></tr>
-      <tr class="bg-blue-50"><td class="border p-2 font-bold">2026</td><td class="border p-2 font-bold">1.281 Lei</td><td class="border p-2">0,0% (Menținut)</td><td class="border p-2">Legea nr. 141/2025</td></tr>
-    </tbody>
-  </table>
-</div>
+<aside class="not-prose my-6 rounded-xl border border-blue-200 bg-blue-50/70 p-5">
+  <p class="font-bold text-slate-900">Verifică dacă ai îndeplinit stagiul minim de 15 ani</p>
+  <p class="mt-1 text-sm text-slate-700">Fără cel puțin 15 ani contributivi nu se deschide dreptul la pensie de limită de vârstă și la indemnizația minimă de 1.281 lei.</p>
+  <a href="/calculator-varsta-pensionare/" class="mt-3 inline-block font-semibold text-blue-700 underline">Verifică vârsta și stagiul necesar pensionării -></a>
+</aside>
 
-<h3>Cum Funcționează Compensarea Diferenței?</h3>
-<ol>
-  <li>Casa de Pensii calculează întâi pensia reală contributivă: <code>Punctaj Total × VPR (81 Lei în 2026)</code>.</li>
-  <li>Dacă suma rezultată este, de exemplu, 850 Lei, bugetul de stat adaugă automat o <strong>indemnizație socială de 431 Lei</strong>, rezultând suma în plată de <strong>1.281 Lei</strong>.</li>
-</ol>
-
-<h3>Condiții de Acordare</h3>
+<h2>Condiții cumulative și taxe aplicabile în 2026</h2>
 <ul>
-  <li>Calitatea de pensionar în sistemul public (limită de vârstă, invaliditate sau urmaș) cu stagiul minim de 15 ani îndeplinit pentru limita de vârstă.</li>
-  <li><strong>Domiciliul stabil în România</strong> (pensionarii stabiliți permanent în străinătate încasează exclusiv pensia calculată pe contributivitate).</li>
-  <li>Totalul pensiilor cumulate să fie sub 1.281 Lei.</li>
+  <li><strong>Stagiu minim contributiv:</strong> cel puțin 15 ani realizați (cu excepția pensiei de invaliditate unde pragul diferă sau dispare după Legea 360/2023). Dacă îți lipsesc luni, poți completa prin <a href="/blog/stagiul-cotizare-cumparare-ani-munca/" class="text-blue-700 hover:underline font-semibold">cumpărarea vechimii la CNPP</a>.</li>
+  <li><strong>Domiciliu stabil în România:</strong> la stabilirea dreptului se iau în calcul cumulul veniturilor din pensii publice și militare.</li>
+  <li><strong>Zero taxe și CASS:</strong> fiind mult sub pragul de 3.000 lei, pensia minimă de 1.281 lei este scutită 100% de impozit pe venit și de contribuția la sănătate (CASS).</li>
 </ul>
 
-<h3>Fiscalitate și Facilități</h3>
-<p>Pensia minimă de 1.281 Lei este sub pragul neimpozabil de 3.000 Lei, astfel încât <strong>nu se reține nici impozit, nici CASS</strong>. Pensionarii încadrați la acest nivel beneficiază și de compensarea de 90% pentru medicamentele din sublista B și de călătorii reduse pe calea ferată conform legislației sociale.</p>
+<h2>De ce contează diferența între pensia minimă și punctele reale?</h2>
+<p>La creșterile viitoare ale VPR sau la acordarea de ajutoare, eventuala majorare se aplică mai întâi pensiei reale rezultate din puncte, și abia dacă aceasta depășește pragul social crește suma încasată efectiv. Calculează numărul exact de puncte în <a href="/calculator-puncte-pensie/" class="text-blue-700 hover:underline font-semibold">calculatorul pentru punctajul tău real CNPP</a>.</p>
 `,
   },
   {
     id: 14,
-    title: "Valoarea Punctului de Referință (VPR) în 2026: Cum Se Calculează",
+    title: "Valoarea Punctului de Referință (VPR) 2026: 81 Lei",
     excerpt:
-      "De ce VPR este stabilit la 81 lei în 2026 conform Legii 360/2023 și Legii 141/2025, cum s-a calculat la reforma din 2024 și cum afectează pensia lunară.",
+      "Cum a rezultat VPR de 81 lei sub Legea 360/2023, de ce a rămas înghețat în 2026 prin Legea 141/2025 și ce înseamnă pentru calculul pensiei tale.",
     category: "legislatie",
     publishDate: "2026-05-02",
-    modifiedDate: "2026-11-25",
+    modifiedDate: "2026-11-26",
     readTime: 8,
     slug: "calcul-punct-referinta-vpr",
     published: true,
@@ -642,30 +632,36 @@ export const staticArticles: Article[] = [
     image:
       "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=480",
     content: `
-<p>Reforma pensiilor reglementată prin Legea nr. 360/2023 a introdus un indicator unic și transparent în locul punctului clasic de pensie: <strong>Valoarea Punctului de Referință (VPR)</strong>. În anul 2026, <strong>VPR este de 81 Lei</strong>.</p>
+<p>În anul 2026, <strong>Valoarea Punctului de Referință (VPR) este stabilită prin lege la 81 lei</strong> (2.032 lei punctul clasic / 25 stagiul standard), fiind menținută la același nivel prin OUG nr. 156/2024 și Legea nr. 141/2025. Calculează imediat impactul în <a href="/calculator-puncte-pensie/" class="text-blue-700 hover:underline font-semibold">calculatorul de puncte și VPR 81 lei</a>.</p>
 
-<h3>Cum a Rezultat Valoarea Inițială de 81 Lei?</h3>
-<div class="bg-slate-50 p-4 rounded-lg my-6 border border-slate-200">
-  <p class="font-bold text-slate-900">Formula Legală din septembrie 2024:</p>
-  <p class="font-mono text-lg text-blue-700 font-bold">VPR = Valoarea Punctului de Pensie (2.032 Lei) / 25 = 81,28 → 81 Lei</p>
-  <p class="text-xs text-slate-600 mt-2">De ce împărțit la 25? Noul sistem înmulțește suma totală a punctelor (în loc de punctajul mediu anual raportat la stagii diferite), iar stagiul de referință utilizat pentru tranziția matematică a fost de 25 de ani.</p>
-</div>
+<h2>Cum a rezultat valoarea exactă de 81 lei?</h2>
+<p>Legea nr. 360/2023 a împărțit valoarea anterioară a punctului de pensie (2.032 lei) la numărul de ani ai stagiului complet de cotizare folosit ca referință matematică (25 ani): <code>2.032 / 25 = 81,28 lei</code>, rotunjit prin lege la 81 lei.</p>
 
-<h3>De ce VPR a rămas 81 Lei în 2025 și 2026 (și nu 91 Lei)?</h3>
-<p>Conform mecanismului de indexare din Legea 360/2023, VPR ar fi trebuit majorat anual în ianuarie cu inflația plus 50% din creșterea reală a salariului mediu brut (proiecțiile inițiale vehiculând o trecere spre ~91 lei). Totuși, prin măsurile fiscal-bugetare adoptate succesiv (OUG nr. 156/2024 și Legea nr. 141/2025), aplicarea indexării a fost suspendată, astfel că <strong>valoarea oficială în plată a VPR rămâne 81 Lei în 2026</strong>.</p>
+<aside class="not-prose my-6 rounded-xl border border-blue-200 bg-blue-50/70 p-5">
+  <p class="font-bold text-slate-900">Află cât valorează punctele tale acumulate în 2026</p>
+  <p class="mt-1 text-sm text-slate-700">Înmulțim automat punctele de contributivitate și punctele de stabilitate cu VPR oficial de 81 lei și deducem taxele nete.</p>
+  <a href="/" class="mt-3 inline-block font-semibold text-blue-700 underline">Calculează pensia brută și netă la VPR 81 lei -></a>
+</aside>
 
-<h3>Impact Concret asupra Pensiei</h3>
-<p>Pentru fiecare punct suplimentar acumulat (din contributivitate sau stabilitate), pensia brută lunară crește cu exact <strong>81 Lei</strong>. De exemplu, un bonus de stabilitate de 6,25 puncte (aferent unui stagiu de 35 de ani) înseamnă <code>6,25 × 81 = 506 Lei</code> brut/lună în plus la pensie. Testează propriul punctaj în <a href="/calculator-puncte-pensie/" class="text-blue-600 hover:underline font-semibold">calculatorul de puncte</a>.</p>
+<h2>De ce s-a suspendat creșterea VPR către 91 lei în 2025-2026?</h2>
+<p>Deși textul inițial al Legii 360/2023 prevedea o formulă anuală de indexare la inflație plus 50% din creșterea reală a salariului mediu brut, ordonanțele fiscale și Legea nr. 141/2025 au suspendat aplicarea indexării în 2025 și 2026 pentru echilibrarea bugetului asigurărilor sociale. Prin urmare, toate deciziile de pensionare emise în 2026 folosesc exclusiv VPR = 81 lei.</p>
+
+<figure class="my-6">
+  <img src="/images/puncte-stabilitate-legea-360-2026.svg" alt="Valoarea in lei a punctelor de stabilitate la VPR oficial de 81 lei in 2026 pentru stagii de la 25 la 45 ani" width="1536" height="864" loading="lazy" decoding="async" class="w-full h-auto rounded-lg border border-slate-200" />
+</figure>
+
+<h2>Ce valoare are fiecare an lucrat la VPR = 81 lei?</h2>
+<p>La salariul mediu brut bugetar de 9.192 lei din 2026, un an de muncă aduce 1,00 punct contributiv = <strong>81 lei/lună adăugați la pensia brută viitoare</strong>. Dacă ai depășit 35 ani contributivi, fiecare an suplimentar aduce 1,00 punct contributiv + 1,00 punct stabilitate = <strong>2,00 puncte totale (162 lei brut/lună)</strong> pentru un singur an de muncă! Urmărește evoluția anuală în <a href="/program-excel-calcul-pensie/" class="text-blue-700 hover:underline font-semibold">șablonul tabelar Excel CSV pentru calculul pensiei</a>.</p>
 `,
   },
   {
     id: 15,
-    title: "Ghid Complet pentru Pensia de Invaliditate în 2026",
+    title: "Pensia de Invaliditate 2026: Grade, Acte și Cumul",
     excerpt:
-      "Gradele I, II și III de invaliditate sub Legea 360/2023, dreptul de cumul cu munca și indemnizația pentru însoțitor (50% din salariul minim brut).",
+      "Gradele I, II și III de invaliditate sub Legea 360/2023, dreptul de cumul cu munca și indemnizația de însoțitor de 50% din salariul minim brut.",
     category: "tipuri-pensii",
     publishDate: "2026-03-10",
-    modifiedDate: "2026-11-25",
+    modifiedDate: "2026-11-26",
     readTime: 9,
     slug: "ghid-pensie-invaliditate-2026",
     published: true,
@@ -673,30 +669,34 @@ export const staticArticles: Article[] = [
     image:
       "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=480",
     content: `
-<p>Pensia de invaliditate se acordă persoanelor care și-au pierdut total sau cel puțin jumătate din capacitatea de muncă din cauza accidentelor de muncă, bolilor profesionale sau bolilor obișnuite. Sub <strong>Legea nr. 360/2023</strong>, definițiile capacității de muncă au fost flexibilizate pentru a permite integrarea profesională acolo unde starea medicală o permite.</p>
+<p>Sub Legea nr. 360/2023, pensia de invaliditate se acordă persoanelor cu capacitatea de muncă pierdută total sau cu cel puțin 50% în gradele <strong>I, II sau III</strong>, beneficiind de stagiu potențial și de drept extins de <strong>cumul cu activitatea profesională</strong>. Simulează cuantumul punctelor acumulate în <a href="/calculator-puncte-pensie/" class="text-blue-700 hover:underline font-semibold">calculatorul de puncte de pensie CNPP</a>.</p>
 
-<h3>Cele Trei Grade de Invaliditate</h3>
+<h2>Care sunt cele 3 grade de invaliditate în 2026?</h2>
+<p>Expertiza medicală a capacității de muncă din cadrul CNPP stabilește gradul în funcție de autonomia personală și compatibilitatea cu piața muncii:</p>
 <ul>
-  <li><strong>Gradul I:</strong> Deficiență funcțională gravă — persoana și-a pierdut capacitatea de muncă și capacitatea de autoîngrijire, necesitând supraveghere permanentă.</li>
-  <li><strong>Gradul II:</strong> Deficiență funcțională accentuată — capacitate de muncă diminuată sever, dar cu capacitatea de autoîngrijire păstrată.</li>
-  <li><strong>Gradul III:</strong> Deficiență funcțională medie — pierderea a cel puțin jumătate din capacitatea de muncă; permite desfășurarea de activități profesionale.</li>
+  <li><strong>Gradul I:</strong> deficiență funcțională gravă, capacitate de autoservire pierdută; primește suplimentar indemnizație pentru însoțitor egală cu <strong>50% din salariul minim brut pe economie (2.025 lei/lună în 2026 la minimul de 4.050 lei)</strong>.</li>
+  <li><strong>Gradul II:</strong> deficiență funcțională accentuată, cu capacitate de autoservire păstrată.</li>
+  <li><strong>Gradul III:</strong> deficiență funcțională medie, permițând desfășurarea activității profesionale în condiții adaptate.</li>
 </ul>
 
-<h3>Indemnizația de Însoțitor pentru Gradul I (Legea 360/2023)</h3>
-<p>Spre deosebire de legea veche (care raporta indemnizația la 80% din punctul de pensie), <strong>Legea nr. 360/2023</strong> stabilește cuantumul indemnizației pentru însoțitor acordate pensionarilor de invaliditate Gradul I prin CNPP la <strong>50% din salariul de bază minim brut pe țară garantat în plată</strong> (echivalentul a 2.025 lei la salariul minim brut de 4.050 lei).</p>
+<aside class="not-prose my-6 rounded-xl border border-blue-200 bg-blue-50/70 p-5">
+  <p class="font-bold text-slate-900">Verifică stagiul realizat și tranziția la limita de vârstă</p>
+  <p class="mt-1 text-sm text-slate-700">La împlinirea vârstei standard, pensia de invaliditate devine din oficiu pensie pentru limită de vârstă dacă este mai avantajoasă.</p>
+  <a href="/calculator-varsta-pensionare/" class="mt-3 inline-block font-semibold text-blue-700 underline">Verifică vârsta standard de trecere la pensie -></a>
+</aside>
 
-<h3>Stagiul Potențial și Trecerea la Limită de Vârstă</h3>
-<p>La calculul pensiei de invaliditate se adaugă un stagiu potențial pentru anii ce ar mai fi rămas până la vârsta standard de pensionare. La împlinirea vârstei standard, beneficiarul trece din oficiu la pensia pentru limită de vârstă (păstrând cuantumul cel mai avantajos și dreptul la indemnizația de însoțitor acolo unde este aplicabil). Detalii oficiale sunt disponibile pe <a href="https://www.cnpp.ro" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline font-semibold">CNPP.ro</a>.</p>
+<h2>Noutate cheie sub Legea 360/2023: stagiul minim și cumulul</h2>
+<p>Noua lege elimină cerința anterioară de stagiu minim legat strict de vârstă pentru acces și permite cumularea pensiei de invaliditate cu venituri din salarii sau activități independente pentru toate gradele (în condițiile prevăzute pentru capacitatea păstrată și fără anularea încadrării medicale fără evaluare). Pentru comparația tuturor categoriilor, consultă ghidul de <a href="/tipuri-pensii/" class="text-blue-700 hover:underline font-semibold">tipuri de pensii în România</a> sau estimează pensia standard cu <a href="/" class="text-blue-700 hover:underline font-semibold">simulatorul principal online 2026</a>.</p>
 `,
   },
   {
     id: 16,
-    title: "Cum și Când Se Indexează Pensiile în România (2025–2026)",
+    title: "Indexarea Pensiilor 2025-2026: Reguli și Înghețare",
     excerpt:
-      "Formula legală de indexare anuală a VPR (inflație + 50% creștere reală salariu mediu brut) și de ce indexarea a fost înghețată la 81 lei în 2025–2026.",
+      "Cum funcționează formula legală de indexare anuală a VPR (inflație + 50% creștere reală salariu mediu) și impactul înghețării la 81 lei în 2026.",
     category: "legislatie",
     publishDate: "2026-02-10",
-    modifiedDate: "2026-11-25",
+    modifiedDate: "2026-11-26",
     readTime: 9,
     slug: "indexare-pensii-2026-2026",
     published: true,
@@ -704,53 +704,33 @@ export const staticArticles: Article[] = [
     image:
       "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=480",
     content: `
-<p>Mecanismul de indexare a pensiilor publice are rolul de a proteja puterea de cumpărare a pensionarilor față de inflație. Însă între formula teoretică prevăzută de <strong>Legea nr. 360/2023</strong> și aplicarea bugetară din <strong>2025–2026</strong> există diferențe esențiale pe care orice asigurat trebuie să le cunoască.</p>
+<p>Mecanismul teoretic din Legea nr. 360/2023 indexează VPR anual în ianuarie cu inflația medie anuală plus 50% din creșterea reală a salariului mediu brut, însă pentru <strong>2025 și 2026 indexarea a fost înghețată prin OUG 156/2024 și Legea 141/2025 la 81 lei</strong>. Calculează pensia reală cu <a href="/" class="text-blue-700 hover:underline font-semibold">simulatorul de pensie actualizat la VPR 81 lei</a>.</p>
 
-<h3>Formula Legală de Indexare a VPR</h3>
-<div class="bg-blue-50 border-l-4 border-blue-500 p-4 my-6 rounded-r-lg">
-  <p class="font-bold text-blue-900 mt-0">Art. 84 Legea nr. 360/2023:</p>
-  <p class="font-mono text-base text-blue-800 font-bold mb-1">Majorare anuală = 100% Rata Medie Anuală a Inflației + 50% Creșterea Reală a Salariului Mediu Brut</p>
-  <p class="text-xs text-slate-600 mb-0">Calculată pe baza datelor INS din anul anterior celui de referință.</p>
-</div>
+<h2>De ce contează diferența dintre formula legală și legea bugetului?</h2>
+<p>Legile bugetare anuale pot deroga temporar de la calendarul automat de majorare din Legea 360/2023. Din acest motiv, prognoza anterioară a unui punct de 91 lei nu se aplică în 2026, valoarea oficială în plată rămânând 81 lei.</p>
 
-<h3>Ce S-a Aplicat Efectiv în 2025 și 2026?</h3>
-<p>Deși formula prevedea creșterea automată în ianuarie, prin <strong>OUG nr. 156/2024</strong> și ulterior prin <strong>Legea nr. 141/2025</strong>, indexarea anuală a fost suspendată din motive de consolidare fiscal-bugetară. În consecință, <strong>VPR a rămas înghețat la 81 Lei</strong> atât în 2025, cât și în 2026.</p>
+<aside class="not-prose my-6 rounded-xl border border-blue-200 bg-blue-50/70 p-5">
+  <p class="font-bold text-slate-900">Nu depinde exclusiv de deciziile anuale de indexare</p>
+  <p class="mt-1 text-sm text-slate-700">Protejează puterea de cumpărare verificând acumularea investițională din Pilonul II și Pilonul III.</p>
+  <a href="/calculator-pensie-pilon-2/" class="mt-3 inline-block font-semibold text-blue-700 underline">Proiectează randamentul privat din Pilonul II -></a>
+</aside>
 
-<h3>Evoluția Istorică a Punctului de Pensie și VPR (2018–2026)</h3>
-<div class="overflow-x-auto my-6">
-  <table class="w-full text-sm text-left border border-slate-200">
-    <thead class="bg-slate-100">
-      <tr>
-        <th class="border p-2">Data Aplicării</th>
-        <th class="border p-2">Punct Pensie</th>
-        <th class="border p-2">VPR</th>
-        <th class="border p-2">Act Normativ</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr><td class="border p-2">1 Iulie 2018</td><td class="border p-2">1.100 Lei</td><td class="border p-2">-</td><td class="border p-2">OUG 114/2018</td></tr>
-      <tr><td class="border p-2">1 Septembrie 2020</td><td class="border p-2">1.442 Lei</td><td class="border p-2">-</td><td class="border p-2">OUG 135/2020</td></tr>
-      <tr><td class="border p-2">1 Ianuarie 2022</td><td class="border p-2">1.586 Lei</td><td class="border p-2">-</td><td class="border p-2">OUG 125/2021</td></tr>
-      <tr><td class="border p-2">1 Ianuarie 2023</td><td class="border p-2">1.785 Lei</td><td class="border p-2">-</td><td class="border p-2">OUG 168/2022</td></tr>
-      <tr><td class="border p-2">1 Ianuarie 2024</td><td class="border p-2">2.032 Lei</td><td class="border p-2">-</td><td class="border p-2">Legea 422/2023</td></tr>
-      <tr><td class="border p-2">1 Septembrie 2024</td><td class="border p-2">N/A (tranziție)</td><td class="border p-2"><strong>81 Lei</strong></td><td class="border p-2">Legea nr. 360/2023</td></tr>
-      <tr class="bg-blue-50"><td class="border p-2 font-bold">2025 – 2026</td><td class="border p-2">N/A</td><td class="border p-2 font-bold">81 Lei (înghețat)</td><td class="border p-2">OUG 156/2024 &amp; Legea 141/2025</td></tr>
-    </tbody>
-  </table>
-</div>
-
-<h3>Impactul Fiscal asupra Pensiilor Indexate (Pragul de 3.000 Lei)</h3>
-<p>Pensiile de până la 3.000 lei rămân complet scutite de impozit și CASS. Pentru pensiile care depășesc 3.000 lei, în 2026 se reține CASS 10% pentru suma ce trece de 3.000 lei (Legea nr. 141/2025) plus impozitul pe venit de 10% pentru partea impozabilă peste 3.000 lei.</p>
+<h2>Cum te afectează înghețarea VPR dacă ieși la pensie în 2026?</h2>
+<ul>
+  <li><strong>Calculul la deschidere:</strong> pensia inițială se stabilește strict la 81 lei × total puncte.</li>
+  <li><strong>Salariul mediu brut nou (9.192 lei):</strong> dacă lucrezi în continuare în 2026, ai nevoie de un salariu brut de 9.192 lei pentru a obține 1,00 punct contributiv (față de 8.620 lei în 2025).</li>
+  <li><strong>Efectul stabilității:</strong> anii lucrați peste 35 ani adaugă +1,00 punct bonus pe an (+81 lei), compensând parțial lipsa indexării generale. Testează în <a href="/calculator-puncte-pensie/" class="text-blue-700 hover:underline font-semibold">calculatorul pentru puncte bonus de stabilitate</a> sau urmărește sumele în <a href="/calculator-pensie-pilon-3/" class="text-blue-700 hover:underline font-semibold">calculatorul de pensie facultativă Pilon III</a>.</li>
+</ul>
 `,
   },
   {
     id: 17,
-    title: "Actele Necesare pentru Dosarul de Pensionare în 2026",
+    title: "Actele Necesare pentru Dosarul de Pensie 2026",
     excerpt:
-      "Lista completă de documente pentru pensia la limită de vârstă, anticipată, invaliditate și urmaș, termenele CNPP de 45 de zile și recuperarea adeverințelor.",
+      "Lista completă de documente CNPP pentru pensia la limită de vârstă, anticipată și invaliditate, termenul de soluționare de 45 zile și recuperarea arhivelor.",
     category: "planificare",
     publishDate: "2026-11-10",
-    modifiedDate: "2026-11-25",
+    modifiedDate: "2026-11-26",
     readTime: 11,
     slug: "acte-necesare-dosar-pensionare",
     published: true,
@@ -758,52 +738,37 @@ export const staticArticles: Article[] = [
     image:
       "https://images.unsplash.com/photo-1450133064473-71024230f91b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=480",
     content: `
-<p>Pregătirea completă a dosarului administrativ de pensionare previne amânările de plată și asigură valorificarea tuturor sporurilor și perioadelor necontributive (facultate la zi, armată, creștere copil). Sub <strong>Legea nr. 360/2023</strong>, dosarul se depune la Casa Teritorială de Pensii din județul de domiciliu cu cel mult 30 de zile înainte sau începând cu data îndeplinirii condițiilor legale.</p>
+<p>Pentru deschiderea pensiei în 2026 depui la Casa Teritorială de Pensii cererea tip (Anexa la normele Legii 360/2023), <strong>actul de identitate</strong>, <strong>carnetul de muncă în original</strong> și <strong>adeverințele de sporuri anterioare anului 2001</strong>, decizia fiind emisă legal în 45 de zile. Simulează cuantumul așteptat înainte cu <a href="/" class="text-blue-700 hover:underline font-semibold">calculatorul pensiei brute și nete 2026</a>.</p>
 
-<h3>1. Documente Obligatorii pentru Limită de Vârstă</h3>
+<h2>Lista completă a documentelor de bază pentru dosar</h2>
+<p>Pregătirea completă a dosarului din prima zi previne amânările de plată cu 2-4 luni și asigură includerea tuturor sporurilor cu caracter permanent sau nepermanent.</p>
+
+<aside class="not-prose my-6 rounded-xl border border-blue-200 bg-blue-50/70 p-5">
+  <p class="font-bold text-slate-900">Verifică ziua exactă de depunere și calculul vechimii</p>
+  <p class="mt-1 text-sm text-slate-700">Dosarul se depune de regulă începând cu data îndeplinirii condițiilor de vârstă și stagiu complet sau minim.</p>
+  <a href="/calculator-varsta-pensionare/" class="mt-3 inline-block font-semibold text-blue-700 underline">Verifică data exactă a ieșirii la pensie -></a>
+</aside>
+
+<h2>Documente obligatorii + acte pentru perioade speciale</h2>
 <ul>
-  <li><strong>Cererea-tip de înscriere la pensie</strong> (descărcabilă de pe portalul CNPP sau completată la ghișeu);</li>
-  <li><strong>Carnetul de muncă</strong> (original și copie) pentru perioada anterioară datei de 1 ianuarie 2011;</li>
-  <li><strong>Carnetul de muncă CAP / adeverințe</strong> pentru foștii lucrători în agricultură (dacă este cazul);</li>
-  <li><strong>Acte de stare civilă:</strong> CI/BI, certificat de naștere și certificat de căsătorie (în original și copie);</li>
-  <li><strong>Livretul militar</strong> (original și copie) pentru stagiul militar obligatoriu;</li>
-  <li><strong>Diploma de studii universitare la zi</strong> și adeverința privind durata normală și forma de învățământ (frecvență);</li>
-  <li><strong>Adeverințe de sporuri permanente și grupe de muncă (I/II)</strong> pentru veniturile neînscrise clar în carnetul de muncă înainte de aprilie 2001.</li>
+  <li><strong>Cerere de pensionare</strong> (Anexa specifică pentru limită de vârstă sau <a href="/calculator-pensie-anticipata/" class="text-blue-700 hover:underline font-semibold">pensie anticipată cu calcul de penalizare</a>).</li>
+  <li><strong>Carnetul de muncă</strong> (original + copie) și eventuale adeverințe de rectificare sau de stagiu pentru perioadele anterioare datei de 1 aprilie 2001.</li>
+  <li><strong>Adeverințe de venituri brute / sporuri</strong> (prime, acord global, al 13-lea salariu) pentru perioadele anterioare lui 2001, conform modelelor din Anexele Legii 360/2023.</li>
+  <li><strong>Acte stare civilă & copii:</strong> certificate naștere copii (inclusiv pentru reducerea de 6 luni/copil la mame), diplomă de licență + foaie matricolă/adeverință cursuri la zi, livret militar.</li>
 </ul>
 
-<h3>2. Documente Suplimentare pentru Pensia Anticipată</h3>
-<p>Pe lângă actele de bază, trebuie anexată dovada încetării contractului individual de muncă (sau declarație/adeverință că la data deschiderii dreptului nu desfășori activități supuse asigurării incompatibile cu anticipata) și extrasul actualizat al stagiului contributiv.</p>
-
-<h3>3. Sursa Evidențelor pe Perioade</h3>
-<div class="overflow-x-auto my-6">
-  <table class="w-full text-sm text-left border border-slate-200">
-    <thead class="bg-slate-100">
-      <tr>
-        <th class="border p-2">Perioadă</th>
-        <th class="border p-2">Sursă Oficială CNPP</th>
-        <th class="border p-2">Adeverințe Suplimentare</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr><td class="border p-2">Înainte de 1 aprilie 2001</td><td class="border p-2">Carnetul de muncă original</td><td class="border p-2">Da, pentru sporuri cu caracter permanent / grupe</td></tr>
-      <tr><td class="border p-2">1 apr. 2001 – 31 dec. 2010</td><td class="border p-2">Baza electronică CNPP + Carnet</td><td class="border p-2">Doar dacă lipsesc luni din extrasul online</td></tr>
-      <tr><td class="border p-2">După 1 ianuarie 2011</td><td class="border p-2">Sistem electronic D112 / REVISAL</td><td class="border p-2">Nu (raportare lunară digitală)</td></tr>
-    </tbody>
-  </table>
-</div>
-
-<h3>Termenul Legal de Emitere a Deciziei</h3>
-<p>Casa Teritorială de Pensii are termen legal de <strong>45 de zile</strong> pentru emiterea deciziei de pensionare, plata pensiei făcându-se retroactiv de la data înregistrării cererii (dacă toate condițiile erau îndeplinite). Dacă lipsesc adeverințe de sporuri din arhive, poți depune dosarul inițial și solicita ulterior <strong>recalcularea</strong> pe măsură ce le obții.</p>
+<h2>Ce faci dacă vechiul angajator a intrat în faliment?</h2>
+<p>Adresează-te operatorului de arhivare privat autorizat care a preluat statele de plată (lista se găsește pe site-ul Arhivelor Naționale și al CNPP județean). Până la obținerea adeverințelor, poți nota istoricul complet al contractelor în <a href="/program-excel-calcul-pensie/" class="text-blue-700 hover:underline font-semibold">tabelul Excel CSV pentru dosarul de pensie</a> pentru a verifica dacă mai lipsește vreun an.</p>
 `,
   },
   {
     id: 18,
-    title: "Pensionarea Anticipată Fără Penalizare în 2026: Excepții Legale",
+    title: "Pensionare Anticipată Fără Penalizare 2026: Excepții",
     excerpt:
-      "Cine se poate pensiona mai devreme fără reducerea cuantumului în 2026: mame cu mai mulți copii, condiții speciale, zone poluate și depășirea stagiului complet.",
+      "Cine se poate pensiona mai devreme fără reducerea cuantumului în 2026: depășirea stagiului cu 8 ani, mame cu copii, grupe speciale și zone poluate.",
     category: "tipuri-pensii",
     publishDate: "2026-08-25",
-    modifiedDate: "2026-11-25",
+    modifiedDate: "2026-11-26",
     readTime: 8,
     slug: "pensie-anticipata-fara-penalizare",
     published: true,
@@ -811,27 +776,41 @@ export const staticArticles: Article[] = [
     image:
       "https://images.unsplash.com/photo-1473186578172-c141e6798cf4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=480",
     content: `
-<p>Deși retragerea anticipată presupune de obicei o diminuare procentuală între 0,15% și 0,40% pe lună sub Legea nr. 360/2023, legislația românească păstrează categorii clare de asigurați care își pot reduce vârsta de ieșire la pensie <strong>fără nicio penalizare asupra cuantumului</strong>.</p>
+<p>În 2026 te poți pensiona mai devreme cu <strong>0% penalizare</strong> dacă ai depășit stagiul complet cu cel puțin <strong>8 ani</strong>, dacă ai lucrat în <strong>condiții speciale/deosebite</strong>, dacă ești mamă (6 luni reducere/copil) sau ai locuit 30 ani în zone poluate. Verifică pragurile în <a href="/calculator-varsta-pensionare/" class="text-blue-700 hover:underline font-semibold">calculatorul de vârstă și reduceri legale</a>.</p>
 
-<h3>Categorii Care Beneficiază de Reducerea Vârstei Fără Penalizare</h3>
+<h2>Cum funcționează depășirea stagiului complet fără diminuare?</h2>
+<p>Legea nr. 360/2023 menține regula că persoanele care depășesc stagiul complet contributiv de 35 ani cu minimum 5 ani beneficiază de diminuarea minimă de 0,15%/lună, iar de la depășirea stagiului cu cel puțin 8 ani (ex. 43 ani contributivi) reducerea scade la zero, putând ieși cu până la 5 ani mai devreme la pensie întreagă.</p>
+
+<aside class="not-prose my-6 rounded-xl border border-orange-200 bg-orange-50/70 p-5">
+  <p class="font-bold text-slate-900">Verifică dacă intri la 0% penalizare sau ce cotă lunară se aplică</p>
+  <p class="mt-1 text-sm text-slate-700">Introdu vechimea ta contributivă și vârsta dorită pentru a vedea instant procentul de diminuare.</p>
+  <a href="/calculator-pensie-anticipata/" class="mt-3 inline-block font-semibold text-orange-800 underline">Testează acum calculatorul de pensie anticipată -></a>
+</aside>
+
+<h2>Toate cele 4 excepții legale fără penalizare în 2026</h2>
 <ul>
-  <li><strong>Depășirea stagiului complet de cotizare (excepția pensionării nepenalizate pentru stagiul prelungit cu cel puțin 5–8 ani conform dispozițiilor tranzitorii / Art. 58):</strong> asigurații cu vechime contributivă excepțională se pot retrage mai devreme cu reducere zero sau minimă, conform tranșelor legale.</li>
-  <li><strong>Femei care au născut și crescut copii (Art. 51 Legea 360/2023):</strong> cu stagiul complet realizat, beneficiază de reducerea vârstei standard cu 6 luni/copil (1 an pentru 2 copii, până la <strong>3 ani și 6 luni</strong> pentru 7+ copii) direct la pensia pentru limită de vârstă, fără penalizare.</li>
-  <li><strong>Munca în condiții deosebite și speciale:</strong> persoanele din minerit subteran, siderurgie, radiologie, aviație civilă obțin reduceri cumulate de vârstă proporționale cu stagiul în grupă.</li>
-  <li><strong>Zone cu poluare remanentă:</strong> locuitorii cu cel puțin 30 de ani de domiciliu în localitățile nominalizate expres prin lege (reducere de până la 2 ani fără penalizare).</li>
+  <li><strong>1. Mame cu copii (Art. 51):</strong> 6 luni reducere pentru 1 copil, 1 an pentru 2 copii, până la 3 ani și 6 luni pentru 7 sau mai mulți copii (cu stagiul complet realizat).</li>
+  <li><strong>2. Condiții deosebite și speciale de muncă:</strong> scădere proporțională de 2 până la 13 ani din vârsta standard fără penalizare și cu puncte bonus suplimentare.</li>
+  <li><strong>3. Localități afectate de poluare remanentă:</strong> 2 ani reducere din vârsta standard fără penalizare pentru persoanele cu minimum 30 ani de domiciliu în zonele prevăzute expres de lege (Baia Mare, Copșa Mică, Zlatna, Slatina, Târnăveni etc.).</li>
+  <li><strong>4. Handicap grav/accentuat preexistent:</strong> reducere substanțială de vârstă și stagiu complet conform Legii 360/2023.</li>
 </ul>
 
-<p>Verifică scenariul tău în <a href="/calculator-varsta-pensionare/" class="text-blue-600 hover:underline font-semibold">calculatorul vârstei de pensionare</a> și simulează varianta cu diminuare în <a href="/calculator-pensie-anticipata/" class="text-blue-600 hover:underline font-semibold">calculatorul pensiei anticipate</a>.</p>
+<figure class="my-6">
+  <img src="/images/penalizari-pensie-anticipata-2026.svg" alt="Grila de reducere lunara la pensia anticipata si pragul cu 0% penalizare conform Legii 360/2023" width="1536" height="864" loading="lazy" decoding="async" class="w-full h-auto rounded-lg border border-slate-200" />
+</figure>
+
+<h2>Alternativa dacă îți lipsesc 1-2 ani de stagiu</h2>
+<p>Dacă ai fi penalizat sever cu 0,40%/lună (14-24% din pensie), merită să acoperi diferența de venit pe termen scurt cu ajutorul fondului propriu acumulat în <a href="/calculator-pensie-pilon-3/" class="text-blue-700 hover:underline font-semibold">Pilonul III de la 60 de ani</a> în loc să reduci pensia publică din <a href="/calculator-puncte-pensie/" class="text-blue-700 hover:underline font-semibold">punctajul acumulat Pilon I</a>.</p>
 `,
   },
   {
     id: 19,
-    title: "Ghid Util: Cum Verifici Vechimea de Muncă Online pe Portalul CNPP",
+    title: "Cum Verifici Vechimea Online pe Portalul CNPP",
     excerpt:
-      "Pas cu pas: crearea contului pe cnpp.ro (ghişeu sau semnătură electronică), descărcarea raportului de stagii de cotizare și corectarea erorilor D112.",
+      "Ghid pas cu pas pentru crearea contului pe cnpp.ro (ghişeu CNPP sau semnătură electronică), descărcarea stagiului de cotizare și verificarea D112.",
     category: "planificare",
     publishDate: "2026-05-15",
-    modifiedDate: "2026-11-25",
+    modifiedDate: "2026-11-26",
     readTime: 10,
     slug: "vizualizare-vechime-munca-cnpp",
     published: true,
@@ -839,62 +818,37 @@ export const staticArticles: Article[] = [
     image:
       "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=480",
     content: `
-<p>Monitorizarea stagiului de cotizare direct în portalul oficial <strong>CNPP.ro</strong> îți permite să verifici lună de lună dacă angajatorii au declarat corect salariile brute, condițiile de muncă și contribuția CAS în Declarația 112.</p>
+<p>Pe portalul oficial <strong>cnpp.ro</strong> poți descărca gratuit extrasul complet de <strong>stagii de cotizare lunare</strong> și punctajele declarate prin Declarația 112. După descărcarea PDF-ului oficial, calculează imediat pensia netă cu <a href="/" class="text-blue-700 hover:underline font-semibold">simulatorul principal de pensie 2026</a>.</p>
 
-<h3>Pasul 1: Crearea și Activarea Contului CNPP</h3>
+<h2>Cum activezi contul online CNPP în 2026?</h2>
+<p>Accesul la datele personale de contribuții (Datele mele -> Stagii de cotizare) este disponibil fie prin identificare fizică o singură dată la ghișeul Casei de Pensii, fie 100% online cu semnătură electronică calificată.</p>
+
+<aside class="not-prose my-6 rounded-xl border border-blue-200 bg-blue-50/70 p-5">
+  <p class="font-bold text-slate-900">Importă vechimea din raportul CNPP într-un tabel editabil</p>
+  <p class="mt-1 text-sm text-slate-700">Folosește șablonul nostru CSV ca să aduni rapid punctajele pe ani și să verifici dacă ai atins pragul de 25-35 ani.</p>
+  <a href="/program-excel-calcul-pensie/" class="mt-3 inline-block font-semibold text-blue-700 underline">Descarcă tabelul Excel Calcul Pensie 2026 -></a>
+</aside>
+
+<h2>Ce verifici obligatoriu în extrasul descărcat?</h2>
 <ol>
-  <li>Accesează <strong>cnpp.ro</strong> → secțiunea <strong>„Creare cont”</strong> și completează CNP-ul, numele, adresa și emailul exact conform cărții de identitate.</li>
-  <li>Generează cererea PDF, tipărește-o și semnează-o (sau aplică o semnătură electronică calificată pentru activare la distanță).</li>
-  <li>Prezintă-te o singură dată la orice Casă Teritorială de Pensii cu actul de identitate și cererea semnată (sau trimite cererea semnată electronic pe adresa de email a casei județene, util mai ales din diaspora).</li>
+  <li><strong>Total luni și ani contributivi:</strong> asigură-te că nu lipsesc luni între schimbările de job și că totalul include lunile lucrate corect după 2001.</li>
+  <li><strong>Venitul brut lunar declarat în D112:</strong> compară fluturașii de salariu cu suma brută declarată de angajator.</li>
+  <li><strong>Contribuția virată spre Pilonul II:</strong> verifică dacă fondul privat primește constant 4,75% (poți verifica paralel și cu <a href="/calculator-pensie-pilon-2/" class="text-blue-700 hover:underline font-semibold">calculatorul soldului privat Pilon II</a>).</li>
+  <li><strong>Punctajul total acumulat până la zi:</strong> introdu suma punctelor în <a href="/calculator-puncte-pensie/" class="text-blue-700 hover:underline font-semibold">calculatorul de puncte și VPR 81 lei</a> pentru a verifica pensia acumulată deja.</li>
 </ol>
 
-<h3>Pasul 2: Generarea Raportului de Stagii de Cotizare</h3>
-<ul>
-  <li>După autentificare, intră în meniul <strong>„Datele mele” → „Stagii de cotizare” → „Generare document”</strong>.</li>
-  <li>Poți solicita raportul lunar detaliat (cu salarii și punctaj lunar) sau situația sintetică pe ani.</li>
-  <li>Documentul PDF devine disponibil în secțiunea „Rapoarte generate” în câteva minute.</li>
-</ul>
-
-<h3>Ce Lipsește Din Contul Online și Cum Corectezi Erorile?</h3>
-<div class="overflow-x-auto my-6">
-  <table class="w-full text-sm text-left border border-slate-200">
-    <thead class="bg-slate-100">
-      <tr>
-        <th class="border p-2">Situație Identificată</th>
-        <th class="border p-2">Explicație</th>
-        <th class="border p-2">Acțiune Recomandată</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td class="border p-2">Nu apare vechimea de dinainte de aprilie 2001</td>
-        <td class="border p-2">Baza informatică CNPP a pornit în aprilie 2001</td>
-        <td class="border p-2">Se dovedește prin carnetul de muncă original și adeverințe</td>
-      </tr>
-      <tr>
-        <td class="border p-2">Lipsește o lună recentă (după 2001)</td>
-        <td class="border p-2">Declarația D112 nedepusă ori rectificată întârziat</td>
-        <td class="border p-2">Solicită verificarea la HR sau adresează-te ITM</td>
-      </tr>
-      <tr>
-        <td class="border p-2">Salariu brut greșit sau grupă lipsă</td>
-        <td class="border p-2">Eroare de raportare contabilă D112</td>
-        <td class="border p-2">Depunerea declarației rectificative de către angajator</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-<p>După descărcarea punctajului acumulat din CNPP, introdu totalul în <a href="/" class="text-blue-600 hover:underline font-semibold">calculatorul nostru de pensie</a> pentru a verifica cuantumul brut și net în 2026.</p>
+<h2>Cum corectezi o lună lipsă din portalul CNPP?</h2>
+<p>Dacă observi o lună neînregistrată deși ai lucrat cu contract individual de muncă, solicită de la angajator adeverință cu statele de plată și depunerea unei declarații rectificative D112 către ANAF, care sincronizează baza de date CNPP în câteva săptămâni.</p>
 `,
   },
   {
     id: 20,
-    title: "Pilonul II de Pensii în 2026: Cotă 4,75%, Randament și Moștenire",
+    title: "Pilonul II în 2026: Cotă 4,75%, Randament și Moștenire",
     excerpt:
-      "Tot ce trebuie să știi despre pensia privată obligatorie Pilonul II în 2026: cota de 4,75% din salariul brut, opțiunile de retragere și dreptul la moștenire.",
+      "Tot ce trebuie să știi despre pensia privată obligatorie Pilon II în 2026: cota de 4,75% din brut, cine participă, cum retragi banii și moștenirea.",
     category: "tipuri-pensii",
     publishDate: "2026-05-30",
-    modifiedDate: "2026-11-25",
+    modifiedDate: "2026-11-26",
     readTime: 9,
     slug: "pilonul-2-modificari-legislative",
     published: true,
@@ -902,46 +856,57 @@ export const staticArticles: Article[] = [
     image:
       "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=480",
     content: `
-<p>Pilonul II — sistemul de pensii administrate privat obligatorii — reprezintă al doilea pilon financiar al salariaților din România. Începând cu anul 2024 și menținută în <strong>2026</strong>, cota redirecționată automat din CAS (25%) către contul personal privat este de <strong>4,75% din salariul brut</strong>. Simulează acumularea ta în <a href="/calculator-pensie-pilon-2/" class="text-blue-600 hover:underline font-semibold">calculatorul Pilon II</a>.</p>
+<p>În anul 2026, Pilonul II redirecționează obligatoriu <strong>4,75% din salariul tău brut</strong> (din CAS-ul total de 25%) către un cont privat investit supravegheat de ASF, fiind <strong>100% proprietate personală și moștenibilă</strong>. Estimează suma acumulată până la 65 ani cu <a href="/calculator-pensie-pilon-2/" class="text-blue-700 hover:underline font-semibold">calculatorul pensiei private Pilonul II</a>.</p>
 
-<h3>De ce 4,75% nu îți scade salariul net?</h3>
-<p>Pentru salariații obișnuiți, cele 4,75 procente se virează direct din contribuția de 25% CAS pe care o plătești deja către sistemul de asigurări sociale: 20,25% rămân la bugetul public (Pilonul I), iar 4,75% intră într-un cont individual investit pe numele tău de către administratorul fondului ales.</p>
+<h2>Cum influențează cota de 4,75% salariul net și pensia de stat?</h2>
+<p>Viramentul spre Pilonul II nu scade salariul net din mână, ci împarte CAS-ul de 25% în 20,25% către bugetul public Pilon I și 4,75% către fondul privat pe numele tău. Punctajul public pe Pilonul I este ajustat proporțional, însă suma din Pilonul II se investește cu dobândă compusă pe decenii și rămâne activ moștenibil în familie.</p>
 
-<h3>Avantaje Principale și Reguli de Plată</h3>
-<ul>
-  <li><strong>Proprietate privată și moștenire:</strong> Spre deosebire de Pilonul I, <strong>banii din Pilonul II sunt complet moștenibili</strong>. În cazul decesului participantului înainte de pensionare, activul net se transferă moștenitorilor legali sau testamentari.</li>
-  <li><strong>Diversificare investițională:</strong> Fondurile Pilon II investesc preponderent în titluri de stat românești (~60–65%) și acțiuni listate pe burse locale și internaționale.</li>
-  <li><strong>Modalități de încasare:</strong> La îndeplinirea condițiilor de pensionare pentru limită de vârstă (sau invaliditate), suma poate fi încasată integral într-o singură tranșă sau eșalonat în rate lunare (până la 5 ani), în conformitate cu normele ASF.</li>
-</ul>
+<aside class="not-prose my-6 rounded-xl border border-green-200 bg-green-50/70 p-5">
+  <p class="font-bold text-slate-900">Vezi cât poți strânge în contul tău Pilon II și Pilon III</p>
+  <p class="mt-1 text-sm text-slate-700">Simulează separat fondul obligatoriu (4,75%) și verifică suplimentarea opțională cu deducere de taxe.</p>
+  <a href="/calculator-pensie-pilon-2/" class="mt-3 inline-block font-semibold text-green-800 underline">Calculează acum soldul Pilonul II 2026 -></a>
+</aside>
 
-<p>Poți verifica fondul de pensii la care ești arondat accesând secțiunea „Află la ce fond ești” de pe site-ul Autorității de Supraveghere Financiară (<a href="https://asfromania.ro" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline font-semibold">ASF</a>) sau solicitând detalii prin <a href="https://www.cnpp.ro" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline font-semibold">CNPP</a>.</p>
+<h2>Cum afli la ce fond Pilon II ești și cum retragi banii?</h2>
+<ol>
+  <li><strong>Verificare fond alocat:</strong> intră pe site-ul ASF ("Află la ce fond de pensii ești") cu CNP și nume, apoi instalează aplicația administratorului tău (NN, Allianz-Țiriac, Metropolitan Life, BCR, BRD, Generali sau Carpathia) pentru a vedea soldul exact la zi.</li>
+  <li><strong>Condiția retragerii:</strong> odată cu deschiderea dreptului de pensie publică pentru limită de vârstă (verifică data în <a href="/calculator-varsta-pensionare/" class="text-blue-700 hover:underline font-semibold">calculatorul pentru vârsta standard de pensionare</a>), depui decizia CNPP la administrator pentru plată unică sau tranșe eșalonate.</li>
+  <li><strong>Moștenirea contului:</strong> în cazul decesului participantului înainte de încasare, moștenitorii legali primesc suma cumulată integrală din unități de fond fără pierdere.</li>
+</ol>
+
+<h2>De ce merită să combini Pilonul II cu Pilonul III și simulatorul total?</h2>
+<p>Pentru salariații din medii IT, construcții ori privat care vor o independență mai mare la 60 de ani, suplimentarea prin <a href="/calculator-pensie-pilon-3/" class="text-blue-700 hover:underline font-semibold">simulatorul Pilonului III deductibil fiscal</a> și urmărirea anuală în <a href="/" class="text-blue-700 hover:underline font-semibold">calculatorul complet Pilon I + taxe 2026</a> oferă imaginea reală a venitului de la pensie.</p>
 `,
   },
 ];
 
-export const getArticlesByCategory = (category: string): Article[] => {
-  if (category === "all") return staticArticles.filter((a) => a.published);
-  return staticArticles.filter((a) => a.published && a.category === category);
-};
-
-export const getRecentArticles = (limit: number = 3): Article[] => {
-  return staticArticles
-    .filter((a) => a.published)
-    .sort((a, b) => new Date(b.publishDate).getTime() - new Date(a.publishDate).getTime())
-    .slice(0, limit);
-};
-
-export const getArticleBySlug = (slug: string): Article | undefined => {
+export function getArticleBySlug(slug: string): Article | undefined {
   return staticArticles.find((a) => a.slug === slug && a.published);
-};
+}
 
-export const searchArticles = (searchTerm: string): Article[] => {
-  const term = searchTerm.toLowerCase();
+export function getArticlesByCategory(category: string): Article[] {
+  if (!category || category === "all") {
+    return staticArticles.filter((a) => a.published);
+  }
+  return staticArticles.filter((a) => a.published && a.category === category);
+}
+
+export function searchArticles(term: string): Article[] {
+  const q = term.trim().toLowerCase();
+  if (!q) return staticArticles.filter((a) => a.published);
   return staticArticles.filter(
     (a) =>
       a.published &&
-      (a.title.toLowerCase().includes(term) ||
-        a.excerpt.toLowerCase().includes(term) ||
-        a.content?.toLowerCase().includes(term))
+      (a.title.toLowerCase().includes(q) ||
+        a.excerpt.toLowerCase().includes(q) ||
+        (a.content || "").toLowerCase().includes(q))
   );
-};
+}
+
+export function getRecentArticles(limit = 6): Article[] {
+  return staticArticles
+    .filter((a) => a.published)
+    .slice()
+    .sort((a, b) => new Date(b.publishDate).getTime() - new Date(a.publishDate).getTime())
+    .slice(0, limit);
+}

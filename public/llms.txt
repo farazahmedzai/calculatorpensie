@@ -11,7 +11,7 @@
 ## Instrumente Principale de Calcul
 
 - [Calculator Pensie de Stat 2026](https://calculatorpensie.com/): Simulator complet pentru limita de vârstă (brut și net), incluzând punctele de stabilitate.
-- [Calculator Pensie Anticipată](https://calculatorpensie.com/calculator-pensie-anticipata/): Estimarea penalizării lunare (0,15%–0,40%) conform Legii 360/2023.
+- [Calculator Pensie Anticipată](https://calculatorpensie.com/calculator-pensie-anticipata/): Estimarea penalizării lunare (0,15%-0,40%) conform Legii 360/2023.
 - [Calculator Vârstă Pensionare](https://calculatorpensie.com/calculator-varsta-pensionare/): Verifică data exactă a pensionării pentru femei și bărbați (Anexa nr. 5 și reducere mame).
 - [Calculator Puncte de Pensie](https://calculatorpensie.com/calculator-puncte-pensie/): Calculează punctele contributive, asimilate și de stabilitate (0,5 / 0,75 / 1,0 pct/an).
 - [Calculator Pensie Pilonul II](https://calculatorpensie.com/calculator-pensie-pilon-2/): Estimarea fondului privat obligatoriu (cotă 4,75% din brut).

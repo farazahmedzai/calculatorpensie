@@ -5,6 +5,7 @@ import { staticArticles } from "../client/src/data/static-articles";
 import {
   buildJsonLdGraph,
   DEFAULT_OG_IMAGE,
+  formatArticleSeoTitle,
   ROUTES_META,
   type RouteMetaDef,
 } from "../client/src/data/routes-meta";
@@ -172,7 +173,7 @@ async function main() {
     const canonical = `https://calculatorpensie.com${routePath}`;
     const meta: RouteMetaDef = {
       path: routePath,
-      title: `${article.title} | CalculatorPensie.com`,
+      title: formatArticleSeoTitle(article.title),
       description: article.excerpt,
       canonical,
       keywords: `${article.category}, pensii romania, ${article.title.toLowerCase()}`,

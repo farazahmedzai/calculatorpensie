@@ -45,7 +45,7 @@ export default function CalculatorVarstaPage() {
       if (birthYear < 1961) {
         ageYears = 61;
         ageMonths = 6;
-        fullStage = "31–32 ani";
+        fullStage = "31-32 ani";
       } else if (birthYear === 1961) {
         ageYears = 62;
         ageMonths = 0;
@@ -279,12 +279,24 @@ export default function CalculatorVarstaPage() {
                   </tr>
                   <tr className="bg-slate-50">
                     <td className="border p-2 font-semibold">Femei</td>
-                    <td className="border p-2">~62 ani și 6–7 luni (creștere graduală)</td>
+                    <td className="border p-2">~62 ani și 6-7 luni (creștere graduală)</td>
                     <td className="border p-2">65 ani (63 ani în 2030)</td>
-                    <td className="border p-2">15 ani / 33–35 ani (spre 35 ani)</td>
+                    <td className="border p-2">15 ani / 33-35 ani (spre 35 ani)</td>
                   </tr>
                 </tbody>
               </table>
+
+              <figure className="not-prose my-6">
+                <img
+                  src="/images/varsta-pensionare-femei-2026-2035.svg"
+                  alt="Graficul cresterii graduale a varstei de pensionare pentru femei spre egalizarea cu barbatii la 65 ani in 2035 conform Anexei 5 Legea 360/2023"
+                  width={1536}
+                  height={864}
+                  loading="lazy"
+                  decoding="async"
+                  className="w-full h-auto rounded-lg border border-slate-200 shadow-sm"
+                />
+              </figure>
 
               <h3>Reduceri legale ale vârstei de pensionare</h3>
               <ul>

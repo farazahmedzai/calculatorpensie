@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1536 864" width="1536" height="864" role="img" aria-label="Grila penalizarilor la pensia anticipata in 2026 conform Legii 360/2023">
+  <rect width="1536" height="864" fill="#F8FAFC" rx="24"/>
+  <rect x="40" y="40" width="1456" height="784" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="2" rx="20"/>
+  <text x="88" y="112" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="38" font-weight="800" fill="#0F172A">Penalizari Pensie Anticipata 2026 (Legea nr. 360/2023)</text>
+  <text x="88" y="156" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="22" font-weight="500" fill="#475569">Procent de diminuare aplicat lunar pana la varsta standard de pensionare (max. 60 luni)</text>
+  <line x1="88" y1="196" x2="1448" y2="196" stroke="#E2E8F0" stroke-width="2"/>
+  <g font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+    <text x="88" y="264" font-size="23" font-weight="700" fill="#0F172A">0 - 1 an peste stagiu</text>
+    <rect x="380" y="234" width="580" height="40" rx="8" fill="#DC2626"/>
+    <text x="978" y="262" font-size="22" font-weight="700" fill="#991B1B">0,40%/luna (max -24,0%)</text>
+
+    <text x="88" y="346" font-size="23" font-weight="700" fill="#0F172A">1 - 2 ani peste stagiu</text>
+    <rect x="380" y="316" width="508" height="40" rx="8" fill="#EA580C"/>
+    <text x="906" y="344" font-size="22" font-weight="700" fill="#9A3412">0,35%/luna (max -21,0%)</text>
+
+    <text x="88" y="428" font-size="23" font-weight="700" fill="#0F172A">2 - 3 ani peste stagiu</text>
+    <rect x="380" y="398" width="435" height="40" rx="8" fill="#D97706"/>
+    <text x="833" y="426" font-size="22" font-weight="700" fill="#92400E">0,30%/luna (max -18,0%)</text>
+
+    <text x="88" y="510" font-size="23" font-weight="700" fill="#0F172A">3 - 4 ani peste stagiu</text>
+    <rect x="380" y="480" width="362" height="40" rx="8" fill="#CA8A04"/>
+    <text x="760" y="508" font-size="22" font-weight="700" fill="#854D0E">0,25%/luna (max -15,0%)</text>
+
+    <text x="88" y="592" font-size="23" font-weight="700" fill="#0F172A">4 - 5 ani peste stagiu</text>
+    <rect x="380" y="562" width="290" height="40" rx="8" fill="#2563EB"/>
+    <text x="688" y="590" font-size="22" font-weight="700" fill="#1E40AF">0,20%/luna (max -12,0%)</text>
+
+    <text x="88" y="674" font-size="23" font-weight="700" fill="#0F172A">5 - 8 ani peste stagiu</text>
+    <rect x="380" y="644" width="218" height="40" rx="8" fill="#16A34A"/>
+    <text x="616" y="672" font-size="22" font-weight="700" fill="#166534">0,15%/luna (0% la &gt;=8 ani)</text>
+  </g>
+  <rect x="88" y="746" width="1360" height="52" rx="10" fill="#FEF2F2" stroke="#FECACA"/>
+  <text x="112" y="779" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="20" font-weight="600" fill="#991B1B">La implinirea varstei standard, penalizarea inceteaza automat din oficiu | CalculatorPensie.com (2026)</text>
+</svg>

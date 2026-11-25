@@ -3,15 +3,20 @@ import BreadcrumbNavigation from "@/components/seo/BreadcrumbNavigation";
 import { WebPageSchema } from "@/components/seo/StructuredData";
 import { Card, CardContent } from "@/components/ui/card";
 import { Shield, Eye, Database, Lock, UserCheck, RefreshCw } from "lucide-react";
+import { ROUTES_META } from "@/data/routes-meta";
+
+const PAGE_META = ROUTES_META["/privacy/"];
 
 export default function Privacy() {
   return (
     <div className="bg-white">
-      <MetaTags 
-        title="Politică de Confidențialitate - CalculatorPensie.com | Protecția Datelor"
-        description="Politica de confidențialitate a CalculatorPensie.com. Află cum protejăm datele tale personale și ce informații colectăm când folosești calculatoarele de pensie."
-        canonical="https://calculatorpensie.com/privacy/"
-        keywords="politica confidentialitate, protectia datelor, gdpr, calculatorpensie"
+      <MetaTags
+        title={PAGE_META.title}
+        description={PAGE_META.description}
+        canonical={PAGE_META.canonical}
+        keywords={PAGE_META.keywords}
+        schemaKind="webpage"
+        schemaName={PAGE_META.schemaName}
       />
       
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-4">

@@ -26,12 +26,14 @@ import FAQSection from "@/components/FAQSection";
 import MetaTags from "@/components/seo/MetaTags";
 import BreadcrumbNavigation from "@/components/seo/BreadcrumbNavigation";
 import PensionComparison from "@/components/features/PensionComparison";
+import EmbedCalculatorBox from "@/components/features/EmbedCalculatorBox";
 import NewsletterSignup from "@/components/newsletter/NewsletterSignup";
 import PerformanceTracker from "@/components/analytics/PerformanceTracker";
 import { trackCalculatorUsage } from "@/lib/analytics";
 import { getRecentArticles, type Article } from "@/data/static-articles";
 import { ROUTES_META } from "@/data/routes-meta";
 import { formatRoDate } from "@/lib/utils";
+import { estimateNetPension2026 } from "@/lib/pension-calculations";
 
 const HOME_META = ROUTES_META["/"];
 
@@ -152,25 +154,24 @@ export default function Home() {
       {/* Above-Fold Calculator Section */}
       <section className="py-12 bg-gradient-to-br from-blue-50 to-indigo-100">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-8">
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-              Calculator Pensie România 2026 (Legea 360/2023)
+          <div className="text-center mb-6">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-3">
+              Calculator Pensie România 2026 (Brut și Net)
             </h1>
-            <p className="text-xl text-gray-900 max-w-3xl mx-auto font-medium">
-              Simulează rapid pensia de stat, vârsta de pensionare și punctele de stabilitate pe baza formulelor oficiale CNPP și a Valorii Punctului de Referință de{" "}
-              <strong>{OFFICIAL_VPR_2026} lei</strong> în 2026.
+            <p className="text-lg sm:text-xl text-gray-900 max-w-3xl mx-auto font-medium">
+              În 2026, pensia brută egală cu <strong>Punctele totale × 81 lei (VPR)</strong> se transformă în pensie netă după scăderea <strong>CASS 10%</strong> și a <strong>impozitului 10%</strong> aplicate doar peste pragul de <strong>3.000 lei</strong> (Legea 360/2023).
             </p>
-            <p className="text-sm text-gray-700 max-w-3xl mx-auto mt-3">
-              CalculatorPensie.com este un instrument independent, neafiliat Casei Naționale de Pensii Publice (CNPP). Pentru istoricul oficial al contribuțiilor tale, consultă{" "}
+            <p className="text-xs sm:text-sm text-gray-700 max-w-3xl mx-auto mt-2">
+              Instrument independent, neafiliat{" "}
               <a
                 href="https://www.cnpp.ro"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-brand-blue font-semibold underline hover:text-blue-700"
               >
-                portalul CNPP (cnpp.ro)
+                portalului CNPP (cnpp.ro)
               </a>
-              .
+              . Calculele rulează privat în browser.
             </p>
           </div>
 
@@ -428,7 +429,7 @@ export default function Home() {
       <section className="py-12 bg-gray-50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold mb-8 text-slate-900 text-center">
-            Parametri Oficiali Pensii România — 2026
+            Parametri Oficiali Pensii România în 2026
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
@@ -473,11 +474,62 @@ export default function Home() {
               <div>
                 <h4 className="text-base font-semibold mb-2 text-green-900">CASS și Impozit aplicate Pensiilor (Legea 141/2025)</h4>
                 <ul className="space-y-1.5">
-                  <li>• <strong>Sub 3.000 lei:</strong> scutire completă — zero impozit pe venit și zero CASS.</li>
+                  <li>• <strong>Sub 3.000 lei:</strong> scutire completă, zero impozit pe venit și zero CASS.</li>
                   <li>• <strong>CASS 10%:</strong> se aplică exclusiv sumei care depășește plafonul de 3.000 lei (până la 31 dec. 2027).</li>
                   <li>• <strong>Impozit 10%:</strong> aplicat bazei impozabile ce depășește plafonul lunar de 3.000 lei.</li>
                 </ul>
               </div>
+            </div>
+
+            <div className="mt-8 pt-6 border-t border-slate-200">
+              <h4 className="text-lg font-bold text-slate-900 mb-3">
+                Tabel Calcul Pensie Netă din Brut 2026 (După CASS 10% și Impozit 10%)
+              </h4>
+              <p className="text-sm text-slate-700 mb-4">
+                Pentru pensiile peste 3.000 lei, CASS de 10% se reține din suma excedentară, iar impozitul de 10% se aplică asupra venitului rămas peste 3.000 lei.
+              </p>
+              <div className="overflow-x-auto">
+                <table className="w-full text-sm border-collapse border border-slate-200">
+                  <thead>
+                    <tr className="bg-slate-100 text-left text-slate-800">
+                      <th className="border p-2.5">Pensie Brută</th>
+                      <th className="border p-2.5">Bază &gt; 3.000 Lei</th>
+                      <th className="border p-2.5">CASS Reținut (10%)</th>
+                      <th className="border p-2.5">Impozit Reținut (10%)</th>
+                      <th className="border p-2.5">Pensie Netă în Mână (2026)</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {[3000, 3500, 4500, 5000, 6300, 8000, 10000].map((gross) => {
+                      const excess = Math.max(0, gross - 3000);
+                      const cass = Math.round(excess * 0.1);
+                      const taxBase = Math.max(0, gross - 3000 - cass);
+                      const tax = Math.round(taxBase * 0.1);
+                      const net = estimateNetPension2026(gross);
+                      return (
+                        <tr key={gross} className={gross === 5000 ? "bg-blue-50/50" : ""}>
+                          <td className="border p-2.5 font-semibold">{gross.toLocaleString("ro-RO")} Lei</td>
+                          <td className="border p-2.5">{excess.toLocaleString("ro-RO")} Lei</td>
+                          <td className="border p-2.5 text-amber-800">-{cass.toLocaleString("ro-RO")} Lei</td>
+                          <td className="border p-2.5 text-red-700">-{tax.toLocaleString("ro-RO")} Lei</td>
+                          <td className="border p-2.5 font-bold text-green-800">{net.toLocaleString("ro-RO")} Lei</td>
+                        </tr>
+                      );
+                    })}
+                  </tbody>
+                </table>
+              </div>
+              <figure className="mt-6">
+                <img
+                  src="/images/calcul-pensie-neta-brut-2026.svg"
+                  alt="Grafic comparativ pensie bruta vs pensie neta in mana in 2026 dupa aplicarea CASS 10% si impozit 10% peste pragul de 3.000 lei"
+                  width={1536}
+                  height={864}
+                  loading="lazy"
+                  decoding="async"
+                  className="w-full h-auto rounded-lg border border-slate-200 shadow-sm"
+                />
+              </figure>
             </div>
           </div>
         </div>
@@ -545,6 +597,10 @@ export default function Home() {
                 Vezi Toate Cele 20 de Articole
               </Button>
             </Link>
+          </div>
+
+          <div className="mt-12 max-w-4xl mx-auto">
+            <EmbedCalculatorBox />
           </div>
         </div>
       </section>

@@ -46,7 +46,7 @@ export default function CalculatorAnticipataPage() {
             <div className="flex items-center text-sm text-green-800 bg-green-50 p-3 rounded-md mb-6 border border-green-200">
               <CheckCircle className="w-5 h-5 mr-2 flex-shrink-0 text-green-700" />
               <span className="font-semibold">
-                Formule actualizate 2026: Legea nr. 360/2023 · VPR = 81 Lei · Grilă 0,15%–0,40%/lună
+                Formule actualizate 2026: Legea nr. 360/2023 · VPR = 81 Lei · Grilă 0,15%-0,40%/lună
               </span>
             </div>
             <EarlyRetirementCalculator />
@@ -116,7 +116,7 @@ export default function CalculatorAnticipataPage() {
                   <td className="border p-3">-12,0%</td>
                 </tr>
                 <tr className="bg-green-50">
-                  <td className="border p-3 font-medium">Peste 5 ani (5–8 ani peste stagiu)</td>
+                  <td className="border p-3 font-medium">Peste 5 ani (5-8 ani peste stagiu)</td>
                   <td className="border p-3"><strong>0,15% / lună (0% la ≥8 ani)</strong></td>
                   <td className="border p-3">-1,8% (0% la ≥8 ani)</td>
                   <td className="border p-3 font-semibold text-green-700">-9,0% (sau 0%)</td>
@@ -125,35 +125,47 @@ export default function CalculatorAnticipataPage() {
             </table>
           </div>
 
+          <figure className="not-prose my-8">
+            <img
+              src="/images/penalizari-pensie-anticipata-2026.svg"
+              alt="Graficul grilei de penalizari lunare la pensia anticipata sub Legea 360/2023 intre 0,15% si 0,40% pe luna"
+              width={1536}
+              height={864}
+              loading="lazy"
+              decoding="async"
+              className="w-full h-auto rounded-lg border border-slate-200 shadow-sm"
+            />
+          </figure>
+
           <p>
             La împlinirea vârstei standard de pensionare, pensia anticipată se transformă din oficiu în pensie pentru limită de vârstă și <strong>diminuarea procentuală este eliminată integral</strong>.
           </p>
 
-          <h3>Întrebări Frecvente despre Pensia Anticipată</h3>
+          <h2>Întrebări Frecvente despre Pensia Anticipată</h2>
           <div className="space-y-4 mt-6">
             <div className="border-b pb-4">
-              <h4 className="font-bold flex items-center gap-2">
+              <h3 className="text-base font-bold flex items-center gap-2">
                 <HelpCircle className="h-4 w-4 text-brand-blue" />
                 Care este penalizarea maximă sub Legea 360/2023?
-              </h4>
+              </h3>
               <p className="text-gray-700">
                 Penalizarea maximă este de <strong>24%</strong> (60 luni × 0,40%/lună), mai mică decât plafonul anterior de 30% din vechea lege.
               </p>
             </div>
             <div className="border-b pb-4">
-              <h4 className="font-bold flex items-center gap-2">
+              <h3 className="text-base font-bold flex items-center gap-2">
                 <HelpCircle className="h-4 w-4 text-brand-blue" />
                 Se poate cumula pensia anticipată cu salariul?
-              </h4>
+              </h3>
               <p className="text-gray-700">
                 Nu. Pe durata perceperii pensiei anticipate (până la împlinirea vârstei standard), beneficiarul nu poate cumula pensia cu venituri dintr-un contract individual de muncă.
               </p>
             </div>
             <div className="border-b pb-4">
-              <h4 className="font-bold flex items-center gap-2">
+              <h3 className="text-base font-bold flex items-center gap-2">
                 <HelpCircle className="h-4 w-4 text-brand-blue" />
                 Mamele beneficiază de reducerea vârstei?
-              </h4>
+              </h3>
               <p className="text-gray-700">
                 Da. Femeile care au născut și crescut copii beneficiază de reducerea vârstei standard cu câte 6 luni per copil (până la 3 ani și 6 luni pentru 7+ copii) după realizarea stagiului complet.
               </p>
@@ -169,26 +181,26 @@ export default function CalculatorAnticipataPage() {
                 <li>
                   <Link href="/calculator-varsta-pensionare/" className="text-brand-blue font-semibold underline">
                     Calculator Vârstă de Pensionare
-                  </Link>{" "}
-                  — află vârsta standard exactă înainte de a calcula lunile de anticipare.
+                  </Link>:{" "}
+                  află vârsta standard exactă înainte de a calcula lunile de anticipare.
                 </li>
                 <li>
                   <Link href="/calculator-puncte-pensie/" className="text-brand-blue font-semibold underline">
                     Calculator Puncte de Stabilitate
-                  </Link>{" "}
-                  — verifică bonusul pentru vechime peste 25 de ani.
+                  </Link>:{" "}
+                  verifică bonusul pentru vechime peste 25 de ani.
                 </li>
                 <li>
                   <Link href="/blog/pensie-anticipata-fara-penalizare/" className="text-brand-blue font-semibold underline">
                     Pensie Anticipată Fără Penalizare
-                  </Link>{" "}
-                  — excepțiile legale și condițiile de stagiu suplimentar.
+                  </Link>:{" "}
+                  excepțiile legale și condițiile de stagiu suplimentar.
                 </li>
                 <li>
                   <Link href="/legislatie/" className="text-brand-blue font-semibold underline">
                     Legea Pensiilor 360/2023
-                  </Link>{" "}
-                  — cadrul juridic complet valabil în 2026.
+                  </Link>:{" "}
+                  cadrul juridic complet valabil în 2026.
                 </li>
               </ul>
             </CardContent>

@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1536 864" width="1536" height="864" role="img" aria-label="Egalizarea varstei de pensionare pentru femei si barbati 2024-2035 conform Anexei 5 din Legea 360/2023">
+  <rect width="1536" height="864" fill="#F8FAFC" rx="24"/>
+  <rect x="40" y="40" width="1456" height="784" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="2" rx="20"/>
+  <text x="88" y="112" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="36" font-weight="800" fill="#0F172A">Varsta Standard de Pensionare 2024-2035 (Anexa 5 Legea 360/2023)</text>
+  <text x="88" y="156" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="22" font-weight="500" fill="#475569">Cresterea graduala a varstei pentru femei spre egalizarea la 65 de ani in 2035</text>
+  <g font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+    <line x1="88" y1="194" x2="128" y2="194" stroke="#2563EB" stroke-width="6"/>
+    <text x="140" y="202" font-size="20" font-weight="700" fill="#1E40AF">Barbati (constant 65 ani)</text>
+    <line x1="470" y1="194" x2="510" y2="194" stroke="#E11D48" stroke-width="6"/>
+    <text x="522" y="202" font-size="20" font-weight="700" fill="#9F1239">Femei (esalonare Anexa 5 spre 65 ani)</text>
+  </g>
+  <g stroke="#E2E8F0" stroke-width="1.5">
+    <line x1="160" y1="270" x2="1410" y2="270"/>
+    <line x1="160" y1="366" x2="1410" y2="366"/>
+    <line x1="160" y1="462" x2="1410" y2="462"/>
+    <line x1="160" y1="558" x2="1410" y2="558"/>
+    <line x1="160" y1="654" x2="1410" y2="654"/>
+  </g>
+  <g font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="20" font-weight="600" fill="#64748B">
+    <text x="88" y="278">65 ani</text>
+    <text x="88" y="374">64 ani</text>
+    <text x="88" y="470">63 ani</text>
+    <text x="88" y="566">62 ani</text>
+    <text x="88" y="662">61 ani</text>
+  </g>
+  <line x1="200" y1="270" x2="1370" y2="270" stroke="#2563EB" stroke-width="6" stroke-dasharray="14 8"/>
+  <polyline fill="none" stroke="#E11D48" stroke-width="7" points="200,542 434,502 668,478 902,462 1136,366 1370,270"/>
+  <g font-family="system-ui, -apple-system, Segoe UI, sans-serif" text-anchor="middle">
+    <circle cx="200" cy="542" r="10" fill="#E11D48"/>
+    <text x="200" y="582" font-size="21" font-weight="700" fill="#9F1239">62a 2l</text>
+    <text x="200" y="704" font-size="22" font-weight="700" fill="#0F172A">2024</text>
+
+    <circle cx="434" cy="502" r="12" fill="#E11D48" stroke="#FFFFFF" stroke-width="3"/>
+    <text x="434" y="482" font-size="22" font-weight="800" fill="#BE123C">62a 7l (2026)</text>
+    <text x="434" y="704" font-size="22" font-weight="800" fill="#1D4ED8">2026</text>
+
+    <circle cx="668" cy="478" r="10" fill="#E11D48"/>
+    <text x="668" y="518" font-size="21" font-weight="700" fill="#9F1239">62a 10l</text>
+    <text x="668" y="704" font-size="22" font-weight="700" fill="#0F172A">2028</text>
+
+    <circle cx="902" cy="462" r="10" fill="#E11D48"/>
+    <text x="902" y="438" font-size="21" font-weight="700" fill="#9F1239">63 ani</text>
+    <text x="902" y="704" font-size="22" font-weight="700" fill="#0F172A">2030</text>
+
+    <circle cx="1136" cy="366" r="10" fill="#E11D48"/>
+    <text x="1136" y="408" font-size="21" font-weight="700" fill="#9F1239">~64 ani</text>
+    <text x="1136" y="704" font-size="22" font-weight="700" fill="#0F172A">2032</text>
+
+    <circle cx="1370" cy="270" r="12" fill="#059669" stroke="#FFFFFF" stroke-width="3"/>
+    <text x="1320" y="246" font-size="22" font-weight="800" fill="#065F46">65 ani (Egal)</text>
+    <text x="1370" y="704" font-size="22" font-weight="700" fill="#065F46">2035</text>
+  </g>
+  <rect x="88" y="746" width="1360" height="52" rx="10" fill="#FFF1F2" stroke="#FECDD3"/>
+  <text x="112" y="779" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="20" font-weight="600" fill="#881337">Mamele beneficiaza de reducerea varstei cu 6 luni/copil (max. 3 ani si 6 luni) dupa stagiul complet | CalculatorPensie.com</text>
+</svg>

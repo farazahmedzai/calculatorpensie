@@ -188,18 +188,56 @@ export default function CalculatorPilon2Page() {
               </Card>
             )}
 
-            <div className="bg-white rounded-lg p-6 shadow-sm prose prose-sm max-w-none">
-              <h2>Cum funcționează Pilonul II de pensii private obligatorii?</h2>
+            <div className="bg-white rounded-lg p-6 shadow-sm prose prose-sm max-w-none space-y-4">
+              <h2>Cum funcționează Pilonul II de pensii private obligatorii în 2026?</h2>
               <p>
-                Pilonul II redirecționează automat <strong>4,75% din venitul tău salarial brut</strong> (din cota totală de 25% CAS) într-un cont individual administrat privat. Participarea nu îți reduce salariul net și transformă o parte din contribuții într-un activ personal investit pe piețele financiare.
+                În 2026, Pilonul II redirecționează automat <strong>4,75% din salariul brut lunar</strong> (din cota de 25% CAS) într-un cont privat administrat de fonduri supravegheate de ASF. Contribuția nu scade salariul net curent și aparține exclusiv participantului.
               </p>
               <ul>
-                <li><strong>Proprietate privată garantată:</strong> banii îți aparțin exclusiv ție și sunt moștenibili legal în caz de deces înaintea pensionării.</li>
-                <li><strong>Protecție prin lege:</strong> fondurile sunt supravegheate de ASF (Autoritatea de Supraveghere Financiară) și investite preponderent în titluri de stat și acțiuni listate.</li>
-                <li><strong>Complementar Pilonului I:</strong> se încasează separat față de pensia de stat calculată prin CNPP.</li>
+                <li><strong>Proprietate privată garantată:</strong> banii acumulați sunt proprietate personală și revin moștenitorilor legali dacă decesul survine înaintea pensionării.</li>
+                <li><strong>Protecție prin lege:</strong> activele sunt separate de patrimonial administratorilor autorizați ASF și investite preponderent în titluri de stat și acțiuni listate.</li>
+                <li><strong>Complementar Pilonului I:</strong> se încasează separat față de pensia publică de stat stabilită pe baza punctajelor CNPP.</li>
               </ul>
 
-              <div className="not-prose mt-6 grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
+              <h2>Cât poți acumula la Pilonul II până la 65 de ani? (Exemple 2026)</h2>
+              <p>
+                Valorile de mai jos ilustrează soldul estimat la un randament mediu anual de 5,5% și o contribuție lunară constantă de 4,75% din venitul brut:
+              </p>
+              <table className="w-full text-xs sm:text-sm border-collapse my-4">
+                <thead>
+                  <tr className="bg-slate-100 text-left">
+                    <th className="border p-2">Salariu Net / Brut Estimat</th>
+                    <th className="border p-2">Contribuție Pilon II (4,75%)</th>
+                    <th className="border p-2">După 15 Ani (de la 50 ani)</th>
+                    <th className="border p-2">După 30 Ani (de la 35 ani)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td className="border p-2 font-semibold">4.050 lei net (~6.923 brut)</td>
+                    <td className="border p-2">329 lei / lună</td>
+                    <td className="border p-2">~91.800 lei</td>
+                    <td className="border p-2 font-bold text-green-700">~299.400 lei</td>
+                  </tr>
+                  <tr className="bg-slate-50">
+                    <td className="border p-2 font-semibold">5.400 lei net (~9.231 brut)</td>
+                    <td className="border p-2">438 lei / lună</td>
+                    <td className="border p-2">~122.200 lei</td>
+                    <td className="border p-2 font-bold text-green-700">~398.600 lei</td>
+                  </tr>
+                  <tr>
+                    <td className="border p-2 font-semibold">8.000 lei net (~13.675 brut)</td>
+                    <td className="border p-2">650 lei / lună</td>
+                    <td className="border p-2">~181.400 lei</td>
+                    <td className="border p-2 font-bold text-green-700">~591.500 lei</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <div className="not-prose mt-6 grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs">
+                <Link href="/" className="p-3 border rounded bg-slate-50 hover:bg-blue-50 text-blue-700 font-semibold">
+                  → Calculator Pensie de Stat (Pilon I)
+                </Link>
                 <Link href="/calculator-pensie-pilon-3/" className="p-3 border rounded bg-slate-50 hover:bg-blue-50 text-blue-700 font-semibold">
                   → Calculator Pensie Facultativă Pilon III
                 </Link>

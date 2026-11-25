@@ -7,6 +7,7 @@ import MetaTags from "@/components/seo/MetaTags";
 import BreadcrumbNavigation from "@/components/seo/BreadcrumbNavigation";
 import RelatedLinks from "@/components/seo/RelatedLinks";
 import { getArticleBySlug } from "@/data/static-articles";
+import { formatArticleSeoTitle } from "@/data/routes-meta";
 import { formatRoDate } from "@/lib/utils";
 import { marked } from "marked";
 
@@ -54,7 +55,7 @@ export default function BlogArticle() {
   return (
     <div className="min-h-screen bg-white">
       <MetaTags
-        title={`${article.title} | CalculatorPensie.com`}
+        title={formatArticleSeoTitle(article.title)}
         description={article.excerpt}
         canonical={`https://calculatorpensie.com/blog/${article.slug}/`}
         ogImage={article.image}

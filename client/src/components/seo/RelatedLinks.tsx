@@ -21,28 +21,25 @@ import { staticArticles } from "@/data/static-articles";
 
 type Target = { href: string; label: string };
 
-/** Every calculator/tool page on the site. The first five are always shown. */
-const CORE_TOOLS: Target[] = [
-  { href: "/", label: "Calculator Pensie de Stat" },
+/** Fallback tools shown only when fewer than 2 topical tools match the article. */
+const FALLBACK_TOOLS: Target[] = [
+  { href: "/", label: "Calculator Pensie de Stat 2026" },
   { href: "/calculator-varsta-pensionare/", label: "Calculator Vârstă de Pensionare" },
-  { href: "/calculator-pensie-anticipata/", label: "Calculator Pensie Anticipată" },
-  { href: "/calculator-puncte-pensie/", label: "Calculator Puncte de Stabilitate" },
-  { href: "/legislatie/", label: "Ghidul Legislației (Legea 360/2023)" },
 ];
 
-/** Extra tool suggestions keyed by words that appear in the article's slug/title. */
+/** Topical tool suggestions keyed by slug/title/category signals (max 3 shown). */
 const TOPICAL_TOOLS: Array<{ match: RegExp; tool: Target }> = [
-  { match: /pilon-?2|pilonul-?2/i, tool: { href: "/calculator-pensie-pilon-2/", label: "Calculator Pilonul II" } },
+  { match: /pilon-?2|pilonul-?2|administrat/i, tool: { href: "/calculator-pensie-pilon-2/", label: "Calculator Pilonul II" } },
   { match: /pilon-?3|pilonul-?3|facultativ/i, tool: { href: "/calculator-pensie-pilon-3/", label: "Calculator Pilonul III" } },
-  { match: /punct-referinta|vpr|indexare|puncte?/i, tool: { href: "/calculator-puncte-pensie/", label: "Calculator Puncte de Pensie" } },
-  { match: /varsta|pensionare|ies-la-pensie/i, tool: { href: "/calculator-varsta-pensionare/", label: "Când te poți pensiona" } },
-  { match: /anticipat/i, tool: { href: "/calculator-pensie-anticipata/", label: "Pensie Anticipată: penalizări" } },
+  { match: /punct-referinta|vpr|indexare|stabilitate|puncte?/i, tool: { href: "/calculator-puncte-pensie/", label: "Calculator Puncte și VPR" } },
+  { match: /varsta|pensionare|ies-la-pensie|femei|tabel/i, tool: { href: "/calculator-varsta-pensionare/", label: "Calculator Vârstă de Pensionare" } },
+  { match: /anticipat|penalizar/i, tool: { href: "/calculator-pensie-anticipata/", label: "Calculator Pensie Anticipată" } },
   { match: /invaliditate|urmas/i, tool: { href: "/tipuri-pensii/", label: "Tipuri de Pensii în România" } },
-  { match: /legislat|reforma|lege|stat-2026/i, tool: { href: "/legislatie/", label: "Legea Pensiilor 2026" } },
-  { match: /excel|simulare|instrumente/i, tool: { href: "/program-excel-calcul-pensie/", label: "Program Excel Calcul Pensie" } },
-  { match: /planificare|minima|garantata/i, tool: { href: "/planificare/", label: "Planificare Pensie" } },
-  { match: /cotizare|stagiul|vechime|contributii/i, tool: { href: "/faq/", label: "Întrebări Frecvente" } },
-  { match: /acte|dosar|cnpp|procedur/i, tool: { href: "/metodologie/", label: "Metodologia de Calcul" } },
+  { match: /legislat|reforma|lege-360|lege|stat-2026/i, tool: { href: "/legislatie/", label: "Ghidul Legii 360/2023" } },
+  { match: /excel|simulare|instrumente|brut|net/i, tool: { href: "/program-excel-calcul-pensie/", label: "Program Excel Calcul Pensie" } },
+  { match: /planificare|minima|garantata/i, tool: { href: "/planificare/", label: "Ghid Planificare Pensie" } },
+  { match: /cotizare|stagiul|vechime|contributii|cumparare/i, tool: { href: "/faq/", label: "Întrebări Frecvente Pensii" } },
+  { match: /acte|dosar|cnpp|procedur|calcul/i, tool: { href: "/metodologie/", label: "Metodologia de Calcul CNPP" } },
 ];
 
 interface Props {
@@ -52,21 +49,24 @@ interface Props {
 }
 
 export default function RelatedLinks({ slug, title, category }: Props) {
-  // 1. tools — always the five core, plus any topical ones for this article
-  const haystack = `${slug} ${title}`;
-  const extra = TOPICAL_TOOLS
+  // 1. tools: prioritise topical matches for this article (capped at 3 to avoid sitewide repetition)
+  const haystack = `${slug} ${title} ${category}`;
+  const matched = TOPICAL_TOOLS
     .filter(t => t.match.test(haystack))
-    .map(t => t.tool)
-    .filter(t => !CORE_TOOLS.some(c => c.href === t.href));
+    .map(t => t.tool);
 
   const seen = new Set<string>();
-  const tools = [...CORE_TOOLS, ...extra].filter(t => {
+  const uniqueMatched = matched.filter(t => {
     if (seen.has(t.href)) return false;
     seen.add(t.href);
     return true;
-  }).slice(0, 7);
+  });
 
-  // 2. related reading — same category first, then fill from the rest.
+  const tools = uniqueMatched.length >= 2
+    ? uniqueMatched.slice(0, 3)
+    : [...uniqueMatched, ...FALLBACK_TOOLS.filter(t => !seen.has(t.href))].slice(0, 3);
+
+  // 2. related reading: same category first, then fill from the rest.
   const others = staticArticles.filter(a => a.published && a.slug !== slug);
   const sameCat = others.filter(a => a.category === category);
   const rest = others.filter(a => a.category !== category);

@@ -68,16 +68,16 @@ export default function LegislatiePage() {
                 <strong>{OFFICIAL_VPR_2026} Lei</strong> pe întreg parcursul anului 2026 (OUG nr. 156/2024 și Legea nr. 141/2025 au suspendat indexarea inițial prognozată spre 91 Lei).
               </li>
               <li>
-                • <strong>CASS pentru pensii peste 3.000 Lei:</strong> Conform Legii nr. 141/2025 (1 aug. 2025 – 31 dec. 2027), se aplică 10% CASS exclusiv pentru suma ce depășește pragul de 3.000 Lei.
+                • <strong>CASS pentru pensii peste 3.000 Lei:</strong> Conform Legii nr. 141/2025 (1 aug. 2025-31 dec. 2027), se aplică 10% CASS exclusiv pentru suma ce depășește pragul de 3.000 Lei.
               </li>
               <li>
-                • <strong>Egalizarea vârstei la femei:</strong> Creștere graduală conform Anexei 5 (~62 ani și 6–7 luni în 2026, spre 63 ani în 2030 și 65 ani în 2035).
+                • <strong>Egalizarea vârstei la femei:</strong> Creștere graduală conform Anexei 5 (~62 ani și 6-7 luni în 2026, spre 63 ani în 2030 și 65 ani în 2035).
               </li>
             </ul>
           </div>
 
           <div className="prose prose-lg max-w-none mb-12">
-            <h2>Legea nr. 360/2023 — Sistemul Public de Pensii</h2>
+            <h2>Legea nr. 360/2023: Sistemul Public de Pensii</h2>
             <p>
               Legea nr. 360/2023 este cadrul normativ principal aplicabil calculului pensiilor în România. Cuantumul pensiei rezultă din înmulțirea numărului total de puncte cu Valoarea Punctului de Referință (VPR).
             </p>
@@ -126,7 +126,7 @@ export default function LegislatiePage() {
                   </div>
                   <div className="bg-pink-50 p-4 rounded-lg">
                     <h4 className="font-semibold mb-1 text-pink-900">Femei (2026)</h4>
-                    <p className="text-2xl font-bold text-pink-800">~62 ani și 6–7 luni</p>
+                    <p className="text-2xl font-bold text-pink-800">~62 ani și 6-7 luni</p>
                     <p className="text-sm text-pink-700">Crește gradual spre 65 ani în 2035 (Anexa 5)</p>
                   </div>
                 </div>
@@ -198,7 +198,7 @@ export default function LegislatiePage() {
                 className="flex items-center p-4 bg-white rounded-lg border hover:shadow-md transition-shadow"
               >
                 <div className="flex-1">
-                  <h4 className="font-semibold">Portal Legislativ Just.ro — Legea 360/2023</h4>
+                  <h4 className="font-semibold">Portal Legislativ Just.ro (Legea 360/2023)</h4>
                   <p className="text-sm text-gray-700">Textul oficial al Legii sistemului public de pensii</p>
                 </div>
                 <ExternalLink className="h-5 w-5 text-gray-700" />

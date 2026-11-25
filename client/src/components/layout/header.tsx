@@ -23,6 +23,15 @@ export default function Header() {
     { href: "/blog/", label: "Blog" },
   ];
 
+  const toolLinks = [
+    { href: "/calculator-varsta-pensionare/", label: "Vârstă Pensionare" },
+    { href: "/calculator-pensie-anticipata/", label: "Pensie Anticipată" },
+    { href: "/calculator-puncte-pensie/", label: "Puncte Stabilitate" },
+    { href: "/calculator-pensie-pilon-2/", label: "Pilon II" },
+    { href: "/calculator-pensie-pilon-3/", label: "Pilon III" },
+    { href: "/program-excel-calcul-pensie/", label: "Excel CSV" },
+  ];
+
   const NavLink = ({ href, label, highlight = false, mobile = false }: { 
     href: string; 
     label: string; 
@@ -58,14 +67,14 @@ export default function Header() {
           {/* Logo */}
           <Link href="/">
             <div className="flex items-center cursor-pointer group">
-              <div className="bg-blue-600 p-2 rounded-lg mr-3 group-hover:bg-blue-700 transition-colors">
-                <Calculator className="h-8 w-8 text-white" />
+              <div className="bg-blue-600 p-1.5 sm:p-2 rounded-lg mr-2 sm:mr-3 group-hover:bg-blue-700 transition-colors">
+                <Calculator className="h-6 w-6 sm:h-8 sm:w-8 text-white" />
               </div>
               <div>
-                <span className="text-2xl font-bold text-slate-900 dark:text-slate-50">
+                <span className="text-lg sm:text-2xl font-bold text-slate-900 dark:text-slate-50">
                   CalculatorPensie.com
                 </span>
-                <p className="text-xs text-blue-600 font-medium dark:text-blue-400">#1 Calculator de Pensie</p>
+                <p className="text-[11px] sm:text-xs text-blue-600 font-medium dark:text-blue-400">#1 Calculator de Pensie</p>
               </div>
             </div>
           </Link>
@@ -126,15 +135,31 @@ export default function Header() {
                 </nav>
 
                 {/* Mobile Extra Links */}
-                <div className="mt-8 pt-6 border-t border-blue-200">
-                  <div className="space-y-3">
+                <div className="mt-6 pt-5 border-t border-blue-200">
+                  <p className="px-4 text-xs font-semibold uppercase tracking-wider text-slate-500 mb-2">Calculatoare Specializate</p>
+                  <div className="space-y-1">
+                    {toolLinks.map((tool) => (
+                      <Link key={tool.href} href={tool.href}>
+                        <span
+                          className="block px-4 py-2 text-sm font-medium text-blue-700 hover:bg-blue-50 rounded-lg cursor-pointer"
+                          onClick={() => setMobileMenuOpen(false)}
+                        >
+                          {tool.label}
+                        </span>
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+
+                <div className="mt-6 pt-5 border-t border-blue-200">
+                  <div className="space-y-2">
                     <Link href="/despre-noi/">
-                      <span className="block px-4 py-3 text-sm text-slate-600 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-all cursor-pointer dark:text-slate-400 dark:hover:text-blue-400 dark:hover:bg-slate-800">
+                      <span className="block px-4 py-2 text-sm text-slate-600 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-all cursor-pointer dark:text-slate-400 dark:hover:text-blue-400 dark:hover:bg-slate-800">
                         Despre Noi
                       </span>
                     </Link>
                     <Link href="/contact/">
-                      <span className="block px-4 py-3 text-sm text-slate-600 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-all cursor-pointer dark:text-slate-400 dark:hover:text-blue-400 dark:hover:bg-slate-800">
+                      <span className="block px-4 py-2 text-sm text-slate-600 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-all cursor-pointer dark:text-slate-400 dark:hover:text-blue-400 dark:hover:bg-slate-800">
                         Contact
                       </span>
                     </Link>
@@ -158,6 +183,24 @@ export default function Header() {
           </div>
         </div>
       </nav>
+      <div className="hidden md:block border-t border-slate-100 bg-slate-50/90 dark:border-slate-800 dark:bg-slate-900/90">
+        <nav aria-label="Calculatoare pensii" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2 overflow-x-auto">
+          <div className="flex items-center gap-2 sm:gap-3 whitespace-nowrap text-xs sm:text-sm">
+            <span className="font-semibold text-slate-500">Simulatoare 2026:</span>
+            {toolLinks.map((tool) => (
+              <Link key={tool.href} href={tool.href}>
+                <span className={`px-2.5 py-1 rounded-md font-medium transition-colors cursor-pointer ${
+                  isActiveLink(tool.href)
+                    ? "bg-blue-100 text-blue-800"
+                    : "text-slate-700 hover:bg-blue-50 hover:text-blue-700"
+                }`}>
+                  {tool.label}
+                </span>
+              </Link>
+            ))}
+          </div>
+        </nav>
+      </div>
     </header>
   );
 }

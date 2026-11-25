@@ -189,13 +189,13 @@ export default function CalculatorPunctePage() {
                 </thead>
                 <tbody>
                   <tr>
-                    <td className="border p-2">Anii 26 – 30 (5 ani)</td>
+                    <td className="border p-2">Anii 26-30 (5 ani)</td>
                     <td className="border p-2"><strong>+0,50 puncte</strong></td>
                     <td className="border p-2">2,50 puncte</td>
                     <td className="border p-2">+203 Lei / lună</td>
                   </tr>
                   <tr className="bg-slate-50">
-                    <td className="border p-2">Anii 31 – 35 (5 ani)</td>
+                    <td className="border p-2">Anii 31-35 (5 ani)</td>
                     <td className="border p-2"><strong>+0,75 puncte</strong></td>
                     <td className="border p-2">3,75 puncte (cumulat 6,25)</td>
                     <td className="border p-2">+506 Lei / lună cumulat</td>
@@ -209,17 +209,32 @@ export default function CalculatorPunctePage() {
                 </tbody>
               </table>
 
+              <figure className="not-prose my-6">
+                <img
+                  src="/images/puncte-stabilitate-legea-360-2026.svg"
+                  alt="Graficul punctelor de stabilitate si al bonusului lunar in lei la VPR 81 Lei pentru stagii contributive intre 25 si 45 ani"
+                  width={1536}
+                  height={864}
+                  loading="lazy"
+                  decoding="async"
+                  className="w-full h-auto rounded-lg border border-slate-200 shadow-sm"
+                />
+              </figure>
+
               <p>
                 <strong>Exemplu concret (40 de ani stagiu contributiv):</strong>{" "}
                 <code>(5 × 0,50) + (5 × 0,75) + (5 × 1,00) = 11,25 puncte</code> de stabilitate, care la VPR de <strong>81 Lei</strong> adaugă <strong>+911 Lei brut/lună</strong> peste pensia din contributivitate!
               </p>
 
-              <div className="not-prose mt-6 grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
+              <div className="not-prose mt-6 grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs">
+                <Link href="/" className="p-3 border rounded bg-slate-50 hover:bg-blue-50 text-blue-700 font-semibold">
+                  → Calculator Pensie Netă &amp; Brută
+                </Link>
                 <Link href="/metodologie/" className="p-3 border rounded bg-slate-50 hover:bg-blue-50 text-blue-700 font-semibold">
                   → Metodologia Matematică Completă
                 </Link>
-                <Link href="/blog/calcul-punct-referinta-vpr/" className="p-3 border rounded bg-slate-50 hover:bg-blue-50 text-blue-700 font-semibold">
-                  → Ghid VPR 2026: Cum se stabilește
+                <Link href="/program-excel-calcul-pensie/" className="p-3 border rounded bg-slate-50 hover:bg-blue-50 text-blue-700 font-semibold">
+                  → Tabel Excel Calcul Punctaj
                 </Link>
               </div>
             </div>

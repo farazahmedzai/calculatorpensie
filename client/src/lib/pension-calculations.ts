@@ -36,7 +36,7 @@ export interface PensionResult {
 }
 
 // Official 2026 Romanian pension constants (Law 360/2023, Law 141/2025, Law 44/2026)
-export const OFFICIAL_VPR_2026 = 81; // RON (frozen at 81 Lei in 2025–2026)
+export const OFFICIAL_VPR_2026 = 81; // RON (frozen at 81 Lei in 2025-2026)
 export const AVERAGE_GROSS_SALARY_2026 = 9192; // RON (Câștig salarial mediu brut pe economie 2026)
 export const MINIMUM_PENSION_2026 = 1281; // RON (Indemnizație socială pentru pensionari)
 export const MINIMUM_WAGE_2026 = 4050; // RON (Salariu de bază minim brut pe țară)
@@ -161,7 +161,7 @@ export function calculateEarlyRetirement(input: EarlyRetirementInput) {
 
   let recommendedStage = "";
   if (penaltyPercentage > 20) {
-    recommendedStage = "Penalizarea este ridicată. Evaluează amânarea retragerii cu 1–2 ani sau completarea prin Pilonul III.";
+    recommendedStage = "Penalizarea este ridicată. Evaluează amânarea retragerii cu 1-2 ani sau completarea prin Pilonul III.";
   } else if (penaltyPercentage > 10) {
     recommendedStage = "Penalizarea este moderată. Reține că la împlinirea vârstei standard penalizarea se elimină din oficiu.";
   } else {

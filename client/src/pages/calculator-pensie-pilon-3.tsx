@@ -197,17 +197,55 @@ export default function CalculatorPilon3Page() {
               </Card>
             )}
 
-            <div className="bg-white rounded-lg p-6 shadow-sm prose prose-sm max-w-none">
-              <h2>Avantajele Pilonului III în 2026</h2>
+            <div className="bg-white rounded-lg p-6 shadow-sm prose prose-sm max-w-none space-y-4">
+              <h2>Ce avantaje fiscale oferă Pilonul III în 2026?</h2>
+              <p>
+                Pilonul III oferă o deducere fiscală de până la <strong>400 EUR pe an</strong> pentru salariat și încă 400 EUR pe an pentru angajator, cu posibilitatea retragerii acumulate încă de la împlinirea vârstei de <strong>60 de ani</strong>.
+              </p>
               <ul>
-                <li><strong>Deductibilitate fiscală dublă:</strong> 400 EUR/an pentru salariat și încă 400 EUR/an pentru angajator (până la ~200 lei/an economisiți din impozitul pe venit de 10% pentru propriile contribuții).</li>
+                <li><strong>Economie directă de impozit:</strong> la contribuția maximă deductibilă (~2.000 lei/an, adică ~166 lei/lună), impozitul pe venit de 10% se reduce anual cu circa 200 lei pentru salariat.</li>
                 <li><strong>Acces rapid la 60 de ani:</strong> cu 5 ani înaintea vârstei standard de 65 de ani (în condițiile realizării a cel puțin 90 contribuții lunare).</li>
-                <li><strong>Flexibilitate totală:</strong> poți modifica sau suspenda oricând contribuția lunară (în limita maximă legală de 15% din venitul brut).</li>
+                <li><strong>Flexibilitate totală:</strong> poți modifica, crește sau suspenda contribuția oricând, în limita legală de 15% din venitul brut lunar.</li>
               </ul>
 
-              <div className="not-prose mt-6 grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
+              <h2>Cât acumulezi la Pilonul III cu 166 lei vs 350 lei pe lună?</h2>
+              <table className="w-full text-xs sm:text-sm border-collapse my-4">
+                <thead>
+                  <tr className="bg-slate-100 text-left">
+                    <th className="border p-2">Contribuție Lunară</th>
+                    <th className="border p-2">Orizont (până la 60 ani)</th>
+                    <th className="border p-2">Total Depus</th>
+                    <th className="border p-2">Sold Estimat (5%/an)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td className="border p-2 font-semibold">166 lei / lună (~400 EUR/an)</td>
+                    <td className="border p-2">20 ani (de la 40 ani)</td>
+                    <td className="border p-2">39.840 lei</td>
+                    <td className="border p-2 font-bold text-green-700">~68.200 lei</td>
+                  </tr>
+                  <tr className="bg-slate-50">
+                    <td className="border p-2 font-semibold">166 lei / lună (~400 EUR/an)</td>
+                    <td className="border p-2">30 ani (de la 30 ani)</td>
+                    <td className="border p-2">59.760 lei</td>
+                    <td className="border p-2 font-bold text-green-700">~138.150 lei</td>
+                  </tr>
+                  <tr>
+                    <td className="border p-2 font-semibold">350 lei / lună (salariat + angajator)</td>
+                    <td className="border p-2">25 ani (de la 35 ani)</td>
+                    <td className="border p-2">105.000 lei</td>
+                    <td className="border p-2 font-bold text-green-700">~208.400 lei</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <div className="not-prose mt-6 grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs">
                 <Link href="/calculator-pensie-pilon-2/" className="p-3 border rounded bg-slate-50 hover:bg-blue-50 text-blue-700 font-semibold">
                   → Calculator Pilon II Obligatoriu
+                </Link>
+                <Link href="/planificare/" className="p-3 border rounded bg-slate-50 hover:bg-blue-50 text-blue-700 font-semibold">
+                  → Strategie Pilon I + II + III
                 </Link>
                 <Link href="/blog/pilonul-3-avantaje-fiscale-strategii/" className="p-3 border rounded bg-slate-50 hover:bg-blue-50 text-blue-700 font-semibold">
                   → Strategii Fiscale Pilon III

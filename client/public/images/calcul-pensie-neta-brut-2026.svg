@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1536 864" width="1536" height="864" role="img" aria-label="Calcul pensie neta din brut in Romania in 2026 dupa CASS si impozit">
+  <rect width="1536" height="864" fill="#F8FAFC" rx="24"/>
+  <rect x="40" y="40" width="1456" height="784" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="2" rx="20"/>
+  <text x="88" y="112" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="38" font-weight="800" fill="#0F172A">Calcul Pensie Neta din Brut in 2026 (Legea 141/2025)</text>
+  <text x="88" y="156" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="22" font-weight="500" fill="#475569">Prag scutit: 3.000 Lei | CASS 10% peste 3.000 Lei | Impozit 10% peste 3.000 Lei dupa CASS</text>
+  <g font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+    <rect x="88" y="186" width="22" height="22" rx="4" fill="#2563EB"/>
+    <text x="120" y="204" font-size="20" font-weight="600" fill="#1E293B">Pensie Bruta (Lei)</text>
+    <rect x="360" y="186" width="22" height="22" rx="4" fill="#10B981"/>
+    <text x="392" y="204" font-size="20" font-weight="600" fill="#1E293B">Pensie Neta in Mana (Lei)</text>
+  </g>
+  <line x1="88" y1="228" x2="1448" y2="228" stroke="#E2E8F0" stroke-width="2"/>
+  <g font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+    <text x="88" y="294" font-size="23" font-weight="700" fill="#0F172A">3.000 Lei brut</text>
+    <rect x="330" y="264" width="162" height="22" rx="6" fill="#2563EB"/>
+    <rect x="330" y="290" width="162" height="22" rx="6" fill="#10B981"/>
+    <text x="510" y="296" font-size="22" font-weight="700" fill="#047857">3.000 Lei net (0 Lei taxe)</text>
+
+    <text x="88" y="394" font-size="23" font-weight="700" fill="#0F172A">3.500 Lei brut</text>
+    <rect x="330" y="364" width="189" height="22" rx="6" fill="#2563EB"/>
+    <rect x="330" y="390" width="184" height="22" rx="6" fill="#10B981"/>
+    <text x="537" y="396" font-size="22" font-weight="700" fill="#0F172A">3.405 Lei net (-50 CASS, -45 impozit)</text>
+
+    <text x="88" y="494" font-size="23" font-weight="700" fill="#0F172A">5.000 Lei brut</text>
+    <rect x="330" y="464" width="270" height="22" rx="6" fill="#2563EB"/>
+    <rect x="330" y="490" width="249" height="22" rx="6" fill="#10B981"/>
+    <text x="618" y="496" font-size="22" font-weight="700" fill="#0F172A">4.620 Lei net (-200 CASS, -180 impozit)</text>
+
+    <text x="88" y="594" font-size="23" font-weight="700" fill="#0F172A">7.000 Lei brut</text>
+    <rect x="330" y="564" width="378" height="22" rx="6" fill="#2563EB"/>
+    <rect x="330" y="590" width="337" height="22" rx="6" fill="#10B981"/>
+    <text x="726" y="596" font-size="22" font-weight="700" fill="#0F172A">6.240 Lei net (-400 CASS, -360 impozit)</text>
+
+    <text x="88" y="694" font-size="23" font-weight="700" fill="#0F172A">10.000 Lei brut</text>
+    <rect x="330" y="664" width="540" height="22" rx="6" fill="#2563EB"/>
+    <rect x="330" y="690" width="468" height="22" rx="6" fill="#10B981"/>
+    <text x="888" y="696" font-size="22" font-weight="700" fill="#0F172A">8.670 Lei net (-700 CASS, -630 impozit)</text>
+  </g>
+  <rect x="88" y="746" width="1360" height="52" rx="10" fill="#EFF6FF" stroke="#BFDBFE"/>
+  <text x="112" y="779" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="20" font-weight="600" fill="#1E3A8A">Formula: CASS = 10% x (Brut - 3.000) | Impozit = 10% x (Brut - 3.000 - CASS) | Sursa: CalculatorPensie.com (2026)</text>
+</svg>

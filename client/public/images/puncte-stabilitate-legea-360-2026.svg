@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1536 864" width="1536" height="864" role="img" aria-label="Puncte de stabilitate Legea 360/2023 si valoarea in lei la VPR 81 Lei in 2026">
+  <rect width="1536" height="864" fill="#F8FAFC" rx="24"/>
+  <rect x="40" y="40" width="1456" height="784" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="2" rx="20"/>
+  <text x="88" y="112" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="38" font-weight="800" fill="#0F172A">Puncte de Stabilitate Legea 360/2023 (Bonus la VPR 81 Lei)</text>
+  <text x="88" y="156" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="22" font-weight="500" fill="#475569">Transa 26-30 ani: +0,50 pct/an | 31-35 ani: +0,75 pct/an | Peste 35 ani: +1,00 pct/an (Art. 85)</text>
+  <line x1="88" y1="196" x2="1448" y2="196" stroke="#E2E8F0" stroke-width="2"/>
+  <g font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+    <text x="88" y="274" font-size="24" font-weight="700" fill="#0F172A">25 ani stagiu</text>
+    <rect x="310" y="242" width="16" height="44" rx="6" fill="#94A3B8"/>
+    <text x="344" y="272" font-size="23" font-weight="600" fill="#475569">0,00 puncte (+0 Lei/luna)</text>
+
+    <text x="88" y="378" font-size="24" font-weight="700" fill="#0F172A">30 ani stagiu</text>
+    <rect x="310" y="346" width="83" height="44" rx="8" fill="#3B82F6"/>
+    <text x="411" y="376" font-size="23" font-weight="700" fill="#1E40AF">+2,50 puncte (+203 Lei brut/luna)</text>
+
+    <text x="88" y="482" font-size="24" font-weight="700" fill="#0F172A">35 ani stagiu</text>
+    <rect x="310" y="450" width="208" height="44" rx="8" fill="#2563EB"/>
+    <text x="536" y="480" font-size="23" font-weight="700" fill="#1D4ED8">+6,25 puncte (+506 Lei brut/luna)</text>
+
+    <text x="88" y="586" font-size="24" font-weight="700" fill="#0F172A">40 ani stagiu</text>
+    <rect x="310" y="554" width="374" height="44" rx="8" fill="#059669"/>
+    <text x="702" y="584" font-size="23" font-weight="700" fill="#065F46">+11,25 puncte (+911 Lei brut/luna)</text>
+
+    <text x="88" y="690" font-size="24" font-weight="700" fill="#0F172A">45 ani stagiu</text>
+    <rect x="310" y="658" width="540" height="44" rx="8" fill="#047857"/>
+    <text x="868" y="688" font-size="23" font-weight="700" fill="#064E3B">+16,25 puncte (+1.316 Lei brut/luna)</text>
+  </g>
+  <rect x="88" y="746" width="1360" height="52" rx="10" fill="#ECFDF5" stroke="#A7F3D0"/>
+  <text x="112" y="779" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="20" font-weight="600" fill="#065F46">Se iau in calcul exclusiv anii contributivi peste 25 de ani, nu perioadele asimilate | CalculatorPensie.com (2026)</text>
+</svg>

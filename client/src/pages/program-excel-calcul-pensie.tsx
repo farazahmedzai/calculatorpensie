@@ -8,6 +8,7 @@ import { Link } from "wouter";
 import { AVERAGE_GROSS_SALARY_2026, OFFICIAL_VPR_2026 } from "@/lib/pension-calculations";
 import { ROUTES_META } from "@/data/routes-meta";
 import { trackDownload } from "@/lib/analytics";
+import EmbedCalculatorBox from "@/components/features/EmbedCalculatorBox";
 
 const PAGE_META = ROUTES_META["/program-excel-calcul-pensie/"];
 
@@ -123,7 +124,7 @@ export default function ProgramExcelPage() {
 
             <div className="bg-white rounded-lg p-6 shadow-sm border">
               <h3 className="text-sm font-bold text-gray-800 uppercase tracking-wide mb-4">
-                Previzualizare Date Tabel (2025–2026)
+                Previzualizare Date Tabel (2025-2026)
               </h3>
               <div className="overflow-x-auto text-xs font-mono">
                 <table className="w-full border-collapse">
@@ -200,30 +201,37 @@ export default function ProgramExcelPage() {
                 <li>
                   <Link href="/" className="text-brand-blue font-semibold underline">
                     Calculator Pensie de Stat 2026
-                  </Link>{" "}
-                  — estimează rapid pensia online fără descărcare.
+                  </Link>:{" "}
+                  estimează rapid pensia online fără descărcare.
                 </li>
                 <li>
                   <Link href="/calculator-puncte-pensie/" className="text-brand-blue font-semibold underline">
                     Calculator Puncte de Pensie
-                  </Link>{" "}
-                  — calculează punctele de stabilitate pentru vechime &gt; 25 ani.
+                  </Link>:{" "}
+                  calculează punctele de stabilitate pentru vechime &gt; 25 ani.
                 </li>
                 <li>
                   <Link href="/calculator-varsta-pensionare/" className="text-brand-blue font-semibold underline">
                     Calculator Vârstă de Pensionare
-                  </Link>{" "}
-                  — verifică data ieșirii la pensie conform Anexei 5.
+                  </Link>:{" "}
+                  verifică data ieșirii la pensie conform Anexei 5.
                 </li>
                 <li>
                   <Link href="/metodologie/" className="text-brand-blue font-semibold underline">
                     Metodologia de Calcul CNPP
-                  </Link>{" "}
-                  — exemple matematice pas cu pas.
+                  </Link>:{" "}
+                  exemple matematice pas cu pas.
                 </li>
               </ul>
             </CardContent>
           </Card>
+
+          <div className="md:col-span-3 mt-2">
+            <EmbedCalculatorBox
+              title="Încorporează trimiterea către Programul Excel pe site-ul tău"
+              targetPath="/program-excel-calcul-pensie/"
+            />
+          </div>
         </div>
       </div>
     </div>

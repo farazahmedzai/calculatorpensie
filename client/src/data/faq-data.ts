@@ -10,7 +10,7 @@ export const HOMEPAGE_FAQ_DATA: FAQEntry[] = [
     id: "retirement-age",
     question: "La ce vârstă mă pot pensiona în România?",
     answer:
-      "Conform Legii nr. 360/2023 (Anexa nr. 5), vârsta standard de pensionare este de 65 de ani pentru bărbați (cu stagiu complet de 35 de ani), iar pentru femei crește gradual de la 62 de ani și 6–7 luni în 2026 spre 63 de ani în 2030 și 65 de ani în 2035. Stagiul minim de cotizare contributiv este de 15 ani.",
+      "Conform Legii nr. 360/2023 (Anexa nr. 5), vârsta standard de pensionare este de 65 de ani pentru bărbați (cu stagiu complet de 35 de ani), iar pentru femei crește gradual de la 62 de ani și 6-7 luni în 2026 spre 63 de ani în 2030 și 65 de ani în 2035. Stagiul minim de cotizare contributiv este de 15 ani.",
   },
   {
     id: "pension-point-value",
@@ -28,13 +28,13 @@ export const HOMEPAGE_FAQ_DATA: FAQEntry[] = [
     id: "stability-points",
     question: "Ce sunt punctele de stabilitate și cum se acordă?",
     answer:
-      "Punctele de stabilitate sunt bonificații acordate pentru stagiul contributiv ce depășește 25 de ani: +0,50 puncte/an pentru anii 26–30, +0,75 puncte/an pentru anii 31–35 și +1,00 punct/an pentru fiecare an peste 35 de ani.",
+      "Punctele de stabilitate sunt bonificații acordate pentru stagiul contributiv ce depășește 25 de ani: +0,50 puncte/an pentru anii 26-30, +0,75 puncte/an pentru anii 31-35 și +1,00 punct/an pentru fiecare an peste 35 de ani.",
   },
   {
     id: "early-retirement",
     question: "Cum se calculează pensia anticipată?",
     answer:
-      "Pensia anticipată se poate solicita cu cel mult 5 ani înainte de vârsta standard dacă s-a realizat stagiul complet de cotizare contributiv. Sub Legea 360/2023, penalizarea este între 0,15% și 0,40% pe lună de anticipare, iar la depășirea stagiului complet cu minimum 5 ani (sau conform tranșelor legale de până la 5–8 ani peste stagiu) reducerea scade semnificativ ori dispare la împlinirea vârstei standard.",
+      "Pensia anticipată se poate solicita cu cel mult 5 ani înainte de vârsta standard dacă s-a realizat stagiul complet de cotizare contributiv. Sub Legea 360/2023, penalizarea este între 0,15% și 0,40% pe lună de anticipare, iar la depășirea stagiului complet cu minimum 5 ani (sau conform tranșelor legale de 5-8 ani peste stagiu) reducerea scade semnificativ ori dispare la împlinirea vârstei standard.",
   },
   {
     id: "minimum-pension",

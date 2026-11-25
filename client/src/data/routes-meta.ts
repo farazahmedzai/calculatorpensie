@@ -32,6 +32,16 @@ export const SITE_NAME = "CalculatorPensie.com";
 export const DEFAULT_OG_IMAGE = `${SITE_ORIGIN}/og-image.jpg`;
 export const DEFAULT_LOGO_IMAGE = `${SITE_ORIGIN}/logo.png`;
 
+/** Format article <title> under Google's ~58-60 char SERP truncation threshold. */
+export function formatArticleSeoTitle(articleTitle: string): string {
+  const clean = articleTitle.trim();
+  const suffix = " | CalculatorPensie";
+  if (clean.length + suffix.length <= 58) {
+    return `${clean}${suffix}`;
+  }
+  return clean.length <= 60 ? clean : `${clean.slice(0, 57).trimEnd()}...`;
+}
+
 export function normalizeCanonicalUrl(url: string): string {
   try {
     const u = new URL(url.startsWith("http") ? url : `${SITE_ORIGIN}${url.startsWith("/") ? url : `/${url}`}`);
@@ -53,12 +63,12 @@ export function normalizePath(pathname: string): string {
 export const ROUTES_META: Record<string, RouteMetaDef> = {
   "/": {
     path: "/",
-    title: "Calculator Pensie România 2026 - Calculează Pensia Online | Legea 360/2023",
+    title: "Calculator Pensie 2026: Brut, Net și VPR 81 Lei",
     description:
-      "Calculator pensie #1 în România actualizat pentru 2026 (VPR 81 lei). Simulează pensia de stat, vârsta de pensionare și punctele de stabilitate conform Legii 360/2023. Gratuit!",
+      "Calculează online pensia de stat brută și netă în 2026 (VPR 81 lei), vârsta de pensionare și punctele de stabilitate după Legea 360/2023. Gratuit!",
     canonical: "https://calculatorpensie.com/",
     keywords:
-      "calculator pensie, calcul pensie, simulare pensie, cnpp calculator pensie, legea 360/2023, vpr 2026, puncte de stabilitate, calculator pensie romania",
+      "calculator pensie, calculator pensie online 2026, calculator pensie neta din brut 2026, simulare pensie, cnpp calculator pensie, legea 360/2023, vpr 81 lei",
     ogType: "website",
     schemaKind: "calculator",
     schemaName: "Calculator Pensie România 2026 (Legea 360/2023)",
@@ -66,9 +76,9 @@ export const ROUTES_META: Record<string, RouteMetaDef> = {
   },
   "/calculator-pensie-anticipata/": {
     path: "/calculator-pensie-anticipata/",
-    title: "Calculator Pensie Anticipată 2026 | Penalizări și Vârstă Legea 360/2023",
+    title: "Calculator Pensie Anticipată 2026 | Penalizări",
     description:
-      "Calculează penalizarea lunară (0,15%–0,40%) pentru pensionarea anticipată în 2026. Verifică stagiul complet necesar și comparația cu pensia standard.",
+      "Calculează penalizarea lunară (0,15%-0,40%) pentru pensia anticipată în 2026. Verifică stagiul complet contributiv necesar și reducerea totală.",
     canonical: "https://calculatorpensie.com/calculator-pensie-anticipata/",
     keywords:
       "calculator pensie anticipata, pensie anticipata cu penalizare, varsta pensionare anticipata, penalizare pensie 2026, legea 360/2023",
@@ -82,9 +92,9 @@ export const ROUTES_META: Record<string, RouteMetaDef> = {
   },
   "/calculator-varsta-pensionare/": {
     path: "/calculator-varsta-pensionare/",
-    title: "Calculator Vârstă Pensionare 2026 | Când Iei Pensia (Anexa 5)",
+    title: "Calculator Vârstă Pensionare 2026 (Anexa 5)",
     description:
-      "Află exact anul și luna în care te poți pensiona în România (bărbați și femei) conform eșalonării oficiale din Anexa 5 a Legii nr. 360/2023.",
+      "Află exact anul și luna ieșirii la pensie în România pentru bărbați și femei conform eșalonării oficiale din Anexa 5 a Legii nr. 360/2023.",
     canonical: "https://calculatorpensie.com/calculator-varsta-pensionare/",
     keywords:
       "calculator varsta pensionare, cand ies la pensie, varsta pensionare femei 2026, anexa 5 legea 360, stagiu cotizare",
@@ -98,9 +108,9 @@ export const ROUTES_META: Record<string, RouteMetaDef> = {
   },
   "/calculator-puncte-pensie/": {
     path: "/calculator-puncte-pensie/",
-    title: "Calculator Puncte Pensie 2026 | Puncte de Stabilitate (VPR 81 Lei)",
+    title: "Calculator Puncte Pensie 2026 | VPR 81 Lei",
     description:
-      "Calculează punctele de contributivitate, punctele de stabilitate (+0,5 / +0,75 / +1 punct/an) și pensia brută estimată la VPR de 81 lei în 2026.",
+      "Calculează punctele de contributivitate, punctele de stabilitate (+0,5 / +0,75 / +1 pct/an) și pensia brută și netă la VPR de 81 lei în 2026.",
     canonical: "https://calculatorpensie.com/calculator-puncte-pensie/",
     keywords:
       "calculator puncte pensie, puncte de stabilitate, calcul puncte pensie 2026, vpr 81 lei, punctaj pensie",
@@ -114,7 +124,7 @@ export const ROUTES_META: Record<string, RouteMetaDef> = {
   },
   "/calculator-pensie-pilon-2/": {
     path: "/calculator-pensie-pilon-2/",
-    title: "Calculator Pensie Pilon 2 (2026) | Estimare Fond Privat Obligatoriu",
+    title: "Calculator Pensie Pilon 2 (2026) | Cotă 4,75%",
     description:
       "Simulează suma acumulată în Pilonul II de pensii private obligatorii (contribuție 4,75% din brut) până la vârsta standard de pensionare.",
     canonical: "https://calculatorpensie.com/calculator-pensie-pilon-2/",
@@ -130,9 +140,9 @@ export const ROUTES_META: Record<string, RouteMetaDef> = {
   },
   "/calculator-pensie-pilon-3/": {
     path: "/calculator-pensie-pilon-3/",
-    title: "Calculator Pensie Pilon 3 (2026) | Pensie Facultativă & Deductibilitate",
+    title: "Calculator Pensie Pilon 3 | Deductibilitate 2026",
     description:
-      "Estimează acumularea la Pilonul III de pensii facultative și verifică economiile fiscale din plafonul deductibil de 400 EUR/an.",
+      "Estimează acumularea la Pilonul III de pensii facultative și verifică economiile fiscale din plafonul deductibil de 400 EUR/an în 2026.",
     canonical: "https://calculatorpensie.com/calculator-pensie-pilon-3/",
     keywords:
       "calculator pensie pilon 3, pensie facultativa pilon 3, deductibilitate 400 euro pensie, simulator pilon 3",
@@ -146,7 +156,7 @@ export const ROUTES_META: Record<string, RouteMetaDef> = {
   },
   "/program-excel-calcul-pensie/": {
     path: "/program-excel-calcul-pensie/",
-    title: "Program Excel Calcul Pensie 2026 | Download Gratuit Simulator CSV",
+    title: "Program Excel Calcul Pensie 2026 | Download CSV",
     description:
       "Descarcă gratuit șablonul tabelar Excel (.csv) pentru calculul pensiei de stat în 2026 cu VPR 81 lei, punctaj lunar și Pilon II.",
     canonical: "https://calculatorpensie.com/program-excel-calcul-pensie/",
@@ -162,9 +172,9 @@ export const ROUTES_META: Record<string, RouteMetaDef> = {
   },
   "/planificare/": {
     path: "/planificare/",
-    title: "Planificare Pensie România 2026 | Ghid Strategii Pilon I, II și III",
+    title: "Planificare Pensie România 2026 | Pilon I, II, III",
     description:
-      "Ghid practic pentru planificarea financiară a pensionării în România: combinarea Pilonului I, II și III, deductibilitate fiscală și prevenirea greșelilor comune.",
+      "Ghid practic de planificare a pensiei în România: combinarea Pilonului I, II și III, deductibilitate fiscală de 400 EUR/an și greșeli de evitat.",
     canonical: "https://calculatorpensie.com/planificare/",
     keywords:
       "planificare pensie, strategie pensionare, pilon 2 vs pilon 3, pensie suplimentara",
@@ -176,13 +186,13 @@ export const ROUTES_META: Record<string, RouteMetaDef> = {
       { name: "Planificare Pensie", url: "https://calculatorpensie.com/planificare/" },
     ],
     datePublished: "2026-01-15",
-    dateModified: "2026-11-25",
+    dateModified: "2026-11-26",
   },
   "/tipuri-pensii/": {
     path: "/tipuri-pensii/",
-    title: "Tipuri de Pensii în România 2026 | Limită Vârstă, Anticipată, Invaliditate",
+    title: "Tipuri de Pensii în România 2026 | Ghid CNPP",
     description:
-      "Toate categoriile de pensii din sistemul public CNPP în 2026: limită de vârstă, anticipată, de invaliditate și de urmaș — condiții și comparație.",
+      "Toate categoriile de pensii din sistemul public CNPP în 2026: limită de vârstă, anticipată, de invaliditate și de urmaș, condiții și calcul.",
     canonical: "https://calculatorpensie.com/tipuri-pensii/",
     keywords:
       "tipuri de pensii romania, pensie limita de varsta, pensie anticipata, pensie invaliditate, pensie urmas",
@@ -194,13 +204,13 @@ export const ROUTES_META: Record<string, RouteMetaDef> = {
       { name: "Tipuri de Pensii", url: "https://calculatorpensie.com/tipuri-pensii/" },
     ],
     datePublished: "2026-01-15",
-    dateModified: "2026-11-25",
+    dateModified: "2026-11-26",
   },
   "/legislatie/": {
     path: "/legislatie/",
-    title: "Legislație Pensii România 2026 | Legea 360/2023 & VPR 81 Lei",
+    title: "Legislație Pensii 2026 | Legea 360/2023 & VPR 81 Lei",
     description:
-      "Sinteză actualizată a legislației pensiilor din România în 2026: Legea nr. 360/2023, VPR 81 lei (Legea 141/2025), stagii de cotizare, Anexa 5 și CASS peste 3.000 lei.",
+      "Sinteză actualizată a legislației pensiilor în 2026: Legea nr. 360/2023, VPR 81 lei (Legea 141/2025), Anexa 5 și CASS peste 3.000 lei.",
     canonical: "https://calculatorpensie.com/legislatie/",
     keywords:
       "legislatie pensii 2026, legea 360/2023, legea 141/2025, vpr 81 lei, stagiu cotizare pensie",
@@ -212,13 +222,13 @@ export const ROUTES_META: Record<string, RouteMetaDef> = {
       { name: "Legislație Pensii", url: "https://calculatorpensie.com/legislatie/" },
     ],
     datePublished: "2026-01-15",
-    dateModified: "2026-11-25",
+    dateModified: "2026-11-26",
   },
   "/metodologie/": {
     path: "/metodologie/",
-    title: "Metodologie Calcul Pensie CNPP 2026 | Formule Oficiale Legea 360/2023",
+    title: "Metodologie Calcul Pensie 2026 | Formule CNPP",
     description:
-      "Explicația matematică completă a calculului pensiei în România în 2026: punctajul de contributivitate, punctele de stabilitate și VPR de 81 lei.",
+      "Explicația matematică completă a calculului pensiei în România în 2026: punctajul de contributivitate, punctele de stabilitate și VPR 81 lei.",
     canonical: "https://calculatorpensie.com/metodologie/",
     keywords:
       "metodologie calcul pensie, formula pensie legea 360/2023, punctaj lunar pensie, vpr 81 lei",
@@ -230,13 +240,13 @@ export const ROUTES_META: Record<string, RouteMetaDef> = {
       { name: "Metodologie", url: "https://calculatorpensie.com/metodologie/" },
     ],
     datePublished: "2026-01-15",
-    dateModified: "2026-11-25",
+    dateModified: "2026-11-26",
   },
   "/faq/": {
     path: "/faq/",
-    title: "Întrebări Frecvente Pensii 2026 (FAQ) | VPR 81 Lei & Pensionare",
+    title: "Întrebări Frecvente Pensii 2026 | VPR 81 Lei",
     description:
-      "Răspunsuri clare la întrebările esențiale despre pensia de stat în 2026: VPR 81 lei, vârsta de pensionare, pensia anticipată, CASS peste 3.000 lei și Pilonul III.",
+      "Răspunsuri clare despre pensia de stat în 2026: VPR 81 lei, vârsta de pensionare, pensia anticipată, CASS peste 3.000 lei și Pilonul III.",
     canonical: "https://calculatorpensie.com/faq/",
     keywords:
       "intrebari frecvente pensii, faq pensii 2026, vpr 81 lei, cass pensii 3000 lei, varsta pensionare",
@@ -250,15 +260,15 @@ export const ROUTES_META: Record<string, RouteMetaDef> = {
   },
   "/blog/": {
     path: "/blog/",
-    title: "Blog Pensii România 2026 | Ghiduri Complete & Analize CNPP",
+    title: "Blog Pensii România 2026 | Ghiduri și Analize",
     description:
-      "Articole și ghiduri practice despre calculul pensiei de stat, VPR 81 lei, pensia anticipată, vechimea CNPP și strategiile de economisire Pilon II și III.",
+      "Articole și ghiduri practice despre calculul pensiei de stat, VPR 81 lei, pensia anticipată, vechimea CNPP și pensiile private Pilon II și III.",
     canonical: "https://calculatorpensie.com/blog/",
     keywords:
       "blog pensii romania, ghiduri pensii 2026, articole legea pensiilor, verificare vechime cnpp",
     ogType: "website",
     schemaKind: "collection",
-    schemaName: "Blog Pensii România — Ghiduri și Analize",
+    schemaName: "Blog Pensii România: Ghiduri și Analize",
     breadcrumbs: [
       { name: "Acasă", url: "https://calculatorpensie.com/" },
       { name: "Blog", url: "https://calculatorpensie.com/blog/" },
@@ -266,7 +276,7 @@ export const ROUTES_META: Record<string, RouteMetaDef> = {
   },
   "/despre-noi/": {
     path: "/despre-noi/",
-    title: "Despre Noi - CalculatorPensie.com | Metodologie & Politică Editorială",
+    title: "Despre Noi | Metodologie CalculatorPensie.com",
     description:
       "Află cine suntem, cum verificăm formulele oficiale CNPP și angajamentul nostru pentru calcule transparente și gratuite în România.",
     canonical: "https://calculatorpensie.com/despre-noi/",
@@ -281,7 +291,7 @@ export const ROUTES_META: Record<string, RouteMetaDef> = {
   },
   "/contact/": {
     path: "/contact/",
-    title: "Contact - CalculatorPensie.com | Întrebări Tehnice & Sugestii",
+    title: "Contact CalculatorPensie.com | Suport Tehnic",
     description:
       "Contactează echipa CalculatorPensie.com la contact@calculatorpensie.com pentru sugestii, sesizări de erori sau întrebări despre simulatoare.",
     canonical: "https://calculatorpensie.com/contact/",
@@ -296,7 +306,7 @@ export const ROUTES_META: Record<string, RouteMetaDef> = {
   },
   "/privacy/": {
     path: "/privacy/",
-    title: "Politică de Confidențialitate - CalculatorPensie.com | GDPR",
+    title: "Politică Confidențialitate | CalculatorPensie.com",
     description:
       "Politica de confidențialitate CalculatorPensie.com: calculele se efectuează local în browser, fără stocarea salariilor sau datelor personale pe servere.",
     canonical: "https://calculatorpensie.com/privacy/",
@@ -311,9 +321,9 @@ export const ROUTES_META: Record<string, RouteMetaDef> = {
   },
   "/terms/": {
     path: "/terms/",
-    title: "Termeni și Condiții - CalculatorPensie.com | Disclaimer Legal",
+    title: "Termeni și Condiții | CalculatorPensie.com",
     description:
-      "Termenii de utilizare ai CalculatorPensie.com: instrument educativ independent, neafiliat CNPP, cu scop informativ.",
+      "Termenii și condițiile de utilizare CalculatorPensie.com: simulatoare educative independente, neafiliate CNPP, cu rol strict informativ.",
     canonical: "https://calculatorpensie.com/terms/",
     keywords: "termeni si conditii, disclaimer calculator pensie",
     ogType: "website",
@@ -428,7 +438,7 @@ export function buildJsonLdGraph({
       },
       publisher: { "@id": orgId },
       datePublished: meta.datePublished || "2026-01-15",
-      dateModified: meta.dateModified || meta.datePublished || "2026-11-25",
+      dateModified: meta.dateModified || meta.datePublished || "2026-11-26",
       articleSection: articleCategory || "Legislație & Planificare Pensii",
       image: {
         "@type": "ImageObject",

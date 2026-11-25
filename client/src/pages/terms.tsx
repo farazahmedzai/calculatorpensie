@@ -3,15 +3,20 @@ import BreadcrumbNavigation from "@/components/seo/BreadcrumbNavigation";
 import { WebPageSchema } from "@/components/seo/StructuredData";
 import { Card, CardContent } from "@/components/ui/card";
 import { Info, Gavel, Scale, AlertTriangle, UserCheck, ShieldCheck } from "lucide-react";
+import { ROUTES_META } from "@/data/routes-meta";
+
+const PAGE_META = ROUTES_META["/terms/"];
 
 export default function Terms() {
   return (
     <div className="bg-white">
-      <MetaTags 
-        title="Termeni și Condiții - CalculatorPensie.com | Reguli de Utilizare"
-        description="Termenii și condițiile de utilizare a platformei CalculatorPensie.com. Citește regulile de folosire a calculatoarelor noastre de pensie și disclaimerele legale."
-        canonical="https://calculatorpensie.com/terms/"
-        keywords="termeni si conditii, reguli utilizare, disclaimer legal, calculatorpensie"
+      <MetaTags
+        title={PAGE_META.title}
+        description={PAGE_META.description}
+        canonical={PAGE_META.canonical}
+        keywords={PAGE_META.keywords}
+        schemaKind="webpage"
+        schemaName={PAGE_META.schemaName}
       />
       
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-4">

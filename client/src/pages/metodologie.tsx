@@ -112,8 +112,8 @@ export default function Metodologie() {
                 <strong>puncte de stabilitate</strong>:
               </p>
               <div className="bg-white p-4 rounded border border-blue-200 space-y-2 text-sm text-slate-800">
-                <div>• <strong>Anii 26–30:</strong> <strong className="text-blue-700">+0,50 puncte</strong> / an</div>
-                <div>• <strong>Anii 31–35:</strong> <strong className="text-blue-700">+0,75 puncte</strong> / an</div>
+                <div>• <strong>Anii 26-30:</strong> <strong className="text-blue-700">+0,50 puncte</strong> / an</div>
+                <div>• <strong>Anii 31-35:</strong> <strong className="text-blue-700">+0,75 puncte</strong> / an</div>
                 <div>• <strong>Peste 35 ani:</strong> <strong className="text-blue-700">+1,00 punct</strong> / an</div>
               </div>
             </div>
@@ -154,19 +154,19 @@ export default function Metodologie() {
                   Un asigurat care se pensionează la 65 de ani cu <strong>38 de ani stagiu contributiv</strong> și 1,00 punct pe an (38,00 puncte de contributivitate):
                 </p>
                 <div className="bg-white p-4 rounded border text-sm">
-                  <strong>Pasul 1 — Puncte de Stabilitate:</strong>
+                  <strong>Pasul 1: Puncte de Stabilitate</strong>
                   <ul className="list-disc ml-6 mt-2 space-y-1">
-                    <li>Anii 26–30 (5 ani × 0,50): 2,50 puncte</li>
-                    <li>Anii 31–35 (5 ani × 0,75): 3,75 puncte</li>
-                    <li>Anii 36–38 (3 ani × 1,00): 3,00 puncte</li>
+                    <li>Anii 26-30 (5 ani × 0,50): 2,50 puncte</li>
+                    <li>Anii 31-35 (5 ani × 0,75): 3,75 puncte</li>
+                    <li>Anii 36-38 (3 ani × 1,00): 3,00 puncte</li>
                     <li><strong>Total stabilitate:</strong> <strong>9,25 puncte</strong></li>
                   </ul>
                 </div>
                 <div className="bg-white p-4 rounded border text-sm">
-                  <strong>Pasul 2 — Punctaj Total:</strong> 38,00 + 9,25 = <strong>47,25 puncte</strong>.
+                  <strong>Pasul 2: Punctaj Total</strong> 38,00 + 9,25 = <strong>47,25 puncte</strong>.
                 </div>
                 <div className="bg-blue-50 p-4 rounded border border-blue-200 text-sm">
-                  <strong>Pasul 3 — Pensie Brută (VPR 81 Lei):</strong>{" "}
+                  <strong>Pasul 3: Pensie Brută (VPR 81 Lei)</strong>{" "}
                   47,25 × 81 Lei = <strong>3.827 Lei brut/lună</strong> (net ~3.669 Lei după CASS 10% și impozit 10% peste 3.000 Lei).
                 </div>
               </CardContent>
@@ -216,13 +216,13 @@ export default function Metodologie() {
                   <td className="px-4 py-3 border">OUG nr. 168/2022</td>
                 </tr>
                 <tr className="border-b bg-slate-50">
-                  <td className="px-4 py-3 border font-semibold">Ian – Aug 2024</td>
+                  <td className="px-4 py-3 border font-semibold">Ian-Aug 2024</td>
                   <td className="px-4 py-3 border">-</td>
                   <td className="px-4 py-3 border">2.032 Lei</td>
                   <td className="px-4 py-3 border">Legea nr. 422/2023</td>
                 </tr>
                 <tr className="border-b">
-                  <td className="px-4 py-3 border font-semibold">Sep 2024 – Dec 2025</td>
+                  <td className="px-4 py-3 border font-semibold">Sep 2024-Dec 2025</td>
                   <td className="px-4 py-3 border font-bold">81 Lei</td>
                   <td className="px-4 py-3 border">Înlocuit cu VPR</td>
                   <td className="px-4 py-3 border">Legea 360/2023 &amp; OUG 156/2024</td>
@@ -265,7 +265,7 @@ export default function Metodologie() {
           <div className="bg-blue-50 p-6 rounded-lg border border-blue-200">
             <h3 className="text-lg font-bold text-blue-900 mb-2">CASS și Impozit pe Pensii (2026)</h3>
             <p className="text-sm text-blue-900 leading-relaxed">
-              Conform Legii nr. 141/2025, pensiile de până la 3.000 Lei sunt scutite integral. Pentru pensiile peste 3.000 Lei se aplică CASS 10% la suma ce depășește 3.000 Lei (în perioada 1 aug. 2025 – 31 dec. 2027) și impozit pe venit de 10% peste pragul neimpozabil de 3.000 Lei.
+              Conform Legii nr. 141/2025, pensiile de până la 3.000 Lei sunt scutite integral. Pentru pensiile peste 3.000 Lei se aplică CASS 10% la suma ce depășește 3.000 Lei (în perioada 1 aug. 2025-31 dec. 2027) și impozit pe venit de 10% peste pragul neimpozabil de 3.000 Lei.
             </p>
           </div>
         </div>
@@ -274,7 +274,7 @@ export default function Metodologie() {
       <section className="py-12 bg-slate-900 text-white text-center">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <Shield className="h-12 w-12 mx-auto mb-4 text-green-400" />
-          <h2 className="text-2xl font-bold mb-3 text-white">Verifică-ți Pensia Estimatată Acum</h2>
+          <h2 className="text-2xl font-bold mb-3 text-white">Verifică-ți Pensia Estimată Acum</h2>
           <p className="text-slate-300 text-sm mb-6">
             Aplică aceste formule automat în simulatoarele noastre interactive.
           </p>

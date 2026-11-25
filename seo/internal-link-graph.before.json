@@ -1,0 +1,601 @@
+{
+  "generatedAt": "2026-11-25T21:05:22.596Z",
+  "articlesTotal": 20,
+  "articlesWithUpper40MoneyLink": 5,
+  "orphanMoneyPages": [
+    "/program-excel-calcul-pensie/"
+  ],
+  "moneyPagesSummary": [
+    {
+      "route": "/program-excel-calcul-pensie/",
+      "file": "client/src/pages/program-excel-calcul-pensie.tsx",
+      "contextualInbound": 1,
+      "linkedFrom": [
+        "/blog/simulare-pensie-instrumente-metode/"
+      ],
+      "inHeader": false,
+      "inNavOrFooter": true,
+      "money": true,
+      "distinctAnchors": 1
+    },
+    {
+      "route": "/calculator-pensie-pilon-2/",
+      "file": "client/src/pages/calculator-pilon-2.tsx",
+      "contextualInbound": 3,
+      "linkedFrom": [
+        "/calculator-pensie-pilon-3/",
+        "/planificare/",
+        "/blog/pilonul-2-modificari-legislative/"
+      ],
+      "inHeader": false,
+      "inNavOrFooter": true,
+      "money": true,
+      "distinctAnchors": 1
+    },
+    {
+      "route": "/calculator-pensie-pilon-3/",
+      "file": "client/src/pages/calculator-pensie-pilon-3.tsx",
+      "contextualInbound": 5,
+      "linkedFrom": [
+        "/calculator-pensie-pilon-2/",
+        "/planificare/",
+        "/faq/",
+        "/blog/pilonul-3-avantaje-fiscale-strategii/",
+        "/blog/optimizare-fiscala-contributii-pensie/"
+      ],
+      "inHeader": false,
+      "inNavOrFooter": true,
+      "money": true,
+      "distinctAnchors": 1
+    },
+    {
+      "route": "/calculator-varsta-pensionare/",
+      "file": "client/src/pages/calculator-varsta-pensionare.tsx",
+      "contextualInbound": 6,
+      "linkedFrom": [
+        "/",
+        "/calculator-pensie-anticipata/",
+        "/program-excel-calcul-pensie/",
+        "/legislatie/",
+        "/blog/conditii-speciale-munca-impact-pensie/",
+        "/blog/pensie-anticipata-fara-penalizare/"
+      ],
+      "inHeader": false,
+      "inNavOrFooter": true,
+      "money": true,
+      "distinctAnchors": 1
+    },
+    {
+      "route": "/calculator-pensie-anticipata/",
+      "file": "client/src/pages/calculator-anticipata.tsx",
+      "contextualInbound": 7,
+      "linkedFrom": [
+        "/",
+        "/calculator-varsta-pensionare/",
+        "/tipuri-pensii/",
+        "/faq/",
+        "/blog/top-5-greseli-planificare-pensie/",
+        "/blog/pensie-anticipata-conditii-penalizari/",
+        "/blog/pensie-anticipata-fara-penalizare/"
+      ],
+      "inHeader": false,
+      "inNavOrFooter": true,
+      "money": true,
+      "distinctAnchors": 2
+    },
+    {
+      "route": "/calculator-puncte-pensie/",
+      "file": "client/src/pages/calculator-puncte-pensie.tsx",
+      "contextualInbound": 9,
+      "linkedFrom": [
+        "/",
+        "/calculator-pensie-anticipata/",
+        "/program-excel-calcul-pensie/",
+        "/legislatie/",
+        "/metodologie/",
+        "/blog/stagiul-cotizare-cumparare-ani-munca/",
+        "/blog/calculul-pensiei-freelanceri-pfa/",
+        "/blog/simulare-pensie-instrumente-metode/",
+        "/blog/calcul-punct-referinta-vpr/"
+      ],
+      "inHeader": false,
+      "inNavOrFooter": true,
+      "money": true,
+      "distinctAnchors": 3
+    },
+    {
+      "route": "/",
+      "file": "client/src/pages/home.tsx",
+      "contextualInbound": 11,
+      "linkedFrom": [
+        "/calculator-varsta-pensionare/",
+        "/program-excel-calcul-pensie/",
+        "/planificare/",
+        "/tipuri-pensii/",
+        "/legislatie/",
+        "/metodologie/",
+        "/faq/",
+        "/blog/top-5-greseli-planificare-pensie/",
+        "/blog/ghid-calcul-pensie-stat-2026/",
+        "/blog/reforma-sistem-pensii-2026/",
+        "/blog/vizualizare-vechime-munca-cnpp/"
+      ],
+      "inHeader": true,
+      "inNavOrFooter": true,
+      "money": true,
+      "distinctAnchors": 4
+    }
+  ],
+  "pages": [
+    {
+      "route": "/despre-noi/",
+      "file": "client/src/pages/despre-noi.tsx",
+      "contextualInbound": 0,
+      "linkedFrom": [],
+      "inHeader": true,
+      "inNavOrFooter": true,
+      "money": false,
+      "distinctAnchors": 0
+    },
+    {
+      "route": "/terms/",
+      "file": "client/src/pages/terms.tsx",
+      "contextualInbound": 0,
+      "linkedFrom": [],
+      "inHeader": false,
+      "inNavOrFooter": true,
+      "money": false,
+      "distinctAnchors": 0
+    },
+    {
+      "route": "/blog/conditii-speciale-munca-impact-pensie/",
+      "file": "client/src/data/static-articles.ts#conditii-speciale-munca-impact-pensie",
+      "contextualInbound": 0,
+      "linkedFrom": [],
+      "inHeader": false,
+      "inNavOrFooter": false,
+      "money": false,
+      "distinctAnchors": 0
+    },
+    {
+      "route": "/blog/reforma-sistem-pensii-2026/",
+      "file": "client/src/data/static-articles.ts#reforma-sistem-pensii-2026",
+      "contextualInbound": 0,
+      "linkedFrom": [],
+      "inHeader": false,
+      "inNavOrFooter": false,
+      "money": false,
+      "distinctAnchors": 0
+    },
+    {
+      "route": "/blog/calculul-pensiei-freelanceri-pfa/",
+      "file": "client/src/data/static-articles.ts#calculul-pensiei-freelanceri-pfa",
+      "contextualInbound": 0,
+      "linkedFrom": [],
+      "inHeader": false,
+      "inNavOrFooter": false,
+      "money": false,
+      "distinctAnchors": 0
+    },
+    {
+      "route": "/blog/transfer-drepturi-pensie-ue/",
+      "file": "client/src/data/static-articles.ts#transfer-drepturi-pensie-ue",
+      "contextualInbound": 0,
+      "linkedFrom": [],
+      "inHeader": false,
+      "inNavOrFooter": false,
+      "money": false,
+      "distinctAnchors": 0
+    },
+    {
+      "route": "/blog/simulare-pensie-instrumente-metode/",
+      "file": "client/src/data/static-articles.ts#simulare-pensie-instrumente-metode",
+      "contextualInbound": 0,
+      "linkedFrom": [],
+      "inHeader": false,
+      "inNavOrFooter": false,
+      "money": false,
+      "distinctAnchors": 0
+    },
+    {
+      "route": "/blog/pensie-minima-garantata-2026/",
+      "file": "client/src/data/static-articles.ts#pensie-minima-garantata-2026",
+      "contextualInbound": 0,
+      "linkedFrom": [],
+      "inHeader": false,
+      "inNavOrFooter": false,
+      "money": false,
+      "distinctAnchors": 0
+    },
+    {
+      "route": "/blog/indexare-pensii-2026-2026/",
+      "file": "client/src/data/static-articles.ts#indexare-pensii-2026-2026",
+      "contextualInbound": 0,
+      "linkedFrom": [],
+      "inHeader": false,
+      "inNavOrFooter": false,
+      "money": false,
+      "distinctAnchors": 0
+    },
+    {
+      "route": "/blog/acte-necesare-dosar-pensionare/",
+      "file": "client/src/data/static-articles.ts#acte-necesare-dosar-pensionare",
+      "contextualInbound": 0,
+      "linkedFrom": [],
+      "inHeader": false,
+      "inNavOrFooter": false,
+      "money": false,
+      "distinctAnchors": 0
+    },
+    {
+      "route": "/program-excel-calcul-pensie/",
+      "file": "client/src/pages/program-excel-calcul-pensie.tsx",
+      "contextualInbound": 1,
+      "linkedFrom": [
+        "/blog/simulare-pensie-instrumente-metode/"
+      ],
+      "inHeader": false,
+      "inNavOrFooter": true,
+      "money": true,
+      "distinctAnchors": 1
+    },
+    {
+      "route": "/faq/",
+      "file": "client/src/pages/faq.tsx",
+      "contextualInbound": 1,
+      "linkedFrom": [
+        "/contact/"
+      ],
+      "inHeader": false,
+      "inNavOrFooter": true,
+      "money": false,
+      "distinctAnchors": 0
+    },
+    {
+      "route": "/blog/top-5-greseli-planificare-pensie/",
+      "file": "client/src/data/static-articles.ts#top-5-greseli-planificare-pensie",
+      "contextualInbound": 1,
+      "linkedFrom": [
+        "/planificare/"
+      ],
+      "inHeader": false,
+      "inNavOrFooter": false,
+      "money": false,
+      "distinctAnchors": 0
+    },
+    {
+      "route": "/blog/ghid-calcul-pensie-stat-2026/",
+      "file": "client/src/data/static-articles.ts#ghid-calcul-pensie-stat-2026",
+      "contextualInbound": 1,
+      "linkedFrom": [
+        "/tipuri-pensii/"
+      ],
+      "inHeader": false,
+      "inNavOrFooter": false,
+      "money": false,
+      "distinctAnchors": 0
+    },
+    {
+      "route": "/blog/pensie-anticipata-conditii-penalizari/",
+      "file": "client/src/data/static-articles.ts#pensie-anticipata-conditii-penalizari",
+      "contextualInbound": 1,
+      "linkedFrom": [
+        "/tipuri-pensii/"
+      ],
+      "inHeader": false,
+      "inNavOrFooter": false,
+      "money": false,
+      "distinctAnchors": 0
+    },
+    {
+      "route": "/blog/stagiul-cotizare-cumparare-ani-munca/",
+      "file": "client/src/data/static-articles.ts#stagiul-cotizare-cumparare-ani-munca",
+      "contextualInbound": 1,
+      "linkedFrom": [
+        "/legislatie/"
+      ],
+      "inHeader": false,
+      "inNavOrFooter": false,
+      "money": false,
+      "distinctAnchors": 0
+    },
+    {
+      "route": "/blog/pensia-urmas-drepturi-proceduri/",
+      "file": "client/src/data/static-articles.ts#pensia-urmas-drepturi-proceduri",
+      "contextualInbound": 1,
+      "linkedFrom": [
+        "/tipuri-pensii/"
+      ],
+      "inHeader": false,
+      "inNavOrFooter": false,
+      "money": false,
+      "distinctAnchors": 0
+    },
+    {
+      "route": "/blog/optimizare-fiscala-contributii-pensie/",
+      "file": "client/src/data/static-articles.ts#optimizare-fiscala-contributii-pensie",
+      "contextualInbound": 1,
+      "linkedFrom": [
+        "/planificare/"
+      ],
+      "inHeader": false,
+      "inNavOrFooter": false,
+      "money": false,
+      "distinctAnchors": 0
+    },
+    {
+      "route": "/blog/calcul-punct-referinta-vpr/",
+      "file": "client/src/data/static-articles.ts#calcul-punct-referinta-vpr",
+      "contextualInbound": 1,
+      "linkedFrom": [
+        "/calculator-puncte-pensie/"
+      ],
+      "inHeader": false,
+      "inNavOrFooter": false,
+      "money": false,
+      "distinctAnchors": 0
+    },
+    {
+      "route": "/blog/ghid-pensie-invaliditate-2026/",
+      "file": "client/src/data/static-articles.ts#ghid-pensie-invaliditate-2026",
+      "contextualInbound": 1,
+      "linkedFrom": [
+        "/tipuri-pensii/"
+      ],
+      "inHeader": false,
+      "inNavOrFooter": false,
+      "money": false,
+      "distinctAnchors": 0
+    },
+    {
+      "route": "/blog/pensie-anticipata-fara-penalizare/",
+      "file": "client/src/data/static-articles.ts#pensie-anticipata-fara-penalizare",
+      "contextualInbound": 1,
+      "linkedFrom": [
+        "/calculator-pensie-anticipata/"
+      ],
+      "inHeader": false,
+      "inNavOrFooter": false,
+      "money": false,
+      "distinctAnchors": 0
+    },
+    {
+      "route": "/blog/vizualizare-vechime-munca-cnpp/",
+      "file": "client/src/data/static-articles.ts#vizualizare-vechime-munca-cnpp",
+      "contextualInbound": 1,
+      "linkedFrom": [
+        "/blog/simulare-pensie-instrumente-metode/"
+      ],
+      "inHeader": false,
+      "inNavOrFooter": false,
+      "money": false,
+      "distinctAnchors": 0
+    },
+    {
+      "route": "/blog/pilonul-2-modificari-legislative/",
+      "file": "client/src/data/static-articles.ts#pilonul-2-modificari-legislative",
+      "contextualInbound": 1,
+      "linkedFrom": [
+        "/calculator-pensie-pilon-2/"
+      ],
+      "inHeader": false,
+      "inNavOrFooter": false,
+      "money": false,
+      "distinctAnchors": 0
+    },
+    {
+      "route": "/planificare/",
+      "file": "client/src/pages/guides/planificare.tsx",
+      "contextualInbound": 2,
+      "linkedFrom": [
+        "/blog/",
+        "/blog/optimizare-fiscala-contributii-pensie/"
+      ],
+      "inHeader": false,
+      "inNavOrFooter": true,
+      "money": false,
+      "distinctAnchors": 0
+    },
+    {
+      "route": "/tipuri-pensii/",
+      "file": "client/src/pages/guides/tipuri-pensii.tsx",
+      "contextualInbound": 2,
+      "linkedFrom": [
+        "/blog/",
+        "/blog/pensia-urmas-drepturi-proceduri/"
+      ],
+      "inHeader": false,
+      "inNavOrFooter": true,
+      "money": false,
+      "distinctAnchors": 0
+    },
+    {
+      "route": "/blog/",
+      "file": "client/src/pages/blog.tsx",
+      "contextualInbound": 2,
+      "linkedFrom": [
+        "/",
+        "/faq/"
+      ],
+      "inHeader": false,
+      "inNavOrFooter": true,
+      "money": false,
+      "distinctAnchors": 0
+    },
+    {
+      "route": "/contact/",
+      "file": "client/src/pages/contact.tsx",
+      "contextualInbound": 2,
+      "linkedFrom": [
+        "/faq/",
+        "/despre-noi/"
+      ],
+      "inHeader": true,
+      "inNavOrFooter": true,
+      "money": false,
+      "distinctAnchors": 0
+    },
+    {
+      "route": "/privacy/",
+      "file": "client/src/pages/privacy.tsx",
+      "contextualInbound": 2,
+      "linkedFrom": [
+        "/contact/",
+        "/terms/"
+      ],
+      "inHeader": false,
+      "inNavOrFooter": true,
+      "money": false,
+      "distinctAnchors": 0
+    },
+    {
+      "route": "/blog/pilonul-3-avantaje-fiscale-strategii/",
+      "file": "client/src/data/static-articles.ts#pilonul-3-avantaje-fiscale-strategii",
+      "contextualInbound": 2,
+      "linkedFrom": [
+        "/calculator-pensie-pilon-3/",
+        "/planificare/"
+      ],
+      "inHeader": false,
+      "inNavOrFooter": false,
+      "money": false,
+      "distinctAnchors": 0
+    },
+    {
+      "route": "/calculator-pensie-pilon-2/",
+      "file": "client/src/pages/calculator-pilon-2.tsx",
+      "contextualInbound": 3,
+      "linkedFrom": [
+        "/calculator-pensie-pilon-3/",
+        "/planificare/",
+        "/blog/pilonul-2-modificari-legislative/"
+      ],
+      "inHeader": false,
+      "inNavOrFooter": true,
+      "money": true,
+      "distinctAnchors": 1
+    },
+    {
+      "route": "/legislatie/",
+      "file": "client/src/pages/guides/legislatie.tsx",
+      "contextualInbound": 3,
+      "linkedFrom": [
+        "/calculator-pensie-anticipata/",
+        "/blog/",
+        "/blog/reforma-sistem-pensii-2026/"
+      ],
+      "inHeader": false,
+      "inNavOrFooter": true,
+      "money": false,
+      "distinctAnchors": 0
+    },
+    {
+      "route": "/metodologie/",
+      "file": "client/src/pages/metodologie.tsx",
+      "contextualInbound": 4,
+      "linkedFrom": [
+        "/calculator-puncte-pensie/",
+        "/program-excel-calcul-pensie/",
+        "/despre-noi/",
+        "/contact/"
+      ],
+      "inHeader": false,
+      "inNavOrFooter": true,
+      "money": false,
+      "distinctAnchors": 0
+    },
+    {
+      "route": "/calculator-pensie-pilon-3/",
+      "file": "client/src/pages/calculator-pensie-pilon-3.tsx",
+      "contextualInbound": 5,
+      "linkedFrom": [
+        "/calculator-pensie-pilon-2/",
+        "/planificare/",
+        "/faq/",
+        "/blog/pilonul-3-avantaje-fiscale-strategii/",
+        "/blog/optimizare-fiscala-contributii-pensie/"
+      ],
+      "inHeader": false,
+      "inNavOrFooter": true,
+      "money": true,
+      "distinctAnchors": 1
+    },
+    {
+      "route": "/calculator-varsta-pensionare/",
+      "file": "client/src/pages/calculator-varsta-pensionare.tsx",
+      "contextualInbound": 6,
+      "linkedFrom": [
+        "/",
+        "/calculator-pensie-anticipata/",
+        "/program-excel-calcul-pensie/",
+        "/legislatie/",
+        "/blog/conditii-speciale-munca-impact-pensie/",
+        "/blog/pensie-anticipata-fara-penalizare/"
+      ],
+      "inHeader": false,
+      "inNavOrFooter": true,
+      "money": true,
+      "distinctAnchors": 1
+    },
+    {
+      "route": "/calculator-pensie-anticipata/",
+      "file": "client/src/pages/calculator-anticipata.tsx",
+      "contextualInbound": 7,
+      "linkedFrom": [
+        "/",
+        "/calculator-varsta-pensionare/",
+        "/tipuri-pensii/",
+        "/faq/",
+        "/blog/top-5-greseli-planificare-pensie/",
+        "/blog/pensie-anticipata-conditii-penalizari/",
+        "/blog/pensie-anticipata-fara-penalizare/"
+      ],
+      "inHeader": false,
+      "inNavOrFooter": true,
+      "money": true,
+      "distinctAnchors": 2
+    },
+    {
+      "route": "/calculator-puncte-pensie/",
+      "file": "client/src/pages/calculator-puncte-pensie.tsx",
+      "contextualInbound": 9,
+      "linkedFrom": [
+        "/",
+        "/calculator-pensie-anticipata/",
+        "/program-excel-calcul-pensie/",
+        "/legislatie/",
+        "/metodologie/",
+        "/blog/stagiul-cotizare-cumparare-ani-munca/",
+        "/blog/calculul-pensiei-freelanceri-pfa/",
+        "/blog/simulare-pensie-instrumente-metode/",
+        "/blog/calcul-punct-referinta-vpr/"
+      ],
+      "inHeader": false,
+      "inNavOrFooter": true,
+      "money": true,
+      "distinctAnchors": 3
+    },
+    {
+      "route": "/",
+      "file": "client/src/pages/home.tsx",
+      "contextualInbound": 11,
+      "linkedFrom": [
+        "/calculator-varsta-pensionare/",
+        "/program-excel-calcul-pensie/",
+        "/planificare/",
+        "/tipuri-pensii/",
+        "/legislatie/",
+        "/metodologie/",
+        "/faq/",
+        "/blog/top-5-greseli-planificare-pensie/",
+        "/blog/ghid-calcul-pensie-stat-2026/",
+        "/blog/reforma-sistem-pensii-2026/",
+        "/blog/vizualizare-vechime-munca-cnpp/"
+      ],
+      "inHeader": true,
+      "inNavOrFooter": true,
+      "money": true,
+      "distinctAnchors": 4
+    }
+  ]
+}

@@ -56,11 +56,11 @@ export default function PlanificarePage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none mb-12">
             <h2>Pilonii Sistemului de Pensii</h2>
-            <h3>1. Pilonul I — Sistemul Public (VPR = 81 Lei)</h3>
+            <h3>1. Pilonul I: Sistemul Public (VPR = 81 Lei)</h3>
             <p>
               Obligatoriu pentru salariați și bazat pe punctaj contributiv plus puncte de stabilitate pentru vechime &gt; 25 de ani. Rata medie de înlocuire a salariului face recomandată completarea prin economisire privată.
             </p>
-            <h3>2. Pilonul II — Pensii Private Obligatorii (4,75%)</h3>
+            <h3>2. Pilonul II: Pensii Private Obligatorii (4,75%)</h3>
             <p>
               4,75% din salariul brut se acumulează automat în contul tău privat. Simulează acum{" "}
               <Link href="/calculator-pensie-pilon-2/" className="text-brand-blue hover:underline font-medium">
@@ -68,7 +68,7 @@ export default function PlanificarePage() {
               </Link>
               .
             </p>
-            <h3>3. Pilonul III — Pensii Facultative (Deductibilitate 400 EUR/an)</h3>
+            <h3>3. Pilonul III: Pensii Facultative (Deductibilitate 400 EUR/an)</h3>
             <p>
               Economisire suplimentară cu reducere fiscală din impozitul pe venit. Testează cu{" "}
               <Link href="/calculator-pensie-pilon-3/" className="text-brand-blue hover:underline font-medium">
