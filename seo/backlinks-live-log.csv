@@ -1,0 +1,9 @@
+platform,tier,estimated_da,rel_type,http_status,latency_ms,has_target_link,live_url
+github.com,Tier 1 - Repository,96,nofollow/social+homepage,200,1453,true,https://github.com/jibranpcccc/ro-pension-2026
+github.com,Tier 1 - Release v1.0.0,96,nofollow/release,200,594,true,https://github.com/jibranpcccc/ro-pension-2026/releases/tag/v1.0.0
+github.com,Tier 1 - Issue Spec #1,96,nofollow/issue,200,686,true,https://github.com/jibranpcccc/ro-pension-2026/issues/1
+gist.github.com,Tier 1 - Public Gist,96,nofollow/gist,200,983,true,https://gist.github.com/jibranpcccc/d0d03106a4a2b822bae12572fd93e49e
+raw.githubusercontent.com,Tier 1 - Raw Docs,96,raw-markdown,200,353,true,https://raw.githubusercontent.com/jibranpcccc/ro-pension-2026/main/README.md
+cdn.jsdelivr.net,Tier 2 - Global CDN Package,94,cdn-doc,200,1296,true,https://cdn.jsdelivr.net/gh/jibranpcccc/ro-pension-2026@v1.0.0/README.md
+jibranpcccc.github.io,Tier 1 - GitHub Pages Demo,94,dofollow,200,72,true,https://jibranpcccc.github.io/ro-pension-2026/
+jibranpcccc.github.io,Tier 1 - GitHub Pages JS Module,94,module,200,221,false,https://jibranpcccc.github.io/ro-pension-2026/ro-pension-2026.mjs
