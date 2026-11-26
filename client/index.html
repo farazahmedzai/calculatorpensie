@@ -37,13 +37,33 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
     <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" /></noscript>
 
-    <!-- Single Unified Google Analytics 4 -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4XHK61Q7LP"></script>
+    <!-- Single Unified Google Analytics 4 (deferred until first interaction or idle so initial tap stays <16ms) -->
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
       gtag('config', 'G-4XHK61Q7LP');
+      (function () {
+        var loaded = false;
+        function loadGtag() {
+          if (loaded) return;
+          loaded = true;
+          var s = document.createElement('script');
+          s.async = true;
+          s.src = 'https://www.googletagmanager.com/gtag/js?id=G-4XHK61Q7LP';
+          document.head.appendChild(s);
+        }
+        ['pointerdown', 'keydown', 'scroll'].forEach(function (ev) {
+          window.addEventListener(ev, loadGtag, { once: true, passive: true });
+        });
+        window.addEventListener('load', function () {
+          if ('requestIdleCallback' in window) {
+            window.requestIdleCallback(loadGtag, { timeout: 3000 });
+          } else {
+            setTimeout(loadGtag, 2500);
+          }
+        }, { once: true });
+      })();
     </script>
 
     <!-- Primary Structured Data (@graph) -->

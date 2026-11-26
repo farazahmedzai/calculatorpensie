@@ -1,10 +1,7 @@
-import { useState } from "react";
-import { useForm } from "react-hook-form";
-import { zodResolver } from "@hookform/resolvers/zod";
-import { z } from "zod";
+import { useState, startTransition } from "react";
 import { Button } from "@/components/ui/button";
-import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Card, CardContent } from "@/components/ui/card";
 import { Calculator, Info } from "lucide-react";
@@ -15,45 +12,46 @@ import {
 } from "@/lib/pension-calculations";
 import { trackCalculatorUsage } from "@/lib/analytics";
 
-const calculatorSchema = z.object({
-  currentAge: z.number().min(18, "Vârsta minimă este 18 ani").max(70, "Vârsta maximă este 70 ani"),
-  monthlyIncome: z.number().min(1000, "Venitul minim este 1000 RON").max(100000, "Venitul maxim este 100000 RON"),
-  contributionYears: z.number().min(0, "Stagiul nu poate fi negativ").max(50, "Stagiul maxim este 50 ani"),
-  retirementAge: z.number().min(60, "Vârsta minimă de pensionare este 60 ani").max(70, "Vârsta maximă de pensionare este 70 ani"),
-});
-
-type CalculatorForm = z.infer<typeof calculatorSchema>;
-
 interface MainCalculatorProps {
   onCalculationComplete?: (result: number) => void;
 }
 
 export default function MainCalculator({ onCalculationComplete }: MainCalculatorProps) {
+  const [currentAge, setCurrentAge] = useState<number>(35);
+  const [monthlyIncome, setMonthlyIncome] = useState<number>(5000);
+  const [contributionYears, setContributionYears] = useState<number>(15);
+  const [retirementAge, setRetirementAge] = useState<number>(65);
   const [result, setResult] = useState<PensionResult | null>(null);
   const [errorMsg, setErrorMsg] = useState<string | null>(null);
 
-  const form = useForm<CalculatorForm>({
-    resolver: zodResolver(calculatorSchema),
-    defaultValues: {
-      currentAge: 35,
-      monthlyIncome: 5000,
-      contributionYears: 15,
-      retirementAge: 65,
-    },
-  });
-
-  const onSubmit = (data: CalculatorForm) => {
+  const onSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
     setErrorMsg(null);
+    if (currentAge < 18 || currentAge > 70) {
+      setErrorMsg("Vârsta actuală trebuie să fie între 18 și 70 de ani.");
+      return;
+    }
+    if (monthlyIncome < 1000 || monthlyIncome > 100000) {
+      setErrorMsg("Venitul lunar introdus trebuie să fie între 1.000 și 100.000 RON.");
+      return;
+    }
+    if (contributionYears < 0 || contributionYears > 50) {
+      setErrorMsg("Stagiul de cotizare trebuie să fie între 0 și 50 de ani.");
+      return;
+    }
+
     try {
       const calculatedPension = calculateStandardPension({
-        currentAge: data.currentAge,
-        monthlyIncome: data.monthlyIncome,
+        currentAge,
+        monthlyIncome,
         incomeType: "net",
-        contributionYears: data.contributionYears,
-        retirementAge: data.retirementAge,
+        contributionYears,
+        retirementAge,
       });
 
-      setResult(calculatedPension);
+      startTransition(() => {
+        setResult(calculatedPension);
+      });
       trackCalculatorUsage("standard", calculatedPension.monthlyPension);
       if (onCalculationComplete) {
         onCalculationComplete(calculatedPension.monthlyPension);
@@ -63,123 +61,89 @@ export default function MainCalculator({ onCalculationComplete }: MainCalculator
     }
   };
 
-  const currentAge = form.watch("currentAge");
-  const retirementAge = form.watch("retirementAge");
-  const yearsToRetirement = retirementAge ? retirementAge - (currentAge || 0) : 0;
+  const yearsToRetirement = retirementAge - (currentAge || 0);
 
   return (
     <div className="space-y-6">
-      <Form {...form}>
-        <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
-          <FormField
-            control={form.control}
-            name="currentAge"
-            render={({ field }) => (
-              <FormItem>
-                <FormLabel>Vârsta actuală (ani)</FormLabel>
-                <FormControl>
-                  <Input
-                    type="number"
-                    placeholder="35"
-                    {...field}
-                    onChange={(e) => field.onChange(Number(e.target.value))}
-                  />
-                </FormControl>
-                <FormMessage />
-              </FormItem>
-            )}
+      <form onSubmit={onSubmit} className="space-y-4">
+        <div className="space-y-2">
+          <Label htmlFor="mc-age">Vârsta actuală (ani)</Label>
+          <Input
+            id="mc-age"
+            type="number"
+            min={18}
+            max={70}
+            value={currentAge}
+            onChange={(e) => setCurrentAge(Number(e.target.value))}
           />
+        </div>
 
-          <FormField
-            control={form.control}
-            name="monthlyIncome"
-            render={({ field }) => (
-              <FormItem>
-                <FormLabel>Venitul lunar net actual (RON)</FormLabel>
-                <FormControl>
-                  <Input
-                    type="number"
-                    placeholder="5000"
-                    {...field}
-                    onChange={(e) => field.onChange(Number(e.target.value))}
-                  />
-                </FormControl>
-                <FormMessage />
-              </FormItem>
-            )}
+        <div className="space-y-2">
+          <Label htmlFor="mc-income">Venitul lunar net actual (RON)</Label>
+          <Input
+            id="mc-income"
+            type="number"
+            min={1000}
+            max={100000}
+            value={monthlyIncome}
+            onChange={(e) => setMonthlyIncome(Number(e.target.value))}
           />
+        </div>
 
-          <FormField
-            control={form.control}
-            name="contributionYears"
-            render={({ field }) => (
-              <FormItem>
-                <FormLabel>Stagiul de cotizare realizat până acum (ani)</FormLabel>
-                <FormControl>
-                  <Input
-                    type="number"
-                    placeholder="15"
-                    {...field}
-                    onChange={(e) => field.onChange(Number(e.target.value))}
-                  />
-                </FormControl>
-                <FormMessage />
-              </FormItem>
-            )}
+        <div className="space-y-2">
+          <Label htmlFor="mc-years">Stagiul de cotizare realizat până acum (ani)</Label>
+          <Input
+            id="mc-years"
+            type="number"
+            min={0}
+            max={50}
+            value={contributionYears}
+            onChange={(e) => setContributionYears(Number(e.target.value))}
           />
+        </div>
 
-          <FormField
-            control={form.control}
-            name="retirementAge"
-            render={({ field }) => (
-              <FormItem>
-                <FormLabel>Vârsta de pensionare dorită</FormLabel>
-                <Select onValueChange={(value) => field.onChange(Number(value))} defaultValue="65">
-                  <FormControl>
-                    <SelectTrigger>
-                      <SelectValue placeholder="Selectează vârsta" />
-                    </SelectTrigger>
-                  </FormControl>
-                  <SelectContent>
-                    <SelectItem value="60">60 de ani (anticipată)</SelectItem>
-                    <SelectItem value="61">61 de ani (anticipată)</SelectItem>
-                    <SelectItem value="62">62 de ani (anticipată / tranzitoriu femei)</SelectItem>
-                    <SelectItem value="63">63 de ani (femei Anexa 5)</SelectItem>
-                    <SelectItem value="64">64 de ani</SelectItem>
-                    <SelectItem value="65">65 de ani (standard bărbați &amp; țintă 2035)</SelectItem>
-                    <SelectItem value="66">66 de ani</SelectItem>
-                    <SelectItem value="67">67 de ani</SelectItem>
-                  </SelectContent>
-                </Select>
-                <FormMessage />
-              </FormItem>
-            )}
-          />
+        <div className="space-y-2">
+          <Label htmlFor="mc-retire">Vârsta de pensionare dorită</Label>
+          <Select value={String(retirementAge)} onValueChange={(value) => setRetirementAge(Number(value))}>
+            <SelectTrigger id="mc-retire">
+              <SelectValue placeholder="Selectează vârsta" />
+            </SelectTrigger>
+            <SelectContent>
+              <SelectItem value="60">60 de ani (anticipată)</SelectItem>
+              <SelectItem value="61">61 de ani (anticipată)</SelectItem>
+              <SelectItem value="62">62 de ani (anticipată / tranzitoriu femei)</SelectItem>
+              <SelectItem value="63">63 de ani (femei Anexa 5)</SelectItem>
+              <SelectItem value="64">64 de ani</SelectItem>
+              <SelectItem value="65">65 de ani (standard bărbați &amp; țintă 2035)</SelectItem>
+              <SelectItem value="66">66 de ani</SelectItem>
+              <SelectItem value="67">67 de ani</SelectItem>
+            </SelectContent>
+          </Select>
+        </div>
 
-          {yearsToRetirement > 0 && (
-            <div className="bg-blue-50 p-3 rounded-lg text-sm text-blue-800">
-              <Info className="inline h-4 w-4 mr-1" />
-              Îți mai rămân <strong>{yearsToRetirement} ani</strong> de contribuție până la pensionare
-            </div>
-          )}
+        {yearsToRetirement > 0 && (
+          <div className="bg-blue-50 p-3 rounded-lg text-sm text-blue-800">
+            <Info className="inline h-4 w-4 mr-1" />
+            Îți mai rămân <strong>{yearsToRetirement} ani</strong> de contribuție până la pensionare
+          </div>
+        )}
 
-          {errorMsg && (
-            <div className="bg-red-50 border border-red-200 p-3 rounded-lg text-sm text-red-700">
-              {errorMsg}
-            </div>
-          )}
+        {errorMsg && (
+          <div className="bg-red-50 border border-red-200 p-3 rounded-lg text-sm text-red-700">
+            {errorMsg}
+          </div>
+        )}
 
-          <Button type="submit" className="w-full bg-brand-blue hover:bg-blue-700 text-lg py-4">
-            <Calculator className="mr-2 h-5 w-5" />
-            Calculează Pensia
-          </Button>
-        </form>
-      </Form>
+        <Button type="submit" className="w-full bg-brand-blue hover:bg-blue-700 text-lg py-4">
+          <Calculator className="mr-2 h-5 w-5" />
+          Calculează Pensia
+        </Button>
+      </form>
 
       {result && (
         <Card className="bg-brand-green bg-opacity-10 border-brand-green border-opacity-20">
           <CardContent className="p-6">
-            <h4 className="font-semibold text-brand-green mb-2">Rezultatul estimării (Legea 360/2023):</h4>
+            <h3 className="font-semibold text-brand-green mb-2">Rezultatul estimării (Legea 360/2023):</h3>
             <p className="text-3xl font-bold text-brand-green mb-1">
               {result.monthlyPension.toLocaleString("ro-RO")} RON brut/lună
             </p>

@@ -8,17 +8,26 @@ interface PerformanceTrackerProps {
 
 export default function PerformanceTracker({ page }: PerformanceTrackerProps) {
   useEffect(() => {
-    let maxScrollDepth = 0;
-    const handleScroll = () => {
+    const firedMilestones = new Set<number>();
+    let rafId = 0;
+
+    const measureScroll = () => {
+      rafId = 0;
       const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
       const documentHeight = document.documentElement.scrollHeight - window.innerHeight;
       if (documentHeight <= 0) return;
       const scrollPercentage = Math.round((scrollTop / documentHeight) * 100);
-      if (scrollPercentage > maxScrollDepth) {
-        maxScrollDepth = scrollPercentage;
-        if ([25, 50, 75, 100].includes(scrollPercentage)) {
-          trackScrollDepth(scrollPercentage, page);
+      for (const milestone of [25, 50, 75, 100]) {
+        if (scrollPercentage >= milestone && !firedMilestones.has(milestone)) {
+          firedMilestones.add(milestone);
+          trackScrollDepth(milestone, page);
         }
+      }
+    };
+
+    const handleScroll = () => {
+      if (!rafId) {
+        rafId = window.requestAnimationFrame(measureScroll);
       }
     };
 
@@ -29,11 +38,12 @@ export default function PerformanceTracker({ page }: PerformanceTrackerProps) {
     };
 
     window.addEventListener("scroll", handleScroll, { passive: true });
-    window.addEventListener("beforeunload", trackTimeSpent);
+    window.addEventListener("pagehide", trackTimeSpent);
 
     return () => {
+      if (rafId) window.cancelAnimationFrame(rafId);
       window.removeEventListener("scroll", handleScroll);
-      window.removeEventListener("beforeunload", trackTimeSpent);
+      window.removeEventListener("pagehide", trackTimeSpent);
     };
   }, [page]);
 

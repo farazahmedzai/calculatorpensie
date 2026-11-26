@@ -36,7 +36,9 @@ export default function CalculatorAnticipataPage() {
           <CardHeader>
             <CardTitle className="flex items-center gap-2">
               <Calculator className="h-5 w-5 text-brand-blue" />
-              Calculator Penalizare Pensie Anticipată (VPR 81 Lei)
+              <h2 className="text-2xl font-semibold leading-none tracking-tight m-0">
+                Calculator Penalizare Pensie Anticipată (VPR 81 Lei)
+              </h2>
             </CardTitle>
             <CardDescription>
               Introdu vârsta, sexul, venitul net, stagiul de cotizare contributiv și vârsta dorită de retragere
@@ -195,6 +197,12 @@ export default function CalculatorAnticipataPage() {
                     Pensie Anticipată Fără Penalizare
                   </Link>:{" "}
                   excepțiile legale și condițiile de stagiu suplimentar.
+                </li>
+                <li>
+                  <Link href="/blog/reforma-sistem-pensii-2026/" className="text-brand-blue font-semibold underline">
+                    Reforma Pensiilor 2026
+                  </Link>:{" "}
+                  schimbările esențiale față de vechea pensie anticipată parțială.
                 </li>
                 <li>
                   <Link href="/legislatie/" className="text-brand-blue font-semibold underline">

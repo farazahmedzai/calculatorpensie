@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, startTransition } from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -49,13 +49,15 @@ export default function CalculatorPilon3Page() {
     const taxDeductible = annualContribution <= maxDeductibleAnnual;
     const annualTaxSaving = Math.round(Math.min(annualContribution, maxDeductibleAnnual) * 0.10);
 
-    setResult({
-      totalContributed: Math.round(totalContributed),
-      interestEarned: Math.round(interestEarned),
-      finalBalance: Math.round(finalBalance),
-      yearsToRetirement,
-      taxDeductible,
-      annualTaxSaving,
+    startTransition(() => {
+      setResult({
+        totalContributed: Math.round(totalContributed),
+        interestEarned: Math.round(interestEarned),
+        finalBalance: Math.round(finalBalance),
+        yearsToRetirement,
+        taxDeductible,
+        annualTaxSaving,
+      });
     });
   };
 
@@ -251,6 +253,17 @@ export default function CalculatorPilon3Page() {
                   → Strategii Fiscale Pilon III
                 </Link>
               </div>
+              <p className="text-xs text-slate-600 mt-4">
+                Pentru combinația optimă între deducerile angajat-angajator și contribuțiile de stat, consultă articolul despre{" "}
+                <Link href="/blog/optimizare-fiscala-contributii-pensie/" className="text-blue-700 underline">
+                  optimizarea fiscală a contribuțiilor la pensie
+                </Link>{" "}
+                și ghidul pentru{" "}
+                <Link href="/blog/calculul-pensiei-freelanceri-pfa/" className="text-blue-700 underline">
+                  pensia PFA și activități independente
+                </Link>
+                .
+              </p>
             </div>
           </div>
         </div>

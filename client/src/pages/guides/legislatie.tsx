@@ -210,11 +210,27 @@ export default function LegislatiePage() {
             <h2>Întrebări Esențiale</h2>
             <h3>Care este pensia minimă garantată în 2026?</h3>
             <p>
-              Indemnizația socială pentru pensionari rămâne la <strong>{MINIMUM_PENSION_2026.toLocaleString("ro-RO")} Lei</strong> pe lună în 2026.
+              Indemnizația socială pentru pensionari rămâne la <strong>{MINIMUM_PENSION_2026.toLocaleString("ro-RO")} Lei</strong> pe lună în 2026. Vezi condițiile complete în ghidul despre{" "}
+              <Link href="/blog/pensie-minima-garantata-2026/" className="text-blue-700 underline">
+                pensia minimă garantată 2026
+              </Link>
+              .
             </p>
             <h3>Cum se aplică indexarea pensiilor?</h3>
             <p>
-              Formula prevăzută de Legea 360/2023 leagă actualizarea VPR de inflația anuală + 50% din creșterea reală a câștigului salarial mediu brut; aplicarea indexării în 2025 și 2026 a fost suspendată prin OUG nr. 156/2024 și Legea nr. 141/2025, menținând VPR la {OFFICIAL_VPR_2026} Lei.
+              Formula prevăzută de{" "}
+              <Link href="/blog/reforma-sistem-pensii-2026/" className="text-blue-700 underline">
+                reforma Legii 360/2023
+              </Link>{" "}
+              leagă actualizarea VPR de inflația anuală + 50% din creșterea reală a câștigului salarial mediu brut; aplicarea indexării în 2025 și 2026 a fost suspendată prin OUG nr. 156/2024 și Legea nr. 141/2025, menținând VPR la {OFFICIAL_VPR_2026} Lei. Citește analiza completă despre{" "}
+              <Link href="/blog/indexare-pensii-2026-2026/" className="text-blue-700 underline">
+                calendarul indexării pensiilor și VPR
+              </Link>{" "}
+              și impactul pentru{" "}
+              <Link href="/blog/conditii-speciale-munca-impact-pensie/" className="text-blue-700 underline">
+                grupele speciale și deosebite de muncă
+              </Link>
+              .
             </p>
           </div>
         </div>

@@ -91,8 +91,15 @@ export default function ProgramExcelPage() {
                 </CardTitle>
               </CardHeader>
               <CardContent className="prose prose-sm max-w-none">
+                <h2 className="text-lg font-bold mt-0 text-slate-900">
+                  Ce conține șablonul Excel și cum aplică formula oficială
+                </h2>
                 <p>
-                  Acest fișier tabelar îți permite să introduci salariile brute lunare sau anuale pe parcursul carierei și să urmărești automat acumularea punctajului CNPP și contribuția către Pilonul II (4,75%).
+                  Acest fișier tabelar îți permite să introduci salariile brute lunare sau anuale pe parcursul carierei și să urmărești automat acumularea punctajului CNPP și contribuția către Pilonul II (4,75%). Pentru comparație cu simulatorul CNPP, citește și ghidul despre{" "}
+                  <Link href="/blog/simulare-pensie-instrumente-metode/" className="text-blue-700 font-semibold underline">
+                    instrumentele de simulare a pensiei în 2026
+                  </Link>
+                  .
                 </p>
 
                 <h3 className="font-bold text-slate-800">Parametri oficiali 2026 integrați:</h3>
@@ -101,7 +108,11 @@ export default function ProgramExcelPage() {
                     <strong>Salariul mediu brut de referință:</strong> {AVERAGE_GROSS_SALARY_2026.toLocaleString("ro-RO")} RON (Legea nr. 44/2026).
                   </li>
                   <li>
-                    <strong>Valoarea Punctului de Referință (VPR):</strong> {OFFICIAL_VPR_2026} RON (menținut în 2026 prin Legea nr. 141/2025).
+                    <strong>Valoarea Punctului de Referință (VPR):</strong> {OFFICIAL_VPR_2026} RON (menținut în 2026 prin Legea nr. 141/2025; vezi explicația pentru{" "}
+                    <Link href="/blog/calcul-punct-referinta-vpr/" className="text-blue-700 underline">
+                      calculul VPR 81 Lei
+                    </Link>
+                    ).
                   </li>
                   <li>
                     <strong>Punctaj de contributivitate + stabilitate:</strong> compatibil cu formula din Legea nr. 360/2023.
@@ -109,16 +120,32 @@ export default function ProgramExcelPage() {
                 </ul>
 
                 <div className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded-r-lg my-4">
-                  <h4 className="font-bold mt-0 text-blue-900 flex items-center gap-2">
+                  <h3 className="text-base font-bold mt-0 text-blue-900 flex items-center gap-2">
                     <Info className="h-4 w-4" />
                     Cum folosești fișierul în 3 pași:
-                  </h4>
+                  </h3>
                   <ol className="text-sm text-blue-950 mt-2 space-y-1.5 list-decimal list-inside font-medium">
                     <li>Apasă butonul de descărcare gratuită (nu solicită cont sau email).</li>
                     <li>Deschide fișierul `.csv` în Microsoft Excel (setările regionale în română folosesc automat separatorul <code>;</code>).</li>
                     <li>Adaptează coloana <em>Salariu Brut Estimativ</em> după istoricul tău din extrasul CNPP.</li>
                   </ol>
                 </div>
+
+                <h2 className="text-lg font-bold text-slate-900">Cum interpretezi coloanele din tabelul Excel?</h2>
+                <p>
+                  Fiecare rând anual împarte salariul brut realizat la câștigul salarial mediu brut pe economie ({AVERAGE_GROSS_SALARY_2026.toLocaleString("ro-RO")} lei în 2026), obținând punctajul anual. Suma punctelor anuale peste întreaga carieră se înmulțește cu {OFFICIAL_VPR_2026} Lei, iar după pragul de 3.000 lei brut reține că se aplică 10% CASS și 10% impozit.
+                </p>
+                <p className="text-xs text-slate-600">
+                  Notă: pentru pregătirea documentelor oficiale la finalul simulării, consultă{" "}
+                  <Link href="/blog/acte-necesare-dosar-pensionare/" className="text-blue-700 underline">
+                    lista de acte necesare pentru dosarul de pensionare
+                  </Link>{" "}
+                  și{" "}
+                  <Link href="/despre-noi/" className="text-blue-700 underline">
+                    politica noastră editorială
+                  </Link>
+                  .
+                </p>
               </CardContent>
             </Card>
 

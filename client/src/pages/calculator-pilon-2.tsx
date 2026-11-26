@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, startTransition } from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -46,12 +46,14 @@ export default function CalculatorPilon2Page() {
     const totalContributed = monthlyContribution * months;
     const interestEarned = finalBalance - totalContributed;
 
-    setResult({
-      monthlyContribution: Math.round(monthlyContribution),
-      totalContributed: Math.round(totalContributed),
-      interestEarned: Math.round(interestEarned),
-      finalBalance: Math.round(finalBalance),
-      yearsToRetirement,
+    startTransition(() => {
+      setResult({
+        monthlyContribution: Math.round(monthlyContribution),
+        totalContributed: Math.round(totalContributed),
+        interestEarned: Math.round(interestEarned),
+        finalBalance: Math.round(finalBalance),
+        yearsToRetirement,
+      });
     });
   };
 
@@ -245,6 +247,17 @@ export default function CalculatorPilon2Page() {
                   → Pilonul II: Reguli și Moștenire 2026
                 </Link>
               </div>
+              <p className="text-xs text-slate-600 mt-4">
+                Simulările rulează exclusiv local în browser fără stocarea datelor personale, conform{" "}
+                <Link href="/terms/" className="text-blue-700 underline">
+                  termenilor de utilizare
+                </Link>{" "}
+                și ghidului de{" "}
+                <Link href="/blog/simulare-pensie-instrumente-metode/" className="text-blue-700 underline">
+                  simulare a pensiilor publice și private
+                </Link>
+                .
+              </p>
             </div>
           </div>
         </div>

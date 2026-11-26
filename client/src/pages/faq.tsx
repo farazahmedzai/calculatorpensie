@@ -43,6 +43,9 @@ export default function FAQ() {
 
       <section className="py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">
+            Răspunsuri Rapide privind Legea nr. 360/2023 și Impozitarea 2026
+          </h2>
           <Accordion
             type="multiple"
             defaultValue={["retirement-age", "pension-point-value", "pension-taxes-2026"]}
@@ -59,6 +62,45 @@ export default function FAQ() {
               </AccordionItem>
             ))}
           </Accordion>
+
+          <div className="mt-12 bg-slate-50 border border-slate-200 rounded-xl p-6 space-y-4">
+            <h2 className="text-xl font-bold text-slate-900">Ghiduri Practice pentru Situații Speciale</h2>
+            <p className="text-sm text-gray-700 leading-relaxed">
+              Dacă ai lucrat atât în România, cât și în state UE sau în activități independente, consultă analizele noastre dedicate pentru totalizarea stagiilor și regulile de contribuție aplicabile în 2026.
+            </p>
+            <ul className="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm">
+              <li>
+                <Link href="/blog/transfer-drepturi-pensie-ue/" className="text-blue-700 font-semibold hover:underline">
+                  Pensia comunitară și totalizarea anilor lucrați în UE →
+                </Link>
+              </li>
+              <li>
+                <Link href="/blog/calculul-pensiei-freelanceri-pfa/" className="text-blue-700 font-semibold hover:underline">
+                  Cum se calculează pensia pentru PFA și freelanceri →
+                </Link>
+              </li>
+              <li>
+                <Link href="/blog/pensie-minima-garantata-2026/" className="text-blue-700 font-semibold hover:underline">
+                  Pensia minimă garantată (1.281 Lei) și condițiile legale →
+                </Link>
+              </li>
+              <li>
+                <Link href="/blog/vizualizare-vechime-munca-cnpp/" className="text-blue-700 font-semibold hover:underline">
+                  Cum verifici stagiul de cotizare online pe portalul CNPP →
+                </Link>
+              </li>
+              <li>
+                <Link href="/despre-noi/" className="text-blue-700 font-semibold hover:underline">
+                  Despre politica editorială CalculatorPensie.com →
+                </Link>
+              </li>
+              <li>
+                <Link href="/terms/" className="text-blue-700 font-semibold hover:underline">
+                  Termeni de utilizare și limitele estimărilor orientative →
+                </Link>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
 

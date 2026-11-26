@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, startTransition } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -118,13 +118,15 @@ export default function Home() {
         "Iulie", "August", "Septembrie", "Octombrie", "Noiembrie", "Decembrie",
       ];
 
-      setCalculationResult({
-        retirementAge: `${adjustedRetirementAge} ani`,
-        retirementDate: `${monthNames[retirementMonth]} ${retirementYear}`,
-        monthlyPension: result.monthlyPension,
-        netMonthlyPension: result.netMonthlyPension,
-        stabilityPoints: result.stabilityPoints,
-        totalPoints: result.totalPoints,
+      startTransition(() => {
+        setCalculationResult({
+          retirementAge: `${adjustedRetirementAge} ani`,
+          retirementDate: `${monthNames[retirementMonth]} ${retirementYear}`,
+          monthlyPension: result.monthlyPension,
+          netMonthlyPension: result.netMonthlyPension,
+          stabilityPoints: result.stabilityPoints,
+          totalPoints: result.totalPoints,
+        });
       });
 
       trackCalculatorUsage("standard", result.monthlyPension);

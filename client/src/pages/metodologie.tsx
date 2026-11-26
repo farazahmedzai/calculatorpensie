@@ -265,7 +265,19 @@ export default function Metodologie() {
           <div className="bg-blue-50 p-6 rounded-lg border border-blue-200">
             <h3 className="text-lg font-bold text-blue-900 mb-2">CASS și Impozit pe Pensii (2026)</h3>
             <p className="text-sm text-blue-900 leading-relaxed">
-              Conform Legii nr. 141/2025, pensiile de până la 3.000 Lei sunt scutite integral. Pentru pensiile peste 3.000 Lei se aplică CASS 10% la suma ce depășește 3.000 Lei (în perioada 1 aug. 2025-31 dec. 2027) și impozit pe venit de 10% peste pragul neimpozabil de 3.000 Lei.
+              Conform Legii nr. 141/2025, pensiile de până la 3.000 Lei sunt scutite integral. Pentru pensiile peste 3.000 Lei se aplică CASS 10% la suma ce depășește 3.000 Lei (în perioada 1 aug. 2025-31 dec. 2027) și impozit pe venit de 10% peste pragul neimpozabil de 3.000 Lei. Vezi și analiza detaliată pentru{" "}
+              <Link href="/blog/calcul-punct-referinta-vpr/" className="text-blue-700 font-semibold underline">
+                formula VPR 81 Lei
+              </Link>
+              , regulile de{" "}
+              <Link href="/blog/transfer-drepturi-pensie-ue/" className="text-blue-700 font-semibold underline">
+                totalizare stagii din UE
+              </Link>{" "}
+              și{" "}
+              <Link href="/blog/acte-necesare-dosar-pensionare/" className="text-blue-700 font-semibold underline">
+                actele necesare pentru dosarul CNPP
+              </Link>
+              .
             </p>
           </div>
         </div>

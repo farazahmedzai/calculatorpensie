@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, startTransition } from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
@@ -86,13 +86,15 @@ export default function CalculatorVarstaPage() {
     const retirementYear = birthYear + finalYears + Math.floor((birthMonth - 1 + finalMonths) / 12);
     const retirementMonthIdx = (birthMonth - 1 + finalMonths) % 12;
 
-    setResult({
-      retirementAgeYears: finalYears,
-      retirementAgeMonths: finalMonths,
-      retirementDate: `${months[retirementMonthIdx]} ${retirementYear}`,
-      minStage,
-      fullStage,
-      childReductionMonths,
+    startTransition(() => {
+      setResult({
+        retirementAgeYears: finalYears,
+        retirementAgeMonths: finalMonths,
+        retirementDate: `${months[retirementMonthIdx]} ${retirementYear}`,
+        minStage,
+        fullStage,
+        childReductionMonths,
+      });
     });
   };
 
@@ -304,12 +306,32 @@ export default function CalculatorVarstaPage() {
                   <strong>Femei care au născut și crescut copii (Art. 51 Legea 360/2023):</strong> reducere de 6 luni pentru primul copil, 1 an pentru 2 copii, până la <strong>3 ani și 6 luni pentru 7 sau mai mulți copii</strong> (cu condiția realizării stagiului complet de cotizare).
                 </li>
                 <li>
-                  <strong>Condiții deosebite și speciale de muncă:</strong> reduceri proporționale conform perioadelor lucrate în grupele de risc.
+                  <strong>Condiții deosebite și speciale de muncă:</strong> reduceri proporționale conform perioadelor lucrate în grupele de risc (vezi{" "}
+                  <Link href="/blog/conditii-speciale-munca-impact-pensie/" className="text-blue-700 font-semibold underline">
+                    ghidul condițiilor speciale și deosebite
+                  </Link>
+                  ).
+                </li>
+                <li>
+                  <strong>Stagii lucrate în străinătate:</strong> anii contributivi din alte state UE se cumulează pentru îndeplinirea stagiului minim de 15 ani (detalii în{" "}
+                  <Link href="/blog/transfer-drepturi-pensie-ue/" className="text-blue-700 font-semibold underline">
+                    ghidul transferului de pensie UE
+                  </Link>
+                  ).
                 </li>
                 <li>
                   <strong>Pensie anticipată:</strong> cu până la 5 ani mai devreme dacă ai realizat integral stagiul complet contributiv.
                 </li>
               </ul>
+
+              <h3>Pregătirea Dosarului de Pensionare în 2026</h3>
+              <p>
+                Cu 3-6 luni înainte de împlinirea vârstei afișate mai sus, verifică istoricul de vechime în portalul CNPP și pregătește documentele necesare conform listei actualizate pentru{" "}
+                <Link href="/blog/acte-necesare-dosar-pensionare/" className="text-blue-700 font-semibold underline">
+                  dosarul complet de pensionare
+                </Link>
+                .
+              </p>
 
               <div className="not-prose mt-6 grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
                 <Link href="/" className="p-3 border rounded bg-slate-50 hover:bg-blue-50 text-blue-700 font-semibold">

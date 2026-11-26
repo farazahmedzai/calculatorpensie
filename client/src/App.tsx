@@ -1,8 +1,4 @@
 import { Switch, Route, Redirect, Router as WouterRouter } from "wouter";
-import { queryClient } from "./lib/queryClient";
-import { QueryClientProvider } from "@tanstack/react-query";
-import { Toaster } from "@/components/ui/toaster";
-import { TooltipProvider } from "@/components/ui/tooltip";
 import { Suspense, useEffect, lazy, type ComponentType } from "react";
 import { useAnalytics } from "./hooks/use-analytics";
 import { normalizePath } from "./data/routes-meta";
@@ -189,14 +185,7 @@ export function App({ ssrPath, pageOverrides }: AppProps = {}) {
     window.scrollTo?.(0, 0);
   }, []);
 
-  const content = (
-    <QueryClientProvider client={queryClient}>
-      <TooltipProvider>
-        <Toaster />
-        <RouterContent pageOverrides={pageOverrides} />
-      </TooltipProvider>
-    </QueryClientProvider>
-  );
+  const content = <RouterContent pageOverrides={pageOverrides} />;
 
   if (ssrPath) {
     return <WouterRouter ssrPath={ssrPath}>{content}</WouterRouter>;

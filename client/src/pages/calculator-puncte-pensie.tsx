@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, startTransition } from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -41,13 +41,15 @@ export default function CalculatorPunctePage() {
     const estimatedPension = Math.round(totalPoints * OFFICIAL_VPR_2026);
     const estimatedNet = estimateNetPension2026(estimatedPension);
 
-    setResult({
-      contributoryPoints: parseFloat(contributoryPoints.toFixed(4)),
-      stabilityPoints: parseFloat(stabilityPoints.toFixed(4)),
-      assimilatedPoints: parseFloat(assimilatedPoints.toFixed(4)),
-      totalPoints: parseFloat(totalPoints.toFixed(4)),
-      estimatedPension,
-      estimatedNet,
+    startTransition(() => {
+      setResult({
+        contributoryPoints: parseFloat(contributoryPoints.toFixed(4)),
+        stabilityPoints: parseFloat(stabilityPoints.toFixed(4)),
+        assimilatedPoints: parseFloat(assimilatedPoints.toFixed(4)),
+        totalPoints: parseFloat(totalPoints.toFixed(4)),
+        estimatedPension,
+        estimatedNet,
+      });
     });
   };
 
@@ -224,6 +226,26 @@ export default function CalculatorPunctePage() {
               <p>
                 <strong>Exemplu concret (40 de ani stagiu contributiv):</strong>{" "}
                 <code>(5 × 0,50) + (5 × 0,75) + (5 × 1,00) = 11,25 puncte</code> de stabilitate, care la VPR de <strong>81 Lei</strong> adaugă <strong>+911 Lei brut/lună</strong> peste pensia din contributivitate!
+              </p>
+
+              <h2>Diferența între Puncte Contributive, Stabilitate și Asimilate</h2>
+              <p>
+                În sistemul reglementat de Legea nr. 360/2023, doar anii în care s-au plătit efectiv contribuții CAS (inclusiv contractele de asigurare retroactivă) contează la pragul de 25 de ani pentru punctele de stabilitate. Perioadele asimilate (studii universitare de zi, stagiu militar sau indemnizații necontributive) adaugă punctaj de bază (+0,25 puncte pe an), dar nu generează bonificații de stabilitate și nu intră în calculul vechimii pentru pensia anticipată.
+              </p>
+              <p>
+                Pentru a înțelege mecanismul oficial al valorii punctului în 2026 și impactul înghețării din Legea nr. 141/2025, citește și{" "}
+                <Link href="/blog/calcul-punct-referinta-vpr/" className="text-blue-700 font-semibold underline">
+                  ghidul complet VPR 81 Lei
+                </Link>
+                , analiza privind{" "}
+                <Link href="/blog/indexare-pensii-2026-2026/" className="text-blue-700 font-semibold underline">
+                  indexarea pensiilor 2025-2026
+                </Link>{" "}
+                și{" "}
+                <Link href="/blog/reforma-sistem-pensii-2026/" className="text-blue-700 font-semibold underline">
+                  sinteza reformei pensiilor
+                </Link>
+                .
               </p>
 
               <div className="not-prose mt-6 grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs">

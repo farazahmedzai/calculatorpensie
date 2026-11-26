@@ -33,7 +33,7 @@ export default function PlanificarePage() {
             <h1 className="text-4xl font-bold text-white">Planificarea Pensiei în România 2026</h1>
           </div>
           <p className="text-xl text-white/95 mb-8 font-medium bg-black/20 p-4 rounded-lg">
-            Strategii concrete pentru combinarea eficientă a Pilonului I (stat), Pilonului II (privat obligatoriu) și Pilonului III (facultativ).
+            Strategii concrete pentru combinarea eficientă a Pilonului I (stat, VPR 81 Lei), Pilonului II (privat obligatoriu 4,75%) și Pilonului III (facultativ deductibil 400 EUR/an).
           </p>
           <div className="flex flex-wrap gap-4">
             <Link href="/">
@@ -55,27 +55,98 @@ export default function PlanificarePage() {
       <section className="py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none mb-12">
-            <h2>Pilonii Sistemului de Pensii</h2>
+            <h2>Structura Sistemului Multi-Pilon în 2026</h2>
+            <p>
+              Dependența exclusivă de pensia publică de stat oferă o rată de înlocuire estimată între 35% și 45% din ultimul salariu net. O strategie echilibrată combină toate cele trei surse de finanțare, ajustate după profilul de venit (inclusiv pentru{" "}
+              <Link href="/blog/calculul-pensiei-freelanceri-pfa/" className="text-brand-blue font-semibold underline">
+                freelanceri și PFA cu declarație unică
+              </Link>
+              ).
+            </p>
+
+            <div className="overflow-x-auto not-prose my-6">
+              <table className="w-full text-sm border-collapse border border-slate-200">
+                <thead>
+                  <tr className="bg-slate-100 text-left">
+                    <th className="border p-3">Pilon</th>
+                    <th className="border p-3">Contribuție 2026</th>
+                    <th className="border p-3">Facilitate / Avantaj</th>
+                    <th className="border p-3">Simulator Dedicat</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td className="border p-3 font-semibold">Pilon I (Stat)</td>
+                    <td className="border p-3">20,25% din CAS (25%)</td>
+                    <td className="border p-3">VPR 81 Lei + puncte stabilitate peste 25 ani</td>
+                    <td className="border p-3">
+                      <Link href="/" className="text-blue-700 font-semibold underline">Calculator Pensie</Link>
+                    </td>
+                  </tr>
+                  <tr className="bg-slate-50">
+                    <td className="border p-3 font-semibold">Pilon II (Obligatoriu)</td>
+                    <td className="border p-3">4,75% din brut</td>
+                    <td className="border p-3">Activ personal moștenibil administrat privat</td>
+                    <td className="border p-3">
+                      <Link href="/calculator-pensie-pilon-2/" className="text-blue-700 font-semibold underline">Calculator Pilon II</Link>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="border p-3 font-semibold">Pilon III (Facultativ)</td>
+                    <td className="border p-3">Voluntar (max. 15% brut)</td>
+                    <td className="border p-3">Deducere 400 EUR/an angajat + 400 EUR/an angajator</td>
+                    <td className="border p-3">
+                      <Link href="/calculator-pensie-pilon-3/" className="text-blue-700 font-semibold underline">Calculator Pilon III</Link>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
             <h3>1. Pilonul I: Sistemul Public (VPR = 81 Lei)</h3>
             <p>
-              Obligatoriu pentru salariați și bazat pe punctaj contributiv plus puncte de stabilitate pentru vechime &gt; 25 de ani. Rata medie de înlocuire a salariului face recomandată completarea prin economisire privată.
+              Obligatoriu pentru salariați și bazat pe punctaj contributiv plus puncte de stabilitate pentru vechime &gt; 25 de ani. Pentru comparații pas cu pas între simulările CNPP și foile de calcul offline, vezi{" "}
+              <Link href="/blog/simulare-pensie-instrumente-metode/" className="text-brand-blue font-semibold underline">
+                ghidul instrumentelor de simulare a pensiei
+              </Link>
+              .
             </p>
             <h3>2. Pilonul II: Pensii Private Obligatorii (4,75%)</h3>
             <p>
               4,75% din salariul brut se acumulează automat în contul tău privat. Simulează acum{" "}
               <Link href="/calculator-pensie-pilon-2/" className="text-brand-blue hover:underline font-medium">
                 fondul Pilon II estimat
+              </Link>{" "}
+              și verifică{" "}
+              <Link href="/blog/pilonul-2-modificari-legislative/" className="text-brand-blue hover:underline font-medium">
+                regulile de retragere și moștenire din 2026
               </Link>
               .
             </p>
             <h3>3. Pilonul III: Pensii Facultative (Deductibilitate 400 EUR/an)</h3>
             <p>
-              Economisire suplimentară cu reducere fiscală din impozitul pe venit. Testează cu{" "}
+              Economisire suplimentară cu reducere fiscală din impozitul pe venit, accesibilă încă de la 60 de ani. Testează cu{" "}
               <Link href="/calculator-pensie-pilon-3/" className="text-brand-blue hover:underline font-medium">
                 calculatorul Pilon III
               </Link>
               .
             </p>
+
+            <h2>Checklist de Planificare pe Vârste (25-65 Ani)</h2>
+            <ul>
+              <li><strong>25-35 ani:</strong> verifică anual viramentele în contul Pilon II și începe o contribuție deductibilă de ~166 lei/lună în Pilon III pentru efect maxim de dobândă compusă.</li>
+              <li><strong>35-50 ani:</strong> solicită extrasul de vechime din SPV / MyCNPP și asigură-te că nu ai luni lipsă din declarațiile D112.</li>
+              <li><strong>50-65 ani:</strong> urmărește pragul de 25, 30 și 35 ani contributivi pentru punctele de stabilitate sau{" "}
+                <Link href="/program-excel-calcul-pensie/" className="text-brand-blue font-semibold underline">
+                  simulează scenarii detaliate în Excel
+                </Link>
+                , respectând{" "}
+                <Link href="/despre-noi/" className="text-brand-blue font-semibold underline">
+                  metodologia noastră transparentă
+                </Link>
+                .
+              </li>
+            </ul>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
