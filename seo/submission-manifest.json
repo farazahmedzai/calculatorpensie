@@ -1,0 +1,41 @@
+{
+  "product": {
+    "name": "CalculatorPensie.com",
+    "slug": "calculatorpensie",
+    "domain": "calculatorpensie.com",
+    "url": "https://calculatorpensie.com/",
+    "pricing_model_url": "https://calculatorpensie.com/program-excel-calcul-pensie/",
+    "contact_email": "contact@calculatorpensie.com",
+    "contact_page": "https://calculatorpensie.com/contact/",
+    "privacy_url": "https://calculatorpensie.com/privacy/",
+    "terms_url": "https://calculatorpensie.com/terms/"
+  },
+  "copy": {
+    "tagline_40c": "Romanian 2026 pension & tax simulator",
+    "tagline_60c": "Free 2026 Romanian public & private pension calculator",
+    "awesome_list_bullet": "- [CalculatorPensie.com](https://calculatorpensie.com/) - Free Romanian pension calculator implementing Law 360/2023 (VPR 81 Lei), CASS tax, stability points, and Pillar II/III projections.",
+    "description_160c": "Calculate gross and net Romanian pensions for 2026 under Law 360/2023 (VPR 81 Lei), CASS 10% above 3,000 Lei, Annex 5 retirement age, and Excel CSV export.",
+    "description_500c": "CalculatorPensie.com is a free client-side pension simulation suite built for Romania under Law 360/2023, OUG 156/2024, Law 141/2025, and Law 44/2026 budget constants. Users can estimate gross and net monthly public pensions at the official VPR of 81 Lei, apply the 10% CASS and 10% income tax rules above 3,000 Lei, compute stability point bonuses beyond 25 contributory years, model early retirement penalties between 0.15% and 0.40% per month, project Pillar II (4.75%) and Pillar III (400 EUR/yr tax relief) funds, and export an Excel CSV workbook with zero signup or server storage."
+  },
+  "taxonomy": {
+    "primary_category": "Finance Tools / Personal Finance Calculator",
+    "tags": ["finance", "calculator", "pension", "romania", "tax-calculator", "open-data"],
+    "pricing_model": "Free",
+    "free_tier_details": "100% free in browser with no account required"
+  },
+  "assets": {
+    "favicon": "https://calculatorpensie.com/favicon.svg",
+    "og_image": "https://calculatorpensie.com/og-image.jpg",
+    "charts": [
+      "https://calculatorpensie.com/images/calcul-pensie-neta-brut-2026.svg",
+      "https://calculatorpensie.com/images/puncte-stabilitate-legea-360-2026.svg",
+      "https://calculatorpensie.com/images/penalizari-pensie-anticipata-2026.svg",
+      "https://calculatorpensie.com/images/varsta-pensionare-femei-2026-2035.svg"
+    ]
+  },
+  "agent_and_links": {
+    "llms_txt": "https://calculatorpensie.com/llms.txt",
+    "sitemap": "https://calculatorpensie.com/sitemap.xml",
+    "embed_widget_page": "https://calculatorpensie.com/"
+  }
+}
